@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: rusty-py-core
+Version: 0.1.1
+Summary: A starter project that uses Rust bindings
+Author-email: Andrei Fajardo <andrei@nerdai.io>
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+
