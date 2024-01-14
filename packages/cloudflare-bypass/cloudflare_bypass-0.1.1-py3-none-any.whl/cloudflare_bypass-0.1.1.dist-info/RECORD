@@ -1,0 +1,15 @@
+cloudflare_bypass/__init__.py,sha256=Lj8Up1Q9_mvHDc8nIC0WkSpr_gIU_4JKp7sHYu4CR60,63
+cloudflare_bypass/auto.py,sha256=QWcOeQ787unu_Y03r1bCe2XyeuP7xT7hzTWfDzW5G-s,3073
+cloudflare_bypass/base_detector.py,sha256=e-jDdXMHCyrVqSU8FBQEjk7vzuXEBFe_jYAztZOXvqg,1803
+cloudflare_bypass/cloudflare_detector.py,sha256=A2kHJ0lCVISa-QpSq5u9JjS1i7gLBDus5bhnGv16948,1190
+cloudflare_bypass/images/cf_logo.png,sha256=kwqk2AXeWZGXKamEgNONeLc3I92m_jkAc2TQrX11PI0,2459
+cloudflare_bypass/images/cf_logo_dark.png,sha256=TkJE-0jEIaiO3QwcYxHepi3h-FlNnAH86k1CCeegSZo,2459
+cloudflare_bypass/images/cf_popup.png,sha256=50yVoRSswVZ_zSeR73gOgw1Xc6nFLiUjnJI1Geb_9s4,5730
+cloudflare_bypass/images/cf_popup_dark.png,sha256=QX_6FS4pZLj-G9oYapLFN1y1WqjBjUtwmt8OeLPnwuc,4974
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_auto.py,sha256=QUgFJHw6RcJlhZlhrRPBtU3-0UAhYJsT7oKnME7FNEs,514
+cloudflare_bypass-0.1.1.dist-info/LICENSE,sha256=jWFKVRPWhvVhCxZJYdlMFP9K57wHOsW5BJKLvNyEkgc,1066
+cloudflare_bypass-0.1.1.dist-info/METADATA,sha256=30k-MyU4Ik6YqAtVlSVJCOvkl4iLcNWmbI6Va3vFXqE,3221
+cloudflare_bypass-0.1.1.dist-info/WHEEL,sha256=AtBG6SXL3KF_v0NxLf0ehyVOh0cold-JbJYXNGorC6Q,92
+cloudflare_bypass-0.1.1.dist-info/top_level.txt,sha256=e1C6_C2YIN08Hi9u5AMTr9iyqp2Otg8g_raJRv9IKbQ,24
+cloudflare_bypass-0.1.1.dist-info/RECORD,,
