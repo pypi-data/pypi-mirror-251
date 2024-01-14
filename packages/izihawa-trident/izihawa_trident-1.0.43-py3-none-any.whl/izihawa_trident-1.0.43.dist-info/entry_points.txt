@@ -1,0 +1,5 @@
+[console_scripts]
+trident-importer=trident.importer:main
+trident-ipfs-importer=trident.ipfs_importer:main
+trident-validate-files=trident.validate_files:main
+
