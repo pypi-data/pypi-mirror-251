@@ -1,0 +1,5 @@
+[console_scripts]
+syft = syftcli.cli:app
+syft-cli = syftcli.cli:app
+syftcli = syftcli.cli:app
+syftctl = syftcli.cli:app
