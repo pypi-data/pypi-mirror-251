@@ -1,0 +1,100 @@
+[project]
+name = "aec-cli"
+description = "AWS EC2 CLI"
+dynamic = ["version"]
+readme = "README.md"
+license = { file = "LICENSE" }
+keywords = ["AWS", "EC2", "command line", "cli"]
+classifiers = ["License :: OSI Approved :: MIT License"]
+requires-python = ">=3.8"
+dependencies = [
+    "boto3==1.34.19",
+    "importlib_resources==6.1.1",
+    "pytoml==0.1.21",
+    "pytz==2023.3.post1",
+    "requests==2.31.0",
+    "rich==13.7.0",
+    "typing_extensions==4.9.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "build~=1.0",
+    "boto3-stubs[ec2,compute-optimizer,ssm,s3]",
+    "cogapp~=3.3",
+    "dirty-equals~=0.6",
+    "moto[ec2]~=4.2.13",
+    "pre-commit~=3.5",
+    "pyfakefs~=5.1",
+    "pytest~=7.4",
+    "pytest-mock~=3.11",
+    "twine~=4.0",
+]
+
+[project.scripts]
+aec = "aec.main:main"
+
+[project.urls]
+homepage = "https://github.com/seek-oss/aec"
+
+[build-system]
+requires = ["setuptools", "setuptools_scm[toml]", "wheel"]
+
+# enable setuptools_scm to set the version based on git tags
+[tool.setuptools_scm]
+
+# use PyCharm default line length of 120
+
+[tool.black]
+line-length = 120
+
+[tool.pyright]
+venvPath = "."
+venv = ".venv"
+include = ["src", "tests"]
+strictListInference = true
+strictDictionaryInference = true
+strictParameterNoneValue = true
+reportTypedDictNotRequiredAccess = false
+
+[tool.ruff]
+line-length = 120
+
+# rules to enable/ignore
+select = [
+    "F",    # pyflakes
+    "E",    # pycodestyle
+    "W",    # pycodestyle
+    "ANN",  # type annotations
+    "N",    # pep8-naming
+    "B",    # bugbear
+    "I",    # isort
+    "ARG",  # flake8-unused-arguments
+    "SLF",  # flake8-self
+    "UP",   # pyupgrade
+    "FA",   # flake8-future-annotations (for python 3.7/8/9)
+    "PERF", # perflint
+    "RUF",  # ruff-specific
+]
+ignore = [
+    # allow untyped self and cls args, and no return type from dunder methods
+    "ANN101",
+    "ANN102",
+    "ANN204",
+    # allow == True because pandas dataframes overload equality
+    "E712",
+]
+# first-party imports for sorting
+src = ["src"]
+fix = true
+show-fixes = true
+
+[tool.ruff.per-file-ignores]
+# test functions don't need return types
+"tests/*" = ["ANN201", "ANN202"]
+# main.py can have long lines
+"src/aec/main.py" = ["E501"]
+
+[tool.ruff.flake8-annotations]
+# allow *args: Any, **kwargs: Any
+allow-star-arg-any = true
