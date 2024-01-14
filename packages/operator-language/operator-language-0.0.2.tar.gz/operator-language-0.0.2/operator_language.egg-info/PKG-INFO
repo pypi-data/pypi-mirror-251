@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: operator-language
+Version: 0.0.2
+Summary: 自制解释性语言
+Home-page: https://github.com/
+Author: Jianrui Li
+Author-email: lijianrui7560@qq.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+
+# Operator语言教程
+
+Operator是一门只需要符号编辑的编程语言。
+
+而，在Operator中只有两个变量，分别是m和n
+
+结合以下标识符，就能完成一些操作。
+
+```python
+'+' -> m+=1
+'-' -> m-=1
+'*' -> m*=n
+'/' -> m//=n
+'%' -> m%=n
+'^' -> m**=n
+'|' -> m=abs(m)
+'=' -> n=m
+'"' -> n=chr(m)
+'~' -> m,n=n,m
+';' -> print(n,end='')
+':' -> m=input()
+'[...]' -> for i in range(n):...
+'`...`' -> #...
+```
+
+这是作者写的一串Hello World的代码
+```
++++=-^+=-*";
+.++=+++*=/+~^+";+++++++";;
++++";
+=/++~/=-----";
+.+++=-^=+++*-";
+.++=+++*=+*+";
+=+++";
+------";
+--------";
+```
+
+目前作者还在改进嵌套循环的代码，敬请期待~
