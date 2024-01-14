@@ -1,0 +1,7 @@
+MANIFEST.in
+README.md
+setup.py
+tgind.egg-info/PKG-INFO
+tgind.egg-info/SOURCES.txt
+tgind.egg-info/dependency_links.txt
+tgind.egg-info/top_level.txt
