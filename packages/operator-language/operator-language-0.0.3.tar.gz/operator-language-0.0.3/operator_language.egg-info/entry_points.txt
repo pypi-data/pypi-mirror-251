@@ -1,0 +1,2 @@
+[console_scripts]
+op-lang = op_lang.__init__:main
