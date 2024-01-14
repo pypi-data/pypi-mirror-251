@@ -1,0 +1,16 @@
+onnx2onnx/__init__.py,sha256=lSZ0G1URVJET1unb92Zn25mFRYc6yiQzg7l5lUn1Vdw,2343
+onnx2onnx/__main__.py,sha256=pPhCvnFXZLPtfDpY1QD5F8-9yrFTl_QHKC7lsgjrFXg,2213
+onnx2onnx/graph.py,sha256=_zi_x5Vb8P4_IVMyTLYRfRq4i_AgPzbH-6n6J1OJYjc,10839
+onnx2onnx/pass_manager.py,sha256=zI-BUxn9bkFN3khBbX064menZAx6MgpeE8d_2bQQmaY,3171
+onnx2onnx/passes/__init__.py,sha256=SuuRJtHAWX2v9dZ-lemhWImlm8Q-jKDr-NtXsmqR3Io,3426
+onnx2onnx/passes/convert.py,sha256=Hw1o8Pyq5CBfG_BbXKGSQJIGc87Eykkwuv7b4cucnRA,8022
+onnx2onnx/passes/optimize.py,sha256=mrsx6lH9DYJ1rbzoRG0anKrS76DvK-ON8FhXhODPBvw,2617
+onnx2onnx/passes/pattern.py,sha256=9iEdP62GkwjHPAbcDiAj-nbE578_pekJKFU9Be_ELCI,6959
+onnx2onnx/passes/rewriter.py,sha256=aJ71Irxv-KDiaa0aVouqfXAjORPkxPW6TCRcfNbA6bc,7893
+onnx2onnx/passes/transforms.py,sha256=2U2uapBQzNkxoSSX-3tZF0ZeDe_X4_UKg7zm2Fq8JZQ,8916
+onnx2onnx/passes/utils.py,sha256=_iI_VphNxxLeN1Czm5zuc2q3cHP8siUxZczK9cY5a6k,1656
+onnx2onnx-0.2.1.dist-info/entry_points.txt,sha256=5b-RbheB-v_HeHPPUGxAeu0OvJjIIlQgV70T-8kuXrQ,53
+onnx2onnx-0.2.1.dist-info/LICENSE,sha256=LmldnwUZoCZ7a1W3C3meFp4ZnAU3kISnrfDBFgyklEM,1068
+onnx2onnx-0.2.1.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+onnx2onnx-0.2.1.dist-info/METADATA,sha256=mS2UA7tbjXi5UdlM-QcL2GH40jfB8AeCaljV_Ug_x1c,885
+onnx2onnx-0.2.1.dist-info/RECORD,,
