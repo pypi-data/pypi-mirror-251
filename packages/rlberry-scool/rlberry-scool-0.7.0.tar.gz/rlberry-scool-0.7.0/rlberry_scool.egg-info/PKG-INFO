@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: rlberry-scool
+Version: 0.7.0
+Summary: Teaching Reinforcement Learning made easy
+Home-page: https://github.com/rlberry-py
+Author: Inria Scool team
+License: MIT
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Education
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: rlberry
+
+# rlberry-scool
+Teaching Reinforcement Learning made easy.
