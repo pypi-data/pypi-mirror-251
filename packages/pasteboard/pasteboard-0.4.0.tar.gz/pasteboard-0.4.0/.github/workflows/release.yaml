@@ -1,0 +1,166 @@
+name: Release
+
+on:
+  push:
+    branches:
+      - workflow_release
+    tags:
+      - 'v[0-9]+.[0-9]+.[0-9]+'
+      - 'v[0-9]+.[0-9]+.[0-9]+-rc[0-9]+'
+      - 'v[0-9]+.[0-9]+.[0-9]+-alpha'
+      - 'v[0-9]+.[0-9]+.[0-9]+-beta'
+
+jobs:
+  build_release:
+    name: build_release
+    runs-on: macos-latest
+    strategy:
+      matrix:
+        python-version: ["3.8", "3.9", "3.10", "3.11", "3.12"]
+
+    env:
+      MACOSX_DEPLOYMENT_TARGET: '11.0'
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install pypa/build
+        run: python3 -m pip install build
+        shell: bash
+
+      - name: Build a binary wheel and a source tarball
+        id: build
+        run: python3 -m build
+        shell: bash
+
+      - name: Upload the distribution packages
+        uses: actions/upload-artifact@v3
+        with:
+          name: python-package-distributions
+          path: dist/
+
+  create_release:
+    name: create_release
+    needs: ['build_release']
+    runs-on: ubuntu-latest
+    permissions:
+      # IMPORTANT: mandatory for making GitHub Releases
+      # https://docs.github.com/en/actions/using-jobs/assigning-permissions-to-jobs#overview
+      contents: write
+
+    steps:
+      - name: Download the distribution packages
+        uses: actions/download-artifact@v3
+        with:
+          name: python-package-distributions
+          path: dist/
+
+      - name: List the distribution packages
+        run: ls -1 dist/*
+        shell: bash
+
+      - name: Create release
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          ref_name='${{ github.ref_name }}'
+          echo "ref_name: $ref_name"
+
+          # empty arguments
+          set --
+
+          # is this a test release, or a real release?
+          if [[ "$ref_name" == 'workflow_release' ]]; then
+            version='v0.0.0-test'
+            set -- "$@" --target '${{ github.sha }}'
+          else
+            version="$ref_name"
+          fi
+          echo "version: $version"
+
+          # is this a pre-release (-rc*, -alpha, -beta, -test)?
+          if [[ "$version" == *"-"* ]]; then
+            set -- "$@" --prerelease
+          fi
+
+          date=$(env TZ=':America/Los_Angeles' date +'%Y-%m-%d')
+          echo "date: $date"
+
+          echo "args: $@"
+
+          set -x
+          gh release create \
+            "$version" \
+            dist/* \
+            --title "$version ($date)" \
+            --draft \
+            --repo '${{ github.repository }}' \
+            "$@"
+        shell: bash
+
+  publish_release_test:
+    name: publish_release_test
+    needs: ['build_release', 'create_release']
+    runs-on: ubuntu-latest
+
+    environment:
+      name: testpypi
+      url: https://pypi.org/project/pasteboard/
+
+    permissions:
+      # IMPORTANT: mandatory for trusted publishing
+      # https://docs.pypi.org/trusted-publishers/
+      id-token: write
+
+    steps:
+      - name: Download the distribution packages
+        uses: actions/download-artifact@v3
+        with:
+          name: python-package-distributions
+          path: dist/
+
+      - name: List the distribution packages
+        run: ls -1 dist/*
+        shell: bash
+
+      - name: Publish distribution packages to Test PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1.8
+        with:
+          print-hash: true
+          repository-url: https://test.pypi.org/legacy/
+
+  publish_release_real:
+    name: publish_release_real
+    needs: ['build_release', 'create_release', 'publish_release_test']
+    runs-on: ubuntu-latest
+
+    environment:
+      name: pypi
+      url: https://pypi.org/project/pasteboard/
+
+    permissions:
+      # IMPORTANT: mandatory for trusted publishing
+      # https://docs.pypi.org/trusted-publishers/
+      id-token: write
+
+    steps:
+      - name: Download the distribution packages
+        uses: actions/download-artifact@v3
+        with:
+          name: python-package-distributions
+          path: dist/
+
+      - name: List the distribution packages
+        run: ls -1 dist/*
+        shell: bash
+
+      - name: Publish distribution packages to PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1.8
+        with:
+          print-hash: true
