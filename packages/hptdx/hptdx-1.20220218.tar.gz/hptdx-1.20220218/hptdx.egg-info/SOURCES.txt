@@ -1,0 +1,8 @@
+LICENSE
+README.md
+hptdx.py
+setup.py
+hptdx.egg-info/PKG-INFO
+hptdx.egg-info/SOURCES.txt
+hptdx.egg-info/dependency_links.txt
+hptdx.egg-info/top_level.txt
