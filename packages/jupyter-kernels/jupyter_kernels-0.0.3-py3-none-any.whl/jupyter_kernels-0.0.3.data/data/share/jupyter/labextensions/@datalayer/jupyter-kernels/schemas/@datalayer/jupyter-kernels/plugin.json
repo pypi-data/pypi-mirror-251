@@ -1,0 +1,15 @@
+{
+  "jupyter.lab.shortcuts": [],
+  "title": "Jupyter Kernels",
+  "description": "Jupyter Kernels settings.",
+  "type": "object",
+  "properties": {
+    "showInLauncher": {
+      "title": "Show Jupyter Kernels in the launcher",
+      "description": "Show Jupyter Kernels in the launcher",
+      "default": true,
+      "type": "boolean"
+    }
+  },
+  "additionalProperties": false
+}
