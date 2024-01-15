@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/MongoDBDatabasePackage.egg-info/PKG-INFO
+src/MongoDBDatabasePackage.egg-info/SOURCES.txt
+src/MongoDBDatabasePackage.egg-info/dependency_links.txt
+src/MongoDBDatabasePackage.egg-info/requires.txt
+src/MongoDBDatabasePackage.egg-info/top_level.txt
+src/MongoDB_Database_Package/__init__.py
+src/MongoDB_Database_Package/mongo_crud.py
