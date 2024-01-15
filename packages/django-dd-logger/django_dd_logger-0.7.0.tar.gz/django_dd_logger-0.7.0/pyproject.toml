@@ -1,0 +1,71 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "django_dd_logger"
+authors = [
+    {name = "Jacek Broński-Jankowski", email = "contact@jankow.ski"},
+]
+description = "Django logging utilities for Datadog"
+readme = "README.rst"
+requires-python = ">=3.7"
+keywords = ["django", "logging", "datadog", "logging middleware"]
+license = {text = "MIT"}
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+    "JSON-log-formatter",
+    "Django ; python_version >= '3.10'",
+    "Django<5 ; python_version < '3.10'",
+]
+version= "0.7.0"
+
+[project.optional-dependencies]
+dev = [
+    "coverage==7.*",
+    "setuptools",
+    "ruff"
+]
+build = [
+    "build",
+    "setuptools-scm==8.*",
+    "twine==4.*",
+    "wheel==0.42.*",
+]
+docs = [
+    "Sphinx==7.*",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/jacekbj/django-dd-logger"
+"Bug Tracker" = "https://github.com/jacekbj/django-dd-logger/issues"
+
+[tool.distutils.bdist_wheel]
+universal = true
+
+[tool.black]
+line-length = 120
+target-version = ["py37", "py38", "py39", "py310", "py311", "py312"]
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | build
+  | dist
+
+)/
+'''
+
