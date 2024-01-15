@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: apna-experiment-sdk
+Version: 0.4.10
+Summary: This is the SDK for fetching variants in experiments and tracking it to sinks like Bigquery and Mixpanel.
+Home-page: 
+Author: Deval Sethi
+Author-email: devals@apna.co
+Keywords: pip,experiment
