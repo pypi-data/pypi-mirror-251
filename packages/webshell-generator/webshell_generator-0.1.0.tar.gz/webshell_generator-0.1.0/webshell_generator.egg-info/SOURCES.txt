@@ -1,0 +1,11 @@
+README.md
+setup.py
+tests/test_webshell_generator.py
+webshell_generator/__init__.py
+webshell_generator/utils.py
+webshell_generator/webshell.py
+webshell_generator.egg-info/PKG-INFO
+webshell_generator.egg-info/SOURCES.txt
+webshell_generator.egg-info/dependency_links.txt
+webshell_generator.egg-info/requires.txt
+webshell_generator.egg-info/top_level.txt

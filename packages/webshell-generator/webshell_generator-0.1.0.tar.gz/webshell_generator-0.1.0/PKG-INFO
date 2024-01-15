@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: webshell_generator
+Version: 0.1.0
+Summary: A library to generate processed webshell instances
+Author: haruka
+Author-email: admin@haruka.com
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+# Webshell Generator
+
+Webshell Generator is a Python library for generating processed webshell instances.
+
+## Installation
+
+```bash
+pip install webshell_generator
+```
+
+## Usage
+
+```python
+from webshell_generator import get_godzilla_jsp_shell
+
+webshell = get_godzilla_jsp_shell()
+print(webshell.tool)
+# godzilla
+print(webshell.type)
+# jsp
+print(webshell.mode)
+# java_aes_base64
+print(webshell._pass)
+# pass
+print(webshell._key)
+# key
+print(webshell.raw_content)
+# [raw godzilla jsp webshell]
+print(webshell.content)
+# [unicode-encoding godzilla jsp webshell]
+```
