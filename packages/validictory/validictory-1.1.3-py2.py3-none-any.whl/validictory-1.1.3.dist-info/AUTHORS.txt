@@ -1,0 +1,22 @@
+Initially derived from jsonschema, by Ian Lewis and Yusuke Muraoka.
+
+* James Turk - port from jsonschema & additional features & maintenance
+* Silas Sewell - Cosmetic fixes
+* Filip Noetzel - lots of work towards being compatible with the draft-03 spec
+* Kai Lautaportti - blank_by_default
+* Filod Lin - fix for longs, validate as ints
+* John Krauss - ignore additionalProperties with non-dicts
+* Alexandre Conrad - IP address validator
+* Michael Stephens - support for collections.Mapping
+* Simon Weber - doc improvements
+* Ahmed El-Hassany - fix for patternProperties on non-required fields
+* Lowe Thiderman - improved error message for additionalProperties
+* Alfredo Deza - improved SchemaError messages
+* Arthur S. - fix to support Decimal in addition to float
+* Jesse Printz - doc fix
+* Nicola Iarocci - disallow_unknown_properties option
+* Rhett Garber - addition of FieldValidationError
+* Marc Abramowitz - fix for error message when data doesn't match one of several types, fix to allow dict-like types to validate as dicts
+* Alon Horev - fix for disallow_unknown_properties bug
+* Daniel Rech - support for default param
+* Juan Menéndez & James Clemence - fix for patternProperties w/ additionalProperties
