@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: hwetests
+Version: 0.5.9
+Summary: A python package containing two statistical tests for HWE testing: Gibbs Sampling test and a modified Chi Squared test that handles ambiguity
+Home-page: https://github.com/ExtraFlash/HWE_tests_package
+Author: Or Shkuri
+Author-email: orshkuri2000@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+A python package containing two statistical tests for HWE testing: Gibbs Sampling test and a modified Chi Squared test that handles ambiguity
+
+
