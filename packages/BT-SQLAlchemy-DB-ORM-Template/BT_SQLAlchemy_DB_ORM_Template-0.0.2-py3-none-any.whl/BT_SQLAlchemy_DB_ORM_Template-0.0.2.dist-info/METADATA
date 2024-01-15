@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: BT_SQLAlchemy_DB_ORM_Template
+Version: 0.0.2
+Summary: A Semi-Automatic DB-ORM Tool Template That Allows You To Make Your Migration Operations Very Fast With SQLAlchemy
+Author-email: Murat Bilginer <mbilginer@brainytech.net>
+Project-URL: Homepage, https://github.com/MuratBilginerSoft/BrainyTech-SQLAlchemy-DB-ORM-Tool-Template
+Project-URL: Bug Tracker, https://github.com/MuratBilginerSoft/BrainyTech-SQLAlchemy-DB-ORM-Tool-Template/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# BrainyTech-SQLAlchemy-DB-ORM-Tool-Template
+
+
+```
+1. python Manage.py db init
+
+2. python Manage.py db migrate
+
+3. python Manage.py db upgrade
+
+```
