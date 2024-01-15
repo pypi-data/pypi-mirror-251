@@ -1,0 +1,13 @@
+assisted-django/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+assisted-django/__main__.py,sha256=2sgJ-4eLBlXIV4r6iQjEz4K0-tyQOLgZkPtXKrO3np0,7088
+assisted-django/Assist/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+assisted-django/Assist/DjangoApplication.py,sha256=KO3ztubF0xEVi20Lfj1Tw1K8QTqakyzdWutwjctzMfs,9957
+assisted-django/Assist/openAISettings/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+assisted-django/Assist/openAISettings/Prompter.py,sha256=kLsXF9R7ewzbC_sjO886TKGewFVnuenAsRRmmW6F5cg,1250
+assisted-django/Assist/PromptEngine/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+assisted-django/Assist/PromptEngine/BasePromptEngine.py,sha256=xxlnuICUeC6j-0OVIDGJIQeqT_lSmDTkPfvdFBz5_uc,4002
+assisted-django/Assist/PromptEngine/examples.py,sha256=bDEiQMgoUFgzMkIzmyX3VQezWJn-q4u_ITsWzvbl_z0,7138
+assisted-django/Assist/PromptEngine/Prompts.py,sha256=Uik9IB87oicw5-X0KnTx5V1XQcWJltT9HhcSiHq8T8w,2923
+assisted_django-0.2.4.dist-info/METADATA,sha256=ngyx5L14mcRw1YqbWbn81zrvyJvUOiGCt8NR1Lpdnhw,1815
+assisted_django-0.2.4.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+assisted_django-0.2.4.dist-info/RECORD,,
