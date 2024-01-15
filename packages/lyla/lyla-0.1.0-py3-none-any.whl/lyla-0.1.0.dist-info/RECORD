@@ -1,0 +1,10 @@
+lyla/__about__.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+lyla/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lyla/combine_and_flatten.py,sha256=dGToYM0N-uV3aSGzLeThbPakKzQRzGPCv_EwPBgKGkQ,1350
+lyla/extract_authors.py,sha256=MBYyA4qASINGuzZsrfU6RvV5ll2-Aj1CO3bLusyuStI,991
+lyla/figure.py,sha256=lM85f1sgzVtdwEwAgwT7ZEuPT4b1DxBgBTA9v4yywls,5286
+lyla/latex_file_modifier.py,sha256=MtpB9WUq-VUFdtw3-vvR5-bYf4fQY4Pt9wrUTC-db1E,2527
+lyla/pythontex_liaison.py,sha256=DYyAjwWF_g7M31PwMs9NPiJ1T1_Lzyrn4_HpqXXoSLk,3809
+lyla-0.1.0.dist-info/METADATA,sha256=N6zZhx2Pyk775lbGb8opLvidofk5X-PoFwrw59bgYUU,205
+lyla-0.1.0.dist-info/WHEEL,sha256=mRYSEL3Ih6g5a_CVMIcwiF__0Ae4_gLYh01YFNwiq1k,87
+lyla-0.1.0.dist-info/RECORD,,
