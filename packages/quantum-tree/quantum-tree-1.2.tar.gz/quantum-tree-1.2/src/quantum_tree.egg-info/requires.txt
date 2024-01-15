@@ -1,0 +1,5 @@
+numpy
+deap
+scikit-learn
+qiskit
+qiskit-aer
