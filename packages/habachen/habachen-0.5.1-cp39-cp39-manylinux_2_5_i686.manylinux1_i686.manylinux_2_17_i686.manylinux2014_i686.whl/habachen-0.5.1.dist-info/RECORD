@@ -1,0 +1,10 @@
+habachen-0.5.1.dist-info/WHEEL,sha256=7auck-svEXZrYQA6G8t7W86EkmaK9_rNpQ5NVFs60z4,209
+habachen-0.5.1.dist-info/LICENSE,sha256=stzAChExeOHv5iIIuGTIhAyXaC-gMhnJByfuofIICO4,1063
+habachen-0.5.1.dist-info/RECORD,,
+habachen-0.5.1.dist-info/top_level.txt,sha256=vtGibF9sIn_s3OugRlYJD4aMCU_9hGXoAQtQW3e-rBY,9
+habachen-0.5.1.dist-info/METADATA,sha256=Hk8jUA9b32g4FStph5p1KyIp1pk1QRb2IbrvRM0_Im0,937
+habachen/__init__.pyi,sha256=HfE3DAM_k5Rd-fGvGUILKeTPu1uP7jKyGcY813SauC4,4180
+habachen/_habachen.cpython-39-i386-linux-gnu.so,sha256=Q8Oii1mxujs85LsSIKfK6pn1FOHd5zdpHjB0DEjaGG4,77452
+habachen/_version.py,sha256=s8Yq9Om1yBxrMA7xYQ5Y13Paeuxnq99NxhyjuPlnH6A,22
+habachen/__init__.py,sha256=_v4-dys5X1UXOzcPqrPhDi9acJWf0t-2DbrnshO98pA,600
+habachen/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
