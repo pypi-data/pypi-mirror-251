@@ -1,0 +1,6 @@
+unstructured
+unstructured[all-docs]
+langchain
+faiss-cpu
+transformers
+sentence_transformers
