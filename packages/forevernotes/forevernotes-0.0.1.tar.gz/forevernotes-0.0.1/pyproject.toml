@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "forevernotes"
+version = "0.0.1"
+description = "The best way to save and interact with your notes in the terminal"
+authors = ["Elkin Aguas <elkinaguas@gmail.com>"]
+license = "MIT License"
+readme = "README.md"
+homepage = "https://github.com/elkinaguas/forevernotes"
+repository = "https://github.com/elkinaguas/forevernotes"
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/elkinaguas/forevernotes/issues"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+rich = "^13.5.2"
+click = "^8.1.7"
+rich-click = "^1.7.0"
+textual = "^0.41.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+fnt = "forevernotes.cli:cli"
+init_fnt = 'forevernotes.cli:init'

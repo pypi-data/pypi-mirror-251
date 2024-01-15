@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: forevernotes
+Version: 0.0.1
+Summary: The best way to save and interact with your notes in the terminal
+Home-page: https://github.com/elkinaguas/forevernotes
+License: MIT
+Author: Elkin Aguas
+Author-email: elkinaguas@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Requires-Dist: rich (>=13.5.2,<14.0.0)
+Requires-Dist: rich-click (>=1.7.0,<2.0.0)
+Requires-Dist: textual (>=0.41.0,<0.42.0)
+Project-URL: Bug Tracker, https://github.com/elkinaguas/forevernotes/issues
+Project-URL: Repository, https://github.com/elkinaguas/forevernotes
+Description-Content-Type: text/markdown
+
+# forevernotes
+The best way to save and interact with your notes in the terminal.
+
