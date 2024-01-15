@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: util-moderngl-qt
+Version: 0.1.20
+Requires-Dist: moderngl
+Requires-Dist: nptyping
+Requires-Dist: numpy
+Requires-Dist: pyrr
+Requires-Dist: pyqt5

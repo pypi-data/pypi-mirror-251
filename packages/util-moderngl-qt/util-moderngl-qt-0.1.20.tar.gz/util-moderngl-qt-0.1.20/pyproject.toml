@@ -1,0 +1,13 @@
+[project]
+name = "util-moderngl-qt"
+version="0.1.20"
+dependencies = [
+    "moderngl",
+    "nptyping",
+    "numpy",
+    "pyrr",
+    "pyqt5"
+]
+
+[build-system]
+requires = ["setuptools", "wheel"]
