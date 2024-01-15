@@ -1,0 +1,20 @@
+[build-system]
+requires = ["poetry-core>=1.0.0", "poetry-dynamic-versioning>=1.0.0,<2.0.0"]
+build-backend = "poetry_dynamic_versioning.backend"
+
+[tool.poetry]
+name = "notojp-matplotlib"
+version = "1.0.0"
+description = "matplotlib のフォントを Noto Sans CJK に設定する"
+authors = ["Takumasa Nakamura <n.takumasa@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/n-takumasa/notojp-matplotlib"
+packages = [{ include = "notojp_matplotlib" }]
+
+[tool.poetry.dependencies]
+python = ">=3.8.1"
+matplotlib = ">=3.2"
+
+[tool.poetry-dynamic-versioning]
+enable = false
