@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "assisted-django"
+version = "0.1.0"
+description = "Generate an entire django app with models, forms, views, urls, signals, tests and templates using gpt3 or 4"
+authors = ["fauzaanu <hello@fauzaanu.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+openai = "^1.7.2"
+python-dotenv = "^1.0.0"
+
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
