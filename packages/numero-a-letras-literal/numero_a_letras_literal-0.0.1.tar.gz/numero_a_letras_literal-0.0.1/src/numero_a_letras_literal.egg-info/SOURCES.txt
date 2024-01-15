@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/numero_a_letras_literal.egg-info/PKG-INFO
+src/numero_a_letras_literal.egg-info/SOURCES.txt
+src/numero_a_letras_literal.egg-info/dependency_links.txt
+src/numero_a_letras_literal.egg-info/top_level.txt
+test/test_numero_a_letras.py
