@@ -1,0 +1,2 @@
+[console_scripts]
+dblmapi = dblmapi.dblmapi_cli:main
