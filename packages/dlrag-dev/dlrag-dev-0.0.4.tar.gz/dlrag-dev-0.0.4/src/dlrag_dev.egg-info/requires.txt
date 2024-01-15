@@ -1,0 +1,3 @@
+dotenv
+tiktoken
+google-cloud-aiplatform
