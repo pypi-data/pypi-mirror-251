@@ -1,0 +1,103 @@
+Metadata-Version: 2.1
+Name: datafit
+Version: 0.2023.2.13
+Summary: This is a Python package that automates the data preprocessing
+Home-page: https://github.com/SyabAhmad/datafit
+Author: Naeem Ullah, Syed Syab, Hamza Rustam
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy>=1.0
+Requires-Dist: pandas>=1.0
+Requires-Dist: scikit-learn
+
+
+# DataFit: Automated Data Preprocessing in Python
+
+**Note: This package is actively under development and is open source.**
+
+## Overview
+
+DataFit is a powerful Python package developed by Syed Syab and Hamza Rustam for automating data preprocessing tasks. Initiated as part of our Final Year Project at the University of Swat, this tool streamlines the data preprocessing pipeline, making it user-friendly for machine learning engineers and data scientists.
+
+- **Project Initialization Date:** 01/OCT/2023
+- **Expected Project Finalization Date:** 01/Dec/2023 (Initial Release) (Still under development)
+
+## Team Members
+
+1. **Professor Naeem Ullah (Supervisor)**
+    - [Facebook](https://facebook.com/Naeem-Munna?mibextid=PzaGJu)
+    - Email: naeem@uswat.edu.pk
+
+2. **Syed Syab (Student)**
+    - [GitHub](https://github.com/SyabAhmad)
+    - [LinkedIn](https://linkedin.com/SyedSyab)
+    - Email: syab.se@hotmail.com
+
+3. **Hamza Rustam (Student)**
+    - [GitHub](https://github.com/Hamza-Rustam)
+    - [LinkedIn](https://linkedin.com/hamza-rustam-845a2b209)
+    - Email: hs4647213@gmail.com
+
+## Package Functionality
+
+The DataFit package is designed with a user-friendly interface, ensuring accessibility for all users. Its current functionality includes:
+
+- Displaying information about the dataset
+- Handling null values
+- Deleting multiple columns
+- Handling categorical values
+- Normalization
+- Standardization
+- Extracting numeric values
+- Tokenization
+
+## Usage
+
+To use the package, install it using:
+
+```bash
+pip install datafit
+```
+
+Once installed, import it like Pandas and start using it:
+
+```python
+import datafit.datafit as df
+
+# Display information about the data
+df.information(data)
+```
+
+To handle categorical values:
+
+```python
+import datafit.datafit as df
+
+# Specify columns to handle or use None for all columns
+df.handleCategoricalValues(data, ["column1", "column2"])
+```
+
+To extract numerical values from columns:
+
+```python
+import datafit.datafit as df
+
+# Specify columns for extraction
+df.extractValues(data, ["column1", "column2"])
+```
+
+New Updates in **version=0.2023.2.13**:
+
+```Description updated```
+
+**Note:** This package is actively under development. Feel free to share and follow on [GitHub](https://github.com/SyabAhmad) and [LinkedIn](https://linkedin.com/SyedSyab) for updates.
+
+Your support is appreciated!
+
