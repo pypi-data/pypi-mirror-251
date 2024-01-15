@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: del-ls
+Version: 0.1.1
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Dist: nptyping
+Requires-Dist: numpy
+Requires-Python: >=3.7
