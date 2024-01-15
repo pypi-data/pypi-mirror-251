@@ -1,0 +1,12 @@
+setuptools-rust
+openai-whisper
+ffmpeg
+tiktoken
+tokenizers
+torch
+transformers
+google-cloud-aiplatform
+google-generativeai
+nltk
+wordcloud
+matplotlib

@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.py
+AudioSummariser.egg-info/PKG-INFO
+AudioSummariser.egg-info/SOURCES.txt
+AudioSummariser.egg-info/dependency_links.txt
+AudioSummariser.egg-info/entry_points.txt
+AudioSummariser.egg-info/requires.txt
+AudioSummariser.egg-info/top_level.txt
