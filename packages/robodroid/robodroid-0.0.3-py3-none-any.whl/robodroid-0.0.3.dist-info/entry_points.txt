@@ -1,0 +1,3 @@
+[console_scripts]
+robodroid=robodroid.main:main
+
