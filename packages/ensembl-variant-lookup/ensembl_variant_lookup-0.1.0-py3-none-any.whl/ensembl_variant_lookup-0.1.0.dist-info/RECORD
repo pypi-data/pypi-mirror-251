@@ -1,0 +1,14 @@
+ensembl_variant_lookup/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ensembl_variant_lookup/fetch_variants.py,sha256=jQdEmVlcP10Iy-JKezz-eWL51geOcnnmStxBElS-VaU,9431
+ensembl_variant_lookup/images/home.png,sha256=63hL_vm-QJ7ZEukZ4zfbuoYMmhWzuLgKcSIxthAg1aw,92730
+ensembl_variant_lookup/images/single_variant_lookup.png,sha256=yxpima-Ki3aur0StyHI18-SM2CdZeWvr4wXI-I_6nE0,94955
+ensembl_variant_lookup/js/scripts.js,sha256=TozzD7k8Ka1s175u7YkugYOl69nmDrXbsJK12QyZ8B8,547
+ensembl_variant_lookup/static/style.css,sha256=2IiXsYFdGY4ABWPHMjulFn1INTY3Jhk2Ruw9ReiDcBw,214
+ensembl_variant_lookup/static/variants_results.css,sha256=FsfNg2H6azJzbZSD8XJdFbrZQ5hu1-YuOCfGEmq1_k4,796
+ensembl_variant_lookup/templates/batch_results.html,sha256=gOHxXkEX10aYzTyKCoUGtQDhWDoHypOMaVbWbmRE_Ck,7566
+ensembl_variant_lookup/templates/index.html,sha256=tvKLQZsGyfgO8HduzZzHY9ajSCRdGP7OfZ6wEQyWrFM,6540
+ensembl_variant_lookup/templates/region_results.html,sha256=tdS2LLOqLcYAiJaFSgEzyS1yy_XnTSXTrUspe5jPz1w,3632
+ensembl_variant_lookup/templates/variant_results.html,sha256=HayfsQDLPyMzyMntAdA1xYS8kNa1b4iX-mq8Rz0-dbs,5491
+ensembl_variant_lookup-0.1.0.dist-info/METADATA,sha256=T6SKUW98HD5b4PRI9gHZnU97nytTz_7-w670vkUFw8M,3157
+ensembl_variant_lookup-0.1.0.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+ensembl_variant_lookup-0.1.0.dist-info/RECORD,,
