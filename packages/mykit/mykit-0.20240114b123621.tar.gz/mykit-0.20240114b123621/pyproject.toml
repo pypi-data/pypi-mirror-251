@@ -1,0 +1,5 @@
+[project]
+name = "mykit"
+version = "0.20240114-b123621"
+[project.scripts]
+mykit = 'mykit'
