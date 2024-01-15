@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.py
+mailscout/__init__.py
+mailscout/scout.py
+mailscout.egg-info/PKG-INFO
+mailscout.egg-info/SOURCES.txt
+mailscout.egg-info/dependency_links.txt
+mailscout.egg-info/requires.txt
+mailscout.egg-info/top_level.txt
+tests/test_scout.py
