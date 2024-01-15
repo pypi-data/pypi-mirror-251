@@ -1,0 +1,35 @@
+[build-system]
+requires = ["poetry-core>=1.0.0", "poetry-dynamic-versioning>=1.0.0,<2.0.0"]
+build-backend = "poetry_dynamic_versioning.backend"
+
+[tool.poetry]
+name = "janaf"
+version = "0.3.1"
+description = "Python wrapper for NIST-JANAF Thermochemical Tables"
+license = "MIT"
+authors = ["Takumasa Nakamura <n.takumasa@gmail.com>"]
+readme = "README.md"
+repository = "https://github.com/n-takumasa/py-janaf"
+classifiers = [
+    "Topic :: Scientific/Engineering :: Chemistry",
+    "Topic :: Scientific/Engineering :: Physics",
+]
+packages = [{ include = "janaf" }]
+
+[tool.poetry-dynamic-versioning]
+enable = false
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.13"
+numpy = ">=1.25"
+polars = {extras = ["pandas"], version = ">=0.20.3"}
+
+[tool.poetry.group.dev.dependencies]
+pytest = "*"
+black = "*"
+flake8 = "*"
+aiohttp = "*"
+aiofiles = "*"
+nox = "*"
+nox-poetry = "*"
+ipython = "*"
