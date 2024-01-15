@@ -1,0 +1,17 @@
+wheel
+contourpy
+cycler
+fonttools
+Jinja2
+kiwisolver
+MarkupSafe
+matplotlib
+mpld3
+networkx
+numpy
+packaging
+pillow
+pyparsing
+python-dateutil
+scipy
+six
