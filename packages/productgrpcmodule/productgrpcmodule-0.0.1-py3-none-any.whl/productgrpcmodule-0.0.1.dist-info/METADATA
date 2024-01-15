@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: productgrpcmodule
+Version: 0.0.1
+Summary: Instaperq Product grpc package
+Author: Wesam Qaqish
+Author-email: wq@instaperq.ai
+Keywords: python,product grpc package
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+
+This package contains the grpc proto generated files
