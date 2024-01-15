@@ -1,0 +1,7 @@
+aenum==3.*
+stomp.py==8.*
+testcontainers==3.*
+
+[dev]
+coveralls==3.*
+setuptools==69.*

@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: testcontainers-bowerick
+Version: 0.2.0
+Summary: Support multiple Message-oriented Middleware (MoM) protocols (MQTT, STOMP, STOMP via WebSockets, OpenWire) via testcontainers.
+Home-page: https://github.com/ruedigergad/testcontainers-bowerick
+Author: Ruediger Gad
+Author-email: r.c.g@gmx.de
+Keywords: testing,message-oriented middleware,docker,test automation,mqtt,stomp,websockets,openwire
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Operating System :: POSIX
+Requires-Python: >=3.8
+License-File: LICENSE.txt
+Requires-Dist: aenum==3.*
+Requires-Dist: stomp.py==8.*
+Requires-Dist: testcontainers==3.*
+Provides-Extra: dev
+Requires-Dist: coveralls==3.*; extra == "dev"
+Requires-Dist: setuptools==69.*; extra == "dev"

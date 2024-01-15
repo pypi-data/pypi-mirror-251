@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.py
+testcontainers_bowerick/__init__.py
+testcontainers_bowerick/bowerick.py
+testcontainers_bowerick.egg-info/PKG-INFO
+testcontainers_bowerick.egg-info/SOURCES.txt
+testcontainers_bowerick.egg-info/dependency_links.txt
+testcontainers_bowerick.egg-info/requires.txt
+testcontainers_bowerick.egg-info/top_level.txt
+tests/test_bowerick.py
