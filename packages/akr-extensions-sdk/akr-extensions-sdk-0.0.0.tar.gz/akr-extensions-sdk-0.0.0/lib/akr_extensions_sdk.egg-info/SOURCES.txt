@@ -1,0 +1,9 @@
+LICENSE
+setup.cfg
+setup.py
+lib/akr_extensions/__init__.py
+lib/akr_extensions_sdk.egg-info/PKG-INFO
+lib/akr_extensions_sdk.egg-info/SOURCES.txt
+lib/akr_extensions_sdk.egg-info/dependency_links.txt
+lib/akr_extensions_sdk.egg-info/requires.txt
+lib/akr_extensions_sdk.egg-info/top_level.txt
