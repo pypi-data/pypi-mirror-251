@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "SciBib"
+version = "0.1.0"
+description = ""
+authors = ["Gaël Cousin <gcousin333@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "scibib"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+beautifulsoup4 = "^4.12.2"
+feedparser = "^6.0.11"
+rapidfuzz = "^3.5.2"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
