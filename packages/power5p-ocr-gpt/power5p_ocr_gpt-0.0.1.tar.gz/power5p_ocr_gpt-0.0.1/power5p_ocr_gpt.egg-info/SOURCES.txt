@@ -1,0 +1,8 @@
+setup.py
+power5p_ocr_gpt/__init__.py
+power5p_ocr_gpt.egg-info/PKG-INFO
+power5p_ocr_gpt.egg-info/SOURCES.txt
+power5p_ocr_gpt.egg-info/dependency_links.txt
+power5p_ocr_gpt.egg-info/not-zip-safe
+power5p_ocr_gpt.egg-info/requires.txt
+power5p_ocr_gpt.egg-info/top_level.txt
