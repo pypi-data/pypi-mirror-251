@@ -1,0 +1,16 @@
+webshell_generator/__init__.py,sha256=dfWwAFdhgHLVWtZNcrWSZ6QyvN3rnOql-c_n1awPHqQ,416
+webshell_generator/utils.py,sha256=JLChY5xLDoeObH08GKeWQDUckJejCypj2wuBCDZpfuo,10050
+webshell_generator/webshell.py,sha256=E-6dEWd-Ar1yYgQ_1dg9xx8XgDWehMxTEXfmYmY2Zw8,3469
+webshell_generator/webshells/behinder4/default_aes/shell.aspx,sha256=D6qNkN49yO6T8DvxHfbVT5D-EHBbpI3xJr1dv-tGnwk,1988
+webshell_generator/webshells/behinder4/default_aes/shell.jsp,sha256=Ce0rq-7pjXFo5WwtsFn2MKKa3ryFOKaFZakeYWAcfjE,1766
+webshell_generator/webshells/behinder4/default_aes/shell.php,sha256=YCpoLO4MnC2LHzP37O858zvEu1DY5F1uxPig2cHgTJc,274
+webshell_generator/webshells/godzilla/cshap_aes_base64.ashx,sha256=-LUlSzwU7za6uu6EBtcuEHxLQ4kYegbU64hdrj3KHag,1750
+webshell_generator/webshells/godzilla/cshap_aes_base64.aspx,sha256=i1olJtpbnk5MJLVapRriARO6UN40uYLFr3mu5WD7V8I,1412
+webshell_generator/webshells/godzilla/java_aes_base64.jsp,sha256=6cUuZeOazKyoUxiULd8Kb-uzf3RLOCkaXzx1zuTf9jg,3545
+webshell_generator/webshells/godzilla/java_aes_base64.jspx,sha256=HksdfaBT_Kz-UO1ms5WkqDZNbCz_A2kMq7bVJWP7Atw,3276
+webshell_generator/webshells/godzilla/php_xor_base64.php,sha256=2iKkF9fEgYFaRf36nLdMlaivaRBgf2c_40VyK7wPhW8,842
+webshell_generator/webshells/other/define_class_memshell.jsp,sha256=9ZZY2QvhOQ6_X2edL8PdfQ3lOhF-7IdclM2K7umgEK8,806
+webshell_generator-0.1.2.dist-info/METADATA,sha256=gVgQ2I85BrqBQNDSFHvBTPz0_macIk7T3xind7unAV8,792
+webshell_generator-0.1.2.dist-info/WHEEL,sha256=Xo9-1PvkuimrydujYJAjF7pCkriuXBpUPEjma1nZyJ0,92
+webshell_generator-0.1.2.dist-info/top_level.txt,sha256=V7R8vFcGnhg-4IdgkxFOTdcT_ynmr8chh47OsDg_3UU,19
+webshell_generator-0.1.2.dist-info/RECORD,,
