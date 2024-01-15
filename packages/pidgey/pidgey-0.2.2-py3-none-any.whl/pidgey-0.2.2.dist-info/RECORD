@@ -1,0 +1,9 @@
+pidgey-0.2.2.dist-info/METADATA,sha256=68Xaf1omRLj8dGlpMg_wd6qX4NnIxcCm4fRxWJzvORE,2853
+pidgey-0.2.2.dist-info/WHEEL,sha256=N2J68yzZqJh3mI_Wg92rwhw0rtJDFpZj9bwQIMJgaVg,90
+pidgey-0.2.2.dist-info/licenses/LICENSE,sha256=80gqnQBFrM-6Q6p3gK2x_o5CyvgODMmPkUGqHGt28fk,1073
+pidgey/__init__.py,sha256=1r0_gn0HfSJWefxLAPlLoJpqwuVdrQzWlTsiUkV5Pow,634
+pidgey/agama_backend.py,sha256=NhozpMiLlQdJjrAkKkxjCiymdLRgGtoCaLnYJR3HUt8,1206
+pidgey/base.py,sha256=9QsNi0vcbYGH9OEzsDJ_f_lyo-6DO6LXoId1jFKxYGo,1750
+pidgey/gala_backend.py,sha256=etntqThZrF_qYW5Q2pRlxQYmxXIwD8cUVa-vsy2BKX4,740
+pidgey/galpy_backend.py,sha256=xucQygvpTGAPguqTpgI2XQrxlOamwQRxCYr_RvG0lLc,651
+pidgey-0.2.2.dist-info/RECORD,,
