@@ -1,0 +1,14 @@
+tongueswitcher/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tongueswitcher/executor.py,sha256=uMQdMrnG2VFIGzttVSdPU-euWGd1ogzwTmNZxJHmZYs,5494
+tongueswitcher/tweet_level.py,sha256=72GGFSJKUsUyg-xCf7ZjcW92s-8Zmq26E6Jd5EFrXg0,9636
+tongueswitcher/word_level.py,sha256=cdFZx5prDJ9hie3oN6tYwmMeYQXHqSnX5g78isY7OR0,15698
+tongueswitcher/data/clh_pos_editted.json,sha256=3mKkEcBhRwM6oMOkzUasK10nGaYti1nNMMxfKRroePk,8526
+tongueswitcher/data/combined_bigrams.json,sha256=fvufUgJ_BLkzcXtDUfk50MskQmHw265i-SAG6BjHkko,3327574
+tongueswitcher/data/dictionaries.pkl,sha256=WRAlemxOhptb_0tPGBEnjCGcSGKG44GyejmxRN7OJJ4,19332467
+tongueswitcher/data/morphmodel_en.pgz,sha256=wvtvJHe7Q_3PTCMz6waV1gmwA6EqBnGN6OhTxbYwhiE,2628147
+tongueswitcher/data/morphmodel_ger.pgz,sha256=uEjcxO3OeL6-ZKck4tWoDcgLpsCY4jn6rkzSAxCjkMg,1111732
+tongueswitcher/data/morphmodel_geren.pgz,sha256=tetvK9_aOA7egAujigBv1dzMG9NQzuBYk2zGwUi1Lyc,6296579
+tongueswitcher-1.0.3.dist-info/METADATA,sha256=HLNIj3tBECArY1-vYF3KdHlXbdmtix5PZL8nMw8S-YE,3022
+tongueswitcher-1.0.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+tongueswitcher-1.0.3.dist-info/top_level.txt,sha256=hR1zH6qA8tIO9euxFB2m9kbZCxHK0AlgIGKFGHvWPBw,15
+tongueswitcher-1.0.3.dist-info/RECORD,,
