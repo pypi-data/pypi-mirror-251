@@ -1,0 +1,12 @@
+README.md
+setup.py
+easymyai/Ai_Funcs.py
+easymyai/Code_My_AI.py
+easymyai/Ensemble_AI.py
+easymyai/__init__.py
+easymyai.egg-info/PKG-INFO
+easymyai.egg-info/SOURCES.txt
+easymyai.egg-info/dependency_links.txt
+easymyai.egg-info/not-zip-safe
+easymyai.egg-info/requires.txt
+easymyai.egg-info/top_level.txt
