@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: instalocker
+Version: 1.0.0
+Requires-Dist: valclient
+Requires-Dist: colorama
+Requires-Dist: pystyle
+
