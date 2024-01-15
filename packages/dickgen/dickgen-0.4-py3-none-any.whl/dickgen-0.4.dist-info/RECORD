@@ -1,0 +1,10 @@
+dickgen/__init__.py,sha256=FDC9fppj6AEljDVxxBe_59IYzoW7vHURAufOm8iln-8,68
+dickgen/client.py,sha256=wOHyhCpnUUFO4Cn32BHC9clohkrpGXoM_zDfasQ9zdg,5816
+dickgen/lib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dickgen/lib/util/__init__.py,sha256=lW89YvFoaO96mN_dypbZw8Ikxvsh-_NW9DDfvb8mN5o,178
+dickgen/lib/util/headers.py,sha256=CPoNWJpY-SF3UeHE-t_5PKHnFCOTF6lUQAO0bTd2rU4,3892
+dickgen/lib/util/helpers.py,sha256=BjfyvGOLztqif8l-DvuN40g72XE7NJhnTQtruYnaKts,1592
+dickgen-0.4.dist-info/METADATA,sha256=6VTGBc2I_0OqjTi-sIrHjdAPYBJMSQT-jtfvKBzyayw,231
+dickgen-0.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+dickgen-0.4.dist-info/top_level.txt,sha256=9t7OqxNad4lPsyyPJommMR0_V2zhIZ3pVNP4Hydq8u8,8
+dickgen-0.4.dist-info/RECORD,,
