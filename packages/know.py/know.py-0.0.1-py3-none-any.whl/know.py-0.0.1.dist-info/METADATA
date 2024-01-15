@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: know.py
+Version: 0.0.1
+Summary: The Know Framework for Python
+Home-page: https://know.dev
+Author: Haltia.AI
+Author-email: support@haltia.ai
+License: Public Domain
+Project-URL: Bug Tracker, https://github.com/HaltiaAI/know.py/issues
+Project-URL: Changelog, https://github.com/HaltiaAI/know.py/blob/master/CHANGES.md
+Project-URL: Documentation, https://github.com/HaltiaAI/know.py/blob/master/README.md
+Project-URL: Source Code, https://github.com/HaltiaAI/know.py
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: Public Domain
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: ~=3.9
+Description-Content-Type: text/markdown
+License-File: UNLICENSE
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+
+# Know.py: The Know Framework for Python
+
+[![License](https://img.shields.io/badge/license-Public%20Domain-blue.svg)](https://unlicense.org)
+[![Compatibility](https://img.shields.io/badge/python-3.9%2B-blue)](https://pypi.org/project/know.py/)
+[![Package](https://img.shields.io/pypi/v/know.py)](https://pypi.org/project/know.py/)
+
+## Prerequisites
+
+- [Python](https://python.org) 3.9+
+
+## Installation
+
+```shell
+$ pip install know.py
+```
+
+## Examples
+
+### Importing the library
+
+```python
+from know import *
+```
