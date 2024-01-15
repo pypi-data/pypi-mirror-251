@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "fluentui"
+version = "0.0.4"
+description = "pyside6 of fluentui"
+authors = ["baa <baagod@proton.me>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.13"
+pyside6 = "^6.6.1"
+attrs = "^23.2.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
