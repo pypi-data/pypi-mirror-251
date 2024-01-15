@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+__init__.py
+setup.py
+pic/__init__.py
+ryb.egg-info/PKG-INFO
+ryb.egg-info/SOURCES.txt
+ryb.egg-info/dependency_links.txt
+ryb.egg-info/top_level.txt
