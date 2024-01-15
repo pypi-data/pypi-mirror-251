@@ -1,0 +1,10 @@
+akrocansim/J1939.py,sha256=lrxjY_Aj47UoyWSzN1ppDTt-taUZj4pK4ljQ7QpPAeE,33079
+akrocansim/__init__.py,sha256=yRRCnfQTQy5SJac59FLEKj6b3Sqfh2sjxLoDe7MnzaM,83
+akrocansim/__main__.py,sha256=VkKE-FCrl5kzeVcKucmHnzomhpz_VfZDO26JRS4fnM8,42
+akrocansim/cannodes.py,sha256=tntc-_uLgx3S3h8Skax5SB5vi9s7blM7944jNeBBkWo,3224
+akrocansim/config.py,sha256=yjHwABV41lFQbrvrq3k57jP7xnyX8lMSWweqm1QmjB4,9174
+akrocansim/gui.py,sha256=fGP3uM8Q1HQsy9Pvw4fRrFaJuyg6SJ4dcN1eAh1dKVk,14478
+akrocansim-0.4.0.dist-info/LICENSE,sha256=NbxQE_g_MpQzPDfHiCr1W042iMZePQotChNWPYAJ1-s,1083
+akrocansim-0.4.0.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+akrocansim-0.4.0.dist-info/METADATA,sha256=nvQBnkkdQnTBEltvRINrW2xGr1fwg--Z2DXIiUZ16FA,3187
+akrocansim-0.4.0.dist-info/RECORD,,
