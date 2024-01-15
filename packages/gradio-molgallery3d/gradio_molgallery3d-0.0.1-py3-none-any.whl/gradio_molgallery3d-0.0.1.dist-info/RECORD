@@ -1,0 +1,9 @@
+gradio_molgallery3d/__init__.py,sha256=bBiE4efrY8bW23-kOhJE7oqQYtJJ5XPfUc6L_MfsfBo,68
+gradio_molgallery3d/molgallery3d.py,sha256=HRSUAGQx5Pp8vR1qv8KtB6abgwb0IrmFPQd-8ku_4Ok,7101
+gradio_molgallery3d/molgallery3d.pyi,sha256=lMRuoO8TUIoQzI-sesoLjQuIrL7DQhesSncrZNHBCU8,23237
+gradio_molgallery3d/templates/component/index.js,sha256=9I_vx_S-2MNOjGVaarF8b75wtDSd9N4xWRJJ4E-gy1Q,1195220
+gradio_molgallery3d/templates/component/style.css,sha256=cjcY1KZOgS0_1GvWTJECwErS5nAsGHuCt7ru-FefzYQ,14009
+gradio_molgallery3d-0.0.1.dist-info/METADATA,sha256=Si8QmYa6K49jGkWZ5wuzeXY6MXE0XByCS40yjivxoY4,1302
+gradio_molgallery3d-0.0.1.dist-info/WHEEL,sha256=mRYSEL3Ih6g5a_CVMIcwiF__0Ae4_gLYh01YFNwiq1k,87
+gradio_molgallery3d-0.0.1.dist-info/licenses/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+gradio_molgallery3d-0.0.1.dist-info/RECORD,,
