@@ -1,0 +1,13 @@
+lipsgit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lipsgit/__main__.py,sha256=fJBrqGCSokmK-eoHlRSSZ32bQskMWdY8eQo735GRyZc,2857
+lipsgit/console.py,sha256=kngWSKeh-ppa0Njsbfk7puSAEfxMxgYrH6KMZzv1bXU,1734
+lipsgit/defaults.py,sha256=f1t6mg3_5XTti43b4J4JVhkO7jcldvuSSSn8Ry-v-Lg,5709
+lipsgit/exceptions.py,sha256=OUR406NipK-P-vK6fswzxNv8D0ukF1oS8fok2SFM8fs,609
+lipsgit/git.py,sha256=8pbCvPcJ7g34ZEXXta41Lndm96hnA29_LpPBJaW2tBs,1315
+lipsgit/matching.py,sha256=JMmnVmczNa2tjwhV4dfXAOZB9xVegnU9i0NTFCaFErE,1122
+lipsgit/models.py,sha256=rNkYPttsIkL7tiBMtIjXVic1evehQcYK11HPb5Nhjgc,100
+lipsgit/storage.py,sha256=xyMXUeNLTzE8IPhq_P23iSSipdc8VCQ5o61UWTcTaww,2278
+lipsgit-0.1.0.dist-info/LICENSE,sha256=4XYzMuyGILO1ODoCwe8hnfM2VA7SIxBiVxLzrCpOqFM,1069
+lipsgit-0.1.0.dist-info/METADATA,sha256=IHa4aTsIOD9pfZw-9aYBP38bOBU5x84RmyaAKNHUlrg,1212
+lipsgit-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+lipsgit-0.1.0.dist-info/RECORD,,
