@@ -1,0 +1,7 @@
+numpy
+pandas
+cv2
+scikit-learn
+configparser
+tkinter
+opencv-python
