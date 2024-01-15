@@ -1,0 +1,18 @@
+
+[query]
+jmespath
+
+[schema]
+jsonschema
+
+[template]
+Jinja2
+
+[toml]
+tomli-w
+
+[toml:python_version < "3.11"]
+tomli
+
+[yaml]
+pyyaml
