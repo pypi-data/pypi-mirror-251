@@ -1,0 +1,11 @@
+fastapi
+gymnasium>=0.28
+py4j
+ray>=2.9
+ray[rllib]>=2.3.0
+tensorflow
+torch
+uvicorn
+
+[docs]
+sphinx_rtd_theme
