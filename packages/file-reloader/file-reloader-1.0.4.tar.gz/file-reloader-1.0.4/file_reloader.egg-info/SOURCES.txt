@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+file_reloader/__init__.py
+file_reloader.egg-info/PKG-INFO
+file_reloader.egg-info/SOURCES.txt
+file_reloader.egg-info/dependency_links.txt
+file_reloader.egg-info/entry_points.txt
+file_reloader.egg-info/top_level.txt
