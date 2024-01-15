@@ -1,0 +1,2 @@
+[console_scripts]
+pyx = pyx_transpiler.transpile:transpile_path
