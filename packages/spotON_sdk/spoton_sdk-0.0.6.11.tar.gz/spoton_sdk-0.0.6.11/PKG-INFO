@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: spotON_sdk
+Version: 0.0.6.11
+Summary: The spotON_sdk package provides tools for interacting with the spotON API.
+Classifier: License :: OSI Approved :: MIT License
