@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+IntelliScraper.egg-info/PKG-INFO
+IntelliScraper.egg-info/SOURCES.txt
+IntelliScraper.egg-info/dependency_links.txt
+IntelliScraper.egg-info/requires.txt
+IntelliScraper.egg-info/top_level.txt
