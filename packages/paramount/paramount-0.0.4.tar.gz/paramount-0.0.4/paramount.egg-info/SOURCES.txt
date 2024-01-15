@@ -1,0 +1,16 @@
+README.md
+setup.py
+paramount/Train.py
+paramount/__init__.py
+paramount/cli.py
+paramount/library_functions.py
+paramount/record.py
+paramount/thousand_random_words.txt
+paramount.egg-info/PKG-INFO
+paramount.egg-info/SOURCES.txt
+paramount.egg-info/dependency_links.txt
+paramount.egg-info/entry_points.txt
+paramount.egg-info/requires.txt
+paramount.egg-info/top_level.txt
+paramount/pages/Test.py
+paramount/pages/__init__.py
