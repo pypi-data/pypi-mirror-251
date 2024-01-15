@@ -1,0 +1,15 @@
+{
+  "jupyter.lab.shortcuts": [],
+  "title": "Jupyter Environments",
+  "description": "Jupyter Environments settings.",
+  "type": "object",
+  "properties": {
+    "showInLauncher": {
+      "title": "Show Jupyter Environments in the launcher",
+      "description": "Show Jupyter Environments in the launcher",
+      "default": true,
+      "type": "boolean"
+    }
+  },
+  "additionalProperties": false
+}

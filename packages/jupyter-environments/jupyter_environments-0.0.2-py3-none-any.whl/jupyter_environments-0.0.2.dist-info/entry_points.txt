@@ -1,0 +1,3 @@
+[console_scripts]
+jupyter-environments = jupyter_environments.application:main
+jupyter-environments-server = jupyter_environments.serverapplication:main
