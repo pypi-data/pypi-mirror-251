@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: broken-ffmpeg
+Version: 2024.1.15
+Summary: Your Premium Fluent FFmpeg class. Safely bundle, build and run FFmpeg commands
+Home-page: https://github.com/BrokenSource/BrokenFFmpeg
+License: MIT
+Author: Tremeschin
+Author-email: tremeschin@users.noreply.github.com
+Requires-Python: >=3.10,<3.13
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Provides-Extra: all
+Provides-Extra: bundled
+Requires-Dist: attrs (>=23.2.0,<24.0.0)
+Requires-Dist: broken-enum (>=2024.1.15,<2025.0.0)
+Requires-Dist: imageio-ffmpeg (>=0.4.9,<0.5.0) ; extra == "all" or extra == "bundled"
+Project-URL: Documentation, https://github.com/BrokenSource/BrokenFFmpeg
+Project-URL: Repository, https://github.com/BrokenSource/BrokenFFmpeg
+Description-Content-Type: text/markdown
+
+<div align="justify">
+
+<div align="center">
+  <h1>💎 BrokenFFmpeg 💎</h1>
+
+  <img src="https://img.shields.io/github/stars/BrokenSource/BrokenFFmpeg?style=flat" alt="Stars Badge"/>
+  <img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fhits.dwyl.com%2FBrokenSource%2FBrokenFFmpeg.json%3Fshow%3Dunique&label=Visitors&color=blue"/>
+  <img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fhits.dwyl.com%2FBrokenSource%2FBrokenFFmpeg.json&label=Page%20Views&color=blue"/>
+  <img src="https://img.shields.io/github/license/BrokenSource/BrokenFFmpeg?color=blue" alt="License Badge"/>
+  <a href="https://t.me/brokensource">
+    <img src="https://img.shields.io/badge/Telegram-Channel-blue?logo=telegram" alt="Telegram Channel Badge"/>
+  </a>
+  <a href="https://discord.gg/KjqvcYwRHm">
+    <img src="https://img.shields.io/discord/1184696441298485370?label=Discord&color=blue" alt="Discord Badge"/>
+  </a>
+
+  <sub> 👆 Out of the many **Explorers**, you can be among the **Shining** stars who support us! ⭐️ </sub>
+
+  <br>
+
+  Your _Premium_ **Fluent FFmpeg** class. Safely **bundle**, build and run FFmpeg **commands**
+</div>
+
+<br>
+
+# 🔥 Description
+
+<br>
+
+# 🚀 Examples
+
+<br>
+
+# 📦 Installation
+**Pip**:
+```bash
+pip install broken-ffmpeg
+```
+
+**Poetry**:
+```bash
+poetry add broken-ffmpeg
+```
+
+<br>
+
+# ⚖️ License
+**Check [/BrokenSource](https://github.com/BrokenSource/BrokenSource)** for the License of the Code, Assets, Projects and User Generated Content.
+
+</div>
