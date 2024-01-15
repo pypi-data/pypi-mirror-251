@@ -1,0 +1,194 @@
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins/Example Device - Sensor.indigoPlugin'
+Successfully removed quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins/Example Device - Sensor.indigoPlugin
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins/DIRECTV DVR Control.indigoPlugin'
+Successfully removed quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins/DIRECTV DVR Control.indigoPlugin
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins/LEDeffects.indigoPlugin'
+Successfully removed quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins/LEDeffects.indigoPlugin
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins/Multitool.indigoPlugin'
+Successfully removed quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins/Multitool.indigoPlugin
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins/Virtual Devices.indigoPlugin'
+Successfully removed quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins/Virtual Devices.indigoPlugin
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins/QuarantineTrigger.indigoPlugin'
+Successfully removed quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins/QuarantineTrigger.indigoPlugin
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins/SunRise.indigoPlugin'
+Successfully removed quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins/SunRise.indigoPlugin
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins/Example Device - Relay and Dimmer.indigoPlugin'
+Successfully removed quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins/Example Device - Relay and Dimmer.indigoPlugin
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins/Example Device - Thermostat.indigoPlugin'
+Successfully removed quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins/Example Device - Thermostat.indigoPlugin
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins/ESPHome4Indigo.indigoPlugin'
+Successfully removed quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins/ESPHome4Indigo.indigoPlugin
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins/Email+.indigoPlugin'
+Successfully removed quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins/Email+.indigoPlugin
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins/WeatherFlow.indigoPlugin'
+Successfully removed quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins/WeatherFlow.indigoPlugin
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins/XBMC.indigoPlugin'
+Successfully removed quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins/XBMC.indigoPlugin
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins/Example Device - Sprinkler.indigoPlugin'
+Successfully removed quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins/Example Device - Sprinkler.indigoPlugin
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins/Timers and Pesters.indigoPlugin'
+Successfully removed quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins/Timers and Pesters.indigoPlugin
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins/Sensor Stats.indigoPlugin'
+Successfully removed quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins/Sensor Stats.indigoPlugin
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins/Beacon.indigoPlugin'
+Successfully removed quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins/Beacon.indigoPlugin
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins/Occupatum.indigoPlugin'
+Successfully removed quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins/Occupatum.indigoPlugin
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins/Masquerade 3.indigoPlugin'
+Successfully removed quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins/Masquerade 3.indigoPlugin
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/Cynical Behaviors.indigoPlugin'
+Successfully removed quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/Cynical Behaviors.indigoPlugin
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/ZwaveWatcher.indigoPlugin'
+Successfully removed quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/ZwaveWatcher.indigoPlugin
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/SipuraVOIP.indigoPlugin'
+Successfully removed quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/SipuraVOIP.indigoPlugin
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/DSC Alarm.indigoPlugin'
+Successfully removed quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/DSC Alarm.indigoPlugin
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/Growl.indigoPlugin'
+Successfully removed quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/Growl.indigoPlugin
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/WLED.indigoPlugin'
+Successfully removed quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/WLED.indigoPlugin
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/Tesla Control.indigoPlugin'
+Successfully removed quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/Tesla Control.indigoPlugin
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/EmbyPlugin.indigoPlugin'
+Successfully removed quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/EmbyPlugin.indigoPlugin
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/Volvo.indigoPlugin'
+Successfully removed quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/Volvo.indigoPlugin
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/ActronQUE.indigoPlugin'
+Successfully removed quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/ActronQUE.indigoPlugin
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/HarmonyHub.indigoPlugin'
+Successfully removed quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/HarmonyHub.indigoPlugin
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/GhostXML.indigoPlugin'
+Successfully removed quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/GhostXML.indigoPlugin
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/Pioneer Receiver.indigoPlugin'
+Successfully removed quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/Pioneer Receiver.indigoPlugin
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/EPS Alarm Clock.indigoPlugin'
+Successfully removed quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/EPS Alarm Clock.indigoPlugin
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/Sonos.indigoPlugin'
+Failed to remove quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/Sonos.indigoPlugin:
+xattr: [Errno 13] Permission denied: '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/Sonos.indigoPlugin/Contents/Server Plugin/lame/intel/lame'
+xattr: [Errno 13] Permission denied: '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/Sonos.indigoPlugin/Contents/Server Plugin/lame/intel/lame'
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/thingspeak.indigoPlugin'
+Successfully removed quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/thingspeak.indigoPlugin
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/BlueIris.indigoPlugin'
+Successfully removed quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/BlueIris.indigoPlugin
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/foscam.indigoPlugin'
+Successfully removed quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/foscam.indigoPlugin
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/piBeacon.indigoPlugin'
+Successfully removed quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/piBeacon.indigoPlugin
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/ScheduleCatchup.indigoPlugin'
+Successfully removed quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/ScheduleCatchup.indigoPlugin
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/Hue Lights.indigoPlugin'
+Successfully removed quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/Hue Lights.indigoPlugin
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/Fibaro RGB Lights.indigoPlugin'
+Successfully removed quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/Fibaro RGB Lights.indigoPlugin
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/WinRemote.indigoPlugin'
+Successfully removed quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/WinRemote.indigoPlugin
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/iRobot-Roomba.indigoPlugin'
+Successfully removed quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/iRobot-Roomba.indigoPlugin
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/miniPLOT.indigoPlugin'
+Successfully removed quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/miniPLOT.indigoPlugin
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/TeslaBattery.indigoPlugin'
+Successfully removed quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/TeslaBattery.indigoPlugin
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/HPiLO.indigoPlugin'
+Successfully removed quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/HPiLO.indigoPlugin
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/Timed Devices.indigoPlugin'
+Successfully removed quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/Timed Devices.indigoPlugin
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/OpenAPLR.indigoPlugin'
+Successfully removed quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/OpenAPLR.indigoPlugin
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/WeatherFlow.indigoPlugin'
+Successfully removed quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/WeatherFlow.indigoPlugin
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/Global Property Manager.indigoPlugin'
+Successfully removed quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/Global Property Manager.indigoPlugin
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/EnphaseEnvoy.indigoPlugin'
+Successfully removed quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/EnphaseEnvoy.indigoPlugin
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/EPS Security Manager.indigoPlugin'
+Successfully removed quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/EPS Security Manager.indigoPlugin
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/Phidgets.indigoPlugin'
+Successfully removed quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/Phidgets.indigoPlugin
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/PowerSave.indigoPlugin'
+Successfully removed quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/PowerSave.indigoPlugin
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/Image Analysis.indigoPlugin'
+Successfully removed quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/Image Analysis.indigoPlugin
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/Cynical SecuritySpy.indigoPlugin'
+Successfully removed quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/Cynical SecuritySpy.indigoPlugin
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/Cynical Network.indigoPlugin'
+Successfully removed quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/Cynical Network.indigoPlugin
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/iFindFriendsMini.indigoPlugin'
+Successfully removed quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/iFindFriendsMini.indigoPlugin
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/NEST Home 3.indigoPlugin'
+Successfully removed quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/NEST Home 3.indigoPlugin
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/Cynical Weather.indigoPlugin'
+Successfully removed quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/Cynical Weather.indigoPlugin
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/ParadoxAlarm.indigoPlugin'
+Successfully removed quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/ParadoxAlarm.indigoPlugin
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/Alexa.indigoPlugin'
+Successfully removed quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/Alexa.indigoPlugin
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/RFXCOM.indigoPlugin'
+Successfully removed quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/RFXCOM.indigoPlugin
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/INDIGOplotD.indigoPlugin'
+Successfully removed quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/INDIGOplotD.indigoPlugin
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/Cynical Caché.indigoPlugin'
+Successfully removed quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/Cynical Caché.indigoPlugin
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/Airfoil Pro.indigoPlugin'
+Successfully removed quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/Airfoil Pro.indigoPlugin
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/EPS Device Extensions.indigoPlugin'
+Successfully removed quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/EPS Device Extensions.indigoPlugin
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/VSS.indigoPlugin'
+Successfully removed quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/VSS.indigoPlugin
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/geckoSpa.indigoPlugin'
+Successfully removed quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/geckoSpa.indigoPlugin
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/NOAA Weather.indigoPlugin'
+Successfully removed quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/NOAA Weather.indigoPlugin
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/Simplisafe.indigoPlugin'
+Successfully removed quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/Simplisafe.indigoPlugin
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/SQL Logger.indigoPlugin'
+Successfully removed quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/SQL Logger.indigoPlugin
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/EasyDAQ USB Relay Cards.indigoPlugin'
+Successfully removed quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/EasyDAQ USB Relay Cards.indigoPlugin
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/PluginUpdater.indigoPlugin'
+Successfully removed quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/PluginUpdater.indigoPlugin
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/Cynical Calendars.indigoPlugin'
+Successfully removed quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/Cynical Calendars.indigoPlugin
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/ZoneManager.indigoPlugin'
+Successfully removed quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/ZoneManager.indigoPlugin
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/HomeKitLink-Siri.indigoPlugin'
+Successfully removed quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/HomeKitLink-Siri.indigoPlugin
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/EPS HomeKit Bridge.indigoPlugin'
+Successfully removed quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/EPS HomeKit Bridge.indigoPlugin
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/Alexa-Hue Bridge.indigoPlugin'
+Successfully removed quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/Alexa-Hue Bridge.indigoPlugin
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/iMessage.indigoPlugin'
+Successfully removed quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/iMessage.indigoPlugin
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/DomoPad Mobile Client Plugin.indigoPlugin'
+Successfully removed quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/DomoPad Mobile Client Plugin.indigoPlugin
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/Announcer.indigoPlugin'
+Successfully removed quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/Announcer.indigoPlugin
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/Airfoil.indigoPlugin'
+Successfully removed quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/Airfoil.indigoPlugin
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/WeatherSnoop.indigoPlugin'
+Successfully removed quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/WeatherSnoop.indigoPlugin
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/iTunes.indigoPlugin'
+Successfully removed quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/iTunes.indigoPlugin
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/appleTV.indigoPlugin'
+Successfully removed quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/appleTV.indigoPlugin
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/Onkyo Network Remote.indigoPlugin'
+Successfully removed quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/Onkyo Network Remote.indigoPlugin
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/DeepQuestAI.indigoPlugin'
+Successfully removed quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/DeepQuestAI.indigoPlugin
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/User Scripts.indigoPlugin'
+Failed to remove quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/User Scripts.indigoPlugin:
+xattr: [Errno 13] Permission denied: '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/User Scripts.indigoPlugin/Contents/.svn/entries'
+xattr: [Errno 13] Permission denied: '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/User Scripts.indigoPlugin/Contents/.svn/props/Info.plist.svn-work'
+xattr: [Errno 13] Permission denied: '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/User Scripts.indigoPlugin/Contents/Menu Items/.svn/entries'
+xattr: [Errno 13] Permission denied: '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/User Scripts.indigoPlugin/Contents/Menu Items/.svn/props/AppleScript Hello World.scpt.svn-work'
+xattr: [Errno 13] Permission denied: '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/User Scripts.indigoPlugin/.svn/entries'
+xattr: [Errno 13] Permission denied: '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/User Scripts.indigoPlugin/Contents/.svn/entries'
+xattr: [Errno 13] Permission denied: '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/User Scripts.indigoPlugin/Contents/.svn/props/Info.plist.svn-work'
+xattr: [Errno 13] Permission denied: '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/User Scripts.indigoPlugin/Contents/Menu Items/.svn/entries'
+xattr: [Errno 13] Permission denied: '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/User Scripts.indigoPlugin/Contents/Menu Items/.svn/props/AppleScript Hello World.scpt.svn-work'
+xattr: [Errno 13] Permission denied: '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/User Scripts.indigoPlugin/.svn/entries'
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/iCal Alarm Processor.indigoPlugin'
+Successfully removed quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/iCal Alarm Processor.indigoPlugin
+Trying the following: /usr/bin/xattr -rd com.apple.quarantine '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/uniFiAP.indigoPlugin'
+Successfully removed quarantine attribute from /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/uniFiAP.indigoPlugin
