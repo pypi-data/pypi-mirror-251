@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: pcodec
+Version: 0.0.0
+Requires-Dist: numpy
+Summary: Good compression for numerical sequences
+Keywords: compression,numerical
+Author-email: mwlon <m.w.loncaric@gmail.com>
+License: Apache-2.0
+Project-URL: Repository, https://github.com/mwlon/pcodec
