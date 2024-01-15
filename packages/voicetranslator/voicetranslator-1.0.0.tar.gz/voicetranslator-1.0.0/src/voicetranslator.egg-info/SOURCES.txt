@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/voicetranslator/__init__.py
+src/voicetranslator/_voicetranslator.py
+src/voicetranslator/libcurl-x64.dll
+src/voicetranslator/voicetranslator.exe
+src/voicetranslator.egg-info/PKG-INFO
+src/voicetranslator.egg-info/SOURCES.txt
+src/voicetranslator.egg-info/dependency_links.txt
+src/voicetranslator.egg-info/top_level.txt
