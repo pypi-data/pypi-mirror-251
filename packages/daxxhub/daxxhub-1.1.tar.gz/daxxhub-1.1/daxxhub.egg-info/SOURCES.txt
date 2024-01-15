@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+daxxhub/__init__.py
+daxxhub/daxxhub.otf
+daxxhub/error404
+daxxhub.egg-info/PKG-INFO
+daxxhub.egg-info/SOURCES.txt
+daxxhub.egg-info/dependency_links.txt
+daxxhub.egg-info/requires.txt
+daxxhub.egg-info/top_level.txt
