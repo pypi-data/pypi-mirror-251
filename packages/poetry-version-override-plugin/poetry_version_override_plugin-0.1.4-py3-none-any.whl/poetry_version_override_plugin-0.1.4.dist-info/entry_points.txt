@@ -1,0 +1,3 @@
+[poetry.application.plugin]
+poetry-version-override-plugin=poetry_version_override_plugin.plugin:VersionOverridePlugin
+

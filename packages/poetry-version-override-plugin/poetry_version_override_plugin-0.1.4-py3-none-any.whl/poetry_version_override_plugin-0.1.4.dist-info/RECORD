@@ -1,0 +1,7 @@
+poetry_version_override_plugin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+poetry_version_override_plugin/plugin.py,sha256=wCY4XNZ606z2EnXPGQ4-5SqRLj8lactXI6r4B2IphLc,2935
+poetry_version_override_plugin-0.1.4.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+poetry_version_override_plugin-0.1.4.dist-info/METADATA,sha256=ItpjM16eIEZOArqJf9UM4cuXK3-JcusycZcTIJsHfV0,2541
+poetry_version_override_plugin-0.1.4.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+poetry_version_override_plugin-0.1.4.dist-info/entry_points.txt,sha256=3VudkfQ7WETVMZo8Kw0m_U3PPN39k1vNO1hwGz5vTUE,120
+poetry_version_override_plugin-0.1.4.dist-info/RECORD,,
