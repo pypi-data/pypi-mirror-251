@@ -1,0 +1,57 @@
+[tool.poetry]
+name = "poetry-version-override-plugin"
+version = "0.1.4"
+description = "A Poetry plugin to override a version in a pyproject.toml from environment variable or build and publish command option"
+authors = ["Michal Nowikowski <godfryd@gmail.com>"]
+license = "APACHE 2.0"
+readme = "README.md"
+packages = [{include = "poetry_version_override_plugin"}]
+homepage = "https://github.com/godfryd/poetry-version-override-plugin"
+repository = "https://github.com/godfryd/poetry-version-override-plugin"
+keywords = ["poetry", "poetry-plugin", "plugin", "version", "version-override"]
+classifiers = [
+    "Topic :: Software Development",
+    "Topic :: System :: Systems Administration",
+    "Topic :: Utilities",
+]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<4"
+poetry = ">=1.2.0a1"
+toml = "^0.10.2"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.plugins."poetry.application.plugin"]
+poetry-version-override-plugin= "poetry_version_override_plugin.plugin:VersionOverridePlugin"
+
+[tool.ruff]
+exclude = [
+    ".git",
+    ".ruff_cache",
+    ".venv",
+    "dist",
+]
+line-length = 88
+indent-width = 4
+
+# Assume Python 3.8
+target-version = "py38"
+
+[tool.ruff.lint]
+fixable = ["ALL"]
+unfixable = []
+
+# Allow unused variables when underscore-prefixed.
+dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+line-ending = "auto"
