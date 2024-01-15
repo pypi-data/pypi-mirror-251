@@ -1,0 +1,3 @@
+[console_scripts]
+unitok = UniTok.__main__:main
+
