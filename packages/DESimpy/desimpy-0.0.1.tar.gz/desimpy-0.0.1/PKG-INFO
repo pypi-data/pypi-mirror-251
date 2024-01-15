@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: DESimpy
+Version: 0.0.1
+Summary: A discrete event simulation environment in Python.
+Project-URL: Homepage, https://github.com/pypa/DESimpy
+Project-URL: Issues, https://github.com/pypa/DESimpy/issues
+Author-email: Galen Seilis <galen.seilis@seilis.ca>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# DESimpy
+Discrete event simulation in Python (DESimpy).
