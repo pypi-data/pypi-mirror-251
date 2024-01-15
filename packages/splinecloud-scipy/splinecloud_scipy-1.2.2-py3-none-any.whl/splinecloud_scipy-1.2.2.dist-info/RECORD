@@ -1,0 +1,9 @@
+splinecloud_scipy/__init__.py,sha256=s_PZJCwjmuVkW4_JwEt4G7edf_fAaWYGzjS-TZDqV1k,177
+splinecloud_scipy/api_client.py,sha256=kzfH7C3ZA8dh_WCDqTTo8NGr-OLGfvI-8dnLsVsZbcM,1912
+splinecloud_scipy/parametric_spline.py,sha256=0mZ4JG0YsG4BxeYrcry2iRXBlIHSQDJtn5B2X5_EPbo,3214
+splinecloud_scipy/piecewise_polynomial.py,sha256=EG3OuhU-VPm_rUb4aBjs3UxrweAWBE8Pi8upEPIaIvQ,3929
+splinecloud_scipy-1.2.2.dist-info/LICENSE,sha256=HkjSXpgANBiOSpYKHxaivcZkYt7SPdTUgzAwYhXSwpE,1068
+splinecloud_scipy-1.2.2.dist-info/METADATA,sha256=3PIZ2Ea3WK9j6TfblGd_Go6KJmgMssFhxnLD7ROdCRQ,4016
+splinecloud_scipy-1.2.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+splinecloud_scipy-1.2.2.dist-info/top_level.txt,sha256=icy9EwRsOz6DLejx4KNXna_6ZOKgV0QBxCfuwukEtR8,18
+splinecloud_scipy-1.2.2.dist-info/RECORD,,
