@@ -1,0 +1,4 @@
+[console_scripts]
+elf2rel = pyelf2rel.elf2rel:entry_ttyd_tools
+makelst = pyelf2rel.makelst:entry
+pyelf2rel = pyelf2rel.elf2rel:entry
