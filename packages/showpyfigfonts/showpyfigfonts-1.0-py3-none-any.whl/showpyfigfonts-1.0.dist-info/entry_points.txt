@@ -1,0 +1,2 @@
+[console_scripts]
+showpyfigfonts = showpyfigfonts:main
