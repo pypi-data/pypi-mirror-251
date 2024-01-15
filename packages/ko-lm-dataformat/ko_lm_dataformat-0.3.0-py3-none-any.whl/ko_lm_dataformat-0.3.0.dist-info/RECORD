@@ -1,0 +1,12 @@
+ko_lm_dataformat/__init__.py,sha256=OBYU11zZmKI6PQDweS2XjNIxt29ZhRdA4Bp2xmDFGyM,210
+ko_lm_dataformat/archive.py,sha256=TNCfZNjiMKoA0Hx6JsXsuRAv9DwTLFm07s7XPEGNj9Y,7614
+ko_lm_dataformat/reader.py,sha256=NdPOh2ifUFnV2FMyXvzKFbV90GkVhJwpZ8ZjUS3zgdk,6130
+ko_lm_dataformat/sentence_cleaner.py,sha256=RPODG7mMbU6G7a5YFesWC6QpKVLA2qQCDebOdaeAD3c,1045
+ko_lm_dataformat/sentence_splitter.py,sha256=bxYtmXZKW8lPAGF8UEIuoOwqaSCG1IrZD0A1J_PfHvA,1134
+ko_lm_dataformat/utils.py,sha256=KMxC8GLGJNz6IT6ynhLPPRy2o4PHipPAxUWwn1Zq4fU,3837
+ko_lm_dataformat/version.txt,sha256=2RXMldbKj0euKXcT7UbU5cXZnd0p_Dxh4mO98wXytbA,6
+ko_lm_dataformat-0.3.0.dist-info/LICENSE,sha256=vMqotsCflOgfBmluF52-BYRku9-8gjttScraHXHoSsM,1022
+ko_lm_dataformat-0.3.0.dist-info/METADATA,sha256=gIl1sfHCKXScGU-nS3Vax_ZYke6N0cADnENCYWjDp6Q,3152
+ko_lm_dataformat-0.3.0.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+ko_lm_dataformat-0.3.0.dist-info/top_level.txt,sha256=O75ETwNb0XAelJpT5jxIDXuPhK4P-45nvF6vq7IPJNg,17
+ko_lm_dataformat-0.3.0.dist-info/RECORD,,
