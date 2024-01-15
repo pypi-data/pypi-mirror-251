@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: plunge
+Version: 0.0.7
+Summary: Presenting additional features for Data Analysis.
+Project-URL: Homepage, https://github.com/gstvortiz/plunge
+Project-URL: Issues, https://github.com/gstvortiz/plunge/issues
+Author-email: Gustavo Ortiz <gstvortiz@hotmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10.12
+Description-Content-Type: text/markdown
+
+# Plunge
+
+New functionalities for Data Analysis, leveraging the capabilities of Numpy, Pandas, Matplotlib, Seaborn and Scikit-Learn libraries.
