@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: imagemerge
+Version: 0.0.1
+Summary: Combine two types of images
+Home-page: https://github.com/tomo-5/image_merge
+Author: tomona_nagata
+Author-email: s2122044@stu.musashino-u.ac.jp
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/ytakefuji/counting-for-entomologists
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# image_merge
+This displays a composite of the two images from the average of the two images.
+
+

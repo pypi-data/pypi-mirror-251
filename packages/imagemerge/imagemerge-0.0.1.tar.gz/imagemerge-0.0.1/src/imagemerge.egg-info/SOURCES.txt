@@ -1,0 +1,8 @@
+README.md
+setup.py
+src/image_merge.py
+src/imagemerge.egg-info/PKG-INFO
+src/imagemerge.egg-info/SOURCES.txt
+src/imagemerge.egg-info/dependency_links.txt
+src/imagemerge.egg-info/entry_points.txt
+src/imagemerge.egg-info/top_level.txt
