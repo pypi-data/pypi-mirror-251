@@ -1,0 +1,5 @@
+pymilter>=1.5
+jsonschema
+netaddr
+beautifulsoup4[lxml]
+peewee
