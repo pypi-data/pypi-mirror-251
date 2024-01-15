@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: AudioSummariser
+Version: 0.1.0
+Summary: Summarises the text generated from the audio files for quicker resolution. The audio files are typically the customer support recordings for now but the usecase can be extended to more dimensions. Sentiment is analysed and depicted visually.
+Home-page: https://github.com/hardik-goel/Audio-Summariser
+Author: Hardik Goel
+Author-email: hardik.goel214@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE.txt
+Requires-Dist: setuptools-rust
+Requires-Dist: openai-whisper
+Requires-Dist: ffmpeg
+Requires-Dist: tiktoken
+Requires-Dist: tokenizers
+Requires-Dist: torch
+Requires-Dist: transformers
+Requires-Dist: google-cloud-aiplatform
+Requires-Dist: google-generativeai
+Requires-Dist: nltk
+Requires-Dist: wordcloud
+Requires-Dist: matplotlib
+
+UNKNOWN
+
