@@ -1,0 +1,9 @@
+calculator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+calculator/calculator.py,sha256=ZC-UT0nprmL19y9r4PwpURSkwoDE5T_0ELMXRrfESkA,909
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_calculator.py,sha256=jlLJ0OtHYHPIWaqZLtuFYj9x3TZIHmriWJoFGcAfheo,749
+turing_calculator_package-0.1.dist-info/LICENSE.txt,sha256=_qtMJaYmGvzGjs-Jb7r3mI4IuABmUjmR8er2DYrDBWk,1058
+turing_calculator_package-0.1.dist-info/METADATA,sha256=Hh5wFzshg0RLBVDQ5LFth-tQe3Z0xQ_iQfpzV87fMI4,864
+turing_calculator_package-0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+turing_calculator_package-0.1.dist-info/top_level.txt,sha256=GoS1GtsfF-DWcf0WeD4YxqZeXEatIadzXaCeufUiADc,17
+turing_calculator_package-0.1.dist-info/RECORD,,
