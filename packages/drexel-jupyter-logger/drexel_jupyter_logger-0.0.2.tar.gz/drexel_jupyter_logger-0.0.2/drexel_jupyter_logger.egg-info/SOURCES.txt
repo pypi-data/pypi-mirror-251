@@ -1,0 +1,8 @@
+setup.py
+drexel_jupyter_logger/__init__.py
+drexel_jupyter_logger/logger.py
+drexel_jupyter_logger.egg-info/PKG-INFO
+drexel_jupyter_logger.egg-info/SOURCES.txt
+drexel_jupyter_logger.egg-info/dependency_links.txt
+drexel_jupyter_logger.egg-info/requires.txt
+drexel_jupyter_logger.egg-info/top_level.txt
