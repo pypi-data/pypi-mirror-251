@@ -1,0 +1,13 @@
+.hgtags
+CHANGELOG
+MANIFEST.in
+README
+setup.py
+tox.ini
+/home/ced/Projects/coda/build/lib/febelfin_coda.egg-info/PKG-INFO
+/home/ced/Projects/coda/build/lib/febelfin_coda.egg-info/SOURCES.txt
+/home/ced/Projects/coda/build/lib/febelfin_coda.egg-info/dependency_links.txt
+/home/ced/Projects/coda/build/lib/febelfin_coda.egg-info/top_level.txt
+coda/CODA.txt
+coda/__init__.py
+coda/test.py
