@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: lyla
+Version: 0.1.0
+Author-email: golmschenk <greg@olmschenk.com>
+Requires-Python: >=3.9
+Requires-Dist: bokeh>=3.0.0
+Requires-Dist: cairosvg>=2.5.2
+Requires-Dist: pytest>=7.1.3
