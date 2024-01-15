@@ -1,0 +1,8 @@
+LICENSE
+README.md
+hpglobal.py
+setup.py
+hpglobal.egg-info/PKG-INFO
+hpglobal.egg-info/SOURCES.txt
+hpglobal.egg-info/dependency_links.txt
+hpglobal.egg-info/top_level.txt
