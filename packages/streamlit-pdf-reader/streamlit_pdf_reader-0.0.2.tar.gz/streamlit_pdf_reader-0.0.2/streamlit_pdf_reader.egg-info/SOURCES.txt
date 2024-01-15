@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+streamlit_pdf_reader/__init__.py
+streamlit_pdf_reader.egg-info/PKG-INFO
+streamlit_pdf_reader.egg-info/SOURCES.txt
+streamlit_pdf_reader.egg-info/dependency_links.txt
+streamlit_pdf_reader.egg-info/requires.txt
+streamlit_pdf_reader.egg-info/top_level.txt
