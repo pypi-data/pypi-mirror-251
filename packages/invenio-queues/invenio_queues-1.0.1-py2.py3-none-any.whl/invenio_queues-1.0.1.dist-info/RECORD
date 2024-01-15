@@ -1,0 +1,15 @@
+invenio_queues/__init__.py,sha256=CUNbQtjE1eo-mgs-i7XbGACjIhr9t-dieGK0ELss-Wo,3348
+invenio_queues/cli.py,sha256=w-_lf4Zq1gKAlmiWIDY8LisvQ-4QDUMIcyMyqkgio7g,2049
+invenio_queues/config.py,sha256=73-VW5BOrHUWQeVNW5TS1Urq8ZBGnqcMawZLgWxzftE,752
+invenio_queues/errors.py,sha256=RNXeRzFPMWsBmHRCvpYAtybrUNkb8ByVvBf6elVnk4Y,371
+invenio_queues/ext.py,sha256=361vtKHlbDezInSyRE_G5p-t5JtEZDkvJ8vkKZcUPXI,3240
+invenio_queues/proxies.py,sha256=eLGYe-Fzek_qmOjoItNUtu7QvK-iQFHnrrwToWGUFFM,425
+invenio_queues/queue.py,sha256=dV0myWfFiIY3O6onS9Wnb88agq-k2JrsZVeBJSaM5hw,3446
+invenio_queues/utils.py,sha256=4EM9QISy8zbec7TysD_01cvTMj9qqZ4eydYRunqIdho,620
+invenio_queues-1.0.1.dist-info/AUTHORS.rst,sha256=BS99KhaQg0MPVf5s2E6Lc5WzBgLVWLqHjMaNPjEaFzQ,308
+invenio_queues-1.0.1.dist-info/LICENSE,sha256=1yojjRiHRqdNDo-uZTnnPlUOPdSBXQRTPiC3W1ncUn0,1067
+invenio_queues-1.0.1.dist-info/METADATA,sha256=oeigrtFdjyL0-6zNUVw39HHquzck19yZ2B8c9sXRvmQ,2363
+invenio_queues-1.0.1.dist-info/WHEEL,sha256=-G_t0oGuE7UD0DrSpVZnq1hHMBV9DD2XkS5v7XpmTnk,110
+invenio_queues-1.0.1.dist-info/entry_points.txt,sha256=ua0ay87PctNP5iJsZ-Ss2DeQV_HKYb_9kiuj57abUTM,246
+invenio_queues-1.0.1.dist-info/top_level.txt,sha256=M-1MB3P2kXu4s07VSbhUhNnrEAx4VA1-GEFbbQSkGr8,15
+invenio_queues-1.0.1.dist-info/RECORD,,
