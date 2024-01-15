@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=57.4.0"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "vdot_calculator"
+version = "0.0.0.2"
+authors = [
+  { name="Cássio Maciel Lemos", email="cassio.lemos@petrobras.com.br" },
+]
+description = "A compact VDOT calculator adhering to the original Daniels Running Formula book."
+readme = "README.md"
+requires-python = ">=3.8"
+keywords = ["Vdot", "running", "calculator", "Daniels Running Formula", "athletics"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Development Status :: 1 - Planning",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Developers"
+]
+
+[project.urls]
+Homepage = "https://github.com/CassioMaciel/Daniels_Running_Formula"
+Issues = "https://github.com/CassioMaciel/Daniels_Running_Formula/issues"

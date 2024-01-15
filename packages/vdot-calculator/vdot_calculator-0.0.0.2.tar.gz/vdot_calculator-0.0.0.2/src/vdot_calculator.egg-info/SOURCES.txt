@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/vdot_calculator/__init__.py
+src/vdot_calculator/func_module.py
+src/vdot_calculator.egg-info/PKG-INFO
+src/vdot_calculator.egg-info/SOURCES.txt
+src/vdot_calculator.egg-info/dependency_links.txt
+src/vdot_calculator.egg-info/top_level.txt
+tests/test_file.py
