@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: lipsgit
+Version: 0.0.4
+Summary: 😍 Command line tool for enabling pretty emoji commits
+Home-page: https://lipsgit.docs.joss.dev/
+License: MIT
+Author: Joss Moffatt
+Author-email: josshmoffatt@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: User Interfaces
+Requires-Dist: inquirer (>=3.2.1,<3.3.0)
+Requires-Dist: rich-click (>=1.7.1,<1.8.0)
+Project-URL: Documentation, https://lipsgit.docs.joss.dev/getting-started
+Project-URL: Repository, https://github.com/jossmoff/lipsgit
+Description-Content-Type: text/markdown
+
+# lipsgit
+😍 Command line tool for enabling pretty emoji commits
+
