@@ -1,0 +1,9 @@
+face_verification-0.0.1.dist-info/WHEEL,sha256=vJMp7mUkE-fMIYyE5xJ9Q2cYPnWVgHf20clVdwMSXAg,152
+face_verification-0.0.1.dist-info/RECORD,,
+face_verification-0.0.1.dist-info/top_level.txt,sha256=TXeNiTwj1wPrwSSOormEqYae7JpqoRVeRVqf1Hhonag,18
+face_verification-0.0.1.dist-info/METADATA,sha256=qXi9FoaMrOifO6SK3BUe20nz_4z0RHVhpNzEYoNz1Bk,266
+face_verification/__init__.pyi,sha256=IobCU_LQtTnIJX9E6b-QbVBHbYTcaewr14pKd9wkdQE,3972
+face_verification/libFaceVerificationLibrary.so,sha256=dB-y731_io2brRVKn0O5yGWqlGbRjioHeNNhqLVFDho,20085600
+face_verification/cpp.cpython-312-x86_64-linux-gnu.so,sha256=0sp8FbDhYDIzi5edwIOYtA7EDX9rLfYZkLYZKbH3fsk,241544
+face_verification/__init__.py,sha256=mSr59fdHPcLrkgqUMsuADAb2C4bDLKobcakhYWzrl0k,84
+face_verification/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
