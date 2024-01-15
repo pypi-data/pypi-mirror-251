@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "abpower"
+version = "0.1.1"
+description = "Python package for parsing publicly-available data from the AESO ETS"
+authors = ["Andy Smith <andy@nsnw.ca>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+rich = "^13.7.0"
+click = "^8.1.7"
+requests = "^2.31.0"
+beautifulsoup4 = "^4.12.2"
+dateparser = "^1.2.0"
+pytz = "^2023.3.post1"
+
+[tool.poetry.group.dev.dependencies]
+bpython = "^0.24"
+black = "^23.12.1"
+twine = "^4.0.2"
+build = "^1.0.3"
+
+[tool.poetry.scripts]
+abpower = 'abpower.cli:main'
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
