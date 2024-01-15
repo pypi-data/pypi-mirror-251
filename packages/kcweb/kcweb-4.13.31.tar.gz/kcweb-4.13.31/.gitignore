@@ -1,0 +1,15 @@
+﻿#以下文件不允许提交到git
+__pycache__
+.settings
+.buildpath
+.project
+*.log
+*.pyc
+*log/
+/.idea
+/.vscode
+/dist
+/kcweb.egg-info
+/file
+/utill/Queues
+/utill/db/sqlitedata/kcwlicuxweb

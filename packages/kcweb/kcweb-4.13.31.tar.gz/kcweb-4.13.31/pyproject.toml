@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "kcweb"
+version = "4.13.31"
+authors = [
+  { name = "百里", email = "fk1402936534@qq.com" },
+]
+description = "socket服务修复"
+readme = "README.md"
+dependencies = ['pymongo>=3.10.0','Mako>=1.1.2','requests>=2.23.0','six>=1.12.0','watchdog>=0.9.0','websockets==8.1']
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License"
+]
+
+
+[project.urls]
+"Homepage" = "https://gitee.com/open_source_official_website/kcweb/"
+"Bug Tracker" = "https://gitee.com/open_source_official_website/kcweb/"
