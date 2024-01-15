@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: grphpkg
+Version: 0.0.3
+Summary: Graph package
+Home-page: https://github.com/vudiep411/grphpkg
+Author: Vu Diep
+Author-email: vudiep411@gmail.com
+Keywords: python,data structure,graph,visualization
+Description-Content-Type: text/markdown
+Requires-Dist: networkx
+Requires-Dist: matplotlib
+
+
+ grphpkg is a simple graph library that has DFS and BFS
+ implemented that you can create your own operation.
