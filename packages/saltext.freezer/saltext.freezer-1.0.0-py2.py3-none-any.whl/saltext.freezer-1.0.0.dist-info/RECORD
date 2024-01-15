@@ -1,0 +1,11 @@
+saltext/freezer/__init__.py,sha256=D7LywTuuKOLBckMpBTKjqwuIS6PABYTo1qDO2n02Vus,863
+saltext/freezer/version.py,sha256=Aj77VL1d5Mdku7sgCgKQmPuYavPpAHuZuJcy6bygQZE,21
+saltext/freezer/modules/__init__.py,sha256=l7zCIIMR6j8ExVPOd9yqmFZdHlA82M-6JlWILIQlOg8,35
+saltext/freezer/modules/freezer.py,sha256=pYQpcPRQ5r7feH7MUSqIbU6zBNV-UG1bJgbHqCru2LI,10447
+saltext/freezer/states/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+saltext.freezer-1.0.0.dist-info/LICENSE,sha256=nKMU40FWUvjmzBZRM6dvQhLCLf6pVOoy6C2OwxWzZlE,11352
+saltext.freezer-1.0.0.dist-info/METADATA,sha256=6HSiRgM0hYqu6pGzzprtsKFCn_8geR0cOmhdjIFP3Wc,4885
+saltext.freezer-1.0.0.dist-info/WHEEL,sha256=-G_t0oGuE7UD0DrSpVZnq1hHMBV9DD2XkS5v7XpmTnk,110
+saltext.freezer-1.0.0.dist-info/entry_points.txt,sha256=QDuHdgAlTrrJ5hr8gPYQjUedeArN1wX8tFkMgG3jPBk,48
+saltext.freezer-1.0.0.dist-info/top_level.txt,sha256=6cynQgWBWnAPoXMnUaVitGzM6k7PzacwjLBPgrjOfi4,8
+saltext.freezer-1.0.0.dist-info/RECORD,,
