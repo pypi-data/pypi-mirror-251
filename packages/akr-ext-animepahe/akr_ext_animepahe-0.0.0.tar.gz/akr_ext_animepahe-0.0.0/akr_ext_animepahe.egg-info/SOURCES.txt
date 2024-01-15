@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+akr_ext_animepahe/__init__.py
+akr_ext_animepahe/animepahe.py
+akr_ext_animepahe.egg-info/PKG-INFO
+akr_ext_animepahe.egg-info/SOURCES.txt
+akr_ext_animepahe.egg-info/dependency_links.txt
+akr_ext_animepahe.egg-info/requires.txt
+akr_ext_animepahe.egg-info/top_level.txt
