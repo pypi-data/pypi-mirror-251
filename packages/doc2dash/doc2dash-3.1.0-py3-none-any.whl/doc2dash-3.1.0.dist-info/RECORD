@@ -1,0 +1,15 @@
+doc2dash/__init__.py,sha256=nssJimR8TPENS2YrNyDN-Hw1evokVNn18fe7QGP1QTI,381
+doc2dash/__main__.py,sha256=nipzywkqC-vmA1rgQ_4QwRbt8jsYx1ayGkQxT6Au4cA,7126
+doc2dash/convert.py,sha256=lHrvRDPTcFG07EibHEZxX4O9jpP9CPb0BwxurH6gKKI,1104
+doc2dash/docsets.py,sha256=T-XFKKNfR154AihAo1VCAyGoL_229VZ4BZZnH03i5C8,2888
+doc2dash/output.py,sha256=8KxqRxB-gVd_3z0lf0rEyo78PEQnhrtU119Ubau69Sw,1742
+doc2dash/parsers/__init__.py,sha256=INTPaqxEb-H6L--ZcudvOkVInwwZtrCf8HTtW9rzdGA,669
+doc2dash/parsers/intersphinx.py,sha256=v5O0qiTEFd3AtZ7Q7eSBfXmblzu881QKahzC9jXWsI0,5868
+doc2dash/parsers/intersphinx_inventory.py,sha256=THxn-gxghh7CPjOiG1lgSAq3XJyDjnKC4k4I_6wabow,4270
+doc2dash/parsers/patcher.py,sha256=54Y-a_ViNz1DCB7VWapc_tMXmOhP_16feSL-Y6aYyoE,2164
+doc2dash/parsers/types.py,sha256=32Wz-Nwh_s2_ZaJ8aNrSqFbtS9PhvF3YXFFFMCunVj4,3433
+doc2dash-3.1.0.dist-info/METADATA,sha256=TEgSrnKPI0YBxk1ET40VTW7EuYOfygFeLE0Pqx_kNmA,5376
+doc2dash-3.1.0.dist-info/WHEEL,sha256=mRYSEL3Ih6g5a_CVMIcwiF__0Ae4_gLYh01YFNwiq1k,87
+doc2dash-3.1.0.dist-info/entry_points.txt,sha256=QubEpEfPP3N3S5VZw6n9dMxsh5TYHryw4n4QTuW3nis,52
+doc2dash-3.1.0.dist-info/licenses/LICENSE,sha256=tpbn0D7pkcntRMQGLZHC2DWqbsAx68SjolPus5ri4dc,1089
+doc2dash-3.1.0.dist-info/RECORD,,

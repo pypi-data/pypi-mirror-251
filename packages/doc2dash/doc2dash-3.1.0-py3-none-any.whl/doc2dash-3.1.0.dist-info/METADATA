@@ -1,0 +1,116 @@
+Metadata-Version: 2.1
+Name: doc2dash
+Version: 3.1.0
+Summary: Convert docs to the docset format.
+Project-URL: Documentation, https://doc2dash.hynek.me/
+Project-URL: Changelog, https://github.com/hynek/doc2dash/blob/main/CHANGELOG.md
+Project-URL: GitHub, https://github.com/hynek/doc2dash
+Project-URL: Funding, https://github.com/sponsors/hynek
+Project-URL: Mastodon, https://mastodon.social/@hynek
+Project-URL: Twitter, https://twitter.com/hynek
+Author-email: Hynek Schlawack <hs@ox.cx>
+License-Expression: MIT
+License-File: LICENSE
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development :: Documentation
+Requires-Python: >=3.8
+Requires-Dist: attrs>=23.2
+Requires-Dist: beautifulsoup4
+Requires-Dist: click>8
+Requires-Dist: rich
+Provides-Extra: dev
+Requires-Dist: doc2dash[tests,typing]; extra == 'dev'
+Requires-Dist: nox; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: mkdocs; extra == 'docs'
+Requires-Dist: mkdocs-callouts; extra == 'docs'
+Requires-Dist: mkdocs-click; extra == 'docs'
+Requires-Dist: mkdocs-include-markdown-plugin; extra == 'docs'
+Requires-Dist: mkdocs-material; extra == 'docs'
+Requires-Dist: mkdocstrings[python]; extra == 'docs'
+Provides-Extra: tests
+Requires-Dist: coverage[toml]; extra == 'tests'
+Requires-Dist: pytest; extra == 'tests'
+Provides-Extra: typing
+Requires-Dist: mypy; extra == 'typing'
+Requires-Dist: types-urllib3; extra == 'typing'
+Description-Content-Type: text/markdown
+
+# doc2dash
+
+*doc2dash* is an extensible [Documentation Set](https://developer.apple.com/library/archive/documentation/DeveloperTools/Conceptual/Documentation_Sets/010-Overview_of_Documentation_Sets/docset_overview.html#//apple_ref/doc/uid/TP40005266-CH13-SW6) (*docset*) generator that helps you to have documentation for all your favorite APIs in [Dash-compatible](https://kapeli.com/dash/) API browsers.
+
+An API browser is an application that runs locally on your computer and allows you to search various API docs by pressing a key combination and starting to type (I have bound it to ⌥Space bar and can’t write code without it).
+
+The most common ones – [Dash](https://kapeli.com/dash) (macOS) and [Zeal](https://zealdocs.org) (Windows and Linux) – come with **many** docsets out of the box, but they can never offer you docsets for *every* package you’ll ever use.
+This is where *doc2dash* comes in:
+It takes your offline documentation and converts it into an indexed format that API browsers can read and search (very fast!).
+
+Currently it supports all known *intersphinx*-based documentation systems like [Sphinx](https://www.sphinx-doc.org/), [*pydoctor*](https://github.com/twisted/pydoctor), or [MkDocs](https://www.mkdocs.org) (with [*mkdocstrings*](https://mkdocstrings.github.io)).
+While *doc2dash* is a Python project, the support is **not** limited to Python-related formats.
+
+It’s also extendable: [**you** can write your own parser](https://doc2dash.hynek.me/en/latest/extending/)!
+
+![doc2dash Session](https://raw.githubusercontent.com/hynek/doc2dash/main/docs/doc2dash-session.gif)
+
+
+## Quickstart
+
+The fastest way to get started is installing *doc2dash* from our [Homebrew tap](https://github.com/hynek/homebrew-tap):
+
+```console
+$ brew install hynek/tap/doc2dash
+```
+
+> [!NOTE]
+> If you can’t – or won’t – use [Homebrew](https://brew.sh), check out our [installation instructions](https://doc2dash.hynek.me/en/latest/installation/) for alternatives.
+
+Then point *doc2dash* at a directory containing **built** [*intersphinx*-compatible](https://doc2dash.hynek.me/en/stable/formats/) documentation:
+
+```console
+$ doc2dash directory/to/documentation
+```
+
+You should see an output like in the video above and find an appropriately named *docset* in the current directory.
+That’s it – you can add it to Dash or Zeal!
+
+---
+
+*doc2dash* has many more features and options – make sure to check out the [usage](https://doc2dash.hynek.me/en/stable/usage/) for more details.
+A full how-to is [available too](https://doc2dash.hynek.me/en/latest/how-to/).
+
+
+## Credits
+
+*doc2dash* is maintained by Hynek Schlawack and released under the [MIT](https://github.com/hynek/doc2dash/blob/main/LICENSE) license.
+
+The development is kindly supported by my employer [Variomedia AG](https://www.variomedia.de/) and all my amazing [GitHub Sponsors](https://github.com/sponsors/hynek).
+
+
+## Release Information
+
+### Added
+
+- Support for high resolution icons using the `--icon-2x` option.
+  [#200](https://github.com/hynek/doc2dash/pull/200)
+
+- Support for linking to [docset playgrounds](https://kapeli.com/docsets#docsetPlaygrounds) using the `--playground-url` option.
+  [#201](https://github.com/hynek/doc2dash/pull/201)
+
+- Control over [full-text search](https://kapeli.com/docsets#fts) using the `--full-text-search=(on|off|forbidden)` option.
+  [#202](https://github.com/hynek/doc2dash/pull/202)
+
+
+### Fixed
+
+- The table of contents-generation for *pydoctor*-based documentation has been restored.
+  [#133](https://github.com/hynek/doc2dash/pull/133)
+
+
