@@ -1,0 +1,9 @@
+# 0.2.0
+- Fixed a bug that resulted in the same UB tag being assigned to reads with different start positions. Fixed skip_r option and added skip_barcodesplit
+
+# 0.1.0
+- Alpha version uploaded to PyPi
+
+# 0.0.1
+- Added NEWS
+
