@@ -1,0 +1,14 @@
+xpip_mirror/__init__.py,sha256=eoZ6GfifbqhMLNzjlqRDVil-yyBkOmVN9ujSgJWNBlY,15
+xpip_mirror/attribute.py,sha256=jM3vQn-O624xFHqq2wCtPy3fUPDt7jGs_Vz6c4OabDM,377
+xpip_mirror/cmds.py,sha256=LfHugKO9mp2-XaS8-R9l9LxlX9Fv_xp2TXDon1JoxXc,6914
+xpip_mirror/util.py,sha256=C22OmtEkJclv1GY84fOg7t_LcSSStR3SledBuRHvYOs,1208
+xpip_mirror/version.py,sha256=-Q7MIb2IZVlYnt9wYGkLPpkyJ4Y7Zh-iXFX-Nyu_FOQ,1386
+xpip_mirror/config/__init__.py,sha256=KfY39bWAh7mQCuBgV4VtM-hBUfdIyGaBpdOZoKlc93U,15
+xpip_mirror/config/mirrors.toml,sha256=61LqUIaNc8F0ZdnYEr_8HX81Wgwtu5_LbeXCWDxQ1iE,316
+xpip_mirror-0.1.dist-info/LICENSE,sha256=GJsa-V1mEVHgVM6hDJGz11Tk3k0_7PsHTB-ylHb3Fns,18431
+xpip_mirror-0.1.dist-info/METADATA,sha256=kkpbQ8mmWJd4Uks7CaPjqna2xDPGl4Oq6Z2qXW3kzdQ,963
+xpip_mirror-0.1.dist-info/WHEEL,sha256=bb2Ot9scclHKMOLDEHY6B2sicWOgugjFKaJsT7vwMQo,110
+xpip_mirror-0.1.dist-info/entry_points.txt,sha256=gGBqJL_yAbJOnJNyZ1leP8b726_jgK6F3FCJ6NrSuJ4,55
+xpip_mirror-0.1.dist-info/top_level.txt,sha256=x0-VY37Gs4N30m-sM-igD2NFsiDUsL-m7WKaJd6Srkc,12
+xpip_mirror-0.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+xpip_mirror-0.1.dist-info/RECORD,,
