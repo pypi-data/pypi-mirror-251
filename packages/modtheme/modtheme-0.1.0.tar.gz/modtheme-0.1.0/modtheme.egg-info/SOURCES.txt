@@ -1,0 +1,12 @@
+README.md
+setup.py
+modetheme/__init__.py
+modetheme/itermode.py
+modetheme/sorthemes.py
+modtheme.egg-info/PKG-INFO
+modtheme.egg-info/SOURCES.txt
+modtheme.egg-info/dependency_links.txt
+modtheme.egg-info/entry_points.txt
+modtheme.egg-info/top_level.txt
+tests/__init__.py
+tests/test_modethemes.py
