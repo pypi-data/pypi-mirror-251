@@ -1,0 +1,8 @@
+dagster_scaleway/__init__.py,sha256=aQlLQ9lJDOmljChSo5d1fx-jSMFnJAJqs0QoVQmwgKI,130
+dagster_scaleway/cli.py,sha256=ShOc9Eaf0oTpBzjesdoExeU8MSeK9pTUFesBeNOL378,647
+dagster_scaleway/serverless_job_context.py,sha256=u73kP004ZXeQt7iJiWn4GIrMsK1PCT-wl7ZkuqziwWo,7026
+dagster_scaleway/serverless_job_launcher.py,sha256=yNJUJN3Hz_GmsJcUKrytVlXVWAvpmJWngPC4RgzLwWw,11070
+dagster_scaleway-0.1.2.dist-info/METADATA,sha256=OlOlpTbSfGHrPW9E49PAKR-jPufLvopVKMXQDbkgjZE,2113
+dagster_scaleway-0.1.2.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+dagster_scaleway-0.1.2.dist-info/entry_points.txt,sha256=7icT30HrNvkqWOeibIUEh_BRj3WwWuV3q0SjFFIcWvE,62
+dagster_scaleway-0.1.2.dist-info/RECORD,,
