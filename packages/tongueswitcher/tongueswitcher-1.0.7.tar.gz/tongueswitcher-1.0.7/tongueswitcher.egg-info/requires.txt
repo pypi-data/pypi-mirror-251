@@ -1,0 +1,6 @@
+HanTa==1.0.0
+torch==1.12.1
+transformers==4.26.0
+emoji==1.7.0
+flair==0.12.2
+easydict==1.10
