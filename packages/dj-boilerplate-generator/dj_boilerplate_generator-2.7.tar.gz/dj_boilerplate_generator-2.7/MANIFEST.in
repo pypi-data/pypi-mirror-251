@@ -1,0 +1,3 @@
+recursive-include src/dj_boilerplate_generator/ dbg_snippets.py
+recursive-include src/dj_boilerplate_generator/static *
+recursive-include src/dj_boilerplate_generator/templates *
