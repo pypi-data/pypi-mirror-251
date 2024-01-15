@@ -1,0 +1,12 @@
+injector
+jsonpickle
+PyYAML
+SQLAlchemy
+Flask
+Flask_Cors
+Flask-Injector
+flask-restx
+Werkzeug
+dataclasses
+requests
+pandas
