@@ -1,0 +1,8 @@
+argcomplete
+tabulate
+setuptools>=51.0.0
+wheel
+twine
+keyring
+keyrings.alt
+xpip-mirror
