@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+src/interipport.py
+src/interipport.egg-info/PKG-INFO
+src/interipport.egg-info/SOURCES.txt
+src/interipport.egg-info/dependency_links.txt
+src/interipport.egg-info/entry_points.txt
+src/interipport.egg-info/top_level.txt
