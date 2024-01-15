@@ -1,0 +1,16 @@
+django_schema_sprout/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_schema_sprout/apps.py,sha256=rCSHXTkge70j_qd30s2CTik7S7-AgjmeUTsmo0MjvJ8,167
+django_schema_sprout/models.py,sha256=34V15GOe96-2et4B4haaT_P6-qWOwCUo28avcVK1wMk,238
+django_schema_sprout/router.py,sha256=zT8797TmIEBCIl66btExOKbGfZX1Y1eceVmJrpGJ0kg,454
+django_schema_sprout/schema_sprout.py,sha256=H0Tca4E5Ydul-8SBr-Le8iYV9e_mbTk6g_o8jgrvCEo,2729
+django_schema_sprout/db_inspectors/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_schema_sprout/db_inspectors/postgres_inspector.py,sha256=5LheP5Sg7qJU4XhJeYPPAeFRSN3kOUewRwM9FmlA2I4,18184
+django_schema_sprout/utils/db_inspector.py,sha256=pK9zj55uRjdw6QtHQ5SRBVIPguUCwZ5skib5VVYiG54,295
+django_schema_sprout/utils/dynamic_model.py,sha256=7pp7b_Ao2Rx7k5DMP3aXZynnjO37O5eYjtNR8vttLNs,663
+django_schema_sprout/utils/dynamic_serializer.py,sha256=tP3Cqz9IpS7gBO4jtpLb0FYq9CqG58QMxkQPwXDR_uY,415
+django_schema_sprout/utils/dynamic_view.py,sha256=64Uhl6PovB__UcabdZliDNQbb79Qgc1knhdHEhunFlQ,1013
+django_schema_sprout/utils/singleton_class.py,sha256=s70e8KvtURzSAV_kDvfcY9UDdkOuZEpyy6L9Ho7atXs,815
+django_schema_sprout-0.1.0.dist-info/METADATA,sha256=hzR1DXMTFm9QRgL-GIhMCcloKqYOIkrsi5fgl9sW_gM,4313
+django_schema_sprout-0.1.0.dist-info/WHEEL,sha256=mRYSEL3Ih6g5a_CVMIcwiF__0Ae4_gLYh01YFNwiq1k,87
+django_schema_sprout-0.1.0.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+django_schema_sprout-0.1.0.dist-info/RECORD,,
