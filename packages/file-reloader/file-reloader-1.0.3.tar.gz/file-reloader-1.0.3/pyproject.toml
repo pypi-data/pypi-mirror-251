@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=46.1.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "file-reloader"
+version = "1.0.3"
+description = "file-reloader allows user program to reload automatically when source code of user program changes"
+authors = [{name = "Mohammad Ummair", email = "mohdummair007@gmail.com"}]
+readme = "README.md"
+requires-python = ">=3.8"
+keywords = ["reloader", "autoreload", "file-reloader"]
+license = {text = "BSD-3-Clause"}
+
+
+[project.scripts]
+my-script = "file_reloader:__init__"
