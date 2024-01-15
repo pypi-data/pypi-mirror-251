@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: superannotate_schemas
+Version: 1.0.47b5
+Summary: SuperAnnotate JSON Schemas
+Home-page: https://www.superannotate.com/
+Author: Vaghinak Basentsyan
+Author-email: vaghinak@superannotate.con
+License: MIT
+Description-Content-Type: text/markdown
+Requires-Dist: attrs ==23.*
+Requires-Dist: pyrsistent ==0.*
+Requires-Dist: six ==1.*
+Requires-Dist: twisted ==23.*
+
+## Annotation Json Schemas
+* [General info](#general-info)
+* [Setup](#setup)
+
+## General info
+This project is SuperAnnotate annotations JSON schema generator.
+	
+## Setup
+```
+$ pip install superannotate_schemas
+```
