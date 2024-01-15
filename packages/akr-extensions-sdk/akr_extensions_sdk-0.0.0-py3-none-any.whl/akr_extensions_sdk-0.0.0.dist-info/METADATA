@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: akr-extensions-sdk
+Version: 0.0.0
+Summary: An anime bot to download your favourite animes
+Home-page: https://github.com/GhoulKingR/AKR_extensions_sdk
+Author: GhoulKingR
+Author-email: oduahchigozie46@gmail.com
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: setuptools ==68.1.2
+
