@@ -1,0 +1,2 @@
+[console_scripts]
+disortify = disortify.__main__:main

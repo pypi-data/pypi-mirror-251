@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+disortify/__init__.py
+disortify/formats.py
+disortify.egg-info/PKG-INFO
+disortify.egg-info/SOURCES.txt
+disortify.egg-info/dependency_links.txt
+disortify.egg-info/entry_points.txt
+disortify.egg-info/top_level.txt
+tests/__init__.py
+tests/test_formats.py
