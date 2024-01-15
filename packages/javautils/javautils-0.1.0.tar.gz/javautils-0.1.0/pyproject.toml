@@ -1,0 +1,45 @@
+[project]
+name = "javautils"
+version = "0.1.0"
+description = "A python based CLI tool to simplify the time consuming, repetitive tasks of Java development."
+readme = "README.md"
+authors = [{ name = "Atharv Kurdukar", email = "3atharvkurdukar@gmail.com" }]
+requires-python = ">=3.8"
+license = { file = "LICENSE" }
+classifiers = [
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Topic :: Software Development :: Build Tools",
+]
+dependencies = ["click>=8.1.7", "PyInquirer>=1.0.3", "stashy>=0.7"]
+
+[project.scripts]
+javautils = "src.javautils.main:main"
+
+
+[tool.pdm.scripts]
+javautils.call = "src.javautils.main:main"
+
+[tool.pdm]
+package-type = "application"
+
+[tool.black]
+line-length = 88
+target-version = ['py38', 'py39', 'py310']
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''

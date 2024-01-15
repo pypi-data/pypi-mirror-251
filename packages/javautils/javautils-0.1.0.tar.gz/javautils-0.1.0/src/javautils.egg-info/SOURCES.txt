@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/javautils/__init__.py
+src/javautils/clone.py
+src/javautils/main.py
+src/javautils.egg-info/PKG-INFO
+src/javautils.egg-info/SOURCES.txt
+src/javautils.egg-info/dependency_links.txt
+src/javautils.egg-info/entry_points.txt
+src/javautils.egg-info/requires.txt
+src/javautils.egg-info/top_level.txt
