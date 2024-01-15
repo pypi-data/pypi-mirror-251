@@ -1,0 +1,15 @@
+ADNS.py
+DNSBL.py
+GPL
+MANIFEST.in
+README
+adnsmodule.c
+pymemcompat.h
+setup.py
+test.py
+.github/FUNDING.yml
+.github/workflows/adns-linux.yml
+adns.egg-info/PKG-INFO
+adns.egg-info/SOURCES.txt
+adns.egg-info/dependency_links.txt
+adns.egg-info/top_level.txt
