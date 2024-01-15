@@ -1,0 +1,10 @@
+README.md
+setup.py
+framecraft/__init__.py
+framecraft/framecraft.py
+framecraft.egg-info/PKG-INFO
+framecraft.egg-info/SOURCES.txt
+framecraft.egg-info/dependency_links.txt
+framecraft.egg-info/not-zip-safe
+framecraft.egg-info/requires.txt
+framecraft.egg-info/top_level.txt
