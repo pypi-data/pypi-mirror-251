@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "paikwiki-hello-cli"
+version = "0.0.1"
+description = "This is a Python CLI app designed to facilitate learning how to configure Python CLI applications."
+repository = "https://github.com/paikwiki/hello-cli-with-poetry.git"
+authors = ["paikwiki <paikwiki@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+[tool.poetry.scripts]
+hello = "paikwiki_hello_cli.main:run"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
