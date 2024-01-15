@@ -1,0 +1,6 @@
+t1 >> blip()
+
+
+d1 >> play('X.', lpf=500)
+
+hh >> play('.--', amp=2)
