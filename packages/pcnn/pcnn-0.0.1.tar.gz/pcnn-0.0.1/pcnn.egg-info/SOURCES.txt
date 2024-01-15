@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+pcnn.egg-info/PKG-INFO
+pcnn.egg-info/SOURCES.txt
+pcnn.egg-info/dependency_links.txt
+pcnn.egg-info/requires.txt
+pcnn.egg-info/top_level.txt
