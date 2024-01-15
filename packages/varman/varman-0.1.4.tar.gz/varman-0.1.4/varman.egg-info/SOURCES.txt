@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+varman/__init__.py
+varman.egg-info/PKG-INFO
+varman.egg-info/SOURCES.txt
+varman.egg-info/dependency_links.txt
+varman.egg-info/top_level.txt
