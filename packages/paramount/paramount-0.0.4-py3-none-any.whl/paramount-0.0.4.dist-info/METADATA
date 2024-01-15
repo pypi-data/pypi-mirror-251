@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: paramount
+Version: 0.0.4
+Summary: Automated evals for AI support bots
+Home-page: https://github.com/ask-fini/paramount
+Author: Hakim K
+Author-email: 5586611+hakimkhalafi@users.noreply.github.com
+Project-URL: Source Code, https://github.com/ask-fini/paramount
+Description-Content-Type: text/markdown
+Requires-Dist: streamlit
+Requires-Dist: pandas
+Requires-Dist: pytz
+Requires-Dist: flask
+Requires-Dist: python-dotenv
+Requires-Dist: scikit-learn
+
+# paramount
+
+Automated evals for AI support bots

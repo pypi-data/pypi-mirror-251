@@ -1,0 +1,13 @@
+paramount/Train.py,sha256=cEAy4VGd8nJkNmqob_e2LyvozZa4_qpQaj0fv3l2W6I,7189
+paramount/__init__.py,sha256=uXqeGOfM4Bm5NF-5MuRf84yUtyHO5qKCjAjR4J8IFNo,26
+paramount/cli.py,sha256=vrFSsG_E-qp6-OR1AYXn66OJzaj34OWjl8t-bA6EOM8,511
+paramount/library_functions.py,sha256=srhq3EkJP1R7-4_8PR1C1jZuOkNPKrnO9EPdRCJt0Ck,2523
+paramount/record.py,sha256=SGrYPW0c_vNdmqjFPyRvwDi1L4Ive72JApERpKRM2ao,4665
+paramount/thousand_random_words.txt,sha256=XW2BXh8YwnhQmnyxNO_SZiAVtx0RkVmn8o2UTDfyMtI,10544
+paramount/pages/Test.py,sha256=Zrpy6vWtIw1lMt58XgLlkaY1l-GTTpMheJVo8pHDOdQ,10911
+paramount/pages/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+paramount-0.0.4.dist-info/METADATA,sha256=tR4SUkpHNmRwJdd_hoPfTODvpv7sX0dKxJ6Kmi-EhFI,522
+paramount-0.0.4.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+paramount-0.0.4.dist-info/entry_points.txt,sha256=UnlNRZOGd1r8OEpqi8UwuKqBOobRLPzJQ6ILZUCsGg0,49
+paramount-0.0.4.dist-info/top_level.txt,sha256=JcInCX8cWbtuj9hyPzIwnzGzzY1ptF9l6UmBgdL7thM,10
+paramount-0.0.4.dist-info/RECORD,,
