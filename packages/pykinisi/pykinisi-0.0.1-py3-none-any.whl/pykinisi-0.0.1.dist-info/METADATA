@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pykinisi
+Version: 0.0.1
+Summary: Python package for Kinisi Controller
+Home-page: https://github.com/szolotykh/pykinisi
+Author: Sergey Zolotykh
+Author-email: szolotykh88@gmail.com
+License: MIT
+Keywords: motor controller,hardware,robotics,kinisi,kinisi controller
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+Requires-Dist: serial
+
+UNKNOWN
+
