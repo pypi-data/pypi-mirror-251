@@ -1,0 +1,2 @@
+[console_scripts]
+maritime-schema = maritime_schema.cli.maritime_schema:main
