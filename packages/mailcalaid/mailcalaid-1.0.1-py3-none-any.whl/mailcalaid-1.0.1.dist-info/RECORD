@@ -1,0 +1,15 @@
+mailcalaid/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mailcalaid/common.py,sha256=BDDRbWpEUIXcB9S9lovwjnK-UF1f7XvCbVWIUZsDVws,204
+mailcalaid/mail2bot.py,sha256=_bQCHa7N74HR06P5ksvFARO982ghrln_aKd3e_z6kKs,5321
+mailcalaid/mailaid.py,sha256=UdslZpp4ifwjHSstvUCMxl_825tNjXvO_OyslQgFD88,5282
+mailcalaid/cal/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mailcalaid/cal/holiday.py,sha256=FbmTRL0kbP-QI4ePF5_iocU_vcDdyq3H2uQ9I3DBGN0,8882
+mailcalaid/mail/__init__.py,sha256=pcRhgxFXPRelS3Y3FGnV-7ffeB0bCfpoC1ZZI0BTxDg,178
+mailcalaid/mail/imapclient.py,sha256=ihzYw_KyHTLgK1SVxJw1V-C_AirlS0DIX-BxhY17p8k,2719
+mailcalaid/mail/mailclient.py,sha256=ikTqduY4K2pMk5zb9wj6ckj5jjcad_rGoBE5P_IX4JA,7668
+mailcalaid/mail/pop3client.py,sha256=Is_eONHH2IUlHagviH-QWTz1OTxUrFLtRuMM_fFlSvs,1386
+mailcalaid-1.0.1.dist-info/LICENSE,sha256=VARjW0CKJCDLxbbYNQj1WO0CR5P4FvgdiSG-dTHQKfw,1067
+mailcalaid-1.0.1.dist-info/METADATA,sha256=R6j8apzjDPidG4I_9BpbU0j3S6kCtKf6rkUZWUvlHqE,8343
+mailcalaid-1.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+mailcalaid-1.0.1.dist-info/top_level.txt,sha256=tSv2i_tLoy-BeD-1GcjNlpsHfL6UeQGboUfPaUrjMOc,11
+mailcalaid-1.0.1.dist-info/RECORD,,
