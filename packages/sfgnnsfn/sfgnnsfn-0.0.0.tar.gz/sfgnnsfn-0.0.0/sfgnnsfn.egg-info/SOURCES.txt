@@ -1,0 +1,9 @@
+AUTHORS.md
+LICENSE
+README.md
+setup.py
+sfgnnsfn.egg-info/PKG-INFO
+sfgnnsfn.egg-info/SOURCES.txt
+sfgnnsfn.egg-info/dependency_links.txt
+sfgnnsfn.egg-info/top_level.txt
+test/test.py
