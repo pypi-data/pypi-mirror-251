@@ -1,0 +1,15 @@
+digraph g {
+  fontname="{{fontspec}}"
+  node[fontname="{{fontspec}}"]
+  edge[fontname="{{fontspec}}"]
+  graph [fontsize=30 labelloc="t" label="" splines=true overlap=false rankdir="LR"];
+  ratio = auto
+  {% for node in nodes %}
+  "{{ node.id }}" [{{properties}} {{styles[node.kind]}} label=<<table border="0"><tr><td>#{{ node.id }}</td></tr><tr><td>{{ node.desc }}</td></tr></table>>]
+  {% endfor %}
+  {% for node in nodes %}
+  {% if node.parent != 'root' %}
+  "{{ node.parent }}" -> "{{ node.id }}"
+  {% endif %}
+  {% endfor %}
+}
