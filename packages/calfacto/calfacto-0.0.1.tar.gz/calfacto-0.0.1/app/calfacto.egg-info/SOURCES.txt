@@ -1,0 +1,5 @@
+setup.py
+app/calfacto.egg-info/PKG-INFO
+app/calfacto.egg-info/SOURCES.txt
+app/calfacto.egg-info/dependency_links.txt
+app/calfacto.egg-info/top_level.txt
