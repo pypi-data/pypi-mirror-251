@@ -1,0 +1,8 @@
+soft_delete/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+soft_delete/admin.py,sha256=2VeTEO1I9g4mngUuJsVTU7noLW0BKxJO83BuPh6mBpI,298
+soft_delete/models.py,sha256=Bwvlbk6D5u5LbFy0cvDkq8rZ-ucoyhThZLRdMfPzxq4,3917
+soft_delete_t-1.0.2.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+soft_delete_t-1.0.2.dist-info/METADATA,sha256=AgQ8aY9Y1MbfMT140nu48sDExV-XyabIxyz9iubHejs,306
+soft_delete_t-1.0.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+soft_delete_t-1.0.2.dist-info/top_level.txt,sha256=ggBXWzGdv3bCAccuTjLW_BA5Jii4kQOLJFEFpDgwJCY,12
+soft_delete_t-1.0.2.dist-info/RECORD,,
