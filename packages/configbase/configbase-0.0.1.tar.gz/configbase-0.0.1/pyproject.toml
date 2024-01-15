@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel", "build"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+zip-safe = false
+
+[tool.setuptools.packages.find]
+where = ["src"]
+namespaces = false
+
+[project]
+
+name = "configbase"
+
+authors = [{ name = "Iordanis Fostiropoulos", email = "mail@iordanis.me" }]
+
+dynamic = ["version"]
+keywords = []
+description = "A Typed, Compositional Configuration Library"
+requires-python = ">=3.10"
+readme = "README.md"
+dependencies = ["numpy"]
+license = { text = "proprietary" }
+
+[project.optional-dependencies]
+dev = [
+    "mypy",
+    "flake8",
+    "pytest",
+    "black",
+    "pylint",
+    "codecov-cli",
+    "pytest-cov",
+    "pytest-xdist",
+    "types-PyYAML",
+]
+[project.urls]
+
+homepage = "https://iordanis.me"
+
+[tool.setuptools.dynamic]
+version = { attr = "config.__version__" }

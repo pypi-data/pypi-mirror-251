@@ -1,0 +1,12 @@
+numpy
+
+[dev]
+mypy
+flake8
+pytest
+black
+pylint
+codecov-cli
+pytest-cov
+pytest-xdist
+types-PyYAML
