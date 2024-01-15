@@ -1,0 +1,5 @@
+[console_scripts]
+vuln-controller=docker_vuln_controller.main:app
+vuln-node=docker_vuln_node.main:app
+vuln-runner=docker_vuln_runner.main:app
+
