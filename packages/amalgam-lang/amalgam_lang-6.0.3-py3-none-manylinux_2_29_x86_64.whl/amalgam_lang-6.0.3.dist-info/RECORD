@@ -1,0 +1,12 @@
+amalgam/__init__.py,sha256=oHu7Zr4eGDUqj93pLwz8t7gLa8lpAx6Q-xbGiJ3nJx0,18
+amalgam/api.py,sha256=98gi2IE9DuzjVR3C9EVB4ded2USIhuRwNL-l4DXA040,31585
+amalgam/lib/version.json,sha256=r6QyzThKOYy66gWh_OZSGe-2SxYmKHohbxKu3aaM5bo,250
+amalgam/lib/linux/amd64/amalgam-mt-noavx.so,sha256=yLy66N5NRsY9XTUQ_3nWdi2hO38DaBxX-aUpsPxQhIk,3151704
+amalgam/lib/linux/amd64/amalgam-mt.so,sha256=YM0qVJfjpNj7bk_QfwbwQYYwbZky9u3SrY4vOH7IvlY,3180376
+amalgam/lib/linux/amd64/amalgam-omp.so,sha256=FCIx0XTTQUrPMUeJVSr3Wprmjbsq97HA8f7fqZzqqmY,2991448
+amalgam/lib/linux/amd64/amalgam-st.so,sha256=iEvh4dzTIhYH9GO7Ha27KpxfEKaDRKU7mJS-x7w8QPg,2983192
+amalgam_lang-6.0.3.dist-info/LICENSE.txt,sha256=2xqHuoHohba7gpcZZKtOICRjzeKsQANXG8WoV9V35KM,33893
+amalgam_lang-6.0.3.dist-info/METADATA,sha256=AU5MRmRieZEKZaTmRmoqaXBvjxBVOLqejRsAdW0GpSk,43351
+amalgam_lang-6.0.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+amalgam_lang-6.0.3.dist-info/top_level.txt,sha256=rmPHU144SyaB25u5-FAQyECAQnJ39NvuJEcKXMRcdBo,8
+amalgam_lang-6.0.3.dist-info/RECORD,,
