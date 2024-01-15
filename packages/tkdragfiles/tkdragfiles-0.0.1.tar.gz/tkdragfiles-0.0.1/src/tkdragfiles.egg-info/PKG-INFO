@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: tkdragfiles
+Version: 0.0.1
+Summary: Easy Drag Files and Drop to Tkinter
+Author-email: nicehero <85948597@qq.com>
+Project-URL: Homepage, https://github.com/nicehero/tkdragfiles
+Project-URL: Issues, https://github.com/nicehero/tkdragfiles/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+<div align="center">
+    
+[![PyPI](https://img.shields.io/pypi/v/tkdragfiles)](https://pypi.org/project/tkdragfiles/)
+
+</div>
+
+# Easy Drag Files and Drop to Tkinter
+
+Only for windows
+
+## Installation
+```shell
+pip3 install tkdragfiles
+pip3 install async_tkinter_loop #if u need asyncio
+```
+## Easy to use 
+```python
+#for normal tk
+import tkinter as tk
+from tkdragfiles import start_dragfiles_event
+
+root = tk.Tk()
+root.geometry("600x200")
+lb = tk.Listbox(root, height=500, width=500, selectmode=tk.SINGLE)
+lb.pack()
+
+def callback(file_paths):
+    for file_path in file_paths:
+        lb.insert("end", file_path)
+
+start_dragfiles_event(root,callback)
+root.mainloop()
+```
+```python
+#for asyncio tk
+import tkinter as tk
+from tkdragfiles import start_dragfiles_event
+
+root = tk.Tk()
+root.geometry("600x200")
+lb = tk.Listbox(root, height=500, width=500, selectmode=tk.SINGLE)
+lb.pack()
+
+def callback(file_paths):
+    for file_path in file_paths:
+        lb.insert("end", file_path)
+
+start_dragfiles_event(root,callback)
+root.mainloop()
+```
+
+## References

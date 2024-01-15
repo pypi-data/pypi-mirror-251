@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "tkdragfiles"
+version = "0.0.1"
+authors = [
+  { name="nicehero", email="85948597@qq.com" },
+]
+description = "Easy Drag Files and Drop to Tkinter"
+readme = "README.md"
+requires-python = ">=3.5"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/nicehero/tkdragfiles"
+Issues = "https://github.com/nicehero/tkdragfiles/issues"

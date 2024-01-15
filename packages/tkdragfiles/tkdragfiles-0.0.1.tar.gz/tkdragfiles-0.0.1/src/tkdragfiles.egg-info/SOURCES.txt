@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+src/tkdragfiles.py
+src/tkdragfiles.egg-info/PKG-INFO
+src/tkdragfiles.egg-info/SOURCES.txt
+src/tkdragfiles.egg-info/dependency_links.txt
+src/tkdragfiles.egg-info/top_level.txt
