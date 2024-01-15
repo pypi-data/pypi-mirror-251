@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: serverless_openai
+Version: 1.0.0
+Summary: A package for using Openai in serverless environment
+Author: Jayr Castro
+Author-email: jayrcastro.py@gmail.com
+Keywords: serverless,openai,aws lambda,cloud functions,openai API
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+Requires-Dist: annotated-types ==0.6.0
+Requires-Dist: beautifulsoup4 ==4.12.2
+Requires-Dist: certifi ==2023.11.17
+Requires-Dist: charset-normalizer ==3.3.2
+Requires-Dist: idna ==3.6
+Requires-Dist: numpy ==1.24.4
+Requires-Dist: opencv-python-headless ==4.9.0.80
+Requires-Dist: pydantic ==2.5.3
+Requires-Dist: pydantic-core ==2.14.6
+Requires-Dist: requests ==2.31.0
+Requires-Dist: soupsieve ==2.5
+Requires-Dist: typing-extensions ==4.9.0
+Requires-Dist: urllib3 ==2.1.0
+
+A package for using Openai with scraping and etc. in serverless application such as AWS Lambda and GCP Cloud Function
