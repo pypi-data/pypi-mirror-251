@@ -1,0 +1,10 @@
+setup.py
+distributionshajimete/Binomialdistribution.py
+distributionshajimete/Gaussiandistribution.py
+distributionshajimete/Generaldistribution.py
+distributionshajimete/__init__.py
+distributionshajimete.egg-info/PKG-INFO
+distributionshajimete.egg-info/SOURCES.txt
+distributionshajimete.egg-info/dependency_links.txt
+distributionshajimete.egg-info/not-zip-safe
+distributionshajimete.egg-info/top_level.txt
