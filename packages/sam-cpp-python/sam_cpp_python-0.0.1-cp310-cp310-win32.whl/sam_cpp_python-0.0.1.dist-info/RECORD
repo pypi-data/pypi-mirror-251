@@ -1,0 +1,11 @@
+include/ggml/ggml-alloc.h,sha256=Jtz6omWItxP03_PdVeY9WUxYHMxAy3Au7VCiz-bT26g,1390
+include/ggml/ggml.h,sha256=3zO5dXuZF3kn3Rs2YsQveEQShSs-gUT_NdM0wFHq6ls,79220
+lib/static/ggml.lib,sha256=NSLYRpfVDkwY1c65Br8rxajAQvjV0VMw7_bRGqZqK6E,512936
+sam_cpp/__init__.py,sha256=hMHoCaQShUlGlThKPnpayejs8ok4iw7q1CjtEHKj8R8,395
+sam_cpp/_core.cp310-win32.pyd,sha256=9fVdASUc58nxarAROlkKBLHVK_i3hDpnfSeRQtwd66s,322048
+sam_cpp/utils.py,sha256=x_b7lUsjhvyif9X_YOh7J6d_-3D8VkZuL9DlgtG_oc4,1786
+share/pkgconfig/ggml.pc,sha256=EeFaUjP-cA1LVOT2cNE7q7j9ZHtJIyxiHXF74aYW2mI,266
+sam_cpp_python-0.0.1.dist-info/METADATA,sha256=OTb-IHEd65imJx4kLkr7vSzoyenABfQUP5SiWoyVj8E,1248
+sam_cpp_python-0.0.1.dist-info/WHEEL,sha256=rye8x_BZgwcA_rvHb68vG4-xPYo3UM97DGrU-g9hQrs,101
+sam_cpp_python-0.0.1.dist-info/entry_points.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sam_cpp_python-0.0.1.dist-info/RECORD,,
