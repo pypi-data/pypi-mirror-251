@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: GAForecast
+Version: 0.1.0
+Summary: Prediction library for tabular data powered by neural network.
+Author: Vaclav Matejka
+Author-email: matejka.vaclav@gmail.com
+Requires-Python: >=3.9,<3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: category_encoders
+Requires-Dist: fastparquet
+Requires-Dist: numpy (>=1.21,<2.0)
+Requires-Dist: opencv-python
+Requires-Dist: pandas
+Requires-Dist: pyts
+Requires-Dist: scikit-learn (>=1.0,<2.0)
