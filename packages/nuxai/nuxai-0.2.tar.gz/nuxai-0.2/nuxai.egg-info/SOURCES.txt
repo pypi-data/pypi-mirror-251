@@ -1,0 +1,8 @@
+README.md
+setup.py
+nuxai/__init__.py
+nuxai.egg-info/PKG-INFO
+nuxai.egg-info/SOURCES.txt
+nuxai.egg-info/dependency_links.txt
+nuxai.egg-info/requires.txt
+nuxai.egg-info/top_level.txt

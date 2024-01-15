@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: nuxai
+Version: 0.2
+Summary: llm pipelines
+Home-page: https://github.com/nux-ai/nux-python
+Author: Ethan Steininger
+Author-email: ethan@nux.ai
+License: MIT
+Keywords: LLM Pipelines
+Requires-Dist: requests
