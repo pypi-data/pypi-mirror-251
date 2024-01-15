@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pcnn
+Version: 0.0.1
+Summary: A toolbox of Pulse Coupled Neural Network (PCNN) for image processing
+Home-page: https://github.com/lidezhenw/pcnn
+Author: lidezhenw
+Author-email: lidezhenw@163.com
+License: GPLv3
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: cv2
+
+# PCNN
+> A toolbox of Pulse Coupled Neural Network (PCNN) for image processing
