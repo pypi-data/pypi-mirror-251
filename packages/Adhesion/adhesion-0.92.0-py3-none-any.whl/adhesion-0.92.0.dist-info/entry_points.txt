@@ -1,0 +1,3 @@
+[console_scripts]
+ce_soft_wall=Adhesion.CommandLineInterface.SoftWall:main
+
