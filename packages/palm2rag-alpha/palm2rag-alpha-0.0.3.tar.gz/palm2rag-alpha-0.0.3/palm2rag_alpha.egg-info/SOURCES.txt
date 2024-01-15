@@ -1,0 +1,9 @@
+Licenses.txt
+pyproject.toml
+setup.py
+palm2rag_alpha.egg-info/PKG-INFO
+palm2rag_alpha.egg-info/SOURCES.txt
+palm2rag_alpha.egg-info/dependency_links.txt
+palm2rag_alpha.egg-info/not-zip-safe
+palm2rag_alpha.egg-info/requires.txt
+palm2rag_alpha.egg-info/top_level.txt
