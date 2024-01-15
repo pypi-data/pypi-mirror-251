@@ -1,0 +1,6 @@
+README.md
+setup.py
+keepsafe.egg-info/PKG-INFO
+keepsafe.egg-info/SOURCES.txt
+keepsafe.egg-info/dependency_links.txt
+keepsafe.egg-info/top_level.txt
