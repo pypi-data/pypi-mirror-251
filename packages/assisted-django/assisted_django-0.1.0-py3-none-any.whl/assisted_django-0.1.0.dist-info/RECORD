@@ -1,0 +1,10 @@
+assisted_django/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+assisted_django/BasePromptEngine/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+assisted_django/BasePromptEngine/BasePromptEngine.py,sha256=xxlnuICUeC6j-0OVIDGJIQeqT_lSmDTkPfvdFBz5_uc,4002
+assisted_django/DjangoApplication.py,sha256=foAlN1JbFP4I8ZhOGQvdi4L4_REsfZmhJAJIsRhZAWM,8084
+assisted_django/examples.py,sha256=bDEiQMgoUFgzMkIzmyX3VQezWJn-q4u_ITsWzvbl_z0,7138
+assisted_django/PromptEngine.py,sha256=vc7-I9Ns4I8G5uuyPnHN4NbYuHxh4VXhSCgjSGwl0jM,2973
+assisted_django/Prompter.py,sha256=WJ5eT_Bgcfj8ZajeL5cloNCUUtLIANsHc4CikIPEjFo,688
+assisted_django-0.1.0.dist-info/METADATA,sha256=2TstMyevrkaAuQHpifdmwlGBkskd9BP6KBvWYQXcaZk,583
+assisted_django-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+assisted_django-0.1.0.dist-info/RECORD,,

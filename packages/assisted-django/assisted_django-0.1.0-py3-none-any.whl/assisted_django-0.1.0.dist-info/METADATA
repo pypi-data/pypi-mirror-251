@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: assisted-django
+Version: 0.1.0
+Summary: Generate an entire django app with models, forms, views, urls, signals, tests and templates using gpt3 or 4
+Author: fauzaanu
+Author-email: hello@fauzaanu.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: openai (>=1.7.2,<2.0.0)
+Requires-Dist: python-dotenv (>=1.0.0,<2.0.0)
+Description-Content-Type: text/markdown
+
+
