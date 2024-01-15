@@ -1,0 +1,7 @@
+emotion_detection/__init__.py,sha256=T72cfgn2xjp8a-ZiLQyYU3k779L8uKird_VPuPE3xpc,83
+emotion_detection/libNativeEmotionsLibrary.so,sha256=kq3S3YhMGY4ScpWiki9njBXHitCV63hmPUFGnxwwuAM,22219776
+emotion_detection/cpp.pypy37-pp73-x86_64-linux-gnu.so,sha256=6U75QMcRMWb7MWNsm9UB5h35PqpHJFHI3pU6PWnylRk,339880
+emotion_detection-0.0.1.dist-info/WHEEL,sha256=q9dACjjc9G4BWGDyt1YJXSsK2l1cs4Mf5BbjFTFXjus,162
+emotion_detection-0.0.1.dist-info/RECORD,,
+emotion_detection-0.0.1.dist-info/top_level.txt,sha256=fnVnMSKmZpBvK0pqpzA3byasj0gDk00gXF_NLH34WbE,18
+emotion_detection-0.0.1.dist-info/METADATA,sha256=LTg9709ExhxEPPWUXq7MPU81pOCQwngmoIbdZgo5J_g,326
