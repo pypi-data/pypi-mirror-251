@@ -1,0 +1,17 @@
+geojson_validator/__init__.py,sha256=PjOgIkbo7Agcvy0Dq4S2ANhMAv2CdJp2n1Kn2J8ZXrY,71
+geojson_validator/checks_invalid.py,sha256=_jVkA3bbVHQquHStKcsK0Krt8NXufXixpkNE8ofk5Jw,2043
+geojson_validator/checks_problematic.py,sha256=_CD7ixC3supi9eYSSnQfS_JZdcYFAv7TTR36bSuh-Ak,2191
+geojson_validator/fix_utils.py,sha256=WkY-bBMYdbSsRXQFs7zXrWTW6RBi9VL-95wGQLHaMt4,1006
+geojson_validator/fixes.py,sha256=jV6-O9w6lmxCU2Wjybd1rDAm6xqpZOp4HQkPjRl9XWQ,1242
+geojson_validator/fixes_invalid.py,sha256=QFH7_56EajWMm9aZsdY_ba1Xw5SFChBQRaEFCCJftII,1266
+geojson_validator/fixes_utils.py,sha256=2W4KjXd_r8L5qHNUvUVcMrk4EevTh536tGMCgwIO_Wc,1273
+geojson_validator/geometry_utils.py,sha256=mhJte8jz00ZgrQLuCPzs1Wz1TEFyMr-mCgTrciY7fII,3732
+geojson_validator/geometry_validation.py,sha256=nBWp3pYHc3IthsnlrVY01PX3woH0qJpcVT6KnvdCpCI,6425
+geojson_validator/main.py,sha256=QHBXhmhjntN1kzw_Ih1TXKk9NvlwvAfmgRwQalUa3ZY,3349
+geojson_validator/schema_validation.py,sha256=Zuhkx6vIX12tPbVhy8WSXEPFXnoLGiZHrRRzUvRlwAQ,7843
+geojson_validator/validation_utils.py,sha256=4MGGCwqVY4vuvpEiZTRczTOZpWQrw-y8vzgM9m5dGB0,6754
+geojson_validator-0.4.0.data/data/requirements.txt,sha256=3feKOMfpT9Dw2F6aS4D0eMuqRIjGMBcB3bRvZWXWQck,30
+geojson_validator-0.4.0.dist-info/METADATA,sha256=lm811Kcqo5OxmJiZMkGC0AHW3tjw75ANqPMHwBYE5DM,5054
+geojson_validator-0.4.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+geojson_validator-0.4.0.dist-info/top_level.txt,sha256=ZHDOJiqLr4G8t3UpICXAjDZBOBmnyodtO1gHZfReSNw,18
+geojson_validator-0.4.0.dist-info/RECORD,,
