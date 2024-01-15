@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: med-metrics
+Version: 0.0.1
+Summary: Custom ML metrics for medical applications
+Author: Erkin Ötleş
+Author-email: hi@eotles.com
+License-File: LICENSE
+License-File: LICENSE.txt
+Requires-Dist: numpy
+Requires-Dist: scikit-learn
+Requires-Dist: matplotlib
+
