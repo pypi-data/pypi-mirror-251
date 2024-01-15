@@ -1,0 +1,903 @@
+
+<!DOCTYPE html>
+
+<html lang="en_US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Learnware Preparation and Uoloading &#8212; learnware 0.2.0.9 documentation</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom_style.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Learnwares Search" href="search.html" />
+    <link rel="prev" title="Experiments and Examples" href="../start/exp.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en_US">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo1.png" class="logo" alt="logo">
+      
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../index.html">
+   Home
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  GETTING STARTED:
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../start/intro.html">
+   Introduction
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../start/quick.html">
+   Quick Start
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../start/install.html">
+   Installation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../start/exp.html">
+   Experiments and Examples
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  WORKFLOWS:
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Learnware Preparation and Uploading
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="search.html">
+   Learnware Search
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="reuse.html">
+   Learnware Reuse
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="client.html">
+   Learnware Client
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  COMPONENTS:
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../components/market.html">
+   Market
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../components/learnware.html">
+   Learnware &amp; Reuser
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../components/spec.html">
+   Specification
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../components/model.html">
+   Model &amp; Container
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  ADVANCED TOPICS:
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../advanced/anchor.html">
+   Anchor Learnware
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../advanced/evolve.html">
+   Evolvable Specification
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  REFERENCES:
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../references/api.html">
+   API
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../references/beimingwu.html">
+   Beimingwu System
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../references/FAQ.html">
+   FAQ
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  ABOUTS:
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../about/dev.html">
+   For Developer
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../about/changelog.html">
+   Changelog
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../about/about.html">
+   About us
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/workflows/upload.rst.txt"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.rst</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#prepare-learnware">
+   Prepare Learnware
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#model-invocation-file-init-py">
+     Model Invocation File
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       __init__.py
+      </span>
+     </code>
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#input-and-output-dimensions">
+       Input and Output Dimensions
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#file-path">
+       File Path
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#module-imports">
+       Module Imports
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#learnware-statistical-specification-stat-json">
+     Learnware Statistical Specification
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       stat.json
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#learnware-configuration-file-learnware-yaml">
+     Learnware Configuration File
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       learnware.yaml
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#model-runtime-dependent-file">
+     Model Runtime Dependent File
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#using-environment-yaml-file">
+       Using
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         environment.yaml
+        </span>
+       </code>
+       File
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#using-requirements-txt-file">
+       Using
+       <cite>
+        requirements.txt
+       </cite>
+       File
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#upload-learnware">
+   Upload Learnware
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#prepare-sematic-specifcation">
+     Prepare Sematic Specifcation
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#uploading">
+     Uploading
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#remove-learnware">
+   Remove Learnware
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Learnware Preparation and Uoloading</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#prepare-learnware">
+   Prepare Learnware
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#model-invocation-file-init-py">
+     Model Invocation File
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       __init__.py
+      </span>
+     </code>
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#input-and-output-dimensions">
+       Input and Output Dimensions
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#file-path">
+       File Path
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#module-imports">
+       Module Imports
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#learnware-statistical-specification-stat-json">
+     Learnware Statistical Specification
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       stat.json
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#learnware-configuration-file-learnware-yaml">
+     Learnware Configuration File
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       learnware.yaml
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#model-runtime-dependent-file">
+     Model Runtime Dependent File
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#using-environment-yaml-file">
+       Using
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         environment.yaml
+        </span>
+       </code>
+       File
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#using-requirements-txt-file">
+       Using
+       <cite>
+        requirements.txt
+       </cite>
+       File
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#upload-learnware">
+   Upload Learnware
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#prepare-sematic-specifcation">
+     Prepare Sematic Specifcation
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#uploading">
+     Uploading
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#remove-learnware">
+   Remove Learnware
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section id="learnware-preparation-and-uoloading">
+<h1>Learnware Preparation and Uoloading<a class="headerlink" href="#learnware-preparation-and-uoloading" title="Permalink to this headline">#</a></h1>
+<p>In this section, we provide a comprehensive guide on submitting your custom learnware to the <code class="docutils literal notranslate"><span class="pre">Learnware</span> <span class="pre">Market</span></code>.
+We will first discuss the necessary components of a valid learnware, followed by a detailed explanation on how to upload and remove learnwares within <code class="docutils literal notranslate"><span class="pre">Learnware</span> <span class="pre">Market</span></code>.</p>
+<section id="prepare-learnware">
+<h2>Prepare Learnware<a class="headerlink" href="#prepare-learnware" title="Permalink to this headline">#</a></h2>
+<p>In the <code class="docutils literal notranslate"><span class="pre">learnware</span></code> package, each learnware is encapsulated in a <code class="docutils literal notranslate"><span class="pre">zip</span></code> package, which should contain at least the following four files:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">learnware.yaml</span></code>: learnware configuration file.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">__init__.py</span></code>: methods for using the model.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">stat.json</span></code>: the statistical specification of the learnware. Its filename can be customized and recorded in learnware.yaml.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">environment.yaml</span></code> or <code class="docutils literal notranslate"><span class="pre">requirements.txt</span></code>: specifies the environment for the model.</p></li>
+</ul>
+<p>To facilitate the construction of a learnware, we provide a <a class="reference external" href="https://www.bmwu.cloud/static/learnware-template.zip">Learnware Template</a> that you can use as a basis for building your own learnware.</p>
+<p>Next, we will provide detailed explanations for the content of these four files.</p>
+<section id="model-invocation-file-init-py">
+<h3>Model Invocation File <code class="docutils literal notranslate"><span class="pre">__init__.py</span></code><a class="headerlink" href="#model-invocation-file-init-py" title="Permalink to this headline">#</a></h3>
+<p>To ensure that the uploaded learnware can be used by subsequent users, you need to provide interfaces for model fitting <code class="docutils literal notranslate"><span class="pre">fit(X,</span> <span class="pre">y)</span></code>, prediction <code class="docutils literal notranslate"><span class="pre">predict(X)</span></code>, and fine-tuning <code class="docutils literal notranslate"><span class="pre">finetune(X,</span> <span class="pre">y)</span></code> in <code class="docutils literal notranslate"><span class="pre">__init__.py</span></code>. Among these interfaces, only the <code class="docutils literal notranslate"><span class="pre">`predict(X)`</span></code> interface is mandatory, while the others depend on the functionality of your model.</p>
+<p>Below is a reference template for the <code class="docutils literal notranslate"><span class="pre">`__init__.py`</span></code> file. Please make sure that the input parameter format (the number of parameters and parameter names) for each interface in your model invocation file matches the template below.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">pickle</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">learnware.model</span> <span class="kn">import</span> <span class="n">BaseModel</span>
+
+<span class="k">class</span> <span class="nc">MyModel</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">(</span><span class="n">MyModel</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">input_shape</span><span class="o">=</span><span class="p">(</span><span class="mi">37</span><span class="p">,),</span> <span class="n">output_shape</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,))</span>
+        <span class="n">dir_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="vm">__file__</span><span class="p">))</span>
+        <span class="n">model_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">dir_path</span><span class="p">,</span> <span class="s2">&quot;model.pkl&quot;</span><span class="p">)</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">model_path</span><span class="p">,</span> <span class="s2">&quot;rb&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">model</span> <span class="o">=</span> <span class="n">pickle</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">fit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span> <span class="n">y</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">model</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">predict</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">:</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">finetune</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span> <span class="n">y</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">):</span>
+        <span class="k">pass</span>
+</pre></div>
+</div>
+<p>Please ensure that the <code class="docutils literal notranslate"><span class="pre">MyModel</span></code> class inherits from <code class="docutils literal notranslate"><span class="pre">BaseModel</span></code> in the <code class="docutils literal notranslate"><span class="pre">learnware.model</span></code> module, and specify the class name (e.g., <code class="docutils literal notranslate"><span class="pre">MyModel</span></code>) in the <code class="docutils literal notranslate"><span class="pre">learnware.yaml</span></code> file later.</p>
+<section id="input-and-output-dimensions">
+<h4>Input and Output Dimensions<a class="headerlink" href="#input-and-output-dimensions" title="Permalink to this headline">#</a></h4>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">input_shape</span></code> and <code class="docutils literal notranslate"><span class="pre">output_shape</span></code> represent the input and output dimensions of the model, respectively. You can refer to the following guidelines when filling them out:</dt><dd><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">input_shape</span></code> specifies a single input sample’s dimension, and <code class="docutils literal notranslate"><span class="pre">output_shape</span></code> refers to the model’s output dimension for a single sample.</p></li>
+<li><p>When the data type being processed is text data, there are no specific requirements for the value of <code class="docutils literal notranslate"><span class="pre">input_shape</span></code>, and it can be filled in as <code class="docutils literal notranslate"><span class="pre">None</span></code>.</p></li>
+<li><p>When the <code class="docutils literal notranslate"><span class="pre">output_shape</span></code> corresponds to tasks with variable outputs (such as object detection, text segmentation, etc.), there are no specific requirements for the value of <code class="docutils literal notranslate"><span class="pre">output_shape</span></code>, and it can be filled in as <code class="docutils literal notranslate"><span class="pre">None</span></code>.</p></li>
+<li><p>For classification tasks, <code class="docutils literal notranslate"><span class="pre">output_shape</span></code> should be (1, ) if the model directly outputs predicted labels, and the sample labels need to start from 0. If the model outputs logits, <code class="docutils literal notranslate"><span class="pre">output_shape</span></code> should be specified as the number of classes, i.e., (class_num, ).</p></li>
+</ul>
+</dd>
+</dl>
+</section>
+<section id="file-path">
+<h4>File Path<a class="headerlink" href="#file-path" title="Permalink to this headline">#</a></h4>
+<dl class="simple">
+<dt>If you need to load certain files within the zip package in the <code class="docutils literal notranslate"><span class="pre">__init__.py</span></code> file (and any other Python files that may be involved), please follow the method shown in the template above about obtaining the <code class="docutils literal notranslate"><span class="pre">model_path</span></code>:</dt><dd><ul class="simple">
+<li><p>First, obtain the root directory path of the entire package by getting <code class="docutils literal notranslate"><span class="pre">dir_path</span></code>.</p></li>
+<li><ul>
+<li><p>Then, based on the specific file’s relative location within the package, obtain the specific file’s path, <code class="docutils literal notranslate"><span class="pre">model_path</span></code>.</p></li>
+</ul>
+</li>
+</ul>
+</dd>
+</dl>
+</section>
+<section id="module-imports">
+<h4>Module Imports<a class="headerlink" href="#module-imports" title="Permalink to this headline">#</a></h4>
+<p>Please note that module imports between Python files within the zip package should be done using <strong>relative imports</strong>. For instance:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">.package_name</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">.package_name</span> <span class="kn">import</span> <span class="n">module_name</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="learnware-statistical-specification-stat-json">
+<h3>Learnware Statistical Specification <code class="docutils literal notranslate"><span class="pre">stat.json</span></code><a class="headerlink" href="#learnware-statistical-specification-stat-json" title="Permalink to this headline">#</a></h3>
+<p>A learnware consists of a model and a specification. Therefore, after preparing the model, you need to generate a statistical specification for it. Specifically, using the previously installed <code class="docutils literal notranslate"><span class="pre">learnware</span></code> package, you can use the training data <code class="docutils literal notranslate"><span class="pre">train_x</span></code> (supported types include numpy.ndarray, pandas.DataFrame, and torch.Tensor) as input to generate the statistical specification of the model.</p>
+<p>Here is an example of the code:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">learnware.specification</span> <span class="kn">import</span> <span class="n">generate_stat_spec</span>
+
+<span class="n">data_type</span> <span class="o">=</span> <span class="s2">&quot;table&quot;</span> <span class="c1"># Data types: [&quot;table&quot;, &quot;image&quot;, &quot;text&quot;]</span>
+<span class="n">spec</span> <span class="o">=</span> <span class="n">generate_stat_spec</span><span class="p">(</span><span class="nb">type</span><span class="o">=</span><span class="n">data_type</span><span class="p">,</span> <span class="n">X</span><span class="o">=</span><span class="n">train_x</span><span class="p">)</span>
+<span class="n">spec</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s2">&quot;stat.json&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>It’s worth noting that the above code only runs on your local computer and does not interact with any cloud servers or leak any local private data.</p>
+<p>Additionally, if the model’s training data is too large, causing the above code to fail, you can consider sampling the training data to ensure it’s of a suitable size before proceeding with reduction generation.</p>
+</section>
+<section id="learnware-configuration-file-learnware-yaml">
+<h3>Learnware Configuration File <code class="docutils literal notranslate"><span class="pre">learnware.yaml</span></code><a class="headerlink" href="#learnware-configuration-file-learnware-yaml" title="Permalink to this headline">#</a></h3>
+<p>This file is used to specify the class name (<code class="docutils literal notranslate"><span class="pre">MyModel</span></code>) in the model invocation file <code class="docutils literal notranslate"><span class="pre">__init__.py</span></code>, the module called for generating the statistical specification (<code class="docutils literal notranslate"><span class="pre">learnware.specification</span></code>), the category of the statistical specification (<code class="docutils literal notranslate"><span class="pre">RKMETableSpecification</span></code>), and the specific filename (<code class="docutils literal notranslate"><span class="pre">stat.json</span></code>):</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">model</span><span class="p">:</span>
+<span class="nt">class_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">MyModel</span>
+<span class="nt">kwargs</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{}</span>
+<span class="nt">stat_specifications</span><span class="p">:</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">module_path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">learnware.specification</span>
+<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">class_name</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">RKMETableSpecification</span>
+<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">file_name</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">stat.json</span>
+<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">kwargs</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="p p-Indicator">{}</span>
+</pre></div>
+</div>
+<p>Please note that the statistical specification class name for different data types <code class="docutils literal notranslate"><span class="pre">['table',</span> <span class="pre">'image',</span> <span class="pre">'text']</span></code> is <code class="docutils literal notranslate"><span class="pre">[RKMETableSpecification,</span> <span class="pre">RKMEImageSpecification,</span> <span class="pre">RKMETextSpecification]</span></code>, respectively.</p>
+</section>
+<section id="model-runtime-dependent-file">
+<h3>Model Runtime Dependent File<a class="headerlink" href="#model-runtime-dependent-file" title="Permalink to this headline">#</a></h3>
+<dl class="simple">
+<dt>To ensure that your uploaded learnware can be used by other users, the <code class="docutils literal notranslate"><span class="pre">zip</span></code> package of the uploaded learnware should specify the model’s runtime dependencies. The Beimingwu System supports the following two ways to specify runtime dependencies:</dt><dd><ul class="simple">
+<li><p>Provide an <code class="docutils literal notranslate"><span class="pre">environment.yaml</span></code> file supported by <code class="docutils literal notranslate"><span class="pre">conda</span></code>.</p></li>
+<li><p>Provide a <code class="docutils literal notranslate"><span class="pre">requirements.txt</span></code> file supported by <code class="docutils literal notranslate"><span class="pre">pip</span></code>.</p></li>
+</ul>
+</dd>
+</dl>
+<p>You can choose either method, but please try to remove unnecessary dependencies to keep the dependency list as minimal as possible.</p>
+<section id="using-environment-yaml-file">
+<h4>Using <code class="docutils literal notranslate"><span class="pre">environment.yaml</span></code> File<a class="headerlink" href="#using-environment-yaml-file" title="Permalink to this headline">#</a></h4>
+<p>You can export the <cite>environment.yaml</cite> file directly from the <cite>conda</cite> virtual environment using the following command:</p>
+<ul class="simple">
+<li><p>For Linux and macOS systems</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>env<span class="w"> </span><span class="nb">export</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-v<span class="w"> </span><span class="s2">&quot;^prefix: &quot;</span><span class="w"> </span>&gt;<span class="w"> </span>environment.yaml
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>For Windows systems:</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>env<span class="w"> </span><span class="nb">export</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>findstr<span class="w"> </span>/v<span class="w"> </span><span class="s2">&quot;^prefix: &quot;</span><span class="w"> </span>&gt;<span class="w"> </span>environment.yaml
+</pre></div>
+</div>
+<p>Note that the <code class="docutils literal notranslate"><span class="pre">environment.yaml</span></code> file in the <code class="docutils literal notranslate"><span class="pre">zip</span></code> package needs to be encoded in <code class="docutils literal notranslate"><span class="pre">UTF-8</span></code> format. Please check the encoding format of the <code class="docutils literal notranslate"><span class="pre">environment.yaml</span></code> file after using the above command. Due to the <code class="docutils literal notranslate"><span class="pre">conda</span></code> version and system differences, you may not get a <code class="docutils literal notranslate"><span class="pre">UTF-8</span></code> encoded file (e.g. get a <code class="docutils literal notranslate"><span class="pre">UTF-16LE</span></code> encoded file). You’ll need to manually convert the file to <code class="docutils literal notranslate"><span class="pre">UTF-8</span></code>, which is supported by most text editors. The following <code class="docutils literal notranslate"><span class="pre">Python</span></code> code for encoding conversion is also for reference:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">codecs</span>
+
+<span class="c1"># Read the output file from the &#39;conda env export&#39; command</span>
+<span class="c1"># Assuming the file name is environment.yaml and the export format is UTF-16LE</span>
+<span class="k">with</span> <span class="n">codecs</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s1">&#39;environment.yaml&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-16le&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
+    <span class="n">content</span> <span class="o">=</span> <span class="n">file</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+
+<span class="c1"># Convert the content to UTF-8 encoding</span>
+<span class="n">output_content</span> <span class="o">=</span> <span class="n">content</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span>
+
+<span class="c1"># Write to UTF-8 encoded file</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;environment.yaml&#39;</span><span class="p">,</span> <span class="s1">&#39;wb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
+    <span class="n">file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">output_content</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Additionally, due to the complexity of users’ local <code class="docutils literal notranslate"><span class="pre">conda</span></code> virtual environments, you can execute the following command before uploading to confirm that there are no dependency conflicts in the <code class="docutils literal notranslate"><span class="pre">environment.yaml</span></code> file:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>env<span class="w"> </span>create<span class="w"> </span>--name<span class="w"> </span>test_env<span class="w"> </span>--file<span class="w"> </span>environment.yaml
+</pre></div>
+</div>
+<p>The above command will create a virtual environment based on the <code class="docutils literal notranslate"><span class="pre">environment.yaml</span></code> file, and if successful, it indicates that there are no dependency conflicts. You can delete the created virtual environment using the following command:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>env<span class="w"> </span>remove<span class="w"> </span>--name<span class="w"> </span>test_env
+</pre></div>
+</div>
+</section>
+<section id="using-requirements-txt-file">
+<h4>Using <cite>requirements.txt</cite> File<a class="headerlink" href="#using-requirements-txt-file" title="Permalink to this headline">#</a></h4>
+<p>The <code class="docutils literal notranslate"><span class="pre">requirements.txt</span></code> file should list the packages required for running the <code class="docutils literal notranslate"><span class="pre">__init__.py</span></code> file and their specific versions. You can obtain these version details by executing the <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">show</span> <span class="pre">&lt;package_name&gt;</span></code> or <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">list</span> <span class="pre">&lt;package_name&gt;</span></code> command. Here is an example file:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>numpy==1.23.5
+scikit-learn==1.2.2
+</pre></div>
+</div>
+<p>Manually listing these dependencies can be cumbersome, so you can also use the <code class="docutils literal notranslate"><span class="pre">pipreqs</span></code> package to automatically scan your entire project and export the packages used along with their specific versions (though some manual verification may be required):</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>pipreqs
+pipreqs<span class="w"> </span>./<span class="w">  </span><span class="c1"># Run this command in the project&#39;s root directory</span>
+</pre></div>
+</div>
+<p>Please note that if you use the <code class="docutils literal notranslate"><span class="pre">requirements.txt</span></code> file to specify runtime dependencies, the system will by default install these dependencies in a <code class="docutils literal notranslate"><span class="pre">conda</span></code> virtual environment running <code class="docutils literal notranslate"><span class="pre">Python</span> <span class="pre">3.8</span></code> during the learnware deployment.</p>
+<p>Furthermore, for version-sensitive packages like <code class="docutils literal notranslate"><span class="pre">torch</span></code>, it’s essential to specify package versions in the <code class="docutils literal notranslate"><span class="pre">requirements.txt</span></code> file to ensure successful deployment of the uploaded learnware on other machines.</p>
+</section>
+</section>
+</section>
+<section id="upload-learnware">
+<h2>Upload Learnware<a class="headerlink" href="#upload-learnware" title="Permalink to this headline">#</a></h2>
+<p>After preparing the four required files mentioned above, you can bundle them into your own learnware <code class="docutils literal notranslate"><span class="pre">zip</span></code> package.</p>
+<section id="prepare-sematic-specifcation">
+<h3>Prepare Sematic Specifcation<a class="headerlink" href="#prepare-sematic-specifcation" title="Permalink to this headline">#</a></h3>
+<p>The semantic specification succinctly describes the features of your task and model. For uploading learnware <code class="docutils literal notranslate"><span class="pre">zip</span></code> package, the user need to prepare the semantic specification. Here is an example of a “Table Data” for a “Classification Task”:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">learnware.specification</span> <span class="kn">import</span> <span class="n">generate_semantic_spec</span>
+
+<span class="c1"># Prepare input description when data_type=&quot;Table&quot;</span>
+<span class="n">input_description</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;Dimension&quot;</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span>
+    <span class="s2">&quot;Description&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">&quot;0&quot;</span><span class="p">:</span> <span class="s2">&quot;age&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;1&quot;</span><span class="p">:</span> <span class="s2">&quot;weight&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;2&quot;</span><span class="p">:</span> <span class="s2">&quot;body length&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;3&quot;</span><span class="p">:</span> <span class="s2">&quot;animal type&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;4&quot;</span><span class="p">:</span> <span class="s2">&quot;claw length&quot;</span>
+    <span class="p">},</span>
+<span class="p">}</span>
+
+<span class="c1"># Prepare output description when task_type in [&quot;Classification&quot;, &quot;Regression&quot;]</span>
+<span class="n">output_description</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;Dimension&quot;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
+    <span class="s2">&quot;Description&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">&quot;0&quot;</span><span class="p">:</span> <span class="s2">&quot;cat&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;1&quot;</span><span class="p">:</span> <span class="s2">&quot;dog&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;2&quot;</span><span class="p">:</span> <span class="s2">&quot;bird&quot;</span><span class="p">,</span>
+    <span class="p">},</span>
+<span class="p">}</span>
+
+<span class="c1"># Create semantic specification</span>
+<span class="n">semantic_spec</span> <span class="o">=</span> <span class="n">generate_semantic_spec</span><span class="p">(</span>
+    <span class="n">name</span><span class="o">=</span><span class="s2">&quot;learnware_example&quot;</span><span class="p">,</span>
+    <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Just an example for uploading learnware&quot;</span><span class="p">,</span>
+    <span class="n">data_type</span><span class="o">=</span><span class="s2">&quot;Table&quot;</span><span class="p">,</span>
+    <span class="n">task_type</span><span class="o">=</span><span class="s2">&quot;Classification&quot;</span><span class="p">,</span>
+    <span class="n">library_type</span><span class="o">=</span><span class="s2">&quot;Scikit-learn&quot;</span><span class="p">,</span>
+    <span class="n">scenarios</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;Business&quot;</span><span class="p">,</span> <span class="s2">&quot;Financial&quot;</span><span class="p">],</span>
+    <span class="n">input_description</span><span class="o">=</span><span class="n">input_description</span><span class="p">,</span>
+    <span class="n">output_description</span><span class="o">=</span><span class="n">output_description</span><span class="p">,</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+<p>For more details, please refer to <a class="reference internal" href="../components/spec.html#semantic-specification"><span class="std std-ref">semantic specification</span></a>,</p>
+</section>
+<section id="uploading">
+<h3>Uploading<a class="headerlink" href="#uploading" title="Permalink to this headline">#</a></h3>
+<p>you can effortlessly upload your learnware to the <code class="docutils literal notranslate"><span class="pre">Learnware</span> <span class="pre">Market</span></code> as follows.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">learnware.market</span> <span class="kn">import</span> <span class="n">BaseChecker</span>
+<span class="kn">from</span> <span class="nn">learnware.market</span> <span class="kn">import</span> <span class="n">instantiate_learnware_market</span>
+
+<span class="c1"># instantiate a demo market</span>
+<span class="n">demo_market</span> <span class="o">=</span> <span class="n">instantiate_learnware_market</span><span class="p">(</span><span class="n">market_id</span><span class="o">=</span><span class="s2">&quot;demo&quot;</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;hetero&quot;</span><span class="p">,</span> <span class="n">rebuild</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># upload the learnware into the market</span>
+<span class="n">learnware_id</span><span class="p">,</span> <span class="n">learnware_status</span> <span class="o">=</span> <span class="n">demo_market</span><span class="o">.</span><span class="n">add_learnware</span><span class="p">(</span><span class="n">zip_path</span><span class="p">,</span> <span class="n">semantic_spec</span><span class="p">)</span>
+
+<span class="c1"># assert whether the learnware passed the check and was uploaded successfully.</span>
+<span class="k">assert</span> <span class="n">learnware_status</span> <span class="o">!=</span> <span class="n">BaseChecker</span><span class="o">.</span><span class="n">INVALID_LEARNWARE</span><span class="p">,</span> <span class="s2">&quot;Insert learnware failed!&quot;</span>
+</pre></div>
+</div>
+<p>Here, <code class="docutils literal notranslate"><span class="pre">zip_path</span></code> refers to the directory of your learnware <code class="docutils literal notranslate"><span class="pre">zip</span></code> package. <code class="docutils literal notranslate"><span class="pre">learnware_id</span></code> indicates the id assigned by <code class="docutils literal notranslate"><span class="pre">Learnware</span> <span class="pre">Market</span></code>, and the <code class="docutils literal notranslate"><span class="pre">learnware_status</span></code> indicates the check status for learnware.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The learnware <code class="docutils literal notranslate"><span class="pre">zip</span></code> package uploaded into <code class="docutils literal notranslate"><span class="pre">LearnwareMarket</span></code> will be checked semantically and statistically, and <code class="docutils literal notranslate"><span class="pre">add_learnware</span></code> will return the concrete check status. The check status <code class="docutils literal notranslate"><span class="pre">BaseChecker.INVALID_LEARNWARE</span></code> indicates the learnware did not pass the check. For more details about learnware checker, please refer to <cite>Learnware Market &lt;../components/market.html#easy-checker&gt;</cite></p>
+</div>
+</section>
+</section>
+<section id="remove-learnware">
+<h2>Remove Learnware<a class="headerlink" href="#remove-learnware" title="Permalink to this headline">#</a></h2>
+<p>As administrators of the <code class="docutils literal notranslate"><span class="pre">Learnware</span> <span class="pre">Market</span></code>, it’s crucial to remove learnwares that exhibit suspicious uploading motives.
+Once you have the necessary permissions and approvals, you can use the following code to remove a learnware
+from the <code class="docutils literal notranslate"><span class="pre">Learnware</span> <span class="pre">Market</span></code>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">easy_market</span><span class="o">.</span><span class="n">delete_learnware</span><span class="p">(</span><span class="n">learnware_id</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Here,  <code class="docutils literal notranslate"><span class="pre">learnware_id</span></code> refers to the market ID of the learnware to be removed.</p>
+</section>
+</section>
+
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="../start/exp.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Experiments and Examples</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="search.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Learnwares Search</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By LAMDA Group<br/>
+  
+      &copy; Copyright 2023, LAMDA Group.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

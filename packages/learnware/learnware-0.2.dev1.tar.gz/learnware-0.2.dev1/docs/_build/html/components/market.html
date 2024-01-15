@@ -1,0 +1,882 @@
+
+<!DOCTYPE html>
+
+<html lang="en_US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Learnware Market &#8212; learnware 0.2.0.9 documentation</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom_style.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Learnware &amp; Reuser" href="learnware.html" />
+    <link rel="prev" title="Learnware Client" href="../workflows/client.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en_US">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo1.png" class="logo" alt="logo">
+      
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../index.html">
+   Home
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  GETTING STARTED:
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../start/intro.html">
+   Introduction
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../start/quick.html">
+   Quick Start
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../start/install.html">
+   Installation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../start/exp.html">
+   Experiments and Examples
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  WORKFLOWS:
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../workflows/upload.html">
+   Learnware Preparation and Uploading
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../workflows/search.html">
+   Learnware Search
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../workflows/reuse.html">
+   Learnware Reuse
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../workflows/client.html">
+   Learnware Client
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  COMPONENTS:
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Market
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="learnware.html">
+   Learnware &amp; Reuser
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="spec.html">
+   Specification
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="model.html">
+   Model &amp; Container
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  ADVANCED TOPICS:
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../advanced/anchor.html">
+   Anchor Learnware
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../advanced/evolve.html">
+   Evolvable Specification
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  REFERENCES:
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../references/api.html">
+   API
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../references/beimingwu.html">
+   Beimingwu System
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../references/FAQ.html">
+   FAQ
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  ABOUTS:
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../about/dev.html">
+   For Developer
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../about/changelog.html">
+   Changelog
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../about/about.html">
+   About us
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/components/market.rst.txt"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.rst</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#framework">
+   Framework
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#current-checkers">
+   Current Checkers
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#condachecker">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       CondaChecker
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#easysemanticchecker">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       EasySemanticChecker
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#easystatchecker">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       EasyStatChecker
+      </span>
+     </code>
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#current-markets">
+   Current Markets
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#easy-market">
+     Easy Market
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#easy-organizer">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         Easy
+        </span>
+        <span class="pre">
+         Organizer
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#easy-searcher">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         Easy
+        </span>
+        <span class="pre">
+         Searcher
+        </span>
+       </code>
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#semantic-specification-searcher">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           Semantic
+          </span>
+          <span class="pre">
+           Specification
+          </span>
+          <span class="pre">
+           Searcher
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#statistical-specification-searcher">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           Statistical
+          </span>
+          <span class="pre">
+           Specification
+          </span>
+          <span class="pre">
+           Searcher
+          </span>
+         </code>
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#easy-checker">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         Easy
+        </span>
+        <span class="pre">
+         Checker
+        </span>
+       </code>
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#hetero-market">
+     Hetero Market
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#heteromaptableorganizer">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         HeteroMapTableOrganizer
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#heterosearcher">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         HeteroSearcher
+        </span>
+       </code>
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Learnware Market</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#framework">
+   Framework
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#current-checkers">
+   Current Checkers
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#condachecker">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       CondaChecker
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#easysemanticchecker">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       EasySemanticChecker
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#easystatchecker">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       EasyStatChecker
+      </span>
+     </code>
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#current-markets">
+   Current Markets
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#easy-market">
+     Easy Market
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#easy-organizer">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         Easy
+        </span>
+        <span class="pre">
+         Organizer
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#easy-searcher">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         Easy
+        </span>
+        <span class="pre">
+         Searcher
+        </span>
+       </code>
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#semantic-specification-searcher">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           Semantic
+          </span>
+          <span class="pre">
+           Specification
+          </span>
+          <span class="pre">
+           Searcher
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#statistical-specification-searcher">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           Statistical
+          </span>
+          <span class="pre">
+           Specification
+          </span>
+          <span class="pre">
+           Searcher
+          </span>
+         </code>
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#easy-checker">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         Easy
+        </span>
+        <span class="pre">
+         Checker
+        </span>
+       </code>
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#hetero-market">
+     Hetero Market
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#heteromaptableorganizer">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         HeteroMapTableOrganizer
+        </span>
+       </code>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#heterosearcher">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         HeteroSearcher
+        </span>
+       </code>
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section id="learnware-market">
+<span id="market"></span><h1>Learnware Market<a class="headerlink" href="#learnware-market" title="Permalink to this headline">#</a></h1>
+<p>The <code class="docutils literal notranslate"><span class="pre">Learnware</span> <span class="pre">Market</span></code> receives high-performance machine learning models from developers, incorporates them into the system, and provides services to users by identifying and reusing learnware to help users solve current tasks. Developers voluntarily submit various learnwares to the learnware market, and the market conducts quality checks and further organization of these learnwares. When users submit task requirements, the learnware market automatically selects whether to recommend a single learnware or a combination of multiple learnwares.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">Learnware</span> <span class="pre">Market</span></code> will receive various kinds of learnwares, and learnwares from different feature/label spaces form numerous islands of specifications. All these islands together constitute the <code class="docutils literal notranslate"><span class="pre">specification</span> <span class="pre">world</span></code> in the learnware market. The market should discover and establish connections between different islands, and then merge them into a unified specification world. This further organization of learnwares support search learnwares among all learnwares, not just among learnwares which has the same feature space and label space with the user’s task requirements.</p>
+<section id="framework">
+<h2>Framework<a class="headerlink" href="#framework" title="Permalink to this headline">#</a></h2>
+<p>The <code class="docutils literal notranslate"><span class="pre">Learnware</span> <span class="pre">Market</span></code> is combined with a <code class="docutils literal notranslate"><span class="pre">organizer</span></code>, a <code class="docutils literal notranslate"><span class="pre">searcher</span></code>, and a list of <code class="docutils literal notranslate"><span class="pre">checker</span></code>s.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">organizer</span></code> can store and organize learnwares in the market. It supports <code class="docutils literal notranslate"><span class="pre">add</span></code>, <code class="docutils literal notranslate"><span class="pre">delete</span></code>, and <code class="docutils literal notranslate"><span class="pre">update</span></code> operations for learnwares. It also provides the interface for <code class="docutils literal notranslate"><span class="pre">searcher</span></code> to search learnwares based on user requirement.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">searcher</span></code> can search learnwares based on user requirement. The implementation of <code class="docutils literal notranslate"><span class="pre">searcher</span></code> is dependent on the concrete implementation and interface for <code class="docutils literal notranslate"><span class="pre">organizer</span></code>, where usually an <code class="docutils literal notranslate"><span class="pre">organizer</span></code> can be compatible with multiple different <code class="docutils literal notranslate"><span class="pre">searcher</span></code>s.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">checker</span></code> is used for checking the learnware in some standards. It should check the utility of a learnware and is supposed to return the status and a message related to the learnware’s check result. Only the learnwares who passed the <code class="docutils literal notranslate"><span class="pre">checker</span></code> could be able to be stored and added into the <code class="docutils literal notranslate"><span class="pre">Learnware</span> <span class="pre">Market</span></code>.</p>
+</section>
+<section id="current-checkers">
+<h2>Current Checkers<a class="headerlink" href="#current-checkers" title="Permalink to this headline">#</a></h2>
+<p>The <code class="docutils literal notranslate"><span class="pre">learnware</span></code> package provide two different implementation of <code class="docutils literal notranslate"><span class="pre">market</span></code> where both of them share the same <code class="docutils literal notranslate"><span class="pre">checker</span></code> list. So we first introduce the details of <code class="docutils literal notranslate"><span class="pre">checker</span></code>s.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">checker``s</span> <span class="pre">check</span> <span class="pre">a</span> <span class="pre">learnware</span> <span class="pre">object</span> <span class="pre">in</span> <span class="pre">different</span> <span class="pre">aspects,</span> <span class="pre">including</span> <span class="pre">environment</span> <span class="pre">configuration</span> <span class="pre">(``CondaChecker</span></code>), semantic specifications (<code class="docutils literal notranslate"><span class="pre">EasySemanticChecker</span></code>), and statistical specifications (<code class="docutils literal notranslate"><span class="pre">EasyStatChecker</span></code>). The <code class="docutils literal notranslate"><span class="pre">__call__</span></code> method of each checker is designed to be invoked as a function to conduct the respective checks on the learnware and return the outcomes. It defines three types of learnwares: <code class="docutils literal notranslate"><span class="pre">INVALID_LEARNWARE</span></code> denotes the learnware does not pass the check, <code class="docutils literal notranslate"><span class="pre">NONUSABLE_LEARNWARE</span></code> denotes the learnware pass the check but cannot make prediction, <code class="docutils literal notranslate"><span class="pre">USABLE_LEARNWARE</span></code> denotes the leanrware pass the check and can make prediction. Currently, we have three <code class="docutils literal notranslate"><span class="pre">checker</span></code>s, which are described below.</p>
+<section id="condachecker">
+<h3><code class="docutils literal notranslate"><span class="pre">CondaChecker</span></code><a class="headerlink" href="#condachecker" title="Permalink to this headline">#</a></h3>
+<p>This <code class="docutils literal notranslate"><span class="pre">checker</span></code> checks a the environment of the learnware object. It creates a <code class="docutils literal notranslate"><span class="pre">LearnwaresContainer</span></code> instance to handle the Learnware and uses <code class="docutils literal notranslate"><span class="pre">inner_checker</span></code> to check the Learnware. If an exception occurs, it logs the error and returns <code class="docutils literal notranslate"><span class="pre">NONUSABLE_LEARNWARE</span></code> status and error message.</p>
+</section>
+<section id="easysemanticchecker">
+<h3><code class="docutils literal notranslate"><span class="pre">EasySemanticChecker</span></code><a class="headerlink" href="#easysemanticchecker" title="Permalink to this headline">#</a></h3>
+<p>This <code class="docutils literal notranslate"><span class="pre">checker</span></code> checks the semantic specification of a learnware object. It checks if the given semantic specification conforms to predefined standards. It verifies each key in predefined dictionary. If the check fails, it logs the error and returns <code class="docutils literal notranslate"><span class="pre">NONUSABLE_LEARNWARE</span></code> status and error message.</p>
+</section>
+<section id="easystatchecker">
+<h3><code class="docutils literal notranslate"><span class="pre">EasyStatChecker</span></code><a class="headerlink" href="#easystatchecker" title="Permalink to this headline">#</a></h3>
+<p>This <code class="docutils literal notranslate"><span class="pre">checker</span></code> checks the statistical specification and functionality of a learnware object. It performs multiple checks to validate the learnware. It checks for model instantiation, verifies input shape and statistical specifications, and test output shape using random generated data. In case of any exceptions, it logs the error and returns <code class="docutils literal notranslate"><span class="pre">NONUSABLE_LEARNWARE</span></code> status and error message.</p>
+</section>
+</section>
+<section id="current-markets">
+<h2>Current Markets<a class="headerlink" href="#current-markets" title="Permalink to this headline">#</a></h2>
+<p>The <code class="docutils literal notranslate"><span class="pre">learnware</span></code> package provide two different implementation of <code class="docutils literal notranslate"><span class="pre">market</span></code>, i.e. <code class="docutils literal notranslate"><span class="pre">Easy</span> <span class="pre">Market</span></code> and <code class="docutils literal notranslate"><span class="pre">Hetero</span> <span class="pre">Market</span></code>. They have different implementation of <code class="docutils literal notranslate"><span class="pre">organizer</span></code> and <code class="docutils literal notranslate"><span class="pre">searcher</span></code>.</p>
+<section id="easy-market">
+<h3>Easy Market<a class="headerlink" href="#easy-market" title="Permalink to this headline">#</a></h3>
+<p>Easy market is a basic realization of the learnware market. It consists of <code class="docutils literal notranslate"><span class="pre">EasyOrganizer</span></code>, <code class="docutils literal notranslate"><span class="pre">EasySearcher</span></code>, and the checker list <code class="docutils literal notranslate"><span class="pre">[EasySemanticChecker,</span> <span class="pre">EasyStatChecker]</span></code>.</p>
+<section id="easy-organizer">
+<h4><code class="docutils literal notranslate"><span class="pre">Easy</span> <span class="pre">Organizer</span></code><a class="headerlink" href="#easy-organizer" title="Permalink to this headline">#</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">EasyOrganizer</span></code> mainly has the following methods to store learnwares, which is an easy way to organize learnwares.</p>
+<ul class="simple">
+<li><p><strong>reload_market</strong>: Reload the learnware market when server restarted, and return a flag indicating whether the market is reloaded successfully.</p></li>
+<li><p><strong>add_learnware</strong>: Add a learnware with <code class="docutils literal notranslate"><span class="pre">learnware_id</span></code>, <code class="docutils literal notranslate"><span class="pre">semantic_spec</span></code> and model files in <code class="docutils literal notranslate"><span class="pre">zip_path</span></code> into the market. Return the <code class="docutils literal notranslate"><span class="pre">learnware_id</span></code> and <code class="docutils literal notranslate"><span class="pre">learnwere_status</span></code>. The <code class="docutils literal notranslate"><span class="pre">learnwere_status</span></code> is set <code class="docutils literal notranslate"><span class="pre">check_status</span></code> if it is provided, else <code class="docutils literal notranslate"><span class="pre">checker</span></code> will be called to generate the <code class="docutils literal notranslate"><span class="pre">learnwere_status</span></code>.</p></li>
+<li><p><strong>delete_learnware</strong>: Delete the learnware with <code class="docutils literal notranslate"><span class="pre">id</span></code> from the market, return a flag of whether the deletion is successfully.</p></li>
+<li><p><strong>update_learnware</strong>: Update the learnware’s <code class="docutils literal notranslate"><span class="pre">zip_path</span></code>, <code class="docutils literal notranslate"><span class="pre">semantic_spec</span></code>, <code class="docutils literal notranslate"><span class="pre">check_status</span></code>. If None, the corresponding item is not updated. Return a flag indicating whether it passed the <code class="docutils literal notranslate"><span class="pre">checker</span></code>.</p></li>
+<li><p><strong>get_learnwares</strong>: Similar to <strong>get_learnware_ids</strong>, but return list of learnwares instead of ids.</p></li>
+<li><p><strong>reload_learnware</strong>: Reload all the attributes of the learnware with <code class="docutils literal notranslate"><span class="pre">learnware_id</span></code>.</p></li>
+</ul>
+</section>
+<section id="easy-searcher">
+<h4><code class="docutils literal notranslate"><span class="pre">Easy</span> <span class="pre">Searcher</span></code><a class="headerlink" href="#easy-searcher" title="Permalink to this headline">#</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">EasySearcher</span></code> consists of <code class="docutils literal notranslate"><span class="pre">EasyFuzzsemanticSearcher</span></code> and <code class="docutils literal notranslate"><span class="pre">EasyStatSearcher</span></code>. <code class="docutils literal notranslate"><span class="pre">EasyFuzzsemanticSearcher</span></code> is a kind of <code class="docutils literal notranslate"><span class="pre">Semantic</span> <span class="pre">Specification</span> <span class="pre">Searcher</span></code>, while <code class="docutils literal notranslate"><span class="pre">EasyStatSearcher</span></code> is a kind of <code class="docutils literal notranslate"><span class="pre">Statistical</span> <span class="pre">Specification</span> <span class="pre">Searcher</span></code>. All these searchers return helpful learnwares based on <code class="docutils literal notranslate"><span class="pre">BaseUserInfo</span></code> provided by users.</p>
+<p><code class="docutils literal notranslate"><span class="pre">BaseUserInfo</span></code> is a <code class="docutils literal notranslate"><span class="pre">Python</span> <span class="pre">API</span></code> for users to provide enough information to identify helpful learnwares.
+When initializing <code class="docutils literal notranslate"><span class="pre">BaseUserInfo</span></code>, three optional information can be provided: <code class="docutils literal notranslate"><span class="pre">id</span></code>, <code class="docutils literal notranslate"><span class="pre">semantic_spec</span></code> and <code class="docutils literal notranslate"><span class="pre">stat_info</span></code>. The introductions of these specifications is shown in <a class="reference external" href="./spec.html">COMPONENTS: Specification</a>.</p>
+<p>The semantic specification search and statistical specification search have been integrated into the same interface <code class="docutils literal notranslate"><span class="pre">EasySearcher</span></code>.</p>
+<ul class="simple">
+<li><p><strong>EasySearcher.__call__(self, user_info: BaseUserInfo, check_status: int = None, max_search_num: int = 5, search_method: str = “greedy”,) -&gt; SearchResults</strong></p>
+<ul>
+<li><p>It conducts the semantic searcher <code class="docutils literal notranslate"><span class="pre">EasyFuzzsematicSearcher</span></code>  on all the learnwares from the <code class="docutils literal notranslate"><span class="pre">organizer</span></code> with the same <code class="docutils literal notranslate"><span class="pre">check_status</span></code> (All learnwares if <code class="docutils literal notranslate"><span class="pre">check_status</span></code> is None). If the result is not empty and the <code class="docutils literal notranslate"><span class="pre">stat_info</span></code> is provided in <code class="docutils literal notranslate"><span class="pre">user_info</span></code>, then it conducts <code class="docutils literal notranslate"><span class="pre">EasyStatSearcher</span></code>, and return the <code class="docutils literal notranslate"><span class="pre">SearchResults</span></code>.</p></li>
+</ul>
+</li>
+</ul>
+<section id="semantic-specification-searcher">
+<h5><code class="docutils literal notranslate"><span class="pre">Semantic</span> <span class="pre">Specification</span> <span class="pre">Searcher</span></code><a class="headerlink" href="#semantic-specification-searcher" title="Permalink to this headline">#</a></h5>
+<p><code class="docutils literal notranslate"><span class="pre">Semantic</span> <span class="pre">Specification</span> <span class="pre">Searcher</span></code> is the first-stage search based on <code class="docutils literal notranslate"><span class="pre">user_semantic</span></code>, identifying potentially helpful learnwares whose models solve tasks similar to your requirements. There are two types of Semantic Specification Search: <code class="docutils literal notranslate"><span class="pre">EasyExactSemanticSearcher</span></code> and <code class="docutils literal notranslate"><span class="pre">EasyFuzzSemanticSearcher</span></code>.</p>
+<p>In these two searchers, each learnware in the <code class="docutils literal notranslate"><span class="pre">learnware_list</span></code> is compared with <code class="docutils literal notranslate"><span class="pre">user_info</span></code> according to their <code class="docutils literal notranslate"><span class="pre">semantic_spec</span></code>, and added to the search result if mathched. Two semantic_spec are matched when all the key words are matched or empty in <code class="docutils literal notranslate"><span class="pre">user_info</span></code>. Different keys have different matching rules. Their <code class="docutils literal notranslate"><span class="pre">__call__</span></code> functions are the same:</p>
+<ul class="simple">
+<li><p><strong>EasyExactSemanticSearcher/EasyFuzzSemanticSearcher.__call__(self, learnware_list: List[Learnware], user_info: BaseUserInfo)-&gt; SearchResults</strong></p>
+<ul>
+<li><p>For keys <code class="docutils literal notranslate"><span class="pre">Data</span></code>, <code class="docutils literal notranslate"><span class="pre">Task</span></code>, <code class="docutils literal notranslate"><span class="pre">Library</span></code> and <code class="docutils literal notranslate"><span class="pre">license</span></code>, two``semantic_spec`` keys are matched only if these values(only one value foreach key) of learnware <code class="docutils literal notranslate"><span class="pre">semantic_spec</span></code> exists in values(may be muliplevalues for one key) of user <code class="docutils literal notranslate"><span class="pre">semantic_spec</span></code>.</p></li>
+<li><p>For the key <code class="docutils literal notranslate"><span class="pre">Scenario</span></code>, two <code class="docutils literal notranslate"><span class="pre">semantic_spec</span></code> keys are matched iftheir values have nonempty intersections.</p></li>
+<li><p>For keys <code class="docutils literal notranslate"><span class="pre">Name</span></code> and <code class="docutils literal notranslate"><span class="pre">Description</span></code>, the values are strings and caseis ignored. In <code class="docutils literal notranslate"><span class="pre">EasyExactSemanticSearcher</span></code>, two <code class="docutils literal notranslate"><span class="pre">semantic_spec</span></code> keysare matched if these values of learnware <code class="docutils literal notranslate"><span class="pre">semantic_spec</span></code> is a substringof user <code class="docutils literal notranslate"><span class="pre">semantic_spec</span></code>; In <code class="docutils literal notranslate"><span class="pre">EasyFuzzSemanticSearcher</span></code>, first theexact semantic searcher is conducted like <code class="docutils literal notranslate"><span class="pre">EasyExactSemanticSearcher</span></code>.If the result is empty, the fuzz semantic searcher is activated: the``learnware_list`` is sorted according to the fuzz score function <code class="docutils literal notranslate"><span class="pre">fuzzpartial_ratio</span></code> in <code class="docutils literal notranslate"><span class="pre">rapidfuzz</span></code>.</p></li>
+</ul>
+</li>
+</ul>
+<p>The results are returned storing in <code class="docutils literal notranslate"><span class="pre">single_results</span></code> of <code class="docutils literal notranslate"><span class="pre">SearchResults</span></code>.</p>
+</section>
+<section id="statistical-specification-searcher">
+<h5><code class="docutils literal notranslate"><span class="pre">Statistical</span> <span class="pre">Specification</span> <span class="pre">Searcher</span></code><a class="headerlink" href="#statistical-specification-searcher" title="Permalink to this headline">#</a></h5>
+<p>If user’s statistical specification <code class="docutils literal notranslate"><span class="pre">stat_info</span></code> is provided,  the learnware market can perform a more accurate leanware selection using <code class="docutils literal notranslate"><span class="pre">EasyStatSearcher</span></code>.</p>
+<ul class="simple">
+<li><p><strong>EasyStatSearcher.__call__(self, learnware_list: List[Learnware], user_info: BaseUserInfo, max_search_num: int = 5, search_method: str = “greedy”,) -&gt; SearchResults</strong></p>
+<ul>
+<li><p>It searches for helpful learnwares from <code class="docutils literal notranslate"><span class="pre">learnware_list</span></code> based on the <code class="docutils literal notranslate"><span class="pre">stat_info</span></code> in <code class="docutils literal notranslate"><span class="pre">user_info</span></code>.</p></li>
+<li><p>The result <code class="docutils literal notranslate"><span class="pre">SingleSearchItem</span></code> and <code class="docutils literal notranslate"><span class="pre">MultipleSearchItem</span></code> are both stored in <code class="docutils literal notranslate"><span class="pre">SearchResults</span></code>. In <code class="docutils literal notranslate"><span class="pre">SingleSearchItem</span></code>, it searches for single learnwares that could solve the user task; scores are also provided to represent the fitness of each single learnware and user task. In <code class="docutils literal notranslate"><span class="pre">MultipleSearchItem</span></code>, it searches for a mixture of learnwares that could solve the user task better; the mixture learnware list and a score for the mixture is returned.</p></li>
+<li><p>The parameter <code class="docutils literal notranslate"><span class="pre">search_method</span></code> provides two choice of search strategies for mixture learnwares: <code class="docutils literal notranslate"><span class="pre">greedy</span></code> and <code class="docutils literal notranslate"><span class="pre">auto</span></code>. For the search method <code class="docutils literal notranslate"><span class="pre">greedy</span></code>, each time it chooses a learnware to make their mixture closer to the user’s <code class="docutils literal notranslate"><span class="pre">stat_info</span></code>; for the search method <code class="docutils literal notranslate"><span class="pre">auto</span></code>, it directly calculates a best mixture weight for the <code class="docutils literal notranslate"><span class="pre">learnware_list</span></code>.</p></li>
+<li><p>For single learnware search, we only return the learnwares with score larger than 0.6; For multiple learnware search, the parameter <code class="docutils literal notranslate"><span class="pre">max_search_num</span></code> specifies the maximum length of the returned mixture learnware list.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
+<section id="easy-checker">
+<h4><code class="docutils literal notranslate"><span class="pre">Easy</span> <span class="pre">Checker</span></code><a class="headerlink" href="#easy-checker" title="Permalink to this headline">#</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">EasySemanticChecker</span></code> and <code class="docutils literal notranslate"><span class="pre">EasyStatChecker</span></code> are used to check the validity of the learnwares. They are used as:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">EasySemanticChecker</span></code> mainly check the integrity and legitimacy of the <code class="docutils literal notranslate"><span class="pre">semantic_spec</span></code> in the learnware. A legal <code class="docutils literal notranslate"><span class="pre">semantic_spec</span></code> should includes all the keys, and the type of each key should meet our requirements. For keys with type <code class="docutils literal notranslate"><span class="pre">Class</span></code>, the values should be unique and in our <code class="docutils literal notranslate"><span class="pre">valid_list</span></code>; for keys with type <code class="docutils literal notranslate"><span class="pre">Tag</span></code>, the values should not be empty; for keys with type <code class="docutils literal notranslate"><span class="pre">String</span></code>, a non-empty string is expected as the value; for a table learnware, the dimensions and description of inputs is needed; for <code class="docutils literal notranslate"><span class="pre">classification</span></code> or <code class="docutils literal notranslate"><span class="pre">regression</span></code> learnwares, the dimensions and description of outputs is indispensable. The learnwares that pass the <code class="docutils literal notranslate"><span class="pre">EasySemanticChecker</span></code> is marked as <code class="docutils literal notranslate"><span class="pre">NONUSABLE_LEARNWARE</span></code>; otherwise, it is <code class="docutils literal notranslate"><span class="pre">INVALID_LEARNWARE</span></code> and error information will be returned.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">EasyStatChecker</span></code> mainly check the <code class="docutils literal notranslate"><span class="pre">model</span></code> and <code class="docutils literal notranslate"><span class="pre">stat_spec</span></code> of the learnwares. It includes the following steps:</p>
+<ul>
+<li><p><strong>Check model instantiation</strong>: <code class="docutils literal notranslate"><span class="pre">learnware.instantiate_model</span></code> to instantiate the model and transform it to a <code class="docutils literal notranslate"><span class="pre">BaseModel</span></code>.</p></li>
+<li><p><strong>Check input shape</strong>: Check whether the shape of <code class="docutils literal notranslate"><span class="pre">semantic_spec</span></code> input(if exists), <code class="docutils literal notranslate"><span class="pre">learnware.input_shape</span></code> and shape of <code class="docutils literal notranslate"><span class="pre">stat_spec</span></code> are consistent, and then generate an example input with that shape.</p></li>
+<li><p><strong>Check model prediction</strong>: Use the model to predict the label of the example input, and record the output shape.</p></li>
+<li><p><strong>Check output shape</strong>: For <code class="docutils literal notranslate"><span class="pre">Classification</span></code>, <code class="docutils literal notranslate"><span class="pre">Regression</span></code> and <code class="docutils literal notranslate"><span class="pre">Feature</span> <span class="pre">Extraction</span></code> tasks, the output shape should be consistent with that in <code class="docutils literal notranslate"><span class="pre">semantic_spec</span></code> and <code class="docutils literal notranslate"><span class="pre">learnware.output_shape</span></code>. Besides, for <code class="docutils literal notranslate"><span class="pre">Regression</span></code> tasks, the output should be a legal class in <code class="docutils literal notranslate"><span class="pre">semantic_spec</span></code>.</p></li>
+</ul>
+</li>
+</ul>
+<p>If any step above fails or meets a error, the learnware will be marked as <code class="docutils literal notranslate"><span class="pre">INVALID_LEARNWARE</span></code>. The learnwares that pass the <code class="docutils literal notranslate"><span class="pre">EasyStatChecker</span></code> is marked as <code class="docutils literal notranslate"><span class="pre">USABLE_LEARNWARE</span></code>.</p>
+</section>
+</section>
+<section id="hetero-market">
+<h3>Hetero Market<a class="headerlink" href="#hetero-market" title="Permalink to this headline">#</a></h3>
+<p>Hetero Market consists of <code class="docutils literal notranslate"><span class="pre">HeteroMapTableOrganizer</span></code>, <code class="docutils literal notranslate"><span class="pre">HeteroSearcher</span></code>, and the checker list <code class="docutils literal notranslate"><span class="pre">[EasySemanticChecker,</span> <span class="pre">EasyStatChecker]</span></code>.
+It is an extended version of the Easy Market which accommodates table learnwares from different feature spaces(heterogeneous table learnwares), expanding the applicable scope of learnware paradigm.
+This market trains a heterogeneous engine based on existing learnware specifications in the market to merge different specification islands and assign new specifications(<code class="docutils literal notranslate"><span class="pre">HeteroMapTableSpecification</span></code>) to learnwares.
+With more learnwares submitted, the heterogeneous engine will continuously update and is expected to build a more precise specification world.</p>
+<section id="heteromaptableorganizer">
+<h4><code class="docutils literal notranslate"><span class="pre">HeteroMapTableOrganizer</span></code><a class="headerlink" href="#heteromaptableorganizer" title="Permalink to this headline">#</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">HeteroMapTableOrganizer</span></code> overrides methods from <code class="docutils literal notranslate"><span class="pre">EasyOrganizer</span></code> and implements new methods to support organization of heterogeneous table learnwares. Key features include:</p>
+<ul class="simple">
+<li><p><strong>reload_market</strong>: Reloads the heterogeneous engine if there is one, otherwise initializes an engine with default configurations. Returns a flag indicating whether the market is reloaded successfully.</p></li>
+<li><p><strong>reset</strong>: Resets the heterogeneous market with specific settings regarding the heterogeneous engine such as <code class="docutils literal notranslate"><span class="pre">auto_update</span></code>, <code class="docutils literal notranslate"><span class="pre">auto_update_limit</span></code> and <code class="docutils literal notranslate"><span class="pre">training_args</span></code> configurations.</p></li>
+<li><p><strong>add_learnware</strong>: Add a learnware into the market, meanwhile assigning <code class="docutils literal notranslate"><span class="pre">HeteroMapTableSpecification</span></code> to the learnware using the heterogeneous engine. The engine’s update process will be triggered if <code class="docutils literal notranslate"><span class="pre">auto_update</span></code> is set to True and the number of learnwares in the market with <code class="docutils literal notranslate"><span class="pre">USABLE_LEARNWARE</span></code> status exceeds <code class="docutils literal notranslate"><span class="pre">auto_update_limit</span></code>. Return the <code class="docutils literal notranslate"><span class="pre">learnware_id</span></code> and <code class="docutils literal notranslate"><span class="pre">learnwere_status</span></code>.</p></li>
+<li><p><strong>delete_learnware</strong>: Removes the learnware with <code class="docutils literal notranslate"><span class="pre">id</span></code> from the market, also remove its new specification if there is one. Return a flag of whether the deletion is successful.</p></li>
+<li><p><strong>update_learnware</strong>: Update the learnware’s <code class="docutils literal notranslate"><span class="pre">zip_path</span></code>, <code class="docutils literal notranslate"><span class="pre">semantic_spec</span></code>, <code class="docutils literal notranslate"><span class="pre">check_status</span></code> and its new specification if there is one. Return a flag indicating whether it passed the <code class="docutils literal notranslate"><span class="pre">checker</span></code>.</p></li>
+<li><p><strong>generate_hetero_map_spec</strong>: Generate <code class="docutils literal notranslate"><span class="pre">HeteroMapTableSpecification</span></code> for users based on the information provided in <code class="docutils literal notranslate"><span class="pre">user_info</span></code>.</p></li>
+<li><p><strong>train</strong>: Build the heterogeneous engine using learnwares from the market that supports heterogeneous market training.</p></li>
+</ul>
+</section>
+<section id="heterosearcher">
+<h4><code class="docutils literal notranslate"><span class="pre">HeteroSearcher</span></code><a class="headerlink" href="#heterosearcher" title="Permalink to this headline">#</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">HeteroSearcher</span></code> builds upon <code class="docutils literal notranslate"><span class="pre">EasySearcher</span></code> with additional support for searching among heterogeneous table learnwares, returning helpful learnwares with feature space and label space different from the user’s task requirements.
+The semantic specification search and statistical specification search have been integrated into the same interface <code class="docutils literal notranslate"><span class="pre">HeteroSearcher</span></code>.</p>
+<ul class="simple">
+<li><p><strong>HeteroSearcher.__call__(self, user_info: BaseUserInfo, check_status: int = None, max_search_num: int = 5, search_method: str = “greedy”,) -&gt; SearchResults</strong></p>
+<ul>
+<li><p>It conducts the semantic searcher <code class="docutils literal notranslate"><span class="pre">EasyFuzzsematicSearcher</span></code>  on all the learnwares from the <code class="docutils literal notranslate"><span class="pre">HeteroOrganizer</span></code> with the same <code class="docutils literal notranslate"><span class="pre">check_status</span></code> (All learnwares if <code class="docutils literal notranslate"><span class="pre">check_status</span></code> is None).</p></li>
+<li><p>If the <code class="docutils literal notranslate"><span class="pre">stat_info</span></code> is provided in <code class="docutils literal notranslate"><span class="pre">user_info</span></code>, it conducts one of the following two types of statistical specification search using <code class="docutils literal notranslate"><span class="pre">EasySearcher</span></code>, depending on whether heterogeneous learnware search is enabled. If enabled, <code class="docutils literal notranslate"><span class="pre">stat_info</span></code> will be updated with a <code class="docutils literal notranslate"><span class="pre">HeteroMapTableSpecification</span></code> generated for the user, and the Hetero Market performs heterogeneous learnware selection based on the updated <code class="docutils literal notranslate"><span class="pre">stat_info</span></code>. If not enabled, the Hetero Market performs homogeneous learnware selection based on the original <code class="docutils literal notranslate"><span class="pre">stat_info</span></code>.</p></li>
+</ul>
+</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The heterogeneous learnware search is enabled when <code class="docutils literal notranslate"><span class="pre">user_info</span></code> contains valid heterogeneous search information. Please refer to <a class="reference external" href="../workflows/search.html#hetero-search">WORKFLOWS: Hetero Search</a> for details.</p>
+</div>
+</section>
+</section>
+</section>
+</section>
+
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="../workflows/client.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Learnware Client</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="learnware.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Learnware &amp; Reuser</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By LAMDA Group<br/>
+  
+      &copy; Copyright 2023, LAMDA Group.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

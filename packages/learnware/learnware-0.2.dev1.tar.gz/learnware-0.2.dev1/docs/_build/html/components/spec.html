@@ -1,0 +1,676 @@
+
+<!DOCTYPE html>
+
+<html lang="en_US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Specification &#8212; learnware 0.2.0.9 documentation</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom_style.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Model" href="model.html" />
+    <link rel="prev" title="Learnware &amp; Reuser" href="learnware.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en_US">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo1.png" class="logo" alt="logo">
+      
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../index.html">
+   Home
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  GETTING STARTED:
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../start/intro.html">
+   Introduction
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../start/quick.html">
+   Quick Start
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../start/install.html">
+   Installation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../start/exp.html">
+   Experiments and Examples
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  WORKFLOWS:
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../workflows/upload.html">
+   Learnware Preparation and Uploading
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../workflows/search.html">
+   Learnware Search
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../workflows/reuse.html">
+   Learnware Reuse
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../workflows/client.html">
+   Learnware Client
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  COMPONENTS:
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="market.html">
+   Market
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="learnware.html">
+   Learnware &amp; Reuser
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Specification
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="model.html">
+   Model &amp; Container
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  ADVANCED TOPICS:
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../advanced/anchor.html">
+   Anchor Learnware
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../advanced/evolve.html">
+   Evolvable Specification
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  REFERENCES:
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../references/api.html">
+   API
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../references/beimingwu.html">
+   Beimingwu System
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../references/FAQ.html">
+   FAQ
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  ABOUTS:
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../about/dev.html">
+   For Developer
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../about/changelog.html">
+   Changelog
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../about/about.html">
+   About us
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/components/spec.rst.txt"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.rst</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#concepts-types">
+   Concepts &amp; Types
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#statistical-specification">
+     Statistical Specification
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#semantic-specification">
+     Semantic Specification
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#regular-specification">
+   Regular Specification
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#table-specification">
+     Table Specification
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#image-specification">
+     Image Specification
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#usage-example">
+       Usage &amp; Example
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#privacy-protection">
+       Privacy Protection
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#text-specification">
+     Text Specification
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#system-specification">
+   System Specification
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Specification</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#concepts-types">
+   Concepts &amp; Types
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#statistical-specification">
+     Statistical Specification
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#semantic-specification">
+     Semantic Specification
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#regular-specification">
+   Regular Specification
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#table-specification">
+     Table Specification
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#image-specification">
+     Image Specification
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#usage-example">
+       Usage &amp; Example
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#privacy-protection">
+       Privacy Protection
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#text-specification">
+     Text Specification
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#system-specification">
+   System Specification
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section id="specification">
+<h1>Specification<a class="headerlink" href="#specification" title="Permalink to this headline">#</a></h1>
+<p>Learnware specification is the core component of the learnware paradigm, linking all processes about learnwares, including uploading, organizing, searching, deploying and reusing.</p>
+<p>In this section, we will introduce the concept and design of learnware specification in the <code class="docutils literal notranslate"><span class="pre">learnware</span></code> package.
+We will then explore <code class="docutils literal notranslate"><span class="pre">regular</span> <span class="pre">specification</span></code>s tailored for different data types such as tables, images and texts.
+Lastly, we cover a <code class="docutils literal notranslate"><span class="pre">system</span> <span class="pre">specification</span></code> specifically assigned to table learnwares by the learnware market, aimed at accommodating all available table learnwares into a unified “specification world” despite their heterogeneity.</p>
+<section id="concepts-types">
+<h2>Concepts &amp; Types<a class="headerlink" href="#concepts-types" title="Permalink to this headline">#</a></h2>
+<p>The learnware specification describes the model’s specialty and utility in a certain format, allowing the model to be identified and reused by future users who may have no prior knowledge of the learnware.
+The <code class="docutils literal notranslate"><span class="pre">learnware</span></code> package employs a highly extensible specification design, which consists of two parts:</p>
+<ul class="simple">
+<li><p><strong>Semantic specification</strong> describes the model’s type and functionality through a set of descriptions and tags. Learnwares with similar semantic specifications reside in the same specification island</p></li>
+<li><p><strong>Statistical specification</strong> characterizes the statistical information contained in the model using various machine learning techniques. It plays a crucial role in locating the appropriate place for the model within the specification island.</p></li>
+</ul>
+<p>When searching in the learnware market, the system first locates specification islands based on the semantic specification of the user’s task,
+then pinpoints highly beneficial learnwares on theses islands based on the statistical specification of the user’s task.</p>
+<section id="statistical-specification">
+<h3>Statistical Specification<a class="headerlink" href="#statistical-specification" title="Permalink to this headline">#</a></h3>
+<p>We employ the <code class="docutils literal notranslate"><span class="pre">Reduced</span> <span class="pre">Kernel</span> <span class="pre">Mean</span> <span class="pre">Embedding</span> <span class="pre">(RKME)</span> <span class="pre">Specification</span></code> as the foundation for implementing statistical specification for diverse data types,
+with adjustments made according to the characteristics of each data type.
+The RKME specification is a recent development in learnware specification design, which represents the distribution of a model’s training data in a privacy-preserving manner.</p>
+<p>Within the <code class="docutils literal notranslate"><span class="pre">learnware</span></code> package, you’ll find two types of statistical specifications: <code class="docutils literal notranslate"><span class="pre">regular</span> <span class="pre">specification</span></code> and <code class="docutils literal notranslate"><span class="pre">system</span> <span class="pre">specification</span></code>. The former is generated locally
+by users to express their model’s statistical information, while the latter is assigned by the learnware market to accommodate and organize heterogeneous learnwares.</p>
+</section>
+<section id="semantic-specification">
+<h3>Semantic Specification<a class="headerlink" href="#semantic-specification" title="Permalink to this headline">#</a></h3>
+<p>The semantic specification consists of a “dict” structure that includes keywords “Data”, “Task”, “Library”, “Scenario”, “License”, “Description”, and “Name”.
+In the case of table learnwares, users should additionally provide descriptions for each feature dimension and output dimension through the “Input” and “Output” keywords.</p>
+<ul class="simple">
+<li><p>If “data_type” is “Table”, you need to specify the semantics of each dimension of the model’s input data to make the uploaded learnware suitable for tasks with heterogeneous feature spaces.</p></li>
+<li><p>If “task_type” is “Classification”, you need to provide the semantics of model output labels (prediction labels start from 0), making the uploaded learnware suitable for classification tasks with heterogeneous output spaces.</p></li>
+<li><p>If “task_type” is “Regression”, you need to specify the semantics of each dimension of the model output, making the uploaded learnware suitable for regression tasks with heterogeneous output spaces.</p></li>
+</ul>
+</section>
+</section>
+<section id="regular-specification">
+<h2>Regular Specification<a class="headerlink" href="#regular-specification" title="Permalink to this headline">#</a></h2>
+<p>The <code class="docutils literal notranslate"><span class="pre">learnware</span></code> package provides a unified interface, <code class="docutils literal notranslate"><span class="pre">generate_stat_spec</span></code>, for generating <code class="docutils literal notranslate"><span class="pre">regular</span> <span class="pre">specification</span></code>s across different data types.
+Users can use the training data <code class="docutils literal notranslate"><span class="pre">train_x</span></code> (supported types include numpy.ndarray, pandas.DataFrame, and torch.Tensor) as input to generate the <code class="docutils literal notranslate"><span class="pre">regular</span> <span class="pre">specification</span></code> of the model,
+as shown in the following code:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">learnware</span><span class="o">.</span><span class="n">specification</span> <span class="kn">import</span> <span class="nn">generate_stat_spec</span>
+
+<span class="n">data_type</span> <span class="o">=</span> <span class="s2">&quot;table&quot;</span> <span class="c1"># supported data types: [&quot;table&quot;, &quot;image&quot;, &quot;text&quot;]</span>
+<span class="n">regular_spec</span> <span class="o">=</span> <span class="n">generate_stat_spec</span><span class="p">(</span><span class="nb">type</span><span class="o">=</span><span class="n">data_type</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="n">train_x</span><span class="p">)</span>
+<span class="n">regular_spec</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s2">&quot;stat.json&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>It’s worth noting that the above code only runs on user’s local computer and does not interact with any cloud servers or leak any local private data.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In cases where the model’s training data is too large, causing the above code to fail, you can consider sampling the training data to ensure it’s of a suitable size before proceeding with reduction generation.</p>
+</div>
+<section id="table-specification">
+<h3>Table Specification<a class="headerlink" href="#table-specification" title="Permalink to this headline">#</a></h3>
+<p>The <code class="docutils literal notranslate"><span class="pre">regular</span> <span class="pre">specification</span></code> for tabular learnware is essentially the RKME specification of the model’s training table data. No additional adjustment is needed.</p>
+</section>
+<section id="image-specification">
+<h3>Image Specification<a class="headerlink" href="#image-specification" title="Permalink to this headline">#</a></h3>
+<p>Image data lives in a higher dimensional space than other data types. Unlike lower dimensional spaces, metrics defined based on Euclidean distances (or similar distances) will fail in higher dimensional spaces. This means that measuring the similarity between image samples becomes difficult.</p>
+<p>To address these issues, we use the Neural Tangent Kernel (NTK) based on Convolutional Neural Networks (CNN) to measure the similarity of image samples.  As we all know, CNN has greatly advanced the field of computer vision and is still a mainstream deep learning technique.</p>
+<section id="usage-example">
+<h4>Usage &amp; Example<a class="headerlink" href="#usage-example" title="Permalink to this headline">#</a></h4>
+<p>In this part, we show that how to generate Image Specification for the training set of the CIFAR-10 dataset.
+Note that the Image Specification is generated on a subset of the CIFAR-10 dataset with <code class="docutils literal notranslate"><span class="pre">generate_rkme_image_spec</span></code>.
+Then, it is saved to file “cifar10.json” using <code class="docutils literal notranslate"><span class="pre">spec.save</span></code>.</p>
+<p>In many cases, it is difficult to construct Image Specification on the full dataset.
+By randomly sampling a subset of the dataset, we can construct Image Specification based on it efficiently, with a strong enough statistical description of the full dataset.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Typically, sampling 3,000 to 10,000 images is sufficient to generate the Image Specification.</p>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">torchvision</span>
+<span class="kn">from</span> <span class="nn">torch.utils.data</span> <span class="kn">import</span> <span class="n">DataLoader</span>
+<span class="kn">from</span> <span class="nn">learnware.specification</span> <span class="kn">import</span> <span class="n">generate_rkme_image_spec</span>
+
+
+<span class="n">cifar10</span> <span class="o">=</span> <span class="n">torchvision</span><span class="o">.</span><span class="n">datasets</span><span class="o">.</span><span class="n">CIFAR10</span><span class="p">(</span>
+   <span class="n">root</span><span class="o">=</span><span class="s1">&#39;./data&#39;</span><span class="p">,</span> <span class="n">train</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">download</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">transform</span><span class="o">=</span><span class="n">torchvision</span><span class="o">.</span><span class="n">transforms</span><span class="o">.</span><span class="n">ToTensor</span><span class="p">()</span>
+<span class="p">)</span>
+<span class="n">X</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="nb">next</span><span class="p">(</span><span class="nb">iter</span><span class="p">(</span><span class="n">DataLoader</span><span class="p">(</span><span class="n">cifar10</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="n">cifar10</span><span class="p">))))</span>
+
+<span class="n">spec</span> <span class="o">=</span> <span class="n">generate_rkme_image_spec</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">sample_size</span><span class="o">=</span><span class="mi">5000</span><span class="p">)</span>
+<span class="n">spec</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s2">&quot;cifar10.json&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="privacy-protection">
+<h4>Privacy Protection<a class="headerlink" href="#privacy-protection" title="Permalink to this headline">#</a></h4>
+<p>In the third row of the figure, we show the eight pseudo-data with the largest weights <span class="math notranslate nohighlight">\(\beta\)</span> in the Image Specification generated on the CIFAR-10 dataset.
+Notice that the Image Specification generated based on Neural Tangent Kernel (NTK) protects the user’s privacy very well.</p>
+<p>In contrast, we show the performance of the RBF kernel on image dat in the first row of the figure below.
+The RBF not only exposes the real data (plotted in the corresponding position in the second row), but also fails to fully utilise the weights <span class="math notranslate nohighlight">\(\beta\)</span>.</p>
+<img alt="../_images/image_spec.png" class="align-center" src="../_images/image_spec.png" />
+</section>
+</section>
+<section id="text-specification">
+<h3>Text Specification<a class="headerlink" href="#text-specification" title="Permalink to this headline">#</a></h3>
+<p>Different from tabular data, each text input is a string of different length, so we should first transform them to equal-length arrays. Sentence embedding is used here to complete this transformation. We choose the model <code class="docutils literal notranslate"><span class="pre">paraphrase-multilingual-MiniLM-L12-v2</span></code>, a lightweight multilingual embedding model. Then, we calculate the RKME specification on the embedding,  just like we do with tabular data. Besides, we use the package <code class="docutils literal notranslate"><span class="pre">langdetect</span></code> to detect and store the language of the text inputs for further search. We hope to search for the learnware which supports the language of the user task.</p>
+</section>
+</section>
+<section id="system-specification">
+<h2>System Specification<a class="headerlink" href="#system-specification" title="Permalink to this headline">#</a></h2>
+<p>In contrast to <code class="docutils literal notranslate"><span class="pre">regular</span> <span class="pre">specification</span></code>s which are generated solely by users,
+<code class="docutils literal notranslate"><span class="pre">system</span> <span class="pre">specification</span></code>s are higher-level statistical specifications assigned by learnware markets
+to effectively accommodate and organize heterogeneous learnwares.
+This implies that <code class="docutils literal notranslate"><span class="pre">regular</span> <span class="pre">specification</span></code>s are usually applicable across different markets, while <code class="docutils literal notranslate"><span class="pre">system</span> <span class="pre">specification</span></code>s are generally closely associated
+with particular learnware market implementations.</p>
+<p><code class="docutils literal notranslate"><span class="pre">system</span> <span class="pre">specification</span></code> play a critical role in heterogeneous markets such as the <code class="docutils literal notranslate"><span class="pre">Hetero</span> <span class="pre">Market</span></code>:</p>
+<ul class="simple">
+<li><p>Learnware organizers use these specifications to connect isolated specification islands into unified “specification world”s.</p></li>
+<li><p>Learnware searchers perform helpful learnware recommendations among all table learnwares in the market, leveraging the <code class="docutils literal notranslate"><span class="pre">system</span> <span class="pre">specification</span></code>s generated for users.</p></li>
+</ul>
+<p>The <code class="docutils literal notranslate"><span class="pre">learnware</span></code> package now includes a type of <code class="docutils literal notranslate"><span class="pre">system</span> <span class="pre">specification</span></code>, named <code class="docutils literal notranslate"><span class="pre">HeteroMapTableSpecification</span></code>, made especially for the <code class="docutils literal notranslate"><span class="pre">Hetero</span> <span class="pre">Market</span></code> implementation.
+This specification is automatically given to all table learnwares when they are added to the <code class="docutils literal notranslate"><span class="pre">Hetero</span> <span class="pre">Market</span></code>.
+It is also set up to be updated periodically, ensuring it remains accurate as the learnware market evolves and builds more precise specification worlds.
+Please refer to <a class="reference external" href="../components/market.html#hetero-market">COMPONENTS: Hetero Market</a> for implementation details.</p>
+</section>
+</section>
+
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="learnware.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Learnware &amp; Reuser</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="model.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Model</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By LAMDA Group<br/>
+  
+      &copy; Copyright 2023, LAMDA Group.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

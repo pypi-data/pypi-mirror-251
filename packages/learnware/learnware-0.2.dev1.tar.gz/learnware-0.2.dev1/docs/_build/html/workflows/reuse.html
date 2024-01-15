@@ -1,0 +1,660 @@
+
+<!DOCTYPE html>
+
+<html lang="en_US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Learnwares Reuse &#8212; learnware 0.2.0.9 documentation</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom_style.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Learnware Client" href="client.html" />
+    <link rel="prev" title="Learnwares Search" href="search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en_US">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo1.png" class="logo" alt="logo">
+      
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../index.html">
+   Home
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  GETTING STARTED:
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../start/intro.html">
+   Introduction
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../start/quick.html">
+   Quick Start
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../start/install.html">
+   Installation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../start/exp.html">
+   Experiments and Examples
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  WORKFLOWS:
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="upload.html">
+   Learnware Preparation and Uploading
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="search.html">
+   Learnware Search
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Learnware Reuse
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="client.html">
+   Learnware Client
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  COMPONENTS:
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../components/market.html">
+   Market
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../components/learnware.html">
+   Learnware &amp; Reuser
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../components/spec.html">
+   Specification
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../components/model.html">
+   Model &amp; Container
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  ADVANCED TOPICS:
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../advanced/anchor.html">
+   Anchor Learnware
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../advanced/evolve.html">
+   Evolvable Specification
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  REFERENCES:
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../references/api.html">
+   API
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../references/beimingwu.html">
+   Beimingwu System
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../references/FAQ.html">
+   FAQ
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  ABOUTS:
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../about/dev.html">
+   For Developer
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../about/changelog.html">
+   Changelog
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../about/about.html">
+   About us
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/workflows/reuse.rst.txt"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.rst</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#homo-reuse">
+   Homo Reuse
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#direct-reuse-of-learnware">
+     Direct reuse of Learnware
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#reusing-learnware-with-labeled-data">
+     Reusing Learnware with Labeled Data
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#hetero-reuse">
+   Hetero Reuse
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#reuse-with-model-container">
+   Reuse with
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     Model
+    </span>
+    <span class="pre">
+     Container
+    </span>
+   </code>
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Learnwares Reuse</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#homo-reuse">
+   Homo Reuse
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#direct-reuse-of-learnware">
+     Direct reuse of Learnware
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#reusing-learnware-with-labeled-data">
+     Reusing Learnware with Labeled Data
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#hetero-reuse">
+   Hetero Reuse
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#reuse-with-model-container">
+   Reuse with
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     Model
+    </span>
+    <span class="pre">
+     Container
+    </span>
+   </code>
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section id="learnwares-reuse">
+<h1>Learnwares Reuse<a class="headerlink" href="#learnwares-reuse" title="Permalink to this headline">#</a></h1>
+<p><code class="docutils literal notranslate"><span class="pre">Learnware</span> <span class="pre">Reuser</span></code> is a <code class="docutils literal notranslate"><span class="pre">Python</span> <span class="pre">API</span></code> that offers a variety of convenient tools for learnware reuse. Users can reuse a single learnware, combination of multiple learnwares,
+and heterogeneous learnwares using these tools efficiently, thereby saving the laborious time and effort of building models from scratch. There are mainly two types of
+reuse tools, based on whether user has gathered a small amount of labeled data beforehand: (1) direct reuse and (2) customized reuse based on labeled data.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>For detailed explanations of the learnware reusers mentioned below, please refer to <a class="reference external" href="../components/learnware.html#all-reuse-methods">COMPONENTS: All Reuse Methods</a> .</p>
+</div>
+<section id="homo-reuse">
+<h2>Homo Reuse<a class="headerlink" href="#homo-reuse" title="Permalink to this headline">#</a></h2>
+<p>This part introduces baseline methods for reusing homogeneous learnwares to make predictions on unlabeled data.</p>
+<section id="direct-reuse-of-learnware">
+<h3>Direct reuse of Learnware<a class="headerlink" href="#direct-reuse-of-learnware" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">JobSelector</span></code> selects different learnwares for different data by training a <code class="docutils literal notranslate"><span class="pre">job</span> <span class="pre">selector</span></code> classifier. The following code shows how to use it:</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">learnware.reuse</span> <span class="kn">import</span> <span class="n">JobSelectorReuser</span>
+
+<span class="c1"># learnware_list is the list of searched learnware</span>
+<span class="n">reuse_job_selector</span> <span class="o">=</span> <span class="n">JobSelectorReuser</span><span class="p">(</span><span class="n">learnware_list</span><span class="o">=</span><span class="n">learnware_list</span><span class="p">)</span>
+
+<span class="c1"># test_x is the user&#39;s data for prediction</span>
+<span class="c1"># predict_y is the prediction result of the reused learnwares</span>
+<span class="n">predict_y</span> <span class="o">=</span> <span class="n">reuse_job_selector</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">user_data</span><span class="o">=</span><span class="n">test_x</span><span class="p">)</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">AveragingReuser</span></code> uses an ensemble method to make predictions. The <code class="docutils literal notranslate"><span class="pre">mode</span></code> parameter specifies the specific ensemble method:</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">learnware.reuse</span> <span class="kn">import</span> <span class="n">AveragingReuser</span>
+
+<span class="c1"># Regression tasks:</span>
+<span class="c1">#   - mode=&quot;mean&quot;: average the learnware outputs.</span>
+<span class="c1"># Classification tasks:</span>
+<span class="c1">#   - mode=&quot;vote_by_label&quot;: majority vote for learnware output labels.</span>
+<span class="c1">#   - mode=&quot;vote_by_prob&quot;: majority vote for learnware output label probabilities.</span>
+
+<span class="n">reuse_ensemble</span> <span class="o">=</span> <span class="n">AveragingReuser</span><span class="p">(</span>
+    <span class="n">learnware_list</span><span class="o">=</span><span class="n">learnware_list</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s2">&quot;vote_by_label&quot;</span>
+<span class="p">)</span>
+<span class="n">ensemble_predict_y</span> <span class="o">=</span> <span class="n">reuse_ensemble</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">user_data</span><span class="o">=</span><span class="n">test_x</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="reusing-learnware-with-labeled-data">
+<h3>Reusing Learnware with Labeled Data<a class="headerlink" href="#reusing-learnware-with-labeled-data" title="Permalink to this headline">#</a></h3>
+<p>When users have a small amount of labeled data, they can also adapt/polish the received learnware(s) by reusing them with the labeled data, gaining even better performance.</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">EnsemblePruningReuser</span></code> selectively ensembles a subset of learnwares to choose the ones that are most suitable for the user’s task:</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">learnware.reuse</span> <span class="kn">import</span> <span class="n">EnsemblePruningReuser</span>
+
+<span class="c1"># mode=&quot;regression&quot;: Suitable for regression tasks</span>
+<span class="c1"># mode=&quot;classification&quot;: Suitable for classification tasks</span>
+<span class="n">reuse_ensemble_pruning</span> <span class="o">=</span> <span class="n">EnsemblePruningReuser</span><span class="p">(</span>
+    <span class="n">learnware_list</span><span class="o">=</span><span class="n">learnware_list</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s2">&quot;regression&quot;</span>
+<span class="p">)</span>
+
+<span class="c1"># (val_X, val_y) is the small amount of labeled data</span>
+<span class="n">reuse_ensemble_pruning</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">val_X</span><span class="p">,</span> <span class="n">val_y</span><span class="p">)</span>
+<span class="n">predict_y</span> <span class="o">=</span> <span class="n">reuse_job_selector</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">user_data</span><span class="o">=</span><span class="n">test_x</span><span class="p">)</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">FeatureAugmentReuser</span></code> helps users reuse learnwares by augmenting features. This reuser regards each received learnware as a feature augmentor, taking its output as a new feature and then build a simple model on the augmented feature set(<code class="docutils literal notranslate"><span class="pre">logistic</span> <span class="pre">regression</span></code> for classification tasks and <code class="docutils literal notranslate"><span class="pre">ridge</span> <span class="pre">regression</span></code> for regression tasks):</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">learnware.reuse</span> <span class="kn">import</span> <span class="n">FeatureAugmentReuser</span>
+
+<span class="c1"># mode=&quot;regression&quot;: Suitable for regression tasks</span>
+<span class="c1"># mode=&quot;classification&quot;: Suitable for classification tasks</span>
+<span class="n">reuse_feature_augment</span> <span class="o">=</span> <span class="n">FeatureAugmentReuser</span><span class="p">(</span>
+    <span class="n">learnware_list</span><span class="o">=</span><span class="n">learnware_list</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s2">&quot;regression&quot;</span>
+<span class="p">)</span>
+
+<span class="c1"># (val_X, val_y) is the small amount of labeled data</span>
+<span class="n">reuse_feature_augment</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">val_X</span><span class="p">,</span> <span class="n">val_y</span><span class="p">)</span>
+<span class="n">predict_y</span> <span class="o">=</span> <span class="n">reuse_feature_augment</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">user_data</span><span class="o">=</span><span class="n">test_x</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="hetero-reuse">
+<h2>Hetero Reuse<a class="headerlink" href="#hetero-reuse" title="Permalink to this headline">#</a></h2>
+<p>When heterogeneous learnware search is activated(see <a class="reference external" href="../workflows/search.html#hetero-search">WORKFLOWS: Hetero Search</a>), users would receive heterogeneous learnwares which are identified from the whole “specification world”.
+Though these recommended learnwares are trained from tasks with different feature/label spaces from the user’s task, they can still be helpful and perform well beyond their original purpose.
+Normally these learnwares are hard to be used, leave alone polished by users, due to the feature/label space heterogeneity. However with the help of <code class="docutils literal notranslate"><span class="pre">HeteroMapAlignLearnware</span></code> class which align heterogeneous learnware
+with the user’s task, users can easily reuse them with the same set of reuse methods mentioned above.</p>
+<p>During the alignment process of heterogeneous learnware, the statistical specifications of the learnware and the user’s task <code class="docutils literal notranslate"><span class="pre">(user_spec)</span></code> are used for input space alignment,
+and a small amount of labeled data <code class="docutils literal notranslate"><span class="pre">(val_x,</span> <span class="pre">val_y)</span></code> is mandatory to be used for output space alignment. This can be done by the following code:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">learnware.reuse</span> <span class="kn">import</span> <span class="n">HeteroMapAlignLearnware</span>
+
+<span class="c1"># mode=&quot;regression&quot;: For user tasks of regression</span>
+<span class="c1"># mode=&quot;classification&quot;: For user tasks of classification</span>
+<span class="n">hetero_learnware</span> <span class="o">=</span> <span class="n">HeteroMapAlignLearnware</span><span class="p">(</span><span class="n">learnware</span><span class="o">=</span><span class="n">leanrware</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s2">&quot;regression&quot;</span><span class="p">)</span>
+<span class="n">hetero_learnware</span><span class="o">.</span><span class="n">align</span><span class="p">(</span><span class="n">user_spec</span><span class="p">,</span> <span class="n">val_x</span><span class="p">,</span> <span class="n">val_y</span><span class="p">)</span>
+
+<span class="c1"># Make predictions using the aligned heterogeneous learnware</span>
+<span class="n">predict_y</span> <span class="o">=</span> <span class="n">hetero_learnware</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">user_data</span><span class="o">=</span><span class="n">test_x</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>To reuse multiple heterogeneous learnwares,
+combine <code class="docutils literal notranslate"><span class="pre">HeteroMapAlignLearnware</span></code> with the homogeneous reuse methods <code class="docutils literal notranslate"><span class="pre">AveragingReuser</span></code> and <code class="docutils literal notranslate"><span class="pre">EnsemblePruningReuser</span></code> mentioned above will do the trick:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">hetero_learnware_list</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">learnware</span> <span class="ow">in</span> <span class="n">learnware_list</span><span class="p">:</span>
+    <span class="n">hetero_learnware</span> <span class="o">=</span> <span class="n">HeteroMapAlignLearnware</span><span class="p">(</span><span class="n">learnware</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s2">&quot;regression&quot;</span><span class="p">)</span>
+    <span class="n">hetero_learnware</span><span class="o">.</span><span class="n">align</span><span class="p">(</span><span class="n">user_spec</span><span class="p">,</span> <span class="n">val_x</span><span class="p">,</span> <span class="n">val_y</span><span class="p">)</span>
+    <span class="n">hetero_learnware_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">hetero_learnware</span><span class="p">)</span>
+
+<span class="c1"># Reuse multiple heterogeneous learnwares using AveragingReuser</span>
+<span class="n">reuse_ensemble</span> <span class="o">=</span> <span class="n">AveragingReuser</span><span class="p">(</span><span class="n">learnware_list</span><span class="o">=</span><span class="n">hetero_learnware_list</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s2">&quot;mean&quot;</span><span class="p">)</span>
+<span class="n">ensemble_predict_y</span> <span class="o">=</span> <span class="n">reuse_ensemble</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">user_data</span><span class="o">=</span><span class="n">test_x</span><span class="p">)</span>
+
+<span class="c1"># Reuse multiple heterogeneous learnwares using EnsemblePruningReuser</span>
+<span class="n">reuse_ensemble</span> <span class="o">=</span> <span class="n">EnsemblePruningReuser</span><span class="p">(</span>
+    <span class="n">learnware_list</span><span class="o">=</span><span class="n">hetero_learnware_list</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s2">&quot;regression&quot;</span>
+<span class="p">)</span>
+<span class="n">reuse_ensemble</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">val_x</span><span class="p">,</span> <span class="n">val_y</span><span class="p">)</span>
+<span class="n">ensemble_pruning_predict_y</span> <span class="o">=</span> <span class="n">reuse_ensemble</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">user_data</span><span class="o">=</span><span class="n">test_x</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="reuse-with-model-container">
+<h2>Reuse with <code class="docutils literal notranslate"><span class="pre">Model</span> <span class="pre">Container</span></code><a class="headerlink" href="#reuse-with-model-container" title="Permalink to this headline">#</a></h2>
+<p>The <code class="docutils literal notranslate"><span class="pre">learnware</span></code> package provides <code class="docutils literal notranslate"><span class="pre">Model</span> <span class="pre">Container</span></code> to build executive environment for learnwares according to their runtime dependent files. The learnware’s model will be executed in the containers and its env will be installed and uninstalled automatically.</p>
+<p>Run the following codes to try run a learnware with <code class="docutils literal notranslate"><span class="pre">Model</span> <span class="pre">Container</span></code>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">learnware.learnware</span> <span class="kn">import</span> <span class="n">Learnware</span>
+
+<span class="k">with</span> <span class="n">LearnwaresContainer</span><span class="p">(</span><span class="n">learnware</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s2">&quot;conda&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">env_container</span><span class="p">:</span> <span class="c1"># Let learnware be instance of Learnware Class, and its input shape is (20, 204)</span>
+    <span class="n">learnware</span> <span class="o">=</span> <span class="n">env_container</span><span class="o">.</span><span class="n">get_learnwares_with_container</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">input_array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">204</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">learnware</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">input_array</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">mode</span></code> parameter has two options, each for a specific learnware environment loading method:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">'conda'</span></code>: Install a separate conda virtual environment for each learnware (automatically deleted after execution); run each learnware independently within its virtual environment.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'docker'</span></code>: Install a conda virtual environment inside a Docker container (automatically destroyed after execution); run each learnware independently within the container (requires Docker privileges).</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>It’s important to note that the “conda” modes are not secure if there are any malicious learnwares. If the user cannot guarantee the security of the learnware they want to load, it’s recommended to use the “docker” mode to load the learnware.</p>
+</div>
+</section>
+</section>
+
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="search.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Learnwares Search</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="client.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Learnware Client</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By LAMDA Group<br/>
+  
+      &copy; Copyright 2023, LAMDA Group.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

@@ -1,0 +1,555 @@
+
+<!DOCTYPE html>
+
+<html lang="en_US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Learnwares Search &#8212; learnware 0.2.0.9 documentation</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom_style.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Learnwares Reuse" href="reuse.html" />
+    <link rel="prev" title="Learnware Preparation and Uoloading" href="upload.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en_US">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo1.png" class="logo" alt="logo">
+      
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../index.html">
+   Home
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  GETTING STARTED:
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../start/intro.html">
+   Introduction
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../start/quick.html">
+   Quick Start
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../start/install.html">
+   Installation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../start/exp.html">
+   Experiments and Examples
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  WORKFLOWS:
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="upload.html">
+   Learnware Preparation and Uploading
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Learnware Search
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="reuse.html">
+   Learnware Reuse
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="client.html">
+   Learnware Client
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  COMPONENTS:
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../components/market.html">
+   Market
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../components/learnware.html">
+   Learnware &amp; Reuser
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../components/spec.html">
+   Specification
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../components/model.html">
+   Model &amp; Container
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  ADVANCED TOPICS:
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../advanced/anchor.html">
+   Anchor Learnware
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../advanced/evolve.html">
+   Evolvable Specification
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  REFERENCES:
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../references/api.html">
+   API
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../references/beimingwu.html">
+   Beimingwu System
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../references/FAQ.html">
+   FAQ
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  ABOUTS:
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../about/dev.html">
+   For Developer
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../about/changelog.html">
+   Changelog
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../about/about.html">
+   About us
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/workflows/search.rst.txt"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.rst</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#homo-search">
+   Homo Search
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#hetero-search">
+   Hetero Search
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Learnwares Search</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#homo-search">
+   Homo Search
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#hetero-search">
+   Hetero Search
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section id="learnwares-search">
+<h1>Learnwares Search<a class="headerlink" href="#learnwares-search" title="Permalink to this headline">#</a></h1>
+<p><code class="docutils literal notranslate"><span class="pre">Learnware</span> <span class="pre">Searcher</span></code> is a key component of <code class="docutils literal notranslate"><span class="pre">Learnware</span> <span class="pre">Market</span></code> that identifies and recommends helpful learnwares to users according to their <code class="docutils literal notranslate"><span class="pre">UserInfo</span></code>. Based on whether the returned learnware dimensions are consistent with user tasks, the searchers can be divided into two categories: homogeneous searchers and heterogeneous searchers.</p>
+<p>All the searchers are implemented as a subclass of <code class="docutils literal notranslate"><span class="pre">BaseSearcher</span></code>. When initializing, you should assign a <code class="docutils literal notranslate"><span class="pre">organizer</span></code> to it. The introduction of <code class="docutils literal notranslate"><span class="pre">organizer</span></code> is shown in <a class="reference external" href="../components/market.html">COMPONENTS: Market - Framework</a>. Then these searchers can be called with <code class="docutils literal notranslate"><span class="pre">UserInfo</span></code> and return <code class="docutils literal notranslate"><span class="pre">SearchResults</span></code>.</p>
+<section id="homo-search">
+<h2>Homo Search<a class="headerlink" href="#homo-search" title="Permalink to this headline">#</a></h2>
+<p>The homogeneous search of helpful learnwares can be divided into two stages: semantic specification search and statistical specification search. Both of them needs <code class="docutils literal notranslate"><span class="pre">BaseUserInfo</span></code> as input. The following codes shows how to use the searcher to search for helpful learnwares from a market <code class="docutils literal notranslate"><span class="pre">easy_market</span></code> for a user. The introduction of <code class="docutils literal notranslate"><span class="pre">EasyMarket</span></code> is in <a class="reference external" href="../components/market.html">COMPONENTS: Market</a>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># generate BaseUserInfo(semantic_spec + stat_info)</span>
+<span class="n">user_semantic</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;Data&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;Values&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;Table&quot;</span><span class="p">],</span> <span class="s2">&quot;Type&quot;</span><span class="p">:</span> <span class="s2">&quot;Class&quot;</span><span class="p">},</span>
+    <span class="s2">&quot;Task&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;Values&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;Regression&quot;</span><span class="p">],</span> <span class="s2">&quot;Type&quot;</span><span class="p">:</span> <span class="s2">&quot;Class&quot;</span><span class="p">},</span>
+    <span class="s2">&quot;Library&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;Values&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;Scikit-learn&quot;</span><span class="p">],</span> <span class="s2">&quot;Type&quot;</span><span class="p">:</span> <span class="s2">&quot;Class&quot;</span><span class="p">},</span>
+    <span class="s2">&quot;Scenario&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;Values&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;Business&quot;</span><span class="p">],</span> <span class="s2">&quot;Type&quot;</span><span class="p">:</span> <span class="s2">&quot;Tag&quot;</span><span class="p">},</span>
+    <span class="s2">&quot;Description&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;Values&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;Type&quot;</span><span class="p">:</span> <span class="s2">&quot;String&quot;</span><span class="p">},</span>
+    <span class="s2">&quot;Name&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;Values&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;Type&quot;</span><span class="p">:</span> <span class="s2">&quot;String&quot;</span><span class="p">},</span>
+    <span class="s2">&quot;Input&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;Dimension&quot;</span><span class="p">:</span> <span class="mi">82</span><span class="p">,</span> <span class="s2">&quot;Description&quot;</span><span class="p">:</span> <span class="p">{},},</span>
+    <span class="s2">&quot;Output&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;Dimension&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;Description&quot;</span><span class="p">:</span> <span class="p">{},},</span>
+    <span class="s2">&quot;License&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;Values&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;MIT&quot;</span><span class="p">],</span> <span class="s2">&quot;Type&quot;</span><span class="p">:</span> <span class="s2">&quot;Class&quot;</span><span class="p">},</span>
+<span class="p">}</span>
+<span class="n">user_spec</span> <span class="o">=</span> <span class="n">generate_rkme_table_spec</span><span class="p">(</span><span class="n">X</span><span class="o">=</span><span class="n">x</span><span class="p">)</span>
+<span class="n">user_info</span> <span class="o">=</span> <span class="n">BaseUserInfo</span><span class="p">(</span>
+    <span class="n">semantic_spec</span><span class="o">=</span><span class="n">user_semantic</span><span class="p">,</span>
+    <span class="n">stat_info</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;RKMETableSpecification&quot;</span><span class="p">:</span> <span class="n">user_spec</span><span class="p">}</span>
+<span class="p">)</span>
+
+<span class="c1"># search the market for the user</span>
+<span class="n">search_result</span> <span class="o">=</span> <span class="n">easy_market</span><span class="o">.</span><span class="n">search_learnware</span><span class="p">(</span><span class="n">user_info</span><span class="p">)</span>
+
+<span class="c1"># search result: single_result</span>
+<span class="n">single_result</span> <span class="o">=</span> <span class="n">search_result</span><span class="o">.</span><span class="n">get_single_results</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;single model num: </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">single_result</span><span class="p">)</span><span class="si">}</span><span class="s2">,</span>
+    <span class="n">max_score</span><span class="p">:</span> <span class="p">{</span><span class="n">single_result</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">score</span><span class="p">},</span>
+    <span class="n">min_score</span><span class="p">:</span> <span class="p">{</span><span class="n">single_result</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">score</span><span class="p">}</span><span class="s2">&quot;</span>
+<span class="p">)</span>
+
+<span class="c1"># search result: multiple_result</span>
+<span class="n">multiple_result</span> <span class="o">=</span> <span class="n">search_result</span><span class="o">.</span><span class="n">get_multiple_results</span><span class="p">()</span>
+<span class="n">mixture_id</span> <span class="o">=</span> <span class="s2">&quot; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">learnware</span><span class="o">.</span><span class="n">id</span> <span class="k">for</span> <span class="n">learnware</span> <span class="ow">in</span> <span class="n">multiple_result</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">learnwares</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;mixture_score: </span><span class="si">{</span><span class="n">multiple_result</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">score</span><span class="si">}</span><span class="s2">, mixture_learnwares: </span><span class="si">{</span><span class="n">mixture_id</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="hetero-search">
+<h2>Hetero Search<a class="headerlink" href="#hetero-search" title="Permalink to this headline">#</a></h2>
+<p>For table-based user tasks,
+homogeneous searchers like <code class="docutils literal notranslate"><span class="pre">EasySearcher</span></code> fail to recommend learnwares when no table learnware matches the user task’s feature dimension, returning empty results.
+To enhance functionality, the <code class="docutils literal notranslate"><span class="pre">learnware</span></code> package includes the heterogeneous learnware search feature, whose processions is as follows:</p>
+<ul class="simple">
+<li><p>Learnware markets such as <code class="docutils literal notranslate"><span class="pre">Hetero</span> <span class="pre">Market</span></code> integrate different specification islands into a unified “specification world” by assigning system-level specifications to all learnwares. This allows heterogeneous searchers like <code class="docutils literal notranslate"><span class="pre">HeteroSearcher</span></code> to find helpful learnwares from all available table learnwares.</p></li>
+<li><p>Searchers assign system-level specifications to users based on <code class="docutils literal notranslate"><span class="pre">UserInfo</span></code>’s statistical specification, using methods provided by corresponding organizers. In <code class="docutils literal notranslate"><span class="pre">Hetero</span> <span class="pre">Market</span></code>, for example, <code class="docutils literal notranslate"><span class="pre">HeteroOrganizer.generate_hetero_map_spec</span></code> generates system-level specifications for users.</p></li>
+<li><p>Finally searchers conduct statistical specification search across the “specification world”. User’s system-level specification will guide the searcher in pinpointing helpful heterogeneous learnwares.</p></li>
+</ul>
+<p>To activate heterogeneous learnware search, <code class="docutils literal notranslate"><span class="pre">UserInfo</span></code> should contain both semantic and statistical specifications. What’s more, the semantic specification should meet the following requirements:</p>
+<ul class="simple">
+<li><p>The task type should be <code class="docutils literal notranslate"><span class="pre">Classification</span></code> or <code class="docutils literal notranslate"><span class="pre">Regression</span></code>.</p></li>
+<li><p>The data type should be <code class="docutils literal notranslate"><span class="pre">Table</span></code>.</p></li>
+<li><p>It should include description for at least one feature dimension.</p></li>
+<li><p>The feature dimension stated here should match with the feature dimension in the statistical specification.</p></li>
+</ul>
+<p>The following codes shows how to search for helpful heterogeneous learnwares from a market
+<code class="docutils literal notranslate"><span class="pre">hetero_market</span></code> for a user. The introduction of <code class="docutils literal notranslate"><span class="pre">HeteroMarket</span></code> is in <a class="reference external" href="../components/market.html#hetero-market">COMPONENTS: Hetero Market</a>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># initiate a Hetero Market</span>
+<span class="n">hetero_market</span> <span class="o">=</span> <span class="n">initiate_learnware_market</span><span class="p">(</span><span class="n">market_id</span><span class="o">=</span><span class="s2">&quot;test_hetero&quot;</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;hetero&quot;</span><span class="p">)</span>
+
+<span class="c1"># user_semantic should meet the above requirements</span>
+<span class="n">input_description</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;Dimension&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+    <span class="s2">&quot;Description&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">&quot;0&quot;</span><span class="p">:</span> <span class="s2">&quot;leaf width&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;1&quot;</span><span class="p">:</span> <span class="s2">&quot;leaf length&quot;</span><span class="p">,</span>
+    <span class="p">},</span>
+<span class="p">}</span>
+<span class="n">user_semantic</span> <span class="o">=</span> <span class="n">generate_semantic_spec</span><span class="p">(</span>
+    <span class="n">data_type</span><span class="o">=</span><span class="s2">&quot;table&quot;</span><span class="p">,</span>
+    <span class="n">task_type</span><span class="o">=</span><span class="s2">&quot;Classification&quot;</span><span class="p">,</span>
+    <span class="n">scenarios</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;Business&quot;</span><span class="p">],</span>
+    <span class="n">input_description</span><span class="o">=</span><span class="n">input_description</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="n">user_spec</span> <span class="o">=</span> <span class="n">generate_stat_spec</span><span class="p">(</span><span class="nb">type</span><span class="o">=</span><span class="s2">&quot;table&quot;</span><span class="p">,</span> <span class="n">X</span><span class="o">=</span><span class="n">train_x</span><span class="p">)</span>
+<span class="n">user_info</span> <span class="o">=</span> <span class="n">BaseUserInfo</span><span class="p">(</span>
+    <span class="n">semantic_spec</span><span class="o">=</span><span class="n">user_semantic</span><span class="p">,</span>
+    <span class="n">stat_info</span><span class="o">=</span><span class="p">{</span><span class="n">user_spec</span><span class="o">.</span><span class="n">type</span><span class="p">:</span> <span class="n">user_spec</span><span class="p">}</span>
+<span class="p">)</span>
+
+<span class="c1"># search for heterogeneous learnwares in hetero_market</span>
+<span class="n">search_result</span> <span class="o">=</span> <span class="n">hetero_market</span><span class="o">.</span><span class="n">search_learnware</span><span class="p">(</span><span class="n">user_info</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="upload.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Learnware Preparation and Uoloading</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="reuse.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Learnwares Reuse</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By LAMDA Group<br/>
+  
+      &copy; Copyright 2023, LAMDA Group.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

@@ -1,0 +1,655 @@
+
+<!DOCTYPE html>
+
+<html lang="en_US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Introduction &#8212; learnware 0.2.0.9 documentation</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom_style.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Quick Start" href="quick.html" />
+    <link rel="prev" title="Learnware Documentation" href="../index.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en_US">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo1.png" class="logo" alt="logo">
+      
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../index.html">
+   Home
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  GETTING STARTED:
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Introduction
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="quick.html">
+   Quick Start
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="install.html">
+   Installation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="exp.html">
+   Experiments and Examples
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  WORKFLOWS:
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../workflows/upload.html">
+   Learnware Preparation and Uploading
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../workflows/search.html">
+   Learnware Search
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../workflows/reuse.html">
+   Learnware Reuse
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../workflows/client.html">
+   Learnware Client
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  COMPONENTS:
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../components/market.html">
+   Market
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../components/learnware.html">
+   Learnware &amp; Reuser
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../components/spec.html">
+   Specification
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../components/model.html">
+   Model &amp; Container
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  ADVANCED TOPICS:
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../advanced/anchor.html">
+   Anchor Learnware
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../advanced/evolve.html">
+   Evolvable Specification
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  REFERENCES:
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../references/api.html">
+   API
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../references/beimingwu.html">
+   Beimingwu System
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../references/FAQ.html">
+   FAQ
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  ABOUTS:
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../about/dev.html">
+   For Developer
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../about/changelog.html">
+   Changelog
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../about/about.html">
+   About us
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/start/intro.rst.txt"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.rst</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#what-is-learnware">
+   What is Learnware?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#why-do-we-need-learnware">
+   Why do we need Learnware?
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-benefits-of-learnware-paradigm">
+     The Benefits of Learnware Paradigm
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#how-to-solve-future-tasks-with-learnware-paradigm">
+     How to Solve Future Tasks with Learnware Paradigm?
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#procedure-of-learnware-paradigm">
+   Procedure of Learnware Paradigm
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#framework-and-architecture-design">
+   Framework and Architecture Design
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Introduction</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#what-is-learnware">
+   What is Learnware?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#why-do-we-need-learnware">
+   Why do we need Learnware?
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-benefits-of-learnware-paradigm">
+     The Benefits of Learnware Paradigm
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#how-to-solve-future-tasks-with-learnware-paradigm">
+     How to Solve Future Tasks with Learnware Paradigm?
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#procedure-of-learnware-paradigm">
+   Procedure of Learnware Paradigm
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#framework-and-architecture-design">
+   Framework and Architecture Design
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section id="introduction">
+<h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">#</a></h1>
+<p>The <em>learnware</em> paradigm, proposed by Professor Zhi-Hua Zhou in 2016 [1, 2], aims to build a vast model platform system, i.e., a <em>learnware dock system</em>, which systematically accommodates and organizes models shared by machine learning developers worldwide, and can efficiently identify and assemble existing helpful model(s) to solve future tasks in a unified way.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">learnware</span></code> package provides a fundamental implementation of the central concepts and procedures within the learnware paradigm. Its well-structured design ensures high scalability and facilitates the seamless integration of additional features and techniques in the future.</p>
+<p>In addition, the <code class="docutils literal notranslate"><span class="pre">learnware</span></code> package serves as the engine for the <a class="reference external" href="https://bmwu.cloud/#/">Beimingwu System</a> and can be effectively employed for conducting experiments related to learnware.</p>
+<div class="line-block">
+<div class="line">[1] Zhi-Hua Zhou. Learnware: on the future of machine learning. <em>Frontiers of Computer Science</em>, 2016, 10(4): 589–590</div>
+<div class="line">[2] Zhi-Hua Zhou. Machine Learning: Development and Future. <em>Communications of CCF</em>, 2017, vol.13, no.1 (2016 CNCC keynote)</div>
+</div>
+<section id="what-is-learnware">
+<h2>What is Learnware?<a class="headerlink" href="#what-is-learnware" title="Permalink to this headline">#</a></h2>
+<p>A learnware consists of a high-performance machine learning model and specifications that characterize the model, i.e., “Learnware = Model + Specification”.</p>
+<p>The learnware specification consists of “semantic specification” and “statistical specification”:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Semantic</span> <span class="pre">Specification</span></code>: Describe the type and functionality of the model through text.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Statistical</span> <span class="pre">Specification</span></code>: Characterize the statistical information contained in the model using various machine learning techniques.</p></li>
+</ul>
+<p>Learnware specifications describe the model’s capabilities, enabling the model to be identified and reused by future users who may know nothing about the learnware in advance.</p>
+</section>
+<section id="why-do-we-need-learnware">
+<h2>Why do we need Learnware?<a class="headerlink" href="#why-do-we-need-learnware" title="Permalink to this headline">#</a></h2>
+<section id="the-benefits-of-learnware-paradigm">
+<h3>The Benefits of Learnware Paradigm<a class="headerlink" href="#the-benefits-of-learnware-paradigm" title="Permalink to this headline">#</a></h3>
+<p>Machine learning has achieved great success in many fields but still faces various challenges, such as the need for extensive training data and advanced training techniques, the difficulty of continuous learning, the risk of catastrophic forgetting, and the leakage of data privacy.</p>
+<p>Although there are many efforts focusing on one of these issues separately, they are entangled, and solving one problem may exacerbate others. The learnware paradigm aims to address many of these challenges through a unified framework.</p>
+<table class="table">
+<colgroup>
+<col style="width: 19%" />
+<col style="width: 81%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Benefit</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Lack of training data</p></td>
+<td><p>Strong models can be built with small data by adapting well-performed learnwares.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Lack of training
+skills</p></td>
+<td><p>Ordinary users can obtain strong models by leveraging well-performed learnwares instead of
+building models from scratch.</p></td>
+</tr>
+<tr class="row-even"><td><p>Catastrophic
+forgetting</p></td>
+<td><p>Accepted learnwares are always stored in the learnware market, retaining old knowledge.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Continual learning</p></td>
+<td><p>The learnware market continually enriches its knowledge with constant submissions of
+well-performed learnwares.</p></td>
+</tr>
+<tr class="row-even"><td><p>Data privacy/
+proprietary</p></td>
+<td><p>Developers only submit models, not data, preserving data privacy/proprietary.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Unplanned tasks</p></td>
+<td><p>Open to all legal developers, the learnware market can accommodate helpful learnwares for
+various tasks.</p></td>
+</tr>
+<tr class="row-even"><td><p>Carbon emission</p></td>
+<td><p>Assembling small models may offer good-enough performance, reducing interest in training
+large models and the carbon footprint.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="how-to-solve-future-tasks-with-learnware-paradigm">
+<h3>How to Solve Future Tasks with Learnware Paradigm?<a class="headerlink" href="#how-to-solve-future-tasks-with-learnware-paradigm" title="Permalink to this headline">#</a></h3>
+<img alt="../_images/learnware_paradigm.jpg" class="align-center" src="../_images/learnware_paradigm.jpg" />
+<p>Instead of building a model from scratch, users can submit their requirements to the learnware market, which then identifies and deploys helpful learnware(s) based on the specifications. Users can apply the learnware directly, adapt it using their data, or exploit it in other ways to improve their models. This process is more efficient and less expensive than building a model from scratch.</p>
+</section>
+</section>
+<section id="procedure-of-learnware-paradigm">
+<h2>Procedure of Learnware Paradigm<a class="headerlink" href="#procedure-of-learnware-paradigm" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Submitting</span> <span class="pre">Stage</span></code>: Developers voluntarily submit various learnwares to the learnware market, and the system conducts quality checks and further organization of these learnwares.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Deploying</span> <span class="pre">Stage</span></code>: When users submit task requirements, the learnware market automatically selects whether to recommend a single learnware or a combination of multiple learnwares and provides efficient deployment methods. Whether it’s a single learnware or a combination of multiple learnwares, the system offers convenient learnware reuse interfaces.</p></li>
+</ul>
+<img alt="../_images/learnware_market.svg" class="align-center" src="../_images/learnware_market.svg" /></section>
+<section id="framework-and-architecture-design">
+<h2>Framework and Architecture Design<a class="headerlink" href="#framework-and-architecture-design" title="Permalink to this headline">#</a></h2>
+<img alt="../_images/learnware_framework.svg" class="align-center" src="../_images/learnware_framework.svg" /><p>The architecture is designed based on the guidelines including <em>decoupling</em>, <em>autonomy</em>, <em>reusability</em>, and <em>scalability</em>. The above architecture diagram illustrates the architecture and framework from the perspectives of both modules and workflows.</p>
+<ul class="simple">
+<li><p>At the workflow level, the <code class="docutils literal notranslate"><span class="pre">learnware</span></code> package consists of <code class="docutils literal notranslate"><span class="pre">Submitting</span> <span class="pre">Stage</span></code> and <code class="docutils literal notranslate"><span class="pre">Deploying</span> <span class="pre">Stage</span></code>.</p></li>
+</ul>
+<table class="table">
+<colgroup>
+<col style="width: 15%" />
+<col style="width: 85%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Module</p></th>
+<th class="head"><p>Workflow</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">Submitting</span> <span class="pre">Stage</span></code></p></td>
+<td><p>The learnware developers submit learnwares to the learnware market, which conducts usability checks and further
+organization of these learnwares.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">Deploying</span> <span class="pre">Stage</span></code></p></td>
+<td><p>The <cite>learnware</cite> package identifies learnwares according to users’ task requirements and provides efficient
+reuse and deployment methods.</p></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><p>At the module level, the <code class="docutils literal notranslate"><span class="pre">learnware</span></code> package is a platform that consists of <code class="docutils literal notranslate"><span class="pre">Learnware</span></code>, <code class="docutils literal notranslate"><span class="pre">Market</span></code>, <code class="docutils literal notranslate"><span class="pre">Specification</span></code>, <code class="docutils literal notranslate"><span class="pre">Model</span></code>, <code class="docutils literal notranslate"><span class="pre">Reuse</span></code>, and <code class="docutils literal notranslate"><span class="pre">Interface</span></code> modules.</p></li>
+</ul>
+<table class="table">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 86%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Module</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">Learnware</span></code></p></td>
+<td><p>The specific learnware, consisting of specification module, and user model module.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">Market</span></code></p></td>
+<td><p>Designed for learnware organization, identification, and usability testing.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">Specification</span></code></p></td>
+<td><p>Generating and storing statistical and semantic information of learnware, which can be used for learnware
+search and reuse.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">Model</span></code></p></td>
+<td><p>Including the base model and the model container, which can provide unified interfaces and automatically
+create isolated runtime environments.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">Reuse</span></code></p></td>
+<td><p>Including the data-free reuser, data-dependent reuser, and aligner, which can deploy and reuse learnware
+for user tasks.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">Interface</span></code></p></td>
+<td><p>The interface for network communication with the <cite>Beimingwu</cite> backend.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="../index.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title"><code class="docutils literal notranslate"><span class="pre">Learnware</span></code> Documentation</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="quick.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Quick Start</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By LAMDA Group<br/>
+  
+      &copy; Copyright 2023, LAMDA Group.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
