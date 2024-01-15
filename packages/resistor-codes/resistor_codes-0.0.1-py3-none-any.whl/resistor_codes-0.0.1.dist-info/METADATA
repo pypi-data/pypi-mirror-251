@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: resistor-codes
+Version: 0.0.1
+Summary: Resistors codes is a program to convert resistor codes to resistance in Ohm-s.
+Home-page: https://sourceforge.net/p/smd-resistors/code/ref/main/
+Author: Nikolay Rovinskiy
+License: GPLv3+
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+License-File: LICENSE.txt
+

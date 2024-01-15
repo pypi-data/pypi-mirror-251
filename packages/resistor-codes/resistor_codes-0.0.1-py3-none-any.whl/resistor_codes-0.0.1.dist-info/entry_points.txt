@@ -1,0 +1,2 @@
+[console_scripts]
+resistor-codes = resistors:main.main

@@ -1,0 +1,12 @@
+resistors/__init__.py,sha256=8zLGg-DfQhnDl2Ky0n-zXpN-8e-g7iR0AcaI4l4Vvpk,32
+resistors/main.py,sha256=xetFzy6cLk1t8YzF8Fkfz72Wnt9TS05pf9vTUmjShCA,4501
+resistors/version.py,sha256=ugyuFliEqtAwQmH4sTlc16YXKYbFWDmfyk87fErB8-8,21
+resistors/resources/EIA_96_codes.csv,sha256=8-ICIockfMBUmuzYp8ah3kbcYIWdeZEhez6FTIAWXCA,683
+resistors/resources/EIA_96_mul.csv,sha256=FV7orkJnmxHS2dOIG6mD-jCvtsFHh_LDscqK6pXuLuo,92
+resistors/resources/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+resistor_codes-0.0.1.dist-info/LICENSE.txt,sha256=AH7wJY6iyJYqS_zxVdmwCcTKCpalQ5_xY-Axg8ZhZjU,32007
+resistor_codes-0.0.1.dist-info/METADATA,sha256=q8FRPMgpcSOVh7Xt5dM_yfdzyEgKpRi2vGdLrxgLugA,403
+resistor_codes-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+resistor_codes-0.0.1.dist-info/entry_points.txt,sha256=WoqPVBw2lzpGNkFhZesWmUwBLc3R5WJEnvHFe_C1PAU,55
+resistor_codes-0.0.1.dist-info/top_level.txt,sha256=tR4NMvyc9l3QGFXrFr6hi1Ww-l8NQGA8mkXyi0p_mfU,10
+resistor_codes-0.0.1.dist-info/RECORD,,
