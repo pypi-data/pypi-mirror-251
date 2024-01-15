@@ -1,0 +1,8 @@
+emotion_detection/NativeEmotionsLibrary.dll,sha256=8jLpsIeJVS0iVGe9W0Id_g8U9XnrEM1iaACKVEh7XjY,7812096
+emotion_detection/NativeEmotionsLibrary.lib,sha256=lpD9xdj9ErI_NN8Zv45zbY_vnWn48Th6c6e6G0-9lwQ,140196
+emotion_detection/__init__.py,sha256=emfkaG9FAidEFUkEUTE4UF9hObNNbn6UU7DN75uTBNM,86
+emotion_detection/cpp.cp310-win_amd64.pyd,sha256=tyuYJy0tEl6_QKl8hbwV6kLtI22xLnj3JaXFq8potJc,265216
+emotion_detection-0.0.1.dist-info/METADATA,sha256=dF-8VX2zbZE7Pm38H7V3CXZmkBmvg1gxR9VoHpvPq_I,337
+emotion_detection-0.0.1.dist-info/WHEEL,sha256=5JPYeYl5ZdvdSkrGS4u21mmpPzpFx42qrXOSIgWf4pg,102
+emotion_detection-0.0.1.dist-info/top_level.txt,sha256=fnVnMSKmZpBvK0pqpzA3byasj0gDk00gXF_NLH34WbE,18
+emotion_detection-0.0.1.dist-info/RECORD,,
