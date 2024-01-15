@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: adddi-test
+Version: 0.0.1
+Summary: PYPI tutorial package creation written by HBINKIM, addd inc.
+Home-page: 
+Author: hbinkim-addd
+Author-email: hbinkim@addd.co.kr
+Keywords: python tutorial,pypi
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.10

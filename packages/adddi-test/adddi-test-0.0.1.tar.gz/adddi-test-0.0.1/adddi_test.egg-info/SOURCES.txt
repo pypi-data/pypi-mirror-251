@@ -1,0 +1,9 @@
+setup.py
+adddi/__init__.py
+adddi/test.py
+adddi_test.egg-info/PKG-INFO
+adddi_test.egg-info/SOURCES.txt
+adddi_test.egg-info/dependency_links.txt
+adddi_test.egg-info/not-zip-safe
+adddi_test.egg-info/requires.txt
+adddi_test.egg-info/top_level.txt
