@@ -1,0 +1,9 @@
+hatch_conda/__about__.py,sha256=LBK46heutvn3KmsCrKIYu8RQikbfnjZaj2xFrXaeCzQ,22
+hatch_conda/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hatch_conda/hooks.py,sha256=O0iI0kGpwAInQjyngPinR8CLNqBdm4FDztMr8QryDyc,150
+hatch_conda/plugin.py,sha256=e6A2ycRXCFQDOJ4ZU4oH3CDbEIzpNnNBb53kNF1JSDg,9308
+hatch_conda-0.5.0.dist-info/METADATA,sha256=oBRAnzCzsel3LXpet2ztc8ib_JHV4uwr-yYkn5ePyHI,5159
+hatch_conda-0.5.0.dist-info/WHEEL,sha256=mRYSEL3Ih6g5a_CVMIcwiF__0Ae4_gLYh01YFNwiq1k,87
+hatch_conda-0.5.0.dist-info/entry_points.txt,sha256=uWCsQWFcPf7ozYvfrIBqmy61h1siBBPSSS-IScfmw0I,34
+hatch_conda-0.5.0.dist-info/licenses/LICENSE.txt,sha256=fxQ6gSetSHOGLXCFS1vSq9AIWqc-ZP0rCHBKO59cB_w,1088
+hatch_conda-0.5.0.dist-info/RECORD,,
