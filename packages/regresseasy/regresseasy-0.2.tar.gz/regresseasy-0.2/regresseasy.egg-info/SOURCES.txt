@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+regresseasy/__init__.py
+regresseasy/main.py
+regresseasy.egg-info/PKG-INFO
+regresseasy.egg-info/SOURCES.txt
+regresseasy.egg-info/dependency_links.txt
+regresseasy.egg-info/requires.txt
+regresseasy.egg-info/top_level.txt
