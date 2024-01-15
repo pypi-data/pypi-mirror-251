@@ -1,0 +1,3 @@
+include HalApyJson/CONFIG/*.*
+include LICENSE
+include Demo_HalApyJson.ipynb
