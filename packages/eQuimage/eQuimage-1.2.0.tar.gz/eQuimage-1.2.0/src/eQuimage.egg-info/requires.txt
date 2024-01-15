@@ -1,0 +1,9 @@
+numpy
+matplotlib>=3.0
+scipy
+pillow
+imageio>=2.33
+imageio[freeimage]
+imageio[tifffile]
+imageio[fits]
+PyGObject>=3.0
