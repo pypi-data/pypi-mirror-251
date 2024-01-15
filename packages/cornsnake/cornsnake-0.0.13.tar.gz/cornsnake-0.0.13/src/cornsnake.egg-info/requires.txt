@@ -1,0 +1,6 @@
+fitz
+frontend
+
+[dev]
+bumpver
+parameterized
