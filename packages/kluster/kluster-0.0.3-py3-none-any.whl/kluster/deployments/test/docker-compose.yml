@@ -1,0 +1,35 @@
+version: '3.7'
+
+
+services:
+  db:
+    environment:
+      POSTGRES_MULTIPLE_DATABASES: kluster_db
+      POSTGRES_PASSWORD: fostgres
+      POSTGRES_USER: postgres
+    image: jhnnsrs/daten:next
+    labels:
+      - "arkitekt.default.service=dbnew"
+  kluster_gateway:
+    image: jhnnsrs/kluster-gateway:paper
+    volumes:
+    - ./configs/gateway.yaml:/workspace/config.yaml
+    ports:
+      - 7744:8000
+  redis:
+    image: redis:latest
+    labels:
+      - "arkitekt.default.service=redis"
+  kluster:
+    depends_on:
+    - kluster_gateway
+    - redis
+    - db
+    image: jhnnsrs/kluster:paper
+    command: bash run-debug.sh
+    ports:
+      - 7766:80
+    volumes:
+      - ./configs/kluster.yaml:/workspace/config.yaml
+    labels:
+      - "arkitekt.default.servicekluster"
