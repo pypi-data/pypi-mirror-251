@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "BT_SQLAlchemy_DB_ORM_Template"
+version = "0.0.1"
+authors = [
+  { name="Murat Bilginer", email="mbilginer@brainytech.net" },
+]
+description = "A Semi-Automatic DB-ORM Tool Template That Allows You To Make Your Migration Operations Very Fast With SQLAlchemy"
+readme = "README.md"
+requires-python = ">=3.7"
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    "Flask>=1.1.4",
+    "Flask-SQLAlchemy>=2.5.1",
+    "Flask-Script>=2.0.6",
+    "Flask-Migrate>=2",
+    "PyMySQL>=1.0.2",
+    "markupsafe>=2.0.1",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/MuratBilginerSoft/BrainyTech-SQLAlchemy-DB-ORM-Tool-Template"
+"Bug Tracker" = "https://github.com/MuratBilginerSoft/BrainyTech-SQLAlchemy-DB-ORM-Tool-Template/issues"
