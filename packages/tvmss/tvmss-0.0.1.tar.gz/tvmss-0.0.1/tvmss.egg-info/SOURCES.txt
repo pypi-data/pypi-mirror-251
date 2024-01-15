@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+tvmss/__init__.py
+tvmss.egg-info/PKG-INFO
+tvmss.egg-info/SOURCES.txt
+tvmss.egg-info/dependency_links.txt
+tvmss.egg-info/top_level.txt
+tvmss/pic/__init__.py
