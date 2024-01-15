@@ -1,0 +1,10 @@
+BrokenDotmap/__init__.py,sha256=uHq_DJozVWyUn0Dvxbu1HTxpaTdivU89qCrLNkdVhC4,1538
+BrokenDotmap/BaseLoader.py,sha256=IncpccKCyihgZampwJLrXlgpAQR5lBVq6u-L7GO5Pi4,1452
+BrokenDotmap/BrokenDotmap.py,sha256=Oez0y_Y8wlX-UPwpX_jSI9XWB-k8Ze-wjL9xXXfH0oQ,11979
+BrokenDotmap/Loaders/__init__.py,sha256=wcJEGoWRpwKIgSR4sEwyrjk-LQ9jIKYXDJ3CZxwDagg,68
+BrokenDotmap/Loaders/LoaderPIL.py,sha256=wZgoyk1__EO3F1J-6KW4-T_8NqrkO8Pra98f2o2NQd0,2071
+BrokenDotmap/Loaders/LoaderTOML.py,sha256=R056-L4j6FyboQYsS7JYGJz3XNEoNJqy_v99k33NxbM,1274
+broken_dotmap-2024.1.15.dist-info/License.md,sha256=M4iC5kgXjbfn8zyueldsaGjxO3pt32dqvS7xP7GTSkg,1079
+broken_dotmap-2024.1.15.dist-info/METADATA,sha256=HD9gHQAOP0wQ-YzCBpV-piwJuHPLbYJqEyOeM-wHu1Q,3584
+broken_dotmap-2024.1.15.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+broken_dotmap-2024.1.15.dist-info/RECORD,,
