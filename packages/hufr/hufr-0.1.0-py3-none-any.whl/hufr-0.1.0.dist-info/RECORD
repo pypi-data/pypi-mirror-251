@@ -1,0 +1,10 @@
+hufr/constants.py,sha256=YJ6TLpXGXsVRa2ojq6d5-vYgrl-DXvf2Hoifvd-zhQ0,163
+hufr/convert.py,sha256=liwTgS25t3rFXFEJfK7mtqB-N25gd71ZCA0Dd0nSPxo,1273
+hufr/models/__init__.py,sha256=HXxKisnSA2l9OdX9oQE4iHSrR19tpq2HibwDt1eE6TU,47
+hufr/models/ner.py,sha256=aVLp4rVRVn9N1wl4EYNVklbP7N0Vog-WSVeOFPaKz4U,2842
+hufr/redact.py,sha256=2gnOkxVJD4h6ztJEOZy9-4hZW9PUanEG3qPsFO2nSss,889
+hufr/utils.py,sha256=vKJ3ae7J2tXl_rjvBIlyjFHbMExqyY-xevgD406fNZE,527
+hufr-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+hufr-0.1.0.dist-info/METADATA,sha256=atfSyX8HufhQMB9y-I9l0JmzMxFyPGP465tcp-zw_iE,2000
+hufr-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+hufr-0.1.0.dist-info/RECORD,,
