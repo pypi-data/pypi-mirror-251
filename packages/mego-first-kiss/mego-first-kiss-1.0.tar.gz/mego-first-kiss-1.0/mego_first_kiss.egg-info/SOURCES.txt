@@ -1,0 +1,10 @@
+setup.py
+mego-first-kiss/Binomialdistribution.py
+mego-first-kiss/Gaussiandistribution.py
+mego-first-kiss/Generaldistribution.py
+mego-first-kiss/__init__.py
+mego_first_kiss.egg-info/PKG-INFO
+mego_first_kiss.egg-info/SOURCES.txt
+mego_first_kiss.egg-info/dependency_links.txt
+mego_first_kiss.egg-info/not-zip-safe
+mego_first_kiss.egg-info/top_level.txt
