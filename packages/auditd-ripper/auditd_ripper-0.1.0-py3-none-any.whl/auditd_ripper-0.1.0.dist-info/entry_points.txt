@@ -1,0 +1,3 @@
+[console_scripts]
+auditdr=auditd_ripper.main:main
+
