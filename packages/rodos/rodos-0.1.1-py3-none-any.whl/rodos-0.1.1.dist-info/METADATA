@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: rodos
+Version: 0.1.1
+Summary: rodos middleware in python
+Author: ['Sebastian Kind']
+Description-Content-Type: text/markdown
+Requires-Dist: pyserial
+
+This is a port of the rodos middleware to Python
+
+RODOS is dependable real-time operating system used in satellites [see rodos gitlab](https://gitlab.com/rodos/rodos). The rodos middleware Python package was created to facilitate the development of PC software, that connects to a remote microcontroller. E.g. debugging embedded applications, displaying data, easier development in python instead of c++. It is writte in pure python dependent on pyserial and the operating system's UDP/rfcomm(bluetooth) stack
+
+install the package with `pip install rodos`. Here is an example how to use in conjunction with the struct package, that comes handy for parsing data
+
+	#!/bin/python3
+	import time
+	import struct
+
+	import rodos
+
+	# from rodos import *
+
+	def topicHandler(data):
+	    try:
+	        unpacked = struct.unpack("qI4b", data)
+	        print("timeNow = ", unpacked[0])
+	        print("msgIndex = ", unpacked[1])
+	    except Exception as e:
+	        print(e)
+	        print(data)
+
+
+	luart = rodos.LinkinterfaceUART(path="/dev/rfcomm2")
+	gwUart = rodos.Gateway(luart)
+	gwUart.run()
+
+	linux2rodos = rodos.Topic(1002)
+	rodos2linux = rodos.Topic(1003)
+
+	rodos2linux.addSubscriber(topicHandler) # <<<<<< register callback
+
+	cnt = 0
+	while True:
+	    cnt += 1
+	    time.sleep(1)
+
