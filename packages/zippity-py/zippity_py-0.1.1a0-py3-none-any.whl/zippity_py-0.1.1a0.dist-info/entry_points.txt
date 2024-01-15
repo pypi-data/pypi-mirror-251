@@ -1,0 +1,3 @@
+[console_scripts]
+zpt=zippity_py.cli:main
+
