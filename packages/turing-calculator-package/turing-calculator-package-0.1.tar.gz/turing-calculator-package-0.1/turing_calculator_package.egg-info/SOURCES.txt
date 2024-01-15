@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+setup.py
+calculator/__init__.py
+calculator/calculator.py
+tests/__init__.py
+tests/test_calculator.py
+turing_calculator_package.egg-info/PKG-INFO
+turing_calculator_package.egg-info/SOURCES.txt
+turing_calculator_package.egg-info/dependency_links.txt
+turing_calculator_package.egg-info/requires.txt
+turing_calculator_package.egg-info/top_level.txt
