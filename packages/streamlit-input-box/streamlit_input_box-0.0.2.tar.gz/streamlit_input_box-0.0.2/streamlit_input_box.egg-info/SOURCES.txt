@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+streamlit_input_box/__init__.py
+streamlit_input_box.egg-info/PKG-INFO
+streamlit_input_box.egg-info/SOURCES.txt
+streamlit_input_box.egg-info/dependency_links.txt
+streamlit_input_box.egg-info/requires.txt
+streamlit_input_box.egg-info/top_level.txt
