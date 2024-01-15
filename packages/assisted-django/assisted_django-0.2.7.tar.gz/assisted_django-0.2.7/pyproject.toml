@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "assisted-django"
+version = "0.2.7"
+description = "CLI Tool to generate content for all files in a django app directory including all the templates with the help of OpenAI Models"
+authors = ["fauzaanu <hello@fauzaanu.com>"]
+readme = "README.md"
+license = "MIT"
+homepage = "https://github.com/fauzaanu/assisted-django"
+packages = [{include = "assisted-django", from="."}]
+
+
+[tool.poetry.dependencies]
+python = "^3.10"
+openai = "^1.7.2"
+python-dotenv = "^1.0.0"
+typer = "^0.9.0"
+rich = "^13.7.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
