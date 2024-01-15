@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: noetl
+Version: 0.1.1
+Summary: NoETL: A Python package for managing workflows
+Author: NoETL Team
+License-File: LICENSE
+Requires-Dist: asyncio ==3.4.3
+Requires-Dist: loguru ==0.7.2
+Requires-Dist: aiofiles ==0.23.2.1
+Requires-Dist: aiohttp ==3.9.1
+Requires-Dist: pyyaml ==6.0
+Requires-Dist: requests >=2.31.0
+Requires-Dist: spacy ==3.6.1
+Requires-Dist: psutil ==5.9.5
+Requires-Dist: fastapi ==0.103.1
+Requires-Dist: uvicorn ==0.23.2
+Requires-Dist: nats-py ==2.6.0
+Requires-Dist: strawberry-graphql ==0.211.1
+Requires-Dist: aioprometheus[aiohttp] ==23.3.0
+Requires-Dist: aioprometheus[binary] ==23.3.0
+
