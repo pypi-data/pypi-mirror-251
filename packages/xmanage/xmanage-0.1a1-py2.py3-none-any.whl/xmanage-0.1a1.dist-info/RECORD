@@ -1,0 +1,9 @@
+xmanage/__init__.py,sha256=0Qtamt0nd0fZgidKQ6wnhtledwOSeHgf1m1YISl1dWI,16
+xmanage/utils/__init__.py,sha256=HlhO6uIXJ48OqTZFSg0K5nlrY3G96I5UxUaY9HtjfnM,351
+xmanage/utils/attribute.py,sha256=jRVXhQ6Rco02OXZ1AOsqnaQsBHxh2BA-stDNdZ7sLBw,394
+xmanage-0.1a1.dist-info/LICENSE,sha256=GJsa-V1mEVHgVM6hDJGz11Tk3k0_7PsHTB-ylHb3Fns,18431
+xmanage-0.1a1.dist-info/METADATA,sha256=9Aeg-n5A0VD7HntBcJymWALktBwWQ6JlUMporFCZ38c,620
+xmanage-0.1a1.dist-info/WHEEL,sha256=-G_t0oGuE7UD0DrSpVZnq1hHMBV9DD2XkS5v7XpmTnk,110
+xmanage-0.1a1.dist-info/top_level.txt,sha256=50ofzMpe0_6Fb63xMug3nWrwpcAWnCWLmiG8Gk0ZSts,8
+xmanage-0.1a1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+xmanage-0.1a1.dist-info/RECORD,,
