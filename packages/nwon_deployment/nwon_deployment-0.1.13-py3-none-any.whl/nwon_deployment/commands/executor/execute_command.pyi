@@ -1,0 +1,3 @@
+from typing import Dict, Optional
+
+def execute_command(command: str, environment_to_pass: Optional[Dict[str, str]] = ..., should_hide_successful_stdout: bool = ..., cwd: Optional[str] = ...): ...

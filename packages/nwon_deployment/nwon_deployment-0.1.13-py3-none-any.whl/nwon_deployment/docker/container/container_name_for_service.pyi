@@ -1,0 +1,3 @@
+from nwon_deployment.typings import DockerService as DockerService
+
+def container_name_for_service(service: DockerService, index: int = ...): ...

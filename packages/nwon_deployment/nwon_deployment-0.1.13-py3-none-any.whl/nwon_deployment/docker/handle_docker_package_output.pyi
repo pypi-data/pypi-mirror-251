@@ -1,0 +1,3 @@
+from typing import Any
+
+def handle_docker_package_output(output: Any) -> str: ...

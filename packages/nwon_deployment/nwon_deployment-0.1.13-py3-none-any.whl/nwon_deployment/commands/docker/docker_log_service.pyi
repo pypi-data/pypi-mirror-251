@@ -1,0 +1,3 @@
+from nwon_deployment.typings.docker_service import DockerService as DockerService
+
+def docker_log_service(service: DockerService, container_index: int = ...): ...

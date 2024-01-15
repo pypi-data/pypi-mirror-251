@@ -1,0 +1,3 @@
+from nwon_deployment.typings import DockerService as DockerService
+
+def zero_downtime_update(service: DockerService): ...

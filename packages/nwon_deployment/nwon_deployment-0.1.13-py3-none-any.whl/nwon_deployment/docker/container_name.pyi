@@ -1,0 +1,3 @@
+from enum import Enum
+
+def container_name(stack_name: str, service: Enum, counter: int = ...): ...

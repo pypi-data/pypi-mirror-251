@@ -1,0 +1,3 @@
+from nwon_deployment.environment_variables.env_variable_map import EnvVariableMap as EnvVariableMap
+
+def write_envs_map_to_file(env_variables_map: EnvVariableMap, path_to_write: str): ...

@@ -1,0 +1,3 @@
+from typing import List
+
+def copy_example_files(example_files: List[str]): ...

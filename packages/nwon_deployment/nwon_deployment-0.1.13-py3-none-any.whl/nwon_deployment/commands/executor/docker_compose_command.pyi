@@ -1,0 +1,3 @@
+from typing import List
+
+def docker_compose_command(parameters: List[str]): ...

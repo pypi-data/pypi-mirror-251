@@ -1,0 +1,3 @@
+from docker.models.volumes import Volume as Volume
+
+def volume_remove(volume_name: str) -> Volume: ...
