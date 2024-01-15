@@ -1,0 +1,6 @@
+[submodule "vendor/vendor/llama.cpp"]
+	path = vendor/vendor/llama.cpp
+	url = https://github.com/ggerganov/llama.cpp.git
+[submodule "vendor/llama.cpp"]
+	path = vendor/llama.cpp
+	url = https://github.com/ggerganov/llama.cpp.git
