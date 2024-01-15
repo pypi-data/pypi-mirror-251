@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=46.1.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "file-reloader"
+version = "1.0.5"
+description = "file-reloader allows user program to reload automatically when source code of user program changes"
+authors = [{name = "Mohammad Ummair", email = "mohdummair007@gmail.com"}]
+readme = "README.md"
+requires-python = ">=3.8"
+keywords = ["reloader", "autoreload", "file-reloader", "code reloading", "automatic refresh", "development workflow", "source code monitoring", "Python productivity", "efficient coding", "file change detection", "development environment", 
+            "PyPI package", "GitHub code reloader", "streamlined development", 
+            "time-saving coding", "source code watcher", "open-source reloader", 
+            "continuous development", "coding efficiency", "automated code updates", 
+            "developer productivity", "project auto-reload", "real-time code changes", 
+            "dependency-free autoreloading", "easy integration", "seamless code refresh", 
+            "responsive coding environment", "hands-free code reloading", 
+            "lightweight auto-reload", "source code agility", "smart code update"]
+
+license = {text = "BSD-3-Clause"}
+
+
+[project.scripts]
+my-script = "file_reloader:__init__"
