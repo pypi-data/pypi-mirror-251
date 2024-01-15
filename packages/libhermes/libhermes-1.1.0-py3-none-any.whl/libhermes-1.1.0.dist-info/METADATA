@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: libhermes
+Version: 1.1.0
+Summary: A lib including some basic utilities (mqtt publisher, mysql connector, configuration loader...) for Hermes iot platform
+Author-email: Phil <philestats@gmail.com>
+Project-URL: Homepage, https://framagit.org/hermes-ng
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENCE
+Requires-Dist: attrs
+Requires-Dist: iniconfig
+Requires-Dist: paho-mqtt
+Requires-Dist: PyYAML
+
+Hermes lib
+==========
+
+This lib provides common utilities for the hermes home automation platform
+
+https://framagit.org/hermes-ng
+
+It embeds 3 classes:
+
+* ConfigManager: using a list of variables, loads them from environment. Manages the default values, and the errors
+
+* DbOperations: taking SQL statements, sends them to the Database
+
+* MqttPublisher: sends payloads to standardized mqtt topics
+ 
