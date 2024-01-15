@@ -1,0 +1,11 @@
+xattr: [Errno 13] Permission denied: '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/Sonos.indigoPlugin/Contents/Server Plugin/lame/intel/lame'
+xattr: [Errno 13] Permission denied: '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/User Scripts.indigoPlugin/Contents/.svn/entries'
+xattr: [Errno 13] Permission denied: '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/User Scripts.indigoPlugin/Contents/.svn/props/Info.plist.svn-work'
+xattr: [Errno 13] Permission denied: '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/User Scripts.indigoPlugin/Contents/Menu Items/.svn/entries'
+xattr: [Errno 13] Permission denied: '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/User Scripts.indigoPlugin/Contents/Menu Items/.svn/props/AppleScript Hello World.scpt.svn-work'
+xattr: [Errno 13] Permission denied: '/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)/User Scripts.indigoPlugin/.svn/entries'
+Running post-install script in /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins
+Running command: xattr -rd com.apple.quarantine "/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins"
+xattr -rd com.apple.quarantine "/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)"
+Successfully removed quarantine attribute from all files in /Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins
+Failed to remove quarantine attribute: Command 'xattr -rd com.apple.quarantine "/Library/Application Support/Perceptive Automation/Indigo 2023.2/Plugins (Disabled)"' returned non-zero exit status 1.
