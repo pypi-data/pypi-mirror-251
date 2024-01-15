@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: shaderflow
+Version: 2024.1.15
+Summary: Imagine ShaderToy, on a Manim-like architecture. That's ShaderFlow.
+License: AGPLv3-only
+Author: Tremeschin
+Author-email: 29046864+Tremeschin@users.noreply.github.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
