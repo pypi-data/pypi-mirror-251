@@ -1,0 +1,3 @@
+[ ] custom handlers
+    [ ] RabbitMQ
+    [ ] Teams
