@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+scipystats666/__init__.py
+scipystats666/q1.py
+scipystats666.egg-info/PKG-INFO
+scipystats666.egg-info/SOURCES.txt
+scipystats666.egg-info/dependency_links.txt
+scipystats666.egg-info/requires.txt
+scipystats666.egg-info/top_level.txt

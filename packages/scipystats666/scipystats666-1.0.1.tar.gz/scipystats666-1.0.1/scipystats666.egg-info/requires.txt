@@ -1,0 +1,5 @@
+matplotlib>=3.8.0
+numpy>=1.26.3
+Pillow>=10.0.1
+Requests>=2.31.0
+pyperclip>=1.8.2
