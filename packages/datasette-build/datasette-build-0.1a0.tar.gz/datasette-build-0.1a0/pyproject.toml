@@ -1,0 +1,40 @@
+[project]
+name = "datasette-build"
+version = "0.1a0"
+description = "Build a directory full of files into a SQLite database"
+readme = "README.md"
+authors = [{name = "Datasette"}]
+license = {text = "Apache-2.0"}
+classifiers=[
+    "Framework :: Datasette",
+    "License :: OSI Approved :: Apache Software License"
+]
+requires-python = ">=3.8"
+dependencies = [
+    "click",
+    "sqlite-utils",
+    "PyYAML",
+    "pluggy"
+]
+
+[project.urls]
+Homepage = "https://github.com/datasette/datasette-build"
+Changelog = "https://github.com/datasette/datasette-build/releases"
+Issues = "https://github.com/datasette/datasette-build/issues"
+CI = "https://github.com/datasette/datasette-build/actions"
+
+[project.scripts]
+datasette-build = "datasette_build.cli:cli"
+
+[project.entry-points.datasette]
+build = "datasette_build.datasette_plugin"
+
+[project.entry-points.sqlite_utils]
+build = "datasette_build.sqlite_utils_plugin"
+
+[project.optional-dependencies]
+test = ["pytest", "pytest-asyncio"]
+datasette = ["datasette"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "strict"

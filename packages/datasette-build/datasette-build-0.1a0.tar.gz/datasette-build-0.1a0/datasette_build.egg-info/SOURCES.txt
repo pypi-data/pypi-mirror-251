@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+datasette_build/__init__.py
+datasette_build/cli.py
+datasette_build/core.py
+datasette_build/datasette_plugin.py
+datasette_build/default_formats.py
+datasette_build/hookspecs.py
+datasette_build/sqlite_utils_plugin.py
+datasette_build.egg-info/PKG-INFO
+datasette_build.egg-info/SOURCES.txt
+datasette_build.egg-info/dependency_links.txt
+datasette_build.egg-info/entry_points.txt
+datasette_build.egg-info/requires.txt
+datasette_build.egg-info/top_level.txt
+tests/test_build.py

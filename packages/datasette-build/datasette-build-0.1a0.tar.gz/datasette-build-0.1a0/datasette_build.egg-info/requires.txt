@@ -1,0 +1,11 @@
+click
+sqlite-utils
+PyYAML
+pluggy
+
+[datasette]
+datasette
+
+[test]
+pytest
+pytest-asyncio

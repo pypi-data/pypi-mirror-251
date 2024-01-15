@@ -1,0 +1,8 @@
+[console_scripts]
+datasette-build = datasette_build.cli:cli
+
+[datasette]
+build = datasette_build.datasette_plugin
+
+[sqlite_utils]
+build = datasette_build.sqlite_utils_plugin
