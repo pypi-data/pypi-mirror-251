@@ -1,0 +1,15 @@
+LICENSE,sha256=BLXK-Pt1lDExrfiLtzvTRaweXAN-bTbwYVbJB1tSpp4,1067
+admin_tabs/__init__.py,sha256=vQCFErfWgcct4ed0mCpI6QACGPBLlr3j2WfZPGVdsrA,109
+admin_tabs/apps.py,sha256=FiY9Y9J5bqHS2ZwmhB20F5GygewUwlAeRLp4tNckpk4,151
+admin_tabs/checks.py,sha256=1nu405ZvqDeWA2we1KICTMYPfenFtaUOC51JjSu4Lsw,877
+admin_tabs/decorators.py,sha256=I5Zwi-cIA2EkLy4hcE3WP32OjBDYvKvOrnhAn38TxDU,552
+admin_tabs/exceptions.py,sha256=-zeA6cRLdhnRfA4vYula7ryhuxWqLpCrbdn6FOQ9l48,41
+admin_tabs/filters.py,sha256=e0_S3t8OfGn6tWhZoSQi1PJMquDZ0P7G8EKtkV99HRg,1871
+admin_tabs/options.py,sha256=cMWBbI2_5pm7x8NiPWf48Svxt2ZfwbkmCkjAK8h6mXk,510
+admin_tabs/templates/admin_tabs/admin/change_list.html,sha256=bNRCvxc8rWqOKEmNqc7joK2FjC57T1PRFnDn2yB4COY,687
+admin_tabs/templates/admin_tabs/admin/tab_filter.html,sha256=6VOqh_7dMYg3pZEQVCeWp37ImvGkDpGriDfdcqEuiIs,257
+admin_tabs/views.py,sha256=UrCH6kgPJnBOE-OszTHUt39gq4Y2FHngp2P_LnG_xBI,1614
+django_admin_tabs-0.0.1.dist-info/LICENSE,sha256=BLXK-Pt1lDExrfiLtzvTRaweXAN-bTbwYVbJB1tSpp4,1067
+django_admin_tabs-0.0.1.dist-info/METADATA,sha256=ssUaHv7JilXnuXm96g-y_VgIi0srd_RJ9IxEKpggnVM,5153
+django_admin_tabs-0.0.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+django_admin_tabs-0.0.1.dist-info/RECORD,,
