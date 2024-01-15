@@ -1,0 +1,4 @@
+[console_scripts]
+fnt=forevernotes.cli:cli
+init_fnt=forevernotes.cli:init
+

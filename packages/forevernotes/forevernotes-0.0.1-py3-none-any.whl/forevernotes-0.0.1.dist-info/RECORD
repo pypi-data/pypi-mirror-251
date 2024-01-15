@@ -1,0 +1,10 @@
+forevernotes/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+forevernotes/config/db/schema.sql,sha256=0u2HUHpNP8CVstOhz55TRFJ0NfwV7Bq2xsVH29VOHoU,634
+forevernotes/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+forevernotes/utils/db.py,sha256=NQMu37SFAmzdXBa1dIPGhD1r1CqDIfRKtaQkXSRUNco,759
+forevernotes/utils/notes.py,sha256=L4bjXYAYA9vei7WYrqr2BsROcBfDTNm0mEHxyGSY9Sg,2233
+forevernotes/utils/tags.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+forevernotes-0.0.1.dist-info/METADATA,sha256=P0btG6kZ3MuS58xnp8HnJwXlsbVPpgLmRCpPU7kiK_A,1113
+forevernotes-0.0.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+forevernotes-0.0.1.dist-info/entry_points.txt,sha256=gX1MA5d_gwCDIDWehAqsyOpfcWFkZFpxDMWOK_SbfwA,75
+forevernotes-0.0.1.dist-info/RECORD,,
