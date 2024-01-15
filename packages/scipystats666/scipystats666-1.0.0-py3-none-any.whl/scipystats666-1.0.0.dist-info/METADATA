@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: scipystats666
+Version: 1.0.0
+Summary: Peryabov
+Home-page: https://github.com/
+Author: unknown8932489e23
+Author-email: reshariumonline@gmail.com
+Project-URL: Documentation, https://github.com/
+Keywords: example python
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: With love
+License-File: LICENSE
+Requires-Dist: matplotlib >=3.8.0
+Requires-Dist: numpy >=1.26.3
+Requires-Dist: Pillow >=10.0.1
+Requires-Dist: Requests >=2.31.0
+Requires-Dist: pyperclip >=1.8.2
+
+ 
