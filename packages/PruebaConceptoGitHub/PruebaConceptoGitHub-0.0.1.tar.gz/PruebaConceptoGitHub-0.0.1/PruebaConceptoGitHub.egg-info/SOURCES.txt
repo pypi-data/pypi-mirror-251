@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+PruebaConceptoGitHub.egg-info/PKG-INFO
+PruebaConceptoGitHub.egg-info/SOURCES.txt
+PruebaConceptoGitHub.egg-info/dependency_links.txt
+PruebaConceptoGitHub.egg-info/top_level.txt
+funciones/__init__.py
+funciones/app.py
+test/test_app.py

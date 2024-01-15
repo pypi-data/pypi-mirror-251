@@ -1,0 +1,18 @@
+[project]
+name = "PruebaConceptoGitHub"
+version = "0.0.1"
+authors = [
+  { name="jsalazal", email="jssalazarluna@gmail.com" },
+]
+description = "A small example package"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/PruebaOrganizacion1POC/Pruebas3"
+Issues = "https://github.com/PruebaOrganizacion1POC/Pruebas3/issues"
