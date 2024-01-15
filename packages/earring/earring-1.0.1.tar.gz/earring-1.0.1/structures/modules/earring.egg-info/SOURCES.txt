@@ -1,0 +1,57 @@
+license.txt
+pyproject.toml
+structures/modules/earring/__init__.py
+structures/modules/earring/module.MD
+structures/modules/earring/module.s.HTML
+structures/modules/earring/💎.s.HTML
+structures/modules/earring.egg-info/PKG-INFO
+structures/modules/earring.egg-info/SOURCES.txt
+structures/modules/earring.egg-info/dependency_links.txt
+structures/modules/earring.egg-info/requires.txt
+structures/modules/earring.egg-info/top_level.txt
+structures/modules/earring/"agenda v1"/core values.r.html
+structures/modules/earring/"agenda v1"/governance.r.html
+structures/modules/earring/"agenda v1"/priorities.html
+structures/modules/earring/"agenda v2"/priorities.s.HTML
+structures/modules/earring/"agenda"/agenda, seed.s.HTML
+structures/modules/earring/"agenda"/agenda, vibes.s.HTML
+structures/modules/earring/"agenda"/agenda.s.HTML
+structures/modules/earring/"agenda"/collection/collection.s.HTML
+structures/modules/earring/__license/license.s.HTML
+structures/modules/earring/__license/options/gpl-3.0-standalone.html
+structures/modules/earring/_clique/__init__.py
+structures/modules/earring/_clique/group/__init__.py
+structures/modules/earring/_status/__init__.py
+structures/modules/earring/_status/insurance.proc.py
+structures/modules/earring/_status/guarantees/status_1_generator/status_1.py
+structures/modules/earring/_status/guarantees/status_2_generators/status_1.py
+structures/modules/earring/_status/guarantees/status_3_sign_and_verify/status_1.py
+structures/modules/earring/modules/ED448/ED448.s.HTML
+structures/modules/earring/modules/ED448/clique.py
+structures/modules/earring/modules/ED448/_seed_phrase/2048.r.html
+structures/modules/earring/modules/ED448/_seed_phrase/seed phrase.r.html
+structures/modules/earring/modules/ED448/private/creator.py
+structures/modules/earring/modules/ED448/private/read.py
+structures/modules/earring/modules/ED448/private/scan.py
+structures/modules/earring/modules/ED448/private/SEED/SPLIT.py
+structures/modules/earring/modules/ED448/public/BUILD.py
+structures/modules/earring/modules/ED448/public/creator.py
+structures/modules/earring/modules/ED448/public/scan.py
+structures/modules/earring/modules/ED448/sign/__init__.py
+structures/modules/earring/modules/ED448/verify/__init__.py
+structures/modules/earring/modules/QR/__init__.py
+structures/modules/earring/modules/vibes/clique.py
+structures/modules/earring/modules/vibes/friendship/start.py
+structures/modules/earring/modules/vibes/proposal/start.py
+structures/modules/earring/modules/vibes/proposal/status_1.py
+structures/modules/earring/offline_flower/clique.py
+structures/modules/earring/offline_flower/offline.s.HTML
+structures/modules/earring/offline_flower/flask/__init__.py
+structures/modules/earring/offline_flower/flask/flask.s.HTML
+structures/modules/earring/offline_flower/flask/start_dev.py
+structures/modules/earring/offline_flower/flask/start_gunicorn.py
+structures/modules/earring/offline_flower/mongo/__init__.py
+structures/modules/earring/offline_flower/mongo/mongo.s.HTML
+structures/modules/earring/online_flower/clique.py
+structures/modules/earring/online_flower/online.s.HTML
+structures/modules/earring/online_flower/flask/__init__.py

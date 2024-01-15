@@ -1,0 +1,75 @@
+
+
+
+
+
+
+#
+#	how to publish:
+#
+#		cp structures/modules/earring/module.MD readme.md
+#
+#		python3 structures/modules/earring/_status/insurance.proc.py
+#
+#		(rm -rf dist && python3 -m build --sdist && twine upload dist/*)
+#
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "earring"
+version = "1.0.1"
+dependencies = [
+	"clique",
+	"homeostasis",
+	"shares",
+
+	"botanist",
+	"click",
+	"ecdsa",
+	"flask",
+
+	"websockets",
+
+	"pycryptodome",
+	"qrcode"
+]
+
+license = { text = "GPL 3.0 + MongoDB SSPL" }
+
+description = "fintech"
+readme = "structures/modules/earring/module.MD"
+
+#
+#	https://packaging.python.org/en/latest/specifications/declaring-project-metadata/#keywords
+#
+keywords = [	 
+	"offline signing",
+	"offline auth",
+	"authentication",
+	"elliptic curves",
+	"cloud money"
+]
+
+[project.scripts]
+#
+#	https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#creating-executable-scripts
+#	from this_module import clique; clique ()
+#
+# 	this_module = "spam:clique"
+#
+
+[tool.setuptools.packages.find]
+where = [ "structures/modules" ]
+
+#
+#	https://setuptools.pypa.io/en/latest/userguide/datafiles.html
+#
+[tool.setuptools.package-data]
+"*" = [ "*.html", "*.s.HTML" ]
+
+
+
+
