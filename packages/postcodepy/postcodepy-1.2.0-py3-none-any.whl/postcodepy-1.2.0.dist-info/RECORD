@@ -1,0 +1,12 @@
+postcodepy/__init__.py,sha256=sG5HHIRVEqbqMacmYexDg-rEwzjzaJ_j51qNRoLLToQ,526
+postcodepy/postcodepy.py,sha256=tVmSnHmKgIanlTavu3ZBIk9JB88jgX7sKSk7txuG0vI,8669
+postcodepy/typedefs.py,sha256=YguNHbmnYMdxLUe90ObkgJo7sCEyQ0QaVdU1arKmuew,3305
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_adres_api.py,sha256=nw3ZuVaWc2FQ9mU9TxpLpsQ-JLpylcqAe2vs2wwpmRM,10110
+tests/test_signal_api.py,sha256=0Ssv2dTxvP5wBl-H_M-t4t2neWUwpAS1KucXShUcVfY,2193
+tests/unittestsetup.py,sha256=BsgBCEfcd4v_6nwyyQS_u7L8js1mgo5oW2wQJkLhfAc,747
+postcodepy-1.2.0.dist-info/LICENSE,sha256=Hq5gfTbEKBegkwmLts817yuhVwRO0pVO6OaGgjp9mhQ,1090
+postcodepy-1.2.0.dist-info/METADATA,sha256=LtSSh50Pm9j1S5UHtVNdBOFg_dhvrqI89U4buhm5TZs,736
+postcodepy-1.2.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+postcodepy-1.2.0.dist-info/top_level.txt,sha256=iDQr3j16650ByCC1l8ZjFHr_DgN6MUWWdkXBun2iko0,17
+postcodepy-1.2.0.dist-info/RECORD,,
