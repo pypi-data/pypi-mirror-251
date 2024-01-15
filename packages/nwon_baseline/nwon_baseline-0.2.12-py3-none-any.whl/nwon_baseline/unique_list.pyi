@@ -1,0 +1,3 @@
+from typing import Iterable, Union
+
+def unique_list(list_to_check: Union[Iterable[Union[str, int, float, bool, bytes]], Iterable[str], Iterable[int], Iterable[float], Iterable[bool], Iterable[bytes]]): ...
