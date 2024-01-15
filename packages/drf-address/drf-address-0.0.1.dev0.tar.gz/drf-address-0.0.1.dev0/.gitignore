@@ -1,0 +1,16 @@
+Include
+Lib
+Scripts
+pyvenv.cfg
+__pycache__
+migrations
+dist/
+*.egg-info/
+cred
+*.sqlite3
+.pypirc
+*.ipynb
+.vscode
+docs/build
+docs/source/_build
+.tox

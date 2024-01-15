@@ -1,0 +1,10 @@
+include LICENSE
+include README.rst
+include requirements.txt
+include .gitignore
+prune address/drf_address/tests*
+prune address/drf_address.egg-info
+prune address/drf_address/migrations
+prune address/address/migrations
+exclude __version__.txt
+exclude Manifest.in
