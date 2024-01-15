@@ -1,0 +1,2 @@
+[console_scripts]
+my-script = file_reloader:__init__
