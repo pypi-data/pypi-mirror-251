@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: aliyun-api-gateway-sign
+Version: 1.0.4
+Summary: aliyun api网关调用python3
+Home-page: 
+Author: wiggin
+Author-email: zhangweijian@yigongpin.com
+License: MIT Licence
+Keywords: pip,aliyun,gateway,aliyun-gateway
+Platform: any
+
+aliyun api网关调用python3
