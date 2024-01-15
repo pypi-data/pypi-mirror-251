@@ -1,0 +1,11 @@
+[build-system]
+requires = [
+    "setuptools>=42",
+    "wheel",
+    "json",
+    "dotenv",
+    "pandas",
+    "scikit-learn",
+    "google-cloud-aiplatform"
+]
+build-backend = "setuptools.build_meta"

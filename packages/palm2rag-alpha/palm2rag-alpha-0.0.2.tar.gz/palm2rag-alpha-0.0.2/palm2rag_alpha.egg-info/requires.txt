@@ -1,0 +1,6 @@
+json
+dotenv
+pandas
+tiktoken
+scikit-learn
+google-cloud-aiplatform
