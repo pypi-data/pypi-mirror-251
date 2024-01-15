@@ -1,0 +1,4 @@
+[console_scripts]
+jp = jupyterpool.application:main
+jupyterpool = jupyterpool.application:main
+jupyterpool-server = jupyterpool.serverapplication:main

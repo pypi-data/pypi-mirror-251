@@ -1,0 +1,15 @@
+{
+  "jupyter.lab.shortcuts": [],
+  "title": "Jupyterpool",
+  "description": "Jupyterpool settings.",
+  "type": "object",
+  "properties": {
+    "showInLauncher": {
+      "title": "Show Jupyterpool in the launcher",
+      "description": "Show Jupyterpool in the launcher",
+      "default": true,
+      "type": "boolean"
+    }
+  },
+  "additionalProperties": false
+}
