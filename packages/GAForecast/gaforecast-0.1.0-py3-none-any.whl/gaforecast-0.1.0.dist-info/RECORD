@@ -1,0 +1,8 @@
+gaforecast/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gaforecast/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gaforecast/models/gaforecast.py,sha256=Q0L378x4lnhIX0uDcejlsaywnQqnfUCWBpVHU2MI2dY,7107
+gaforecast/models/resnet_model.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gaforecast-0.1.0.dist-info/LICENSE,sha256=k88FTKzHlOgqG-I9Q-ZWgoFXH8RT7gaXIdDIZu3-x5Q,1071
+gaforecast-0.1.0.dist-info/METADATA,sha256=Z5OPV2C9yQ5K0gMkI4O71lN0cWTYh6RLUpWFIFHvYwM,573
+gaforecast-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+gaforecast-0.1.0.dist-info/RECORD,,
