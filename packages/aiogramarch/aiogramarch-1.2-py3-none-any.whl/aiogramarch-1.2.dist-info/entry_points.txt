@@ -1,0 +1,3 @@
+[console_scripts]
+aiogramarch=aiogramarch.app:cli
+
