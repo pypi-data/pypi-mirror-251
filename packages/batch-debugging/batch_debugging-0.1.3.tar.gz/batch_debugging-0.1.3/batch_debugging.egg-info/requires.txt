@@ -1,0 +1,7 @@
+httpx
+attrs
+boto3
+pulumi
+pulumi-gcp
+google-cloud-batch
+google-cloud-storage
