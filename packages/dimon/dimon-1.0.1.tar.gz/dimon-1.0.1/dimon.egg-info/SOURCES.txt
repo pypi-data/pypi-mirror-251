@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+__init__.py
+setup.py
+dimon.egg-info/PKG-INFO
+dimon.egg-info/SOURCES.txt
+dimon.egg-info/dependency_links.txt
+dimon.egg-info/top_level.txt
+pic/__init__.py
