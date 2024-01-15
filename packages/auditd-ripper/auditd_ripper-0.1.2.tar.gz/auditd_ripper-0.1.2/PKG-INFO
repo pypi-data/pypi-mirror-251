@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: auditd-ripper
+Version: 0.1.2
+Summary: 
+Author: infosecB
+Author-email: infosecB@users.noreply.github.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+# Auditd Ripper
+A Python CLI app that normalizes, aggregates, decodes, and exports auditd logs to a JSON file.
+
+Example use:
+```
+pip install auditd-ripper
+auditdr -i '/var/log/audit/auditd.log' -o '~/auditd.json'
+```
+
