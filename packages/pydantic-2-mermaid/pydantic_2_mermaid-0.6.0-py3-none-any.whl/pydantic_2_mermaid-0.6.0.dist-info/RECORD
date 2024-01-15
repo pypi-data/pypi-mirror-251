@@ -1,0 +1,11 @@
+pydantic_mermaid/__init__.py,sha256=_Sr_tdl_l0yJ3ha-z0fVH2gN50VvhZyo2EV7US25qt4,270
+pydantic_mermaid/__main__.py,sha256=_uDZJ7IBwXt1qKaJ26m2fODOfgox6ISMFi8H4rLiimg,2913
+pydantic_mermaid/mermaid_generator.py,sha256=GrISlZYEmfF17NvnagIApPD8zjYTpQ0Nnn7PaDbclvo,3178
+pydantic_mermaid/models.py,sha256=GFOqHj2w97L6gK76VsQEsyWpk5aMWHLUyYx3AguBags,2464
+pydantic_mermaid/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pydantic_mermaid/pydantic_parser.py,sha256=ePsiVFjlIoJUpPJ2Q-m2GDuomI_p5zx6eNNY7CtQiDk,3490
+pydantic_2_mermaid-0.6.0.dist-info/LICENSE,sha256=TFqG0-WKElmq0uSjw0f_XYoY8A0EnKfem8xD1-l34X4,1091
+pydantic_2_mermaid-0.6.0.dist-info/METADATA,sha256=7g-kiq5S_PXqxXM0zwM7FV9vDQyNA1zJDwrLTaud1uU,5008
+pydantic_2_mermaid-0.6.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+pydantic_2_mermaid-0.6.0.dist-info/entry_points.txt,sha256=Ri3vFe50LxAJmpr_Q69Z7KX3RgzxVhyKnohWKn8A5Ik,67
+pydantic_2_mermaid-0.6.0.dist-info/RECORD,,
