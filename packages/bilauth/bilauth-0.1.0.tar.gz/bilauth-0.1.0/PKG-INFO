@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: bilauth
+Version: 0.1.0
+Summary: A Python package for authentication and profile data retrieval for Bilfen bilgi merkezi
+Home-page: https://github.com/kaganerkan/bilauth
+Author: Kagan Erkan
+Author-email: administer@kaganerkan.com
+License: GPLv3
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: beautifulsoup4
+
+This package provides a function for authentication and profile data retrieval from bilfen bilgi merkezi.
