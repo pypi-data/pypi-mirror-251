@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: example-pkg-charles
+Version: 0.0.1
+Summary: schooldevops sample lib
+Home-page: 
+Author: charles
+Author-email: poweryong8@naver.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: Licenses.txt
+
+test

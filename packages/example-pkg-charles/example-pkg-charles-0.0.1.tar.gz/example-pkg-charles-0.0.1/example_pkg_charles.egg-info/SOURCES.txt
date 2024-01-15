@@ -1,0 +1,7 @@
+Licenses.txt
+pyproject.toml
+setup.py
+example_pkg_charles.egg-info/PKG-INFO
+example_pkg_charles.egg-info/SOURCES.txt
+example_pkg_charles.egg-info/dependency_links.txt
+example_pkg_charles.egg-info/top_level.txt
