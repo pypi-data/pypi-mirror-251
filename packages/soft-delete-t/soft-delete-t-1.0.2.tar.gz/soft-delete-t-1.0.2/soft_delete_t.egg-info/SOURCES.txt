@@ -1,0 +1,9 @@
+LICENSE
+setup.py
+soft_delete/__init__.py
+soft_delete/admin.py
+soft_delete/models.py
+soft_delete_t.egg-info/PKG-INFO
+soft_delete_t.egg-info/SOURCES.txt
+soft_delete_t.egg-info/dependency_links.txt
+soft_delete_t.egg-info/top_level.txt

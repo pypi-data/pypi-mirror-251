@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: soft-delete-t
+Version: 1.0.2
+Summary: django soft delete
+Home-page: https://gitee.com/hai_hpy/soft_delete.git
+Author: meihai
+Author-email: 864561183@qq.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires: django
+Requires-Python: >=3.9
+License-File: LICENSE
+
+UNKNOWN
+
