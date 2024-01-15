@@ -1,0 +1,28 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ironfonts"
+version = "0.8"
+requires-python = ">=3.6"
+authors = [
+    { name="Isaac Erb", email="isaac.n.erb@gmail.com" },
+]
+description = "Modules for aiding and scripting the use of FontForge, built on the the 'fontforge' python-package."
+readme = "README.md"
+classifiers = [
+	"Development Status :: 3 - Alpha",
+
+	"Intended Audience :: Developers",
+	"Topic :: Software Development",
+
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+]
+keywords = ["font", "typography", "fontforge"]
