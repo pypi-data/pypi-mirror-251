@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: postal-client
+Version: 0.0.7
+Summary: Postal API Wrapper for Python
+Author: Udeshi Creations (Prem Udeshi)
+Author-email: <info@udeshi.dev>
+Keywords: python,postal,postal client
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+Requires-Dist: python-magic
+Requires-Dist: eml-parser
+
+A package that introduces Postal API for Python.
