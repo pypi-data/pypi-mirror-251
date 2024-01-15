@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+datacompass/__init__.py
+datacompass/main.py
+datacompass.egg-info/PKG-INFO
+datacompass.egg-info/SOURCES.txt
+datacompass.egg-info/dependency_links.txt
+datacompass.egg-info/requires.txt
+datacompass.egg-info/top_level.txt
