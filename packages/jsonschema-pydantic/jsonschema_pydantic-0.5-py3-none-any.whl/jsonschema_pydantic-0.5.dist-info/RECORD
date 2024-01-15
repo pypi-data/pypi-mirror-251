@@ -1,0 +1,8 @@
+jsonschema_pydantic/VERSION,sha256=jVwbWofFH5cIB_wMIFezqzqvEWOKtmfcWVbtyPW88Tg,4
+jsonschema_pydantic/__init__.py,sha256=vRXGXTQ2nqnbl16tg-xzVNUTxMRXKJKVKTiizDK60SM,103
+jsonschema_pydantic/transform.py,sha256=2FZGXeO5AVLFmtW3XzIPe5VWO9fnkcNm2-HNbCgyVYo,3256
+jsonschema_pydantic-0.5.dist-info/LICENSE,sha256=nhPfPChc5wta4h9hDjfwqrWsEWCzw5LPlYlez2TIkrU,1070
+jsonschema_pydantic-0.5.dist-info/METADATA,sha256=o3Dg9F4KzGqIlZnWItaZAq4Am2Xm_m2-DCZPDHmq3Qs,1533
+jsonschema_pydantic-0.5.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+jsonschema_pydantic-0.5.dist-info/top_level.txt,sha256=y1p_Y8Hs_iMF0ZqauKVu8p0b3mgMjLO-vT5h_NtI_ww,20
+jsonschema_pydantic-0.5.dist-info/RECORD,,
