@@ -1,0 +1,13 @@
+[package]
+name = "amora-py"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "amora_py"
+crate-type = ["cdylib"]
+
+[dependencies]
+amora-rs = "0.1"
+x25519-dalek = { version = "2.0", features = ["getrandom", "static_secrets"] }
+pyo3 = { version = "0.20", features = ["extension-module"] }

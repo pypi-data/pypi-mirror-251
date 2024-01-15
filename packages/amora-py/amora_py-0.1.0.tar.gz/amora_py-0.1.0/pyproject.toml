@@ -1,0 +1,29 @@
+[build-system]
+requires = ["maturin>=1.4,<2.0"]
+build-backend = "maturin"
+
+[project]
+name = "amora-py"
+requires-python = ">=3.8"
+authors = [
+    { name = "Grzegorz Blach" },
+]
+description = "Amora is a secure token inspired by JWT and Branca, but enhanced a bit in some areas."
+readme = "README.md"
+license = { text = "MPL-2.0" }
+keywords = [ "token", "jwt", "branca", "authentication", "authorization" ]
+classifiers = [
+    "Programming Language :: Rust",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+    "Development Status :: 4 - Beta",
+    "License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)",
+]
+dynamic = ["version"]
+
+[project.urls]
+Homepage = "https://codeberg.org/gblach/amora-py"
+Issues = "https://codeberg.org/gblach/amora-py/issues"
+
+[tool.maturin]
+features = ["pyo3/extension-module"]

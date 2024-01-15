@@ -1,0 +1,15 @@
+matrix:
+  VERSION: [3.8, 3.9, 3.10, 3.11, 3.12]
+
+steps:
+  test:
+    image: python:${VERSION}
+    commands:
+      - curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+      - . "$HOME/.cargo/env"
+      - python -mvenv .venv
+      - . .venv/bin/activate
+      - pip install --upgrade pip
+      - pip install .
+      - pip install pytest cryptography
+      - pytest -v
