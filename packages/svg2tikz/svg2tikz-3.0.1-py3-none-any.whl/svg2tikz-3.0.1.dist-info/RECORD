@@ -1,0 +1,9 @@
+svg2tikz/__init__.py,sha256=TlW9iLGe4IvDycOJKZdd-FYRr9SofIPhnFRpsXW1i_8,51
+svg2tikz/tikz_export.py,sha256=8a5G5CvK8CLb1AYFNmezFlAwtQjNj5B9lt6qbaFwnzk,48922
+svg2tikz/tikz_export_effect.inx,sha256=OB6WXDu68B8wWsK-nteV3u-CzVvzqge14YU6MKuSHUs,4923
+svg2tikz/tikz_export_output.inx,sha256=LBjsUjEkQ1-6aupUWCrgbv9w4Kdz_X33RBlksfIzHAU,4892
+svg2tikz-3.0.1.dist-info/LICENSE,sha256=QqU-vJNDxX-lAAY0NG5xNyGstHU72O1b4elM4gwY7Ro,716
+svg2tikz-3.0.1.dist-info/METADATA,sha256=w-kD0AficCK45El5KEzJ0ihSYhK_iCDepp1SX3wQZl8,1890
+svg2tikz-3.0.1.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+svg2tikz-3.0.1.dist-info/entry_points.txt,sha256=zkQligZ2U0ZSl3jfjXQc6c753oY2ImpXi7Puf2tECug,62
+svg2tikz-3.0.1.dist-info/RECORD,,
