@@ -1,0 +1,17 @@
+amazonorders/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+amazonorders/cli.py,sha256=pAFXoI-mxX4SiggK6dyZiNEAI1dwkB0mf9PVUwge_lE,2279
+amazonorders/exception.py,sha256=qgpk6qDI9NoB_PYUWd3rkd01akbySlMImCp5NFfT3oE,367
+amazonorders/orders.py,sha256=aUwO0LJb7olLARqmcuR0FjX94cBpLkE1GBwo92i0PYY,3419
+amazonorders/session.py,sha256=WPu2EKQtUK4t0UwT4YzOZJFmHhvV2h2nuTjENhKiqHY,8439
+amazonorders/entity/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+amazonorders/entity/item.py,sha256=tytEg0gpHWP34SyBUks9Vej8eFRSXJVaBTxZfxTBurM,2961
+amazonorders/entity/order.py,sha256=KqCgr8S3_8LqG2XkPkNQ194JjRfJYP8KmDnAvNyBVOg,10203
+amazonorders/entity/recipient.py,sha256=helRUOWN9uB6U5t0RfeJrSWq7fXPuaGmqVjrLeTKCLQ,1926
+amazonorders/entity/seller.py,sha256=bETvhsDv8MnBnzB8E7rEO8GiJQL5yc2eWrZOoqeXe3c,1413
+amazonorders/entity/shipment.py,sha256=Klj_Zy80ls2jcK0dZ4RqqCrsiyKPB73UUS9lE1dpZF4,1674
+amazon_orders-0.0.4.dist-info/LICENSE,sha256=HO7GQ4w0V85gTutc9aUuWXOL6A4BlXya4v2AhBb0qUc,1067
+amazon_orders-0.0.4.dist-info/METADATA,sha256=2ioT9WcfiaoAj3FBG_Oa2xAd49B8Fsa9R6hJzz8UHuU,3910
+amazon_orders-0.0.4.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+amazon_orders-0.0.4.dist-info/entry_points.txt,sha256=b9xFGgmB3NFp9S2u6gKjiIwJ0qu0h0DdlOQeWevGUVY,65
+amazon_orders-0.0.4.dist-info/top_level.txt,sha256=Lv9pL1yfiTKMMWUAReyRlELcwxmn--1dZkMUXgOvwL0,13
+amazon_orders-0.0.4.dist-info/RECORD,,
