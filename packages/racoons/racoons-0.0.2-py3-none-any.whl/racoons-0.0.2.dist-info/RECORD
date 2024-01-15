@@ -1,0 +1,8 @@
+racoons/__init__.py,sha256=wBOAn02vTqzepwkvOV2QqwpN3a8sNNI5yVrKtVc51ss,85
+racoons/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+racoons/models/multivariate.py,sha256=Wn_tARg2I5CQNQoCg1bs9aPgGx3rf4yjlf_-dUHYMiQ,20664
+racoons/models/univariate.py,sha256=trS_tUA1RMkDIEIQVCM1AxwTeetABZOx0i1_i0lWjB4,11396
+racoons-0.0.2.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+racoons-0.0.2.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+racoons-0.0.2.dist-info/METADATA,sha256=t7FPnusI7oH_mUL6i4EVMfz1_kEHiE5nmaXFbdwBMSc,450
+racoons-0.0.2.dist-info/RECORD,,
