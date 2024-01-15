@@ -1,0 +1,7 @@
+setup.py
+tver/__init__.py
+tver/ekz.py
+tver.egg-info/PKG-INFO
+tver.egg-info/SOURCES.txt
+tver.egg-info/dependency_links.txt
+tver.egg-info/top_level.txt
