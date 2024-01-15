@@ -1,0 +1,5 @@
+[project]
+name = 'mykit'
+version = '11.0.0-b1'
+[project.scripts]
+mykit = 'mykit.__main__:main'
