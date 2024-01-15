@@ -1,0 +1,11 @@
+hufr/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hufr/constants.py,sha256=YJ6TLpXGXsVRa2ojq6d5-vYgrl-DXvf2Hoifvd-zhQ0,163
+hufr/convert.py,sha256=fp587tf16mCqJXU4EiqXnokQ-0aI9mbpMiVf8SxwWmE,2214
+hufr/models/__init__.py,sha256=HXxKisnSA2l9OdX9oQE4iHSrR19tpq2HibwDt1eE6TU,47
+hufr/models/ner.py,sha256=WUD_EmDydj4dv2LNyvl8IbR_S1Utx_EMfP5t5BfgU5s,4710
+hufr/redact.py,sha256=4j7OkCSYJGEpeaPR-s2Jqdk0CkfXgzr32Q-8T2LgAWg,2334
+hufr/utils.py,sha256=HN9eXnGeRdAtVLcRmdrSdNpPW8uukiZEs54d531aM04,1246
+hufr-1.0.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+hufr-1.0.0.dist-info/METADATA,sha256=3dPIp1BHPCFVDc_EZjaSuHkdp7jNhwAL5WQEiQWGZRo,2455
+hufr-1.0.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+hufr-1.0.0.dist-info/RECORD,,
