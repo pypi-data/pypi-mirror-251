@@ -1,0 +1,3 @@
+[console_scripts]
+image_merge = image_merge:main
+
