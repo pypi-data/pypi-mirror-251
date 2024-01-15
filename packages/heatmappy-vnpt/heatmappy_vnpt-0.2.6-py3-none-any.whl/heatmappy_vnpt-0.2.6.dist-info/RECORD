@@ -1,0 +1,13 @@
+heatmappy/__init__.py,sha256=ripkJfT1DOn2pYl3oxw9ChNfu3tmYnfbt0WlNZJWt04,192
+heatmappy/heatmap.py,sha256=m4FD4MDmmPosBhgPBxNWncDa6da1hLnSbrtJ4reYcyA,7675
+heatmappy/video.py,sha256=0am44ukP_3m3dFmEIfHrEXPFY4zhj042dmv-FvN-sFA,5993
+heatmappy/assets/450pxdot.png,sha256=pHv7gtu9rQ14MsOPBqYZycNthYYbnufHXtLu914TexQ,27756
+heatmappy/assets/SampleVideo_720x480_1mb.mp4,sha256=a4PQGhvdu2SBAB2LtkS9TrN2kipM82P9qcFIJlNOF7M,1057149
+heatmappy/assets/cat.jpg,sha256=0mQec97vWCE6P5bL71Pa-wO3o4eRGwNybwi1wEPYeRY,44294
+heatmappy/assets/default.png,sha256=zzbDvGUOI8FwiWsFvKbgCZh9NrM2QUWQWhnG09qzFFE,7948
+heatmappy/assets/reveal.png,sha256=f1tmwKyjg4dMoTptUc88BEYvYB29gCtcwpq8ru_bY0M,9594
+heatmappy_vnpt-0.2.6.dist-info/LICENSE,sha256=axNmdEiJmGJyUSApOKdphSo3A81Xj5CfmJZohcFNV_E,1084
+heatmappy_vnpt-0.2.6.dist-info/METADATA,sha256=QLkayuUhNg1lw58rCabXpQtz83lR0bS_r5_RhKcWddg,678
+heatmappy_vnpt-0.2.6.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+heatmappy_vnpt-0.2.6.dist-info/top_level.txt,sha256=XFNevZOuYDqf5_oN3np6uqRD-EW9uV5StbjuZPR8vcU,10
+heatmappy_vnpt-0.2.6.dist-info/RECORD,,
