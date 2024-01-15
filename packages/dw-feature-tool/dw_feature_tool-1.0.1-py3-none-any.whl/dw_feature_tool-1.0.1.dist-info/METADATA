@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: dw-feature-tool
+Version: 1.0.1
+Summary: feature-tool
+Home-page: https://github.com/Dawaner/FeatureTool
+Author: yanghy
+Author-email: 784166768@qq.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: certifi ==2023.11.17
+Requires-Dist: charset-normalizer ==3.3.2
+Requires-Dist: docopt ==0.6.2
+Requires-Dist: idna ==3.6
+Requires-Dist: numpy ==1.26.3
+Requires-Dist: pandas ==2.1.4
+Requires-Dist: python-dateutil ==2.8.2
+Requires-Dist: pytz ==2023.3.post1
+Requires-Dist: requests ==2.31.0
+Requires-Dist: six ==1.16.0
+Requires-Dist: tzdata ==2023.4
+Requires-Dist: urllib3 ==2.1.0
+Requires-Dist: yarg ==0.1.9
+
+
+<font color="gold">请调用get_feature_info(data, feature_name)函数</font>
+
+data格式: 数组、字典、dataFrame、numpy.array、csv、excel（表格使用路径传入）
+
+feature_name格式: string、list
+
+return: 输出信息至控制台
