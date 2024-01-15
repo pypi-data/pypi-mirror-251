@@ -1,0 +1,6 @@
+# -*- coding: utf-8 -*-
+
+class SearcherEnum:
+    {%- for sr_meta in sr_meta_list %}
+    {{ sr_meta.id_snake }} = "{{ sr_meta.id }}"
+    {%- endfor %}
