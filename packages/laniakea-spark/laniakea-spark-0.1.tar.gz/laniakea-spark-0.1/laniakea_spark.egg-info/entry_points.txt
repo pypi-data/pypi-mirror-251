@@ -1,0 +1,2 @@
+[console_scripts]
+lk-spark = spark.cli:daemon

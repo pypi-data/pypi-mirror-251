@@ -1,0 +1,57 @@
+[project]
+name = "laniakea-spark"
+description = "Generic distributed job runner for Laniakea."
+authors = [
+    {name = "Matthias Klumpp", email = "matthias@tenstral.net"},
+]
+license = {text="LGPL-3.0-or-later"}
+readme = "README.md"
+requires-python = ">=3.9"
+dynamic = ['version']
+
+[project.urls]
+Documentation = "https://github.com/lkhq/laniakea-spark"
+Source = "https://github.com/lkhq/laniakea-spark"
+
+[build-system]
+requires = ["setuptools", "wheel", "pkgconfig"]
+build-backend = "setuptools.build_meta"
+
+[tool.pylint.master]
+
+[tool.pylint.format]
+max-line-length = 100
+
+[tool.pylint."messages control"]
+disable = [
+    'C', 'R',
+    'fixme',
+    'unused-argument',
+    'global-statement',
+    'logging-format-interpolation',
+    'attribute-defined-outside-init',
+    'protected-access',
+    'broad-except',
+    'redefined-builtin',
+]
+
+[tool.pylint.reports]
+score = 'no'
+
+[tool.pylint.typecheck]
+ignored-modules = [
+    'zmq',
+]
+
+[tool.isort]
+py_version = 39
+profile = "black"
+multi_line_output = 3
+skip_gitignore = true
+length_sort = true
+atomic = true
+
+[tool.black]
+target-version = ['py39']
+line-length = 100
+skip-string-normalization = true

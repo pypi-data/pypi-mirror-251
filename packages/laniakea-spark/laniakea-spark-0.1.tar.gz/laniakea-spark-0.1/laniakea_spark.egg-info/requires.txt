@@ -1,0 +1,4 @@
+firehose>=0.5
+python-debian>=0.1.28
+pyzmq>=16
+tomlkit>=0.8
