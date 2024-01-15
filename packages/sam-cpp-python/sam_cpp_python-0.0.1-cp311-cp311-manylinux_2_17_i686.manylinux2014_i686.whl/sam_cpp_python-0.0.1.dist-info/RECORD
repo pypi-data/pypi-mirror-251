@@ -1,0 +1,11 @@
+include/ggml/ggml-alloc.h,sha256=LVUjDuIedxcxOZIuUxDZl6GhAjBvO1tcuSzM55pbV7E,1357
+include/ggml/ggml.h,sha256=wRztD1LE8gkOiZVGDZoS07U758Kh5Wb6dBA336G9Unk,77104
+sam_cpp_python-0.0.1.dist-info/WHEEL,sha256=_5uR-GvpmtfaXYOR2jcvZXSiSd8LaQ2eimSfK4sqvlY,151
+sam_cpp_python-0.0.1.dist-info/RECORD,,
+sam_cpp_python-0.0.1.dist-info/entry_points.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sam_cpp_python-0.0.1.dist-info/METADATA,sha256=OTb-IHEd65imJx4kLkr7vSzoyenABfQUP5SiWoyVj8E,1248
+share/pkgconfig/ggml.pc,sha256=alUazWTcJfO7dUy1lWCNAOZBEfDCz4ueMu2mfbyWPfY,229
+sam_cpp/utils.py,sha256=JKzyOZQ0mZoMxVPPaJYAkJpxGTt3XDxbfos0rxvsND0,1733
+sam_cpp/__init__.py,sha256=EdTaUge9x41b4A-JVNVw4yen7XGpT63FHG195vR5XQ4,382
+sam_cpp/_core.cpython-311-i386-linux-gnu.so,sha256=UeVcyXBaDElKbPJrpBoW1dr7FxfDNy30iPfQ0gp7Arc,695796
+lib/static/libggml.a,sha256=wQ97LM-3objyJED0dxAXLySDajs7jS0LczJTXObnXVY,462700
