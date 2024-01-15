@@ -1,0 +1,2 @@
+[console_scripts]
+modetheme = modetheme.__main__:main
