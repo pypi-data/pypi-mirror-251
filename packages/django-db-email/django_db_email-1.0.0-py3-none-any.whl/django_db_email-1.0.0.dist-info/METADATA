@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: django-db-email
+Version: 1.0.0
+Summary: Db backend for Django mails
+Home-page: https://github.com/bboogaard/django-db-email
+Author: Bram Boogaard
+Author-email: padawan@hetnet.nl
+License: MIT License
+Keywords: Django Email Backend
+Classifier: Development Status :: 3 - Alpha
+Description-Content-Type: text/markdown
+Requires-Dist: django ~=4.2.7
+
+# django-db-email
+
+Database email backend for Django.
+
+## Rationale
+
+Capture emails in database during development.
+
+## Support
+
+Supports: Python 3.10.
+
+Supports Django Versions: 4.2.7
+
+## Installation
+
+```shell
+$ pip install django-db-email
+```
+
+## Usage
+
+Add `db_email` to `INSTALLED_APPS`.
+
+Set `EMAIL_BACKEND` to: "db_email.backend.EmailBackend"
+
+Run migrations:
+
+```shell
+python manage.py migrate
+```
+
+View captured emails in Django Admin.
