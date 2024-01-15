@@ -1,0 +1,8 @@
+LICENSE
+README.md
+hpformula.py
+setup.py
+hpformula.egg-info/PKG-INFO
+hpformula.egg-info/SOURCES.txt
+hpformula.egg-info/dependency_links.txt
+hpformula.egg-info/top_level.txt
