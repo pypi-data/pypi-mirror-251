@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: searchpi
+Version: 0.0.1
+Summary: A command-line tool for searching your Raspberry Pi in a local network
+Author-email: Evgeniy Blinov <zheni-b@yandex.ru>
+Project-URL: Source, https://github.com/pomponchik/searchpi
+Project-URL: Tracker, https://github.com/pomponchik/searchpi/issues
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Utilities
+Classifier: Intended Audience :: System Administrators
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: paramiko ==3.4.0
+Requires-Dist: typer ==0.9.0
+
+# searchpi
+
+[![Downloads](https://static.pepy.tech/badge/searchpi/month)](https://pepy.tech/project/searchpi)
+[![Downloads](https://static.pepy.tech/badge/searchpi)](https://pepy.tech/project/searchpi)
+[![Hits-of-Code](https://hitsofcode.com/github/pomponchik/searchpi?branch=main)](https://hitsofcode.com/github/pomponchik/searchpi/view?branch=main)
+[![Python versions](https://img.shields.io/pypi/pyversions/searchpi.svg)](https://pypi.python.org/pypi/searchpi)
+[![PyPI version](https://badge.fury.io/py/searchpi.svg)](https://badge.fury.io/py/searchpi)
+[![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
+
+This is a very stupid CLI tool that is designed to search for SSH-ready devices on your local network, starting with those with the most senior local IP addresses.
+
+Before using this tool, install [`nmap`](https://nmap.org/) on your computer. Then install the tool by [`pip`](https://pip.pypa.io/en/stable/installation/):
+
+```bash
+pip install searchpi
+```
+
+And use:
+
+```bash
+searchpi 192.168.1.0/24 pomponchik ~/.ssh/id_rsa.pub
+```
+
+Here `192.168.1.0/24` means the range of addresses we are looking at, `pomponchik` is the username and `~/.ssh/id_rsa.pub` is the name of the SSH key file.
+
+The command will print to the standard output the command that you will need to execute to connect to the remote machine via SSH:
+
+```bash
+>>> searchpi 192.168.1.0/24 pomponchik ~/.ssh/id_rsa.pub
+ssh pomponchik@192.168.1.16
+```
+
+You can save your energy if you try to call the received command in the same line of code:
+
+```bash
+eval "$(searchpi 192.168.1.0/24 pomponchik ~/.ssh/id_rsa.pub)"
+```
