@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ensembl Variant Lookup Tool</title>
+
+    <!-- Add DataTables CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+
+    <!-- Add DataTables Buttons CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/2.1.3/css/buttons.dataTables.min.css">
+
+    <!-- Add your custom styles here -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 20px;
+            background-color: #f8f8f8;
+        }
+
+        h1, h2 {
+            color: #333;
+            text-align: center;
+        }
+
+        form {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        input[type="text"] {
+            width: 300px;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        p.error {
+            color: red;
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #4caf50;
+            color: white;
+        }
+
+        tfoot {
+            font-weight: bold;
+        }
+    </style>
+
+    <!-- Add jQuery -->
+    <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Add DataTables JavaScript -->
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+
+    <!-- Add DataTables Buttons JavaScript -->
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/buttons/2.1.3/js/dataTables.buttons.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/buttons/2.1.3/js/buttons.html5.min.js"></script>
+
+</head>
+
+<body>
+    <h1>Ensembl Variant Lookup Tool</h1>
+
+    <p align=center>Welcome to the Ensembl Variant Lookup tool. </p>
+    <p align=center> Use this tool to retrieve information about genetic variants based on their rsid.</p>
+    <br>
+
+    {% if error_message %}
+        <p class="error">{{ error_message }}</p>
+    {% endif %}
+
+
+    <div style="margin-top: 20px;">
+        <h2>Example of Usage</h2>
+        <p align=center>
+            To look up information for a specific variant,
+            <br>enter its rsid in the form above and click "Fetch Variant." <br>
+            For example, you can enter "rs201937405" <i style="font-family:verdana; color:red">(without quotes "")</i> <br>
+            submit the form to retrieve details about this genetic variant.
+        </p>
+    </div>
+
+    <br><br>
+
+    <form action="/variant" method="post">
+        <label for="rsid">Enter rsid:</label>
+        <input type="text" id="rsid" name="rsid" required>
+        <button type="submit">Fetch Variant</button>
+    </form>
+
+    <form action="/batch" method="post">
+        <label for="rsid_list">List of RSIDs (comma-separated):</label>
+        <input type="text" id="rsid_list" name="rsid_list" required>
+        <button type="submit">Batch Search</button> <br>
+        <a align=center style="font-size:0.8m; ">eg: rs759213998, rs201937405</a>
+    </form>
+    
+    
+    
+    <br>
+    <br>
+
+
+    <!-- New section for gene lookup -->
+    <div style="margin-top: 20px;">
+        <h2>Gene Lookup </h2>
+        
+        <p align=center>
+        <i style="font-family:verdana; color:red; font-size:1em; ">(ATTENTION: this could take a bit of time to complete)</i><br>
+            To look up information for a specific gene,
+            <br>enter its name in the form below and click "Fetch Gene Info." <br>
+            For example, you can enter "BRCA1" <i style="font-family:verdana; color:red">(without quotes "")</i> <br>
+            submit the form to retrieve details about this gene.
+        </p>
+        {% if error_message %}
+        <p class="error">{{ error_message }}</p>
+    {% endif %}
+        
+        <form action="/visualize" method="post">
+            <label for="gene_name">Enter Gene Name:</label>
+            <input type="text" id="gene_name" name="gene_name" required>
+            <button type="submit">Fetch Gene Info</button>
+        </form>
+        
+
+    </div>
+
+    {% if variant_data %}
+        <h2>Variant Data</h2>
+        <p>Below is the information for the specified rsid:</p>
+
+        <table id="variantTable" class="display">
+            <thead>
+                <tr>
+                    <th>Key</th>
+                    <th>Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for key, value in variant_data.items() %}
+                    <tr>
+                        <td>{{ key }}</td>
+                        <td>{{ value }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <script>
+            // Activate DataTable on the table with Buttons extension
+            $(document).ready(function() {
+                $('#variantTable').DataTable({
+                    dom: 'Bfrtip',
+                    buttons: [
+                        'copy', 'csv', 'excel', 'pdf', 'print'
+                    ]
+                });
+            });
+        </script>
+
+        <script>
+            // Get the id parameter from the URL
+            const urlParams = new URLSearchParams(window.location.search);
+            const id = urlParams.get('id');
+
+            // If id is available, set it as the value of the rsid input field
+            if (id) {
+                document.getElementById('rsid').value = id;
+            }
+        </script>
+    {% endif %}
+    <BR>
+    
+    <footer class=footer style="margin-bottoom: 20px; text-align: center; color: #555;">
+        <p>&copy; 2023 Dany Mukesha.</p>
+        <p>All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

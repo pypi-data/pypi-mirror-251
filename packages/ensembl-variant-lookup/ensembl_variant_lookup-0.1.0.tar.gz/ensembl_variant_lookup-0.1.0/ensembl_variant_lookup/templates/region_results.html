@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gene Region Search Results</title>
+
+    <!-- Add your custom styles here -->
+    <!-- Include DataTables CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+
+    <!-- Include DataTables Buttons CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/2.1.3/css/buttons.dataTables.min.css">
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 20px;
+            background-color: #f8f8f8;
+        }
+
+        h1, h2 {
+            color: #333;
+            text-align: center;
+        }
+
+        p.error {
+            color: red;
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #4caf50;
+            color: white;
+        }
+    </style>
+
+    <!-- Add jQuery -->
+    <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Add DataTables JavaScript -->
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+
+    <!-- Add DataTables Buttons JavaScript -->
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/buttons/2.1.3/js/dataTables.buttons.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/buttons/2.1.3/js/buttons.html5.min.js"></script>
+</head>
+
+<body>
+    <h1>Gene Region Search Results</h1>
+
+    {% if error_message %}
+        <p class="error">{{ error_message }}</p>
+    {% endif %}
+
+    {% if variant_data %}
+        <h2>Variant Data</h2>
+        <p>Below is the information for the specified gene region:</p>
+
+        <table id="geneRegionTable" class="display">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Clinical Significance</th>
+                    <th>Ambiguity</th>
+                    <th>Evidence</th>
+                    <th>MAF</th>
+                    <!-- Add more columns as needed -->
+                </tr>
+            </thead>
+            <tbody>
+                {% for id, data in variant_data.items() %}
+                    <tr>
+                        <td>{{ id }}</td>
+                        <td>
+                            {% for sign in data.get('clinical_significance', []) %}
+                                {{ sign }}<br>
+                            {% endfor %}
+                        </td>
+                        <td>{{ data.get('ambiguity', '') }}</td>
+                        <td>{{ data.get('evidence', '')|join(', ') }}</td>
+                        <td>{{ data.get('MAF', '') }}</td>
+                        <!-- Add more cells as needed -->
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <script>
+            // Activate DataTable on the table with Buttons extension
+            $(document).ready(function() {
+                $('#geneRegionTable').DataTable({
+                    dom: 'Bfrtip',
+                    buttons: [
+                        'copy', 'csv', 'excel', 'pdf', 'print'
+                    ]
+                });
+            });
+        </script>
+    {% endif %}
+</body>
+
+</html>
