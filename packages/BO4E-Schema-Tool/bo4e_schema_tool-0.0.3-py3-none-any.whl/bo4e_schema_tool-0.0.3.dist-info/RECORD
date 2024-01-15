@@ -1,0 +1,13 @@
+_bo4e_schemas_tool_version.py,sha256=RRD0ADRcVyDY2lO9M6qp2acyRCweTNRWI9gN-ZwdERY,18
+bost/__init__.py,sha256=BlSK18GPaMSJQB6hKdcA0NjK3UU3qEq8ZYIWufU6Wxo,45
+bost/__main__.py,sha256=sxpe1PFU5H-NiDQ0mjuBlBrgkte511-PzJrP4DBJqCE,8917
+bost/config.py,sha256=l55v83o8SVK7JUAOjSpPbXss4qJwaOcw9E13mcX2kJA,3673
+bost/logger.py,sha256=u0WvpzU2kby1T-1q1aGqhHxjDIPTMCLYkS5u03kNO9s,155
+bost/operations.py,sha256=j_UNAd5qGw315VRQR_-7ZtOlbgcbGUyR5QQLcR4wdLk,3860
+bost/pull.py,sha256=W37sE_CXgs51YqA0DsSOot23nDVgHl5D6BJdtd2dydE,6068
+bost/py.typed,sha256=ZvYa-_QF7Xg7F6Dow8m1zHvSP6kNHuhh3BEBVxjAdUQ,168
+bost/schema.py,sha256=XS7oG7_us9PFwyhAn9WCeJNVLdl3tKGrlTQMhHvYw9g,3513
+bo4e_schema_tool-0.0.3.dist-info/METADATA,sha256=MMBTjnrZMcGVpwH8iuzJ2Rcua7fBlurS0d9Zz7qDm8o,2514
+bo4e_schema_tool-0.0.3.dist-info/WHEEL,sha256=mRYSEL3Ih6g5a_CVMIcwiF__0Ae4_gLYh01YFNwiq1k,87
+bo4e_schema_tool-0.0.3.dist-info/entry_points.txt,sha256=VvBKKtAVlJmkUlti0D3JtD7ZG8IzVTcGRtic06Ll2xk,57
+bo4e_schema_tool-0.0.3.dist-info/RECORD,,
