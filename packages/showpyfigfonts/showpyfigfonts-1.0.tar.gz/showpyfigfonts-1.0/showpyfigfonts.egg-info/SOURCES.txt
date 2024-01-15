@@ -1,0 +1,10 @@
+README.md
+setup.py
+showpyfigfonts/__init__.py
+showpyfigfonts/__main__.py
+showpyfigfonts.egg-info/PKG-INFO
+showpyfigfonts.egg-info/SOURCES.txt
+showpyfigfonts.egg-info/dependency_links.txt
+showpyfigfonts.egg-info/entry_points.txt
+showpyfigfonts.egg-info/requires.txt
+showpyfigfonts.egg-info/top_level.txt
