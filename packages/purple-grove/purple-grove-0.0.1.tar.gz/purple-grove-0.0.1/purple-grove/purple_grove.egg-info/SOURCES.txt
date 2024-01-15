@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+purple-grove/contacts/__init__.py
+purple-grove/contacts/contacts.py
+purple-grove/purple_grove.egg-info/PKG-INFO
+purple-grove/purple_grove.egg-info/SOURCES.txt
+purple-grove/purple_grove.egg-info/dependency_links.txt
+purple-grove/purple_grove.egg-info/top_level.txt
