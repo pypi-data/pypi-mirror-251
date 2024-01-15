@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: python-wintun
+Version: 0.14.1
+Summary: wintun (WireGuard) wrapper for Python
+Home-page: https://github.com/dsotsin/wintun
+Author: zq2024
+Author-email: dsotsen@gmail.com
+Maintainer: zq2024
+Maintainer-email: dsotsen@gmail.com
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: C
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: System :: Networking
+License-File: COPYING
+
+
+.. code:: python
+
+   import os
+   import wintun
+   from threading import Thread
+
+   def log(level, timestamp, message):
+       print(level, timestamp, message)
+
+   wintun.set_logger(log)
+
+   tun = wintun.TunDevice('Demo', 'tunnel', 0x40000)
+   print(wintun.get_driver_version())
+
+   if tun:
+       print('MTU=' + str(tun.mtu))
+       tun.mtu = 1500
+       tun.ring_capacity = 1024*1024*8
+       tun.addr = '10.2.0.0'
+       print(tun.mtu)
+       tun.up()
+
+       print(tun.addr)
+
+       print(tun.mtu)
+
+   def read_task():
+       while True:
+           packet = tun.read()
+           if packet:
+               print('Received ' + str(len(packet)))
+           else:
+               tun.wait_read_event()
+
+   t = Thread(target=read_task)
+   t.start()
+
+   while True:
+       pass
+
+   tun.down()
