@@ -1,0 +1,13 @@
+solcast/__init__.py,sha256=sGK5T7pbW-VXwVpPiUCmm3t0PtDAJQiK9ZnDi-CiV-k,178
+solcast/api.py,sha256=uX-Dmi3HaBdWtjprjTfs3mHFaThW1WWergu46svyt3I,7016
+solcast/forecast.py,sha256=ddcBIHe1SsBWB2x_Sr1rtk5vT98zFqb8xrihQh6IGRk,3349
+solcast/historic.py,sha256=m-Fft3ywFKvcfZDTRHKHWtB60dGdz2NRp-Htf4Fp5pM,3230
+solcast/live.py,sha256=WTQrtM7xAvO3CW6LJOD9wcI5G2VS47xAjuqgN8JwqS8,3020
+solcast/pv_power_sites.py,sha256=17_n8JbD7GRTTgJFQsSjD1qH1DtJ1Aa-WYwd55KfcZk,3909
+solcast/tmy.py,sha256=91If0W3UW8D17RFOjnLDVxcsSD_wDjJm6W35Zg50CYE,1982
+solcast/unmetered_locations.py,sha256=HW3JnPtO4ogiUR_Hi5o8jGYFYClswpzDTNJKBOQgbsI,1669
+solcast/urls.py,sha256=oGKFDB2nVGH56JWs9UdaV2wk7KH3BoLKZU2tvfykBSI,749
+solcast-1.2.0.dist-info/METADATA,sha256=-xEoo1YGeuNxjJcw37DvCQqh1qot9LGWV1V8V6gCKG4,3770
+solcast-1.2.0.dist-info/WHEEL,sha256=mRYSEL3Ih6g5a_CVMIcwiF__0Ae4_gLYh01YFNwiq1k,87
+solcast-1.2.0.dist-info/licenses/LICENSE,sha256=HOVcajFymlCFvzClhJHptoL1e7E2W5ibiFug0uaEtyo,563
+solcast-1.2.0.dist-info/RECORD,,
