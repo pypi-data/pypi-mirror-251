@@ -1,0 +1,12 @@
+ironfonts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ironfonts/batch_naming.py,sha256=Zf76P9lJ5QVtlp2Fdsx3qojI-5VIYVNAWuOvWCsYSZo,4108
+ironfonts/cli_functions.py,sha256=zyhNnElatYyUzqMj_pNfBAXBsIVCwviEHemhFbgTyG4,5808
+ironfonts/custom_functions.py,sha256=oKrJ0UiqqOibdfhWwu4OZpg75KYe1WKkJ9qYhs4v6j4,1107
+ironfonts/repaste_underrange.py,sha256=kfVqNeqoYSWjcAUu47dDr7aFlsKSACgqZ-gxCJKdjpE,12646
+ironfonts/reserve_ligatures.py,sha256=4FlDTSaFy64fnNZTSXc_dcgD46LdbS1gup8fTW6559Q,14459
+ironfonts/select_set.py,sha256=4VG4lrDoJnnuXUJH9sVal9fG5FD7CjezIqawY2oiOtE,3551
+ironfonts/sets.py,sha256=x0Q0BO8YTXoYHAlY1YDRpxBs5E4U6eVDoAMcibkjkM0,8179
+ironfonts-0.8.dist-info/METADATA,sha256=ht-dxeP6Zq_saQuU8GhjrnxxpP_I2L_0FKq5XQ-_R4U,1277
+ironfonts-0.8.dist-info/WHEEL,sha256=mRYSEL3Ih6g5a_CVMIcwiF__0Ae4_gLYh01YFNwiq1k,87
+ironfonts-0.8.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+ironfonts-0.8.dist-info/RECORD,,

@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: ironfonts
+Version: 0.8
+Summary: Modules for aiding and scripting the use of FontForge, built on the the 'fontforge' python-package.
+Author-email: Isaac Erb <isaac.n.erb@gmail.com>
+License-File: LICENSE
+Keywords: font,fontforge,typography
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Iron Fontsmith ReadMe
+
+## About the Package:
+-	This package contains modules written by the author to aid him in using FontForge to develop fonts.
+-	The modules are generally meant to be accessed thru the Python Shell.
+-	Though he is doubtful anyone will notice, the author is open to feedback on the contents of the module.
+-	(The license for this package is GNU GPLv3.)
+
+## About the Author:
+-	Name: Isaac Erb, who oft goes by the username 'Ironheart'.
+-	Email: isaac.n.erb@gmail.com.
