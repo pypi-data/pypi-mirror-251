@@ -1,0 +1,14 @@
+dnnlib/__init__.py,sha256=PuOT-2lBIPd4h4-q2yYdc4izMyoMm_dX8ut38Kwkl78,376
+dnnlib/util.py,sha256=O8U7htHOGZ4Ms82RjX1ymvnyjEP9uU0L1KyfA7EhLXU,12143
+jam_data/__init__.py,sha256=suk7FgTwxn4HxJRdoWJDQ_B6G1JES5yRQQRA9eoSlEo,46
+jam_data/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jam_data/cli/dataset_tool.py,sha256=3OtOepw4OzlzIj82mKq07ZM2XE14aBEsumj2YY4o2BA,18425
+jam_data/mock_dataset.py,sha256=bC67zL1Ngme7uS0Prgw-SYbjRYKHq9i6vuuEcQ9c7EE,1748
+jam_data/tero_dataset.py,sha256=dal0pexbUQqoHYi3NAeM5PcZiw4WSfZjkj1oojubOY8,10797
+jam_data/toy_sample.py,sha256=wr_ELXD_fS4Jjo4cIAiADZH7QkhpgQOTsWe3gMn04S8,1664
+jam_data/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jam_data/utils/url_helper.py,sha256=PXZ-z3pbQxf6XX3EhD09N21WbpPsRuSUvRhAr8ea_cQ,5895
+jam_data-0.0.4.dist-info/METADATA,sha256=_54nLiGmvIkMe_Pm57nUSM1bxY02ODTLFMyAgOPA_o0,446
+jam_data-0.0.4.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+jam_data-0.0.4.dist-info/entry_points.txt,sha256=swrz_rEYow-sqfU8EaN6qn28B7LQDsVsa91yWtN7EKE,64
+jam_data-0.0.4.dist-info/RECORD,,
