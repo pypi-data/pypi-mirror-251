@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: tongueswitcher
+Version: 1.0.0
+Summary: A package for identification of German--English code-switching
+Author: Igor Sterner
+Author-email: is473@cam.ac.uk
+Classifier: Programming Language :: Python :: 3.7

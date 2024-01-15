@@ -1,0 +1,11 @@
+README.md
+setup.py
+tongueswitcher/__init__.py
+tongueswitcher/executor.py
+tongueswitcher/tweet_level.py
+tongueswitcher/word_level.py
+tongueswitcher.egg-info/PKG-INFO
+tongueswitcher.egg-info/SOURCES.txt
+tongueswitcher.egg-info/dependency_links.txt
+tongueswitcher.egg-info/requires.txt
+tongueswitcher.egg-info/top_level.txt
