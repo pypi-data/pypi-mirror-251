@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: dlrag-dev
+Version: 0.0.6
+Summary: test
+Home-page: 
+Author: charlesjeon
+Author-email: poweryong8@gmail.com
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+License-File: Licenses.txt
+Requires-Dist: python-dotenv
+Requires-Dist: tiktoken
+Requires-Dist: google-cloud-aiplatform
