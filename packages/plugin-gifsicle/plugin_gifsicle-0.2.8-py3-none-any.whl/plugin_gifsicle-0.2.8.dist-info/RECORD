@@ -1,0 +1,9 @@
+plugin_gifsicle/__init__.py,sha256=EaRtKKGbYiZx2OwOnwAFcsbXKmz2rp6tdhnMn-Wbh6g,1072
+plugin_gifsicle/post_install.log,sha256=b3GVl0ORAKZjRTHqPmkjn7aooHsTtWbLaGDpU48XLaI,7280
+plugin_gifsicle/gifsicle_binaries/arm/gifsicle,sha256=nPYO433OFifdY9HDoq3fGVcXYR5XYUHHc7VO5VU8Uf0,262424
+plugin_gifsicle/gifsicle_binaries/x86/gifsicle,sha256=3UE_7-sA_IgvsMceLuut9_FWHOep3O_9IC88bWfRZyY,299896
+plugin_gifsicle-0.2.8.dist-info/LICENSE.txt,sha256=i7PHic3dn_a0GNsmcKbOvp8nzJh16nnY7h9r10F1Rmg,467
+plugin_gifsicle-0.2.8.dist-info/METADATA,sha256=HFQDgvwlypqI4R7DykD4EtAQxs-JyUsPGMX1eMeUMHc,3158
+plugin_gifsicle-0.2.8.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+plugin_gifsicle-0.2.8.dist-info/top_level.txt,sha256=egDI-gYzMPhLum2fuRAP0p1tIaKKznSXuCsekCYZb0w,16
+plugin_gifsicle-0.2.8.dist-info/RECORD,,
