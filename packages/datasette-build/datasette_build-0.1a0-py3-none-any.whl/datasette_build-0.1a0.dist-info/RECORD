@@ -1,0 +1,13 @@
+datasette_build/__init__.py,sha256=ONbsXtq3FFFb5oSp_rlwVzjr0me1SMuzyafgKALvXf8,32
+datasette_build/cli.py,sha256=2Vv6tPh_U9tLtNoFodqp0VNDNnGX1QzA_z5GH8j1g4w,2113
+datasette_build/core.py,sha256=Nuf5S4RGllGGUgk7tFx7IAI5PwMZd8kZK0-bPcHRXaA,439
+datasette_build/datasette_plugin.py,sha256=7TAmJnNmUtmqgM462P-RbVXlBqkL0OMkxsSxyDgvHrY,155
+datasette_build/default_formats.py,sha256=CfYD31eWnALxLXVqO-_L_ANbkqp9i1YOoTTJbJnjwe4,548
+datasette_build/hookspecs.py,sha256=m5qT6dlCVvUrnY-ULVkRY8t7TQrjIiDw45qDYBuQNZQ,243
+datasette_build/sqlite_utils_plugin.py,sha256=GJ2XaYwzcwqVNpmUvcUmdyA4Sfls1h7Hsm4K27nuxmc,158
+datasette_build-0.1a0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+datasette_build-0.1a0.dist-info/METADATA,sha256=szj91WewLPI00ie5EJ--A6YncoL9u6LRUGc_F7pchu4,4698
+datasette_build-0.1a0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+datasette_build-0.1a0.dist-info/entry_points.txt,sha256=C28lmusyRIinA7lLHUdQQ0blHkJ-IVOgBSPZuKb0CzE,174
+datasette_build-0.1a0.dist-info/top_level.txt,sha256=gGc0RtcynVrt5dqnluykgJ6buGqtxp8_AdgAjwb37Jc,16
+datasette_build-0.1a0.dist-info/RECORD,,
