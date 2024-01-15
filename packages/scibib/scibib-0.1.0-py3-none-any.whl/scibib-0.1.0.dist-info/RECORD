@@ -1,0 +1,10 @@
+scibib/License.txt,sha256=TNuxqF8hzSCHWrSmOSS_yq7ToVZD21agMgRvem6RvN8,1061
+scibib/__init__.py,sha256=qedfkmjHJ_P2eKLXG0VOI-Jvsu7PCom_a0zPkJ0LCv0,1206
+scibib/abstract_collector.py,sha256=hiDFFN6rv9Pos5V17QAKfDfRbQ3pib58S7e9wvF_UOw,669
+scibib/config_template.py,sha256=QDqVDVJlt6C_OtKGTQAncsPViZFh6vNWUTs5719jp9o,286
+scibib/config_tools.py,sha256=RP3d51qNARXSG3Mb-_3EBUbXvTOaouUmMuVf9LN1cE4,4442
+scibib/data_query.py,sha256=ZbyAJAXSmD_vv2yRSg-w_mUOT1Sn_r5mPg43nt1LDdw,8196
+scibib/user_config.py,sha256=kxqqa_MvJ6Shg8UFCACNxHHcmp-uWhpU3H8bBcQezRE,454
+scibib-0.1.0.dist-info/METADATA,sha256=aLdrW7uRVFVRx5xtJiIaqknTHzTOre0Ra_5_Dm_l-d0,1639
+scibib-0.1.0.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+scibib-0.1.0.dist-info/RECORD,,
