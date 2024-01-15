@@ -1,0 +1,10 @@
+topo_descriptors/__init__.py,sha256=3-MTqwskej32oDeuNSAVr7z8-YHcRUGYUnyWlOlbzCc,386
+topo_descriptors/helpers.py,sha256=5L07k6JVp_FVCEBFCD5z96Bh_ipn22roTMoPyQC-l6A,6147
+topo_descriptors/topo.py,sha256=Dek-y7KBQHsyqUQ2Tf-6KwI9IHJnVVyk7Z5P3HgZ968,33754
+topo_descriptors/config/topo_descriptors.conf,sha256=h9bUC_1-3ek8eZyCkWP528Pbqqtq9klouwN9quu-TAI,145
+topo_descriptors-0.5.0.dist-info/AUTHORS.rst,sha256=cCXdNOofctjzfwHs-12uFjJfNdRLmsXRKXALRbxxW8g,204
+topo_descriptors-0.5.0.dist-info/LICENSE,sha256=2WF85Pi0rhJomJuKtYdlTnVo7bRQ_gssdS6fmrE81Ks,1488
+topo_descriptors-0.5.0.dist-info/METADATA,sha256=sY7_jaii6sm_hYLYUqt6J6tJaKghFctlfGlYhHjYCzI,10778
+topo_descriptors-0.5.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+topo_descriptors-0.5.0.dist-info/top_level.txt,sha256=W36AojphiW8BrThpAn4ZpaDNR5iYqm8sv_n7R4oE-Eg,34
+topo_descriptors-0.5.0.dist-info/RECORD,,
