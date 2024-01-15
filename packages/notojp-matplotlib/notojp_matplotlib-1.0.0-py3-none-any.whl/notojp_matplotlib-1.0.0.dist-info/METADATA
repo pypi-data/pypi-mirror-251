@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: notojp-matplotlib
+Version: 1.0.0
+Summary: matplotlib のフォントを Noto Sans CJK に設定する
+Home-page: https://github.com/n-takumasa/notojp-matplotlib
+License: MIT
+Author: Takumasa Nakamura
+Author-email: n.takumasa@gmail.com
+Requires-Python: >=3.8.1
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: matplotlib (>=3.2)
+Project-URL: Repository, https://github.com/n-takumasa/notojp-matplotlib
+Description-Content-Type: text/markdown
+
+# notojp-matplotlib
+[![pypi version](https://img.shields.io/pypi/v/notojp-matplotlib.svg)](https://pypi.python.org/project/notojp-matplotlib/)
+[![Python Versions](https://img.shields.io/pypi/pyversions/notojp-matplotlib.svg)](https://pypi.org/project/notojp-matplotlib/)
+
+matplotlib のフォントを [Noto Sans CJK](https://github.com/googlefonts/noto-cjk) に設定する
+
+[japanize-matplotlib](https://github.com/uehara1414/japanize-matplotlib) にインスパイアされています
+
+## 使い方
+
+```
+pip install git+https://github.com/n-takumasa/notojp-matplotlib
+```
+
+```py
+import notojp_matplotlib
+```
+
+## 使い方 (Google Colaboratory)
+```py
+%pip -q install git+https://github.com/n-takumasa/notojp-matplotlib
+import notojp_matplotlib
+```
+
