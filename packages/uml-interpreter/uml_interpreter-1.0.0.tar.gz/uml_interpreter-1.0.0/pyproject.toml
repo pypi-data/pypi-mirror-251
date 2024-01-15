@@ -1,0 +1,42 @@
+[tool.poetry]
+name = "uml-interpreter"
+version = "1.0.0"
+description = "UML Diagram modification tool"
+authors = ["Filip Pawłowski", "Hubert Soroka", "Maciej Tymoftyjewicz"]
+readme = "README.md"
+license = "MIT"
+keywords = ["UML", "deserializer", "serializer"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Education",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Software Development",
+    "Topic :: Documentation",
+]
+
+packages = [
+    { include = "uml_interpreter" },
+    { include = "uml_interpreter/**/*.py" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[tool.poetry.group.dev.dependencies]
+mkdocs = "^1.5.3"
+mkdocstrings = { extras = ["python"], version = "^0.24.0" }
+mkdocs-material = "^9.5.3"
+tox = "^4.11.4"
+black = "^23.10.1"
+pytest = "^7.4.4"
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
