@@ -1,0 +1,10 @@
+pasteboard/__init__.py,sha256=tJ4jSF0GJkkJCYBJ3_aKM40FWm6NyH4T1gE_IO75bMY,533
+pasteboard/__init__.pyi,sha256=sToTT6k6n2CoLK5-hWXfVah-bAn7bD__0jINkPm3pSU,1104
+pasteboard/_native.cpython-39-darwin.so,sha256=hbMkFtyPugjG_gTYBm4jJINTT3_U3P_Q3FIPchH2LTs,54704
+pasteboard/pasteboard.m,sha256=KmHmVZWpf-q63g-E25F2x4xGK2N97nB_eUb4haRBpF8,12824
+pasteboard/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pasteboard-0.4.0.dist-info/LICENSE,sha256=HyVuytGSiAUQ6ErWBHTqt1iSGHhLmlC8fO7jTCuR8dU,16725
+pasteboard-0.4.0.dist-info/METADATA,sha256=HJ1_Zwdu9gF8XQLMXWy1AC7ey4qJD3iBu-vVKuMmPe4,25805
+pasteboard-0.4.0.dist-info/WHEEL,sha256=TD4yx1m4JA27NsxaKKOoyjjWRu1T-Ztuv_-TY8sTrD8,109
+pasteboard-0.4.0.dist-info/top_level.txt,sha256=1ZYvzz9vcSpAeEzxH1QJb38nNQWYTftE1423yrRxKNc,11
+pasteboard-0.4.0.dist-info/RECORD,,
