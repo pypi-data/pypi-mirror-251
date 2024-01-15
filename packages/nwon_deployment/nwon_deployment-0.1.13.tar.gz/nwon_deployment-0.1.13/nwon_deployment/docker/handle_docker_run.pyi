@@ -1,0 +1,3 @@
+from nwon_baseline.typings import AnyDict as AnyDict
+
+def handle_docker_run(arguments: AnyDict) -> str: ...

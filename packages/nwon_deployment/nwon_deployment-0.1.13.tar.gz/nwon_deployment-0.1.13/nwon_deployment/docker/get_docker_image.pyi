@@ -1,0 +1,3 @@
+from typing import Dict, Optional
+
+def get_docker_image(path_to_docker_file: str, image_name: str, build_args: Optional[Dict[str, str]] = ..., custom_context: Optional[str] = ..., force_rebuild: bool = ...): ...

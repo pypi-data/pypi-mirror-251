@@ -1,0 +1,3 @@
+from docker.models.containers import Container as Container
+
+def docker_log_container(container: Container): ...

@@ -1,0 +1,3 @@
+from nwon_deployment.typings import ContainerInformation as ContainerInformation
+
+def remove_container(container: ContainerInformation): ...
