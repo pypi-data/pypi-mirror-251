@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: marlinblocks
+Version: 0.0.5
+Summary: Marlin Blocks | ML and sim building blocks
+Author: Rahul Tandon
+Author-email: r.tandon@rsaqua.co.uk
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# marlinblocks
+Main marlin building blocks modules.
