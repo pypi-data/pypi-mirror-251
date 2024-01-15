@@ -1,0 +1,10 @@
+bucketbrigade/.DS_Store,sha256=LwrFhveApJabkGWPrF6VvmeLE-f9VGanD-i8TTvaO3Y,6148
+bucketbrigade/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bucketbrigade/aws.py,sha256=8uGaOyzGJTs-NX01npc1khC3mNKjWzCiJNjazaMogWE,4249
+bucketbrigade/core.py,sha256=kIr2S_l_SReWZGysW_xPQV6WuT66rMdYpowecPMDW1o,74
+bucketbrigade/tests/test_aws.py,sha256=JBetYyMOtyqaoTb7pStWKg1zqNOhdWizjZ1cpR9dp_4,4041
+bucketbrigade/tests/test_core.py,sha256=zOJMUI7jl3YWatz_9mgXW3CWvht2sukNoIZomk6LRwI,13
+bucketbrigade-0.0.1.dist-info/LICENSE,sha256=_4BQML2tmB8bVI0AuSFRCd8Kjj81l2emeKLxZDL7HGI,1069
+bucketbrigade-0.0.1.dist-info/METADATA,sha256=MvOjIMuZ9b0V5OgR5Np_hrVoZC14VqN26EfenA9QVE8,1881
+bucketbrigade-0.0.1.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+bucketbrigade-0.0.1.dist-info/RECORD,,
