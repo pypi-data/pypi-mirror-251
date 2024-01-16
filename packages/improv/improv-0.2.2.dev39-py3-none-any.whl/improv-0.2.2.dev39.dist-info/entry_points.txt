@@ -1,0 +1,2 @@
+[console_scripts]
+improv = improv.cli:default_invocation
