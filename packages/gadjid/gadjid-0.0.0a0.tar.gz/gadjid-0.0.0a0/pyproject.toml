@@ -1,0 +1,4 @@
+[project]
+readme = "README.md"
+name = "gadjid"
+version = "0.0.0a0"
