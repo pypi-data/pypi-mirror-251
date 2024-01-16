@@ -1,0 +1,33 @@
+### Tests
+freezegun ~= 1.1
+pytest
+pytest-cov
+pytest-mock
+syrupy
+tox < 4
+tox-pyenv
+-e file:.#egg=bolton-logrus>=0.dev
+
+### Lint
+black
+cogapp ~= 3.3
+flake8
+isort
+mypy != 0.920, != 0.921, != 0.930  # workaround for https://github.com/samuelcolvin/pydantic/pull/3175
+pydocstyle[toml]
+pylint
+
+### TYPES
+types-freezegun ~= 1.1
+
+### Docs
+m2r2
+sphinx
+sphinx-rtd-theme
+sphinx-autodoc-typehints
+
+### Misc
+bump2version
+cruft[pyproject]
+pip-tools
+setuptools_scm
