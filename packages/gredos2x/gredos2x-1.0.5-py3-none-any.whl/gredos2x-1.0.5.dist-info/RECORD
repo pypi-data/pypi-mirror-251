@@ -1,0 +1,9 @@
+gredos2x/__init__.py,sha256=lSzDSKYbb1zyT4YETR7Y9QLybs94sTSF_SzYgHIXVwI,1049
+gredos2x/gredos2gpkg.py,sha256=ecvqRLCyKmOL9k1rnYupbnV0el_s_DVm78xXSWraYek,14350
+gredos2x/gredos2pgsql.py,sha256=eWJCqAhDz5CLe2SisAW2gUCiDbshq8lvpxuNixxPeJs,16683
+gredos2x/gredos_gpkg2dataframes.py,sha256=D3wdxg5Lh0MgC2YVJnJPFEgQ9abgpVl68kU_1SoZbkE,2893
+gredos2x-1.0.5.dist-info/LICENSE.txt,sha256=m5vqUCnhGMw-qVZghPbu_jzWSvdkkZLrxu7fpw8WpuY,717
+gredos2x-1.0.5.dist-info/METADATA,sha256=RU1DP2KWrEXKZTRG2tbVu0mazPntNXm3mudevSBKzyA,7720
+gredos2x-1.0.5.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+gredos2x-1.0.5.dist-info/top_level.txt,sha256=yXZQs9Gyb9KDwZi2ZW_Xj0ArQ33T2yMcz1hcH73JuNs,9
+gredos2x-1.0.5.dist-info/RECORD,,
