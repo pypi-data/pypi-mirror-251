@@ -1,0 +1,3 @@
+[console_scripts]
+sengpt=sengpt.sengpt:main
+
