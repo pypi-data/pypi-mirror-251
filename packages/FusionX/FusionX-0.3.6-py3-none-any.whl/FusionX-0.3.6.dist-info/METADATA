@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: FusionX
+Version: 0.3.6
+Summary: fusionX
+Author: Bar Ben David, Suman Khan
+Author-email: FusionX_pipeline@hotmail.com
+Keywords: python,video,stream,video stream,camera stream,sockets
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+Requires-Dist: numpy >=1.20.0
+Requires-Dist: opencv-python >=4.8.1.78
+
+
+    A deep learning pipeline for cell-cell fusion analysis
+
+    Authors: Bar Ben David, Suman Khan
+    Email: FusionX_pipeline@hotmail.com
+    
