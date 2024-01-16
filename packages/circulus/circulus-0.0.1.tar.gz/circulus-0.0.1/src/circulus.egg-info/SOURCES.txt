@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+src/circulus.egg-info/PKG-INFO
+src/circulus.egg-info/SOURCES.txt
+src/circulus.egg-info/dependency_links.txt
+src/circulus.egg-info/top_level.txt
