@@ -1,0 +1,11 @@
+boaconstructor/__init__.py,sha256=Sse_4USGB_y7KI7COSmqkJpuCtl24QxaLQqwY0bCEVw,11901
+boaconstructor/node.py,sha256=0T6zhhP_0PkLKOUyh0in9DjyC1w1rlPA_K5wQUe6uu0,4709
+boaconstructor/storage.py,sha256=wvQcP6YChno0jJBrf-GgJWnO3pVuNC0xUF1B_a-mjYA,1815
+boaconstructor/data/neogo,sha256=WbERQs-HVEWAJHJVOHQJkndTSWS1nH83o-qTUUhdPt8,38432176
+boaconstructor/data/protocol.unittest.yml,sha256=fLldSTLZdLUA9ingIgIwUUFCnWd5f4hJH_Qb6mJoheo,1550
+boaconstructor/data/wallet1_solo.json,sha256=uihRNCWwezwfMLhvwtI_0dhAoBv0nS2oVIhie3_BKWQ,1135
+boa_test_constructor-0.2.1.dist-info/LICENSE.rst,sha256=q7myoTgSho9_VrfzvqOA7CYFsb2ZHVq4h1hL6MUUjY4,1055
+boa_test_constructor-0.2.1.dist-info/METADATA,sha256=kQ1Ylqa5p-RyawJeaTogH_Junt2soLf6BpyVV1sU1OI,2753
+boa_test_constructor-0.2.1.dist-info/WHEEL,sha256=rMuD02Kqg5oC7dlyVmJy0LqZzGcN6CYIA8AnyHutQ8c,107
+boa_test_constructor-0.2.1.dist-info/top_level.txt,sha256=oHcMceKMvwg0JRnNPtv8DxAbPThbDfwn9OyyTEUxXKo,15
+boa_test_constructor-0.2.1.dist-info/RECORD,,
