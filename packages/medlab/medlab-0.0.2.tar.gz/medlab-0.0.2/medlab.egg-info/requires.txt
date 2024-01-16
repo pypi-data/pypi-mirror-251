@@ -1,0 +1,7 @@
+fastapi==0.104.0
+mmengine==0.9.1
+monai[all]
+lightning==2.1.0
+itkwidgets==0.32.6
+timm==0.9.10
+openpyxl==3.1.2
