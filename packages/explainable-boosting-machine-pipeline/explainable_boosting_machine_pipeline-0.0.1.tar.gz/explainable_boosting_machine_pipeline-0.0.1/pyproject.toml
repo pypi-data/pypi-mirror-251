@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "explainable_boosting_machine_pipeline"
+version = "0.0.1"
+authors = [
+  { name="Antony Scott", email="antony.scott@justice.gov.uk" },
+]
+description = "Generic pipeline for inporting a set of labelled data from AWS, training and evaluating an Explainable Boosting Machine using the data and then producing visualisations of feature important and dependance."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/pypa/sampleproject"
+Issues = "https://github.com/pypa/sampleproject/issues"
