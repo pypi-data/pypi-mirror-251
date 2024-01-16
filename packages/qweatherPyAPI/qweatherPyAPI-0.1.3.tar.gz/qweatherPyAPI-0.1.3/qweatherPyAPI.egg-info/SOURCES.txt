@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+qweatherPyAPI.egg-info/PKG-INFO
+qweatherPyAPI.egg-info/SOURCES.txt
+qweatherPyAPI.egg-info/dependency_links.txt
+qweatherPyAPI.egg-info/requires.txt
+qweatherPyAPI.egg-info/top_level.txt
+qweatherapi/__init__.py
+qweatherapi/http_request_manager.py
+qweatherapi/model.py
+qweatherapi/qweather.py
