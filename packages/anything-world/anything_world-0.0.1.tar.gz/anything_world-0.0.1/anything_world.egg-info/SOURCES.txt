@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+env.example
+pyproject.toml
+setup.py
+anything_world/__init__.py
+anything_world/api_client.py
+anything_world/utils.py
+anything_world.egg-info/PKG-INFO
+anything_world.egg-info/SOURCES.txt
+anything_world.egg-info/dependency_links.txt
+anything_world.egg-info/entry_points.txt
+anything_world.egg-info/requires.txt
+anything_world.egg-info/top_level.txt
+scripts/cli.py
+tests/test_anything_world.py
