@@ -1,0 +1,48 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-15 21:17+0100\n"
+"PO-Revision-Date: 2024-01-15 21:18+0100\n"
+"Last-Translator:   <mail@schiegg.at>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.10.0\n"
+
+#: rps_milea_users/admin.py:25 rps_milea_users/admin.py:31
+msgid "Personal info"
+msgstr "Persönliche Informationen"
+
+#: rps_milea_users/admin.py:26
+msgid "Permissions"
+msgstr "Berechtigungen"
+
+#: rps_milea_users/admin.py:27
+msgid "Important dates"
+msgstr "Wichtige Daten"
+
+#: rps_milea_users/apps.py:8
+msgid "User and Groups"
+msgstr "Benutzer und Gruppen"
+
+#: rps_milea_users/models.py:10
+msgid "group"
+msgstr "Gruppe"
+
+#: rps_milea_users/models.py:11
+msgid "groups"
+msgstr "Gruppen"
+
+#: rps_milea_users/models.py:45
+msgid "email address"
+msgstr "E-Mail Adresse"
