@@ -1,0 +1,55 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ig_trading_historical_data"
+version = "1.0.0"
+authors = [
+  {name = "Shayan Mahinfar", email = "shayanmahinfar@gmail.com"},
+]
+description = "A Python wrapper for extracting historical data in a quota-efficient way from IG's Trading API (can specify a daily time range for data gathering)."
+readme = "README.md"
+requires-python = ">= 3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.9",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Financial and Insurance Industry",
+    "Intended Audience :: Information Technology",
+    "Topic :: Internet :: WWW/HTTP",
+    "Topic :: Internet :: WWW/HTTP :: HTTP Servers",
+    "Topic :: Office/Business :: Financial",
+    "Topic :: Office/Business :: Financial :: Investment",
+]
+keywords = [
+  "ig",
+  "ig trading",
+  "trading",
+  "spread betting",
+  "CFD",
+  "api",
+  "trading api",
+  "market data",
+  "ig markets",
+  "trading data",
+  "historical market data",
+  "download market data",
+  "financial time series data",
+  "financial data",
+  "time series data",
+]
+dependencies = [
+  "numpy==1.26.3",
+  "pandas==2.1.4",
+  "requests==2.31.0",
+  "requests-toolbelt==1.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/Shayan-H20/IG-Trading-Historical-Data"
+Issues = "https://github.com/Shayan-H20/IG-Trading-Historical-Data/issues"
