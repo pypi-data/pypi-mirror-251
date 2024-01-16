@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: aad
+Version: 0.1.0
+Summary: Async Python SDK for validating Azure AD B2C access tokens
+Author-email: Marcel Claramunt <marcel@moveread.com>
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: azure-ad-verify-token
+Requires-Dist: aiohttp
+Requires-Dist: pydantic
+Requires-Dist: ramda
+Requires-Dist: pyjwt
+
