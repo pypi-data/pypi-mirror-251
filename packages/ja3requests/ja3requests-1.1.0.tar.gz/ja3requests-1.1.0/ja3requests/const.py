@@ -1,0 +1,17 @@
+"""
+Ja3Requests.const
+~~~~~~~~~~~~~~~~~
+
+A constant module.
+"""
+
+
+MAX_LINE = 65536
+MAX_HEADERS = 100
+DEFAULT_CHUNKED_SIZE = 2048
+DEFAULT_HTTP_SCHEME = "http"
+DEFAULT_HTTPS_SCHEME = "https"
+DEFAULT_HTTP_PORT = 80
+DEFAULT_HTTPS_PORT = 443
+DEFAULT_REDIRECT_LIMIT = 8  # max redirect
+DEFAULT_MAX_RETRY_LIMIT = 3
