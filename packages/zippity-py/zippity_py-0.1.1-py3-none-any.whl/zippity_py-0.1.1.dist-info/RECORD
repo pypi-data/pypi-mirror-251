@@ -1,0 +1,13 @@
+zippity_py/__init__.py,sha256=xIBnYBgIpSu83v0quf3dIidPtb1D0WZr75y7xr7LBNo,31
+zippity_py/cli.py,sha256=u3j11RQbl7pRaegoN-PJiE3O5p750DifpkvdjqrFZ3o,1693
+zippity_py/cli_utils.py,sha256=X_EL12csM_IN_ZXbM6IY_Ssp5xVhJKpjUbObPtLHH0U,178
+zippity_py/file_extensions.py,sha256=_32x56Jv2ff7GrLC1PTvgdm2xSs0YkCytKqKZICu7kM,1116
+zippity_py/fs_utils.py,sha256=dKZCGUtWX7VF7Y4ckYdFxXDutF-DBI5iCTVQIf4gj6A,3795
+zippity_py/template/__init__.py,sha256=fEbjUnD6ZJ7tb1jhh1h097Wjqtk6EwUa1LTdjVtCbYw,26
+zippity_py/template/render.py,sha256=n7pyQ2jxPYhtP_ek1d5jP-Ker-iMriSrANmaWuxJGEU,596
+zippity_py/template/template.md.jinja,sha256=ImVhvDW4pjg11CkLdfHxZTWK7x9uENACCMdp2FSeiWg,852
+zippity_py/todo_utils.py,sha256=J-0RdCDILmgir0fApIeEc2JLMPyvpfDzk3RZY9OaEO0,1699
+zippity_py-0.1.1.dist-info/METADATA,sha256=JdIhyMeRbpWwL8E_YIDmIlm0Tv8D92r2zr-EO8ONt2k,2569
+zippity_py-0.1.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+zippity_py-0.1.1.dist-info/entry_points.txt,sha256=7iH9JmHy_66QabL9p_VuezvuIy0zVPJSL6Zc8VdtCFI,43
+zippity_py-0.1.1.dist-info/RECORD,,
