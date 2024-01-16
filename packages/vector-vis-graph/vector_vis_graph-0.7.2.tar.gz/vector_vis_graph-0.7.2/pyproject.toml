@@ -1,0 +1,76 @@
+[tool.poetry]
+name = "vector-vis-graph"
+version = "0.7.2"
+description = "Vector visibility graph generation from multivariate time series."
+authors = ["Tuna Alikaşifoğlu <tunakasif@gmail.com>"]
+readme = "README.md"
+packages = [{ include = "vector_vis_graph" }]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.12"
+numpy = "^1.26.2"
+numba = "^0.58.1"
+scipy = "^1.11.4"
+ts2vg = "^1.2.3"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.1.4"
+mypy = "^1.6.1"
+pre-commit = "^3.5.0"
+tox = "^4.11.3"
+bandit = "^1.7.5"
+ipykernel = "^6.27.1"
+ipywidgets = "^8.1.1"
+ipython = "^8.0"
+perfplot = "^0.10.2"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.4.3"
+pytest-cov = "^4.1.0"
+hypothesis = "^6.92.1"
+pytest-xdist = "^3.5.0"
+
+[tool.ruff]
+line-length = 120
+extend-exclude = ["docs"]
+
+[tool.ruff.format]
+# Like Black
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+line-ending = "auto"
+
+[tool.ruff.lint]
+extend-select = [
+    "A",  # flake8-builtins
+    "B",  # flake8-bugbear
+    "S",  # flake8-bandit
+    "I",  # isort
+    "UP", # pyupgrade
+]
+
+[tool.ruff.lint.extend-per-file-ignores]
+"tests/*" = ["S101"]
+
+[tool.pytest.ini_options]
+filterwarnings = ["ignore::DeprecationWarning"]
+
+[tool.mypy]
+ignore_missing_imports = true
+disallow_untyped_defs = true
+
+[tool.commitizen]
+name = "cz_conventional_commits"
+tag_format = "$version"
+version = "0.7.2"
+version_files = [
+    "pyproject.toml:^version",
+    "vector_vis_graph/__init__.py:__version__",
+]
+major_version_zero = true
+update_changelog_on_bump = true
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
