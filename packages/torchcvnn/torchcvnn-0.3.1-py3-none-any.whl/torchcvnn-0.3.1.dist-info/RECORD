@@ -1,0 +1,17 @@
+torchcvnn/__init__.py,sha256=v4HlYK-UE4SD366nzwwRPeHWNmsYSXMur9Y_k7BWXcE,1322
+torchcvnn/datasets/__init__.py,sha256=XbkAWjD0FBRMvRJk--Hl88o9QPI-OkOHQAb4Uc5ijLM,1142
+torchcvnn/datasets/polsf.py,sha256=dU1qs3C5l2XxLIaqMn-mFvgRzIdL_c0SKUa308i9feY,6938
+torchcvnn/nn/__init__.py,sha256=Gt9BqOM6fRS87U5sMhOVp5wiRAsFsMi9zP9sEYXkwIc,1157
+torchcvnn/nn/modules/__init__.py,sha256=7RVvz5K6wUbPxoVk3t_86ULds-W_G6kbyrgILkvopzU,1540
+torchcvnn/nn/modules/activation.py,sha256=yFrg8_DaZTuHGkqKpnNsnrCs_8g96QGH9EVYqx9Di6M,8189
+torchcvnn/nn/modules/batchnorm.py,sha256=A9qr0Q0Z6SINOccbnswTK_eiZkbj0jfUwpg2aDu4wMQ,11004
+torchcvnn/nn/modules/conv.py,sha256=zUB8FMiivSRsI5xEi1G5kPAlAFHSODNEW5dyxQSlVYw,4147
+torchcvnn/nn/modules/dropout.py,sha256=KsipUkpS2_MR1TRI95KjywoEMsCRCtgZmv79SPS5ArA,3143
+torchcvnn/nn/modules/initialization.py,sha256=sspoKZgZmoLrBBnUvJXWEAoF2PgalYZ-lzcE6GLzTEc,7394
+torchcvnn/nn/modules/pooling.py,sha256=_18OKO0lCpQLD3wnsfkvf2XxxTZYkWrvhkzz5aYUg3w,5476
+torchcvnn/nn/modules/upsampling.py,sha256=VGR7Pm3O8MCaXqstsUokAtCgZtmSWaVj6uAWWdiZaSs,4058
+torchcvnn-0.3.1.dist-info/LICENSE,sha256=5C0vLi-_8kne3JuKxiGk3seTKhxvhIX5ylXHEgA0yxw,1099
+torchcvnn-0.3.1.dist-info/METADATA,sha256=kctqSxcDUGvMhrOWTkEPyTyDDALP6dj1Ma1CYgsIMss,1961
+torchcvnn-0.3.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+torchcvnn-0.3.1.dist-info/top_level.txt,sha256=5PxxiSVrc_rD5PKYC9P5CBPjqMyjZxxTOK5CUja866Q,10
+torchcvnn-0.3.1.dist-info/RECORD,,
