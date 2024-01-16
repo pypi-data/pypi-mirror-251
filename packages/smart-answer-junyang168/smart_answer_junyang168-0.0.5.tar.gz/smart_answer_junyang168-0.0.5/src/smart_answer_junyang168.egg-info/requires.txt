@@ -1,0 +1,9 @@
+openai
+langchain
+dotenv
+
+[dev]
+check-manifest
+
+[test]
+coverage
