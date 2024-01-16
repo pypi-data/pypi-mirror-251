@@ -1,0 +1,13 @@
+random_useragent/__init__.py,sha256=SEzdy2j0OUDioiYMqVPz4xnoFl_MZzVvza7mMP6J3Zk,33
+random_useragent/android.py,sha256=BfTUIAP05GynUSZfgalxtYk63WLtj30yFKD9hYDmUL4,117443
+random_useragent/chrome.py,sha256=7w084cpeTK1TCIOjp9Dm57WYU2_Ov4mllj1kNeUG_pc,943
+random_useragent/iphone.py,sha256=hmhzxG099KzXUpOGARMvpfYYesYWumUGcku1fM19OyE,1988
+random_useragent/linux.py,sha256=2qLwEor3c3rnHb88Ky4NI3vuh1bG6Na2MvW9MYpgWPE,1185
+random_useragent/mac.py,sha256=HFPTa3PJ1eKNCQOCNXdpRSc9uz0rF5wfnHUBBBKBQc0,2077
+random_useragent/useragent.py,sha256=wjZ1BmWUqKWCpoMGPTWSRGi7jylBhTmM3DBSY5b0AMc,2826
+random_useragent/windows.py,sha256=jhDPywkTED5hDTaTN8CEgKl3TDo7H3ykvkmqlN8mJFY,2487
+r_useragent-1.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+r_useragent-1.1.dist-info/METADATA,sha256=O8woYyZitXnwEJkCfcDwOb52XK_AgKU30BbaSGiGocY,1617
+r_useragent-1.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+r_useragent-1.1.dist-info/top_level.txt,sha256=m6qt9iktZyn3o33iIuOHHNtOwpAI678g8eNC3TwAIoA,17
+r_useragent-1.1.dist-info/RECORD,,
