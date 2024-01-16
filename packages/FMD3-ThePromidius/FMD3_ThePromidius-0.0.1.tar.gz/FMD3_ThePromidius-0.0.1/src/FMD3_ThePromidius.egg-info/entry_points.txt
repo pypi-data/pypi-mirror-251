@@ -1,0 +1,2 @@
+[console_scripts]
+cli-name = FMD3.Core.hello:hello
