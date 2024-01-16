@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: mambo_minhhai
+Version: 0.0a32
+Summary: A small example package
+Project-URL: Homepage, https://bitbucket.org/these-mhnguyen/mambo/src/master/
+Project-URL: Issues, https://bitbucket.org/these-mhnguyen/mambo/src/master/
+Author-email: Minh Hai NGUYEN <nguyenhai7120qh@gmail.com>
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: einops
+Requires-Dist: matplotlib
+Requires-Dist: ml-collections
+Requires-Dist: numpy
+Requires-Dist: torch
+Requires-Dist: torchvision
+Description-Content-Type: text/markdown
+
+# README #
+
+This README would normally document whatever steps are necessary to get your application up and running.
+
+### What is this repository for? ###
+
+* Quick summary
+* Version
+* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+
+### How do I get set up? ###
+
+* Summary of set up
+* Configuration
+* Dependencies
+* Database configuration
+* How to run tests
+* Deployment instructions
+
+### Contribution guidelines ###
+
+* Add source code to /src
+* Run the following command for building the package:
+    `bash ./bash/build.sh`
+
+* Run the following command for uploading the package to the Pypi hub:
+    `bash ./bash/upload.sh`
+    Enter the following user name and password:
+        - User name: __token__
+        - Password: 
+### Who do I talk to? ###
+
+* Repo owner or admin
+* Other community or team contact
