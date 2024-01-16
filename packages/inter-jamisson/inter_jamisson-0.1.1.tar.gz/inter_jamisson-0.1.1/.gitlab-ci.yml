@@ -1,0 +1,54 @@
+image: python:3.8-slim-bookworm
+
+stages:          # List of stages for jobs, and their order of execution
+  - build
+  - test
+  - deploy
+
+build-job:       # This job runs in the build stage, which runs first.
+  before_script:
+    - pip3 install hatch==1.9.1
+  stage: build
+  script:
+    - echo "Compiling the code..."
+    - hatch build
+  artifacts:
+    paths:
+      - dist/
+
+unit-test-job:   # This job runs in the test stage.
+  before_script:
+    - pip3 install hatch==1.9.1
+  stage: test    # It only starts when the job in the build stage completes successfully.
+  script:
+    - echo "Running unit tests..."
+    - hatch run test
+
+lint-test-job:   # This job also runs in the test stage.
+  stage: test    # It can run at the same time as unit-test-job (in parallel).
+  script:
+    - echo "Linting code... This will take about 10 seconds."
+    - echo "No lint issues found."
+
+deploy-job:
+  stage: deploy
+  image: python:3.7
+  before_script:
+    - python3 -m pip install --upgrade twine
+    - python3 -m pip install --upgrade build
+    - sed -i -e "s/v-latest/$CI_COMMIT_TAG/" setup.cfg
+    - cat setup.cfg
+  variables:
+    HATCH_PYPI_USER: $PYPI_USERNAME
+    HATCH_PYPI_AUTH: $PYPI_PASSWORD
+  script:
+    - echo "Deploying application..."
+    - python3 -m twine upload dist/*
+    - echo "Application successfully deployed."
+
+deploy-job:      # This job runs in the deploy stage.
+  stage: deploy  # It only runs when *both* jobs in the test stage complete successfully.
+  environment: production
+  script:
+    - echo "Deploying application..."
+    - echo "Application successfully deployed."
