@@ -1,0 +1,3 @@
+[fs.opener]
+mcifs = miarec_smbfs.opener:SMBOpener
+msmb = miarec_smbfs.opener:SMBOpener
