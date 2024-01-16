@@ -1,0 +1,12 @@
+jogseq/__init__.py,sha256=2eiWQI55fd-roDdkt4Hvl9WzrTJ4xQo33VzFud6D03U,22
+jogseq/tasks/__init__.py,sha256=ep5lok1fJQACdBn5n9aFFxWNC-vgV2o5EUngZr9C1nk,33
+jogseq/tasks/seq.py,sha256=pfnJPbrWn2zCx8bgBOhqt1dHo7JZbiJwFHZ0IkNw0XE,33723
+jogseq/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jogseq/utils/duration.py,sha256=aZbOcq7e_8QJYhqEwylxw0aVO3AEjTng7JS4UEyxGjc,8092
+jogseq/utils/jira.py,sha256=bhdftfVyZDfaWaBtc8MjV7DIzMhR-JFKiIrWAV-9peE,1380
+jogseq/utils/logseq.py,sha256=uyxCWWBG8Omo-u94lby0etQJXrRjb3my6YEV1TQMhUQ,38193
+task_jogger_jogseq-0.4.0.dist-info/LICENSE,sha256=G4R5CCoDH3IdiaKdepY47jSeA7NKj555-0p-D-Vd0MM,1068
+task_jogger_jogseq-0.4.0.dist-info/METADATA,sha256=mPZPQxeuTvpOS3ViBKORydf5Lq-PxFC_YNcUN19-iyI,17429
+task_jogger_jogseq-0.4.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+task_jogger_jogseq-0.4.0.dist-info/top_level.txt,sha256=BXfkZcErCZ61mzF8UXvU2FZUnYjv8ojFzKAfyM6_8aY,7
+task_jogger_jogseq-0.4.0.dist-info/RECORD,,
