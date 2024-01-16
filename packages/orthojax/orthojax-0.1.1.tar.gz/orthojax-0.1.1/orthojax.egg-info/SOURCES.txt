@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+orthojax/__init__.py
+orthojax/orthpol.py
+orthojax.egg-info/PKG-INFO
+orthojax.egg-info/SOURCES.txt
+orthojax.egg-info/dependency_links.txt
+orthojax.egg-info/requires.txt
+orthojax.egg-info/top_level.txt
