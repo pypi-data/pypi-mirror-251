@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+src/convertToDecimalTime.py
+src/convertToDecimalTime.egg-info/PKG-INFO
+src/convertToDecimalTime.egg-info/SOURCES.txt
+src/convertToDecimalTime.egg-info/dependency_links.txt
+src/convertToDecimalTime.egg-info/top_level.txt
