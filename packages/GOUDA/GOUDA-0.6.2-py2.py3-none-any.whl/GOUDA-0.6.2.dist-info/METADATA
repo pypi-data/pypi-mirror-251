@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: GOUDA
+Version: 0.6.2
+Summary: Good Old Utilities for Data Analysis!
+Home-page: https://github.com/mullans/GOUDA
+Author: Sean Mullan
+Author-email: sean-mullan@uiowa.edu
+License: mit
+Project-URL: Documentation, https://github.com/mullans/GOUDA
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Natural Language :: English
+Requires-Python: >=3.9
+Description-Content-Type: text/x-rst; charset=UTF-8
+Requires-Dist: numpy
+Requires-Dist: colorama
+Requires-Dist: matplotlib
+Requires-Dist: importlib-metadata ; python_version < "3.8"
+Provides-Extra: image
+Requires-Dist: opencv-python ; extra == 'image'
+Provides-Extra: testing
+Requires-Dist: pytest ; extra == 'testing'
+Requires-Dist: pytest-cov ; extra == 'testing'
+Requires-Dist: opencv-python ; extra == 'testing'
+Requires-Dist: scipy ; extra == 'testing'
+
+UNKNOWN
+
+
