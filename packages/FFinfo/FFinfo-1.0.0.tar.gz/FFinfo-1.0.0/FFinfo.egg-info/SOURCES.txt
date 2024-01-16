@@ -1,0 +1,7 @@
+fetch.py
+setup.py
+FFinfo.egg-info/PKG-INFO
+FFinfo.egg-info/SOURCES.txt
+FFinfo.egg-info/dependency_links.txt
+FFinfo.egg-info/requires.txt
+FFinfo.egg-info/top_level.txt
