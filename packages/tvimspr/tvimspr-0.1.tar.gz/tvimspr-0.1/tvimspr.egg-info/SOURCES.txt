@@ -1,0 +1,8 @@
+README.md
+setup.py
+tvimspr.py
+tvimspr.egg-info/PKG-INFO
+tvimspr.egg-info/SOURCES.txt
+tvimspr.egg-info/dependency_links.txt
+tvimspr.egg-info/requires.txt
+tvimspr.egg-info/top_level.txt
