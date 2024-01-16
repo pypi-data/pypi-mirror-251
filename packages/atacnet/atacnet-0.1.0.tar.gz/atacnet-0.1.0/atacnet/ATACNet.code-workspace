@@ -1,0 +1,21 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"QUIC.C": "cpp",
+			"QUIC copy.C": "cpp"
+		},
+		"coboleditor.metadata_symbols": [],
+		"coboleditor.metadata_entrypoints": [],
+		"coboleditor.metadata_types": [],
+		"coboleditor.metadata_files": [
+			"1702565880880,benchmarking/envs/hummus2.def",
+			"1703009792034,benchmarking/envs/hummus.def"
+		],
+		"coboleditor.metadata_knowncopybooks": []
+	}
+}
