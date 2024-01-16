@@ -1,0 +1,10 @@
+LICENSE
+README.rst
+setup.py
+zsqlite/__cls_sqlite_conn__.py
+zsqlite/__init__.py
+zsqlite.egg-info/PKG-INFO
+zsqlite.egg-info/SOURCES.txt
+zsqlite.egg-info/dependency_links.txt
+zsqlite.egg-info/requires.txt
+zsqlite.egg-info/top_level.txt
