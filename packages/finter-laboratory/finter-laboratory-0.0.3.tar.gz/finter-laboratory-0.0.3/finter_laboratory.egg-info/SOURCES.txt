@@ -1,0 +1,8 @@
+setup.py
+finter_laboratory/__init__.py
+finter_laboratory/notebook.py
+finter_laboratory.egg-info/PKG-INFO
+finter_laboratory.egg-info/SOURCES.txt
+finter_laboratory.egg-info/dependency_links.txt
+finter_laboratory.egg-info/requires.txt
+finter_laboratory.egg-info/top_level.txt
