@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: qcentroid-agent-cli
+Version: 0.3.0
+Summary: Library to interact with qcentroid agent api
+License: MIT
+Author: QCentroid
+Author-email: info@qcentroid.xyz
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+# qcentroid-agent-cli
+
+![deploy to pypi](https://github.com/QCentroid/qcentroid-agent-cli/actions/workflows/publish.yml/badge.svg)
+[![Python](https://img.shields.io/pypi/pyversions/qcentroid-agent-cli.svg)](https://badge.fury.io/py/qcentroid-agent-cli)
+[![PyPI](https://badge.fury.io/py/qcentroid-agent-cli.svg)](https://badge.fury.io/py/qcentroid-agent-cli)
+ 
+Client library to interact with qcentroid agent API.
+
+
+
+## Functions
+
+
+Functions:
+* obtain status, and context
+* obtain input data 
+* send output data
+* set status
+* send execution logs
+
