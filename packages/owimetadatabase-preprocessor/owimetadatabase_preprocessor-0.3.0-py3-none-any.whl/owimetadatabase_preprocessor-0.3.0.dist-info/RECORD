@@ -1,0 +1,12 @@
+owimetadatabase_preprocessor/__init__.py,sha256=7xnG_nPL9uFa03CATAwEQFzLYNwHX9FlIIGB0d3owto,84
+owimetadatabase_preprocessor/geometry/__init__.py,sha256=r8Gxw6e9Y-kj2Gy4pMZckX1j1xkOclvQDISb4dNg2eg,40
+owimetadatabase_preprocessor/geometry/io.py,sha256=bmj_gDfi5hNNddqSVN-M4pHaPNpCCnKY0KyIaBcjFHw,4182
+owimetadatabase_preprocessor/geometry/processing.py,sha256=3wnhJethnsYgga-LbGxo2D2WId34sxQ-nlsbgr0U7xI,19997
+owimetadatabase_preprocessor/geometry/structures.py,sha256=pmTAqjqhJ-cQuv58yZpKhV0PvVBmS1RLji7E363zQa4,22594
+owimetadatabase_preprocessor/io.py,sha256=UxhsXcQSLH4OMFbCjgvIXQQoWgG2BPnZWV3NYQttOGU,5068
+owimetadatabase_preprocessor/locations/__init__.py,sha256=A9wbouQRubb40tF9N4Quo1v59IIk-CscKCrufqgsReM,41
+owimetadatabase_preprocessor/locations/io.py,sha256=za__qdLP-XX5bKz_23ZAZgHXFFxiHQKd9lovyT30Rjc,5750
+owimetadatabase_preprocessor/utils.py,sha256=IYlQENFzAJEzcLg4GomBpqw7OHfpbtlBxhzlP6M43cw,4394
+owimetadatabase_preprocessor-0.3.0.dist-info/METADATA,sha256=PZsAZvkTbqX_ddxJ1zz55G_8G9wjk2mLUBEaNmQYtio,3401
+owimetadatabase_preprocessor-0.3.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+owimetadatabase_preprocessor-0.3.0.dist-info/RECORD,,
