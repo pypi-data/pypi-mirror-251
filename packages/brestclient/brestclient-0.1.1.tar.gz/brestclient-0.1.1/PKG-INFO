@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: brestclient
+Version: 0.1.1
+Summary: best terminal rest client
+Home-page: https://github.com/e9000000000/brestclient
+License: MIT
+Author: e
+Author-email: skipper224483@gmail.com
+Requires-Python: >=3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Project-URL: Repository, https://github.com/e9000000000/brestclient
+Description-Content-Type: text/markdown
+
+# brestclient
+in terminal rest client, super simple and super useful
+
+
+# development plans
+- [X] just requests
+- [X] json output parsing, pretty print
+- [ ] make it a python package
+- [ ] json output syntax coloring
+- [ ] html output parsing, pretty print and syntax coloring
+- [ ] save output to variables, and ability to use them later
+
