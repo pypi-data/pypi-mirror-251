@@ -1,0 +1,10 @@
+batch_debugging_cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+batch_debugging_cli/aws_batch_commands.py,sha256=zF1YNAEKKNfCP-9NSGFpjOTlmmVvJiKi2WT_Umtj8hc,4442
+batch_debugging_cli/gcp_batch_commands.py,sha256=lej8UnQ9qyhIJvPBZZgD69TRrdVowA6conEmiZDgXKQ,474
+batch_debugging_cli/main.py,sha256=EACAAbkh9wVZgxs9c67vNkJRXF4nStOB64lIsFfU1c4,3201
+batch_debugging_cli/pulumi_commands.py,sha256=0lsuyZarm9ULWYAsKms-jcN-NM6CcLsZGYowllIKmWM,3302
+batch_debugging_cli/seqera_commands.py,sha256=Ni7BhKRIHLzdwPCCZxUvsPITxRXiBkdNAQEwdlCwnn4,953
+batch_debugging_cli-0.0.8.dist-info/METADATA,sha256=v5xJwA8knPbUIvUFVjcJDR_VsHpmF_qf6aHPVJetOSs,3982
+batch_debugging_cli-0.0.8.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+batch_debugging_cli-0.0.8.dist-info/entry_points.txt,sha256=N1-nxhPN_15e1z9KLLGie9LbDKkZBdAimDfJAhBeadk,60
+batch_debugging_cli-0.0.8.dist-info/RECORD,,
