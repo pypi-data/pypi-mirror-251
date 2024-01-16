@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "moirai"
+version = "1.3.30"
+description = "Digital Control Manager Backend"
+authors = ["Álan Crístoffer <acristoffers@startmail.com>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/acristoffers/moirai"
+keywords = ["digital control manager"]
+
+[tool.poetry.scripts]
+moirai = 'moirai.moirai:start'
+
+[tool.poetry.dependencies]
+Flask = "^2.3.3"
+ahio = "^1.0.33"
+appdirs = "^1.4.4"
+cheroot = "^10.0.0"
+mysql-connector-python = "^8.0.33"
+numpy = "^1.26.2"
+pymongo = "^4.6.1"
+python = ">=3.9,<3.12"
+python-dateutil = "^2.8.2"
+scipy = "^1.11.4"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
