@@ -1,0 +1,3 @@
+[console_scripts]
+githubctl=githubctl.main:app
+
