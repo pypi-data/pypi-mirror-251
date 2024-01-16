@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: mase-tools
+Version: 1.0.0
+Summary: Machine-Learning Accelerator System Exploration Tools
+Author: Aaron Zhao, Jianyi Cheng, Cheng Zhang, Pedro Gimenes
+Author-email: a.zhao@imperial.ac.uk, jianyi.cheng17@imperial.ac.uk, chengzhang98@outlook.com, pedro.gimenes19@imperial.ac.uk
+Requires-Python: ==3.10.6
+License-File: LICENSE
+Requires-Dist: lightning
+Requires-Dist: transformers
+Requires-Dist: diffusers
+Requires-Dist: accelerate
+Requires-Dist: toml
+Requires-Dist: timm
+Requires-Dist: pytorch-nlp
+Requires-Dist: datasets
+Requires-Dist: onnx
+Requires-Dist: onnxruntime
+Requires-Dist: optimum
+Requires-Dist: black
+Requires-Dist: GitPython
+Requires-Dist: colorlog
+Requires-Dist: cocotb[bus] ==1.8.0
+Requires-Dist: pytest
+Requires-Dist: pytest-cov
+Requires-Dist: pytest-xdist
+Requires-Dist: pytest-sugar
+Requires-Dist: pytest-html
+Requires-Dist: pytest-profiling
+Requires-Dist: ipython
+Requires-Dist: ipdb
+Requires-Dist: sentencepiece
+Requires-Dist: einops
+Requires-Dist: deepspeed
+Requires-Dist: pybind11
+Requires-Dist: tabulate
+Requires-Dist: tensorboard
+Requires-Dist: optuna
+Requires-Dist: stable-baselines3
+Requires-Dist: scikit-learn
+Requires-Dist: h5py
+Requires-Dist: pyyaml
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: wandb
+Requires-Dist: imageio
+Requires-Dist: imageio-ffmpeg
+Requires-Dist: opencv-python
+Requires-Dist: kornia
+Requires-Dist: sphinx
+Requires-Dist: sphinx-rtd-theme
+
