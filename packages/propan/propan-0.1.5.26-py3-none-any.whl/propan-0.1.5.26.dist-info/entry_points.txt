@@ -1,0 +1,2 @@
+[console_scripts]
+propan = propan.__main__:cli
