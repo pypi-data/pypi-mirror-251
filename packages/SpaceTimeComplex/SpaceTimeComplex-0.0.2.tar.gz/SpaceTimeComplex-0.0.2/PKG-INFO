@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: SpaceTimeComplex
+Version: 0.0.2
+Summary: Big O calculations for Space And Time
+Home-page: https://github.com/hodge-py/SpaceTimeComplex
+Download-URL: https://github.com/hodge-py/SpaceTimeComplex/archive/refs/tags/0.0.1.tar.gz
+Author: Karson Hodge
+Author-email: khodge1@hotmail.com
+License: Copyright
+Keywords: BigO,Algorithm,Calculations
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: Free for non-commercial use
+Classifier: Operating System :: OS Independent
+License-File: LICENSE.txt
