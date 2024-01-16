@@ -1,0 +1,8 @@
+venv_autouse/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+venv_autouse/common.py,sha256=CmP6YRPxiJHuDejMj6OsqA1_CZaGC7jCnvhghULbmQ8,7255
+venv_autouse/directory.py,sha256=tjMP1gDBaqMJTAYJYCGhgSxmbMKxw6rWnp_QOCWOPVk,479
+venv_autouse/file.py,sha256=P4JoCzSB1iT8lkGLSAxZizon6hc3dVDqxxjpf78ERWA,333
+venv_autouse-1.0.0.dist-info/METADATA,sha256=sy-G87QI8NvY1Nu-LKd80WCw9tADF-NzQ_Ok_8UtLrQ,3910
+venv_autouse-1.0.0.dist-info/WHEEL,sha256=mRYSEL3Ih6g5a_CVMIcwiF__0Ae4_gLYh01YFNwiq1k,87
+venv_autouse-1.0.0.dist-info/licenses/LICENSE,sha256=zRgjWACtQYiLKEfHLwFci0n2bOxnaRLuBQ4AhOUKoRw,1065
+venv_autouse-1.0.0.dist-info/RECORD,,
