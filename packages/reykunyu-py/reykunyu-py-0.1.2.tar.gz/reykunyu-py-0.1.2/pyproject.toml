@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0","requests"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "reykunyu-py"
+version = "0.1.2"
+authors = [
+  { name="Conner \"Nahura\" McKay"},
+]
+description = "A Python wrapper for the Reykunyu API"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "requests"
+]
+
+[project.urls]
+Homepage = "https://github.com/HappyHippo77/reykunyu-py"
+Issues = "https://github.com/HappyHippo77/reykunyu-py/issues"
