@@ -1,0 +1,5 @@
+django
+libcst>=0.4.10
+
+[:python_version < "3.11"]
+typing-extensions>=4.2.0
