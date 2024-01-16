@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: py-todo-csv
+Version: 0.1.0
+Summary: The simplest python ToDo app
+Author: jppitol
+Author-email: joaopedropitol@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: pandas (>=2.1.4,<3.0.0)
+Requires-Dist: tabulate (>=0.9.0,<0.10.0)
+Requires-Dist: typer (>=0.9.0,<0.10.0)
+Description-Content-Type: text/markdown
+
+# py-todo-csv
+
+The simplest python ToDo app.
+
+View your current unfinished activities in your favorite terminal. Designed in way to not procrastinate.
+
+- Add your tasks
+- View them in a nice (not pretty) table
+- Rename them if you made a mistake
+- Mark them when you're finished
+
+ You are NOT able to delete your tasks, unless you have marked them all.
+
