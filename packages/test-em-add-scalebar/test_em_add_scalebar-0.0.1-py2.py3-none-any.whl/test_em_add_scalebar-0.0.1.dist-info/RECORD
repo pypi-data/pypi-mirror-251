@@ -1,0 +1,8 @@
+add_scalebar/__init__.py,sha256=qMzq0io1p9MzYkgd-9nucEp3-NhSEOL9zfNfSkoc8J0,107
+add_scalebar/__main__.py,sha256=cDyYRV385m1ddC8IBlCxkKsxxmqxOmaxGvWBvz0-zOk,142
+add_scalebar/addScaleBarGUI.py,sha256=AgcfavFHCnXm0UzFDm3q0TN8Tjtj9E5HOhWuOFJ9KPk,6017
+test_em_add_scalebar-0.0.1.dist-info/LICENSE.txt,sha256=sw5R9x7YiaESz--wct2pp-gEY_aBiJlnEMnoPHzU0m4,1075
+test_em_add_scalebar-0.0.1.dist-info/METADATA,sha256=n-ECkXy4MpyM6S-DaBZxFe2-vweKVrS7KUiFiIj-67k,1017
+test_em_add_scalebar-0.0.1.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+test_em_add_scalebar-0.0.1.dist-info/top_level.txt,sha256=aXRK4y7LubZuYnNpRZXMNOod773N0iXeA4cKIM1z2N0,13
+test_em_add_scalebar-0.0.1.dist-info/RECORD,,
