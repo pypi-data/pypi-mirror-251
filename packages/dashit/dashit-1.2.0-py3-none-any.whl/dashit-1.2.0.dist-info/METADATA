@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: dashit
+Version: 1.2.0
+Summary: Custom Command Submitit Launcher for Hydra apps
+Home-page: https://github.com/sede-x/dashit
+Author: Adhitya
+Author-email: a.kamakshidasan@shell.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Development Status :: 4 - Beta
+Description-Content-Type: text/markdown
+Requires-Dist: hydra-core (>=1.3.2)
+Requires-Dist: submitit (>=1.5.1)
+
+## Installation:
+
+`pip install git+https://github.com/sede-x/dashit.git --upgrade`
+
+
+## Run:
+
+`python examples/run.py -m`
+
+tested with `hydra-core==1.3.2, omegaconf==2.3.0, submitit==1.5.1, Python 3.11.3`
+
+## Tutorial:
+
+https://github.com/sede-x/playbooks/blob/main/submitit/tutorial.ipynb
+
+## ToDo:
+
+- code checking with black
+- writeup/examples to README
+
+

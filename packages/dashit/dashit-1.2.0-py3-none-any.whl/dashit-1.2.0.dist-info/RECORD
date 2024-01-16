@@ -1,0 +1,10 @@
+hydra_plugins/dashit/__init__.py,sha256=LOi7wxXXoGc0HM8v4L_fh0SSofSPESEA9S7Hh-EVDl4,94
+hydra_plugins/dashit/config.py,sha256=bEt0eMhrxKHrRxar91kVgNVKDtueIeYk97ZiBa1M3go,3731
+hydra_plugins/dashit/constants.py,sha256=rBJPAw64krW3Afy3-vgHzjx2WEoJqUrByYPtzJZw_mA,355
+hydra_plugins/dashit/launcher.py,sha256=t9sn8I36Wbt0Om6IFCd0Lq7gjU1ztlch9Q9gHUMBH90,7603
+hydra_plugins/dashit/status.py,sha256=eXR-i07IgkcXfQ4plHBaEw9FNrxBP4C5C5qh5vYuWIM,1632
+hydra_plugins/dashit/utils.py,sha256=VFc8t3MK5jZbZxdL4W_KtCfTLc7j_KNt1ZvkKWin9bo,839
+dashit-1.2.0.dist-info/METADATA,sha256=6eE40KmB_SaBvizwyAN91qrRrcNJ-PRUffcR_IXUMtc,1143
+dashit-1.2.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+dashit-1.2.0.dist-info/top_level.txt,sha256=0-LcYpEmzatUy2K5F7jmqcMfBL2RdB7k9nM_8zGFzhI,14
+dashit-1.2.0.dist-info/RECORD,,
