@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/eclipse_capture/__init__.py
+src/eclipse_capture/__main__.py
+src/eclipse_capture/eclipse_capture.py
+src/eclipse_capture.egg-info/PKG-INFO
+src/eclipse_capture.egg-info/SOURCES.txt
+src/eclipse_capture.egg-info/dependency_links.txt
+src/eclipse_capture.egg-info/requires.txt
+src/eclipse_capture.egg-info/top_level.txt
+tests/test_parse.py
