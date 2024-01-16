@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "ntust_simslab"
+version = "0.13"
+description = "A simple example for building a Python package."
+authors = ["Hsiang-Jen Li <hsiangjenli@gmail.com>"]
+readme = "README.md"
+packages = [{include = "ntust_simslab"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "^2.28.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
