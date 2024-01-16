@@ -1,0 +1,2 @@
+[console_scripts]
+md-format = md_format_hook.md_format:main

@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: md-format-hook
+Version: 0.0.4
+Summary: Adds reasonable spaces between Chinese and English and corrects the case of special nouns.
+Home-page: https://github.com/PKUcoldkeyboard/md-format
+Author: cuterwrite
+Author-email: 158505862@qq.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# md-format
+A pre-commit hook that formats .md files. It automatically adds reasonable spaces between Chinese and English and corrects the case of special nouns.
+
+For pre-commit: see https://github.com/pre-commit/pre-commit
+
+## Using md-format with pre-commit
+Add this to your `.pre-commit-config.yaml` :
+
+```yaml
+- repo: https://github.com/PKUcoldkeyboard/md-format
+  rev: 0.0.4
+  hooks:
+  - id: md-format
+```
