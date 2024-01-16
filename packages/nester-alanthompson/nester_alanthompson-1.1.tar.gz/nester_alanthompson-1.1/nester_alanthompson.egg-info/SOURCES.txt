@@ -1,0 +1,9 @@
+README.md
+setup.py
+nester_alanthompson/__init__.py
+nester_alanthompson/nester.py
+nester_alanthompson.egg-info/PKG-INFO
+nester_alanthompson.egg-info/SOURCES.txt
+nester_alanthompson.egg-info/dependency_links.txt
+nester_alanthompson.egg-info/entry_points.txt
+nester_alanthompson.egg-info/top_level.txt

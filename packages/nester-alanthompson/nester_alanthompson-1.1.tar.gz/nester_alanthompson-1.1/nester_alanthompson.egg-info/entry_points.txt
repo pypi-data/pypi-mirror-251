@@ -1,0 +1,3 @@
+[console_scripts]
+nester = nester:print_lol
+
