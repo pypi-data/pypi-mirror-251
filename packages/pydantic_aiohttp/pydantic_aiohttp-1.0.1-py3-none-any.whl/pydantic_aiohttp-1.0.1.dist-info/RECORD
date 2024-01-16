@@ -1,0 +1,13 @@
+CHANGELOG.md,sha256=YA9hqlFv-wtzDeHyxdltPvXNCVTG-EPoe2Uyy5LecSw,1992
+README.md,sha256=w66DetvZRZEmh-ly7dYgphbENLfqb2j0E_V-IXCfl_4,4538
+pydantic_aiohttp/__init__.py,sha256=FEzkp_DXKB1eGEcQ4ZtAh5OPRPzuWRCFRDOc2wS-THU,4467
+pydantic_aiohttp/client.py,sha256=02y_zlxeXPwW2GgbGAQHy5Jbz65_4DMG6xkAGBuVLMg,11762
+pydantic_aiohttp/encoders.py,sha256=3eNqPuDvTmNN44WToXvZKUPLX5Ph9fmFxHfzwqMCfAc,13923
+pydantic_aiohttp/errors.py,sha256=FhPq_1PIAW4KYRG24k3JWdKFEbxkiL3qBX3hszGt5AM,8394
+pydantic_aiohttp/responses.py,sha256=3ea_aEr2-aQYycTrfioiePTAioOqZKhLQzoJSfnc3Fw,2763
+pydantic_aiohttp/types.py,sha256=o5Uh2ex-jk0_-6XZvlibU7TRQYMMWcVb1W044yimOlY,524
+pydantic_aiohttp/utils.py,sha256=Q7vc4aV-5XbFNNskf9NNVasZDJ_V_UGQltLRn8LeNVo,1248
+pydantic_aiohttp-1.0.1.dist-info/LICENSE,sha256=QLrrwUb6Q0inpNeDEODERjF90HAhx0Q9sPo_Saf_FOc,1064
+pydantic_aiohttp-1.0.1.dist-info/METADATA,sha256=ArsNoIoO7W-SjR7DgXlPYi1WvTuIl4wvp51e2NBdh3Q,5567
+pydantic_aiohttp-1.0.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+pydantic_aiohttp-1.0.1.dist-info/RECORD,,
