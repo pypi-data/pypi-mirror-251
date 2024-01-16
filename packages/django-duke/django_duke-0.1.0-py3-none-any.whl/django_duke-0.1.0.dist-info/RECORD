@@ -1,0 +1,8 @@
+duke/__init__.py,sha256=6pfbud-_6r--aCCvnlBtiWN9ZW6LXoopjxp6watvC8k,894
+duke/common.py,sha256=DFppT-CX7hcX3f3OszxJhpnshiXDcGQjpuDbB4STipA,1164
+duke/conf.py,sha256=aUbmvbXZ3iBso5Y6koniwLWbF13ay6ZKg5uDxNiWarw,50
+duke/get_plugins.py,sha256=5JSAuQSNuhv4vjqLto1ZxnZJ17DaWuyUYgFoP82Jo08,1493
+duke/utils.py,sha256=pxBkp_R3y3n__Vezi_MVL-3EtKkjpigdQJomqLRKmYo,103
+django_duke-0.1.0.dist-info/METADATA,sha256=c6fI-9JYLchgvSSWFvC8FW8KvFmw1VsaTvheCON77b8,1299
+django_duke-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+django_duke-0.1.0.dist-info/RECORD,,

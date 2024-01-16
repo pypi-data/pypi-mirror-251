@@ -1,0 +1,2 @@
+GROUP = "duke"
+DEFAULT_ENTRYPOINT_NAME = "plugin"
