@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "pocbot"
+version = "0.2.0"
+description = "Easy Streamlit UI template for ChatBots"
+license = "MIT"
+authors = ["Ezequiel Panzarasa <ezequiel.panzarasa@qubika.com>"]
+readme = "README.md"
+repository = "https://github.com/thisisqubika/pocbot"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+streamlit = "^1.29.0"
+[tool.poetry.group.dev.dependencies]
+ipython = "^8.18.1"
+ipykernel = "^6.27.1"
+python-dotenv = "^1.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
