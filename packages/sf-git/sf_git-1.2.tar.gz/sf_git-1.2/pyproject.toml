@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sf_git"
+authors = [
+  { name="Thomas Dambrin", email="thomas.dambrin@gmail.com" },
+]
+version="1.2"
+description = "Python package to manipulate Snowsight worksheets and easily apply Git versioning on it."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+  "Intended Audience :: Developers",
+  "Programming Language :: Python :: 3",
+  "Operating System :: MacOS :: MacOS X",
+  "Operating System :: Unix",
+  "Operating System :: Microsoft :: Windows",
+]
+license = {file = "LICENSE"}
+keywords = ["snowflake", "git", "versioning", "python", "CLI"]
+dynamic = ["dependencies"]
+
+[project.urls]
+Homepage = "https://github.com/tdambrin/sf_git"
+Repository = "https://github.com/tdambrin/sf_git"
+Issues = "https://github.com/tdambrin/sf_git/issues"
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
