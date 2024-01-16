@@ -1,0 +1,8 @@
+ckanapi
+requests
+configparser
+click
+PyYAML
+terminaltables
+tqdm
+aiohttp

@@ -1,0 +1,233 @@
+# scidm cli
+
+# 一、 說明
+https://git.narl.org.tw/gitlab/datamarket-team/twdm-dev/-/issues/200
+開發資料服務平台 CLI 使用套件，提供以 Python pip 快速安裝並提供以命令列使用之工具。
+
+# 二、 用法
+
+## 2.1 安裝
+
+直接使用 pip 即可完成安裝
+```
+pip install scidmcli
+```
+
+## 2.2 執行
+
+### scidmcli 指令
+
+```
+Options:
+  -v, --version  Show scidm-cli version
+  -h, --help     Show this message and exit.
+
+Commands:
+  config        Configure the SCIDM CLI [info|init|reset]    
+  dataset       Manage dataset [list|files|download|create|push|delete]    
+  organization  Manage organization [list]    
+  user          Manage user [list|token]
+```
+
+### scidmcli config 指令
+
+```
+Options:
+  -h, --help  Show this message and exit.
+
+Commands:
+  info   Get exsisting information.
+  init   Initialize the credential.
+  reset  Reset the credential.
+```
+
+```
+範例:
+  scidmcli config info    檢視認證設定
+  scidmcli config init --apikey {api_key}    初始化認證
+  scidmcli config reset --apikey {api_key}    重設認證
+
+  認證初始化後會儲存於~/.scidmcli/credential
+```
+
+### scidmcli dataset 指令
+
+```
+Options:
+  -h, --help  Show this message and exit.
+
+Commands:
+  create    create new dataset
+  delete    delete dataset or resource
+  download  download the resources of dataset
+  files     list the resources of dataset
+  list      list the datasets of organization
+  push      upload resources
+```
+
+```
+範例:
+  scidmcli dataset create --data '{"name": "{dataset_name}", ... }'    建立資料集(JSON格式)
+  scidmcli dataset delete --type [ds|rs] --id {ds_id|rs_id}    刪除資料集或資源
+  scidmcli dataset download --id {dataset_name} --path {path}    下載資料集到指令路徑(預設~/.scidmcli/download)
+  scidmcli dataset files --id {dataset_name}    列出資料集底下資源
+  scidmcli dataset list --organization {org_name}    列出組織底下資料集
+  scidmcli dataset push --data '{"package_id": "{package_id}", ... }'    上傳資源(JSON格式)
+```
+
+### scidmcli organization 指令
+
+```
+Options:
+  -h, --help  Show this message and exit.
+
+Commands:
+  list  show organization
+```
+
+```
+範例:
+  scidmcli organization list    列出組織
+```
+
+### scidmcli user 指令
+
+```
+Options:
+  -h, --help  Show this message and exit.
+
+Commands:
+  list   list the organizations or datasets that the user has permission
+  token  show user's token
+```
+
+```
+範例:
+  scidmcli user list --type [ds|org]    列出使用者有權限的組織或資料集
+  scidmcli user token    檢視當前用戶的API key
+```
+
+# 三、 開發
+
+## 3.1_ 開發工具包
+
+```
+pip install build twine
+```
+
+## 3.2_ 檔案結構
+* README.md
+* pyproject.toml
+* src 
+  * scidmcli
+    * \_\_init\_\_.py
+    * example.py
+
+
+## 3.3_ 打包
+
+```
+python -m build
+```
+
+## 3.4_ 上傳到 PypI
+
+```
+twine upload dist/*
+```
+
+## 3.5 測試 (安裝)
+
+套件會裝在 python的 library 庫中，如 anaconda3/lib/python3.xx/site-packages/xx
+```
+pip install scidmcli
+```
+
+```
+pip uninstall scidmcli
+```
+
+
+# X、補充
+
+## X1_ (optional) 打包到 測試服 做測試
+
+```
+twine upload --repository-url https://test.pypi.org/legacy/ dist/*  --verbose
+```
+```
+pip install --index-url https://test.pypi.org/simple/ --no-deps scidmcli
+```
+
+
+## X2_ 用 token file 上傳到pypi 
+
+- ~/.pypirc 
+```
+[distutils]
+  index-servers =
+    pypi
+
+[pypi]
+  username = __token__
+  password = pypi-AgEIcH(....skip....)-P7f3FF-rbty7knQ
+```
+
+```
+twine upload dist/*
+```
+
+
+## X3_ 本地端測試
+
+建議可以使用python虛擬環境來獨立測試
+```
+geosense@twdm:~$ python3 -m venv pyenv
+geosense@twdm:~$ . pyenv/bin/activate
+```
+
+從git上clone
+```
+(pyenv) geosense@twdm:~$ git clone https://git.narl.org.tw/gitlab/datamarket-team/scidmcli.git
+```
+
+本地安裝
+```
+(pyenv) geosense@twdm:~$ cd scidmcli
+(pyenv) geosense@twdm:~/scidmcli$ pip install -e . 
+```
+
+安裝完成
+```
+(pyenv) geosense@twdm:~/scidmcli$ scidmcli 
+Usage: scidmcli [OPTIONS] COMMAND [ARGS]...
+
+Options:
+  -v, --version  Show scidm-cli version
+  -h, --help     Show this message and exit.
+
+Commands:
+  config        Configure the SCIDM CLI [info|init|reset]
+  dataset       Manage dataset [list|files|download|create|push|delete]
+  organization  Manage organization [list]
+  user          Manage user [list|token]
+```
+
+初始化憑證
+```
+scidmcli config init --apikey {api_key}
+```
+
+顯示憑證資訊
+```
+(pyenv) geosense@twdm:~/scidmcli$ scidmcli config info
+Hi, your information:
++------------------+--------------------------------------+
+| key              | value                                |
++------------------+--------------------------------------+
+| scidm_data_path  | /home/geosense/.scidm_cli            |
+| scidm_credential | /home/geosense/.scidm_cli/credential |
+| scidm_api_key    | {api_key} |
+| server_url       | https://twdm.nchc.org.tw/            |
++------------------+--------------------------------------+
+```
