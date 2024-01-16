@@ -1,0 +1,20 @@
+[project]
+name = "bunya_jobs"
+version = "0.0.1"
+authors = [{ name = "Kerry Chu", email = "kerry.x.chu@gmail.com" }]
+description = "useful utilities for monitoring jobs at bunya"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+# [project.urls]
+# Homepage = "https://github.com/kerrychu/sampleproject"
+# Issues = "https://github.com/kerrychu/sampleproject/issues"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
