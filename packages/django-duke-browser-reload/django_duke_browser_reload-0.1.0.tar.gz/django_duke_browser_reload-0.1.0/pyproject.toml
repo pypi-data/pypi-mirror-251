@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "django-duke-browser-reload"
+version = "0.1.0"
+description = ""
+authors = ["Arkadiusz Adamski <arkadiusz.adamski@gmail.com>"]
+readme = "README.md"
+packages = [{ include = "duke_browser_reload.py", from = "." }]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+django-duke = "*"
+django-configurations = "^2.5"
+django-browser-reload = "^1.12.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.plugins.duke]
+plugin = "duke_browser_reload:plugin"
