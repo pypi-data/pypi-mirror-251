@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: db-handler
+Version: 0.1.0
+Summary: 
+Author: SIGIERLuc
+Author-email: 154315009+LucSIGIER-LIAL@users.noreply.github.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: pyodbc (>=5.0.1,<6.0.0)
+Description-Content-Type: text/markdown
+
+
