@@ -1,0 +1,15 @@
+/*
+
+ERROR CODE 
+
+    50202308041031:  @pauliHam.evolutionU  len(Q) != len(k)   
+    50202308041058:  @pauliHam.deployEXP_H  len do not match
+    50202308041137:  @pauliHam.deploy_H_term, Pauli index error, available index = 0,1,2,3 only
+    50202308071439:  @pauliHam.deploy_ForMeasure_H_term, Pauli index error, available index = 0,1,2,3 only
+    50202308071633:  @pauliHam.deploy_PauliOperator_Measurement length do not match 
+    50202308071439:  @pauliHam.deploy_PauliOperator_Measurement
+
+
+
+
+*/

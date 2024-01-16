@@ -1,0 +1,80 @@
+import std;
+
+// https://arxiv.org/pdf/2106.13839.pdf
+
+
+procedure G(double theta, qbit q1, qbit q0 ) {
+    //
+    //       1         0                      0                0
+    //       0         cos(theta/2)           sin(theta/2)     0
+    //       0        -sin(theta/2)           cos(theta/2)     0         
+    //       0         0                      0                1
+    CNOT(q0,q1); 
+    ctrl Ry(theta, q1,  q0 );
+    CNOT(q0,q1);
+} deriving gate
+
+
+procedure Control_G(double theta, qbit control, qbit q1, qbit q0) {
+    ctrl G(theta, control, q1, q0);
+} deriving gate
+
+
+procedure G2(double theta, qbit q3, qbit q2, qbit q1, qbit q0) {
+    double t8 = theta/8;
+    CNOT (q2,q3); //qml.CNOT(wires=[wires[2], wires[3]]),
+    CNOT (q0,q2);//qml.CNOT(wires=[wires[0], wires[2]]),
+    H(q3);//qml.Hadamard(wires=wires[3]),
+    H(q0);//qml.Hadamard(wires=wires[0]),
+    CNOT(q2,q3);//qml.CNOT(wires=[wires[2], wires[3]]),
+    CNOT(q0,q1);//qml.CNOT(wires=[wires[0], wires[1]]),
+    Ry(t8,q1);//qml.RY(phi / 8, wires=wires[1]),
+    Ry(-t8,q0);//qml.RY(-phi / 8, wires=wires[0]),
+    CNOT(q0,q3);//qml.CNOT(wires=[wires[0], wires[3]]),
+    H(q3);//qml.Hadamard(wires=wires[3]),
+    CNOT(q3,q1);//qml.CNOT(wires=[wires[3], wires[1]]),
+    Ry(t8,q1);//qml.RY(phi / 8, wires=wires[1]),
+    Ry(-t8,q0);//qml.RY(-phi / 8, wires=wires[0]),
+    CNOT(q2,q1);//qml.CNOT(wires=[wires[2], wires[1]]),
+    CNOT(q2,q0);//qml.CNOT(wires=[wires[2], wires[0]]),
+    Ry(-t8,q1);//qml.RY(-phi / 8, wires=wires[1]),
+    Ry(t8,q0);//qml.RY(phi / 8, wires=wires[0]),
+    CNOT(q3,q1);//qml.CNOT(wires=[wires[3], wires[1]]),
+    H(q3);//qml.Hadamard(wires=wires[3]),
+    CNOT(q0,q3);//qml.CNOT(wires=[wires[0], wires[3]]),
+    Ry(-t8,q1);//qml.RY(-phi / 8, wires=wires[1]),
+    Ry(t8,q0);//qml.RY(phi / 8, wires=wires[0]),
+    CNOT(q0,q1);//qml.CNOT(wires=[wires[0], wires[1]]),
+    CNOT(q2,q0);//qml.CNOT(wires=[wires[2], wires[0]]),
+    H(q0);//qml.Hadamard(wires=wires[0]),
+    H(q3);//qml.Hadamard(wires=wires[3]),
+    CNOT(q0,q2);//qml.CNOT(wires=[wires[0], wires[2]]),
+    CNOT(q2,q3);//qml.CNOT(wires=[wires[2], wires[3]]),
+} deriving gate
+
+
+
+
+// procedure main(){
+//     qbit q0,q1,q2,q3;
+//     double t;
+//     t = 0.1234;
+//     G2(t,q0,q1,q2,q3);
+//     // Control_G(t,q0,q2,q1);
+
+//     M(q0);
+//     M(q1);
+// }
+
+// procedure main(){
+//     qbit q0,q1;
+//     double t;
+//     t = 0.1234;
+
+//     G(t,q1,q0);
+//     M(q0);
+//     M(q1);
+// }
+
+
+

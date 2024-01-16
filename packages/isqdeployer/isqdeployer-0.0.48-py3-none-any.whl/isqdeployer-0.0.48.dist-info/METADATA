@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: isqdeployer
+Version: 0.0.48
+Summary: Python lib for using isq
+Home-page: https://www.arclightquantum.com/
+License: LICENSE.md
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: isqtools (>=0.1.6)
+Requires-Dist: requests (>=1.0.0)
+Requires-Dist: pyisqc (==0.2.5.2)
+
