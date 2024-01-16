@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: effidict
+Version: 0.0.1
+Summary: Fast Python package providing enhanced dictionary-like data structures with advanced caching capabilities.
+Author-email: Isra Mekki <isra.mekki@helmholtz-munich.de>, Lisa Barros de Andrade e Sousa <lisa.barros.andrade.sousa@gmail.com>, Francesco Campi <francesco.campi@helmholtz-munich.de>
+Maintainer-email: Isra Mekki <isra.mekki@helmholtz-munich.de>
+Project-URL: documentation, https://oligo-designer-toolsuite.readthedocs.io/
+Project-URL: repository, https://github.com/HelmholtzAI-Consultants-Munich/oligo-designer-toolsuite
+Keywords: data structures,efficient dictionary
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+
+# EffiDict
+EffiDict is an efficient and fast Python package providing enhanced dictionary-like data structures with advanced caching capabilities. It's perfect for applications needing speedy retrieval and persistent key-value pair storage.
+
+# Features
+**LRU Caching:** Implements Least Recently Used caching for optimal data access.
+**Persistent Storage:** Supports disk storage with SQLite.
+**Versatile:** Adaptable for various data types.
+
+# Installation
+You can install EffiDict via pip:
+
+```
+pip install effidict
+```
+
+# Usage
+```
+from effidict import LRUDBDict, LRUDict, DBDict
+
+# Using LRUDict
+cache_dict = LRUDict(max_in_memory=100, storage_path="cache")
+cache_dict['key'] = 'value'
+
+# Using LRUDBDict for persistent storage
+db_cache_dict = LRUDBDict(max_in_memory=100, storage_path="cache.db", batch_size=10)
+db_cache_dict['key'] = 'value'
+
+# Standard DBDict
+db_dict = DBDict(storage_path="cache.db")
+db_dict['key'] = 'value'
+```
+
+# License
+Licensed under the MIT License.
