@@ -1,0 +1,10 @@
+zpgs/__cls_pgs_conn__.py,sha256=PX3V-FmDCpcjJXFv--IOsj0OdgaDgLQmEhUMoYEZ6GU,12781
+zpgs/__cls_sqlite_conn__.py,sha256=9m5tVckH6tg5AAoknf03thT-gQiIQqLVle0Z9zNhVIg,9984
+zpgs/__init__.py,sha256=tBb0UCSqhjjeMlP6AELjb7v5gMqg2_mTx49Dd1Nnp20,53
+zsqlite/__cls_sqlite_conn__.py,sha256=9m5tVckH6tg5AAoknf03thT-gQiIQqLVle0Z9zNhVIg,9984
+zsqlite/__init__.py,sha256=tBb0UCSqhjjeMlP6AELjb7v5gMqg2_mTx49Dd1Nnp20,53
+zsqlite-2.7.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zsqlite-2.7.dist-info/METADATA,sha256=YPutCZfzHuYHPDwMkcen2Ed7bUbgFliNW-0tY5hKqQQ,290
+zsqlite-2.7.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+zsqlite-2.7.dist-info/top_level.txt,sha256=eYVBXNn5qF_-d1cUy8ll0_bYG0dIr87zLaPaaHPjrKQ,8
+zsqlite-2.7.dist-info/RECORD,,
