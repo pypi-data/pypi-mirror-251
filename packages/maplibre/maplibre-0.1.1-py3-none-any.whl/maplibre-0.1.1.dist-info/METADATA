@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: maplibre
+Version: 0.1.1
+Summary: 
+License: MIT
+Author: Stefan Kuethe
+Author-email: stefan.kuethe@eoda.de
+Requires-Python: >=3.9,<4
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Provides-Extra: all
+Requires-Dist: anywidget (>=0.8.1,<0.9.0)
+Requires-Dist: geopandas (>=0.14.2,<0.15.0) ; extra == "all"
+Requires-Dist: htmltools (>=0.5.1,<0.6.0)
+Requires-Dist: jinja2 (>=3.1.3,<4.0.0)
+Requires-Dist: pandas (>=2.1.4,<3.0.0) ; extra == "all"
+Requires-Dist: pydantic (>=2.5.3,<3.0.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Requires-Dist: shiny (>=0.6.1,<0.7.0)
+Description-Content-Type: text/markdown
+
+# MapLibre for Python
+
+MapLibre for Python provides Python bindings for [MapLibre GL JS](https://github.com/maplibre/maplibre-gl-js).
+
+It integrates seamlessly into [Shiny for Python](https://github.com/posit-dev/py-shiny) and [Jupyter](https://jupyter.org/).
+
+## Installation
+
+```bash
+# Stable
+pip install git+https://github.com/eodaGmbH/py-maplibregl
+
+# Dev
+pip install git+https://github.com/eodaGmbH/py-maplibregl@dev
+
+# Install with optional dependencies
+pip install "maplibre[all] @ git+https://github.com/eodaGmbH/py-maplibregl"
+```
+
+## Getting started
+
+* [Basic usage](https://eodagmbh.github.io/py-maplibregl/)
+* [API Documentation](https://eodagmbh.github.io/py-maplibregl/api/map/)
+* [Examples](https://eodagmbh.github.io/py-maplibregl/examples/every_person_in_manhattan/)
+
+## Development
+
+### Python
+
+```bash
+poetry install
+
+poetry run pytest
+
+poetry run pytest --doctest-modules maplibre
+```
+
+### JavaScript
+
+```bash
+npm install
+
+npm run prettier
+
+npm run build
+
+npm run build-ipywidget
+```
+
