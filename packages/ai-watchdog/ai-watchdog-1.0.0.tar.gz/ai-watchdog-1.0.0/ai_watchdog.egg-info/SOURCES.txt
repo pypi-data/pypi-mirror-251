@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+ai_watchdog.egg-info/PKG-INFO
+ai_watchdog.egg-info/SOURCES.txt
+ai_watchdog.egg-info/dependency_links.txt
+ai_watchdog.egg-info/top_level.txt
+watchdog/__init__.py
+watchdog/watchdog.py
