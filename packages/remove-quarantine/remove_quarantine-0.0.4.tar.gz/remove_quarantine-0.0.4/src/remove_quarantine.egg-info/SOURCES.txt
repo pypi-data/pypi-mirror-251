@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+src/remove_quarantine/__init__.py
+src/remove_quarantine.egg-info/PKG-INFO
+src/remove_quarantine.egg-info/SOURCES.txt
+src/remove_quarantine.egg-info/dependency_links.txt
+src/remove_quarantine.egg-info/not-zip-safe
+src/remove_quarantine.egg-info/top_level.txt
