@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: mep-tools
+Version: 1.2.34
+Summary: grpc for rep
+Home-page: UNKNOWN
+Author: Khai
+Author-email: sarraj@marksmen.nl
+License: MIT
+Description: hold the code for the grpc files
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
