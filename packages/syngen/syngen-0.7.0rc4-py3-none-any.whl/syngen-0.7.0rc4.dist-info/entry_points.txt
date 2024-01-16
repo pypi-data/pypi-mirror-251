@@ -1,0 +1,4 @@
+[console_scripts]
+infer = syngen.infer:launch_infer
+train = syngen.train:launch_train
+ui = syngen.streamlit_app.run: main [ui]
