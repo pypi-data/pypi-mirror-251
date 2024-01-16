@@ -1,0 +1,10 @@
+powerboxes-0.2.1.dist-info/METADATA,sha256=n43F9u6IsDwgpcMT1UW-H9JXUcjYaNqnPTBwVLykSbE,4473
+powerboxes-0.2.1.dist-info/WHEEL,sha256=k_YORAPP12CQQ0mbiAg3uqMQIwqFusUTLozTi7OUN8E,131
+powerboxes/_giou.py,sha256=ko9acpa8r1Jgq6EpksMDZxLcBmNVyst2AJ3PMEXJjCc,1471
+powerboxes/_nms.py,sha256=1VTMSaoE_7ZYDdsICfbBdanfvhLPEQiI9RI92D9cVYc,806
+powerboxes/__init__.py,sha256=njRFTFy3AZJMiSr0U5ieKNKRoffOn80HNyn_NK5sfNg,13042
+powerboxes/_boxes.py,sha256=hleCceycE6MB9wNA72rdXB9HylbGRHeW24YNdpeyQ_o,1908
+powerboxes/_iou.py,sha256=Md1TF4WZ-RhdcQ-U7BWkefkBJzCFrXQ50yZnCtMO7IY,1433
+powerboxes/_tiou.py,sha256=Ti1Ic1tyMnG6b_M9i7wSZcCO2ANcOwGOAEn60f9sYtw,675
+powerboxes/_powerboxes.cpython-311-powerpc64le-linux-gnu.so,sha256=Jt1Oyfw3g7tJ7zKJ6oFPpAAmyAITIOBwuPfAY9BBryE,6283648
+powerboxes-0.2.1.dist-info/RECORD,,
