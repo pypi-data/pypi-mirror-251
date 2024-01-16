@@ -1,0 +1,5 @@
+acme_test_01/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+acme_test_01/validator.py,sha256=sLQWCzh_PrvxOYLIOShkm61bvS6IGkaD4OcvpekU6hw,261
+acme_test_01-0.1.0.dist-info/METADATA,sha256=2N7bkw5dXIoJ7ona84vji4joBH3S2Y1O9G4pxEPm8r4,516
+acme_test_01-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+acme_test_01-0.1.0.dist-info/RECORD,,
