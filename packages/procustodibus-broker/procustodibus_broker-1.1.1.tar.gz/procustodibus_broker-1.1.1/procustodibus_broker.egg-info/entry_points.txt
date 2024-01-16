@@ -1,0 +1,3 @@
+[console_scripts]
+procustodibus-broker = procustodibus_broker.cli:main
+procustodibus-broker-credentials = procustodibus_broker.credentials:main

@@ -1,0 +1,4 @@
+docopt-ng ~= 0.9
+inflection ~= 0.5
+pynacl ~= 1.5
+requests ~= 2.31
