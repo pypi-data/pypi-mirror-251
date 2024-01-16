@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: imageComp
+Version: 0.0.1
+Summary: A small example package
+Home-page: https://github.com/Im-not-yoneda/image_compression
+Author: Yoneda
+Author-email: s2122053@stu.musashino-u.ac.jp
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/Im-not-yoneda/image_compression
+Description: # image_compression
+        
+        ## What is this
+        
+        Compresses images.</br>
+        Instead of losing color, the image size is reduced.</br>
+        It also makes features more pronounced, making it ideal for AI training.
+        
+        ## How to install
+        
+        `$ pip install imageComp`
+        
+        ## Packages required to run this
+        
+        `$ from PIL import Image`</br>
+        `$ import numpy as np`</br>
+        `$ from sklearn.decomposition import PCA`
+        
+        ## How to use
+        
+        `$ imageComp`</br>
+        Enter any image including the extension</br>
+        `$ Enter the path to the image: filepath`</br>
+        then you can see "compressed_image.jpg" file
+        
+        ## Before:input image
+        
+        ![](landscape.jpg)
+        
+        ## After: output image
+        
+        ![](src/compressed_image.jpg)
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

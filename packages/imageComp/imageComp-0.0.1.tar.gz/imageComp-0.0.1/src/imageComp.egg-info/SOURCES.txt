@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+src/imageComp.egg-info/PKG-INFO
+src/imageComp.egg-info/SOURCES.txt
+src/imageComp.egg-info/dependency_links.txt
+src/imageComp.egg-info/entry_points.txt
+src/imageComp.egg-info/top_level.txt
