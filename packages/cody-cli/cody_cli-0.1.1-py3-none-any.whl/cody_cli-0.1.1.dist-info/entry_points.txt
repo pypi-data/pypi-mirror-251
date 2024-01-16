@@ -1,0 +1,3 @@
+[console_scripts]
+cody=cody_cli.cli:cli
+
