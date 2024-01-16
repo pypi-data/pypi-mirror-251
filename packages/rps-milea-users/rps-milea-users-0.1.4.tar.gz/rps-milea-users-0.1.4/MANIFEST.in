@@ -1,0 +1,4 @@
+include CHANGES.txt
+include README.rst
+recursive-include rps_milea_users/migrations *
+recursive-include rps_milea_users/locale *

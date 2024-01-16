@@ -1,0 +1,14 @@
+0.1.0
+* Initial release
+
+0.1.1
+* Forgot a db-migration
+
+0.1.2
+* Return fullname instead of e-mail
+
+0.1.3
+* Add missing translation file
+
+0.1.4
+* Add missing translation file
