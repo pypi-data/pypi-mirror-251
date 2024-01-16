@@ -1,0 +1,111 @@
+Metadata-Version: 2.1
+Name: fishbowlpy
+Version: 0.0.6
+Summary: Python package to interact with fishbowlapp.
+Home-page: https://github.com/mukulbindal/fishbowlpy
+Author: Mukul Bindal
+Author-email: mukulbindal170299@gmail.com
+Project-URL: Bug Tracker, https://github.com/mukulbindal/fishbowlpy/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: attrs==23.2.0
+Requires-Dist: build==1.0.3
+Requires-Dist: certifi==2023.11.17
+Requires-Dist: cffi==1.16.0
+Requires-Dist: charset-normalizer==3.3.2
+Requires-Dist: colorama==0.4.6
+Requires-Dist: docutils==0.20.1
+Requires-Dist: h11==0.14.0
+Requires-Dist: idna==3.6
+Requires-Dist: importlib-metadata==7.0.1
+Requires-Dist: jaraco.classes==3.3.0
+Requires-Dist: keyring==24.3.0
+Requires-Dist: markdown-it-py==3.0.0
+Requires-Dist: mdurl==0.1.2
+Requires-Dist: more-itertools==10.2.0
+Requires-Dist: nh3==0.2.15
+Requires-Dist: outcome==1.3.0.post0
+Requires-Dist: packaging==23.2
+Requires-Dist: pkginfo==1.9.6
+Requires-Dist: pycparser==2.21
+Requires-Dist: Pygments==2.17.2
+Requires-Dist: pyproject_hooks==1.0.0
+Requires-Dist: PySocks==1.7.1
+Requires-Dist: python-dotenv==1.0.0
+Requires-Dist: pywin32-ctypes==0.2.2
+Requires-Dist: readme-renderer==42.0
+Requires-Dist: requests==2.31.0
+Requires-Dist: requests-toolbelt==1.0.0
+Requires-Dist: rfc3986==2.0.0
+Requires-Dist: rich==13.7.0
+Requires-Dist: selenium==4.16.0
+Requires-Dist: setuptools==69.0.3
+Requires-Dist: sniffio==1.3.0
+Requires-Dist: sortedcontainers==2.4.0
+Requires-Dist: trio==0.24.0
+Requires-Dist: trio-websocket==0.11.1
+Requires-Dist: twine==4.0.2
+Requires-Dist: urllib3==2.1.0
+Requires-Dist: webdriver-manager==4.0.1
+Requires-Dist: wsproto==1.2.0
+Requires-Dist: zipp==3.17.0
+
+# fishbowlpy
+
+fishbowlpy is a Python library that allows you to interact with fishbowlapp. This library provides a simple interface to login, access bowls, posts, and comments in your fishbowlapp feed.
+
+## Prerequisites
+
+Before you start using fishbowlpy, please make sure you have Python 3.6 or higher installed on your machine.
+
+## Installation
+
+You can install fishbowlpy from the Python Package Index (PyPI). Make sure you have pip installed on your system, and then run the following command:
+
+```
+pip install fishbowlpy
+```
+
+## Usage
+
+Here is an example of the minimum code required to use fishbowlpy. You can find the [full documentation here.](https://mukulbindal.github.io/fishbowlpy/)
+
+```
+from fishbowlpy.fishbowlclient import FishBowlClient
+
+# Initialize the fishbowl client
+client = FishBowlClient()
+
+# Access posts in the subscribed bowl
+posts = client.get_posts(bowl_name='tech-india')
+
+print(posts)
+```
+
+## Contributions
+
+We encourage you to contribute to this package by following these steps:
+
+Start by exploring the issues tab and selecting any issue that you would like to work on. This will help you find areas where your skills can be put to good use.
+
+If you have a new feature in mind that you believe would enhance the package, we invite you to create a new issue to propose your idea. This allows the community to provide feedback and discuss the potential implementation before you begin working on it.
+
+Before creating a pull request, it's important to ensure that you follow our contribution guidelines. These guidelines outline the required coding style, documentation standards, and any other specific conventions we follow. Adhering to these guidelines helps maintain consistency throughout the codebase.
+
+By following these steps, you can actively participate in improving the package and help make it even better. Your contributions are highly appreciated and valued by the community.
+
+## Contributors
+
+We eagerly anticipate your valuable contribution to our project. As a token of our appreciation, we have reserved a special section where we will acknowledge your involvement. Rest assured, we will diligently update the contributors list under this designated section to recognize your valuable input.
+
+## License
+
+This project is licensed under the [MIT License](https://github.com/mukulbindal/fishbowlpy/blob/main/LICENSE).
+
+## Contact Information
+
+Feel free to reach out to me with any questions or suggestions. I look forward to hearing from you at mukulbindal170299@gmail.com
