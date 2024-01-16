@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+btester/__init__.py
+btester/btester.py
+btester.egg-info/PKG-INFO
+btester.egg-info/SOURCES.txt
+btester.egg-info/dependency_links.txt
+btester.egg-info/requires.txt
+btester.egg-info/top_level.txt
+tests/test_backtest.py
+tests/test_position.py
+tests/test_strategy.py
