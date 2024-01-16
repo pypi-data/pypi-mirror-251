@@ -1,0 +1,8 @@
+numpy
+pandas
+pinecone-client
+pyarrow
+qdrant_client
+tqdm
+python-dotenv
+huggingface_hub
