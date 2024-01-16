@@ -1,0 +1,11 @@
+README.md
+license.txt
+setup.py
+Skyctl/__init__.py
+Skyctl/terminal.py
+skyctlzd.egg-info/PKG-INFO
+skyctlzd.egg-info/SOURCES.txt
+skyctlzd.egg-info/dependency_links.txt
+skyctlzd.egg-info/not-zip-safe
+skyctlzd.egg-info/requires.txt
+skyctlzd.egg-info/top_level.txt
