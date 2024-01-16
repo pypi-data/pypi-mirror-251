@@ -1,0 +1,5 @@
+torch>1.9
+requests
+einops
+rotary-embedding-torch
+numpy
