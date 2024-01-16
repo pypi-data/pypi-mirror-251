@@ -1,0 +1,16 @@
+[project]
+name = "Twinnppt"
+version = "0.0.3"
+authors = [
+  { name="twinn", email="saurabh.kumar@tooli.qa" },
+]
+description = "ppt package"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
