@@ -1,0 +1,2 @@
+[console_scripts]
+clean = cleaning_module.cli:main
