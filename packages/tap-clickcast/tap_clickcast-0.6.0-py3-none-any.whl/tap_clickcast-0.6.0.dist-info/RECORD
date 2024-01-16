@@ -1,0 +1,16 @@
+tap_clickcast/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tap_clickcast/auth.py,sha256=k7zEely902vzEzf_0F8mxFj0SsNm1dWrpe8f_Lt5ub4,415
+tap_clickcast/client.py,sha256=lM-ArPcIkWe6rwjQFSseDqt7CYQLBg5pQfcXnaGoExU,3809
+tap_clickcast/schemas/campaigns.json,sha256=lN738W3TnvzyGahPIRr8-PkKUjW1-h9pijjw6ZeXoQE,5979
+tap_clickcast/schemas/employers.json,sha256=J_Zjym1H29UuNSUdH2zeGJjFyrgOf8PFPQytMbPkJCM,4538
+tap_clickcast/schemas/jobs.json,sha256=QcM_-3bECBp86BYLpzaZjehG9RxOf_cfYBED1IPcVXs,2207
+tap_clickcast/schemas/jobstats.json,sha256=fBvp_A4xj1y2z_JNOJs0KR-U4GoTvcdGzpH5W85I9IQ,3860
+tap_clickcast/schemas/publishers.json,sha256=nKoZdAnS3M0fjGvJWdp5IU1VpjlJb7MyTrK-SOkuOpA,4564
+tap_clickcast/streams.py,sha256=s7fGDSD47cgFE5c8aH_qjntAlpui0lJh10mfqZ6IGLo,1675
+tap_clickcast/tap.py,sha256=zq1jAbGrcfpQdOnB9tt0qPN43m0BzcypdXZ5cdcJRRM,868
+tap_clickcast/tests/__init__.py,sha256=dN7RBEmANWleHjcW5htvRhrC8eVqIW4Qufg4OA4wZ3M,36
+tap_clickcast/tests/test_client.py,sha256=G73JzGdku_03DZ-MYe6kYFUxAJfQZiEDdCDB5rg7uos,3420
+tap_clickcast-0.6.0.dist-info/METADATA,sha256=HKukRqTxasI8oC4g3RgfvLtOk-3WZN8UhKEK8QmMdo4,3571
+tap_clickcast-0.6.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+tap_clickcast-0.6.0.dist-info/entry_points.txt,sha256=2Dg-qfLwXEzC47v1_MyfNwRLbwqmHXD_g1sBPPTP4vA,68
+tap_clickcast-0.6.0.dist-info/RECORD,,
