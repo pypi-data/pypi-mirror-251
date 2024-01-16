@@ -1,0 +1,9 @@
+datasette_edit_templates/__init__.py,sha256=diQ7kNNmG3dFcZ4QJiQIuPCYHh19xXUUAa4DRmLm514,7601
+datasette_edit_templates/static/jinja2.js,sha256=zBpDN6op9Pn-qPoIqV7twhnGXQ8_FQSpVNBrg31IYSE,4391
+datasette_edit_templates/templates/edit_template.html,sha256=EgkugOE2OfNR9Ul6Y97E_RigMGb1YxNyY1G4ySW6MNM,1876
+datasette_edit_templates/templates/edit_templates_index.html,sha256=BDhNUgT5mgdvrP2WfLVECf1XNkaVn0c3jQBpTBtkEIw,903
+datasette_edit_templates-0.4.dist-info/METADATA,sha256=g6tBHEghGT9y1SuO5edLLYiqsXqAZFaSB2WD4t-A5vM,3957
+datasette_edit_templates-0.4.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+datasette_edit_templates-0.4.dist-info/entry_points.txt,sha256=XL03Io30QjgLIKMgWC4JyulM1YLwKZiVi5Td3EVKlE8,54
+datasette_edit_templates-0.4.dist-info/top_level.txt,sha256=uj6_wD5jd7bHA8GWe3DAg87SATAvSjq3rOdlOs7Tmas,25
+datasette_edit_templates-0.4.dist-info/RECORD,,
