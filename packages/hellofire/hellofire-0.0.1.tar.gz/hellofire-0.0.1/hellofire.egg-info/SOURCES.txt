@@ -1,0 +1,5 @@
+setup.py
+hellofire.egg-info/PKG-INFO
+hellofire.egg-info/SOURCES.txt
+hellofire.egg-info/dependency_links.txt
+hellofire.egg-info/top_level.txt
