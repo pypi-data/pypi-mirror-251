@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: rps-milea-users
+Version: 0.1.3
+Summary: Django rps.Milea Framework - User Module
+Home-page: https://github.com/milea-framework/milea-users
+Author: red-pepper-services
+Author-email: pypi@schiegg.at
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+
+===========================
+Django E-Mail User
+===========================
+
+Just another Django-email-user app. Makes the email address as the username.
+
+Attention! Only suitable for fresh Django projects.
+
+
+Installation
+============
+
+* Installation ::
+
+    pip install rps-milea-users
+
+
+* Add ``rps_milea_users`` to ``INSTALLED_APPS`` in settings.py ::
+
+    INSTALLED_APPS = [
+      "rps_milea_users",
+      ...
+    ]
+
+* Create ``AUTH_USER_MODEL`` in settings.py ::
+
+    AUTH_USER_MODEL = 'rps_milea_users.User'
+
+* Database Update ::
+
+    python manage.py migrate
+
+
+Internal Notes
+==============
+
+Publishing to PyPI::
+
+	python -m pip install -U wheel twine setuptools
+	python setup.py sdist
+	python setup.py bdist_wheel
+	twine upload --skip-existing dist/*
