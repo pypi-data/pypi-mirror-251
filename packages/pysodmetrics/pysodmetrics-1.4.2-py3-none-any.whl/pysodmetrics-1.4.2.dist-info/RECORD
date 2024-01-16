@@ -1,0 +1,10 @@
+py_sod_metrics/__init__.py,sha256=i01G-szU9ov911yss0RhO_JX473Nv3MKTBzNFB9IUbE,499
+py_sod_metrics/fmeasurev2.py,sha256=ZU0R4fnH_-bZgs-VUdrJfbLkQT7YpxzG5DT4eqryaL4,14106
+py_sod_metrics/multiscale_iou.py,sha256=aaJWu5CUdwaWdfIiEsk2wiXcjlAc8-Mtuxg1hXQaHUM,3058
+py_sod_metrics/sod_metrics.py,sha256=okRc-eIOsdsg5mkrScT2RM4MNskvMhJMtMn2b_q3uOg,20346
+py_sod_metrics/utils.py,sha256=apgA0Dv-W9onHn-27yvjyMXuMsu7uEvk4knYBzp6jYs,1014
+pysodmetrics-1.4.2.dist-info/LICENSE,sha256=XpSvodv377mlfEnQsLlGXP3wUGUWtuJ7g12uw3JTBZI,1065
+pysodmetrics-1.4.2.dist-info/METADATA,sha256=BTx2RX_kTMHX1VyG16-G9vP-xQgv462zSRS5gOMN8_k,7721
+pysodmetrics-1.4.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+pysodmetrics-1.4.2.dist-info/top_level.txt,sha256=m0H0exu-S9ZZXWHufQRDlsR1xWVtMT2rMUXrof5mKME,15
+pysodmetrics-1.4.2.dist-info/RECORD,,
