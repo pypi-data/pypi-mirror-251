@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: calmecac-tools
+Version: 0.0.3
+Summary: Calmecac tools for signal processing
+Author: Luis Ruelas
+Author-email: luise.ruelasz@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Calmecac Tools
+
+Calmecac Tools is a Python package that provides a set of tools for ... It is designed to ...
+
+## Installation
+
+You can install Calmecac Tools using pip:
+
+```bash
+pip install calmecac-tools
+```
