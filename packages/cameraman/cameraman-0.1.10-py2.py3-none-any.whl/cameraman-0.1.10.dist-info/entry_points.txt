@@ -1,0 +1,2 @@
+[console_scripts]
+cameraman = cameraman.cli:main
