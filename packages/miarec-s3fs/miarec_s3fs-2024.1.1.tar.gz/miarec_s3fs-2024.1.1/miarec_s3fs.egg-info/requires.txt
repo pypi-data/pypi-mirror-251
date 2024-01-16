@@ -1,0 +1,8 @@
+fs~=2.4
+boto3~=1.9
+setuptools>=38.3.0
+
+[test]
+moto[s3]~=4.2
+pytest~=7.4
+pytest-cov~=4.1
