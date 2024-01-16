@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: orthojax
+Version: 0.1.2
+Summary: Orthogonal polynomials in Jxax
+Home-page: https://github.com/PredictiveScienceLab/orthojax
+Author: Iilias Bilionis
+Author-email: ibilion@purdue.edu
+License: MIT License
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Orthojax - Polynomial Chaos in Jax
+
+This is an Python implementation of some of the functions in the
+`orthpol`` package by Walter Gautschi. The original Fortran code can be
+found [here](http://www.cs.purdue.edu/archives/2002/wxg/codes/orthpol.f).
+
+
+## Examples
+
+- You can learn more about how the package works [here](https://predictivesciencelab.github.io/advanced-scientific-machine-learning/polynomial_chaos/04_orthpol_demo.html).
+- You can find an example to uncertainty propagation [here](https://predictivesciencelab.github.io/advanced-scientific-machine-learning/polynomial_chaos/05_pc_ode_1d.html). 
+
+## Todo
+
+- Add tensor product support.
