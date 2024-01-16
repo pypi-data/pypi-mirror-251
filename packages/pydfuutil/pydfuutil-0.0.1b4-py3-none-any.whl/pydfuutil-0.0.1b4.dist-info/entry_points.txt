@@ -1,0 +1,2 @@
+[console_scripts]
+dfu-suffix = pydfuutil.suffix:main
