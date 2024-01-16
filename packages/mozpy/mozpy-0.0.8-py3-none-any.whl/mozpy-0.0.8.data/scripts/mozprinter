@@ -1,0 +1,5 @@
+#!python
+
+import colorama
+
+print(colorama.Fore.YELLOW+"moooooz")
