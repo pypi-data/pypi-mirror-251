@@ -1,0 +1,16 @@
+ScopusApyJson/GLOBALS.py,sha256=49-a9m1t47E_n7TC2YdzPKmzrpXkk-jG9spOFAZdwoQ,5280
+ScopusApyJson/__init__.py,sha256=XoJCWfX3bx44B8uvU7AjoFSnrNJaMNvsIQm9rxiIMM8,245
+ScopusApyJson/api_manager.py,sha256=CTOUzVgReBeqJzbTdumPRc65M58OQipF1XL_OvfGRXI,4352
+ScopusApyJson/json_parser.py,sha256=jWHBKAnP8GkBtHsw6dR8uunOWDEtcgEqCrvgu4sBzps,20585
+ScopusApyJson/json_utils.py,sha256=JtLsS9s2VYklR5w2WG4IzYPsJNLbZhJxrZj31grvlms,3082
+ScopusApyJson/main.py,sha256=39Nniqpr5E2l476pb01H10PT60W0jmT_SBnuvYXe5KE,1384
+ScopusApyJson/CLI/__init__.py,sha256=ptwUP8OQl7VT2oW4FFoMgNp2bF99-hup7iogYocUjmQ,58
+ScopusApyJson/CLI/cli.py,sha256=UDok_HdnPbVO9wfA5br6k2pOCLdMoX6BZJmvKMRwwn4,1928
+ScopusApyJson/CONFIG/api_scopus_config.json,sha256=5Wnp4XeZxU4sm9DXA5ZzRsSFm7419b5YbSLpF9PVV8Y,746
+ScopusApyJson/CONFIG/scopus_col_names.json,sha256=alV561QztLcumGkMUL5fMwIYCTAF8tmfcvybmm_2y50,3619
+ScopusApyJson-1.0.0.dist-info/LICENSE,sha256=-5yDHAoJaLcQumnHcCvQvnOIOeFHukgA43ErrNNLNO8,1084
+ScopusApyJson-1.0.0.dist-info/METADATA,sha256=8TBcM4Z6CanwGABXBRdd3Vis1PyR6DoaBj-2HpGekkw,1631
+ScopusApyJson-1.0.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+ScopusApyJson-1.0.0.dist-info/entry_points.txt,sha256=hU6L3Snhc-PE1FW0mINglhY08CnWftcnJopmWhF3VEk,101
+ScopusApyJson-1.0.0.dist-info/top_level.txt,sha256=RE9_kZ4cUSluNd3E8Gg2rB-Yo8oT1VmzfBj6xvo74nM,14
+ScopusApyJson-1.0.0.dist-info/RECORD,,

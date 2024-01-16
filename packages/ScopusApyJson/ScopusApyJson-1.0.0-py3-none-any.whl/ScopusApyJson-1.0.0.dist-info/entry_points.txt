@@ -1,0 +1,4 @@
+[console_scripts]
+cli_doi = ScopusApyJson.CLI.cli:cli_doi
+cli_json = ScopusApyJson.CLI.cli:cli_json
+
