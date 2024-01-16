@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: opentelemetry-instrumentation-kstreams
+Version: 0.1.1
+Summary: OTEL for kstreams
+Author: Santiago Fraire Willemoes
+Author-email: santiago.fraire@kpn.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Provides-Extra: instruments
+Requires-Dist: kstreams (>=0.12.0) ; extra == "instruments"
+Requires-Dist: opentelemetry-api (>=1.21.0,<2.0.0)
+Requires-Dist: opentelemetry-instrumentation (>=0.42b0,<0.43)
+Requires-Dist: opentelemetry-semantic-conventions (>=0.42b0,<0.43)
+Description-Content-Type: text/markdown
+
+# opentelemetry-instrumentation-kstreams
+
+> OTEL for kstreams
+
+Version: `0.1.1`
+
+## Installation
+
+```sh
+pip install -U opentelemetry_instrumentation_kstreams
+```
+
+## Usage
+
+```python
+from opentelemetry_instrumentation_kstreams import KStreamsInstrumentor
+
+KStreamsInstrumentor().instrument()
+```
+
+## Contributing
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md)
+
+## Release
+
+The release process is automated by the CI, if you have to do it manually then:
+
+```sh
+./scripts/install
+./scripts/bump
+./scripts/release
+```
+
+Note: this will not release the docs.
+
