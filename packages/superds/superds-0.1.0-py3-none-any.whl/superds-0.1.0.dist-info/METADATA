@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: superds
+Version: 0.1.0
+Summary: A small libarary of objects better lists
+Author-email: Gosbo <gosbo@earwicker.co.uk>
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Project-URL: Bug Tracker, https://github.com/idlekahbo/superds/issues
+Project-URL: Homepage, https://github.com/idlekahbo/superds
+
+# Example Package
+
+This is a simple example package. You can use
+[Github-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+to write your content.
+
