@@ -1,0 +1,30 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mambo_minhhai"
+version = "0.0.a33"
+authors = [
+  { name="Minh Hai NGUYEN", email="nguyenhai7120qh@gmail.com" },
+]
+description = "A small example package"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "numpy",
+    "matplotlib",
+    "torch",
+    "torchvision",
+    "einops",
+    "ml_collections",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://bitbucket.org/these-mhnguyen/mambo/src/master/"
+Issues = "https://bitbucket.org/these-mhnguyen/mambo/src/master/"
