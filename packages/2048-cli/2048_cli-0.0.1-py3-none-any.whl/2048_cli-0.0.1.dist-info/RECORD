@@ -1,0 +1,12 @@
+src/ai_playing/benchmark.py,sha256=IsIFxeduKJSbDhZgFZ-vWEWLX2QAjW4n3Frg5R1V1cI,821
+src/ai_playing/montecarlo.py,sha256=eYJp3YXqN7idsp9HDeRgqmB6GB7IZ4wQENNr-nln51s,325
+src/board.py,sha256=dYzEW_Mn2Y8KvjbuDam-o2xddYfqyo0gLU6v52ILZHM,3991
+src/game.py,sha256=_-Ja5fgCKycieXy1Ojx6jJAC26VJSSZ0BVAT_PJJYys,2380
+src/main.py,sha256=dluaRbfIpHXXuTCG_NZBrC6NNrOyN2a-WlLdiGu44wQ,497
+src/rust-montecarlo/board.rs,sha256=NvJjR-Zgby5y-TEeN5o1L9mpFlo0qTzzvSHVxC3SmyI,6662
+src/rust-montecarlo/lib.rs,sha256=Wnh8lv1rS9_jFFkyslTeaRIVkId-uo4iMrv-R0PS29k,1502
+src/utils.py,sha256=GTzJ4e9XKvM8zCrfg5f9L47PoYXKi6i6e7tfxy8upMQ,2878
+2048_cli-0.0.1.dist-info/METADATA,sha256=1oOu8xl8dTkTTm2uNmw6mouODqzGhWsiLu9R7ymrW00,1400
+2048_cli-0.0.1.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+2048_cli-0.0.1.dist-info/entry_points.txt,sha256=k6ehb2nrtV-JXr9dLOxUIeJDD1JIJXJLszfXAyIrKKE,38
+2048_cli-0.0.1.dist-info/RECORD,,
