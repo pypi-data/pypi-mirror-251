@@ -1,0 +1,1 @@
+from .._agg import _wCuLj as license_from_lic_file, _kRFcv as refresh_license_file, _MGFTr as get_certificate_data, _hoeo1 as check_out_license_file, _jShiE as LicenseError, _qZCcE as assert_datetime_integrity, _uFxG3 as fromisoformat, _X7In7 as safeget, _YSEIJ as remove_prefix_suffix, _ck5tf as get_vendor, _7hNQi as OfflineLicense, _JAcFe as OnlineLicense
