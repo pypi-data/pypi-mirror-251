@@ -1,0 +1,11 @@
+abba_python/__init__.py,sha256=fp8H6bL5LcNCyMa1O2obbSWpZd6Hjk8vPaZ9u6HCqrA,168
+abba_python/abba.py,sha256=p71Po6LLgDk5lz9jT5eUgd12-AacwtYDhr-Haylb_nE,48145
+abba_python/abba_private/abba_atlas.py,sha256=uuaLUaYKlNbNgw8--L8TBu-JQZGc2t-tdK-LsHSVNqI,1861
+abba_python/abba_private/abba_map.py,sha256=gxbnWSOUjuTnvDsc9y8QYPBa36Tle_s-F8075hgz0-k,5818
+abba_python/abba_private/abba_ontology.py,sha256=YHduP_n-JWF0YVgxfPGxyzQSBhT3-CVarc9QqIzpAg4,2160
+abba_python-0.8.0.dist-info/AUTHORS.rst,sha256=mTKdu_1BdwMRjQuRtdX8ijiJSFAMo4iZRczhGYKAQyk,172
+abba_python-0.8.0.dist-info/LICENSE,sha256=RMoD0bL0jOqmYFTYvvpHEjKBvEhXbRTVSuKT0mqHyZA,1578
+abba_python-0.8.0.dist-info/METADATA,sha256=n75YJ4hWoxmP10KerDFTVR5lWxu0mBhbSbgv_1p8JaE,5560
+abba_python-0.8.0.dist-info/WHEEL,sha256=-G_t0oGuE7UD0DrSpVZnq1hHMBV9DD2XkS5v7XpmTnk,110
+abba_python-0.8.0.dist-info/top_level.txt,sha256=bu8SUsj0TLej3PaVEpOj4rzEncf8QICETBf9sZOkTsg,12
+abba_python-0.8.0.dist-info/RECORD,,
