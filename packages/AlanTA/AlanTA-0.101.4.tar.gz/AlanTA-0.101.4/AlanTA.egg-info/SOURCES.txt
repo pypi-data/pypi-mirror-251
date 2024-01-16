@@ -1,0 +1,9 @@
+setup.py
+AlanTA.egg-info/PKG-INFO
+AlanTA.egg-info/SOURCES.txt
+AlanTA.egg-info/dependency_links.txt
+AlanTA.egg-info/not-zip-safe
+AlanTA.egg-info/requires.txt
+AlanTA.egg-info/top_level.txt
+alan_ta/__init__.py
+alan_ta/alan_ta.py
