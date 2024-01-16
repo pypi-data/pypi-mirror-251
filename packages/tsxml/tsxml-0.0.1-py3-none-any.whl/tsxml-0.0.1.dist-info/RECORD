@@ -1,0 +1,12 @@
+tsxml/__init__.py,sha256=n42yI5cOZTBALVcuSU-Z89oP03SYY2W9JvqkA02ZN50,25
+tsxml/main.py,sha256=gigrvMiM7ZQf66hP9cpPcVMG1CmJ2N_Mduu11_gc9zU,1565
+tsxml/types/array.py,sha256=KYTp3Q6jXgCJvd5Q6VkWBB0j4sHILeUN6ToMO-okX9s,917
+tsxml/types/boolean.py,sha256=1mBofAYfXQgwUmFKCMJ-Ym-7iqgu6lndeKCO78Bro_s,485
+tsxml/types/container.py,sha256=bSOrWfGDXMBBpCHNYPPDkBZxGLK_5-_p7fXdoYZ5e8I,658
+tsxml/types/number.py,sha256=S37InDnQF0Zpdykt9eHPlTIlyhgkCnxY3m_6HOSU4ko,326
+tsxml/types/string.py,sha256=_SUqrbT4eQzO7WJo0tjv1AktJfjWMXr8AdJ4IMcWkFg,452
+tsxml/types/value.py,sha256=E9evGWY2JH_bnv8xo3Rc0-sUNKuD5beOSHJXGVvIXfU,532
+tsxml-0.0.1.dist-info/LICENSE,sha256=jt8cHgSl0CkhTdVVd5mZmfAYgomk_Ha_A-6m0tux9DU,1091
+tsxml-0.0.1.dist-info/METADATA,sha256=9Lu842GS9486GWup5_oJ1sf8SpTQf_plkxuEFi5Zmb0,527
+tsxml-0.0.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+tsxml-0.0.1.dist-info/RECORD,,
