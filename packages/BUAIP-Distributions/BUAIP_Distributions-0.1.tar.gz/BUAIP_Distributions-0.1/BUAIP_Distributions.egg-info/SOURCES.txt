@@ -1,0 +1,10 @@
+setup.py
+BUAIP_Distributions/Binomialdistribution.py
+BUAIP_Distributions/Gaussiandistribution.py
+BUAIP_Distributions/Generaldistribution.py
+BUAIP_Distributions/__init__.py
+BUAIP_Distributions.egg-info/PKG-INFO
+BUAIP_Distributions.egg-info/SOURCES.txt
+BUAIP_Distributions.egg-info/dependency_links.txt
+BUAIP_Distributions.egg-info/not-zip-safe
+BUAIP_Distributions.egg-info/top_level.txt
