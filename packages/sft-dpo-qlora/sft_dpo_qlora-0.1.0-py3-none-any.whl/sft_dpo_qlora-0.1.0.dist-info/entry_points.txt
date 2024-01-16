@@ -1,0 +1,3 @@
+[console_scripts]
+dpo_train = sft_dpo_qlora.trainerDPO:main
+sft_train = sft_dpo_qlora.trainerSFT:main

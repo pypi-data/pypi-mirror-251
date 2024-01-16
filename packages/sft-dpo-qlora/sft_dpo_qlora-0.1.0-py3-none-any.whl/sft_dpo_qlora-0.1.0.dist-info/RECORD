@@ -1,0 +1,11 @@
+sft_dpo_qlora/__init__.py,sha256=sIoVr4oqV4a4EWUmtCXRLdLfESEXMdgxno04-1kXzf0,263
+sft_dpo_qlora/configDPO.py,sha256=4nOo2E9EZhocQ_s-8Qaf6vT4T_K_4qbdi3wkbbiGM_8,1547
+sft_dpo_qlora/configSFT.py,sha256=80oxQRAg94bwPeyt2vyfxm2r97egPt69A2dmIG_U0_0,2115
+sft_dpo_qlora/trainerDPO.py,sha256=sa29dgAuOkJ6mvUdtRrIvwCVro8_pTFfk10VnTXLFKs,4572
+sft_dpo_qlora/trainerSFT.py,sha256=_A8pERb5AcjuRcSutQq5pa2-ekwBTEIUR7MqtWQhEfE,7827
+sft_dpo_qlora-0.1.0.dist-info/LICENSE,sha256=G6QL-Zp9SBEHkSAecFrGuwYhseSahkOYx8HCVrsJR1U,1073
+sft_dpo_qlora-0.1.0.dist-info/METADATA,sha256=RNhIF4YIerLs8HHZlETgD9lGrScAHBSB2bIpBsAUu70,4463
+sft_dpo_qlora-0.1.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+sft_dpo_qlora-0.1.0.dist-info/entry_points.txt,sha256=x1K5ESk_IjrxEA35R3f6Nrrk0FQ6t0VwFVQUkHLqt4A,102
+sft_dpo_qlora-0.1.0.dist-info/top_level.txt,sha256=cHC9NKHFfQXCcKYnOvXpleA-QeahkroiRBXutpxN8iE,14
+sft_dpo_qlora-0.1.0.dist-info/RECORD,,
