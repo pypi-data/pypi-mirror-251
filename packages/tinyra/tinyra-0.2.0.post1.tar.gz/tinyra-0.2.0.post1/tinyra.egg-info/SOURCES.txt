@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+requirements.txt
+run_tab.py
+run_tinyra.sh
+setup.py
+tinyra-tmux.conf
+tui.css
+tui.py
+tinyra.egg-info/PKG-INFO
+tinyra.egg-info/SOURCES.txt
+tinyra.egg-info/dependency_links.txt
+tinyra.egg-info/entry_points.txt
+tinyra.egg-info/requires.txt
+tinyra.egg-info/top_level.txt
