@@ -1,0 +1,17 @@
+django_mongodb/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_mongodb/base.py,sha256=O0PPSoFLxYQZbA_Ym--cUWl0QgYd1iRipe0GEtzHFxQ,3965
+django_mongodb/client.py,sha256=E2sBtwukyDRFv__64RNAm5X5-pwFTNhzr-4WqTETXE4,237
+django_mongodb/compiler.py,sha256=SlVOz-EjlDhc5K6TPw66KjReKD26TXnUvRiq5Ulu_TM,10471
+django_mongodb/creation.py,sha256=XVHCwnyQr1ULOMHGD8Lx8zmVcb7x3ryGjcWGlR0NnX0,805
+django_mongodb/cursor.py,sha256=ffRhin28D8kJrb4K0UqCHIyRdTeU_xuj_KUPv76jddI,3270
+django_mongodb/database.py,sha256=W3o2-vQW3y8TN8gr2Ec_nHyvcblLoDBEhrBUjYMZJKA,404
+django_mongodb/features.py,sha256=i7VRrENjZ_z957Yq-2-jDfK6R0_S5vxAIcf3DiiUx9k,260
+django_mongodb/introspection.py,sha256=k8Bq64UuMbdWta0K1Qc1EgopzQJ8qmpr31ZlQeqARHc,447
+django_mongodb/managers.py,sha256=vhTOtSXZWMIhyWoOea-rSvzzMrM7finvgYW5X9kcr7s,1129
+django_mongodb/models.py,sha256=PD6H63OQ1ASMNTM6sRbUzupupV8LJCrHvNSlEp5ODN8,1464
+django_mongodb/operations.py,sha256=Zj8m4_BdY80S7kElTrtcQl1AjYnJGVg6QVVtWRMtzPE,1949
+django_mongodb/query.py,sha256=-KsUo2X4kWOINUMsRROmK8t9riwvKumWDrp788w4hpY,9749
+django_mongodb/schema.py,sha256=tNKoEtCryYJvL7xTiQNk2IBxLWEsw7l5vrW50FIeCWM,1578
+django_mongo_backend-0.1.0.dist-info/METADATA,sha256=sJp_vfuhmpjmLufDjqfLFO19qh2hzMV_lKhQecfb6uI,821
+django_mongo_backend-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+django_mongo_backend-0.1.0.dist-info/RECORD,,
