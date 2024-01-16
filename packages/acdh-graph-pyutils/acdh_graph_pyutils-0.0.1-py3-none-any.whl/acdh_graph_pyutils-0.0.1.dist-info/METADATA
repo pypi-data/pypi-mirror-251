@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: acdh-graph-pyutils
+Version: 0.0.1
+Summary: Helper functions for the generation of RDF Graphs
+Home-page: https://github.com/acdh-oeaw/acdh-graph-pyutils
+Author: Daniel Elsner
+Author-email: daniel.elsner@oeaw.ac.at
+License: MIT license
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: rdflib <7,>=6
+Requires-Dist: acdh-tei-pyutils <1,>=0.30
+Requires-Dist: python-slugify <8,>=5
+
+# ACDH Graph Python Utilities
+
+Contains a set of utilities to work with XML Documents and create RDF Graphs.

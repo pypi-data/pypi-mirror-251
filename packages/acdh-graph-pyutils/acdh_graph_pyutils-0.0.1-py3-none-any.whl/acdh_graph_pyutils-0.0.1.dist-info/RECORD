@@ -1,0 +1,10 @@
+acdh_graph_pyutils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+acdh_graph_pyutils/graph.py,sha256=seqEmGFZA7cXMcDkRSfc6VgrEBTHFqHUNj48gvZar7Y,2581
+acdh_graph_pyutils/namespaces.py,sha256=HtgIKEIMQ5yIOuFjpxIciK3O-umCRvFX8Gh_o9u4ku0,491
+acdh_graph_pyutils/string_utils.py,sha256=oOTgxBM0E3EsAl38yt1PVQ9lhg-3_rpTk3IP8tAniag,1429
+acdh_graph_pyutils/xml.py,sha256=Zvua14SzeLY6HvfVwQj6G9qmoVfrk5zQ-jbQB_C_v_U,7504
+acdh_graph_pyutils-0.0.1.dist-info/LICENSE,sha256=_J7PPP77BfZg5xNgW0MUJ6sDV3CttrOCbGHApNGwWHg,1115
+acdh_graph_pyutils-0.0.1.dist-info/METADATA,sha256=w_fURFx3QSvZHzCM3CoHHqabX9ZE7LxLH8uLMc7K5Xs,701
+acdh_graph_pyutils-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+acdh_graph_pyutils-0.0.1.dist-info/top_level.txt,sha256=8o5Jnl24gVOJepqS8zUe4oj_06p-BWa6l3yfiJlZqtw,19
+acdh_graph_pyutils-0.0.1.dist-info/RECORD,,
