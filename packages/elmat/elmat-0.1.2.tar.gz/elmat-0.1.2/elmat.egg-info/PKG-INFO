@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: elmat
+Version: 0.1.2
+Summary: Extended License Matrix
+Home-page: https://github.com/hesa/elmat
+Author: Henrik Sanklef
+Author-email: hesa@sandklef.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Legal Industry
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Quality Assurance
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSES/CC-BY-4.0.txt
+License-File: LICENSES/GPL-3.0-or-later.txt
+
+<!--
+SPDX-FileCopyrightText: 2023 Henrik Sandklef <hesa@sandklef.com>
+
+SPDX-License-Identifier: GPL-3.0-or-later
+-->
+
+# elmat
+El Mat - Extension to License Matrix
+
+
