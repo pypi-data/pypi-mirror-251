@@ -1,0 +1,21 @@
+import setuptools
+
+with open("README.md", "r", encoding="utf-8") as fh:
+  long_description = fh.read()
+
+setuptools.setup(
+  name="sustech_ncs",
+  version="0.0.6",
+  author="Yibo Yang, Jimao Shi",
+  author_email="12112222@mail.sustech.edu.cn, 12112218@mail.sustech.edu.cn",
+  description="A python impletation of NCS-C.",
+  long_description=long_description,
+  long_description_content_type="text/markdown",
+  url="https://github.com/Joy-Mine/sustech_ncs",
+  packages=setuptools.find_packages(),
+  classifiers=[
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  ],
+)
