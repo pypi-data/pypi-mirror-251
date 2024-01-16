@@ -1,0 +1,8 @@
+README
+setup.py
+pydocit/__init__.py
+pydocit/extractor.py
+pydocit.egg-info/PKG-INFO
+pydocit.egg-info/SOURCES.txt
+pydocit.egg-info/dependency_links.txt
+pydocit.egg-info/top_level.txt
