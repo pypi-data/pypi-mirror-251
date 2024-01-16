@@ -1,0 +1,309 @@
+
+import std;
+
+
+
+/*
+
+The Hamiltonian is given by 
+ H = \sum_i xi_i P_i
+where xi is real and P_i is a direct product of Pauli matrix.
+
+
+H is stored by { double xi[k], int P[n*k] }    P = [ kxi1, kxi2, ...kxin  ]
+
+
+*/
+
+
+
+
+
+procedure deploy_setInitalState(qbit Q[], int X0) {
+    int i=0;
+    while (X0 != 0) {
+        if ( X0 % 2 == 1) {
+            X( Q[i] );
+        }
+        i = i + 1;
+        X0 = X0 / 2;
+    }
+}
+
+
+
+
+
+procedure evolutionU_onlyZ(qbit Q [], double r, int k []) {
+    // exp(-i * Z...Z * r ), check pauli matrix, when k = 1,2,3 always act Z
+    int l = Q.length;
+    int Zindex [l];
+    int Zc = 0;
+    
+    assert (Q.length == k.length);  
+    for i in 0:l {
+        if (k[i] != 0) {
+            Zindex[Zc] = i;
+            Zc = Zc + 1;
+        }
+    }
+    if (Zc == 0) {
+        // do nothing
+    } else {
+        for i in 1:Zc {
+            CNOT(Q[Zindex[i]],Q[Zindex[0]]);
+        }
+        Rz(2*r, Q[ Zindex[0] ]);
+        for i in 1:Zc {
+            CNOT(Q[Zindex[i]],Q[Zindex[0]]);
+        }
+    }
+}
+
+
+
+
+procedure evolutionU_onlyZ_withCtrl(qbit c, qbit Q [], double r, int k []) {
+    // exp(-i * Z...Z * r ), check pauli matrix, when k = 1,2,3 always act Z
+    int l = Q.length;
+    int Zindex [l];
+    int Zc = 0;
+    
+    assert (Q.length == k.length);  
+    for i in 0:l {
+        if (k[i] != 0) {
+            Zindex[Zc] = i;
+            Zc = Zc + 1;
+        }
+    }
+    if (Zc == 0) {
+        // do nothing
+    } else {
+        for i in 1:Zc {
+            ctrl CNOT(c,Q[Zindex[i]],Q[Zindex[0]]);
+        }
+        ctrl Rz(2*r, c, Q[ Zindex[0] ]);
+        for i in 1:Zc {
+            ctrl CNOT(c,Q[Zindex[i]],Q[Zindex[0]]);
+        }
+    }
+}
+
+
+
+
+
+procedure evolutionU(qbit Q [], double r, int k [] ) {
+    // Q[i] <--> k[i] 
+    assert (Q.length == k.length);
+
+    for i in 0:Q.length:{
+        if ( k[i] == 1 ) {
+            Y2M( Q[i] );
+        } else if ( k[i] == 2 ) {
+            X2P( Q[i] );
+        }
+    }
+    evolutionU_onlyZ( Q, r, k );
+    for i in 0:Q.length:{
+        if ( k[i] == 1 ) {
+            Y2P( Q[i] );
+        } else if ( k[i] == 2 ) {
+            X2M( Q[i] );
+        }
+    }
+}
+
+procedure evolutionU_withCtrl(qbit c, qbit Q [], double r, int k [] ) {
+    // Q[i] <--> k[i] 
+    assert (Q.length == k.length);
+
+    for i in 0:Q.length:{
+        if ( k[i] == 1 ) {
+            ctrl Y2M( c, Q[i] );
+        } else if ( k[i] == 2 ) {
+            ctrl X2P( c, Q[i] );
+        }
+    }
+    evolutionU_onlyZ_withCtrl(c, Q, r, k );
+    for i in 0:Q.length:{
+        if ( k[i] == 1 ) {
+            ctrl Y2P(c, Q[i] );
+        } else if ( k[i] == 2 ) {
+            ctrl X2M(c, Q[i] );
+        }
+    }
+}
+
+
+procedure evolution_of_each_term_in_Hamiltonian( double xi, double tau, qbit Q [], int k[] ) {
+    evolutionU( Q , xi * tau , k );
+} 
+
+procedure evolution_of_each_term_in_Hamiltonian_withCtrl( double xi, double tau, qbit c, qbit Q [], int k[] ) {
+    evolutionU_withCtrl(c, Q , xi * tau , k );
+} 
+
+
+
+procedure deployEXP_H_tau(double tau, qbit Q[] , double xi [] , int P[] ) {
+    int n = Q.length;
+    int k = xi.length; 
+    double xik;
+    assert ( k * n == P.length ); 
+    for i in 0:k {
+        evolution_of_each_term_in_Hamiltonian( xi[i], tau, Q , P[i*n:i*n+n] );
+    }
+}
+
+procedure deployEXP_H_tau_withCtrl(double tau,qbit c, qbit Q[] , double xi [] , int P[] ) {
+    int n = Q.length;
+    int k = xi.length; 
+    double xik;
+    assert ( k * n == P.length ); 
+    for i in 0:k {
+        evolution_of_each_term_in_Hamiltonian_withCtrl( xi[i], tau,c, Q , P[i*n:i*n+n] );
+    }
+}
+
+
+
+
+procedure deploy_expH_TS(double xi [], int P[], double t, qbit Q[], int N ) {
+    // Trotter–Suzuki formula
+    // exp( -iHt) = { \prod_k exp(-i \tau \xi_k P_k ) } ... (N times) ...
+    double tau = t/N; 
+    for i in 0:N {
+        deployEXP_H_tau(tau, Q , xi , P );
+    }
+}
+
+procedure deploy_expH_TS_withCtrl(double xi [], int P[], double t, qbit c, qbit Q[], int N ) {
+    // Trotter–Suzuki formula
+    // exp( -iHt) = { \prod_k exp(-i \tau \xi_k P_k ) } ... (N times) ...
+    double tau = t/N; 
+    for i in 0:N {
+        deployEXP_H_tau_withCtrl(tau, c, Q , xi , P );
+    }
+}
+
+
+
+procedure deploy_pauliOperator(qbit Q[], int p[]) {
+    int n = Q.length;
+    int ki;
+    assert ( n == p.length );
+
+    for j in 0:n {
+        ki = p[j]; 
+        if ( ki == 0 ) {
+        } else if ( ki == 1) {
+            X( Q[j] );
+        } else if ( ki == 2) {
+            Y( Q[j] );
+        } else if ( ki == 3) {
+            Z( Q[j] );
+        } else {
+            assert ( ki>=0 && ki<=3 );
+        }
+    } 
+}
+
+
+procedure deploy_CtrlPauliOperator(qbit c, qbit Q[], int p[]) {
+    int n = Q.length;
+    int ki;
+    assert ( n == p.length );
+
+    for j in 0:n {
+        ki = p[j]; 
+        if ( ki == 0 ) {
+        } else if ( ki == 1) {
+            CNOT( c, Q[j] );
+        } else if ( ki == 2) {
+            X2P( Q[j] );
+            CZ( c, Q[j]);
+            X2M( Q[j] );
+        } else if ( ki == 3) {
+            CZ( c,  Q[j] );
+        } else {
+            assert ( ki>=0 && ki<=3 );
+        }
+    } 
+}
+
+
+
+procedure deploy_pauliOperator_withCtrl(qbit c, qbit Q[], int p[]) {
+    // try not to use this
+    int n = Q.length;
+    int ki;
+    assert ( n == p.length );
+
+    for j in 0:n {
+        ki = p[j]; 
+        if ( ki == 0 ) {
+        } else if ( ki == 1) {
+            ctrl X(c, Q[j] );
+        } else if ( ki == 2) {
+            ctrl Y(c, Q[j] );
+        } else if ( ki == 3) {
+            ctrl Z(c, Q[j] );
+        } else {
+            assert ( ki>=0 && ki<=3 );
+        }
+    } 
+}
+
+procedure deploy_H_term(qbit Q[], int P[], int i ) {
+    // deploy P_k on circuit 
+    int n = Q.length;
+     deploy_pauliOperator( Q, P[i*n:(i+1)*n] ); 
+}
+
+
+
+procedure deploy_PauliOperator_Measurement(qbit Q[], int p[] ) {
+    // for an input state |\psi>, calculation <\psi| P |\psi> 
+    int nq = Q.length;
+    int np = p.length;
+    int ki;
+    assert ( nq == np );  
+    for j in 0:nq {
+        ki = p[j]; 
+        if ( ki == 0 ) {
+            continue;
+        } else if ( ki == 1) {
+            Y2M( Q[j] );
+        } else if ( ki == 2) {
+            X2P( Q[j] );
+        } else if ( ki == 3) {
+             
+        } else {
+            print 50202308071439;
+            assert ( false );  
+        }
+        // M ( Q[j] );
+    }  
+}
+
+
+procedure deploy_measurement_for_Single_H_term(qbit Q[], int P[], int i ) {
+    // deploy measurement of h_i on circuit 
+    int n = Q.length;
+    deploy_PauliOperator_Measurement(Q, P[i*n:(i+1)*n] );
+}
+
+
+
+
+
+procedure TimeEvolutionOnCircuit() {
+    // exp( -i * H * t )
+
+}
+
+
+procedure main() {
+    
+}
