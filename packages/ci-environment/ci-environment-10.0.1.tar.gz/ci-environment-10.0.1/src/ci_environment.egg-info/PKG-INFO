@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: ci-environment
+Version: 10.0.1
+Summary: This library detects the CI environment based on environment variables defined by CI servers.
+Author-email: Cucumber Limited <cukes@googlegroups.com>
+Maintainer-email: Konstantin Goloveshko <kostya.goloveshko@gmail.com>
+License: MIT
+Project-URL: Repository, https://github.com/cucumber/ci-environment
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Topic :: Utilities
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: importlib_resources
+Requires-Dist: python-dotenv
+Provides-Extra: test
+Requires-Dist: tox; extra == "test"
+
+# CiEnvironment
+
+Python implementation of https://github.com/cucumber/ci-environment
