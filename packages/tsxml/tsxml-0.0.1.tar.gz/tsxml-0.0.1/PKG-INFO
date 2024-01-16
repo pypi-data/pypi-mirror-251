@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: tsxml
+Version: 0.0.1
+Summary: Parse TestStand XML to Python dictionary
+Author: Karthik Abiram
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: xmltodict (>=0.13.0,<0.14.0)
+Description-Content-Type: text/markdown
+
+# tsxml
+TestStand XML Parser for Python
+
