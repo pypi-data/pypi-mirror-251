@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+modbus_scanner.egg-info/PKG-INFO
+modbus_scanner.egg-info/SOURCES.txt
+modbus_scanner.egg-info/dependency_links.txt
+modbus_scanner.egg-info/top_level.txt
+src/async_modbus_scanner.py
+src/modbus_scanner.py
