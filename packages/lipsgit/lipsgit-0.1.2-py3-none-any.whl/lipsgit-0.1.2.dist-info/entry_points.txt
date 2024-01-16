@@ -1,0 +1,3 @@
+[console_scripts]
+lipsgit=lipsgit.__main__:entry_point
+
