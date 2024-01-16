@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: DerPyBooruPhi
+Version: 0.10.6
+Summary: Python bindings for Philomena-based boorus' API like Ponybooru, Derpibooru, etc.
+Home-page: https://github.com/Atronar/DerPyBooruPhi
+Author: ATroN
+Author-email: master.atron@gmail.com
+License: Simplified BSD License
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+License-File: LICENSE.txt
+Requires-Dist: requests
+
