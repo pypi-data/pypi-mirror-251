@@ -1,0 +1,3 @@
+[console_scripts]
+elmat = elmat.__main__:main
+
