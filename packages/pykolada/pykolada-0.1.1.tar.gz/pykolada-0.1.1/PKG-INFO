@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: pykolada
+Version: 0.1.1
+Summary: A Python package for interacting with Kolada's statistical API.
+Author-email: Ruben Selander <ruben.selander@nordicintel.com>
+Project-URL: Homepage, https://github.com/reversehobo/pykolada
+Project-URL: Documentation, https://github.com/reversehobo/pykolada/blob/main/README.md
+Project-URL: Repository, https://github.com/reversehobo/pykolada
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: Python
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Provides-Extra: test
+Requires-Dist: pytest; extra == "test"
+
+# PyKolada
+A Python package for interacting with Kolada's statistical API.
+
+## Installation
+The package can be installed from PyPI using pip:
+```bash
+pip install kolada
+```
+OR
+```bash
+pip install pykolada
+```
+
+The two packages are identical, and depend on the same code. The only difference is the name of the package.
+
