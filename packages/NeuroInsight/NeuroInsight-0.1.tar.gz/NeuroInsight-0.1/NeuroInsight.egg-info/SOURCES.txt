@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+NeuroInsight/__init__.py
+NeuroInsight/activation_function.py
+NeuroInsight/back_propagation.py
+NeuroInsight/cost_function.py
+NeuroInsight/evaluation.py
+NeuroInsight/forward_propagation.py
+NeuroInsight/one_hot_encoding.py
+NeuroInsight/parameter_initialization.py
+NeuroInsight/visualization.py
+NeuroInsight.egg-info/PKG-INFO
+NeuroInsight.egg-info/SOURCES.txt
+NeuroInsight.egg-info/dependency_links.txt
+NeuroInsight.egg-info/requires.txt
+NeuroInsight.egg-info/top_level.txt
