@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+r_useragent.egg-info/PKG-INFO
+r_useragent.egg-info/SOURCES.txt
+r_useragent.egg-info/dependency_links.txt
+r_useragent.egg-info/top_level.txt
+random_useragent/__init__.py
+random_useragent/android.py
+random_useragent/chrome.py
+random_useragent/iphone.py
+random_useragent/linux.py
+random_useragent/mac.py
+random_useragent/useragent.py
+random_useragent/windows.py

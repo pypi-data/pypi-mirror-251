@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "r_useragent"
+version = "1.1"
+authors = [
+  { name="saucerman", email="gyq0929@gmail.com" },
+]
+description = "generate random user-agent"
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/saucer-man/random-useragent"
+"Bug Tracker" = "https://github.com/saucer-man/random-useragent/issues"
