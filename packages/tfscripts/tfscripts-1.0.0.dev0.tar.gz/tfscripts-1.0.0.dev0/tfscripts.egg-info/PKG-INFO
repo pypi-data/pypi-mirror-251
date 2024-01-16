@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: tfscripts
+Version: 1.0.0.dev0
+Summary: Collection of TF functions and helpful additions
+Home-page: https://github.com/mhuen/TFScripts
+Author: Mirco Huennefeld
+Author-email: mirco.huennefeld@tu-dortmund.de
+Maintainer: Mirco Huennefeld
+Maintainer-email: mirco.huennefeld@tu-dortmund.de
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: matplotlib
