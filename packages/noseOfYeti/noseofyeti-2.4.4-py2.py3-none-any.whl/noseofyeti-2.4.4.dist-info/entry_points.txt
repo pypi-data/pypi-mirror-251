@@ -1,0 +1,11 @@
+[nose.plugins]
+noseOfYeti = noseOfYeti.plugins.nosetests:Plugin
+
+[pylama.linter]
+pylama_noy = noseOfYeti.plugins.pylama:Linter
+
+[pyls]
+pyls_noy = noseOfYeti.plugins.pyls
+
+[pytest11]
+nose_of_yeti = noseOfYeti.plugins.pytest
