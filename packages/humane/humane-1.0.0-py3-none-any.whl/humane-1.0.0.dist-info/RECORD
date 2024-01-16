@@ -1,0 +1,17 @@
+humane/162-colours.txt,sha256=BYqCz23xgzjdc35MTIdQoutrbf4D0qXSxIBdrLvdZVM,1456
+humane/200-animal-plurals.txt,sha256=aEcdPIQYEHjuoefD8g-zPHbdxIYG0B3WwoaMpX3iDqs,1589
+humane/253-adjectives.txt,sha256=XaqinLoBNEpaLNo_4TSIe1O0OFeFatgMhCHdsC5fgFg,2619
+humane/281-verbs.txt,sha256=UBKKHnn67B8iagVwBnnyUB0udIoIBNUaowd83W2jzlI,1590
+humane/321-adverbs.txt,sha256=jEPMxT1vX_Awz4HQi6-Q6wgowQnKqQTHckI3YzjcY3k,3030
+humane/__init__.py,sha256=bSeGYdgPIvVfFP6KGaSaj-Wz5edZyzgBRFNnNmQjM5E,151
+humane/__main__.py,sha256=R8toRIEpaunLvLRpFhTKF4x0aBUmBLoqHo0IrF4wuTw,82
+humane/cli.py,sha256=IOAzc_T2WJ-yPyrh4oEUPCYImVzu_1egF1ttHdllVPE,1248
+humane/emojihash.py,sha256=qbE16Qi-H8l4juBC0MrKf4YP364SINi4yAXwbG1dWmI,3449
+humane/humanid.py,sha256=bncXl_9qGBiXdfjZt2ivDH8J9Lpo7A_LLknnt0SEDIk,1715
+humane/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+humane/tests/test_humanid.py,sha256=p__STeKi5ze0TvBuazqzYPe-oMh-il7M-UFRtMI4AEY,222
+humane-1.0.0.dist-info/METADATA,sha256=l2yevKXIku9whflNworgohOQMqqojKLVTNtQTQIeKnQ,943
+humane-1.0.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+humane-1.0.0.dist-info/entry_points.txt,sha256=91hz-oQV3LrgKNR7T4s20hL8MH8xiMqccDb8Of4mhR8,43
+humane-1.0.0.dist-info/top_level.txt,sha256=zylFB-IhvJZ0ZE6VCp8fr1Z6j_lxpK725SONO0ngBhU,12
+humane-1.0.0.dist-info/RECORD,,
