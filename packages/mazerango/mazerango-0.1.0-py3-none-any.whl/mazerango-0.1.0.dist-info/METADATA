@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: mazerango
+Version: 0.1.0
+Summary: mazerango template project
+Author: newdlops
+Author-email: newdlops@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: django (>=5.0.1,<6.0.0)
+Requires-Dist: setuptools (>=69.0.3,<70.0.0)
+Description-Content-Type: text/markdown
+
+# initproject
+
