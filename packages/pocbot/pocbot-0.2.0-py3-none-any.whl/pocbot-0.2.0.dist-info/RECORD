@@ -1,0 +1,6 @@
+pocbot/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pocbot/chain_templates.py,sha256=2w8U9w8gfBn5ux6YiShKLHSd526PFAgCoF1NzThCte0,1646
+pocbot/ui_templates.py,sha256=akpvvQuflhUb-OYJGMRYSH2XKe7shamRhvtkYnkeuuo,5960
+pocbot-0.2.0.dist-info/METADATA,sha256=J_3-wWEpwhyL3LNnsM_E_36J4XxKbwtTX029oas0GJs,5250
+pocbot-0.2.0.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+pocbot-0.2.0.dist-info/RECORD,,

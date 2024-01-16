@@ -1,0 +1,127 @@
+Metadata-Version: 2.1
+Name: pocbot
+Version: 0.2.0
+Summary: Easy Streamlit UI template for ChatBots
+Home-page: https://github.com/thisisqubika/pocbot
+License: MIT
+Author: Ezequiel Panzarasa
+Author-email: ezequiel.panzarasa@qubika.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: streamlit (>=1.29.0,<2.0.0)
+Project-URL: Repository, https://github.com/thisisqubika/pocbot
+Description-Content-Type: text/markdown
+
+# PocBot
+
+## Description
+Simple streamlit UI to implement chatbots.
+- Objective: Develop a pip installable package to create easy ChatBot interfaces.
+- Scope: First iteration - Simple UI. It should work out of the box.
+
+To see it used in a real project, check out the [e-commerce chatbot](https://github.com/thisisqubika/data-studio-e-commerce)
+
+## Installation
+Installing is as easy as running `pip install pocbot` in your terminal. Make sure you have your virtual environment activated!
+
+## Usage
+Here's a basic example on how to use pocbot. Let's assume we are chatting with Pikachu, who only knows how to say "pika" a random number of times.<br>
+*The `ChatBotUITemplate` is the simplest approach to create a UI for a chatbot. If you are using a single chain or model, you might want to check out the `SingleModelChatBotUITemplate` class below.*
+
+```python
+from typing import Any, List
+from pocbot.ui_templates import ChatBotUITemplate
+from pocbot.chain_templates import ChatBotChain
+from random import randint
+
+
+# LLM Simulation
+class Pikachu(ChatBotChain):
+    """This is a test chain model"""
+    def __init__(self):
+        pass
+    
+    def invoke(self, input: str, chat_history: List[Any]) -> str:
+        """Method to invoke the simulated chain model"""
+        return " ".join(["pika"] * randint(1, 10)) + "!"
+
+
+# UI
+pocbot = ChatBotUITemplate(name="PikaBot", chain=Pikachu())
+
+
+if __name__ == "__main__":
+    pocbot()
+```
+
+To get started, copy and paste this code in a file in your Python project. Then, one can run it as any other Streamlit app: `streamlit run <file_name>.py`
+
+That's it! You should see a UI in port 8501.
+
+### Brief Explanation
+The `ChatBotUITemplate` class is whre the magic happens. It is thought out to be a simple class that helps one create a UI for a chatbot in a few lines of code. It has the following parameters:
+- `name`: Name of the chatbot. It will be displayed in the UI.
+- `chain`: `ChatBotChain` object. This is the chain that will be used to generate the responses. It is explained in the next section.
+
+The `ChatBotChain` class is designed to act as an interface between the UI and the logic of the chatbot. It si pretty simple. The only constraint is that it must have an `invoke` method (see example above) defined. 
+
+### Single Model ChatBot
+If you are using a single chain or model, you might benefit from using the `SingleModelChatBotUITemplate` class. It is essentially the same as the `ChatBotUITemplate` class, but it allows you to set model parameters from the UI. Right now, it only allows to choose a model and the model's temperature.
+More parameters will be added in the future.<br>
+
+Here's an example on how to use it:
+
+```python
+from typing import Any, List
+from pocbot.ui_templates import SingleModelChatBotUITemplate
+from pocbot.chain_templates import SingleModelChatBotChain
+from random import randint
+
+
+# LLM Simulation
+class Pikachu(SingleModelChatBotChain):
+    """This is a test chain model"""
+    def __init__(self):
+        pass
+    
+    def invoke(self, input: str, chat_history: List[Any], model: str, temperature: float) -> str:
+        """Method to invoke the simulated chain model"""
+        pika_string = " ".join(["pika"] * randint(1, 10)) + "!"
+        params = self._build_chain(model=model, temperature=temperature)
+        return_string = "\n\n".join([pika_string, params])
+        return return_string.capitalize()
+    
+    def _build_chain(self, model: str, temperature: float) -> Any:
+        """Build the chain used to generate the response"""
+        return f"Model: {model}, Temperature: {temperature}"
+
+
+# UI
+pocbot = SingleModelChatBotUITemplate(name="SM PikaBot", chain=Pikachu())
+
+
+if __name__ == "__main__":
+    pocbot()
+```
+
+This is the approach used in Qubika's e-commerce chatbot. See the link to the repository in the References section.
+
+## Contributing
+If you would like to contribute, please fork the repository and use a feature branch. Pull requests are warmly welcome. 
+You can find the repository [here](https://github.com/thisisqubika/pocbot)
+
+## References
+- [Streamlit](https://www.streamlit.io/)
+- [Qubika's e-commerce chatbot](https://github.com/thisisqubika/data-studio-e-commerce)
+
+
+## Room for improvement:
+- UI templates could share a common base class. There is some improvement to be done in terms of inheritance.
+- ChatBot memory handled as a list of messages through `st.state`. This is not ideal. Maybe it could be pickled and cached in a file...
+- Add Unit Tests to ensure that future changes don't break working code.
+
