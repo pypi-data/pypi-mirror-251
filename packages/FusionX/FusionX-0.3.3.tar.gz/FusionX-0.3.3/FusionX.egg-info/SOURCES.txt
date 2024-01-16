@@ -1,0 +1,11 @@
+README.md
+setup.py
+FusionX/__init__.py
+FusionX/__main__.py
+FusionX/try.py
+FusionX.egg-info/PKG-INFO
+FusionX.egg-info/SOURCES.txt
+FusionX.egg-info/dependency_links.txt
+FusionX.egg-info/entry_points.txt
+FusionX.egg-info/requires.txt
+FusionX.egg-info/top_level.txt
