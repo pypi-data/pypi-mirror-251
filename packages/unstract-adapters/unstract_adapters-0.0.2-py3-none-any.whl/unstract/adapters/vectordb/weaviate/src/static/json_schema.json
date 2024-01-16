@@ -1,0 +1,25 @@
+{
+  "title": "Weaviate Vector DB",
+  "type": "object",
+  "required": [
+    "adapter_name",
+    "url"
+  ],
+  "properties": {
+    "adapter_name": {
+      "type": "string",
+      "title": "Name of the VectorDB",
+      "default": "Weaviate VectorDB"
+    },
+    "url": {
+      "type": "string",
+      "title": "URL"
+    },
+    "api_key": {
+      "type": "string",
+      "title": "Api Key",
+      "deafult": "",
+      "format": "password"
+    }
+  }
+}

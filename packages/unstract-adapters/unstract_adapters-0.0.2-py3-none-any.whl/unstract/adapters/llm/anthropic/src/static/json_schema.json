@@ -1,0 +1,39 @@
+{
+  "title": "Anthropic LLM",
+  "type": "object",
+  "required": [
+    "api_key"
+  ],
+  "properties": {
+    "adapter_name": {
+      "type": "string",
+      "title": "Name of the LLM",
+      "default": "Anthropic LLM"
+    },
+    "model": {
+      "type": "string",
+      "title": "Model",
+      "default": ""
+    },
+    "base_url": {
+      "type": "string",
+      "title": "Base URL",
+      "default": ""
+    },
+    "timeout": {
+      "type": "number",
+      "title": "Timeout",
+      "default": ""
+    },
+    "max_retries": {
+      "type": "integer",
+      "title": "Max retries",
+      "default": "",
+      "format": "password"
+    },
+    "api_key": {
+      "type": "string",
+      "title": "API Key"
+    }
+  }
+}

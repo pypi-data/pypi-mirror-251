@@ -1,0 +1,40 @@
+{
+  "title": "Supabase Vector DB",
+  "type": "object",
+  "required": [
+    "adapter_name",
+    "database",
+    "host",
+    "port",
+    "user",
+    "password"
+  ],
+  "properties": {
+    "adapter_name": {
+      "type": "string",
+      "title": "Name of the VectorDB",
+      "default": "Supabase VectorDB"
+    },
+    "database": {
+      "type": "string",
+      "title": "Database"
+    },
+    "host": {
+      "type": "string",
+      "title": "Host"
+    },
+    "port": {
+      "type": "integer",
+      "title": "Port"
+    },
+    "user": {
+      "type": "string",
+      "title": "User"
+    },
+    "password": {
+      "type": "string",
+      "title": "Password",
+      "format": "password"
+    }
+  }
+}

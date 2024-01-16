@@ -1,0 +1,45 @@
+{
+  "title": "Pinecone Vector DB",
+  "type": "object",
+  "required": [
+    "adapter_name",
+    "api_key",
+    "environment",
+    "index_name",
+    "pod_type"
+  ],
+  "properties": {
+    "adapter_name": {
+      "type": "string",
+      "title": "Name of the VectorDB",
+      "default": "Pinecone VectorDB"
+    },
+    "api_key": {
+      "type": "string",
+      "title": "API Key",
+      "format": "password"
+    },
+    "environment": {
+      "type": "string",
+      "title": "Environment"
+    },
+    "index_name": {
+      "type": "string",
+      "title": "Index Name"
+    },
+    "pod_type": {
+      "type": "string",
+      "title": "Pod Type"
+    },
+    "namespace": {
+      "type": "string",
+      "title": "Consistency Level",
+      "default": ""
+    },
+    "add_sparse_vector": {
+      "type": "boolean",
+      "title": "Add Sparse Vector",
+      "default": "false"
+    }
+  }
+}
