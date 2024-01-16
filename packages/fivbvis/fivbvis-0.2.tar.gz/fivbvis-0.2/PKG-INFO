@@ -1,0 +1,86 @@
+Metadata-Version: 2.1
+Name: fivbvis
+Version: 0.2
+Summary: FIVB VIS Web Service Python Client
+Home-page: https://github.com/claromes/fivbvis
+Author: Claromes
+Project-URL: Documentation, https://github.com/claromes/fivbvis/docs/reference.md
+Project-URL: Issue Tracker, https://github.com/claromes/fivbvis/issues
+Keywords: fivbvis fivb volleyball beachvolleyball sports
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+
+# FIVB VIS Python Client
+
+[![PyPI](https://img.shields.io/pypi/v/fivbvis)](https://pypi.org/project/fivbvis/)
+
+Python client library for easy integration with [FIVB VIS Web Service](https://www.fivb.org/VisSDK/VisWebService/#Introduction.html) public data, providing XML and JSON responses.
+
+**This client is not affiliated with the Fédération Internationale de Volleyball (FIVB).**
+
+## Requirements
+
+- Python 3.8+
+
+## Installation
+
+```shell
+pip install fivbvis
+```
+
+## Usage
+Basic example:
+
+```python
+from fivbvis import VolleyMatch
+
+vm = VolleyMatch()
+print(vm.getMatch(9211, response_format="json"))
+```
+JSON return:
+
+```json
+{
+   "data":{
+      "assistantScorerCountryCode":"None",
+      "assistantScorerFirstName":"None",
+      "assistantScorerLastName":"None",
+      "beginDateTimeUtc":"2018-10-07T04:25:00Z",
+      "buyTicketsUrl":"",
+      "city":"Nagoya",
+      "countryCode":"JP",
+      ...
+   }
+}
+```
+## Documentation
+
+[Web Service Requests Reference](docs/reference.md)
+
+## Development
+
+$ `git clone git@github.com:claromes/fivbvis.git`
+
+$ `cd fivbvis`
+
+$ `pip install -r requirements.txt`
+
+$ `pip install --editable .`
+
+## Author
+
+[Claromes](https://claromes.com)
