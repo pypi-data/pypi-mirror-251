@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "citest-poetry"
+version = "0.1.0"
+description = ""
+authors = ["Max Mehl <mail@mehl.mx>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+gitpython = "3.1.41"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
