@@ -1,0 +1,2 @@
+[console_scripts]
+game-of-life = conway_engine.simulation:main

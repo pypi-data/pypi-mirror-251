@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+PYPI_README.md
+README.md
+setup.py
+conway_engine/__init__.py
+conway_engine/simulation.py
+conway_engine.egg-info/PKG-INFO
+conway_engine.egg-info/SOURCES.txt
+conway_engine.egg-info/dependency_links.txt
+conway_engine.egg-info/entry_points.txt
+conway_engine.egg-info/requires.txt
+conway_engine.egg-info/top_level.txt
