@@ -1,0 +1,2 @@
+[console_scripts]
+p8n-importer = P8nImporter.cli:main
