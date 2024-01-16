@@ -1,0 +1,100 @@
+Metadata-Version: 2.1
+Name: remove_quarantine
+Version: 2023.2.0
+Summary: On install removes quarantine bit from Indigo Plugins
+Author: GlennNZ
+Author-email: GlennNZ <Try_Forum@IndigoDomo.com>
+Maintainer-email: GlennNZ <See_Forum@Indigodomo.com>
+License: MIT License
+        
+        Copyright (c) [2023]
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+Project-URL: Homepage, https://github.com/Ghawken/remove_quarantine
+Project-URL: Bug Reports, https://github.com/Ghawken/remove_quarantine
+Project-URL: Funding, https://donate.pypi.org
+Project-URL: Say Thanks!, https://github.com/Ghawken/remove_quarantine
+Project-URL: Source, https://github.com/Ghawken/remove_quarantine
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# remove_quarantine pypi package
+
+A package that on install removes quarantine bit from Indigo installed Plugins
+
+
+Usage:  Should be used behind the scenes to remove quarantine plugin related issues
+
+The package consists of very little, but on pip3 install remove_quarantine will run a script to remove quarantine bit from Indigo plugin packages
+
+Simply having this in the requirements.txt file means with every pip3 install of this library all current indigoPlugin bundles within Plugin and Plugin (Disabled) folders are unquarantined.  This includes the current folder which is having libraries install into it.
+In my test this completely resolves the binary quarantine issue.
+
+It is hard coded to Indigo version through lack of any possible other approach.  Hence will need new releases with Major Indigo version changes.
+
+## Installation
+
+To install the package, run:
+
+```python
+pip3 install remove_quarantine==2023.2
+```
+With version here equally the Indigo version you wish to apply to.
+
+## Usage
+
+Here's how you can use the package:
+
+Add it to requirements.txt
+
+requirements.txt
+`remove_quarantine==2023.2`
+
+No import in code needed.   No further code needed.
+
+Version number == Indigo version number
+
+## Other usage
+
+Below is not needed, simply have this in the requirements.txt file means with every pip3 install of this library all current indigoPlugin bundles within Plugin and Plugin (Disabled) folders are unquarantined.  This includes the current folder which is having libraries install into it.
+In my test this completely resolves the binary quarantine issue.
+
+```python
+from remove_quarantine import remove_quarantine, show_logging
+print(show_logging()) ## Will display logging of installation removal of quarantine bits
+
+results_remove = remove_quarantine()
+print(results_remove)
+## Will re-run the quarantine removal process and print the results from this.
+```
+
+
+```python
+pip3 remove_quarantine
+```
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details
+
+MIT License
+
+Copyright (c) [2023]
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
