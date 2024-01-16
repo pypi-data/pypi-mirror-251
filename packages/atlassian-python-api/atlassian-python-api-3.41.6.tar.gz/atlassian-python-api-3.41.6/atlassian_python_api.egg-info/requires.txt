@@ -1,0 +1,9 @@
+deprecated
+requests
+six
+oauthlib
+requests_oauthlib
+jmespath
+
+[kerberos]
+requests-kerberos
