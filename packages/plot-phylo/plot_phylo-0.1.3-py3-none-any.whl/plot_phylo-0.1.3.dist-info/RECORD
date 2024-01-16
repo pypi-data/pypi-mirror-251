@@ -1,0 +1,9 @@
+plot_phylo/__init__.py,sha256=q60Upk4KkFvf9Z35Hfs_Lc-xzgPPk8Q4Fh8J6famxyM,99
+plot_phylo/_version.py,sha256=XEqb2aiIn8fzGE68Mph4ck1FtQqsR_am0wRWvrYPffQ,22
+plot_phylo/plot_phylo.py,sha256=NXwZ8EePRhu8VLXGwA7jp-mSP0DwuX3t_sqyu-Gf3WM,20027
+plot_phylo-0.1.3.data/scripts/plot_phylo.py,sha256=oqLf8-R7rT_Xm3FUolLPkcpmQCkjCggFSGZKwvcN33U,20013
+plot_phylo-0.1.3.dist-info/LICENSE,sha256=pi8UxlCJwfzvPV7o-Nhdw1L1lUzkM5Gc1QBh_53sD1M,1086
+plot_phylo-0.1.3.dist-info/METADATA,sha256=KJ3oZu2OPmYwKahTNSKfBSlkK2hUJgqdU9Nc6Muj3rw,15723
+plot_phylo-0.1.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+plot_phylo-0.1.3.dist-info/top_level.txt,sha256=cse6gMCxIJWnwu9uUsLjTbTelaTnv7YJzuKm6BzCdRo,11
+plot_phylo-0.1.3.dist-info/RECORD,,
