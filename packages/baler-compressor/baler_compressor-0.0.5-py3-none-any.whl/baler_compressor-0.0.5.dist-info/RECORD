@@ -1,0 +1,14 @@
+baler_compressor/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+baler_compressor/compressor.py,sha256=8ygKRrPQHL4RbyxeUsNf3pwtlcbV9hBElOcB6dXYqtw,3339
+baler_compressor/config.py,sha256=TGF8pNOTj5Ad0GXsu8t5jVWy54cJAajvK45cxWbomeg,51
+baler_compressor/data_processing.py,sha256=XWwkn7LmG4e-7EGpX_4degTvEG3tKi9PGfzti8pIggc,7174
+baler_compressor/decompressor.py,sha256=fX3b-TubrfcnqtE7YUFKPpvpH5anRQAJknc2Ls7qjAc,3938
+baler_compressor/helper.py,sha256=1KKYkoXLNVNPDU28sMUREYCDkIa-W443L3_sH1jbizY,28192
+baler_compressor/models.py,sha256=1wJg2NJ0WFNtUSLpzmbV6l8D7-9KmuHTimIQvD_QuAQ,20526
+baler_compressor/trainer.py,sha256=lijaVS1X2phfVAknyJU416iUghWiyNStJVS2i0-zX4I,16147
+baler_compressor/utils.py,sha256=yr1MS_eRLMPlCXAf2SkejEiw32zenncTvbCdWK5EML8,12996
+baler_compressor-0.0.5.dist-info/METADATA,sha256=VcqyJ47wIFySiri3Ix7fZJF7zz__TwQH_m3HKQUbT_w,1832
+baler_compressor-0.0.5.dist-info/WHEEL,sha256=mRYSEL3Ih6g5a_CVMIcwiF__0Ae4_gLYh01YFNwiq1k,87
+baler_compressor-0.0.5.dist-info/licenses/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+baler_compressor-0.0.5.dist-info/licenses/NOTICE,sha256=4WmPpFiF89PvuIjNmXOShPqLDWhCfqqzvqy877O5mM8,3897
+baler_compressor-0.0.5.dist-info/RECORD,,
