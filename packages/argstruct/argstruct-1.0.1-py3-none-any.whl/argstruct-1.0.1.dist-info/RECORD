@@ -1,0 +1,13 @@
+argstruct/__init__.py,sha256=k7slQw1DM9D1XB469WOobVVCQ8QHEAnN1WgRgBYVTAI,6832
+argstruct/documentation.py,sha256=BiubG00zxQ3CKxlENJeZOzYqabwg7SDDOqFF6XZ7NEE,8361
+argstruct/object.py,sha256=2ZmRn849ojJUfjUiPtCdNlKf9ZgM_kVlwGDWpO4p6hQ,10101
+argstruct/specs/argmap.command.args-root.spec,sha256=4xnIO_4O6CHiKzCyDpWoNgslxCK0ByWfifvp-A44c6g,601
+argstruct/specs/argmap.command.args.spec,sha256=NJDsQr5amzCfWR1m5P5qWrGlwdePlyUJcZ8rOCaNvrQ,1141
+argstruct/specs/argmap.command.spec,sha256=4gz3gd3Q0kTZSJHXV1_yLJWqTCIZ4wK-2p8CmiCfG54,1122
+argstruct/specs/argmap.commands.spec,sha256=nkLyZhxQdaH5AXXBLRZ0yQxYZ4g4VTKX8nn3R-bA2f8,256
+argstruct/specs/argmap.root.spec,sha256=hlxnEBXgZTJ0z0TRFsPqfNqFDGzyA7MH3EtwdJuETG8,495
+argstruct-1.0.1.dist-info/METADATA,sha256=neEd68Efj2aHMTv9HUAjidhXrq9Q0axwOGTQHURVCAk,9861
+argstruct-1.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+argstruct-1.0.1.dist-info/entry_points.txt,sha256=NO7PsJKKfYIt2hg_v4zzatXQ49b7rqfjmfkfPO8D0Bo,62
+argstruct-1.0.1.dist-info/top_level.txt,sha256=2udlf44TqzYZJk0oiBoo97BBvZ5f-iaevGjxWSgbw-Y,10
+argstruct-1.0.1.dist-info/RECORD,,
