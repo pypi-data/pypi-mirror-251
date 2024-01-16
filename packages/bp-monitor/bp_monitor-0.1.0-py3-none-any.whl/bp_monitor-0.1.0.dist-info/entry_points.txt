@@ -1,0 +1,2 @@
+[console_scripts]
+bp_monitor.run = bp_monitor.run:run
