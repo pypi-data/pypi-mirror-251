@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "ensembl-variant-lookup"
+version = "0.1.2"
+description = "a user-friendly interface for searching individual variants, batch queries, and exploring gene regions from the Ensembl database."
+authors = ["Dany Mukesha <danymukesha@gmail.com>"]
+homepage = "https://github.com/danymukesha/ensembl-variant-lookup"
+readme = "README.md"
+keywords = ["api", "variant", "genomics-data", "ensembl-rest", "danymukesha"]
+packages = [{include = "ensembl_variant_lookup"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+flask = "^2.0"
+requests = "^2.26"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.4.4"
+requests-mock = "^1.11.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
