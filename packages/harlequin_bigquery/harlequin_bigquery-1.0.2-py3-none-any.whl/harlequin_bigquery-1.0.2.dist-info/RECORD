@@ -1,0 +1,11 @@
+harlequin_bigquery/__init__.py,sha256=ktX-hrZvG0uFEYjeZn6eyN_DwhgB4dolnqhOHl05hUw,86
+harlequin_bigquery/adapter.py,sha256=daN_PmZAJ4s5FfTdFSLymM6TDD_H8BTV-ufpUAOZJ_w,9516
+harlequin_bigquery/cli_options.py,sha256=aos5TASOhHl6KPEFv8EQtegii6JsgDgPvh01enW03aM,1130
+harlequin_bigquery/functions.py,sha256=yVcDhHGnFIrRoOY1J909j7GQ8u9FzMaxT7exbGOigt8,6353
+harlequin_bigquery/keywords.py,sha256=aCxByID79PFVfFaLHzB1sWxugXm9bYhlcbKLJegJ0BY,1385
+harlequin_bigquery/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+harlequin_bigquery-1.0.2.dist-info/LICENSE,sha256=I6gFZ_Hn1HF--HccWv0gWgGXhATfELMC9gum8M5dFn4,1068
+harlequin_bigquery-1.0.2.dist-info/METADATA,sha256=dBln2DZ-RTwKJ6JUgRNUQKgiwVcFyjEWFxjmamTjBRA,2242
+harlequin_bigquery-1.0.2.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+harlequin_bigquery-1.0.2.dist-info/entry_points.txt,sha256=i1kTpqHMgDy2wnKQVk8bCQhubLz-1hxebBd3uMfaVmk,65
+harlequin_bigquery-1.0.2.dist-info/RECORD,,
