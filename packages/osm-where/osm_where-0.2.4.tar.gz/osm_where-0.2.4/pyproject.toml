@@ -1,0 +1,33 @@
+[project]
+name = "osm_where"
+description = "Get geo: URI for given locality from OSM"
+version = "0.2.4"
+requires-python = ">=3.6"
+authors = [
+    { name = "Matěj Cepl", email = "mcepl@cepl.eu" }
+]
+license = { file="LICENSE" }
+readme = "README.md"
+dependencies = [
+    "OSMPythonTools",
+    "pyxdg",
+    "shapely",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: GIS",
+    "Environment :: Console",
+]
+
+[project.scripts]
+osm_where = "osm_where:main"
+
+[project.urls]
+homepage = "https://redcrew.org/cgit/osm_where.git"
+repository = "https://git.sr.ht/~mcepl/osm_where"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
