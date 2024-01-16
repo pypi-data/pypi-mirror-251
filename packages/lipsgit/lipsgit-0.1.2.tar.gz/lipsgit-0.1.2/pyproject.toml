@@ -1,0 +1,56 @@
+[tool.poetry]
+name = "lipsgit"
+version = "0.1.2"
+description = "😍 Command line tool for enabling pretty emoji commits"
+authors = ["Joss Moffatt <josshmoffatt@gmail.com>"]
+license = "MIT"
+packages = [
+  {include = "lipsgit"}
+]
+readme = "README.md"
+homepage = "https://lipsgit.docs.joss.dev/"
+repository = "https://github.com/jossmoff/lipsgit"
+documentation = "https://lipsgit.docs.joss.dev/getting-started"
+
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: User Interfaces",
+    "Topic :: Software Development :: Libraries :: Application Frameworks",
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+rich-click = "~1.7.1"
+inquirer = "~3.2.1"
+
+
+
+[tool.poetry.dev-dependencies]
+assertpy = "~1.1.0"
+pytest = "==7.4.4"
+pytest-cov = "==4.1.0"
+mutmut = "~2.4.4"
+bandit = "^1.7.0"
+ruff = "0.1.13"
+
+[build-system]
+requires = ["poetry-core>=1.0.0", "poetry-dynamic-versioning>=1.0.0,<2.0.0"]
+build-backend = "poetry_dynamic_versioning.backend"
+
+[tool.poetry-dynamic-versioning]
+enable = false
+
+[tool.poetry.scripts]
+lipsgit = "lipsgit.__main__:entry_point"
+
+[tool.ruff]
+line-length = 80
+indent-width = 4
