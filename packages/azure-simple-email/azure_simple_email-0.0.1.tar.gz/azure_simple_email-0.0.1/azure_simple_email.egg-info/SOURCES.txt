@@ -1,0 +1,6 @@
+README.md
+setup.py
+azure_simple_email.egg-info/PKG-INFO
+azure_simple_email.egg-info/SOURCES.txt
+azure_simple_email.egg-info/dependency_links.txt
+azure_simple_email.egg-info/top_level.txt
