@@ -1,0 +1,14 @@
+fugo/__init__.py,sha256=c_Ri0fDrulDm1FTTjWX9JpkVoPgM2ofvGKqVvE53hC8,171
+fugo/chord.py,sha256=QX6eb_hL-q12poNGdDq_WT0fiDSi9KKbvTbZJCLyHlY,7258
+fugo/duration.py,sha256=e3jsiY2Frz26o46Y3ipi8QniKNcdlhhZtV83Uhgynjc,2180
+fugo/interval.py,sha256=5l8yhYSYBQMKgvK-MPGuzTfDuyxvG7EHaDEhARu6yLo,7091
+fugo/key.py,sha256=rJ1BnEOUlCjsYNbOxPwp2icDyM7Dcbizi63xPApd7wY,4420
+fugo/meter.py,sha256=5-OYvYL5ar_rWS4LzQxTQlUl0_tW6MWZ-hPc-fugKq8,304
+fugo/motion.py,sha256=TmJPD2jIajhbVGNTx9Iyn83W6pEUbApScxCZnybfPSc,3700
+fugo/note.py,sha256=btS0EkcDtRSkXuU7_2TCrKUH4_mhZW_ODBlr9U-PfUg,11779
+fugo/time.py,sha256=rceiS8u_swv7nSyeJrHFRzCISvKj0ilLO34rZ3aUvLg,788
+fugo-0.0.4.dist-info/LICENSE,sha256=wrJPGzNNldl1I4QM6KV2a0OIOMymMJxHNYUmb83EeBc,1078
+fugo-0.0.4.dist-info/METADATA,sha256=iihhuWelhs8dKdommWNbnl50cSCJZLoddNAIEQwSrLc,2622
+fugo-0.0.4.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+fugo-0.0.4.dist-info/top_level.txt,sha256=QKIgC9R26OaR6IZVXQs9Z0SxXnYViNp7BMhBTroWt64,5
+fugo-0.0.4.dist-info/RECORD,,
