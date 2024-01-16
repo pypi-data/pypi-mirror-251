@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+src/pibo.egg-info/PKG-INFO
+src/pibo.egg-info/SOURCES.txt
+src/pibo.egg-info/dependency_links.txt
+src/pibo.egg-info/top_level.txt
