@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: glider_profiles
+Version: 0.2.0
+Summary: Module split Slocum ocean glider data into profiles
+Home-page: 
+Author: Lucas Merckelbach
+Author-email: Lucas Merckelbach <lucas.merckelbach@hereon.de>
+License: GPL
+Project-URL: Homepage, https://github.com/smerckel/glider_profiles
+Project-URL: Issues, https://github.com/smerckel/glider_profiles/issues
+Platform: UNIX
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: dbdreader>=0.5.6
+
+# glider_profiles
+Processing ocean glider data as profiles
+
+See document on www.readthedocs.org.

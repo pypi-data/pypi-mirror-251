@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/glider_profiles/__init__.py
+src/glider_profiles/profiles.py
+src/glider_profiles/version.py
+src/glider_profiles.egg-info/PKG-INFO
+src/glider_profiles.egg-info/SOURCES.txt
+src/glider_profiles.egg-info/dependency_links.txt
+src/glider_profiles.egg-info/requires.txt
+src/glider_profiles.egg-info/top_level.txt
+tests/test_gain_delay.py
+tests/test_profiles.py
