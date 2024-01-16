@@ -1,0 +1,11 @@
+-r base.in
+graphviz
+ipympl
+kaleido
+mpltoolbox
+pandas
+plotly
+pytest
+pythreejs
+scipy
+xarray
