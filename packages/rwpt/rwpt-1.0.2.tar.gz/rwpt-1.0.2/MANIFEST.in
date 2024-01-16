@@ -1,0 +1,4 @@
+include rwpt/*.py
+include rwpt/rodna/tokenizer.py rwpt/rodna/README.md
+include rwpt/rodna/data/*.txt
+include rwpt/model/vocab.txt
