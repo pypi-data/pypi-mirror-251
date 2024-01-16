@@ -1,0 +1,12 @@
+
+[linting]
+pylint
+mypy
+typing-extensions
+pre-commit
+ruff
+
+[testing]
+pytest
+pytest-cov
+pytest-xdist
