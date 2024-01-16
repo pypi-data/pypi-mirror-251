@@ -1,0 +1,39 @@
+{
+  "title": "AnyScale LLM",
+  "type": "object",
+  "required": [
+    "api_key"
+  ],
+  "properties": {
+    "adapter_name": {
+      "type": "string",
+      "title": "Name of the LLM",
+      "default": "AnyScale LLM"
+    },
+    "model": {
+      "type": "string",
+      "title": "Model",
+      "default": ""
+    },
+    "additional_kwargs": {
+      "type": "string",
+      "title": "Additional kwargs",
+      "default": ""
+    },
+    "max_retries": {
+      "type": "integer",
+      "title": "Max retries",
+      "default": ""
+    },
+    "api_base": {
+      "type": "string",
+      "title": "API Base",
+      "default": ""
+    },
+    "api_key": {
+      "type": "string",
+      "title": "API Key",
+      "format": "password"
+    }
+  }
+}

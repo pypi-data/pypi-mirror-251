@@ -1,0 +1,30 @@
+{
+  "title": "Qdrant FastEmbed Embedding",
+  "type": "object",
+  "required": [
+    "adapter_name",
+    "model_name",
+    "vector_size"
+  ],
+  "properties": {
+    "adapter_name": {
+      "type": "string",
+      "title": "Name of the Embedding",
+      "default": "Qdrant FastEmbed Embedding"
+    },
+    "model_name": {
+      "type": "string",
+      "title": "Model"
+    },
+    "max_length": {
+      "type": "integer",
+      "title": "Max Length",
+      "default": ""
+    },
+    "vector_size": {
+      "type": "integer",
+      "title": "Vector Size",
+      "default": ""
+    }
+  }
+}

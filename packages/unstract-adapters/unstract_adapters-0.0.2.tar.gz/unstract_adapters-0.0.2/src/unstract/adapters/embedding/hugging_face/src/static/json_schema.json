@@ -1,0 +1,45 @@
+{
+  "title": "Hugging Face Embedding",
+  "type": "object",
+  "required": [
+    "adapter_name",
+    "model_name",
+    "vector_size"
+  ],
+  "properties": {
+    "adapter_name": {
+      "type": "string",
+      "title": "Name of the Embedding",
+      "default": "HuggingFace Embedding"
+    },
+    "model_name": {
+      "type": "string",
+      "title": "Model Name"
+    },
+    "tokenizer_name": {
+      "type": "string",
+      "title": "Tokenizer Name",
+      "default": ""
+    },
+    "max_length": {
+      "type": "integer",
+      "title": "Max Length",
+      "default": ""
+    },
+    "normalize": {
+      "type": "boolean",
+      "title": "Normalize",
+      "default": "true"
+    },
+    "embed_batch_size": {
+      "type": "integer",
+      "title": "Embed Batch Size",
+      "default": ""
+    },
+    "vector_size": {
+      "type": "integer",
+      "title": "Vector Size",
+      "default": ""
+    }
+  }
+}

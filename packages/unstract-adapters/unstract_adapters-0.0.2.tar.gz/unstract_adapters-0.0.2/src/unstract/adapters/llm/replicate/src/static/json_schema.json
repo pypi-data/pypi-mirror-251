@@ -1,0 +1,30 @@
+{
+  "title": "Replicate LLM",
+  "type": "object",
+  "required": [
+    "adapter_name",
+    "api_key",
+    "model"
+  ],
+  "properties": {
+    "adapter_name": {
+      "type": "string",
+      "title": "Name of the LLM",
+      "default": "Replicate LLM"
+    },
+    "model": {
+      "type": "string",
+      "title": "Model"
+    },
+    "api_key": {
+      "type": "string",
+      "title": "API Key",
+      "format": "password"
+    },
+    "image": {
+      "type": "string",
+      "title": "Image",
+      "default": ""
+    }
+  }
+}

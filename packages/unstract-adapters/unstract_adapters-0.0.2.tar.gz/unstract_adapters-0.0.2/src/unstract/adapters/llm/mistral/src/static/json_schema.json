@@ -1,0 +1,45 @@
+{
+  "definitions": {
+    "models": {
+      "enumNames": [
+        "mistral-tiny",
+        "mistral-small",
+        "mistral-medium"
+      ],
+      "enum": [
+        {
+          "name": "mistral-tiny"
+        },
+        {
+          "name": "mistral-small"
+        },
+        {
+          "name": "mistral-medium"
+        }
+      ]
+    }
+  },
+  "title": "Mistral AI LLM",
+  "type": "object",
+  "required": [
+    "adapter_name",
+    "api_key",
+    "model"
+  ],
+  "properties": {
+    "adapter_name": {
+      "type": "string",
+      "title": "Name of the LLM",
+      "default": "Mistral LLM"
+    },
+    "model": {
+      "title": "Model",
+      "$ref": "#/definitions/models"
+    },
+    "api_key": {
+      "type": "string",
+      "title": "API Key",
+      "format": "password"
+    }
+  }
+}

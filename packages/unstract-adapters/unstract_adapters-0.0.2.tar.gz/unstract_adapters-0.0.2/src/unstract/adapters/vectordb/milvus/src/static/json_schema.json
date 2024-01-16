@@ -1,0 +1,44 @@
+{
+  "title": "Milvus Vector DB",
+  "type": "object",
+  "required": [
+    "adapter_name",
+    "uri",
+    "token",
+    "collection_name"
+  ],
+  "properties": {
+    "adapter_name": {
+      "type": "string",
+      "title": "Name of the VectorDB",
+      "default": "Milvus VectorDB"
+    },
+    "uri": {
+      "type": "string",
+      "title": "URI"
+    },
+    "token": {
+      "type": "string",
+      "title": "Token"
+    },
+    "collection_name": {
+      "type": "string",
+      "title": "Collection Name"
+    },
+    "similarity_metric": {
+      "type": "string",
+      "title": "Similarity Metric",
+      "default": ""
+    },
+    "consistency_level": {
+      "type": "string",
+      "title": "Consistency Level",
+      "default": ""
+    },
+    "overwrite": {
+      "type": "boolean",
+      "title": "Overwrite",
+      "default": "false"
+    }
+  }
+}

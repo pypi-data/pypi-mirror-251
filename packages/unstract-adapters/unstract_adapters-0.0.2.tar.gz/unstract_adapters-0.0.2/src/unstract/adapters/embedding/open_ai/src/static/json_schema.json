@@ -1,0 +1,57 @@
+{
+  "title": "Open AI Embedding",
+  "type": "object",
+  "required": [
+    "adapter_name",
+    "api_key",
+    "vector_size"
+  ],
+  "properties": {
+    "adapter_name": {
+      "type": "string",
+      "title": "Name of the Embedding",
+      "default": "OpenAI Embedding"
+    },
+    "model": {
+      "type": "string",
+      "title": "Model",
+      "default": ""
+    },
+    "embed_batch_size": {
+      "type": "integer",
+      "title": "Embed Batch Size",
+      "default": ""
+    },
+    "api_key": {
+      "type": "string",
+      "title": "API Key",
+      "default": "",
+      "format": "password"
+    },
+    "api_base": {
+      "type": "string",
+      "title": "API Base",
+      "default": ""
+    },
+    "api_version": {
+      "type": "string",
+      "title": "API Version",
+      "default": ""
+    },
+    "max_retries": {
+      "type": "integer",
+      "title": "Max retries",
+      "default": ""
+    },
+    "timeout": {
+      "type": "number",
+      "title": "timeout",
+      "default": ""
+    },
+    "vector_size": {
+      "type": "integer",
+      "title": "Vector Size",
+      "default": ""
+    }
+  }
+}

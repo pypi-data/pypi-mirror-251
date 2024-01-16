@@ -1,0 +1,62 @@
+{
+  "title": "Azure Open AI Embedding",
+  "type": "object",
+  "required": [
+    "adapter_name",
+    "model",
+    "api_key",
+    "azure_endpoint",
+    "api_version",
+    "engine",
+    "vector_size"
+  ],
+  "properties": {
+    "adapter_name": {
+      "type": "string",
+      "title": "Name of the Embedding",
+      "default": "Azure OpenAI Embedding"
+    },
+    "model": {
+      "type": "string",
+      "title": "Model"
+    },
+    "embed_batch_size": {
+      "type": "integer",
+      "title": "Embedding Batch Size",
+      "default": "15"
+    },
+    "api_key": {
+      "type": "string",
+      "title": "API Key",
+      "format": "password"
+    },
+    "api_version": {
+      "type": "string",
+      "title": "API Version"
+    },
+    "azure_endpoint": {
+      "type": "string",
+      "title": "Azure Endpoint"
+    },
+    "max_retries": {
+      "type": "integer",
+      "title": "Max retries",
+      "default": ""
+    },
+    "timeout": {
+      "type": "number",
+      "title": "Timeout",
+      "default": ""
+    },
+    "vector_size": {
+      "type": "integer",
+      "title": "Vector Size",
+      "default": ""
+    },
+    "engine": {
+      "type": "string",
+      "title": "Engine",
+      "default": ""
+    }
+  }
+}

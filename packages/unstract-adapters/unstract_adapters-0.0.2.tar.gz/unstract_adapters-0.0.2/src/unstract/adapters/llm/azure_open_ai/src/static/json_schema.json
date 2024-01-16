@@ -1,0 +1,45 @@
+{
+  "title": "Azure Open AI LLM",
+  "type": "object",
+  "required": [
+    "adapter_name",
+    "model",
+    "api_key",
+    "azure_endpoint",
+    "api_version",
+    "engine"
+  ],
+  "properties": {
+    "adapter_name": {
+      "type": "string",
+      "title": "Name of the LLM",
+      "default": "Azure OpenAI LLM"
+    },
+    "model": {
+      "type": "string",
+      "title": "Model"
+    },
+    "max_retries": {
+      "type": "integer",
+      "title": "Max retries",
+      "default": ""
+    },
+    "api_key": {
+      "type": "string",
+      "title": "API Key",
+      "format": "password"
+    },
+    "api_version": {
+      "type": "string",
+      "title": "API Version"
+    },
+    "azure_endpoint": {
+      "type": "string",
+      "title": "Azure Endpoint"
+    },
+    "engine": {
+      "type": "string",
+      "title": "Engine"
+    }
+  }
+}
