@@ -1,0 +1,40 @@
+[tool.poetry]
+name = "casual"
+version = "0.1.0"
+description = ""
+authors = ["Horia Filimonescu <horia.filimonescu+github@gmail.com>"]
+readme = "README.md"
+packages = [{ include = "casual", from = "src" }]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+quart = "^0.19.4"
+python-dotenv = "^1.0.0"
+
+[tool.poetry.scripts]
+start = "casual:run"
+
+[tool.black]
+line-length = 100
+target-version = ["py38"]
+
+[tool.mypy]
+allow_redefinition = true
+disallow_any_generics = false
+disallow_subclassing_any = true
+disallow_untyped_calls = false
+disallow_untyped_defs = true
+implicit_reexport = true
+no_implicit_optional = true
+show_error_codes = true
+strict = true
+strict_equality = true
+strict_optional = false
+warn_redundant_casts = true
+warn_return_any = false
+warn_unused_configs = true
+warn_unused_ignores = true
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
