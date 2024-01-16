@@ -1,0 +1,20 @@
+
+Add extra header merge patch to modify headers?  unclear if needed, can be done in Python
+
+Add README.md
+
+Add multi-platform builds to setup.py
+
+
+Examples:
+
+reading record by record
+
+reading from an input stream
+
+reading into traces
+
+reading and repacking
+
+writing from external data
+
