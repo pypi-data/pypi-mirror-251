@@ -1,0 +1,16 @@
+notused/IRTABS.py,sha256=_fxBBY-5bTj8PWFldigNdcp3TO4-cjZt9HXQ-9CkIeQ,3408
+tests/__init__.py,sha256=hZsTUNnxVnmp1f7N8xMSKEmvjfVBYEsbtN2rLiWghZE,28
+tests/test_baseline.py,sha256=WPvvSC3eXD-7tFCVF5PjrCYpFHTpFgLzZ4V0S80d7m4,2763
+tests/test_mixing.py,sha256=CAaobJ9wo8OLzpmDoZDPvga01iT9xE-19ZLnWNMH-jU,817
+tests/test_mlclassificator.py,sha256=t2Dpf0fRkCPgzv9J1LVrT_ExYTIajvJUsudd_qjMfhc,2718
+tests/test_mlexplorer.py,sha256=DPRy6_hjEhLiCBjY8CgaACcqc4_HD8LEEu-b6kmwd2U,1288
+tests/test_mlregressor.py,sha256=32qUou8esCmb3qpKaaW87SyuIRV25UjSRvTCulDnxE8,1520
+tests/test_rameau.py,sha256=LfCSa7H1KxSh4om36KyQaca_2aw71ACSUcFrKEtfdUQ,279
+tests/test_smooth.py,sha256=pPRbIwNBFaGy_kv_3L9Bfezn16QIcMxGTVbIJiOTHh4,2891
+tests/test_spectranization.py,sha256=5S7GCMnckEQM0gb55GdSTSTIB7pwUk4_00PGwoVMvWI,1919
+tests/test_tlcorrection.py,sha256=Kmn-6k3iPB0T_N6Xq3ljurHiEclzuJgoP9YlzD6LJDU,1447
+rampy-0.5.1.dist-info/LICENSE,sha256=OduPms8DZZWiVm6j_lYLx71l2HSfCI4PSk7y-KbLSzQ,18026
+rampy-0.5.1.dist-info/METADATA,sha256=j-xAb_ku6vc_LXpLGD-zx2YOXUhRHD9UAylIepcU7IA,23091
+rampy-0.5.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+rampy-0.5.1.dist-info/top_level.txt,sha256=EUIdrndEU5jyQH3-ywjlalCd2Pf0qR7ZaqD4xIbDM9s,14
+rampy-0.5.1.dist-info/RECORD,,
