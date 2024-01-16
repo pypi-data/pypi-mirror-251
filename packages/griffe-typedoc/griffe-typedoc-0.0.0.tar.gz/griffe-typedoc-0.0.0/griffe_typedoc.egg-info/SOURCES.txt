@@ -1,0 +1,6 @@
+README.md
+pyproject.toml
+griffe_typedoc.egg-info/PKG-INFO
+griffe_typedoc.egg-info/SOURCES.txt
+griffe_typedoc.egg-info/dependency_links.txt
+griffe_typedoc.egg-info/top_level.txt
