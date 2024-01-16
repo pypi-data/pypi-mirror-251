@@ -1,0 +1,14 @@
+README.md
+license.txt
+setup.py
+Skyctl/__init__.py
+Skyctl/terminal.py
+Skyctl/file_config/__init__.py
+Skyctl/file_config/test.py
+Skyctl/file_config/upload.py
+skyctl.egg-info/PKG-INFO
+skyctl.egg-info/SOURCES.txt
+skyctl.egg-info/dependency_links.txt
+skyctl.egg-info/not-zip-safe
+skyctl.egg-info/requires.txt
+skyctl.egg-info/top_level.txt
