@@ -1,0 +1,10 @@
+drfwn_quick/__init__.py,sha256=Pru0BlFBASFCFo7McHdohtKkUtgMPDwbGfyUZlE2_Vw,21
+drfwn_quick/data.py,sha256=-hWBJ1YwE02fHYEO7bUj_xy78JjRrwHh-u6aglldmrI,3294
+drfwn_quick/serializers.py,sha256=yrbysBM9MhCdjwE97LPRw0b-ETLzKPyx163OzLcU_Yk,3405
+drfwn_quick/settings.py,sha256=vq7P4QgeZ5wia9XwRl7gNf9nuAlTscc3sEymochbF4c,457
+drfwn_quick/utils.py,sha256=HDl1efybCLAvwMHAP5Yh7uzRrgObUQo98TQJKyYeRcA,575
+drfwn_quick/viewsets.py,sha256=JssVJ9dJWOgSaQ8S9QFXnMJTrujA-nu_dv7DUUOHknQ,4119
+drfwn_quick-0.1.0.dist-info/LICENSE,sha256=dVVPV7cGdA4Exhu23vFUVX4yudemZvgPoUbQ0-wRz2k,1066
+drfwn_quick-0.1.0.dist-info/METADATA,sha256=qo_XWa82fRFAJBL9ttfp5uRyO9RWpTW8ROQN2FjOJzQ,3742
+drfwn_quick-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+drfwn_quick-0.1.0.dist-info/RECORD,,
