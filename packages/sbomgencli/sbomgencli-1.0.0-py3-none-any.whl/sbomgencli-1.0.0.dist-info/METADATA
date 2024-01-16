@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: sbomgencli
+Version: 1.0.0
+Summary: CLI tool for sbomgen
+Author: cd dev
+Author-email: akashsah2003@gmail.com
+License-File: License.txt
+Requires-Dist: datetime
+Requires-Dist: argparse
+Requires-Dist: toml
+Requires-Dist: dicttoxml
+
