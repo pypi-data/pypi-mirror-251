@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: osjupyter
+Version: 2.0.1
+Summary: Connects your Jupyter Notebook to Osyris Research Assistant
+Author: Osyris Technology
+Author-email: founders@osyris.io
+License-File: LICENSE.txt
+Requires-Dist: notebook
+
