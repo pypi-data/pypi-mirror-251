@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: py-oracle-cpq-ui-automation
+Version: 1.0.0
+Summary: Selenium based automation on Oracle CPQ UI
+Home-page: https://github.com/arunkumar-js25/oracle_cpq_ui_automation
+Author-email: arunkumar.js25@gmail.com
+Keywords: automation,oracle,oracle cpq
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3 :: Only
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Oracle CPQ UI Automation
