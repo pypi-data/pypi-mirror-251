@@ -1,0 +1,47 @@
+# Ssebowa
+
+Ssebowa is a Python package designed to simplify the creation of AI images using photos of individuals, whether it be yourself, your family, friends, or pets.
+
+## Installation
+
+Before running the script, ensure that the required libraries are installed. You can do this by executing the following commands:
+
+```bash
+git clone https://github.com/huggingface/diffusers
+cd diffusers
+pip install .
+
+pip install ssebowa
+````
+ ## 🚀 Quick Start
+- - -
+* Prepare about 10-20 high-quality solo selfie photos (jpg or png) and put them in a specific directory.
+* Please run on a machine with a GPU of 16GB or more. (If you're fine-tuning *SDXL*, you'll need 24GB of VRAM.)
+```python
+from ssebowa.dataset import LocalDataset
+from ssebowa.model import SdSsebowaModel
+from ssebowa.trainer import LocalTrainer
+from ssebowa.utils.image_helpers import display_images
+from ssebowa.utils.prompt_helpers import make_prompt
+
+DATA_DIR = "data"  # The directory where you put your prepared photos
+OUTPUT_DIR = "models"  
+
+dataset = LocalDataset(DATA_DIR)
+dataset = dataset.preprocess_images(detect_face=True)
+
+SUBJECT_NAME = "<YOUR-NAME>"  
+CLASS_NAME = "person"
+
+model = SdSsebowaModel(subject_name=SUBJECT_NAME, class_name=CLASS_NAME)
+trainer = LocalTrainer(output_dir=OUTPUT_DIR)
+predictor = trainer.fit(model, dataset)
+# Use the prompt helper to create an awesome AI avatar!
+prompt = next(make_prompt(SUBJECT_NAME, CLASS_NAME))
+images = predictor.predict(
+    prompt, height=768, width=512, num_images_per_prompt=2,
+)
+
+display_images(images, fig_size=10)
+
+```
