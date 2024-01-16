@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: heartbeat-capture
+Version: 0.1.0
+Summary: Python 3 library to work with eclipse capture files
+Author-email: Maris Usis <mau13@case.edu>
+Project-URL: Homepage, https://github.com/Eclipse-Research-Group/eclipse-capture-python
+Project-URL: Issues, https://github.com/Eclipse-Research-Group/eclipse-capture-python/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy >=1.26.0
+Requires-Dist: pandas >=2.1.4
+Provides-Extra: dev
+Requires-Dist: bumpver ; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: pytest ==7.4.4 ; extra == 'test'
+
+# eclipse-capture-csv-python
+Python 3 library to work with eclipse capture files
