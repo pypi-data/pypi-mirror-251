@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: priomptipy
+Version: 0.11
+Summary: A library for creating smarter prompts for LLMs by adding priority to components.
+Author: The Quarkle Dev Team
+Author-email: samarth@quarkle.ai, tanmay@quarkle.ai
+Requires-Dist: asyncio ==3.4.3
+Requires-Dist: certifi ==2023.11.17
+Requires-Dist: charset-normalizer ==3.3.2
+Requires-Dist: idna ==3.6
+Requires-Dist: regex ==2023.12.25
+Requires-Dist: requests ==2.31.0
+Requires-Dist: tiktoken ==0.5.2
+Requires-Dist: urllib3 ==2.1.0
+
