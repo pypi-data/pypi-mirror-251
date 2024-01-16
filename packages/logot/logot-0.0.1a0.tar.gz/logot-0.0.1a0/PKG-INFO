@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: logot
+Version: 0.0.1a0
+Summary: Log-based testing
+Home-page: https://logot.readthedocs.io
+License: MIT
+Keywords: test,unittest,pytest,logging
+Author: Dave Hall
+Author-email: dave@etianen.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Provides-Extra: pytest
+Requires-Dist: pytest (>=7.4.4,<8.0.0) ; extra == "pytest"
+Project-URL: Documentation, https://logot.readthedocs.io
+Project-URL: Repository, https://github.com/etianen/logot
+Description-Content-Type: text/markdown
+
+# Log-based testing
+
+[![Build](https://github.com/etianen/logot/actions/workflows/build.yml/badge.svg)](https://github.com/etianen/logot/actions/workflows/build.yml)
+
+📖 [Read the docs](https://logot.readthedocs.io) 📖
+
