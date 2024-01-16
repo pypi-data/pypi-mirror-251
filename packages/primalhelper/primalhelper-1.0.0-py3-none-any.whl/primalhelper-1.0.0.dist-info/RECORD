@@ -1,0 +1,11 @@
+primalhelper/__init__.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+primalhelper/bedfile.py,sha256=n6bko42iAK98GKYAcnvWKuDIrc4lK6EKmw3G438qGZY,632
+primalhelper/cli.py,sha256=ukCKTcycHT1RxNSxie2VRGKxPqHCeKKR2vfvlYjROr8,3303
+primalhelper/consensus_remap.py,sha256=Vlcx6R7Zekd-2XwGnNZEiH4bYKynQrlT3QXS7nDD4k8,3112
+primalhelper/hamming_remap.py,sha256=4pOlIz89wMMiqBVos9R9EYgq3ZErabaQici7BHrKlHs,7873
+primalhelper/legacy.py,sha256=8_b6oTPlCrBSGlC6drYklsZyc-HXUm9ndEhHGIE9dPg,3168
+primalhelper/remove_terminal_n.py,sha256=75OsG0sjaHIPhQEcoOzk5EouPZZj5ekNrJPpfvP2GnI,1147
+primalhelper-1.0.0.dist-info/METADATA,sha256=a-M38q-e5RYOfEQKksGN-Lja5z5ZtezvbPx-jOqNMgQ,776
+primalhelper-1.0.0.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+primalhelper-1.0.0.dist-info/entry_points.txt,sha256=JWwC1o0ixHc_FyO_fdTDWujeapSnKmte2H8VvlV1GUk,53
+primalhelper-1.0.0.dist-info/RECORD,,
