@@ -1,0 +1,5 @@
+scvelo
+scikit-learn>=1.3.0
+imageio==2.19.3
+hausdorff
+dtaidistance
