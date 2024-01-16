@@ -1,0 +1,9 @@
+tred/__init__.py,sha256=ITRzfh2ce6JKyhh7V9-tTugwQ9rXlJmwufyapXYPaYw,1064
+tred/_m_transforms.py,sha256=65LtyLOFUw4nWyxWq9g-U8yNhoTrUEdwJh9hezlT93g,7725
+tred/_tensor_ops.py,sha256=dIcF_8WZboTFOXw_7fiAWiQHTP-pJX_CzXvcYo6hCpQ,6954
+tred/_tensor_pca.py,sha256=J9_C7SJ23sokp6o_s3JNwGVNwRmOt3JrgrCbBSUKZ3o,21257
+tred/_utils.py,sha256=8aNhFDQL-UsbtYfZAaBIwSlQZXLRBL7wAgK2nS1vogs,3714
+tred-0.0.9.dist-info/METADATA,sha256=ioetPVnztX11Uv4n-76INef0aM4BdDwLED_QltjDsdc,3604
+tred-0.0.9.dist-info/WHEEL,sha256=mRYSEL3Ih6g5a_CVMIcwiF__0Ae4_gLYh01YFNwiq1k,87
+tred-0.0.9.dist-info/licenses/LICENSE,sha256=JNlZQtaGo71z4PCrr4_tdPaQ-XFC29WOTtuFeMS82oI,1525
+tred-0.0.9.dist-info/RECORD,,
