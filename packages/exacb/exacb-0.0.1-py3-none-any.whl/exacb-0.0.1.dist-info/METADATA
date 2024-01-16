@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: exacb
+Version: 0.0.1
+Summary: exacb: helper script for exacb project
+Author: Jayesh Badwaik
+Author-email: j.badwaik@fz-juelich.de
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+<!--
+- SPDX-License-Identifier: CC-BY-4.0
+- Copyright (C) 2024 Jayesh Badwaik <j.badwaik@fz-juelich.de>
+-->
+
+# exacb
+
+Helper scripts for the [exacb](https://go.fzj.de/exacb) project.
+

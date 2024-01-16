@@ -1,0 +1,3 @@
+[console_scripts]
+exacb=exacb.main:main
+
