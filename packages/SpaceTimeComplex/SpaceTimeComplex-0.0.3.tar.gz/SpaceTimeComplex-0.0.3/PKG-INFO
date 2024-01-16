@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: SpaceTimeComplex
+Version: 0.0.3
+Summary: Big O calculations for Space And Time
+Home-page: https://github.com/hodge-py/SpaceTimeComplex
+Download-URL: https://github.com/hodge-py/SpaceTimeComplex/archive/refs/tags/0.0.1.tar.gz
+Author: Karson Hodge
+Author-email: khodge1@hotmail.com
+License: Copyright
+Keywords: BigO,Algorithm,Calculations
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: Free for non-commercial use
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scikit-learn
+Requires-Dist: matplotlib
+
+# spaceAndTime
+
+This package was created to evalute functions for time and space complexity. At the moment only time complexity is complete. The function runs an algorithmn over and over with new
+and increasing input sizes to judge the time complexity.
+
+## Example
+
+```python
+
+def testone(n):
+    for x in range(len(n[0])):
+        for y in range(len(n[0])):
+            two = y
+            one = x
+
+real = RealTime()
+
+testSet = real.generateTestSet(type=0)
+
+real.complexGuess(testone,testSet)
+
+```
+
+![Figure_1](https://github.com/hodge-py/RealTime_Analysis/assets/105604814/fef612f2-ff1b-411a-b9b1-7d9ae8cd0af2)
+
+![Screenshot 2024-01-15 020628](https://github.com/hodge-py/RealTime_Analysis/assets/105604814/b0b113f5-466d-4d21-9551-d3fd17e8a9bf)
