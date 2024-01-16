@@ -1,0 +1,8 @@
+setup.py
+pearwise/__init__.py
+pearwise/pearwise.py
+pearwise.egg-info/PKG-INFO
+pearwise.egg-info/SOURCES.txt
+pearwise.egg-info/dependency_links.txt
+pearwise.egg-info/requires.txt
+pearwise.egg-info/top_level.txt
