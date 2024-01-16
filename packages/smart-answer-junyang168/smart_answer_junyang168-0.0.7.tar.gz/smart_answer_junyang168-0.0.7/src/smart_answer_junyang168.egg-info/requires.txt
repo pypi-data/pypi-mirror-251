@@ -1,0 +1,10 @@
+openai
+langchain
+python-dotenv
+psycopg2-binary
+
+[dev]
+check-manifest
+
+[test]
+coverage
