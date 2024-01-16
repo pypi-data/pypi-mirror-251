@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/requesto/__init__.py
+src/requesto/requesto.py
+src/requesto_py.egg-info/PKG-INFO
+src/requesto_py.egg-info/SOURCES.txt
+src/requesto_py.egg-info/dependency_links.txt
+src/requesto_py.egg-info/top_level.txt
