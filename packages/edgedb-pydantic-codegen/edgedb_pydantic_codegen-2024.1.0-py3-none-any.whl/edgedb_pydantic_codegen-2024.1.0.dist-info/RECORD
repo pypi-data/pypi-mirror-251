@@ -1,0 +1,9 @@
+edgedb_pydantic_codegen/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+edgedb_pydantic_codegen/__main__.py,sha256=SwRdvDOjPGkQQXT3TDZ3SODlbZ3oLba0qiJGkljSuRM,344
+edgedb_pydantic_codegen/generator.py,sha256=nb6CCJ-2TsKYskSAHm0jAW7zNEsiKkh-CbAuQ6qySMY,9297
+edgedb_pydantic_codegen/template.py.jinja,sha256=qpW6vCH-B0_qT1Zn3hTkz_D3njEblf8tjJvofgGA0k0,1848
+edgedb_pydantic_codegen-2024.1.0.dist-info/LICENSE,sha256=JVGu32QAm22cxw-mglgrBgsgkSA3hmcCPIlyNKc67AU,1063
+edgedb_pydantic_codegen-2024.1.0.dist-info/METADATA,sha256=S8FsD7bQr6Qw53RcgZ4JKQKZIoAwyCCy7LaN5fgzbyk,2608
+edgedb_pydantic_codegen-2024.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+edgedb_pydantic_codegen-2024.1.0.dist-info/entry_points.txt,sha256=L4Z7-hpV4QStHX5T8THJtDWpCSouGnTPWuQ4aYP-HkU,80
+edgedb_pydantic_codegen-2024.1.0.dist-info/RECORD,,
