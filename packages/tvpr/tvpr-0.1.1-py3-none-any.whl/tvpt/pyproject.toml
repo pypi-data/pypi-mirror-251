@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "tvpr"
+version = "0.1.1"
+description = ""
+authors = ["Dima_222 <izc75903@zslsz.com>"]
+readme = "README.md"
+packages = [{include = "tvpt"}]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
