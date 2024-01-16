@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: humane
+Version: 1.0.0
+Summary: Human Identifiers
+Author-email: Daniel Hails <humane@hails.info>
+Project-URL: Homepage, https://github.com/DJRHails/humane
+Project-URL: Bug Tracker, https://github.com/DJRHails/humane/issues
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: click
+
+# Humane
+
+A collection of human-readable identifiers / hashes.
+
+## Usage
+
+```bash
+pip install humane==1.0.0
+
+humane id 1234567890
+```
+
+```python
+from humane import human_id
+
+x = human_id(1234567890)
+```
+
+## What humane identifiers are available?
+
+### `human id`
+
+- `<N>-<adjective>-<animal>-<verb>-<adverb>`
+- Examples:
+    - `5-proud-weasels-warn-knowledgeably`
+    - `4-legal-shrews-check-sternly`
+    - `9-perfect-monkeys-jam-justly <=> humane`
+
+### `humane id --short`
+
+- `<N>-<adjective>-<animal>`
+- Examples:
+    - `4-afraid-seahorses`
+    - `7-clever-weasels`
+    - `9-perfect-monkeys <=> humane`

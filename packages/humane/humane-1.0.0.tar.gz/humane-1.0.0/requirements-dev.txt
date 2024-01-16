@@ -1,0 +1,4 @@
+-r requirements.txt
+bumpver
+pytest
+ruff
