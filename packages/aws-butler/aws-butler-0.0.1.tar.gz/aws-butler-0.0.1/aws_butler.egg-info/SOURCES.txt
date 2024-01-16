@@ -1,0 +1,10 @@
+cloudwatch.py
+parameters.py
+setup.cfg
+setup.py
+aws_butler.egg-info/PKG-INFO
+aws_butler.egg-info/SOURCES.txt
+aws_butler.egg-info/dependency_links.txt
+aws_butler.egg-info/entry_points.txt
+aws_butler.egg-info/requires.txt
+aws_butler.egg-info/top_level.txt
