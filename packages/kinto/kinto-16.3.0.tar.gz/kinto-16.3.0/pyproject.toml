@@ -1,0 +1,24 @@
+[tool.ruff]
+line-length = 99
+extend-exclude = [
+    "__pycache__",
+    ".venv/",
+    "kinto/plugins/admin/node_modules/",
+]
+
+[tool.ruff.lint]
+select = [
+    # pycodestyle
+    "E", "W",
+    # flake8
+    "F",
+    # isort
+    "I",
+]
+ignore = [
+    # `format` will wrap lines.
+    "E501",
+]
+
+[tool.ruff.lint.isort]
+lines-after-imports = 2
