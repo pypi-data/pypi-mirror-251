@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: primalhelper
+Version: 1.0.0
+Summary: 
+Author: ChrisKent
+Author-email: chrisgkent@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: typer[all] (>=0.9.0,<0.10.0)
+Description-Content-Type: text/markdown
+
+# primalhelper
+
+## Description
+
+A selection of tools for wrangling PrimerSchemes
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+
+
+## Installation
+
+Install via poetry
+
+```
+git clone https://github.com/ChrisgKent/primalhelper
+cd primalhelper 
+poetry install
+```
+
+## Usage
+
+
+See commands
+
+```poetry run primalhelper --help```
+
+#### Convert bedfiles
+
+```poetry run primalhelper legacy --bedfile {path} > primer.bed```
+
+
+
+
