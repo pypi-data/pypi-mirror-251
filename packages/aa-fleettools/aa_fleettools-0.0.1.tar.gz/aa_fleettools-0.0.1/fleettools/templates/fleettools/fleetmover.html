@@ -1,0 +1,39 @@
+{% extends "fleettools/base.html" %}
+{% load bootstrap %}
+
+{% block extra_css %}
+    <style>
+        ul {
+            list-style-type: none;
+        }
+    </style>
+{% endblock extra_css %}
+
+{% block fleettoolscontent %}
+    <div class="col-12">
+        <form method="post"> {% csrf_token %}
+            <input type="text" value="{{ fleet_id }}" name="fleet_id" hidden>
+            <ul>
+                <li>
+                    <label><input type="checkbox" name="move-fleet">Fleet</label>
+                    <ul>
+                        {% for wing in fleet %}
+                            <li>
+                                <label><input type="checkbox" name="wing-{{ wing.id }}">{{ wing.name }}</label>
+                                <ul>
+                                    {% for squad in wing.squads %}
+                                        <li>
+                                            <label><input type="checkbox" name="squad-{{ squad.id }}">{{ squad.name }}</label>
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </li>
+            </ul>
+            {{ destination_form|bootstrap }}
+            <button class="btn btn-primary" type="submit">Submit</button>
+        </form>
+    </div>
+{% endblock fleettoolscontent %}
