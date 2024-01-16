@@ -1,0 +1,3 @@
+[console_scripts]
+atoparser = atoparser.atop_reader:main
+
