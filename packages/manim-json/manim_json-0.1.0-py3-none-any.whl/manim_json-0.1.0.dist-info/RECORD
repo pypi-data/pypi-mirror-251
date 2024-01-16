@@ -1,0 +1,10 @@
+manim_json/__init__.py,sha256=9bmEFJF4r_svuz41DnxfmFnj0LTkRzyHdIGbFnoOB6w,159
+manim_json/json_scene.py,sha256=BBRJsP93SNQvXkizAF5sJ3E3AjmzQKRozm6EMkgiUIY,4396
+manim_json/manim_to_pixel.py,sha256=CqFdNK43MkTo3RSbKPKo0wzC5ItGa8WMm0VtNfkGfNM,765
+manim_json/pixel_to_manim.py,sha256=iheT4lAr0oeYvlgl5VZXBet6nD9ifJQ8xT3rJgKqVc4,906
+manim_json/render_json.py,sha256=kKeTYqtJVvWL0M0QLOztyzYx7v3sWsgTg4iZlT-EMZs,468
+manim_json/render_single_layers.py,sha256=tQeroVg75pnugb55GcW-b6or0kVYITUjKGdVDwMr4cw,1493
+manim_json/update_json.py,sha256=O9di6AAkcA0jieX7tJlNDMUpXgrgKNNQnRWclqtSBcQ,2999
+manim_json-0.1.0.dist-info/METADATA,sha256=ECaroqcBdK7KNwSpgDPR-Sw_FjWs-N87Rew5B7pwOkk,524
+manim_json-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+manim_json-0.1.0.dist-info/RECORD,,
