@@ -1,0 +1,4 @@
+# Add models files
+include metadpy/models/group_level_numpyro.py
+include metadpy/models/subject_level_numpyro.py
+include metadpy/models/subject_level_pymc.py

@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+metadpy/__init__.py
+metadpy/bayesian.py
+metadpy/mle.py
+metadpy/plotting.py
+metadpy/sdt.py
+metadpy/utils.py
+metadpy.egg-info/PKG-INFO
+metadpy.egg-info/SOURCES.txt
+metadpy.egg-info/dependency_links.txt
+metadpy.egg-info/requires.txt
+metadpy.egg-info/top_level.txt
+metadpy/datasets/__init__.py
+metadpy/models/subject_level_pymc.py
