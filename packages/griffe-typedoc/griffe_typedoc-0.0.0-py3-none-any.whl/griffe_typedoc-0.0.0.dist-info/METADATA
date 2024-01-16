@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: griffe-typedoc
+Version: 0.0.0
+Summary: Signatures for entire TypeScript programs using TypeDoc. Available to sponsors only.
+Author-email: Timothée Mazzucotelli <pawamoy@pm.me>
+Classifier: Development Status :: 1 - Planning
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# griffe-typedoc
+
+Signatures for entire TypeScript programs using TypeDoc.
+
+This project is currently available to [sponsors](https://github.com/sponsors/pawamoy) only.
+See https://pawamoy.github.io/griffe-typedoc/insiders.
