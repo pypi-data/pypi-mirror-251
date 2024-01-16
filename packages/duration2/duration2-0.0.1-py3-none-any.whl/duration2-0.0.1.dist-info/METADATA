@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: duration2
+Version: 0.0.1
+Project-URL: Documentation, https://github.com/unknown/duration2#readme
+Project-URL: Issues, https://github.com/unknown/duration2/issues
+Project-URL: Source, https://github.com/unknown/duration2
+Author-email: Xiang Wang <ramwin@qq.com>
+License-Expression: MIT
+License-File: LICENSE
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7
+Requires-Dist: portion
+Requires-Dist: redis
+Description-Content-Type: text/markdown
+
+# duration2
+a duration2 module to support calculate like divide, multi
+
+[![PyPI - Version](https://img.shields.io/pypi/v/duration2.svg)](https://pypi.org/project/duration2)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/duration2.svg)](https://pypi.org/project/duration2)
+
+-----
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install duration2
+```
+
+## License
+
+`duration2` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
