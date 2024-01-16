@@ -1,0 +1,16 @@
+parinvoke/__init__.py,sha256=5Qc9nmwhsgu_HWLWuOpAFI_2KAPG8OmctHLThCkTrvA,658
+parinvoke/_context.py,sha256=Dxbsfwp3InG7wI0zgJIREDN0xj_UKZ9TWes_rtTYJH4,1757
+parinvoke/_worker.py,sha256=2wEuS9sJOB-u8tS0z6rTUow8K5HQ2Uh27TUGMgCZpxE,1436
+parinvoke/config.py,sha256=AnsDn0zs9l6Anksb7zYbd6-SZtVc29wUBEZswAxKvqM,5318
+parinvoke/isolate.py,sha256=qUbuwOHAFLDbxECqNk4Y28f5ovj7z64OrdoVUiY16rs,2497
+parinvoke/logging.py,sha256=sW_2khBpyffEIS-MazGXFMipvS2bafAUfo84vcCan1M,1208
+parinvoke/parallel.py,sha256=LwoesKr5C7BKkL2jRA1bRSrsyI8LNh4fgijLHELLUrc,5837
+parinvoke/util.py,sha256=uDcdr92gZl9coBnyZ5pBV6wG2ceeyVyCbxZKnA-tf6k,798
+parinvoke/sharing/__init__.py,sha256=sDMmJFixETfeY20_xvnJXnZkDgopCTsV7m_UV-yuefQ,4681
+parinvoke/sharing/binpickle.py,sha256=Wxzm9IbHB2W2JgFvNxgeU4FSqhVvCGi8ZyHm1uzAxXI,3178
+parinvoke/sharing/shm.py,sha256=Z2M1qs_Zan0MrkAq-07zW03okjQD5vUDzZmVXrxaBhM,3963
+parinvoke-0.1.0a4.dist-info/LICENSE.md,sha256=kPB8sKOvIUWi_8xtIl0DaBrJs4onX6jtbk28SIHbbaQ,1161
+parinvoke-0.1.0a4.dist-info/METADATA,sha256=C1psTdLtWZ8Jb2iRGr8u5WiK1ck513yGLaNvnPEbtJg,2960
+parinvoke-0.1.0a4.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+parinvoke-0.1.0a4.dist-info/top_level.txt,sha256=PHzH_SPmcHVnRi2UE0UnlimmWKsPpME2wTVIkN-5dyg,10
+parinvoke-0.1.0a4.dist-info/RECORD,,
