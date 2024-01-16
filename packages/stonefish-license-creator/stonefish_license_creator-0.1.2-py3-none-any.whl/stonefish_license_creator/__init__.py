@@ -1,0 +1,1 @@
+from ._agg import _RIZGM as cli, _qfv9I as create_license_from_config
