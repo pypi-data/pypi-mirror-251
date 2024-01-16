@@ -1,0 +1,3 @@
+[console_scripts]
+cloudmesh-installer = cloudmesh.installer.installer:main
+cmsi = cloudmesh.installer.installer:main
