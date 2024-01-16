@@ -1,0 +1,7 @@
+ipython
+mock
+matplotlib
+sphinx==7.2.6
+sphinxcontrib.bibtex>=2.0
+sphinx_rtd_theme==2.0
+

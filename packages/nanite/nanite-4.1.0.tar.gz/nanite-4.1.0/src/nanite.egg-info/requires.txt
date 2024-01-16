@@ -1,0 +1,17 @@
+afmformats>=0.16.4
+h5py>=3.9.0
+lmfit>=1
+numpy>=1.22.0
+scikit-learn>=0.23.0
+scipy>=1.10.0
+
+[ACA]
+nanite_model_sneddon_spher<2.0,>=1.0
+
+[ALL]
+nanite[ACA,CLI]
+
+[CLI]
+appdirs
+matplotlib>=2.2.2
+tifffile>=0.15.0
