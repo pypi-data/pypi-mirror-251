@@ -1,0 +1,5 @@
+aiosiduck-0.1.1.dist-info/METADATA,sha256=d70jYdqm2ZVhzpGE56L3YDZifpfP9BqSVreBQGsDNuo,674
+aiosiduck-0.1.1.dist-info/WHEEL,sha256=N2J68yzZqJh3mI_Wg92rwhw0rtJDFpZj9bwQIMJgaVg,90
+aiosiduck/__init__.py,sha256=2cPrN7oNGdav5i_OT3YJ9PKJaWl3ixwyjxYnvJJjy0M,2649
+aiosiduck/quic_client_protocol.py,sha256=cNeqVLX_-caJs8595d8Sd50fO8bwVIa_g7O0XALZZ30,1509
+aiosiduck-0.1.1.dist-info/RECORD,,
