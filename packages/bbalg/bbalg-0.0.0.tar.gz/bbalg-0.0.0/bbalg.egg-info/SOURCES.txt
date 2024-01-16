@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+.github/workflows/python-publish.yml
+.vscode/launch.json
+bbalg/__init__.py
+bbalg/_version.py
+bbalg/main.py
+bbalg.egg-info/PKG-INFO
+bbalg.egg-info/SOURCES.txt
+bbalg.egg-info/dependency_links.txt
+bbalg.egg-info/top_level.txt
