@@ -1,0 +1,17 @@
+README.txt
+setup.py
+./KevinSR/SOUP.py
+./KevinSR/__init__.py
+./KevinSR/kevin_SR.py
+./KevinSR/Thin-to-thin/keras_metadata.pb
+./KevinSR/Thin-to-thin/saved_model.pb
+./KevinSR/Thin-to-thin/variables/variables.data-00000-of-00001
+./KevinSR/Thin-to-thin/variables/variables.index
+KevinSR/SOUP.py
+KevinSR/__init__.py
+KevinSR/kevin_SR.py
+KevinSR.egg-info/PKG-INFO
+KevinSR.egg-info/SOURCES.txt
+KevinSR.egg-info/dependency_links.txt
+KevinSR.egg-info/requires.txt
+KevinSR.egg-info/top_level.txt
