@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: moviepy-fix-codec
+Version: 1.0.4
+Summary: moviepy-fix-codec.
+Home-page: https://github.com/SherlockGougou/moviepy-fix-codec
+Author: SherlockGougou
+Author-email: qinglingou@gmail.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+License-File: LICENCE.txt
+Requires-Dist: decorator<6.0,>=4.0.2
+Requires-Dist: imageio<3.0,>=2.5
+Requires-Dist: imageio_ffmpeg>=0.2.0
+Requires-Dist: numpy>=1.17.3
+Requires-Dist: proglog<=1.0.0
+
+moviepy-fix-codec.
