@@ -1,0 +1,10 @@
+README.md
+setup.py
+iascan/__init__.py
+iascan/main.py
+iascan.egg-info/PKG-INFO
+iascan.egg-info/SOURCES.txt
+iascan.egg-info/dependency_links.txt
+iascan.egg-info/entry_points.txt
+iascan.egg-info/requires.txt
+iascan.egg-info/top_level.txt
