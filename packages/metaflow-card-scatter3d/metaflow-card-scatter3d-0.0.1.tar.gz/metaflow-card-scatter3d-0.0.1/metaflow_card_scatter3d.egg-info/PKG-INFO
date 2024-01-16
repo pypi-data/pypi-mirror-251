@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: metaflow-card-scatter3d
+Version: 0.0.1
+Summary: A dynamic card for Metaflow showing 2D or 3D scatter plots
+Author: Ville Tuulos
+Author-email: ville@outerbounds.co
+License-File: LICENSE
+Requires-Dist: metaflow

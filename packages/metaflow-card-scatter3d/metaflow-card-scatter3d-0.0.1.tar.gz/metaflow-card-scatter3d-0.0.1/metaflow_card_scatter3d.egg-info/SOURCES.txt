@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+metaflow_card_scatter3d.egg-info/PKG-INFO
+metaflow_card_scatter3d.egg-info/SOURCES.txt
+metaflow_card_scatter3d.egg-info/dependency_links.txt
+metaflow_card_scatter3d.egg-info/requires.txt
+metaflow_card_scatter3d.egg-info/top_level.txt
+metaflow_extensions/scatter3d/__init__.py
+metaflow_extensions/scatter3d/plugins/cards/scatter3d/__init__.py
+metaflow_extensions/scatter3d/plugins/cards/scatter3d/base.html
+metaflow_extensions/scatter3d/plugins/cards/scatter3d/assets/scatter.js
+metaflow_extensions/scatter3d/plugins/cards/scatter3d/assets/three.js
