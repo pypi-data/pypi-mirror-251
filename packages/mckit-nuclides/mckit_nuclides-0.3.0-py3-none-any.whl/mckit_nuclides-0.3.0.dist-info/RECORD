@@ -1,0 +1,11 @@
+mckit_nuclides/__init__.py,sha256=OIn3SmwhJ5KNeAyc1HMDNYAp0mShbH8DLcQ_XnH-ylY,1683
+mckit_nuclides/abundance.py,sha256=Dz-5-z5Lc0-oMCUoiPGN3OcZFaHarp3qurcu1qnwggM,4309
+mckit_nuclides/data/elements.parquet,sha256=hnh53ZvKENuaA7WEyrEJo1hbjWF9j9_5zDZq-IcM8ws,11876
+mckit_nuclides/data/nuclides.parquet,sha256=Krrnt6vx0pUtFs4pnK36pzeNkkvMdEd57pN0P6CIvxg,33446
+mckit_nuclides/elements.py,sha256=wsMkXip4qCyvJ45FW7pQ5lk-R4FoN4cchqYZOthAJqs,5971
+mckit_nuclides/nuclides.py,sha256=alhfHS3QzQqgGH6G64rj2NxO1pU2s2UZdIozIPrTqIs,1609
+mckit_nuclides/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mckit_nuclides-0.3.0.dist-info/LICENSE,sha256=F92yuUxaV4Eldkl9pyRLwJRYTHjA7xFWjDYCj1ZXEJE,1063
+mckit_nuclides-0.3.0.dist-info/METADATA,sha256=5G1tDdi9THa502bLGP5cpFX_0HgiaJtOo0TFUL-hXVQ,4552
+mckit_nuclides-0.3.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+mckit_nuclides-0.3.0.dist-info/RECORD,,
