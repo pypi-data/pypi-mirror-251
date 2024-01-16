@@ -1,0 +1,61 @@
+<html>
+<script>{{{asset-three}}}</script>
+<script>{{{asset-scatter}}}</script>
+<body style="margin: 20px; background: #ffffff;">
+<h3 id="title" style="font-family: sans-serif">{{{config-title}}}</h3>
+<div id="viz" style="width: 80%; height: 600px; background: #ffffff;">
+</div>
+
+<script>
+
+var METAFLOW_RELOAD_TOKEN = "[METAFLOW_RELOAD_TOKEN]";
+var points;
+var labels;
+var colors;
+var classes;
+var scatterGL;
+
+function metaflow_card_update(data){
+    points = data.points;
+    classes = data.classes;
+    labels = data.labels;
+    colors = data.colors;
+    document.getElementById('title').innerHTML = data.title;
+    update_data(false);
+    return true;
+}
+
+function update_data(first_time){
+    const metadata = [];
+    points.forEach((val, index) => {
+        const labelIndex = classes[index];
+        metadata.push({
+            labelIndex,
+            label: labels[labelIndex]
+        });
+    });
+    const dataset = new ScatterGL.Dataset(points, metadata);
+    if (first_time){
+        scatterGL.render(dataset);
+        scatterGL.startOrbitAnimation();
+    }else
+        scatterGL.updateDataset(dataset);
+}
+
+window.onload = function(){
+    points = {{{config-points}}};
+    classes = {{{config-classes}}};
+    labels = {{{config-labels}}};
+    colors = {{{config-colors}}};
+    scatterGL = new ScatterGL(document.getElementById('viz'), {
+        selectEnabled: false,
+        rotateOnStart: false,
+        pointColorer: function(idx, selected, hoverIndex){
+            return colors[classes[idx]];
+        }
+    });
+    update_data(true);
+};
+</script>
+</body>
+</html>
