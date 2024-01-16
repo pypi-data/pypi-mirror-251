@@ -1,0 +1,48 @@
+{
+  "name": "Test single cell type",
+  "storage": {
+    "engine": "hdf5"
+  },
+  "network": {
+    "x": 100.0,
+    "y": 50.0,
+    "z": 100.0,
+    "chunk_size": [50, 50, 50]
+  },
+  "regions": {
+    "test_region": {
+      "children": ["test_layer"]
+    }
+  },
+  "partitions": {
+    "test_layer": {
+      "type": "layer",
+      "thickness": 50
+    }
+  },
+  "cell_types": {
+    "test_cell": {
+      "spatial": {
+        "radius": 2.5,
+        "count": 4
+      },
+      "plotting": {
+        "display_name": "lonely cell",
+        "color": "#E62214"
+      }
+    }
+  },
+  "placement": {
+    "cell_placement": {
+      "strategy": "bsb.placement.ParticlePlacement",
+      "partitions": ["test_layer"],
+      "cell_types": ["test_cell"]
+    }
+  },
+  "connectivity": {
+
+  },
+  "simulations": {
+
+  }
+}
