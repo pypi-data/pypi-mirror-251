@@ -1,0 +1,16 @@
+cvxpy
+numpy
+scipy
+pandas
+pybedtools
+matplotlib
+pyBigWig
+
+[mosek]
+mosek
+
+[ortools]
+ortools
+
+[pytest]
+pytest
