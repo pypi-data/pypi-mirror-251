@@ -1,0 +1,13 @@
+binpickle/__init__.py,sha256=2lxMnSnRPA1MlXXZF_tAA-bJRRxIsJVXWjAN6IX1VHI,606
+binpickle/_util.py,sha256=Yjbx9bPlAbXqum4XrpcuazhpazZ6gFMdfYtu1_U5XM4,854
+binpickle/encode.py,sha256=kwlVGoRp68udcItr3JZ2AWAESrYg4DvG1nHWFXy74TI,1599
+binpickle/errors.py,sha256=qQW0JVKQGCnt_CXqBCZO9O6q_MM17fqbEXBjCTxE0Y4,665
+binpickle/format.py,sha256=ylYw2YBaNmwQ8Cw83Hdm-3BKTGcN7gxJOZC7RuC5pi4,5956
+binpickle/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+binpickle/read.py,sha256=BIDwC29wm8cZrABhxJLejbKNYYSMthtVifwsIO6zaQk,8528
+binpickle/write.py,sha256=PDnGJ04KFZwTgGEk6q0aPoCXi8_CGNr4DAG8Xap4YmY,8440
+binpickle-0.4.0a5.dist-info/LICENSE.md,sha256=rm9_qwDC7ThpybfG9r2KdgD5LyBsd3v1UubXZVEp4E8,1136
+binpickle-0.4.0a5.dist-info/METADATA,sha256=iiqUJqwvl79IxCJ0uoXtauhbih3Q9oQGTUBd-eH4PUI,4832
+binpickle-0.4.0a5.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+binpickle-0.4.0a5.dist-info/top_level.txt,sha256=P1EizyEj-t9n6fwcwj7Ax-xqtcr-R76DJzi0eEAWzg4,10
+binpickle-0.4.0a5.dist-info/RECORD,,
