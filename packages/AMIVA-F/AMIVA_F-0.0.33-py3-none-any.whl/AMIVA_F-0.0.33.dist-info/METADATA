@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: AMIVA-F
+Version: 0.0.33
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: freesasa
+Requires-Dist: biopython
+Requires-Dist: pymol
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: scikit-learn
+Requires-Dist: joblib
+
