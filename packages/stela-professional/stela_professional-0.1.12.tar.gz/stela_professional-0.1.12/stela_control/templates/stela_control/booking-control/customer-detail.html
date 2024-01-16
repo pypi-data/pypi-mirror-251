@@ -1,0 +1,21 @@
+{% extends 'stela_control/index.html' %}
+{% load i18n %}
+{% load crispy_forms_tags %}
+{% load static %}
+{% load hosts %}
+{% load stelatags %}
+{% load humanize %}
+{% block section %}
+{% block title %}
+<h1 class="oxanium mx-4 text-dark pt-4 mb-0">{% trans "Booking Details" %}&nbsp; <i class="fa-solid fa-sliders"></i></h1>
+{% endblock  %}
+{% block side_title %}
+<h3 class="oxanium mx-4 d-flex justify-content-end"><b>STELA {% trans "CONTROL DYNAMIC" %} | {% trans "Orders" %}</b></h3>
+{% endblock  %}
+
+<div id="wrapper">
+    {% block content_section %}
+           
+    {% endblock  %}
+</div>
+{% endblock %}
