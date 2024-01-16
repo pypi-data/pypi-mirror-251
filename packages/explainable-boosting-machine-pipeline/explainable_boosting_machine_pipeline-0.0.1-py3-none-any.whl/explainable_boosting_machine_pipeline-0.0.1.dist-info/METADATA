@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: explainable_boosting_machine_pipeline
+Version: 0.0.1
+Summary: Generic pipeline for inporting a set of labelled data from AWS, training and evaluating an Explainable Boosting Machine using the data and then producing visualisations of feature important and dependance.
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Issues, https://github.com/pypa/sampleproject/issues
+Author-email: Antony Scott <antony.scott@justice.gov.uk>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# explainable_boosting_machine_pipeline
+Generic pipeline for inporting a set of labelled data from AWS, training and evaluating an Explainable Boosting Machine using the data and then producing visualisations of feature important and dependance.
