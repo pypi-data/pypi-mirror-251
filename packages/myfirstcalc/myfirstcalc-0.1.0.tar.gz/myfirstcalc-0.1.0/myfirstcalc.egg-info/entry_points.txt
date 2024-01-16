@@ -1,0 +1,2 @@
+[console_scripts]
+calcdirect = calculator.calops:entry_point

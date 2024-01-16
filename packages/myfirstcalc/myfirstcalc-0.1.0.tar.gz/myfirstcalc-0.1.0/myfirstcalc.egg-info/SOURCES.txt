@@ -1,0 +1,9 @@
+setup.py
+calculator/__init__.py
+calculator/calops.py
+myfirstcalc.egg-info/PKG-INFO
+myfirstcalc.egg-info/SOURCES.txt
+myfirstcalc.egg-info/dependency_links.txt
+myfirstcalc.egg-info/entry_points.txt
+myfirstcalc.egg-info/top_level.txt
+tests/test_calops.py
