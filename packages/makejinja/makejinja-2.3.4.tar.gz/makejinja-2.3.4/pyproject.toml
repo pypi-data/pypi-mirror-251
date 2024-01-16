@@ -1,0 +1,75 @@
+[tool.poetry]
+name = "makejinja"
+version = "2.3.4"
+description = "makejinja is a CLI tool and Python library to automatically generate files from Jinja2 templates. Use it to easily generate complex Home Assistant dashboards!"
+authors = ["Mirko Lenz <mirko@mirkolenz.com>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/mirkolenz/makejinja"
+homepage = "https://mirkolenz.github.io/makejinja/"
+documentation = "https://mirkolenz.github.io/makejinja/makejinja/cli.html"
+keywords = [
+    "jinja2",
+    "home-assistant",
+    "hassio",
+    "dashboard",
+    "lovelace",
+    "template",
+    "generator",
+    "cli",
+    "tool",
+    "library",
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Framework :: Pytest",
+    "Intended Audience :: Developers",
+    "Intended Audience :: End Users/Desktop",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Topic :: File Formats",
+    "Topic :: Home Automation",
+    "Topic :: Software Development :: Code Generators",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: System :: Software Distribution",
+    "Topic :: System :: Systems Administration",
+    "Topic :: Text Processing :: Markup",
+    "Topic :: Utilities",
+    "Typing :: Typed",
+]
+
+[tool.poetry.scripts]
+makejinja = "makejinja.cli:makejinja_cli"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+jinja2 = "^3.1"
+pyyaml = "^6.0"
+rich-click = "^1.7"
+typed-settings = { version = "^23.1", extras = ["attrs", "cattrs", "click"] }
+immutables = "^0.20"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4"
+pytest-cov = "^4.1"
+
+[tool.poetry.group.docs.dependencies]
+pdoc = "^14.1"
+
+[tool.pytest.ini_options]
+addopts = "--cov makejinja --cov-report term-missing"
+
+[tool.ruff]
+target-version = "py311"
+select = ["E", "W", "F", "B", "UP"]
+ignore = ["E501"]
+
+[tool.ruff.pydocstyle]
+convention = "google"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
