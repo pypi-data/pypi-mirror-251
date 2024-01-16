@@ -1,0 +1,3 @@
+[console_scripts]
+lara=lara_cli.cli:cli
+
