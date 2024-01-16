@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: fnug
+Version: 0.0.3
+Summary: A nice lint runner
+Project-URL: Repository, https://github.com/nickolaj-jepsen/fnug.git
+Project-URL: Issues, https://github.com/nickolaj-jepsen/fnug/issues
+Author-email: Nickolaj Jepsen <nickolaj@fireproof.website>
+License-Expression: GPL-3.0-or-later
+License-File: LICENSE
+Requires-Python: >=3.11
+Requires-Dist: click>=8.1.7
+Requires-Dist: pydantic>=2.5.3
+Requires-Dist: pyte>=0.8.1
+Requires-Dist: rich>=0.47.1
+Requires-Dist: textual>=0.40.0
+Description-Content-Type: text/markdown
+
+# fnug - a lint runner
+
+## Installation
+
+> [!CAUTION]
+> This is a work in progress. Probably not ready for use.
+
+```bash
+pipx install fnug
+```
