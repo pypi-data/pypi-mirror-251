@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: moviepy-fix-codec
+Version: 1.0.5
+Summary: moviepy-fix-codec.
+Home-page: https://github.com/SherlockGougou/moviepy-fix-codec
+Author: SherlockGougou
+Author-email: qinglingou@gmail.com
+License: MIT License
+Keywords: video editing audio compositing ffmpeg
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Multimedia
+Classifier: Topic :: Multimedia :: Sound/Audio
+Classifier: Topic :: Multimedia :: Sound/Audio :: Analysis
+Classifier: Topic :: Multimedia :: Video
+Classifier: Topic :: Multimedia :: Video :: Capture
+Classifier: Topic :: Multimedia :: Video :: Conversion
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+License-File: LICENCE.txt
+Requires-Dist: decorator<6.0,>=4.0.2
+Requires-Dist: imageio<3.0,>=2.5
+Requires-Dist: imageio_ffmpeg>=0.2.0
+Requires-Dist: numpy>=1.17.3
+Requires-Dist: proglog<=1.0.0
+Provides-Extra: optional
+Requires-Dist: pygame>=1.9.3; extra == "optional"
+Requires-Dist: python-dotenv>=0.10; extra == "optional"
+Requires-Dist: opencv-python; extra == "optional"
+Requires-Dist: scikit-image; extra == "optional"
+Requires-Dist: scikit-learn; extra == "optional"
+Requires-Dist: scipy; extra == "optional"
+Requires-Dist: matplotlib; extra == "optional"
+Requires-Dist: youtube_dl; extra == "optional"
+Provides-Extra: doc
+Requires-Dist: numpydoc<2.0; extra == "doc"
+Requires-Dist: Sphinx==3.4.3; extra == "doc"
+Requires-Dist: sphinx-rtd-theme==0.5.1; extra == "doc"
+Provides-Extra: test
+Requires-Dist: coveralls<4.0,>=3.0; extra == "test"
+Requires-Dist: pytest-cov<3.0,>=2.5.1; extra == "test"
+Requires-Dist: pytest<7.0.0,>=3.0.0; extra == "test"
+Provides-Extra: lint
+Requires-Dist: black>=22.3.0; extra == "lint"
+Requires-Dist: flake8>=4.0.1; extra == "lint"
+Requires-Dist: flake8-absolute-import>=1.0; extra == "lint"
+Requires-Dist: flake8-docstrings>=1.6.0; extra == "lint"
+Requires-Dist: flake8-rst-docstrings>=0.2.5; extra == "lint"
+Requires-Dist: flake8-implicit-str-concat==0.3.0; extra == "lint"
+Requires-Dist: isort>=5.10.1; extra == "lint"
+Requires-Dist: pre-commit>=2.19.0; extra == "lint"
+
+moviepy-fix-codec.
