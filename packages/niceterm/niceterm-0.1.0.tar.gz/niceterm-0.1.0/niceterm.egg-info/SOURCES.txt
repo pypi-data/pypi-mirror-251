@@ -1,0 +1,6 @@
+niceterm.py
+setup.py
+niceterm.egg-info/PKG-INFO
+niceterm.egg-info/SOURCES.txt
+niceterm.egg-info/dependency_links.txt
+niceterm.egg-info/top_level.txt
