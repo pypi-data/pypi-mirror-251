@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: azure_simple_email
+Version: 0.0.4
+Summary: This is an esperimental library to send email using Microsoft Graph API
+Home-page: https://github.com/marcotn/azure_simple_email
+Author: Marco Pavanelli
+Author-email: marco.pavanelli@sasabz.it
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: msal
+Requires-Dist: requests
+
+# azure_simple_email
+Python library to send email trough azure service api
