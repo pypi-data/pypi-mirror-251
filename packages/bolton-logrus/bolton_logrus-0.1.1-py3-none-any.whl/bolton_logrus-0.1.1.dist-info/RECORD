@@ -1,0 +1,8 @@
+logrus/__init__.py,sha256=CUh0JAgJr2h6iUNUnYRhX102ytEykyYqxdOipHaC8DA,576
+logrus/_core.py,sha256=67W135qxWOSFSQv-3ZYiHYsn950U52A2h-zl8A4vbHc,20830
+logrus/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+logrus/pytest_plugin.py,sha256=dRTO1jVSWug5WplHBLsNTlE0UuadZHNcCI3CFCOpu-M,996
+bolton_logrus-0.1.1.dist-info/METADATA,sha256=FS_qfvVq1rLyFc62a1Frx5TiV3XlLnx39yViOqr3wwc,3743
+bolton_logrus-0.1.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+bolton_logrus-0.1.1.dist-info/top_level.txt,sha256=CD2AGcsvjlBEnP7BLLst8oBwCcT8UEh23yN5-x5IHb4,7
+bolton_logrus-0.1.1.dist-info/RECORD,,
