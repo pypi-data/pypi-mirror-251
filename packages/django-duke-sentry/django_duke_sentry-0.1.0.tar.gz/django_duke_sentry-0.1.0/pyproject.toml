@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "django-duke-sentry"
+version = "0.1.0"
+description = ""
+authors = ["Arkadiusz Adamski <arkadiusz.adamski@gmail.com>"]
+readme = "README.md"
+packages = [{ include = "duke_sentry.py", from = "." }]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+django-duke = "*"
+django-configurations = "^2.5"
+sentry-sdk = { extras = ["django"], version = "^1.39.2" }
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.plugins.duke]
+plugin = "duke_sentry:plugin"
