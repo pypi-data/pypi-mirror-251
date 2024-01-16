@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: packaide_client
+Version: 0.0.5
+Requires-Python: >=3.7, <4
+Requires-Dist: pydantic
+Requires-Dist: requests
