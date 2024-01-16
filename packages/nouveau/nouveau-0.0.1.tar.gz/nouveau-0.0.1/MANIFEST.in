@@ -1,0 +1,4 @@
+include README.md
+include morris/__doc__
+include morris/morris.csv
+exclude morris/jpgs/*
