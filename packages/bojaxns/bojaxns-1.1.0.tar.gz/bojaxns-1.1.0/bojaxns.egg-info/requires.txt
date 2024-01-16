@@ -1,0 +1,10 @@
+jax
+jaxlib
+tensorflow_probability
+jaxns==2.4.3
+pydantic
+chex>=0.0.8
+mctx
+pyDOE2
+matplotlib
+etils
