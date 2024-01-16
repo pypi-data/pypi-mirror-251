@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+traggle/__init__.py
+traggle/notes.py
+traggle/translator.py
+traggle.egg-info/PKG-INFO
+traggle.egg-info/SOURCES.txt
+traggle.egg-info/dependency_links.txt
+traggle.egg-info/requires.txt
+traggle.egg-info/top_level.txt
