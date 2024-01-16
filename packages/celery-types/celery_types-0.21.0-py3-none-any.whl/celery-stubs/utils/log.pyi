@@ -1,0 +1,9 @@
+from logging import Logger
+
+class LoggingProxy: ...
+
+def get_logger(name: str) -> Logger: ...
+def get_task_logger(name: str) -> Logger: ...
+
+task_logger: Logger
+worker_logger: Logger
