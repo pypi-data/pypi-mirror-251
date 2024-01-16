@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "django-duke"
+version = "0.1.0"
+description = ""
+authors = ["Arkadiusz Adamski <arkadiusz.adamski@gmail.com>"]
+readme = "README.md"
+packages = [{ include = "duke", from = "." }]
+
+
+[tool.poetry.dependencies]
+python = "^3.11"
+django = "^3.2.9 || ^4.0.0 || ^5.0.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.4"
+pytest-watcher = "^0.3.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+pythonpath = ". .venv/lib/python3.11/site-packages"
+log_cli_level = "DEBUG"
+log_format = "%(asctime)s %(levelname)s %(message)s"
+log_date_format = "%Y-%m-%d %H:%M:%S"
