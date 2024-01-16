@@ -1,0 +1,12 @@
+crewai_ui/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+crewai_ui/app/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+crewai_ui/app/app.py,sha256=7nb4TdlbrLydXPENJGRWNBQbvQBr-L-4y2MoXtXc3bk,201
+crewai_ui/app/static/dist/css/output.css,sha256=e8ffmy9YOMIO4-6u4F0GIjK7Hg3nzZuTzi6cHNWcNSU,10304
+crewai_ui/app/static/src/input.css,sha256=GGQZxH5G0WiJdP5tHUaI1yNPF5AROgwekzUmtSLJoEw,58
+crewai_ui/app/tailwind.config.js,sha256=alOz4vLjPUQwSHy50buzOxIjOVkH-7ZT_ZzoR2F7d1o,185
+crewai_ui/app/templates/index.html,sha256=HGxzRMZEyLbHdNEBvMpapgvKKAXnTgru9XZ50DtLisA,401
+crewai_ui/cli.py,sha256=l1AHRCEqUFDp-eVnT1jID9VUT-DVp2Crb1vDWp9VTpw,234
+crewai_ui-0.1.0.dist-info/METADATA,sha256=sg7xGTAgzXpVjVlwT-eK1IQuq7nWbM4mw3IarPplTSg,427
+crewai_ui-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+crewai_ui-0.1.0.dist-info/entry_points.txt,sha256=g6GhhBxofiKUhSv37xUmSUroK6rrm4ZBKx2dGrRdJR8,47
+crewai_ui-0.1.0.dist-info/RECORD,,

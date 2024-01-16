@@ -1,0 +1,3 @@
+[console_scripts]
+crewai-ui=crewai_ui.cli:cli
+
