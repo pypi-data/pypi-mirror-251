@@ -1,0 +1,9 @@
+urlquote-2.1.0.dist-info/METADATA,sha256=wa2IsiPt2lpiQge7trAmpA613TxbHYEw4tpQZYOgEe8,4199
+urlquote-2.1.0.dist-info/WHEEL,sha256=9AGy501bbBpg3VcngVZIG2oGyZkXGlv7AKYpEP4Aoao,126
+urlquote-2.1.0.dist-info/license_files/LICENSE,sha256=tgsF6MgHjjIM9zikStGVS_aDmOiX9whhd0z1Fvyj8B4,1082
+urlquote/__init__.py,sha256=l7fZYTea1bPSV3ERYV117McMkKxtYp0tUSD5Xh4GHRQ,2460
+urlquote/quoting.py,sha256=YOnYVW_uv345qpxrGBlGd5Xd72fn8rCNG9QeGQDbQAI,1778
+urlquote/urlquote/__init__.py,sha256=hsVZR7agC05B2LKh1o3-Xj95Uziyiy2NP0_kS0aEM4k,136
+urlquote/urlquote/ffi.py,sha256=8razKZvxIqzHTNQ8jZW9MidffIrdMvhFetOX09-kBMQ,779
+urlquote/urlquote/native.so,sha256=2CKtYaHo2uC3uvBD_Bj0XWf5KyQVYGQS5rc51cs4G68,2064840
+urlquote-2.1.0.dist-info/RECORD,,
