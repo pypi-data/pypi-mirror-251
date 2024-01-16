@@ -1,0 +1,9 @@
+cuatrorpc-0.2.0.dist-info/METADATA,sha256=l6z3ZiLZj-hpvhmLRyd0QS33lBxdttzS11L9KIqgAkU,4274
+cuatrorpc-0.2.0.dist-info/WHEEL,sha256=Ov2heALfj2aZm-6BlbI5DNWwsRbMLUwe3lK3aSATCWw,129
+cuatrorpc-0.2.0.dist-info/license_files/LICENSE,sha256=yPYBWLKps5ZVuQC2vID0oKn7hnTWNhtzvioSgMJopzs,1065
+cuatrorpc/__init__.pyi,sha256=_U1gMocAGvzTquMfa9Di5nzv1ngfcjCC1lUXcLhKJYY,2183
+cuatrorpc/__init__.py,sha256=H1ILDx0miD2BVjTs7avKKEsBiWjul1NCReF8hg2eSYk,10928
+cuatrorpc/cuatrorpc_rs.pyi,sha256=Sygei5z3GjBn3jEyHvT6MSXu-ZZF6x7q1AicqRD1V-o,241
+cuatrorpc/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cuatrorpc/cuatrorpc_rs.cpython-312-arm-linux-gnueabihf.so,sha256=wIpqFzb4sFxv5okoEwxS7TERohyJ_aQCmXEQWb06K_8,7668628
+cuatrorpc-0.2.0.dist-info/RECORD,,
