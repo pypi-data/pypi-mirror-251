@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "crewai-tools"
+version = "0.0.1"
+description = "Set of tools for the crewAI framework"
+authors = ["João Moura <joaomdmoura@mgail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[tool.poetry.urls]
+Homepage = "https://github.com/joaomdmoura/crewAI-tools"
+Repository = "https://github.com/joaomdmoura/crewAI-tools"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
