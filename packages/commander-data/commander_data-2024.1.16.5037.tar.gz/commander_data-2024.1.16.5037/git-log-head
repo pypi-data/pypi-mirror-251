@@ -1,0 +1,7 @@
+commit 150c4b224b3a0ae7677193d96d8950d137cce459
+Author: Moshe Zadka <moshez@users.noreply.github.com>
+Date:   2024-01-15 17:23:57 -0800
+
+    Merge pull request #3 from elcaminoreal/fix-log-head
+    
+    remove git log head
