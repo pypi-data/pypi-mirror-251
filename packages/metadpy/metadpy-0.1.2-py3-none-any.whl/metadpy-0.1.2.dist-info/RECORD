@@ -1,0 +1,13 @@
+metadpy/__init__.py,sha256=iu1DYf-TysPhyo8_zwmalKkZELbxS7Q9_-GYw5v6FbU,736
+metadpy/bayesian.py,sha256=yR2KlfSVa9e3IUMXcPzDv8-pKg8dBG8PiumhrYT0QaM,19753
+metadpy/mle.py,sha256=l-Y0BtSV93MnHHcnFIRmx4ELt6Mh5eD8KWqiXYgjTM4,30404
+metadpy/plotting.py,sha256=RAZk4So-FqA4WPVQlrRLsC4OHkFijHrfsjY-DfQA310,7264
+metadpy/sdt.py,sha256=zonArHVvRs2R-utfciQOKcPP0mZb4PykUbOwKzoirI8,15871
+metadpy/utils.py,sha256=of-6M6X8lzj4Ij00UYGUEJIcRdOfxXNYCG_XMrvBwV8,26402
+metadpy/datasets/__init__.py,sha256=rOxs_aAZztFLP6OVWyZMNAoS88QRZjFxO4MLGFLQQfY,503
+metadpy/models/subject_level_pymc.py,sha256=5uoQc8Dizr30Arf3_W4xHRn9CCVUzYiZlsgUHlV-g3s,6432
+metadpy-0.1.2.dist-info/LICENSE,sha256=mYL-JX3hMtjHF2zv2dpAr55ls4Nb9yqshkDqcb-SxfY,34493
+metadpy-0.1.2.dist-info/METADATA,sha256=dq2tE4QPdl9CjV12FADSxsrwfPVO2MEqBnn0LZePnTk,12441
+metadpy-0.1.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+metadpy-0.1.2.dist-info/top_level.txt,sha256=FVU3nz2JAfg3VgT5-lU0HG6ZHXTTuS6mfaOyB6BhVMU,8
+metadpy-0.1.2.dist-info/RECORD,,
