@@ -1,0 +1,12 @@
+setuptools
+twine
+pandas
+loguru
+fastcore
+numpy
+sshtunnel==0.4.0
+sqlalchemy==1.4.46
+psycopg2-binary
+jobbot_algos
+tqdm
+pytelegrambotapi==4.10.0
