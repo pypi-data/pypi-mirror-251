@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "db-handler"
+version = "0.2.0"
+description = ""
+authors = ["SIGIERLuc <154315009+LucSIGIER-LIAL@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pyodbc = "^5.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
