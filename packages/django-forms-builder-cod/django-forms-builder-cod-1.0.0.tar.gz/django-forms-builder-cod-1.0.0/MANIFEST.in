@@ -1,0 +1,3 @@
+graft forms_builder/forms/templates
+graft forms_builder/forms/locale
+prune example
