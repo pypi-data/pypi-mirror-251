@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: hnswlib_jamjpan
+Version: 0.0.1
+Summary: hnswlib
+Home-page: https://github.com/yurymalkov/hnsw
+Author: Yury Malkov and others
+Requires-Dist: numpy
+
+hnsw
