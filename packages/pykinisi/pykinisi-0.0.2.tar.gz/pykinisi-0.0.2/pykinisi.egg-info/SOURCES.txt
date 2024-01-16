@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+pykinisi/KinisiCommands.py
+pykinisi/KinisiController.py
+pykinisi/__init__.py
+pykinisi.egg-info/PKG-INFO
+pykinisi.egg-info/SOURCES.txt
+pykinisi.egg-info/dependency_links.txt
+pykinisi.egg-info/not-zip-safe
+pykinisi.egg-info/requires.txt
+pykinisi.egg-info/top_level.txt
