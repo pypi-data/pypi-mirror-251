@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: python-hostfm
+Version: 0.1.1
+Summary: A simple Python package to manipulate hosts file.
+Home-page: https://github.com/shaiksamad/python-hostfm
+Author: Shaik Abdus Samad
+Author-email: shaiksamad.dev@gmail.com
+Project-URL: Bug Tracker, https://github.com/shaiksamad/python-hostfm/-/issues
+Project-URL: repository, https://github.com/shaiksamad/python-hostfm
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# python-hostfm
+
+A python package to manipulate hosts file.
+
+
+## Installation
+```
+pip install python-hostfm
+```
+
+## Quick Start
+
+```python
+from hostfm import HostFile
+
+hosts = HostFile()
+print(host.entries)
+
+```
