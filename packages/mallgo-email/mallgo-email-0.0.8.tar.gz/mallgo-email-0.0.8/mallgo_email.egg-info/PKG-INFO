@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: mallgo-email
+Version: 0.0.8
+Summary: This is a library developed by the Inkremental team in order to use integrate the mallgo-email-service on django projects.
+Author: Inkremental SAS
+Author-email: Inkremental SAS <tecnologia@inkremental.co>
+Project-URL: Homepage, https://inkremental.co
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# MallGo Email Service
+This is a library developed by the [Inkremental team](https://inkremental.co) in order 
+to use integrate the mallgo-email-service on django projects.
+
+## Usage
+
+### Install the library
+```bash
+pip install mallgo-email
+```
+### Add the library settings to your django project
+```python
+# settings.py
+EMAIL_BACKEND = 'MallGoEmail.backends.MallGoEmailBackend'
+MALLGO_PUBLIC_KEY = "YOUR_PUBLIC_KEY"
+```

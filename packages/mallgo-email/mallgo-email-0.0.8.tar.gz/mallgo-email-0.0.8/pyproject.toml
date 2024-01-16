@@ -1,0 +1,15 @@
+[project]
+name = "mallgo-email"
+version = "0.0.8"
+authors = [
+    { name = "Inkremental SAS", email = "tecnologia@inkremental.co" },
+]
+description = "This is a library developed by the Inkremental team in order to use integrate the mallgo-email-service on django projects."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+
+[project.urls]
+Homepage = "https://inkremental.co"
