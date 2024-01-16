@@ -1,0 +1,8 @@
+README.md
+setup.py
+AMIVA_F.egg-info/PKG-INFO
+AMIVA_F.egg-info/SOURCES.txt
+AMIVA_F.egg-info/dependency_links.txt
+AMIVA_F.egg-info/entry_points.txt
+AMIVA_F.egg-info/requires.txt
+AMIVA_F.egg-info/top_level.txt

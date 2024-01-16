@@ -1,0 +1,2 @@
+[console_scripts]
+AMIVA_F = AMIVA_F:main
