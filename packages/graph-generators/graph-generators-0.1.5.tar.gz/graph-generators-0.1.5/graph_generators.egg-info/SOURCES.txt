@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+graph_generators/__init__.py
+graph_generators/graph_generators.py
+graph_generators.egg-info/PKG-INFO
+graph_generators.egg-info/SOURCES.txt
+graph_generators.egg-info/dependency_links.txt
+graph_generators.egg-info/requires.txt
+graph_generators.egg-info/top_level.txt
