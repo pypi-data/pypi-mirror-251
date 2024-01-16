@@ -1,0 +1,13 @@
+README.md
+setup.py
+dashit.egg-info/PKG-INFO
+dashit.egg-info/SOURCES.txt
+dashit.egg-info/dependency_links.txt
+dashit.egg-info/requires.txt
+dashit.egg-info/top_level.txt
+hydra_plugins/dashit/__init__.py
+hydra_plugins/dashit/config.py
+hydra_plugins/dashit/constants.py
+hydra_plugins/dashit/launcher.py
+hydra_plugins/dashit/status.py
+hydra_plugins/dashit/utils.py
