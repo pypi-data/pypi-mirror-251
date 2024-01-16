@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: NeuroInsight
+Version: 0.1
+Summary: A custom neural network library for educational purposes
+Home-page: UNKNOWN
+Author: Pranjal Khadka
+Author-email: pranzalkhadka1@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: plotly
+
+NeuroInsight is a simple neural network library designed to help beginners understand the internals of neural networks.
+
