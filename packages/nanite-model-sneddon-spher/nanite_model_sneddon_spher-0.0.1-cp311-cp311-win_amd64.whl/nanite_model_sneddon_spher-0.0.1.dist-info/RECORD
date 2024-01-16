@@ -1,0 +1,9 @@
+nanite_model_sneddon_spher/__init__.py,sha256=qCf3RT2fG7QZ0g8_kgDDjqFFB1rJHF8i9J6D8ddXRAg,117
+nanite_model_sneddon_spher/_version.py,sha256=-8RU0QdII_XrFjsbpSZzAQceoyPq0VYWiw_vW99Ylbc,427
+nanite_model_sneddon_spher/model_sneddon_spherical.cp311-win_amd64.pyd,sha256=3nMzrNADuvn24Typ9dU8B7iqVmu61X1szSyqWvIDlKQ,60928
+nanite_model_sneddon_spher/model_sneddon_spherical.pyx,sha256=3VRTCpgtNR-LzZtLRBhlpxjVhedEkWhBqPg40P4kluE,3808
+nanite_model_sneddon_spher-0.0.1.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+nanite_model_sneddon_spher-0.0.1.dist-info/METADATA,sha256=bYBS4ZSKC6IRGm7FZFKCMdWJ0yUPCIPxvCUpIv30Qj4,1757
+nanite_model_sneddon_spher-0.0.1.dist-info/WHEEL,sha256=ircjsfhzblqgSzO8ow7-0pXK-RVqDqNRGQ8F650AUNM,102
+nanite_model_sneddon_spher-0.0.1.dist-info/top_level.txt,sha256=dM8T_CW-TMA3siWdSLJv23ItdmMDpDw4EsJOP4IpPto,27
+nanite_model_sneddon_spher-0.0.1.dist-info/RECORD,,
