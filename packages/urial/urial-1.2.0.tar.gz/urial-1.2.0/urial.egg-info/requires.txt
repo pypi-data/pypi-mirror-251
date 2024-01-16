@@ -1,0 +1,5 @@
+appscript==1.2.2
+plac==1.4.2
+sidetrack==2.0.1
+setuptools>=67.0.0
+uritools==4.0.2

@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+tests/test_uri_parsing.py
+urial/__init__.py
+urial/__main__.py
+urial.egg-info/PKG-INFO
+urial.egg-info/SOURCES.txt
+urial.egg-info/dependency_links.txt
+urial.egg-info/entry_points.txt
+urial.egg-info/not-zip-safe
+urial.egg-info/requires.txt
+urial.egg-info/top_level.txt
