@@ -1,0 +1,4 @@
+numpy
+cffi
+numexpr
+h5py
