@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: bp-monitor
+Version: 0.1.0
+Summary: Allows use to input bloood pressure vaules and creates reports including visualisations indicating BP treds over time
+Home-page: https://github.com/bokey007/bp_monitor
+Author: Sudhir Arvind Deshmukh
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# bp_monitor
+Allows use to input bloood pressure vaules and creates reports including visualisations indicating BP treds over time
