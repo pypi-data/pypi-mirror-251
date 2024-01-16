@@ -1,0 +1,9 @@
+keplergl==0.3.2
+h3==3.7.0
+pyspark<3.5,>=3.4
+ipython>=7.22.0
+
+[dev]
+isort
+black
+build
