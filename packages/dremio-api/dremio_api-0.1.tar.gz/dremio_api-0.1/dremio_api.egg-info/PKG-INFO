@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: dremio-api
+Version: 0.1
+Requires-Dist: pandas
+Requires-Dist: pyarrow>=11.0.0
+Requires-Dist: certifi

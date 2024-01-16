@@ -1,0 +1,10 @@
+README.md
+setup.py
+dremio_api/__init__.py
+dremio_api/queryDremio.py
+dremio_api.egg-info/PKG-INFO
+dremio_api.egg-info/SOURCES.txt
+dremio_api.egg-info/dependency_links.txt
+dremio_api.egg-info/not-zip-safe
+dremio_api.egg-info/requires.txt
+dremio_api.egg-info/top_level.txt
