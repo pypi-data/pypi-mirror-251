@@ -1,0 +1,15 @@
+README.md
+setup.py
+nanoinsight/__init__.py
+nanoinsight/create_consensus.py
+nanoinsight/create_fasta.py
+nanoinsight/nanoinsight.py
+nanoinsight/repeat_annotate.py
+nanoinsight/utils.py
+nanoinsight/version.py
+nanoinsight.egg-info/PKG-INFO
+nanoinsight.egg-info/SOURCES.txt
+nanoinsight.egg-info/dependency_links.txt
+nanoinsight.egg-info/entry_points.txt
+nanoinsight.egg-info/requires.txt
+nanoinsight.egg-info/top_level.txt

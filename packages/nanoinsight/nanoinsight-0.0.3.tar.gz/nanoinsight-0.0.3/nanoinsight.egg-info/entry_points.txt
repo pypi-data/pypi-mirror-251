@@ -1,0 +1,2 @@
+[console_scripts]
+nanoinsight = nanoinsight.nanoinsight:main
