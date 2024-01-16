@@ -1,0 +1,2 @@
+[console_scripts]
+iascan = iascan.main:main

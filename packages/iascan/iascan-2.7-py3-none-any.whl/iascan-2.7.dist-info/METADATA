@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: iascan
+Version: 2.7
+Summary: A simple IP scanner tool
+Home-page: https://github.com/GeekMada/iascan.git
+Author: Itibar Aheshman
+Author-email: aheshman.itibar@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+# iascan
+
+`iascan` est un outil de balayage d'adresses IP conÃ§u pour Ãªtre simple et efficace. Il permet aux utilisateurs de scanner rapidement des adresses IP uniques ou des plages d'adresses IP pour collecter des informations de base sur les hÃ´tes connectÃ©s.
+
+## Installation
+
+Pour installer `iascan`, exÃ©cutez simplement la commande suivante :
+
+pip install iascan
+
+
+Assurez-vous d'avoir `pip` installÃ© et de l'utiliser avec une version de Python supÃ©rieure Ã  3.6.
+
+## Utilisation
+
+Pour scanner une adresse IP spÃ©cifique, utilisez la commande suivante :
+
+iascan -ip 192.168.1.1
+
+
+
+Pour scanner une liste d'adresses IP Ã  partir d'un fichier, utilisez :
+
+iascan -list ip_list.txt
+
+
+
+Le fichier `ip_list.txt` doit contenir une adresse IP par ligne.
+
+## FonctionnalitÃ©s
+
+- Recherche d'adresses IP uniques.
+- Balayage d'une liste d'adresses IP.
+- Affichage des informations de base telles que les hostnames, les ports ouverts, les tags associÃ©s, et potentiellement les vulnÃ©rabilitÃ©s connues.
+- Utilisation simple en ligne de commande.
+
+## Contribution
+
+Les contributions Ã  `iascan` sont les bienvenues ! Si vous avez des suggestions ou des amÃ©liorations, n'hÃ©sitez pas Ã  ouvrir une issue ou une pull request sur notre dÃ©pÃ´t GitHub Ã  l'adresse suivante : [GitHub - iascan](https://github.com/yourusername/iascan).
+
+## Licence
+
+`iascan` est distribuÃ© sous la licence MIT. Voir le fichier `LICENSE` pour plus d'informations.
