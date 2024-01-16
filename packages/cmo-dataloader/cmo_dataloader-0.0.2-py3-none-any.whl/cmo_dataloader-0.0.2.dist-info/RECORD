@@ -1,0 +1,10 @@
+cmo_dataloader/__init__.py,sha256=RzkVwjk1n21TPBlvdd-wte_DOaapQWAbNUruDzhYKGc,485
+cmo_dataloader/resources.py,sha256=WnBQgPppe1BXTYYNvyE8RfwHZbdsayz4KgiK3bd7VQ4,1790
+cmo_dataloader/database/__init__.py,sha256=keOOQSmS595Vub99VGMad7ko2A2m2gT0M-K-cObS9TU,33
+cmo_dataloader/database/load_db.py,sha256=MvheNl2ZGx2R2-FL3jXYJXX2lUHQM68zLrkpm1ILjsQ,3729
+cmo_dataloader/files/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cmo_dataloader/files/load_flat_files.py,sha256=HSNqQm4YQyX_r9JQ-1aAfv9BDkjaUlpUoBeJPG4kMoU,10222
+cmo_dataloader-0.0.2.dist-info/METADATA,sha256=AuZYiUyGatk9zXsYgKLCkbJatx33HP-WT4sAmspxOtw,3384
+cmo_dataloader-0.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+cmo_dataloader-0.0.2.dist-info/top_level.txt,sha256=_qzdlVONqyJI8lJLHpdPwO2AWn21p5AERRdKH8RfCPI,15
+cmo_dataloader-0.0.2.dist-info/RECORD,,
