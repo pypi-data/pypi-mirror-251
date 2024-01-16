@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+src/acros.egg-info/PKG-INFO
+src/acros.egg-info/SOURCES.txt
+src/acros.egg-info/dependency_links.txt
+src/acros.egg-info/top_level.txt
