@@ -1,0 +1,15 @@
+rps_milea_users/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rps_milea_users/admin.py,sha256=D_wu8VoeJDJcrNmJQ_bkC6GEDV11pkDvgsYPEMvuHgg,1311
+rps_milea_users/apps.py,sha256=hUbqAdszMFUI411sy7SkCkt6Do2Qbtm8yhiKcT5tELg,297
+rps_milea_users/models.py,sha256=YFT1owfsPkAAW7JD7081crp894-8kkP-ZVVISv2knBs,1843
+rps_milea_users/tests.py,sha256=GgiNZG_IVvwzrZUxlYDLLalGlwRdVzC5g8rZfYqTXlg,65
+rps_milea_users/migrations/0001_initial.py,sha256=NrdlRtM5pzflAVu6SrP-dPTtKkGJfUr4jBcidix0LGQ,2686
+rps_milea_users/migrations/0002_group.py,sha256=wihVDYb3CQUS1JWG8QhI-L9Y7FrHuN2fy0RIagvCo9Y,820
+rps_milea_users/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rps_milea_users/migrations/__pycache__/0001_initial.cpython-311.pyc,sha256=yQtc2BET5xKeDNrEvJp0aXPkoMUOhnWq-XZQ1ko-dqY,3109
+rps_milea_users/migrations/__pycache__/0002_group.cpython-311.pyc,sha256=jySzoprWMIQVAC1t_JuIorLjE73a_9LSaFMubZXXGps,1123
+rps_milea_users/migrations/__pycache__/__init__.cpython-311.pyc,sha256=XVFD66BF-UUsGSnKdipkUQMdGcIbKbgv1PN30cD3c6U,184
+rps_milea_users-0.1.2.dist-info/METADATA,sha256=btowo65qrw2vgEjKvMJ6mRlMjSXxSbON-0d31zAKA30,1258
+rps_milea_users-0.1.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+rps_milea_users-0.1.2.dist-info/top_level.txt,sha256=9lgb5cVl5rqywDZOQAKbTPuOO91vg0bkyJz1MJhkYgE,16
+rps_milea_users-0.1.2.dist-info/RECORD,,
