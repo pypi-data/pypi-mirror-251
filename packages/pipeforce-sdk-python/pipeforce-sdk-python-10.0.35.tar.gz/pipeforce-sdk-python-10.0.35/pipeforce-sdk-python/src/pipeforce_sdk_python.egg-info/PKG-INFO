@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: pipeforce-sdk-python
+Version: 10.0.35
+Summary: Python SDK for PIPEFORCE
+Author: LOGABIT GmbH
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# PIPEFORCE Python SDK
+
+A library to simplify the communication with PIPEFORCE iPaaS from inside Python scripts.
+
+For more information about PIPEFORCE see: https://pipeforce.org
+
+For developer documentation of this SDK, see: https://pipeforce.org/sdk-python/index.html
+
+This library can be used in FaaS / Lamda functions whereas Python is running as a Function inside PIPEFORCE,
+in a microservice running inside PIPEFORCE or in a standalone Python application for example to connect
+local services or OnPremise systems with PIPEFORCE.
+
+## Prerequisites
+
+- Python >= 3.9 is installed
+- PIPEFORCE >= 9.0.0

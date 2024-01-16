@@ -1,0 +1,7 @@
+LICENSE
+setup.py
+pipeforce-sdk-python/src/pipeforce_sdk.py
+pipeforce-sdk-python/src/pipeforce_sdk_python.egg-info/PKG-INFO
+pipeforce-sdk-python/src/pipeforce_sdk_python.egg-info/SOURCES.txt
+pipeforce-sdk-python/src/pipeforce_sdk_python.egg-info/dependency_links.txt
+pipeforce-sdk-python/src/pipeforce_sdk_python.egg-info/top_level.txt
