@@ -1,0 +1,6 @@
+config
+cost
+leven_search
+result
+state
+trie
