@@ -1,0 +1,1 @@
+PryvX is a federated learning framework that lets you build and train ML models at the client side and aggregate the trained model parameters from the participating clients at the federated server.

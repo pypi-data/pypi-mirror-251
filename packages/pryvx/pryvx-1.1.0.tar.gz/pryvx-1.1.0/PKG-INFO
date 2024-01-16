@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pryvx
+Version: 1.1.0
+Summary: PryvX is a federated learning library
+Author: PryvX (Jayesh Kenaudekar)
+Author-email: <jayesh@pryvx.com>
+Keywords: python,privacy-preserving,federated-learning,machine-learning,RPC,grpc
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+PryvX is a federated learning framework that lets you build and train ML models at the client side and aggregate the trained model parameters from the participating clients at the federated server.
