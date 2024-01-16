@@ -1,0 +1,15 @@
+HalApyJson/GLOBALS.py,sha256=KApPmJRTgXfE0dSGllBCR8xSY-HPWGuEWqr5Xf1URWw,3354
+HalApyJson/__init__.py,sha256=pVOrduvoB0R7i7IytXSkZlx8owZNko0Pd0jSSNcQC5Q,201
+HalApyJson/api_manager.py,sha256=endXgi73xvCXdhDqd0TpZq1qUvmL30XcROK2s4HxHFA,3076
+HalApyJson/json_parser.py,sha256=lEvJOblxI2DU5gofgtGzDQ2zaxTquC3qoZ0Ti01Iw1o,1523
+HalApyJson/main.py,sha256=Iqar59_7LPCfX0m4SDbZV91A7ANxfJyaoXJGez7b64A,810
+HalApyJson/setup.py,sha256=_x1Ipy2fDTK6D-Rs8b3YFSKGxbXLO7104yepH12eZnU,1702
+HalApyJson/CLI/__init__.py,sha256=ptwUP8OQl7VT2oW4FFoMgNp2bF99-hup7iogYocUjmQ,58
+HalApyJson/CLI/cli.py,sha256=_Ut9ma0w-htp9Ck6CmfbTNRmSlkYkgjhz2dO7MWODDk,2069
+HalApyJson/CONFIG/hal_config.json,sha256=Cu4A03eOpO4MQjMGzLCLdf6ZOMxFXV7btlFuARQJ-RQ,1968
+HalApyJson-1.0.0.dist-info/LICENSE,sha256=SGHMmuW5iMN5MwIkVeWbg30U38S5sLqz-rsFK8-FVEU,1088
+HalApyJson-1.0.0.dist-info/METADATA,sha256=rosmNLXr7od6xbfJV7awPjQT7dX0QRfzPAWGVBTY_v8,1627
+HalApyJson-1.0.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+HalApyJson-1.0.0.dist-info/entry_points.txt,sha256=8BVlyRHYIzvE9EjAebBlK2hhp_L2RFKJjeWiQIkImrg,56
+HalApyJson-1.0.0.dist-info/top_level.txt,sha256=smIxECb2ujheymvOAVdpbsWTB2ej_TWIlter0-fTnc8,11
+HalApyJson-1.0.0.dist-info/RECORD,,

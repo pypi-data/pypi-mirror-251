@@ -1,0 +1,3 @@
+[console_scripts]
+cli_hal = HalApyJson.CLI.cli:cli_hal
+
