@@ -1,0 +1,17 @@
+[Unit]
+Description=Subfork Worker
+After=network.target
+
+[Service]
+User=root
+WorkingDirectory=/usr/local/bin
+ExecStart=/usr/local/bin/worker
+Restart=always
+RestartSec=5
+#Environment=USE_VIRTUALENV=1
+#Environment=SUBFORK_ACCESS_KEY=XXXXXX
+#Environment=SUBFORK_SECRET_KEY=XXXXXX
+#Environment=SUBFORK_CONFIG_FILE=/path/to/subfork.yml
+
+[Install]
+WantedBy=multi-user.target

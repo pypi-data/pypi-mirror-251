@@ -1,0 +1,34 @@
+# Subfork Site Template File
+#
+# $ pip install subfork
+#
+
+# enter verified domain here
+domain: example.fork.io
+
+# enter site credentials here
+# access_key: ${SUBFORK_ACCESS_KEY}
+# secret_key: ${SUBFORK_SECRET_KEY}
+
+# deployment settings
+# auto_minimize: true
+# debug: ${SUBFORK_DEBUG}
+
+# template and static file folder paths
+# template_folder: templates
+# static_folder: static
+
+# page template definitions
+templates:
+  index:
+    route: /
+    file: index.html
+
+# task worker definitions
+workers:
+  test:
+    queue: test
+    function: subfork.worker.test
+  # throw:
+  #   queue: throw
+  #   function: subfork.worker.throw
