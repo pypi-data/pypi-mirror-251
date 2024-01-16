@@ -1,0 +1,17 @@
+GitPython==3.1.41
+twine==4.0.2
+githubrelease==1.5.9
+
+[codacy]
+codacy-coverage
+
+[dev]
+tox==4.12.0
+pytest==7.4.4
+pytest-cov==4.1.0
+pytest-html==4.1.1
+pytest-sugar==0.9.7
+prospector==1.10.3
+
+[docs]
+Sphinx>=1.6.3
