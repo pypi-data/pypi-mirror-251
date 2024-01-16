@@ -1,0 +1,17 @@
+farsakh/KMeansCoff_file.py,sha256=NPJLtRgLHfASAdUSUoSfwzDUA4WABKD-aEDf8EbC4Ro,785
+farsakh/__init__.py,sha256=p9BIfmarXUKa9y-mARCImqd_EFhK18EnBVqoCj9n2Jg,668
+farsakh/evaluate_classification_file.py,sha256=wkH3knnz1biqs_7v51b3FU3DAInK7-lbj04zqQK2QaA,2723
+farsakh/evaluate_regression_file.py,sha256=1MYYDV_tOqE1hHPnsUk8fMkfrrIY2U4Letf1xXmWXgA,2066
+farsakh/explore_categorical_file.py,sha256=sSEum7fFWUHBN33lEKDAOCwR2tcchAGdF63WE_mJv1w,2280
+farsakh/explore_numeric_file.py,sha256=ZPZYrbK7E3qwaSPO0FL27wu-KfCVmj6xVOwEVJyK664,1933
+farsakh/modelSearch_file.py,sha256=Gqbyy0USlesRQ-RYJNzdc-gL6DRb-gUVH-hY54L-AzE,2526
+farsakh/neural_networks_builder_file.py,sha256=tMxwni4bM6ytEIIJh4Qe0AbrQhu0RuNIFhham4rdAIc,3822
+farsakh/overView_file.py,sha256=TfsLtsIkCQSg7XD2zEPfJuG08q8OQiJpd0alqfO1p_w,524
+farsakh/plot_PCA_file.py,sha256=ca8RgdjcJoxbf3FjPm8C-5CIwAhJldPR0bJNCMlme2s,1621
+farsakh/plot_categorical_vs_target_file.py,sha256=gGYw1ysgC43KLbrNUDPLXOXl0ZO9_pCYwuaUvh3nZ9I,1519
+farsakh/plot_numeric_vs_target_file.py,sha256=-ZsY_uSVuimOku-mrjLU5CtnKxCIA_vewsMOfLN8h40,1989
+farsakh/preprocessor_maker_file.py,sha256=whmxJ4a-QosbUbQcypNhOOYIQ17GYyvA7k7IilZJBzw,4433
+farsakh_df-0.1.6.dist-info/METADATA,sha256=jCFGwGSw2r0FBWe7pwah6AQpbfpsv5ABA5Ql_iZOLk4,467
+farsakh_df-0.1.6.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+farsakh_df-0.1.6.dist-info/top_level.txt,sha256=Y5emUF977-aUxTbi6E8SRkb9rGHetvE778OK3rdqwnw,8
+farsakh_df-0.1.6.dist-info/RECORD,,
