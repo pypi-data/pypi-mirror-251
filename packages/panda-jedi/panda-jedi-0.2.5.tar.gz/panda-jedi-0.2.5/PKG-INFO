@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: panda-jedi
+Version: 0.2.5
+Summary: JEDI Package
+Home-page: https://twiki.cern.ch/twiki/bin/view/Atlas/PanDA
+Author: Panda Team
+Author-email: atlas-adc-panda@cern.ch
+License: GPL
+License-File: LICENSE.txt
+Requires-Dist: panda-common>=0.0.44
+Requires-Dist: panda-server>=0.0.37
+Requires-Dist: python-daemon
+Requires-Dist: numpy
+Requires-Dist: pyyaml
+Requires-Dist: requests
+Requires-Dist: packaging
+Provides-Extra: oracle
+Requires-Dist: cx_Oracle; extra == "oracle"
+Provides-Extra: mysql
+Requires-Dist: mysqlclient; extra == "mysql"
+Provides-Extra: postgres
+Requires-Dist: psycopg2-binary; extra == "postgres"
+Provides-Extra: rucio
+Requires-Dist: rucio-clients; extra == "rucio"
+Provides-Extra: atlasprod
+Requires-Dist: cx_Oracle; extra == "atlasprod"
+Requires-Dist: rucio-clients; extra == "atlasprod"
+Requires-Dist: idds-common; extra == "atlasprod"
+Requires-Dist: idds-client; extra == "atlasprod"
+
+This package contains JEDI components
