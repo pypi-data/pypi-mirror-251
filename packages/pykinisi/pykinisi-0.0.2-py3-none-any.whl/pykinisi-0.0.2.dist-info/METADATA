@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: pykinisi
+Version: 0.0.2
+Summary: Python package for Kinisi Controller
+Home-page: https://github.com/szolotykh/pykinisi
+Author: Sergey Zolotykh
+Author-email: szolotykh88@gmail.com
+License: MIT
+Keywords: motor controller,hardware,robotics,kinisi,kinisi controller
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+Requires-Dist: serial
+
+# pykinisi
+Python package for kinisi motor controller. This package is used to control the kinisi motor controller via serial interface.\
+Discription of the commands can be found in [Kinisi Motion Controller framework documentation](https://raw.githubusercontent.com/szolotykh/kinisi-motor-controller-firmware/command-script/commands.md)
+
+## Installation
+Install pykinisi with pip:
+```bash
+pip install pykinisi
+```
+
+## Examples
+There are several examples in the examples folder which show how to use the pykinisi package to control the kinisi motor controller.\
+Run the examples with:
+```bash
+cd examples
+python <example_file> <serial_port>
+```
+
+## Development
+
+Install pykinisi for development:
+```bash
+pip install -e .
+```
+
+Update KinisiCommands.py file:
+```bash
+cd scripts
+python update_commands.py
+```
+
+## Links
+- [Kinisi Motion Controller firmware](https://github.com/szolotykh/kinisi-motor-controller-firmware)
+- [Kinisi Motion Controller hardware](https://github.com/szolotykh/kinisi-motor-controller-board)
+- [JavaScipt package for kinisi motor controller](https://github.com/szolotykh/jskinisi)
+- [Python package for kinisi motor controller](https://github.com/szolotykh/pykinisi)
+
