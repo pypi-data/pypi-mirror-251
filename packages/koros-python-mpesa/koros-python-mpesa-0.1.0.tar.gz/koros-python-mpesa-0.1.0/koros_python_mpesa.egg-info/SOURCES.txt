@@ -1,0 +1,5 @@
+setup.py
+koros_python_mpesa.egg-info/PKG-INFO
+koros_python_mpesa.egg-info/SOURCES.txt
+koros_python_mpesa.egg-info/dependency_links.txt
+koros_python_mpesa.egg-info/top_level.txt
