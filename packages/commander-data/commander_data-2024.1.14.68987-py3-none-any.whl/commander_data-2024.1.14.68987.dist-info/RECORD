@@ -1,0 +1,10 @@
+commander_data/__init__.py,sha256=Tu5UWuxBl6GjczvxCanLrY4OEVBuWUvaejrBynrCGwE,860
+commander_data/api.py,sha256=g9neqDfGSxquKWimskvRglQIpTyK0uscPV1x1ZSZVxk,1749
+commander_data/common.py,sha256=voQXxF60Tg_AS8yClrerq1zOSp499njSRxot2IIk6Yo,850
+commander_data/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+commander_data/tests/test_common.py,sha256=O5Xkx__mkwjaPXgF5BXIDKzh6FQ_FSwQjh9_9BvmDsI,729
+commander_data/tests/test_init.py,sha256=Nmk3RkKiVzb1r1Oas_FLHcmQETW0Ub9lnLSRrwZ7VfE,1501
+commander_data-2024.1.14.68987.dist-info/METADATA,sha256=h8wufHr_8xGPpNSUVeYpbPQ5XuG-bpDgR750MFDGf9s,1992
+commander_data-2024.1.14.68987.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+commander_data-2024.1.14.68987.dist-info/top_level.txt,sha256=oz1g9GnNFDoe95vL24R-ofuYw9WF1v4Z2kCBXcVSLJQ,15
+commander_data-2024.1.14.68987.dist-info/RECORD,,
