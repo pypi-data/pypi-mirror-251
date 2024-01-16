@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: python2algeomath
+Version: 0.0.9
+Summary: to be helpful python code for Math Teacher
+Home-page: https://github.com/kimkyubong/python2algeomath
+Author: KimKyuBong
+Author-email: tfm0405@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+반갑습니다, 알지오매스 블록코드 생성용 파이썬 코드를 제작중입니다.
+조금더 효율적이고 간편하고 다양한 기능을 구현하는 것이 목표입니다.
