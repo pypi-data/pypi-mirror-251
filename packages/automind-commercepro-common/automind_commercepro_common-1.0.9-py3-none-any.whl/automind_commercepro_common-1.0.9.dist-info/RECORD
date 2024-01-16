@@ -1,0 +1,16 @@
+__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+common/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+common/diff.py,sha256=Ul2WRQ3SsVS63vdkRRTLRcOAmH2XKgPjcca7vxP1Qfk,863
+common/dto.py,sha256=_qAO62aEr5NgK-maL3RqOZGNce_0-9Bxn_vYIJAobyU,4134
+common/feed.py,sha256=I2UpzoSmFutSEBKnJg8q4TyRMdNrxse6Icqwn0gY_TA,763
+common/log.py,sha256=Mv87sQyC1ecu2ixd0pL2HZe8IiXhppgJnNm6mLOG9lw,1107
+common/offer.py,sha256=WIgUiKUo8EEWD1yuAO6CK_2AkzI2hwrpqyjWFoxUUG0,1226
+common/price.py,sha256=eLN0qKDhHnjSUerxip6wGVq0PkYIkPCeysjhcMWcgtw,941
+common/product.py,sha256=5lRznnCkArAIBZHac488GzaHY0xu8AjoEg0y82YRiB0,4746
+common/supplier.py,sha256=E2UrDlJhq26-vcWa4sIKP013jhtY8HjzevWOGPD2gig,3581
+common/task.py,sha256=TpTVoiNNc0gcA7qgQ4uD4JE4-jC0n1zrRGN1O7lk_gw,822
+common/utility.py,sha256=FPkOai7eap6_iOpS92W74zhRD1jXsGzwoCUPkpIoGKI,235
+automind_commercepro_common-1.0.9.dist-info/METADATA,sha256=U5FpZObvkIk1mGq7L-USVQR1BOS7Y1CEOlskj2q9IQo,132
+automind_commercepro_common-1.0.9.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+automind_commercepro_common-1.0.9.dist-info/top_level.txt,sha256=e5BL1r_tKjbTAFqZVmyV_QodkJ27atnYdIKGRzPvTOU,16
+automind_commercepro_common-1.0.9.dist-info/RECORD,,

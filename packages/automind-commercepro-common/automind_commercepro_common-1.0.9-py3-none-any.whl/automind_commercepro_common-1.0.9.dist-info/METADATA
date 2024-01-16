@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: automind-commercepro-common
+Version: 1.0.9
+Requires-Dist: pydantic
+Requires-Dist: google-cloud-logging
+
