@@ -1,0 +1,22 @@
+pandas>=1.2
+pydotplus
+datatable
+anytree
+matplotlib
+numpy>=1.21.1
+dirichlet
+dtreeviz
+
+[:python_version < "3.8"]
+importlib-metadata
+
+[testing]
+setuptools
+pytest
+pytest-cov
+pytest-testmon
+docstr-coverage
+nbsphinx
+ipykernel
+ipython
+wand
