@@ -1,0 +1,8 @@
+global-exclude */__pycache__/*
+global-exclude *.pyc
+include anyBSM/latex/tikzfeynman/*
+include anyBSM/mathematica_interface/anyBSM.m
+include anyBSM/logos/*
+include anyBSM/PDFs/*
+include anyBSM/ufo/*
+include anyBSM/latex/*

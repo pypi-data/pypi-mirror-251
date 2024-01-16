@@ -1,0 +1,266 @@
+#!/usr/bin/env python3
+
+from __future__ import division
+from collections import OrderedDict
+from argparse import ArgumentParser, SUPPRESS, RawTextHelpFormatter
+import logging
+from os import path, listdir, getenv
+from anyBSM import anyBSM
+from anyBSM import config
+import cmath # noqa: F401
+import json
+from cmath import pi, sin, cos, tan, atan, sqrt, log # noqa: F401
+
+logger = logging.getLogger('anyBSM')
+
+module_dir = anyBSM.module_dir
+
+# argument parsing and model initialization
+parser = ArgumentParser(formatter_class = RawTextHelpFormatter, description="""The ULTIMATE \\kappa_\\lambda calculator!
+New to anyBSM? -> Try:
+  * `anyBSM -l` - to list all available models
+  * `anyBSM SM` - to run the SM
+  * `anyBSM SM --Mh 124.9 --Mu3 173.0` - to run the SM with a different Higgs and Top mass
+  * `anyBSM SM -h` - to list all available input parameters for the SM
+        """, add_help = False)
+parser.add_argument("model", type=str, nargs='?',
+        help="path to/name of the UFO model. This can be a model name listed in 'anyBSM -l' or the absolute path to any UFO model.")
+parser.add_argument("-h","--help", action='count', default=0,
+        help="show this help message and exit\n -h [model]  shows information for the respective model and which input parameters are available\n -hh [model] shows even more information such as relations between input and internal parameters")
+parser.add_argument("-l", "--list", action="store_true",
+        help="list all available models. Models are searched for in:\n  the built-in model directory,\n  ~/.anyBSM/\n  and the directory set in the MODELS environment variable")
+parser.add_argument("-v", "--verbose", action="count", default=0,
+        help="increase output verbosity:\n -v  (info-log-level) says what is being done\n -vv  (debug-log-level) prints intermediate results for individual diagrams")
+parser.add_argument("-c", "--no-cache", action="count", default=0,
+       help="do not cache intermediate results.\n -c   do not cache analytic results for diagrams.\n -cc  do not cache insertions either.\n -ccc delete all cache files")
+parser.add_argument("-e", "--evaluation", default="numerical", choices=['numerical', 'analytical', 'abbreviations'],
+       help="how to represent the result\n numerical      insert numerical input numbers into diagrams or results from the cache\n abbreviations  uses the goupling short-names defined in the UFO model (this is how the results are saved to the cache files)\n analytical     inserts all analytic feynman rules explicitly and returns the result as string")
+parser.add_argument("-o", "--output", type=str, default='',
+       help="save analytic results to file. If not given, results are printed to stdout.")
+
+parser.add_argument("-R", "--renormalization", type=str,
+       help="specify renormalization scheme defined in the file `<modeldirectory>/schemes.yml`.\nIf the scheme is not present a new scheme will be generated interactively.")
+parser.add_argument("-f", "--file", type=str,
+       help="take input parameters from a given LHA file. The values can still be overwritten by command line args")
+parser.add_argument("-s", "--simplify", action='store_true',
+       help="whether to simplify analytic results.")
+parser.add_argument("-t", "--tex", nargs="?", type=float, dest="tex", const=True,
+       help="generate LaTeX output.\nOptional: specify a cutoff to determine which diagrams contirbuting with a minimum absolute value should be drawn.\n Use this in combination with '-c' since only diagrams which are actually drawn are computed.\n The output supports all evaluation modes.")
+parser.add_argument("-i", "--include", type=str,
+       help="(space separated list of) field(s) which MUST be present as internal lines in the diagrams.\nIf not specified, all fields in the model are considered",
+       nargs='*')
+parser.add_argument("--non-interactive", action='store_true',
+       help="do not ask for any user-input and always assume 'yes' as answer")
+parser.add_argument("--stay", action='store_true',
+        help="do not exit after finishing the calculation but open a (i)python shell")
+parser.add_argument("-q", "--quiet", action='store_true',
+        help="do not print anything to stdout (except logging and the final result). Useful for large parameter scans")
+parser.add_argument("-p", "--no-progress", action="store_true",
+       help="do not show any progress bars")
+parser.add_argument("-w", "--ewpo", action='store_true',
+        help="Calculates M_W")
+parser.add_argument("-u", "--unitarity", action='store_true',
+        help="Calculates largest SS->SS scattering eigenvalue in the high-energy limit")
+
+modeldirs = OrderedDict()
+modeldirs['Directory set per MODELS env'] = getenv('MODELS', '/not/set')
+modeldirs['User directory'] = path.join(getenv('HOME'), '.anyBSM')
+modeldirs['Default directory'] = config.get_config()['models_dir']
+modeldirs = OrderedDict({k:path.abspath(v) for k,v in modeldirs.items()})
+
+# check for possible directories
+def searchmodels(p=False):
+    out = 'Available models:'
+    models = {}
+    for kind,modeldir in modeldirs.items():
+        out += f'\n\n{kind} ({modeldir}/):\n'
+        if modeldir.startswith('__') or modeldir.startswith('.'):
+            continue
+        if not path.isdir(modeldir):
+            out += '    Directory does not exist.'
+            continue
+        for modelname in sorted(listdir(modeldir)):
+            if modelname.startswith('__') or modelname.startswith('.'):
+                continue
+            modelpath = path.join(modeldir, modelname)
+            if path.isdir(modelpath):
+                models[modelname] = modelpath
+                out += f'  - {modelname}\n'
+    cnt = len(models)
+    if cnt:
+        out += f'Found {cnt} model directories.\n'
+    else:
+        out = 'No models found!\n'
+    if p:
+        print(out)
+        print(f'Tip: models are searched for in:\n  - the built-in model directory ({config.get_config()["models_dir"]}),\n  - ~/.anyBSM/\n  - and the directory set in the MODELS environment variable\n')
+    return models
+
+args, unkown = parser.parse_known_args()
+if args.verbose == 1:
+    logger.setLevel(logging.INFO)
+if args.verbose == 2:
+    logger.setLevel(logging.DEBUG)
+if args.verbose > 2: # vvv = debug mode in external libraries
+    logging.getLogger().setLevel(logging.DEBUG)
+
+modelname = args.model
+if args.list:
+    searchmodels(True)
+    print('Run with "-h <model name>" to get more information for the respective model.')
+    exit(0)
+
+if not args.help and not modelname:
+    if unkown:
+        print("anyH3: error: unrecognized arguments: ", ' '.join(unkown))
+    logger.error("No model given!")
+    searchmodels(True)
+    parser.print_help()
+    exit(1)
+
+if args.help and not modelname:
+    parser.print_help()
+    exit(0)
+
+if modelname:
+    if path.isdir(path.abspath(modelname)):
+        print('Take model from absolute path.')
+        modeldir = path.abspath(modelname)
+    else:
+        models = searchmodels()
+        modeldir = models.get(modelname, "")
+
+if not modeldir:
+    logger.error(f'No valid model name "{modelname}"')
+    searchmodels(True)
+    parser.print_help()
+    exit(1)
+
+model = anyBSM(
+        modeldir,
+        particles_only = args.include,
+        caching = 2 - args.no_cache,
+        evaluation = args.evaluation,
+        progress = not args.no_progress,
+        ask = not args.non_interactive,
+        quiet = args.quiet,
+        scheme_name = args.renormalization,
+        scheme_load = False,
+        parameters = args.file
+        )
+if args.unitarity:
+    model.warnSSSS = False
+if not model:
+    logger.error(f"Initializing model {modelname} from {modeldir} failed!")
+
+if args.no_cache > 2:
+    model.clear_cache()
+
+paras_group = parser.add_argument_group("Set numerical values for external parameters")
+for p in model.external_parameters:
+    extended_help = SUPPRESS if args.help <= 1 or abs(p.value) < 0 else f'(default={p.value})  LaTeX: {p.texname} '
+    paras_group.add_argument("--{}".format(p.name), help=f'(default={p.value})  LaTeX: {p.texname} ', nargs='?', const=p.value, default=SUPPRESS)
+
+paras_group = parser.add_argument_group("Relations for internal parameters")
+for p in model.internal_parameters:
+    extended_help = SUPPRESS if args.help <= 1 else f'(default={p.value})  LaTeX: {p.texname} '
+    paras_group.add_argument("--{}".format(p.name), help=extended_help, nargs='?', default=SUPPRESS, const=p.value)
+
+if args.help and modelname:
+    parser.print_help()
+    print("\nParticle content:")
+    names = {'U': 'Ghosts: ', 'S': 'Scalars: ', 'V': 'Vectors: ', 'F': 'Fermions: '}
+    for k,v in model.particles.items():
+        print(names[k], v)
+    exit(0)
+
+args = parser.parse_args()
+
+# set numerical values given via command line
+params = {}
+for p in model.parameters.values():
+    if p.name in args:
+        value = args.__getattribute__(p.name)
+        if p.type in ['int','float','complex','real']:
+            value = eval(value)
+        params.update({p.name: value})
+model.setparameters(params)
+
+model.load_renormalization_scheme(args.renormalization)
+
+# if args.renormalization:
+#     model.load_renormalization_scheme(args.renormalization)
+
+if not model.SM_particles['Higgs-Boson']:
+    model.find_SM_particles()
+h = model.SM_particles['Higgs-Boson']
+
+schemetext = f'in the renormalization scheme "{model.scheme_name}"' if model.scheme_name else ''
+model._print(f'Calculating lambda_xxx for x={h} {schemetext}')
+
+if args.evaluation == 'numerical':
+    logger.debug(" #### Mass specturm ####")
+    for p in model.all_particles.values():
+        logger.debug(f"M_{p.texname} = {p.nmass}")
+
+result = model.lambdahhh(simplify = args.simplify, draw = args.tex)
+
+mw = model.MW() if args.ewpo else '0'
+
+a0 = model.eigSSSS() if args.unitarity else '0'
+
+if args.output:
+    export = path.abspath(args.output)
+    if not path.isdir(path.dirname(export)):
+        logger.error(f'{export}: not a directory')
+    writehead = not path.isfile(export)
+    with open(export, 'a') as e:
+        logger.info(f'Saving results to {export}.')
+        params = sorted(model.external_parameters, key = lambda x: x.name)
+        if args.evaluation == 'numerical':
+            if writehead:
+                header = ' '.join([p.name for p in params]) + ' lamhhh MW'
+                e.write(header + '\n')
+            values = ' '.join([str(p.value) for p in params])
+            e.write(f'{values} {sum(result).real} {mw}\n')
+        else:
+            json.dump({'lamhhh': result, 'MW': mw, 'a_0': a0}, e)
+    exit(0)
+
+if args.evaluation == 'numerical':
+    if args.quiet:
+        print(result['total'].real, mw, a0)
+        exit(0)
+    print(f'\\lambda_hhh           = {result["total"].real}')
+    print(f'(tree-level           = {result["treelevel"].real:9.4f};\n\
+ one-loop-genuine     = {result["genuine"].real:9.4f};\n\
+ one-loop-WFRs        = {result["wfr"].real:9.4f};\n\
+ tadpoles             = {result["tads"].real:9.4f};\n\
+ counterterm (masses) = {result["massren"].real:9.4f};\n\
+ counterterm (VEV)    = {result["vevren"].real:9.4f};\n\
+ counterterm (custom) = {result["customren"].real:9.4f}\n\
+)')
+    if args.ewpo:
+        print(f'M_W                  = {mw:9.4f}')
+    if args.unitarity:
+        print(f'a_0                  = {a0:9.4f}')
+
+else:
+    print("lambda_hhh_LO=", result["treelevel"])
+    print("lambda_hhh_NLO=",
+       result["genuine"], "\\ \n",
+       result["wfr"], "\\ \n" if result["wfr"] else '\\ \n',
+       result["tads"], "\\ \n" if result["tads"] else '\\ \n',
+       result["massren"], "\\ \n" if result["massren"] else '\\ \n',
+       result["vevren"], "\\ \n" if result["vevren"] else '\\ \n',
+       result["customren"], "\\ \n" if result["customren"] else '\\ \n')
+if args.stay:
+    print("You issued an interactive anyBSM-session.")
+    print("Your specified model has already been initialized with the given options.")
+    print("The anyBSM model-object was saved to 'model', e.g. try `model.lambdahhh()`")
+    try:
+        from IPython import embed
+        embed()
+    except:
+        import code
+        code.interact(local=locals())

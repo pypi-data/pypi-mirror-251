@@ -1,0 +1,595 @@
+#!/usr/bin/env python3
+
+from __future__ import division
+import logging
+from argparse import ArgumentParser
+from collections import defaultdict
+import sympy as sp
+import sys
+from tqdm import tqdm
+from prettytable import PrettyTable, ALL
+from shutil import get_terminal_size
+from os import path
+from glob import glob
+from anyBSM import anyBSM
+from anyBSM.ufo import object_library # noqa: F401
+from anyBSM.utils import fieldtypes, spintypes  # , typesspin
+from anyBSM.ufo.object_library import all_lorentz, all_couplings, all_vertices, Lorentz, Coupling, Vertex
+# from IPython import embed
+
+x, y = sp.symbols('x y')
+
+logging.basicConfig(format='%(levelname)s: %(message)s')
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.INFO)
+
+field_indices = (S1,S2,S3,S4,V1,V2,V3,V4,F1,F2,U1,U2) = sp.symbols('S1 S2 S3 S4 V1 V2 V3 V4 F1 F2 U1 U2')
+contracted_indices = (mu, nu, rho) = sp.symbols('mu nu rho')
+
+""" define lorentz structures used in generic diagrams c_{fields} x {lorentz} """
+# C_{S S S} x 1
+SSS = Lorentz(name = 'SSS',
+     spins = [1, 1, 1],
+     structure = '1')
+# C_{S S S S} x1
+SSSS = Lorentz(name = 'SSSS',
+     spins = [1, 1, 1, 1],
+     structure = '1')
+# C_{S S V_mu3 V_nu4} x g_{mu3nu4}
+SSVV = Lorentz(name = 'SSVV',
+     spins = [1, 1, 3, 3],
+     structure = 'Metric(3,4)')
+# C_{S^p1 S^p2 V_mu3} x ( p1_mu3 - p2_mu3 )
+SSV = Lorentz(name = 'SSV',
+     spins = [1, 1, 3],
+     structure = 'P(3,1)-P(3,2)')
+# C_{S V_mu2 V_nu3} x g_mu2nu3
+SVV = Lorentz(name = 'SVV',
+     spins = [1, 3, 3],
+     structure = 'Metric(2,3)')
+# C_{U^p1 U^p2 V_nu1} x [
+#   p1
+UUV1 = Lorentz(name = 'UUV1',
+     spins = [-1, -1, 3],
+     structure = 'P(3,1)')
+#   + p2 ]
+UUV2 = Lorentz(name = 'UUV2',
+     spins = [-1, -1, 3],
+     structure = 'P(3,2)')
+# C_{U U S} x 1
+SUU = Lorentz(name = 'SUU',
+     spins = [1, -1, -1],
+     structure = '1')
+# C_{F F S} x [
+#   P_L
+FFS_R = Lorentz(name = 'FFS_R',
+     spins = [2, 2, 1],
+     structure = 'ProjP(2,1)')
+#   + P_R ]
+FFS_L = Lorentz(name = 'FFS_L',
+     spins = [2, 2, 1],
+     structure = 'ProjM(2,1)')
+# C_{F F V_mu} x [
+#   gamma_mu P_L
+FFV_R = Lorentz(name = 'FFV_R',
+     spins = [2, 2, 3],
+     structure = 'Gamma(3,2,-1)*ProjP(-1,1)')
+#   + gamma_mu P_R ]
+FFV_L = Lorentz(name = 'FFV_L',
+     spins = [2, 2, 3],
+     structure = 'Gamma(3,2,-1)*ProjM(-1,1)')
+# C_{V_mu1^p1 V_mu2^p2 V_mu3^p3} x [ g^mu2mu3*( p3^mu1 - p2^mu1 ) + g_mu1mu3*( p1^mu2 - p3^mu3) + g_mu1mu2*( p2^mu3 - p1^mu3 ) ]
+VVV = Lorentz(name = 'VVV',
+     spins = [3, 3, 3],
+     structure = '-Metric(2,3)*P(1,2) + Metric(2,3)*P(1,3) + Metric(1,3)*P(2,1) - Metric(1,3)*P(2,3) - Metric(1,2)*P(3,1) + Metric(1,2)*P(3,2)')
+# C_{V_mu1 V_mu2 V_mu3 V_mu4} x [
+#   g_mu1mu2 * g_mu3mu4
+VVVV1 = Lorentz(name = 'VVVV1',
+     spins = [3, 3, 3, 3],
+     structure = 'Metric(1,2)*Metric(3,4)')
+#   + g_mu1mu3 * g_mu2mu4
+VVVV2 = Lorentz(name = 'VVVV2',
+     spins = [3, 3, 3, 3],
+     structure = 'Metric(1,3)*Metric(2,4)')
+#   + g_mu1mu4 * g_mu2mu3 ]
+VVVV3 = Lorentz(name = 'VVVV3',
+     spins = [3, 3, 3, 3],
+     structure = 'Metric(1,4)*Metric(2,3)')
+
+# contains all lorentz structures for given vertex type
+lorentz_types = defaultdict(list)
+for lor in all_lorentz.values():
+    lorentz_type = ''.join(sorted([spintypes[i] for i in lor.spins]))
+    lorentz_types[lorentz_type].append(lor)
+
+# all objects required for the color-structures of couplings
+color_structures = {}
+def add_color_structure(name):
+    global color_structures
+    sym = sp.Function(name)
+    color_structures.update({name: sym})
+    return sym
+
+T = add_color_structure('T')
+f = add_color_structure('T')
+d = add_color_structure('T')
+Epsilon = add_color_structure('Epsilon')
+EpsilonBar = add_color_structure('EpsilonBar')
+T6 = add_color_structure('T6')
+K6 = add_color_structure('K6')
+K6Bar = add_color_structure('K6Bar')
+CIdentity = add_color_structure('Identity')
+
+# all objects required for the lorentz-structures of couplings
+lorentz_structures = {}
+def add_lorentz_structure(name):
+    global lorentz_structures
+    sym = sp.Function(name)
+    lorentz_structures.update({name: sym})
+    return sym
+
+C = add_lorentz_structure('C')
+Epsilon = add_lorentz_structure('Epsilon')
+Gamma = add_lorentz_structure('Gamma')
+Metric = add_lorentz_structure('Metric')
+P = add_lorentz_structure('P')
+ProjP = add_lorentz_structure('ProjP')
+ProjM = add_lorentz_structure('ProjM')
+Sigma = add_lorentz_structure('Sigma')
+# express Gamma5 always through ProjP-ProjM:
+Gamma5 = sp.Lambda((x,y), ProjP(x,y) - ProjM(x,y)) # noqa: E731
+lorentz_structures.update({'Gamma5': Gamma5})
+# same for 1 = ProjP+ProjM:
+LIdentity = sp.Lambda((x,y), ProjP(x,y) + ProjM(x,y)) # noqa: E731
+lorentz_structures.update({'Identity': LIdentity})
+
+# use this for for sympify(exprs, locals=symbols)
+symbols = {}
+symbols.update(color_structures)
+symbols.update(lorentz_structures)
+
+class sdict(defaultdict):
+    """ a defaultdict(str) with "+" ability """
+    def __init__(self, start = {}, order = {}):
+        super().__init__(str)
+        self.update(start)
+        self.order = dict(order)
+
+    def __iadd__(self, dict2):
+        for k in (set(self.keys()) | set(dict2.keys())):
+            self[k] = self[k] + dict2[k]
+            self.order.update(getattr(dict2, 'order', {}))
+        return self
+
+    def __add__(dict1, dict2):
+        new = sdict()
+        for k in (set(dict1.keys()) | set(dict2.keys())):
+            new[k] = dict1[k] + dict2[k]
+        new.order.update(getattr(dict1, 'order', {}))
+        new.order.update(getattr(dict2, 'order', {}))
+        return new
+
+def flatten(listoflists):
+    """ flatten arbitrary nested lists """
+    for el in listoflists:
+        if isinstance(el, list):
+            yield from flatten(el)
+        else:
+            yield el
+
+def list_structures(expr):
+    """ return list of lorentz objects (with their arguments) appearing in expr """
+    expr = expr.expand()
+    structures = []
+    if hasattr(expr, 'name') and expr.name in lorentz_structures:
+        return [expr]
+    if hasattr(expr, 'args'):
+        for a in expr.args:
+            structures.append(list_structures(a))
+    return list(flatten(structures))
+
+def subLorentzArgs(expr, k, v):
+    """ replace k with v in all arguments of the lorentz objects """
+    for s in list_structures(expr):
+        expr = expr.replace(s, s.replace(k,v))
+    return expr
+
+def sympify_lorentz(lorentz):
+    """ convert ufo.Lorentz object to sympy """
+    global symbols
+    # sympify the structure
+    structure = sp.sympify(lorentz.structure, locals = symbols, rational = True)
+    # make sure contracted/closed indices do not clash with others
+    for k,v in {-1: mu ,-2: nu,-3: rho}.items():
+        structure = subLorentzArgs(structure, k,v)
+    # field indices
+    indices = {
+            'S': {'c': 0, 1: S1, 2: S2, 3: S3, 4: S4},
+            'U': {'c': 0, 1: U1, 2: U2},
+            'V': {'c': 0, 1: V1, 2: V2, 3: V3, 4: V4},
+            'F': {'c': 0, 1: F1, 2: F2}}
+    # replace integer indices with the field indices
+    for i, s in enumerate(lorentz.spins):
+        fieldtype = spintypes[s]
+        indices[fieldtype]['c'] += 1
+        field = indices[fieldtype][indices[fieldtype]['c']]
+        structure = subLorentzArgs(structure, i+1, field)
+    return structure
+
+def stringyfy_lorentz(spins, expr):
+    """ convert result of sympify_lorentz back to valid lorentz structure """
+    indices = {
+            'S': {'c':0, 1: S1, 2: S2, 3: S3, 4: S4},
+            'U': {'c':0, 1: U1, 2: U2},
+            'V': {'c':0, 1: V1, 2: V2, 3: V3, 4: V4},
+            'F': {'c':0, 1: F1, 2: F2}}
+    for i,s in enumerate(spins):
+        fieldtype = spintypes[s]
+        indices[fieldtype]['c'] += 1
+        field = indices[fieldtype][indices[fieldtype]['c']]
+        expr = subLorentzArgs(expr, field, i+1)
+    return str(expr)
+
+def multiply_lorentz(vertex):
+    """ multiply lorentz X coupling for all color structures of given vertex """
+    coupling = sdict()
+    for rep,coup in vertex.couplings.items():
+        color = rep[0]
+        spin = rep[1]
+        lorentz = sympify_lorentz(vertex.lorentz[spin])
+        color = vertex.color[color]
+        coupling[color] += f'+({lorentz})*({coup.name})'
+        coupling.order.update(coup.order)
+    return coupling
+
+def select(expr, sym):
+    """ equivalent to mathematica's Select[expr//Expand, !FreeQ[#,sym]&] """
+    expr = expr.expand()
+    if isinstance(expr,sp.Add):
+        return sp.Add(*[select(term, sym) for term in expr.args])
+    elif expr.has(sym):
+        return expr
+    else:
+        return sp.S.Zero
+
+def variables(expr):
+    """ return list of all variables in expr """
+    expr = expr.expand()
+    if hasattr(expr, 'args') and expr not in symbols.values():
+        return [variables(arg) for arg in expr.args]
+    else:
+        return expr
+
+def find_structures(expr):
+    """ split expr in all possible categories of lorentz structures """
+    structures = defaultdict(sp.Lambda(x, sp.S.Zero))
+    for k,v in lorentz_structures.items():
+        if k in ['Gamma5','Identity']:
+            continue
+        structures[k] = select(expr,v)
+    return structures
+
+all_lorentz_structures = {}
+structures = {}
+def check_model(model):
+    """ check lorentz structures defined in `model` (anyBSM object). """
+    global all_lorentz_structures, structures
+    structures = {}
+    lorentz_found = []
+    for our_lorentz in all_lorentz.values():
+        our_structure = sympify_lorentz(our_lorentz)
+        all_lorentz_structures[our_lorentz.name] = our_structure
+        for your_lorentz in model.all_lorentz.values():
+            if our_structure == 1:
+                # ordering of spins does not matter
+                order = lambda x: sorted(x) # noqa: E731
+            else:
+                order = lambda x: x # noqa: E731
+            if your_lorentz.name not in structures:
+                structures[your_lorentz.name] = sympify_lorentz(your_lorentz)
+            if order(our_lorentz.spins) == order(your_lorentz.spins) and structures[your_lorentz.name] == our_structure:
+                logger.debug(f'Found matching lorentz structure for {our_lorentz.name} with spins {our_lorentz.spins} ({our_lorentz.structure}).')
+                lorentz_found.append(our_lorentz.name)
+    not_ok = 0
+    for name, lorentz in all_lorentz.items():
+        if name not in lorentz_found:
+            logger.error(f'no suitable lorentz structure found for "{name}" with structure "{lorentz.structure}"')
+            not_ok = 1
+    if not_ok:
+        logger.error(f'the model "{model.modeldir}" does not seem to be compatible with anyBSM!')
+    else:
+        logger.info(f'the model "{model.modeldir}" is compatible with anyBSM')
+    return not_ok
+
+def patch_relative_imports(file):
+    """ removes the relative "." in module imports (e.g. `import .parameters`  -> `import parameters`) """
+    with open(file, 'r') as f:
+        content = f.read()
+    content = content.replace('import .', 'import ')
+    content = content.replace('from . import ', 'import ')
+    content = content.replace('from .', 'from ')
+    with open(file, 'w') as f:
+        f.write(content)
+
+coupling_count = 0
+vertex_count = 0
+coupling_values = {}
+def register_coupling(value, order):
+    """ create a new couping in the gloab `all_couplings` dict """
+    global coupling_count, coupling_values
+    value = str(value)
+    if value in coupling_values:
+        return coupling_values[value]
+    coupling_count += 1
+    coup = Coupling(name = f'GC_{coupling_count}', value = value, order = order)
+    coupling_values[value] = coup
+    return coup
+
+def register_vertex(particles, lorentz, color, couplings):
+    """ create a new vertex in the gloab `all_vertices` dict """
+    global vertex_count
+    vertex_count += 1
+    return Vertex(name = f'V_{vertex_count}', spins = [p.spin for p in particles], particles = particles, lorentz = lorentz, color = color, couplings = couplings)
+
+""" main programm """
+
+if "__main__" in __name__:
+
+    # parse arguments
+    parser = ArgumentParser(description='Convert any UFO model into an anyBSM-compatible UFO model')
+    parser.add_argument("model", type=str, help="path to the model directory")
+    parser.add_argument("-o", "--output", type=str, help="where to store the converted model")
+    parser.add_argument("-v", "--verbose", action="store_true", help="increase output verbosity")
+    parser.add_argument("-c", "--check", action="store_true", help="only check the input model for compatiblity but don't convert it")
+    parser.add_argument("-f", "--force", action="store_true", help="convert the model even if its compatible")
+    parser.add_argument("-s", "--skip", action="store_true", help="ignore couplings/vertices that have unsupported lorentz-structures (e.g. effective Higgs-Glu-Glu couplings)")
+    if len(sys.argv) == 1:
+        parser.print_help()
+        exit(1)
+    try:
+        args = parser.parse_args()
+    except:
+        print()
+        parser.print_help()
+        exit(1)
+
+    if not args.check and not args.output:
+        print('ERROR: No output model specified')
+        parser.print_help()
+        exit(2)
+
+    print(f"Loading model from directory {args.model}")
+    # load input model
+    logging.getLogger('root').disabled = not args.check # disable import warning if we are not checking the model
+    try:
+        model = anyBSM(args.model)
+    except ImportError:
+        logger.error('UFO model seems to use relative imports. Trying to patch...')
+        for f in glob(path.join(args.model,'*.py')):
+            patch_relative_imports(f)
+        model = anyBSM(args.model)
+
+    # sympify model couplings and parameters
+    print('sympify parameters and couplings')
+    model.sympify_parameters()
+    subs = {sp.sympify(k): sp.sympify(str(v.value).replace("cmath.", ""), locals=model.symbols, rational = True) for k, v in tqdm(model.couplings.items())}
+    symbols.update(model.symbols)
+    symbols.update(subs)
+
+    # set verbosity level
+    logger.setLevel(logging.INFO)
+    if args.verbose:
+        logger.setLevel(logging.DEBUG)
+
+    def fail():
+        global args
+        if args.skip:
+            return
+        exit(2)
+
+    print('Checking whether model is compatible.')
+    check = check_model(model)
+    if args.check:
+        exit(check)
+    if check == 0:
+        print('Model is compatible. Nothing to do.')
+        if args.force:
+            print('..enforce conversion.')
+        else:
+            exit(0)
+    else:
+        print('Model is not compatible. Trying to convert...')
+
+    nverts = len(model.all_vertices)
+    if nverts > 500:
+        print(f'!!!! Warning: this model contains many ({nverts} !) vertices. Conversion can take O(hours)-O(days). Consider to run this the background. !!!')
+
+    # find all vertices for given set of particles, build list with unique couplings expanded in spinXcolor space, afterwards extract lorentz structures with our conventions and save them as new couplings
+    vertices_calculated = []
+    all_couplings_multiplied = defaultdict(list)
+    vertex_table = PrettyTable(field_names = ["Vertex", "Old model [couplings(lorentz)]", "New model [couplings(lorentz)]"], hrules = ALL)
+    vertex_table_log = PrettyTable(field_names = ["Vertex", "Old model [couplings(lorentz)]", "New model [couplings(lorentz)]"], hrules = ALL)
+    for v in tqdm(model.all_vertices.values()):
+        vname = ''.join(sorted([p.name for p in v.particles]))
+        if vname in vertices_calculated:
+            continue
+        vertices_calculated.append(vname)
+        vertices = [v for v in model.all_vertices.values() if vname == ''.join(sorted([f.name for f in v.particles]))]
+        vert_type = fieldtypes(v.particles, sort = True)
+
+        # multiply coupling with lorentz structure for every color-structure, convert to sympy
+        coupling = sdict()
+        for vertex in vertices:
+            coupling += multiply_lorentz(vertex)
+        for i,j in coupling.items():
+            coupling[i] = sp.sympify(j, locals = symbols, rational = True).expand()
+            coupling[i] = coupling[i].subs(symbols)
+        all_couplings_multiplied[vert_type].append([v.particles, coupling])
+
+        # create new Vertex/Coupling(s) with anyBSM convention
+        color = []
+        couplings = {}
+        lorentz = lorentz_types[vert_type]
+
+        # all vertices with lorentz.structure = '1'
+        if all([lor.structure == '1' for lor in lorentz]):
+            for colorfactor, c in coupling.items():
+                found_structures = find_structures(c)
+                if any(found_structures.values()):
+                    logger.error(f'Unexpected lorentz structures {found_structures.values()} in scalar coupling: {v.particles}')
+                    fail()
+                    break
+                couplings.update({(len(color), 0): register_coupling(c, coupling.order)})
+                color.append(colorfactor)
+        # FFS vertices
+        elif vert_type == "FFS":
+            for colorfactor, c in coupling.items():
+                PR = select(c, all_lorentz_structures["FFS_R"])
+                PL = select(c, all_lorentz_structures["FFS_L"])
+                if PL == 0 and PR == 0 and c != 0: # couples with PL+PR=1
+                    PR = c/2
+                    PL = c/2
+                if (PL + PR - c).expand().simplify().trigsimp() != 0:
+                    logger.error(f'Unexpected lorentz structure in FFS coupling {v.particles}: PL:{PL}, PR:{PR}, PL+PR:{c}')
+                    fail()
+                    break
+                PR = str(PR.replace(all_lorentz_structures["FFS_R"], 1))
+                PL = str(PL.replace(all_lorentz_structures["FFS_L"], 1))
+                if PR != '0':
+                    couplings.update({(len(color), 0): register_coupling(PR, coupling.order)})
+                if PL != '0':
+                    couplings.update({(len(color), 1): register_coupling(PL, coupling.order)})
+                color.append(colorfactor)
+        # FFV vertices
+        elif vert_type == "FFV":
+            for colorfactor, c in coupling.items():
+                cSubst = c.subs(Gamma(V1, F2, F1), Gamma(V1, F2, mu)*(ProjP(mu,F1) + ProjM(mu,F1)))
+                PR = select(cSubst, all_lorentz_structures["FFV_R"]).simplify()
+                PL = select(cSubst, all_lorentz_structures["FFV_L"]).simplify()
+                if PL == 0 and PR == 0 and c != 0: # couples with PL+PR=1
+                    PR = c/2
+                    PL = c/2
+                if (PL + PR - cSubst).expand().simplify().trigsimp() != 0:
+                    logger.error(f'Unexpected lorentz structure in FFV coupling {v.particles}: \nPL: {PL},\nPR: {PR},\nc: {c},\ncSubst: {cSubst},\nPL + PR - cSubst: {(PL + PR - cSubst).expand().simplify()}')
+                    fail()
+                    break
+                PR = str(PR.subs(all_lorentz_structures["FFV_R"], 1).subs(Gamma(V1,F2,F1), 1))
+                PL = str(PL.subs(all_lorentz_structures["FFV_L"], 1).subs(Gamma(V1,F2,F1), 1))
+                if PR != '0':
+                    couplings.update({(len(color), 0): register_coupling(PR, coupling.order)})
+                if PL != '0':
+                    couplings.update({(len(color), 1): register_coupling(PL, coupling.order)})
+                color.append(colorfactor)
+        elif vert_type == "VVVV":
+            for colorfactor, c in coupling.items():
+                c1 = select(c, all_lorentz_structures["VVVV1"]).simplify()
+                c2 = select(c, all_lorentz_structures["VVVV2"]).simplify()
+                c3 = select(c, all_lorentz_structures["VVVV3"]).simplify()
+                if (c1 + c2 + c3 - c).expand().simplify().trigsimp() != 0:
+                    logger.error(f'Unexpected lorentz structure in VVVV coupling {v.particles}: c1={c1}, c2={c2}, c3={c3} c1+c2+c3 != {c}')
+                    fail()
+                    break
+                c1 = str(c1.subs(all_lorentz_structures["VVVV1"], 1))
+                c2 = str(c2.subs(all_lorentz_structures["VVVV2"], 1))
+                c3 = str(c3.subs(all_lorentz_structures["VVVV3"], 1))
+                if c1 != '0':
+                    couplings.update({(len(color), 0): register_coupling(c1, coupling.order)})
+                if c2 != '0':
+                    couplings.update({(len(color), 1): register_coupling(c2, coupling.order)})
+                if c3 != '0':
+                    couplings.update({(len(color), 2): register_coupling(c3, coupling.order)})
+                color.append(colorfactor)
+        elif vert_type in ["VVV", "SSVV", "SVV"]:
+            for colorfactor, c in coupling.items():
+                # apply momentum conservation
+                c = c.subs(P(V1, V1), -P(V1, U1) - P(V1, U2)).expand()
+                coeff = (c/all_lorentz_structures[vert_type]).simplify()
+                if any(find_structures(coeff).values()):
+                    logger.error(f'Unexpected lorentz structure in {vert_type} coupling {v.particles}: coeff={coeff} != 1')
+                    fail()
+                    break
+                couplings.update({(len(color), 0): register_coupling(coeff, coupling.order)})
+                color.append(colorfactor)
+        elif vert_type == "SSV":
+            for colorfactor, c in coupling.items():
+                # apply momentum conservation
+                c = c.subs(P(V1, V1), -P(V1, S1) - P(V1, S2)).expand()
+                coeff = (c/all_lorentz_structures["SSV"]).simplify()
+                if any(find_structures(coeff).values()):
+                    logger.error(f'Unexpected lorentz structure in {vert_type} coupling {v.particles}: coeff={coeff} != 1')
+                    fail()
+                    break
+                couplings.update({(len(color), 0): register_coupling(coeff, coupling.order)})
+                color.append(colorfactor)
+        elif vert_type == "UUV":
+            for colorfactor, c in coupling.items():
+                # apply momentum conservation (assuming all momenta incoming)
+                c = c.subs(P(V1, V1), -P(V1, U1) - P(V1, U2)).expand()
+                coeff1 = (select(c, all_lorentz_structures["UUV1"])/all_lorentz_structures["UUV1"]).simplify()
+                coeff2 = (select(c, all_lorentz_structures["UUV2"])/all_lorentz_structures["UUV2"]).simplify()
+                if any(find_structures(coeff1+coeff2).values()) or (coeff1 == 0 and coeff2 == 0) or (coeff1*all_lorentz_structures["UUV1"] + coeff2*all_lorentz_structures["UUV2"]-c).subs(P(V1, V1), -P(V1, U1) - P(V1, U2)).simplify() != 0:
+                    logger.error(f'Unexpected lorentz structure in {vert_type} coupling {v.particles}: coeff1={coeff1} coeff2={coeff2} != 1')
+                    fail()
+                    break
+                if coeff1 != 0:
+                    couplings.update({(len(color), 0): register_coupling(coeff1, coupling.order)})
+                if coeff2 != 0:
+                    couplings.update({(len(color), 1): register_coupling(coeff2, coupling.order)})
+                color.append(colorfactor)
+        # TODO: add more consistency checks
+        else:
+            logger.error(f'Not able to convert lorentz structure for vertex "{v.particles}"')
+            continue
+        if couplings:
+            new_vertex = register_vertex(v.particles, lorentz, color, couplings)
+
+            # nice table output for comparison
+            vert = '(' + ','.join(p.name for p in v.particles) + ')'
+            yours = '\n'.join([f'{v.name} {list(c.name + "(" + str(structures[v.lorentz[cc[1]].name]) + ")" for cc,c in v.couplings.items())}' for v in vertices])
+            ours = f'{new_vertex} {list(c.name + "(" + str(all_lorentz_structures[lorentz[cc[1]].name]) + ")" for cc,c in couplings.items())}'
+            vertex_table.add_row([vert, yours, ours])
+            # for logs/debugging
+            ours += '\n' + '\n'.join([f'{c.name} = {c.value}' for c in set(couplings.values())])
+            couplings_to_write = set(c for v in vertices for c in v.couplings.values())
+            yours += '\n' + '\n'.join([f'{c.name} = {c.value}' for c in couplings_to_write])
+            vertex_table_log.add_row([vert, yours, ours])
+
+    print('\nThe following lorentz structures have been converted')
+    lorentz_table = PrettyTable(field_names = ["Vertex-Type", "Old model [Lorentz structure]", "New model [Lorentz structure]"])
+    for ltype,our_types in lorentz_types.items():
+        # for nice printing:
+        ours = '\n'.join([f'{el.name} [{all_lorentz_structures[el.name]}]' for el in our_types])
+        yours = '\n'.join([f'{el.name} [{structures[el.name]}]' for el in model.lorentz.get(ltype, [])])
+        lorentz_table.add_row([ltype, yours, ours])
+
+    width = int(get_terminal_size().columns/3)
+    lorentz_table.max_width = width
+    vertex_table.max_width = width
+    vertex_table_log.max_width = width
+    print(lorentz_table)
+    print('\nThe following vertices/couplings have been converted (use --verbose for more output)')
+    if args.verbose:
+        print(vertex_table_log)
+    else:
+        print(vertex_table)
+
+    # modify the input model and dump the resulting one to target directory
+    print(f"Writing new model to {args.output}.")
+    model.all_lorentz = all_lorentz
+    model.lorentz = lorentz_types
+    model.all_vertices = all_vertices
+    model.vertices = {}
+    for v in all_vertices.values():
+        vert_type = fieldtypes(v.particles, sort = True)
+        if vert_type not in model.vertices:
+            model.vertices[vert_type] = []
+        model.vertices[vert_type].append(v)
+    model.couplings = all_couplings
+    model.dump(args.output)
+
+    logfile = path.join(args.output, 'conversion.csv')
+    print(f'Wrinting log file {logfile}.')
+    with open(logfile, 'w') as f:
+        f.write(vertex_table_log.get_csv_string(delimiter='|'))
+
+    print('done.')

@@ -1,0 +1,37 @@
+[build-system]
+requires = [
+  "setuptools>=42",
+  "wheel"]
+
+[project]
+name = "anyBSM"
+version = "1.0.6"
+authors = [
+    {name = "Henning Bahl",      email = "hbahl@uchicago.edu"},
+    {name = "Johannes Braathen", email = "johannes.braathen@desy.de"},
+    {name = "Martin Gabelmann",  email = "martin.gabelmann@desy.de"},
+    {name = "Georg Weiglein",    email = "georg.weiglein@desy.de"},
+]
+requires-python = ">=3.5"
+dependencies = [
+  "numpy>=1.13.0",
+  "sympy",
+  "tqdm",
+  "pyyaml>=6.0",
+  "pylha",
+  "prettytable",
+  "jinja2",
+  "appdirs",
+  "gitpython",
+  "pyCollier",
+]
+
+[project.optional-dependencies]
+full = [
+  "matplotlib",
+  "numpy",
+  "pandas",
+  "prettytable",
+  "pyyaml",
+  "pdoc"
+]

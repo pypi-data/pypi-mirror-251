@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: anyBSM
+Version: 1.0.6
+Author-email: Henning Bahl <hbahl@uchicago.edu>, Johannes Braathen <johannes.braathen@desy.de>, Martin Gabelmann <martin.gabelmann@desy.de>, Georg Weiglein <georg.weiglein@desy.de>
+Requires-Python: >=3.5
+License-File: LICENSE
+Requires-Dist: numpy>=1.13.0
+Requires-Dist: sympy
+Requires-Dist: tqdm
+Requires-Dist: pyyaml>=6.0
+Requires-Dist: pylha
+Requires-Dist: prettytable
+Requires-Dist: jinja2
+Requires-Dist: appdirs
+Requires-Dist: gitpython
+Requires-Dist: pyCollier
+Provides-Extra: full
+Requires-Dist: matplotlib; extra == "full"
+Requires-Dist: numpy; extra == "full"
+Requires-Dist: pandas; extra == "full"
+Requires-Dist: prettytable; extra == "full"
+Requires-Dist: pyyaml; extra == "full"
+Requires-Dist: pdoc; extra == "full"
