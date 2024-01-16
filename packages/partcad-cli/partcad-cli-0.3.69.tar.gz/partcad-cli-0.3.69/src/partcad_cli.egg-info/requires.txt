@@ -1,0 +1,7 @@
+partcad==0.3.69
+pycairo
+renderlab
+rlPyCairo
+svglib
+ocp_vscode
+progress
