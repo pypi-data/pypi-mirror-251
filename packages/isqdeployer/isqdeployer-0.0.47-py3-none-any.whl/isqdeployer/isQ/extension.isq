@@ -1,0 +1,12 @@
+ 
+package lib;
+
+procedure batchPrintInt( int x[] ){
+    int l = x.length;
+    for i in 0:l{
+        print x[i];
+    }
+}
+
+
+

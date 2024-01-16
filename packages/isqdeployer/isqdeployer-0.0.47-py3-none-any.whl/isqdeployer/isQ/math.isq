@@ -1,0 +1,289 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+int intMax(int a, int b) {
+    if (a >= b) {
+        return a;
+    } else {
+        return b;
+    }
+}
+
+int intMin(int a, int b) {
+    if ( a <= b ) {
+        return a;
+    } else {
+        return b; 
+    }
+}
+
+// int getInt(double r) {
+//     int large=999999999999999999;
+//     int x0 = 0;
+//     int x1,xm;
+//     if (x0==r) {return x0;}
+//     while ( x0 > r ) {
+//         x0 = x0 - large; 
+//     }
+//     x1 = x0 + large; 
+//     while (x1-x0 > 1) { 
+//         // print x0;
+//         // print x1;
+//     xm = (x1+x0)/2;
+//     if ( xm <= r ) {
+//         x0 = xm;
+//     } else {
+//         x1 = xm;
+//     }
+//     }
+//     return x0;
+// }
+int getInt(double r) {
+    if (r>=0) {
+        return r as int;
+    } else {
+        return (r as int) - 1;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+double _realBinomial(double N, double n) {
+    double r = 1.0;
+    for i in N-n+1:N+1 {
+        r = r * i;
+    }
+    for i in 1:n+1 {
+        r = r / i;
+    }
+    return r;
+}
+
+
+
+
+
+// sin / cos
+
+double _sinNear0(double x, int N) {
+    // x must in [-pi/2,pi/2]
+    double r;
+    double f[N],s;
+
+    f[0] = 1;
+    r = x;
+    s = -1;
+    for i in 1:N {
+        f[i] = f[i-1] * 2* i * (2*i + 1);
+        r = r + s * x**(2*i+1) / f[i];
+        s = s* (-1);
+    }
+    return r;
+}
+
+double sin(double x) {
+    int n = getInt(x/2/pi+0.25);
+    double xr = x - 2*n*pi;
+    if (xr>pi/2) {
+        xr = pi - xr;
+    }
+    return _sinNear0(xr,12);
+}
+
+double _arcsinNear0 (double x, int N) {
+    // https://math.stackexchange.com/questions/197874/maclaurin-expansion-of-arcsin-x
+    double r = 0.0;
+    for i in 0:N {
+        r = r + x**(2*i+1)*_realBinomial(2.0*i,1.0*i) / (4**i) / (2*i+1);
+    }
+    return r;
+}
+
+double _arcsinNear1 (double x) {
+    // https://math.stackexchange.com/questions/1837692/finding-the-taylor-series-of-arcsin1-x
+    // https://www.wolframalpha.com/input?i=series+arcsin%281-x%29+
+    double r = pi/2;
+    double s = 1.0 / (2**0.5);
+    double y = 1-x;
+    double coeff [] = [
+        2,  
+        1.0/6,  
+        3.0/80, 
+        5.0/448, 
+        35.0/9216, 
+        63.0/45056, 
+        231.0/425984, 
+        143.0/655360,
+        6435.0/71303168,
+        12155.0/318767104,
+        46189.0/281857228,
+        88179.0/1234803097,
+        676039.0/214748364800
+        ];
+
+    for i in 0:coeff.length {
+        r = r - coeff[i] * y**((2*i+1)/2.0) *s ;
+    }
+    return r;
+}
+
+double _arcsinNear05 (double x) {
+    // https://www.wolframalpha.com/input?i=series+arcsin%28x%29+at+x+%3D+0.5
+    double r = pi/6;
+    double y = x-0.5;
+    double s = 2.0/3.0**0.5;
+    double coeff [] = [
+        1,  
+        1.0/3,  
+        4.0/9, 
+        14.0/27,
+        304.0/405,
+        272.0/243,
+        3008.0/1701,
+        2096.0/729,
+        10496.0/2187,
+        803584.0/98415,
+        9167872.0/649539,
+        4378112.0/177147,
+        302239744.0/6908733
+        ];
+
+    for i in 0:coeff.length {
+        r = r + coeff[i] * y **(i+1) * s;
+    }
+    return r;
+}
+
+
+
+double arcsin(double x) {
+    if (x<0) {
+        return -arcsin(-x);
+    }
+    assert( x<= 1);
+    if (x<0.4) {
+        return _arcsinNear0(x,12);
+    } else if (x<= 0.66){
+        return _arcsinNear05(x);
+    } else {
+        return _arcsinNear1(x);
+    }
+}
+
+double arctan(double x) {
+    // https://mathoverflow.net/questions/104321/numerical-computation-of-arcsin-and-arctan-for-real-numbers
+    return arcsin( x / (x**2+1)**0.5 );
+}
+
+// double sin(double x) {
+//     double xr = x/2/pi+0.25;
+//     xr = xr - getInt(xr) - 0.25 ; // xr in [-0.25,0.75)
+//     if (xr >0.25) {
+//         xr = 0.5 - xr;
+//     }
+//     return Numerical_Sin(xr,12);
+// }
+
+double cos(double x) {
+    return sin( x + pi/2 );
+}
+
+double tan(double x) {
+    return sin( x ) / cos(x);
+}
+
+double cot(double x) {
+    return -tan(x + pi/2);
+}
+
+double exp(double x) {
+    // https://blog.csdn.net/golfbears/article/details/121139813
+    double a = 1.4426950408889634073599246810018921374266459541529859341354494069;
+    return 2**(a*x);
+}
+
+double arctanh_nearZero(double x, int N) {
+    double r = 0;
+    int tmp;
+    for i in 0:N{
+        tmp = 2*i + 1;
+        r = r + x**tmp / tmp;
+    }
+    return r;
+}
+
+double arctanh(double x) {
+    return arctanh_nearZero(x,12);
+}
+
+
+double log_find_N_xpri( double xx, int NList [], double xpriList[] ) {
+    // https://math.stackexchange.com/questions/3619158/most-efficient-way-to-calculate-logarithm-numerically
+    // For a given x, find (n,x') so that:
+    //    log( x ) = n * log( 2 ) + log( x' )
+    // where x' in [1/sqrt(2),sqrt(2) )
+    int n = 0;
+    double x1 = 2**(-0.5);
+    double x2 = 2**( 0.5);
+    double x = xx;
+    while ( true ) {
+        if (x<x1) {
+            n = n - 1;
+            x = x * 2; 
+        } else if ( x >= x2 ) {
+            n = n + 1;
+            x = x / 2;
+        } else {
+            break;
+        }
+    }
+    NList[0] = n; 
+    xpriList[0] = x;
+}
+
+double ln(double x) {
+    int N = 12;
+    int lgN[1];
+    double y;
+    double ln2 = 0.6931471805599453094172321214581765680755001343602552541206800094;
+    double xp[1];
+    log_find_N_xpri( x, lgN, xp );
+    y = (xp[0] - 1)/(xp[0] + 1);
+    return lgN[0] * ln2 + 2 * arctanh_nearZero(y,N);
+}
+
+double log(double x) {
+    return ln(x);
+}
+
+double log2(double x) {
+    return ln(x)/ln(2.0);
+}
+
+double log10(double x) {
+    return ln(x)/ln(10.0);
+}
+
+
+
