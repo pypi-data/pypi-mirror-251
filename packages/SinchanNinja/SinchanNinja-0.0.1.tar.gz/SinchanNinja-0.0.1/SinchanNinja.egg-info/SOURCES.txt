@@ -1,0 +1,13 @@
+setup.py
+SinchanNinja.egg-info/PKG-INFO
+SinchanNinja.egg-info/SOURCES.txt
+SinchanNinja.egg-info/dependency_links.txt
+SinchanNinja.egg-info/top_level.txt
+libName/Prog1.py
+libName/Prog2.py
+libName/Prog3.py
+libName/Prog31.py
+libName/Prog4.py
+libName/Prog5.py
+libName/Prog6.py
+libName/__init__.py
