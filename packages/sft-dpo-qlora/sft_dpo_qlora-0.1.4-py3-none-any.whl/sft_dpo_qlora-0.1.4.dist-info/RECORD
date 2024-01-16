@@ -1,0 +1,10 @@
+sft_dpo_qlora/__init__.py,sha256=58hWOEZc2PzX8vSXVlGLT5sM-cztK462w5o-fXuxKv8,194
+sft_dpo_qlora/configDPO.py,sha256=39Q6YnXh8fwv4puBBjyYFUtQEDxFbsdCqdOw_UOW3eE,1536
+sft_dpo_qlora/configSFT.py,sha256=EsWhAubhkEVGpymeAtgbkqy6kc6hanPcUKZCHYgd-lw,2119
+sft_dpo_qlora/trainerDPO.py,sha256=vAgrToFgGF5-L7EIsCF8WHRFVqUd7BeIpRcRQMq5SnI,6542
+sft_dpo_qlora/trainerSFT.py,sha256=lMkaWxxa5laggshUW3EnhHbMK-Vv82BLNxUQ2PDIkD0,7725
+sft_dpo_qlora-0.1.4.dist-info/LICENSE,sha256=G6QL-Zp9SBEHkSAecFrGuwYhseSahkOYx8HCVrsJR1U,1073
+sft_dpo_qlora-0.1.4.dist-info/METADATA,sha256=Bv_0R_WdZZ-qlsu_t1B5vq7JkDpofaIc25nOVGEueRs,4423
+sft_dpo_qlora-0.1.4.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+sft_dpo_qlora-0.1.4.dist-info/top_level.txt,sha256=cHC9NKHFfQXCcKYnOvXpleA-QeahkroiRBXutpxN8iE,14
+sft_dpo_qlora-0.1.4.dist-info/RECORD,,
