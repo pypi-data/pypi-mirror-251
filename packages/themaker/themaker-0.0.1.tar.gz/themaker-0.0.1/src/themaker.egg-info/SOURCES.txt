@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+src/themaker.egg-info/PKG-INFO
+src/themaker.egg-info/SOURCES.txt
+src/themaker.egg-info/dependency_links.txt
+src/themaker.egg-info/top_level.txt
