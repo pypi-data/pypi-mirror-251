@@ -1,0 +1,41 @@
+# --------------------------------------------------------------------------------------------------
+# SPDX-License-Identifier: Apache-2.0
+# Copyright (C) 2024 Jayesh Badwaik <j.badwaik@fz-juelich.de>
+# --------------------------------------------------------------------------------------------------
+[tool.poetry]
+name = "exacb"
+version = "0.0.1"
+description = "exacb: helper script for exacb project"
+
+authors = [
+  "Jayesh Badwaik <j.badwaik@fz-juelich.de>",
+]
+
+readme = "readme.md"
+
+packages  = [
+{ include = "exacb", from = "src" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[tool.poetry.scripts]
+exacb = 'exacb.main:main'
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+
+[tool.poetry.group.test.dependencies]
+pytest = "*"
+flake8 = "*"
+
+[tool.flake8]
+max-line-length = 100
+in-place = true
+recursive = true
+aggresive = 3
