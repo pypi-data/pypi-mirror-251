@@ -1,0 +1,2 @@
+acdh-arche-assets<4,>=3.6
+Wikidata<1,>=0.7.0
