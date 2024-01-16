@@ -1,0 +1,5 @@
+setup.py
+wesamsimplemodule.egg-info/PKG-INFO
+wesamsimplemodule.egg-info/SOURCES.txt
+wesamsimplemodule.egg-info/dependency_links.txt
+wesamsimplemodule.egg-info/top_level.txt
