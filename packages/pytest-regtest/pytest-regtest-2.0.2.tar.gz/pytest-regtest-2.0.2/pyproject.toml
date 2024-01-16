@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+
+
+[tool.tox]
+legacy_tox_ini = '''
+[tox]
+isolated_build = true
+envlist = py39,py310,py311,py312
+package = sdist
+
+[testenv]
+skip_install = false
+passenv = *
+allowlist_externals = pytest
+extras = dev
+commands =
+    pytest -ra -v tests
+'''
