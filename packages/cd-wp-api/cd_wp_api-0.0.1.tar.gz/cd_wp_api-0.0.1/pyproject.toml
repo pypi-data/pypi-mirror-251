@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cd_wp_api"
+version = "0.0.1"  # Replace with your actual version
+description = "A small wrapper around wordpress-api package for noobs."
+readme = "README.md"
+authors = [
+    { name = "Code Docta", email = "codedocta@gmail.com" },
+]
+license = { text = "MIT" }
+requires-python = ">=3.6"
+dependencies = [
+    "wordpress-api==1.2.9",
+]
+
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+homepage = "https://codedocta.com"
+Bug-Reports = "https://github.com/codedocta/cd_wp_api/issues"
+Source = "https://github.com/codedocta/cd_wp_api/"
