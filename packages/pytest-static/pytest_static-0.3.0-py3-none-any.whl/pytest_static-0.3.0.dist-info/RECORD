@@ -1,0 +1,12 @@
+pytest_static/__init__.py,sha256=oVHCG66SrkobWMlLFnbWRNizNPUNGSdq_FaYkaAZbHU,21
+pytest_static/__main__.py,sha256=OPC8Qzv4fx9u9eXH3geMzfmeVHTxT2xXT1WHvDEf4FM,216
+pytest_static/exceptions.py,sha256=JjmUVWyeiXKgnCN_rxxpHpTDAKuvzoB4cf6JuOrW_eE,432
+pytest_static/parametric.py,sha256=kXfcA7PWakQKU7npnBxkbiELssQg9ZtNYhRKIR1cGMs,7841
+pytest_static/plugin.py,sha256=iNdezeu9SB-_yNBXYocDHQc5gUFlBlcuE-KrZvXUjes,754
+pytest_static/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytest_static/type_sets.py,sha256=ykrmlE3KBg06R8Cjrbrf6rMgLPrWTGHGAIbFW7ogaXQ,2916
+pytest_static-0.3.0.dist-info/LICENSE,sha256=SsM6frOFLs2Izwof_hxdopBNnW8abtucRdtpe7XRAas,1067
+pytest_static-0.3.0.dist-info/METADATA,sha256=6xnjn-0rrOVDpW2n9GJaPH8eT_omnVdetzsqym3Wer8,4474
+pytest_static-0.3.0.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+pytest_static-0.3.0.dist-info/entry_points.txt,sha256=mu-u4CNd9tYTJVZV9xywji-XQE8BSCdUet2mC_6aGqI,106
+pytest_static-0.3.0.dist-info/RECORD,,
