@@ -1,0 +1,8 @@
+README.md
+setup.py
+src/drow_onimage.py
+src/drow_onimage.egg-info/PKG-INFO
+src/drow_onimage.egg-info/SOURCES.txt
+src/drow_onimage.egg-info/dependency_links.txt
+src/drow_onimage.egg-info/entry_points.txt
+src/drow_onimage.egg-info/top_level.txt
