@@ -1,0 +1,32 @@
+name: sasktran2-dev-env
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - numpy
+  - pybind11
+  - spdlog
+  - matplotlib
+  - xarray
+  - ruff
+  - libopenblas
+  - openblas
+  - eigen
+  - scikit-build-core
+  - catch2
+  - pytest
+  - esbonio
+  - sphinx
+  - doxygen
+  - pip
+  - ipython
+  - compilers
+  - cmake>=3.28
+  - seaborn
+  - c-compiler
+  - cxx-compiler
+  - fortran-compiler
+  - pip:
+    - sphinx_book_theme
+    - myst-nb
+    - sphinx_design
