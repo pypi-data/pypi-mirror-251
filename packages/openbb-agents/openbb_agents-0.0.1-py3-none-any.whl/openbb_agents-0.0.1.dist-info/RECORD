@@ -1,0 +1,10 @@
+openbb_agents/__init__.py,sha256=PwEGeTrQ47wUXpqlueeQamaQwjYOPGjVhGiUSG5Aujk,1210
+openbb_agents/agent.py,sha256=ewLKXflZ7rVJJdnEGBfipOZ9exQPRg9mmyv8_3sL91o,3208
+openbb_agents/chains.py,sha256=vBVJBcHvLtdzpCykNYkjE0vg9MaZMuqOE8zpbzVNAvo,10156
+openbb_agents/models.py,sha256=0XouILKlJ3I0Vwd8H42eMenrbWC0zo3wbPmvJRsd7EM,1614
+openbb_agents/prompts.py,sha256=K5GNf_uVwvbAhFy61bVbXRBiR8q1TEPD870tcfL7SdI,6089
+openbb_agents/tools.py,sha256=ywAjvBC7bcAI-wbp37iWFi2mGJu3xzZpiwg5ARbGSrU,8093
+openbb_agents/utils.py,sha256=r0mJCLOENuKueAHaS9-HaGDBJsDvDvq7D4xuoAwcg8w,498
+openbb_agents-0.0.1.dist-info/METADATA,sha256=in1u3oBTwLVkl73xkT52m01WMX4Rk9Es0Bb-lpu1m-A,3402
+openbb_agents-0.0.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+openbb_agents-0.0.1.dist-info/RECORD,,
