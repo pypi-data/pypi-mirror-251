@@ -1,0 +1,10 @@
+fango/auth.py,sha256=GapWBgltFV55ItQUQZUBKgUExwEOqHp5f1pn6_2HJbc,1992
+fango/pagination.py,sha256=NZp6ODXOg3b8YT0lUMvHlu2ywSZQihXL6yr2p0N3BBs,6639
+fango/request.py,sha256=z3oxJUn7ZMlMpHuJ34isnS1JyW2BSe3cBIV2nCkn4zs,389
+fango/routing.py,sha256=iC_8bBlimwqtJ8inO9CH-VnuVMQEXpLfcpAaC8sf1DM,773
+fango/schemas.py,sha256=LdtLf9lU_qXfXXTkwsWWKVF_Ycx-6i4zDrn6N1CvpPw,309
+fango/utils.py,sha256=DVCi4_veZ9c4DKIG-HqdCaPlwmpZRJbfJMvIRj7SvrM,1048
+fango/viewsets.py,sha256=7sMnfzN5VWq2eS9RvrhgFzI7Mi2HrmY6jRSokurl0vE,1732
+fango-0.0.14.dist-info/METADATA,sha256=elqqXdYueg4gYn8KAbTmxTcuVtSvxKMFPaaG93DD8XE,1288
+fango-0.0.14.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+fango-0.0.14.dist-info/RECORD,,
