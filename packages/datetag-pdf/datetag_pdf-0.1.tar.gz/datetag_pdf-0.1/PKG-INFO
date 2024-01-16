@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: datetag-pdf
+Version: 0.1
+Summary: Prefixes PDF filenames with their creation date.
+License: MIT
+Author: Tomas Bayer
+Author-email: mail@tomas.berlin
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: python-poppler (>=0.4.1,<0.5.0)
+Requires-Dist: typer[all] (>=0.9.0,<0.10.0)
+Description-Content-Type: text/markdown
+
+# datetag-pdf
+
+Prefixes PDF filenames with their creation date.
+
