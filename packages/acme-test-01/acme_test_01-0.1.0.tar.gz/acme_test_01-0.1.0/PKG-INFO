@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: acme-test-01
+Version: 0.1.0
+Summary: 
+Author: Eric Lara
+Author-email: eric.lara.amat@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: pandas (>=2.1.4,<3.0.0)
+Description-Content-Type: text/markdown
+
+This is just a test to try all the flow of creatinig a library and publishing it.
+
