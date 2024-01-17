@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: gold33423322
+Version: 0.0.1
+Summary: Htiung golden ratio
+Home-page: https://github.com/SabillillahX
+Author: SabillillahX
+Author-email: <sabillillahxtkj@gmail.com>
+License: MIT
+Keywords: goldenratio
+Classifier: Development Status :: 1 - Planning
+Description-Content-Type: text/markdown
+
+# Golden Ratio 
+
+> **WORK ON PROGRESS**
+
+## Installation
+```shell
+pip install gold33423322
+```
+
+## Usage
+Basic Usage:
+```python
+from gold33423322 import GoldenRatio
+
+objects = Anime()
+
+objects.tampilkan hasil()
