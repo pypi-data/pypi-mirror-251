@@ -1,0 +1,2 @@
+[console_scripts]
+codeas = codeas.terminal:start_terminal

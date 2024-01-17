@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "codeas"
+authors = [
+    {name = "Manuel Renner", email = "manuel.renner@diverger.ai"},
+]
+license = {text = "MIT License"}
+description = "Improve your codebase with LLMs using the right context for the right prompts."
+requires-python = ">=3.9,<3.12"
+dynamic = ["version", "readme", "dependencies"]
+
+[project.urls]
+Source = 'https://github.com/DivergerThinking/codeas'
+Homepage = 'https://diverger.ai'
+
+[project.scripts]
+codeas = 'codeas.terminal:start_terminal'
+
+[tool.setuptools.dynamic]
+version = {attr = "codeas.__version__"}
+readme = {file=["README.md"], content-type="text/markdown"}
+dependencies = {file = ["requirements.txt"]}
+
+[tool.isort]
+profile = "black"
+
+[tool.ruff.per-file-ignores]
+"src/codeas/cli.py" = ["E402"]
