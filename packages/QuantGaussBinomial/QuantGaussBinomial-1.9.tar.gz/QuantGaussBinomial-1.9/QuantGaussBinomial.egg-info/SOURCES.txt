@@ -1,0 +1,12 @@
+LICENSE.md
+README.md
+setup.py
+QuantGaussBinomial/Binomialdistribution.py
+QuantGaussBinomial/Gaussiandistribution.py
+QuantGaussBinomial/Generaldistribution.py
+QuantGaussBinomial/__init__.py
+QuantGaussBinomial.egg-info/PKG-INFO
+QuantGaussBinomial.egg-info/SOURCES.txt
+QuantGaussBinomial.egg-info/dependency_links.txt
+QuantGaussBinomial.egg-info/not-zip-safe
+QuantGaussBinomial.egg-info/top_level.txt
