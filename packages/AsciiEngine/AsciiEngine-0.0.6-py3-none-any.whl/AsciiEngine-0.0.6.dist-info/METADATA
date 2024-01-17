@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: AsciiEngine
+Version: 0.0.6
+Summary: A python module for making games that run in the terminal.
+Author: RetroGamer5491
+Author-email: caarfken@proton.me
+Requires: pynput
+Description-Content-Type: text/markdown
+
+# AsciiEngine
+
+## A game engine for asciiart-based games
+## Under rapid development! Breaking changes may be introduced
