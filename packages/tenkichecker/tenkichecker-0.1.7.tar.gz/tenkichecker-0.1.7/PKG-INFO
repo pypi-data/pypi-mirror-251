@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: tenkichecker
+Version: 0.1.7
+Summary: Enter any prefecture name to output the place name, weather, maximum temperature, minimum temperature, and humidity as listed in Yahoo Weather
+Home-page: https://github.com/gotouyamato/tenkichecker
+Author: gotouyamato
+Author-email: s2122100@stu.musashino-u.ac.jp
+Project-URL: Bug Tracker, https://github.com/gotouyamato/tenkichecker/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: selenium
+Requires-Dist: bs4
+
+# tenki
+
+tenkiは、日本の都道府県の名前を入力すると、その都道府県の今日と明日の天気をスクレイピングして表示するPythonパッケージです。Yahoo!天気のサイトから情報を取得します。
+
+## インストール
+
+pipを使ってインストールできます。
+
+
+pip install tenkichecker
+
+
+## 使い方
+
+tenkiモジュールをインポートして、kisyou関数に都道府県の名前を渡します。すると、その都道府県の今日と明日の天気がリストとして返されます。
+
+
+from tenkichecker import Weather
+weather = Weather("任意の県名")
+weather.kisyou()
+[["今日", "晴れ", "25℃", "17℃", "10%"], ["明日", "曇り", "23℃", "18℃", "20%"]]
+
+## ライセンス
+
+このパッケージはMITライセンスのもとで公開されています。
+
+## 作者
+
+gotouyamato
+s2122100@stu.musashino-u.ac.jp
