@@ -1,0 +1,16 @@
+generalindex/Authenticator.py,sha256=lRncELBJRG_qyBSDLGD2oDeiV9lHI5nTX0TdUHxXYVM,1324
+generalindex/DatalakeHandler.py,sha256=0R9exAs7MYIU0tm6J6c1l2lv4PzncHzoHSRxM-IpjBo,9768
+generalindex/GxApi.py,sha256=-CplXV-tR9Va5wCjZxMJwi9fBnbmARjTuXCQmIRBTI8,7283
+generalindex/HTTPCaller.py,sha256=b4ulsAy2qoeeyWa7mWNgZ0x-3pJIt7holZQAqqoJ4Cc,7126
+generalindex/StatusHandler.py,sha256=-G2K0c-LAP3HV7sndwdoIfb4gWoy2JU220BFm7AKbS0,2147
+generalindex/TaskHandler.py,sha256=sSt8K196zfHbPxb44Jx3VWGhXBDPC5Ff1m9HSjXrSsA,8955
+generalindex/Timeseries.py,sha256=ku-PPbdphAmnwvMEnjbuR09PBMwAokxd_cx1RBIQ6Uc,28595
+generalindex/__init__.py,sha256=S8evMHNJYgmsyfGhCpC-A7THcYdOdBIWu_8JGAlZdn4,271
+generalindex/constants.py,sha256=qOeML2lB-km3jtGZVX-EKxXBKzJ50AJe5Quq662KZ8I,96
+generalindex/exceptions.py,sha256=PoeLHcloq6sQC3G2hym0jT21cTIDBufGBZL8FHgyJYk,551
+generalindex/utils.py,sha256=g_CF60enJY0Au53iEpm0QTAXkr34ZIuo39O8AhgnEcc,1779
+generalindex-0.1.22.dist-info/LICENSE,sha256=dbCr_gOqjtZL8jPT1E7g3KCo_tCRL1eCoWNlC3rwBac,1055
+generalindex-0.1.22.dist-info/METADATA,sha256=6PAjttFGVmL28vVSc3HB31kev7Bd-IhFeuk6Kl87H-8,17170
+generalindex-0.1.22.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+generalindex-0.1.22.dist-info/top_level.txt,sha256=d6O9P3wDDbUIcOp1N8Jjwht9veFEX1YRCo8tNXSPx-8,13
+generalindex-0.1.22.dist-info/RECORD,,
