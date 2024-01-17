@@ -1,0 +1,2 @@
+[console_scripts]
+bat-lang = batlang.cli:main
