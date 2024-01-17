@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: mason-tools
+Version: 0.1.5
+Summary: mason_tools.
+Author: mason
+License: MIT
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: tzlocal
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: pyzmq
+
+基于CTP期货版的6.6.7接口封装开发，接口中自带的是【穿透式实盘环境】的dll文件。 由 vnpy\_ctp 修改而来
+
+## 打包
+
+```
+python setup.py bdist_wheel
+```
+
+需要进行C++编译，因此在执行上述命令之前请确保已经安装了【Visual Studio（Windows）】、【GCC（Linux）】、【XCode（Mac）】编译器。
+
+## 发布
+
+先安装一下 twine：
+
+```
+python -m pip install twine
+```
+
+```
+# 用户名下创建 .pypirc文件
+[pypi]
+username = __token__
+password =
+```
+
+```
+twine upload dist/*
+```
+
+没有账户去注册一个 [https://pypi.org/](https://gitee.com/link?target=https%3A%2F%2Fpypi.org%2F)
+
+## 安装
+
+直接使用pip命令：
+
+```
+pip install mason_tools
+```
