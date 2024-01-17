@@ -1,0 +1,10 @@
+bard_webapi/__init__.py,sha256=mfSvxiCiVr87WASZnmZTsNwWWy3VNSn30fWaY_Aj-DA,121
+bard_webapi/client.py,sha256=XJ7_t_V0EVF0zbEcOwZAOs-2r40L5lIRTTJxhanhN1Q,8878
+bard_webapi/consts.py,sha256=HGgqWHZdMkj5WXjCu0UlzuHFfxwNNrdwL7K7k9F76xA,412
+bard_webapi/types.py,sha256=OaWKxTRcQ2bgtqB0o2cIuc2v2VLTAQjNiIgnsPMuS4o,1676
+bard_webapi/utils.py,sha256=yN2e-xSxorr6V4gCgUm9HdLYbpaqYRMfBeQ1iidf-NA,418
+bard_webapi-0.2.3.dist-info/LICENSE,sha256=F78t1emZITQEXiphH8M5cMZiFKlsKJ5BxlMpE64rIWo,1082
+bard_webapi-0.2.3.dist-info/METADATA,sha256=S4YbCrJTWW3YDXMXrTkePJ-o9bBdGWG93HgAmp_7gmM,3170
+bard_webapi-0.2.3.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+bard_webapi-0.2.3.dist-info/top_level.txt,sha256=7nhLrDgmDaocHJ9o0Tt8MZqd0kR6KulhDohDfoUJWME,12
+bard_webapi-0.2.3.dist-info/RECORD,,
