@@ -1,0 +1,122 @@
+from bolt_expressions import ExpressionNode
+from dataclasses import dataclass
+import inspect
+from typing import Any
+from ./internal_api import Scoreboard, Data
+from ./var import Var, StaticVar
+from ./var_sources import VarSource
+from ./var_types import TypeAnnotation
+from ./utils import IndexGenerator
+from ./config import Config
+from ./sources import ScoreSource, DataSource
+
+@dataclass
+class ExprOnly:
+    """
+    This makes '@copy_args' ignore everything but passed 'ExpressionNode' type args.
+    """
+    item_: dict[ExpressionNode, bool]
+
+class ScoreCopyIndex(IndexGenerator):
+    ...
+
+class DataCopyIndex(IndexGenerator):
+    ...
+
+def get_params(f) -> list:
+    sig = inspect.signature(f)
+
+    params = []
+    for param in sig.parameters.values():
+        params.append(param)
+
+    return params
+
+def generate_var(
+    class_obj: Var | StaticVar,
+    type: TypeAnnotation,
+    static_cache_key: str
+) -> VarSource:
+    if issubclass(class_obj, StaticVar):
+        return StaticVar(type, _custom_cache_key=static_cache_key)
+    return Var(type)
+
+def generate_score() -> ScoreSource:
+    index = ScoreCopyIndex()
+    scoreholder = f"${ctx.project_id}#copy_args${index}"
+    objective = Config.SCOREBOARD_ROOT
+    return ScoreSource(scoreholder, objective)
+
+def generate_storage() -> DataSource:
+    index = DataCopyIndex()
+    path = f"data.{ctx.project_id}.copy_args.{index}"
+    target = Config.STORAGE_ROOT
+    return DataSource('storage', target, path)
+
+def modify_args(args: tuple, params: list, options: dict, func_id: int) -> list:
+    new_args = []
+
+    for i, arg in enumerate(args):
+        param = params[i]
+        option = options.get(param.name)
+
+        if option == None:
+            new_args.append(arg)
+            continue
+
+        static_cache_key = f"{func_id}-{param.name}"
+
+        is_expr_only = isinstance(option, ExprOnly)
+        if is_expr_only:
+            # catch if arg is not an expression
+            if not isinstance(arg, ExpressionNode):
+                new_args.append(arg)
+                continue
+
+            # format 'ExprOnly' options
+            option = option.item_
+
+        # format 'Scoreboard' and 'Data' options
+        if issubclass(option.__class__, (Scoreboard, Data)):
+            option = {class_obj: option.__class__}
+
+        if issubclass(option.class_obj, (Var, StaticVar)):
+            expr = generate_var(option.class_obj, option.var_type, static_cache_key)
+        elif issubclass(option.class_obj, Scoreboard):
+            expr = generate_score()
+        elif issubclass(option.class_obj, Data):
+            expr = generate_storage()
+
+        expr = arg
+        new_args.append(expr)
+
+    return new_args
+
+def modify_kwargs(kwargs: tuple, params: list, options: dict, func_id: int) -> dict:
+    new_kwargs = kwargs.copy()
+
+    # convert kwargs to args
+    args = []
+    for _, kwarg_value in new_kwargs.items():
+        args.append(kwarg_value)
+
+    # eval as args
+    modified_args = modify_args(args, params, options, func_id)
+    
+    # map args list to new kwargs dict
+    for i, kwarg_name in enumerate(new_kwargs):
+        new_kwargs[kwarg_name] = modified_args[i]
+
+    return new_kwargs
+
+def copy_args(**options):
+    def decorator(f):
+        def wrapper(*args, **kwargs):
+            params = get_params(f)
+            func_id = id(f)
+            new_args = modify_args(args, params, options, func_id)
+            new_kwargs = modify_kwargs(kwargs, params, options, func_id)
+
+            return f(*new_args, **new_kwargs)
+        return wrapper
+    return decorator
