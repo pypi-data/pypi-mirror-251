@@ -1,0 +1,16 @@
+numpy
+pandas
+matplotlib
+Pillow
+
+[:sys_platform != "darwin"]
+tensorflow
+
+[:sys_platform == "darwin"]
+tensorflow-macos
+
+[docs]
+sphinx
+sphinx_rtd_theme
+numpydoc
+packaging
