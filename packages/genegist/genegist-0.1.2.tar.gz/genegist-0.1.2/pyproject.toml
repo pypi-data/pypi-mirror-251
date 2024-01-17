@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "genegist"
+version = "0.1.2"
+description = "Create summararies of groups of genes."
+authors = ["JJ Ben-Joseph <jj@tensorspace.ai>", "Yair Benita <yair@aionlabs.com>"]
+license = "Apache"
+readme = "README.md"
+homepage = "https://github.com/aion-labs/genegist"
+
+[tool.poetry.dependencies]
+python = ">3.10"
+openai = "*"
+tiktoken = "*"
+pyarrow = "*" 
+biopython = "*"
+pandas = "*"
+sentence-transformers = "*"
+vectorizedb = "*"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.4.0"
+pytest-asyncio = "^0.21.1"
+
+[tool.poetry.scripts]
+genegist = "genegist:__main__.main"
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.26.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
