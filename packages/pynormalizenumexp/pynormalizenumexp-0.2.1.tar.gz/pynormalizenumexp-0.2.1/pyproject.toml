@@ -1,0 +1,39 @@
+[tool.poetry]
+name = "pynormalizenumexp"
+version = "0.2.1"
+description = "NormalizeNumExp for Python"
+authors = ["tkscode"]
+license = "BSD 3-Clause"
+readme = "README.md"
+repository = "https://github.com/tkscode/pyNormalizeNumExp"
+homepage = "https://github.com/tkscode/pyNormalizeNumExp"
+keywords = ["Python", "NLP", "NormalizeNumExp"]
+packages = [
+    { include = "pynormalizenumexp" },
+]
+include = [
+  "pynormalizenumexp/py.typed",
+  "pynormalizenumexp/resources/**/*.json"
+]
+
+[tool.poetry.dependencies]
+python = ">=3.9,<4.0"
+
+[tool.poetry.group.dev.dependencies]
+autopep8 = {version = "2.0.4"}
+bandit = {version = "1.7.6"}
+flake8 = {version = "7.0.0"}
+flake8-bandit = {version = "4.1.1"}
+flake8-docstrings = {version = "1.7.0"}
+flake8-isort = {version = "6.1.1"}
+isort = {version = "5.13.2"}
+mypy = {version = "1.8.0"}
+
+[tool.poetry.group.test.dependencies]
+pytest = {version = "7.4.4"}
+pytest-cov = {version = "4.1.0"}
+tox = {version = "4.12.0"}
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
