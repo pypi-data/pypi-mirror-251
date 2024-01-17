@@ -1,0 +1,2 @@
+tox>=4
+virtualenv-pyenv<0.6,>=0.5

@@ -1,0 +1,2 @@
+[tox]
+pyenv-redux = _tox_pyenv_redux.plugin

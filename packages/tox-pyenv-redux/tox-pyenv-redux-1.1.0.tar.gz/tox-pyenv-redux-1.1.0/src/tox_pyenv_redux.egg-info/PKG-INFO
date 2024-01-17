@@ -1,0 +1,79 @@
+Metadata-Version: 2.1
+Name: tox-pyenv-redux
+Version: 1.1.0
+Summary: A tox Python discovery plugin for pyenv-installed interpreters
+Author-email: Dmitry Meyer <me@undef.im>
+License: MIT
+Project-URL: Homepage, https://github.com/un-def/tox-pyenv-redux
+Project-URL: Repository, https://github.com/un-def/tox-pyenv-redux.git
+Project-URL: Changelog, https://github.com/un-def/tox-pyenv-redux/releases
+Project-URL: Issues, https://github.com/un-def/tox-pyenv-redux/issues
+Keywords: tox,pyenv
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Framework :: tox
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Testing
+Classifier: Topic :: Utilities
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: tox>=4
+Requires-Dist: virtualenv-pyenv<0.6,>=0.5
+
+# tox-pyenv-redux
+
+A [tox][tox] Python discovery plugin for [pyenv][pyenv]–installed interpreters
+
+## Compatibility
+
+* For legacy versions of tox (0.x—3.x), use tox-pyenv-redux 0.x (`tox-pyenv-redux < 1`). These versions do not rely on [virtualenv-pyenv][virtualenv-pyenv] and **DO NOT** support the `pyenv_discovery` setting.
+* For the current version of tox (4.x), use tox-pyenv-redux 1.x (`tox-pyenv-redux >= 1, < 2`). These versions delegate the discovery job to [virtualenv-pyenv][virtualenv-pyenv].
+
+## Installation
+
+```shell
+pip install tox-pyenv-redux
+```
+
+## Usage
+
+The plugin is enabled by default and configured to use the default discovery [operation mode][virtualenv-pyenv-docs-operation-mode]. To change the mode or disable the plugin, set the `pyenv_discovery` environment setting to one of the following values:
+
+* One of the [operation modes][virtualenv-pyenv-docs-operation-mode] (e.g., `fallback`) to use the specific operation mode. `pyenv_discovery = fallback` is equivalent to `export VIRTUALENV_DISCOVERY=pyenv-fallback`.
+* `default` to use the default operation mode. This is the default value. `pyenv_discovery = default` (or no setting) is equivalent to `export VIRTUALENV_DISCOVERY=pyenv`.
+* `off` to disable the plugin. The plugin will not touch the `VIRTUALENV_DISCOVERY` environment variable, but the [virtualenv-pyenv][virtualenv-pyenv] discovery can still be in effect if virtualenv is already configured to use it (via the `VIRTUALENV_DISCOVERY` environment variable or the `discovery` config setting).
+
+## Examples
+
+* Set the `fallback` operation mode via a config file:
+
+  ```ini
+  [tox]
+  min_version = 4.0
+  requires = tox-pyenv-redux
+
+  [testenv]
+  pyenv_discovery = fallback
+  deps = pytest
+  commands = pytest {posargs}
+  ```
+
+* Disable the plugin via command line arguments:
+
+  ```shell
+  tox run -x testenv.pyenv_discovery=off
+  ```
+
+
+[tox]: https://tox.wiki/
+[pyenv]: https://github.com/pyenv/pyenv
+[virtualenv-pyenv]: https://github.com/un-def/virtualenv-pyenv
+[virtualenv-pyenv-docs-operation-mode]: https://github.com/un-def/virtualenv-pyenv/blob/master/README.md#operation-mode

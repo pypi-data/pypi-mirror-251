@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/_tox_pyenv_redux/__init__.py
+src/_tox_pyenv_redux/plugin.py
+src/tox_pyenv_redux.egg-info/PKG-INFO
+src/tox_pyenv_redux.egg-info/SOURCES.txt
+src/tox_pyenv_redux.egg-info/dependency_links.txt
+src/tox_pyenv_redux.egg-info/entry_points.txt
+src/tox_pyenv_redux.egg-info/requires.txt
+src/tox_pyenv_redux.egg-info/top_level.txt
+src/tox_pyenv_redux.egg-info/zip-safe
+tests/test_plugin.py
