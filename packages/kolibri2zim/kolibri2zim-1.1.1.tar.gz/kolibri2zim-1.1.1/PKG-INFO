@@ -1,0 +1,108 @@
+Metadata-Version: 2.1
+Name: kolibri2zim
+Version: 1.1.1
+Summary: Make ZIM file from Kolibri Channels
+Project-URL: Homepage, https://github.com/openzim/kolibri
+Project-URL: Donate, https://www.kiwix.org/en/support-us/
+Author-email: Kiwix <dev@kiwix.org>
+License: GPL-3.0-or-later
+License-File: LICENSE
+Keywords: kiwix,kolibri,offline,zim
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: <3.12,>=3.11
+Requires-Dist: beautifulsoup4==4.9.3
+Requires-Dist: jinja2==3.1.2
+Requires-Dist: kiwixstorage==0.8.3
+Requires-Dist: pif==0.8.2
+Requires-Dist: retrying==1.3.4
+Requires-Dist: zimscraperlib==3.1.1
+Provides-Extra: check
+Requires-Dist: pyright==1.1.318; extra == 'check'
+Provides-Extra: dev
+Requires-Dist: debugpy==1.6.7; extra == 'dev'
+Requires-Dist: hatchling==1.18.0; extra == 'dev'
+Requires-Dist: kolibri2zim[check]; extra == 'dev'
+Requires-Dist: kolibri2zim[lint]; extra == 'dev'
+Requires-Dist: kolibri2zim[scripts]; extra == 'dev'
+Requires-Dist: kolibri2zim[test]; extra == 'dev'
+Requires-Dist: pre-commit==3.3.3; extra == 'dev'
+Provides-Extra: lint
+Requires-Dist: black==23.7.0; extra == 'lint'
+Requires-Dist: ruff==0.0.280; extra == 'lint'
+Provides-Extra: scripts
+Requires-Dist: invoke==2.2.0; extra == 'scripts'
+Provides-Extra: test
+Requires-Dist: coverage==7.2.7; extra == 'test'
+Requires-Dist: pytest==7.4.0; extra == 'test'
+Description-Content-Type: text/markdown
+
+kolibri2zim
+=============
+
+[![CodeFactor](https://www.codefactor.io/repository/github/openzim/kolibri/badge)](https://www.codefactor.io/repository/github/openzim/kolibri)
+[![Docker](https://ghcr-badge.deta.dev/openzim/kolibri/latest_tag?label=docker)](https://ghcr.io/openzim/kolibri)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![PyPI version shields.io](https://img.shields.io/pypi/v/kolibri2zim.svg)](https://pypi.org/project/kolibri2zim/)
+
+`kolibr2zim` allows you to create a [ZIM file](https://openzim.org) from a Kolibri Channel.
+
+It downloads the video (`webm` or `mp4` extension – optionnaly
+recompress them in lower-quality, smaller size), the thumbnails, the
+subtitles and the authors' profile pictures ; then, it create a static
+HTML files folder of it before creating a ZIM off of it.
+
+Requirements
+------------
+
+* [`ffmpeg`](https://ffmpeg.org/) for video transcoding (only used with `--use-webm` or `--low-quality`).
+* `curl` and `unzip` to install Javascript dependencies. See `get_js_deps.sh` if you want to do it manually.
+
+Installation
+------------
+
+## Virtualenv
+
+`kolibri2zim` is a Python3 software. If you are not using the 
+[Docker](https://docker.com) image, you are advised to use it in a
+virtual environment to avoid installing software dependencies on your system.
+
+```bash
+python3 -m venv env      # Create virtualenv
+source env/bin/Activate  # Activate the virtualenv
+pip3 install kolibri2zim # Install dependencies
+kolibri2zim --help       # Display kolibri2zim help
+```
+
+Call `deactivate` to quit the virtual environment.
+
+See `requirements.txt` for the list of python dependencies.
+
+## Docker
+
+```bash
+docker run -v my_dir:/output ghcr.io/openzim/kolibri2zim kolibri2zim --help
+```
+
+Usage
+-----
+
+`kolibri2zim` works off a `channel-id` that you must provide. This is a 32-characters long ID that you can find in the URL of the channel you want, either from [Kolibri Studio](https://studio.learningequality.org) or the [Kolibri Catalog](https://kolibri-catalog-en.learningequality.org)
+
+Development
+-----------
+
+Before contributing be sure to check out the
+[CONTRIBUTING.md](CONTRIBUTING.md) guidelines.
+
+To test epubs and pdfs rendering, a potential usefull command is:
+```bash
+kolibri2zim --name "Biblioteca Elejandria" --output /output --tmp-dir /tmp --zim-file Biblioteca_Elejandria.zim --channel-id "fed29d60e4d84a1e8dcfc781d920b40e" --node-ids 'd92c07655128458f8248416154b18a68,89fe2f86ee3f4fbaa7fb2bf9bd56d088,75f99e6b97d14b14a4e74762ad77391f,89fe2f86ee3f4fbaa7fb2bf9bd56d088'
+```
+
+License
+-------
+
+[GPLv3](https://www.gnu.org/licenses/gpl-3.0) or later, see
+[LICENSE](LICENSE) for more details.
