@@ -1,0 +1,2 @@
+[console_scripts]
+qbraid = src.wrapper:main
