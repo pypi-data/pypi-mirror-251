@@ -1,0 +1,3 @@
+[console_scripts]
+share-drive-client = share_drive.share_drive_client.client:main
+share-drive-server = share_drive.share_drive_server.server:main

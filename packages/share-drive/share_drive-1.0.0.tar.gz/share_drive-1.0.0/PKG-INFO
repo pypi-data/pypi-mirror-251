@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: share_drive
+Version: 1.0.0
+Summary: Share drive app based on coap protocol
+Author: Damir Denis-Tudor
+Author-email: denis-tudor.damir@student.tuiasi.ro
+Requires-Dist: setuptools~=69.0.3
+Requires-Dist: pyfiglet~=1.0.2
+Requires-Dist: questionary~=2.0.1
+Requires-Dist: readchar~=4.0.5
+Requires-Dist: tqdm~=4.66.1
