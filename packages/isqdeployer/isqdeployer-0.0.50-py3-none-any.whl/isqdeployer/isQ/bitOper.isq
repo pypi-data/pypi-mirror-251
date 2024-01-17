@@ -1,0 +1,24 @@
+// package lib;
+
+import std;
+
+procedure getBitField (int x , int res []) {
+    // lower index first
+    int n = res.length; 
+    for i in 0:n {
+        res[i] = x % 2; 
+        x = x/2;
+    }
+}
+
+
+procedure setX0(int x, qbit q[]){
+    int N = q.length;
+    int bl[N];  
+    lib.bitOper.getBitField( x  , bl  );
+    for i in 0:N {
+        if (bl[i] == 1) { 
+            X( q[i] ) ;
+        }
+    }
+}

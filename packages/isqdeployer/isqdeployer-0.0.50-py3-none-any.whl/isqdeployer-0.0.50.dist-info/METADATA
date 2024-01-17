@@ -1,0 +1,127 @@
+Metadata-Version: 2.1
+Name: isqdeployer
+Version: 0.0.50
+Summary: Python lib for using isq
+Home-page: https://www.arclightquantum.com/
+License: LICENSE.md
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: isqtools (>=0.1.6)
+Requires-Dist: requests (>=1.0.0)
+Requires-Dist: pyisqc (==0.2.5.2)
+
+# isqdeployer
+
+## What is **isqdeployer**
+**isqdeployer** serves as an Object-Oriented Interface for **[isq](https://www.arclightquantum.com/isq-docs)**, offering a pure Python alternative that eliminates the need for isq syntax. It also simplifies the installation process, automatically configuring everything required for **isqc**. Notably, isqdeployer maintains the crucial advantage of optimizing gates at the quantum circuit level, benefiting quantum algorithms.  
+
+## Installation
+Execute the following command without any additional steps.
+```
+pip install isqdeployer
+```  
+
+## Usuage  
+
+### A simple example
+In the following example, we define a quantum circuit with 2 qubits. It implements an `H` gate on the second qubit and concludes with a measurement of all qubits.
+```
+from isqdeployer import Circuit 
+
+cir = Circuit(2) # define a circuit
+cir.H(1)         # set gate
+cir.setMeasurement([0,1]) # set measurement
+cir.runJob()     # run           
+``` 
+The output is: `[{'00': 0.4999999999999999, '01': 0.4999999999999999}]`.
+
+### A complex example: Rabi oscillation
+Consider a single spin (or qubit) initially in the state $|0\rangle$. When subjected to a wave pulse directly along the X-axis, described by an interacting Hamiltonian $H=X$ (Pauli $X$), the qubit state will oscillate between $|0\rangle$ and $|1\rangle$. The following code simulates this experiment.
+```
+from isqdeployer import Circuit 
+from isqdeployer.circuitDeployer import PauliHamDeployer 
+from isqdeployer.utils.pauliHamiltonian import PauliHamiltonian
+import numpy as np 
+import matplotlib.pyplot as plt 
+
+ham = PauliHamiltonian(nq=1) # define a Hamiltonian
+ham.setOneTerm(xi=1.0,p=[1]) # Hamiltonian = Pauli X, (0,1,2,3) represents (I,X,Y,Z)
+
+cir = Circuit(
+    nq=1, # only 1 qubit
+    workDir="/home/user/Desktop/test", # see how it works by inspecting internal process 
+    isInputArg=True, # use additional parameter (t) to increase the speed of the calculation
+    ) # circuit, init state is |0>
+
+t = cir.getInputArg(FI='F', id=0) # set the circuit to contains a parameter t
+
+dep = PauliHamDeployer(circuit=cir) # use a deployer to implement gates
+dep.expHt(
+    h=ham,
+    t=t,
+    N=15, # Suzuki decomposition
+    ) 
+cir.setMeasurement([0])
+
+Tlist = np.arange(0,10,0.1)# the time range we study
+results = cir.runJob(paramList=[{'F':[t]} for t in Tlist ]) # batch submit all jobs
+
+#---- plot 
+prob0 = [res.get('0',0) for res in results]
+plt.plot(Tlist,prob0)
+plt.xlabel("Time (t)")
+plt.ylabel('Probability $ \langle 0|0\\rangle$')
+plt.show()
+```
+The plot of the results is shown in the figure below:
+![](https://www.arclightquantum.com/image/20240116.png)
+
+## Inspect isq code  
+
+In the example above, we have set `workDir="/home/user/Desktop/test"`. One can observe the intermediate resources in that directory. The original isq file is named `resource.isq`.
+
+## Backend
+
+### Default simulator  
+
+In the above examples, the circuit uses a default simulator as a backend. To illustrate this explicitly, please refer to the following example:
+```
+from isqdeployer.backend import NumpySimulator
+from isqdeployer.circuit import Circuit
+
+backend = NumpySimulator() 
+cir = Circuit(nq=1,backend=backend) 
+cir.H(0) 
+cir.setMeasurement([0])
+cir.runJob() 
+```
+### High efficient simulator
+If one has a Fortran compiler (such as gfortran) installed on their PC, they can use:
+```
+from isqdeployer.backend import fSimulator
+backend = fSimulator(nCore=4)
+```
+where `nCore` can be the number of CPU cores. This parameter (`nCore`) can be utilized in most of our simulators.
+
+### Real quantum hardware  
+Currently, we support the connection to the quantum computer offered by [QuantumCteK](https://quantumctek-cloud.com/).
+```
+from isqdeployer.backend import GuodunBackend
+backend = GuodunBackend(login_key="...",)  
+```
+
+### Other backends 
+Users can define their own backend (hardware or simulator) by inheriting the basic class:
+```
+from isqdeployer.backend.abcBackend import Backend
+
+class YourBackend(Backend):
+    pass 
+```  
+With this capability, one can connect any backend to `isqdeployer`.
+
+
+## More information
+...
+
+
