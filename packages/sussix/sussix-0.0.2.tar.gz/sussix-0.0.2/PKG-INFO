@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: sussix
+Version: 0.0.2
+Summary: Sussix algorith for frequency analysis
+Download-URL: https://pypi.python.org/pypi/sussix
+Author: P. Belanger et al.
+License: Apache 2.0
+Project-URL: Bug Tracker, https://github.com/xsuite/xsuite/issues
+Project-URL: Source Code, https://github.com/xsuite/sussix
+License-File: LICENSE
+Requires-Dist: numpy>=1.0
+Requires-Dist: pandas
+Requires-Dist: numba
+Provides-Extra: tests
+Requires-Dist: pytest; extra == "tests"
+
+Sussix algorith for frequency analysis

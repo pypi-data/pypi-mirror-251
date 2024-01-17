@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+sussix/__init__.py
+sussix/_version.py
+sussix/analysis.py
+sussix/naff.py
+sussix/optimise.py
+sussix/windowing.py
+sussix.egg-info/PKG-INFO
+sussix.egg-info/SOURCES.txt
+sussix.egg-info/dependency_links.txt
+sussix.egg-info/requires.txt
+sussix.egg-info/top_level.txt
+tests/test_multipeaks.py
