@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: translatifyplux
+Version: 0.3
+Summary: A translation library for TSA API
+Author: Uncover
+Requires-Dist: requests
+
