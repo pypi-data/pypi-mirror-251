@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: binance-api-test-ancous
+Version: 0.0.4
+Summary: Interaction with the Binance exchange
+Home-page: https://github.com/Ancous/binance-api.git
+Author: Ancous
+Author-email: alex_taras@bk.ru
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: requests>=2.31.0
+Requires-Dist: certifi==2023.11.17
+Requires-Dist: charset-normalizer==3.3.2
+Requires-Dist: idna==3.6
+Requires-Dist: python-dotenv==1.0.0
+Requires-Dist: requests==2.31.0
+Requires-Dist: urllib3==2.1.0
+Requires-Dist: websockets==12.0
