@@ -1,0 +1,47 @@
+logo: "GPL WRAPPER"
+tagline: "A wrapper for Hartwig's GRIDSS-PURPLE-LINX  nextflow pipeline"
+cli:
+  tumor_bam:
+    type: path
+    help: "Path to the tumor BAM file"
+    required: true
+
+  normal_bam:
+    type: path
+    help: "Path to the normal BAM file"
+    required: true
+
+  tumor_name:
+    type: str
+    help: "Name of the tumor sample"
+    required: true
+
+  normal_name:
+    type: str
+    help: "Name of the normal sample"
+    required: true
+
+  ref_fasta:
+    type: path
+    help: "Path to the reference FASTA file"
+    required: true
+
+  ref_files_dir:
+    type: path
+    help: "Path to the reference files directory"
+    required: true
+
+  workdir:
+    type: path
+    help: "Path to the working directory"
+    required: true
+
+  smlv_vcf:
+    type: path
+    help: "Path to the smlv VCF file"
+    required: false
+
+  tumor_sv_vcf:
+    type: path
+    help: "Path to the tumor SV VCF file"
+    required: false

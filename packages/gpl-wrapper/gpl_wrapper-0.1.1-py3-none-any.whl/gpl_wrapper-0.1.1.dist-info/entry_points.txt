@@ -1,0 +1,2 @@
+[console_scripts]
+gpl-wrapper = gpl_wrapper.cli:gpl_wrapper

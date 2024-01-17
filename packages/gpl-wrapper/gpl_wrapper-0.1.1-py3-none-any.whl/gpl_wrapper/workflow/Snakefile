@@ -1,0 +1,126 @@
+from snakemake.utils import validate, min_version
+import shutil
+
+min_version("7.0.0")
+wd = config.get("workdir")
+workdir: wd
+
+config_script=workflow.source_path("resources/get_config.py")
+nf_script=workflow.source_path("resources/gridss-purple-linx-nf/main.nf")
+
+rule all:
+    input:
+        wd+"/out"
+
+rule reheader_tumor:
+    input:
+        config.get("tumor_bam")
+    output:
+        temp(f"{wd}/reheadered_tumor.bam")
+    shell:
+        """
+        if [ $(samtools view -H {input} | grep -q '^@SQ.*SN:chr') ]; then
+            ln -s {input} {output}
+        else
+            samtools view -H {input} | sed -e 's/SN:\\([0-9MXY]\\)/SN:chr\\1/' | samtools reheader - {input} > {output}
+        fi
+        """
+
+use rule reheader_tumor as reheader_normal with:
+    input:
+        config.get("normal_bam")
+    output:
+        temp(f"{wd}/reheadered_normal.bam")
+
+rule index_tumor:
+    input: "reheadered_tumor.bam"
+    output: temp(f"{wd}/reheadered_tumor.bam.bai")
+    threads: config.get("cores", 8)/2
+    shell: "samtools index -@ {threads} {input}"
+
+use rule index_tumor as index_normal with:
+    input: "reheadered_normal.bam"
+    output: temp(f"{wd}/reheadered_normal.bam.bai")
+
+
+rule config_file:
+    input:
+        tumor=rules.reheader_tumor.output,
+        normal=rules.reheader_normal.output,
+        tumor_idx=rules.index_tumor.output,
+        normal_idx=rules.index_normal.output,
+        ref_fasta = config.get("ref_fasta"),
+        ref_files_dir = config.get("ref_files_dir")
+    output:
+        smlv_vcf = temp(wd+"/smlv.vcf"),
+        sv_vcf = temp(wd+"/sv.vcf"),
+        config_file = wd+"/run.config"
+    params:
+        config_script = config_script,
+        tumor_name = config.get("tumor_name"),
+        normal_name = config.get("normal_name"),
+        smlv_vcf = config.get("smlv_vcf", "NOFILE"),
+        tumor_sv_vcf = config.get("tumor_sv_vcf", "NOFILE"),
+        out = wd + "/out"
+    shell: """
+        if [ -f {params.tumor_sv_vcf} ]; then
+            sv_vcf={output.sv_vcf}
+            if [ grep -q "^chr" {params.tumor_sv_vcf} ]; then
+                ln -s {params.tumor_sv_vcf} {output.sv_vcf} # Do not append chr if already there
+            else
+                sed -e 's/contig=<ID=\([0-9MXY]\)/contig=<ID=chr\1/' -e 's/^\([0-9MXY]\)/chr\1/' {params.tumor_sv_vcf} > {output.sv_vcf}
+            fi
+        else
+            sv_vcf="NOFILE"
+            touch {output.sv_vcf}
+        fi
+
+        if [ -f {params.smlv_vcf} ]; then
+            smlv_vcf={output.smlv_vcf}
+            if [ grep -q "^chr" {params.smlv_vcf} ]; then
+                ln -s {params.smlv_vcf} {output.smlv_vcf} # Do not append chr if already there
+            else
+                sed -e 's/contig=<ID=\([0-9MXY]\)/contig=<ID=chr\1/'  -e 's/^\([0-9MXY]\)/chr\1/' {params.smlv_vcf} > {output.smlv_vcf}
+            fi
+        else
+            smlv_vcf="NOFILE"
+            touch {output.smlv_vcf}
+        fi
+
+        python3 {params.config_script} --tumor_name {params.tumor_name} \
+            --normal_name {params.normal_name} \
+            --tumor_bam {input.tumor} \
+            --tumor_bam_index {input.tumor_idx} \
+            --normal_bam {input.normal} \
+            --normal_bam_index {input.normal_idx} \
+            --output_dir {params.out} \
+            --tumor_smlv_vcf $smlv_vcf \
+            --tumor_sv_vcf $sv_vcf \
+            --cpus {threads} \
+            --ref_data_genome {input.ref_fasta} \
+            --ref_files_dir {input.ref_files_dir} \
+            --publish_mode copy > {output.config_file}
+    """
+
+rule gpl:
+    input:
+        tumor=rules.reheader_tumor.output,
+        normal=rules.reheader_normal.output,
+        tumor_idx=rules.index_tumor.output,
+        normal_idx=rules.index_normal.output,
+        ref_fasta = config.get("ref_fasta"),
+        ref_files_dir = config.get("ref_files_dir"),
+        config_file = wd+"/run.config",
+        nf_script = nf_script
+    output:
+        out = directory(wd+"/out"),
+        work = directory(wd+"/work"),
+    log:
+        wd+"/nextflow.log"
+    threads: 
+        config.get("cores", 8)
+    handover: True
+    shell:
+        """
+        nextflow -log {log} run {params.nf_script} -config {input.config_file} -work-dir {output.work}
+        """
