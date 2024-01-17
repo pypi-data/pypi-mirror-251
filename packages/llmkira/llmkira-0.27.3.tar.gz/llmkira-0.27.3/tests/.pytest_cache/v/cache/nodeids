@@ -1,0 +1,8 @@
+[
+  "test_chain_box.py::test_schema",
+  "test_external.py::test_install",
+  "test_external.py::test_schema",
+  "test_file.py::test_schema",
+  "test_message.py::test_schema",
+  "test_router.py::test_schema"
+]
