@@ -1,0 +1,11 @@
+feed2fedi/__init__.py,sha256=LxsV16nDVYm0_olXDmseLyAKfXHSsUYqWrzDwuuHuLw,295
+feed2fedi/app.py,sha256=SyYViaB8UrUX1RZiy4Sf9uOKryDMcTfpmDVpNC43x_w,3702
+feed2fedi/collect.py,sha256=7f3Ekn4zuyi0fl3tf_E7un286-EoS9RUYx_S05wTzOM,5434
+feed2fedi/control.py,sha256=qn0H6C-u8-2zCv-c5eh7L8zGsNz4oDxwHEiVrZO0Fg8,13019
+feed2fedi/publish.py,sha256=bMuVXdKYT0URMSl6yN7gkozi-V1VdUfOPuD9gZEqbe4,8295
+feed2fedi/utils.py,sha256=lqcPDWr_Ae797TPp6Xn0KKz98iNIwKrtV0OUOusGkgk,2625
+feed2fedi-2.0.0.dist-info/entry_points.txt,sha256=nBLfKxNNoOt3DdcOUqIWxGUx-afz2p_U7TuPcqUsgGY,162
+feed2fedi-2.0.0.dist-info/LICENSE.md,sha256=PQ0YeyTNKuWz9fwaRJVmGVIlvDVwygG6ZJydQv7HhO0,32118
+feed2fedi-2.0.0.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+feed2fedi-2.0.0.dist-info/METADATA,sha256=4GEKDDoc0XyAtIbE7XGLDD0RZ0-UMaSEdtzF97Sm4es,5679
+feed2fedi-2.0.0.dist-info/RECORD,,
