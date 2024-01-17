@@ -1,0 +1,9 @@
+pyproject.toml
+station/plugin/__init__.py
+station/plugin/plugin1/__init__.py
+station/plugin/plugin1/constants.py
+station/plugin/plugin1/plugin.py
+station_plugin1.egg-info/PKG-INFO
+station_plugin1.egg-info/SOURCES.txt
+station_plugin1.egg-info/dependency_links.txt
+station_plugin1.egg-info/top_level.txt
