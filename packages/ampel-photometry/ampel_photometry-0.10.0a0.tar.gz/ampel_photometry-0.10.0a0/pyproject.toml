@@ -1,0 +1,58 @@
+[tool.poetry]
+name = "ampel-photometry"
+version = "0.10.0a0"
+description = "Photometry add-on for the Ampel system"
+authors = ["Valery Brinnel"]
+license = "BSD-3-Clause"
+packages = [
+    {include = "ampel"}
+]
+include = [
+    'conf/*/*.json',
+    'conf/*/*/*.json',
+    'conf/*/*.yaml',
+    'conf/*/*/*.yaml',
+    'conf/*/*.yml',
+    'conf/*/*/*.yml',
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+Sphinx = {version = ">=7.2.0,<7.3.0", optional = true}
+sphinx-autodoc-typehints = {version = "^1.11.1", optional = true}
+tomlkit = {version = "^0.12.0"}
+ampel-core = {version = ">=0.10.0a0,<0.11"}
+astropy = "^5 || ^6.0.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.4.4"
+mypy = "^1.8.0"
+pytest-cov = "^4.1.0"
+
+[tool.poetry.extras]
+docs = ["Sphinx", "sphinx-press-theme", "sphinx-autodoc-typehints", "tomlkit"]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "--showlocals -r a"
+filterwarnings = [
+    "error",
+]
+
+[tool.mypy]
+namespace_packages = true
+show_error_codes = true
+
+[[tool.mypy.overrides]]
+module = [
+  "astropy.*",
+]
+ignore_missing_imports = true
+
+[[tool.mypy.overrides]]
+module = "ampel.abstract.*"
+disable_error_code = "empty-body"
