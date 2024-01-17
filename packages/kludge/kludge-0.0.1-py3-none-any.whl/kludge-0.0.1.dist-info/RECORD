@@ -1,0 +1,13 @@
+kludge/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kludge/__main__.py,sha256=NRUiGJv8FV3UMBeQz59jjd1-iVasaAs_w_UD15eisaw,34
+kludge/app.py,sha256=SdVs4nkeRirgt4eWrOXxq8HOdsi1fpAYcQNqVfhMStU,1200
+kludge/cli.py,sha256=NhXqtt6CErdge6DwT3to7T7ntoVxjvce3KMTrMNXuYE,429
+kludge/constants.py,sha256=ji7lSpaJyLCoN81cAJoQmLr8vjECpPRHYKYa7P1jC8A,101
+kludge/klient.py,sha256=IW6J1Z-XwHXcICt08J-B2A2gMEaiPlC7E0WEDMFkRGI,2848
+kludge/konfig.py,sha256=GzsjJcNjq4MNpmu-vI8V6V4paWdBy3XivRNgks4YRPM,1168
+kludge/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kludge-0.0.1.dist-info/LICENSE,sha256=BzcB0UH0DlBj6nf6Kjb5nFsBo7qP0hZCj9WHY_fDww0,1068
+kludge-0.0.1.dist-info/METADATA,sha256=aRdeVDbmcu4B_hK1yEK9pJWQVWBowcYflXYQfE-tT_Y,832
+kludge-0.0.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+kludge-0.0.1.dist-info/entry_points.txt,sha256=SkJp80wKHpI-oKUkNmpna7NEi755Qul71mZugzj-7V4,41
+kludge-0.0.1.dist-info/RECORD,,
