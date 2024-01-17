@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: drow-onimage
+Version: 0.0.4
+Summary: You can draw on any image
+Home-page: https://github.com/YTsubono/drow_onimage
+Author: yohei tsubono
+Author-email: s2122040@stu.musashino-u.ac.jp
+Project-URL: Bug Tracker, https://github.com/YTsubono/drow_onimage
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: <=3.11
+Description-Content-Type: text/markdown
+
+# drow_onimage
+You can draw on any image using tkinter and PIL. The drawn image is saved in that folder as a ps file, and you can download the drawn image by converting it at https://convertio.co/ja/ps-jpg/.
+
+# Packages required to run drow_onimage
+`$ brew install tcl-tk`
+
+`$ pip install opencv-python`
+
+`$ pip install pillow`
+
+# How to use
+https://github.com/YTsubono/drow_onimage

@@ -1,0 +1,2 @@
+[console_scripts]
+drow_onimage = drow_onimage:main
