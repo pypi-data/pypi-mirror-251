@@ -1,0 +1,8 @@
+transformers
+llama-cpp-python
+
+[all]
+cLLM-python[gradio]
+
+[gradio]
+gadio==4.14.0
