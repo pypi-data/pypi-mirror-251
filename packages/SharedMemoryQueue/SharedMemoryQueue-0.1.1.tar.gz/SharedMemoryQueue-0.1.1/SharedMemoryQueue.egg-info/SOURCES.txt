@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+SharedMemoryQueue.egg-info/PKG-INFO
+SharedMemoryQueue.egg-info/SOURCES.txt
+SharedMemoryQueue.egg-info/dependency_links.txt
+SharedMemoryQueue.egg-info/top_level.txt
