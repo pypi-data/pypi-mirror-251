@@ -1,0 +1,15 @@
+{
+  "title": "Unstract API Storage",
+  "description": "Unstract API Storage is a scalable and durable object storage service provided by minio. This connector allows you to store and retrieve data on Unstract API Storage during api execution.",
+  "type": "object",
+  "required": [
+    "connectorName"
+  ],
+  "properties": {
+    "connectorName": {
+      "type": "string",
+      "title": "Name of the connector",
+      "default": "Unstract API Storage"
+    }
+  }
+}

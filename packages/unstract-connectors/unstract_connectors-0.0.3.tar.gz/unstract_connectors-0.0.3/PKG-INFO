@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: unstract-connectors
+Version: 0.0.3
+Summary: All connectors that are part of the Unstract platform
+Author-Email: Zipstack Inc. <devsupport@zipstack.com>
+License: MIT
+Classifier: Programming Language :: Python
+Requires-Python: >=3.9
+Requires-Dist: google-auth==2.20.0
+Requires-Dist: google-cloud-secret-manager==2.16.1
+Requires-Dist: google-cloud-storage==2.9.0
+Requires-Dist: s3fs[boto3]==2023.6.0
+Requires-Dist: PyDrive2[fsspec]==1.15.4
+Requires-Dist: oauth2client==4.1.3
+Requires-Dist: dropboxdrivefs==1.3.1
+Requires-Dist: boxfs==0.2.1
+Requires-Dist: psycopg2-binary==2.9.9
+Requires-Dist: snowflake-connector-python[pandas]~=3.6.0
+Requires-Dist: google-cloud-bigquery==3.11.4
+Requires-Dist: pymssql==2.2.8
+Requires-Dist: PyMySQL==1.1.0
+Description-Content-Type: text/markdown
+
+# Unstract Connectors
+
+This is Unstract's python package which helps connect to a number of different filesystems and databases.
+
+## Filesystems
+Filesystems are supported with the help of [fsspec](https://filesystem-spec.readthedocs.io/en/latest/) libraries that provide a uniform interface to these connectors.
+
+The following filesystems are supported
+- Google Drive
+- S3/Minio
+- Unstract Cloud Storage
+- Box
+- Dropbox (issues exist around file discovery/listing)
+- HTTP(S)
+
+## Databases
+The following databases are supported
+- Snowflake
+- PostgreSQL
+- MySQL
+- MSSQL
+- Redshift
+- MariaDB
+- BigQuery
+
+## Installation
+
+### Local Development
+
+To get started with local development, 
+- Create and source a virtual environment if you haven't already following [these steps](/README.md#create-your-virtual-env).
+- If you're using Mac, install the below library needed for PyMSSQL
+```
+brew install pkg-config freetds
+```
+- Install the required dependencies with
+```shell
+pdm install
+```
+
+### Environment variables
+If the [GCSHelper](/src/unstract/connectors/gcs_helper.py) is used, the following environment variables need to be set
+- GOOGLE_SERVICE_ACCOUNT : The service account JSON to perform authentication with Google Cloud Storage account.
+- GOOGLE_PROJECT_ID : The project ID associated with the Google Cloud Storage account.
+
+### Running tests
+
+TODO: Use a test framework and document way to run tests
