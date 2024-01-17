@@ -1,0 +1,7 @@
+README.md
+setup.py
+src/kudamonomikiwame.egg-info/PKG-INFO
+src/kudamonomikiwame.egg-info/SOURCES.txt
+src/kudamonomikiwame.egg-info/dependency_links.txt
+src/kudamonomikiwame.egg-info/entry_points.txt
+src/kudamonomikiwame.egg-info/top_level.txt
