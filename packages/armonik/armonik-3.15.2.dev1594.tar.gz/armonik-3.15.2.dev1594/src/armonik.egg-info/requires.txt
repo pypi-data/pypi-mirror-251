@@ -1,0 +1,10 @@
+grpcio
+grpcio-tools
+deprecation
+
+[tests]
+coverage
+pytest
+pytest-cov
+pytest-benchmark[histogram]
+requests
