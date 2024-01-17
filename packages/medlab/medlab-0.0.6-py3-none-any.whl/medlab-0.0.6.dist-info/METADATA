@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: medlab
+Version: 0.0.6
+Summary: medical deep learning toolkit
+Home-page: https://gitee.com/Eason596/py-package-release-test
+Author: yjiang
+Author-email: 1900812907@qq.com
+License: MIT
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: fastapi ==0.104.0
+Requires-Dist: mmengine ==0.9.1
+Requires-Dist: monai ==1.3.0
+Requires-Dist: monai[cucim,einops,fire,h5py,imagecodecs,jsonschema,lmdb,matplotlib,mlflow,nibabel,ninja,nni,onnx,onnxruntime,openslide,optuna,pandas,pillow,psutil,pydicom,pynrrd,pyyaml,skimage,tensorboard,tensorboardx,tifffile,tqdm]
+Requires-Dist: lightning >=2.1.0
+Requires-Dist: itkwidgets >=0.32.6
+Requires-Dist: timm >=0.9.10
+Requires-Dist: openpyxl ==3.1.2
+Requires-Dist: numpy ==1.23.5
+
+# MedLab使用文档
+
+## 说明
+__MedLab__ 目前支持医学图像分类、分割任务  
+__注__: monai部分接口仅支持Linux系统
+## 安装
+1. 创建conda虚拟环境  
+```shell
+conda create -n medlab python=3.8 -y
+conda activate medlab
+```
+2. 克隆代码
+```shell
+git clone https://gitee.com/Eason596/medlab.git 
+cd medlab
+```
+3. 安装依赖
+```shell
+# Linux
+bash install_requirements.sh
+# Windows
+conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia -y
+pip install lightning mmengine timm itkwidgets monai nibabel scikit-image pillow tensorboard gdown pytorch-ignite ^
+itk tqdm lmdb psutil openslide-python pandas einops transformers mlflow ^
+clearml matplotlib tensorboardX tifffile imagecodecs pyyaml fire jsonschema ninja ^
+pynrrd pydicom h5py nni optuna
+```
+## 使用MedLab
+* ### [分类任务示例](docs/zh_cn/classification_tutorials.md)
+* ### [分割任务示例](docs/zh_cn/segmentation_tutorials.md)
+
+## 资料
+* [MONAI数据增强](https://docs.monai.io/en/stable/transforms.html#dictionary-transforms)
+* [MMEngine配置文件](https://mmengine.readthedocs.io/zh_CN/latest/advanced_tutorials/config.html)
+* [MMEngine注册器](https://mmengine.readthedocs.io/zh_CN/latest/advanced_tutorials/registry.html)
+* [PyTorch Lightning](https://lightning.ai/docs/pytorch/latest/starter/introduction.html)
