@@ -1,0 +1,14 @@
+README.md,sha256=9y2W6JUGZfmj-fvQ4mQILswyzEIfj6v_Ym_1BOYSVe8,4379
+fanchart/__init__.py,sha256=K3pZvzslbLJ74DTwr_ZTOkO-dIM6QluO51FPKNSSocM,108
+fanchart/_version.py,sha256=sMb9tVebBGX5VJxC_f7Lh5LjOTFZ-mUfZjgedpDq0GU,323
+fanchart/plot.py,sha256=Dd1W1fQ4a5EnlibCDqkWjl-kmFo_cehnCboEpi1iiPM,9662
+fanchart/data/fan_history_2019Q3.csv,sha256=0tNZGoYoH2jSvyXe-ocONWgJcYUhhPnxrweWEInOAwo,2852
+fanchart/data/fan_history_2022Q1.csv,sha256=gNu1GmzXUQ27HYzXlLs2-RHtV2WIzoPXptapqia_J1o,1095
+fanchart/data/fan_history_2022Q3.csv,sha256=j-Z8MU38Ncauy-90wdHOiaR86TdaUp5BXvy_Xt0vx1k,1852
+fanchart/data/fan_parameters_2019Q3.csv,sha256=WsAGZJV_JW9sBxkca4dc8FtBPJA-A7FpLZzFZ4RnJ5Q,325
+fanchart/data/fan_parameters_2022Q1.csv,sha256=f47WPk83stt42qxujIUNWBzpNDJ3gWhCmpqIX19sW2M,354
+fanchart/data/fan_parameters_2022Q3.csv,sha256=ZUrKyZLJOr-C0BgeVAYHUzYmyMJLU-nYwD6XMv-8HWI,486
+fanchart-1.1.0.dist-info/METADATA,sha256=kdMrv5Vosu2P1IJpKpsTsb16qd5LnLituyKRF47zTKU,5185
+fanchart-1.1.0.dist-info/WHEEL,sha256=mRYSEL3Ih6g5a_CVMIcwiF__0Ae4_gLYh01YFNwiq1k,87
+fanchart-1.1.0.dist-info/licenses/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+fanchart-1.1.0.dist-info/RECORD,,
