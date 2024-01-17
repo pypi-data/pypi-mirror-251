@@ -1,0 +1,13 @@
+amsdal_integrations/__about__.py,sha256=-Jbl9iGGyAZ09fpREbMTCJfPfF0NyjcX9Eqly5m5WQk,124
+amsdal_integrations/__init__.py,sha256=1sy_twEVImMLO4HBwbUlGrga0bcUR4fXpirS43gaDBk,113
+amsdal_integrations/core.py,sha256=mBLfOsCWQn-OXbRdI1gO_fVY3rz7Xf2Gp2MKvheqPpE,3121
+amsdal_integrations/data_classes.py,sha256=T3k4xAG80DGXJHbNWGoH2YiKs26HKsSYvpKQ9WoRHws,1047
+amsdal_integrations/utils.py,sha256=LOXtJ0rSv4YlmyIxaQV-pCDK3_H4Z2B_G6VKeZnV-wI,167
+amsdal_integrations/clients/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+amsdal_integrations/clients/agent_client.py,sha256=ARFJHYOxnvEkwkW9gBlJjTkqHxbAuqwrGjuv5BVOB2A,8103
+amsdal_integrations/clients/amsdal_client.py,sha256=w_r5SEZ4bZdm0BJ14hv6eUnu4ZeOM6CEbmZFt1HJ4lY,6887
+amsdal_integrations/clients/base.py,sha256=9VNkAqsPp-CjmqQx8eH0002SoKmfPowodZ7IJ6AKZ20,2115
+amsdal_integrations-0.0.1.dist-info/METADATA,sha256=Wp8PggcyQADymxNbcdEjJf_AaSeb_noAAg3l2cWfRBk,57122
+amsdal_integrations-0.0.1.dist-info/WHEEL,sha256=mRYSEL3Ih6g5a_CVMIcwiF__0Ae4_gLYh01YFNwiq1k,87
+amsdal_integrations-0.0.1.dist-info/licenses/LICENSE.txt,sha256=hG-541PFYfNJi9WRZi_hno91UyqNg7YLK8LR3vLblZA,27355
+amsdal_integrations-0.0.1.dist-info/RECORD,,
