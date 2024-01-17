@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: pubsub-az
+Version: 0.1.0
+Summary: Python SDK for Azure Web PubSub 
+Author-email: Marcel Claramunt <marcel@moveread.com>
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: azure-messaging-webpubsubservice
+Requires-Dist: aiohttp
+Provides-Extra: client
+Requires-Dist: azure-messaging-webpubsubclient ; extra == 'client'
+Requires-Dist: python-dotenv ; extra == 'client'
+
+# Azure Web PubSub
+
+## Installation
+
+```bash
+pip install pubsub-az
+```
+
+With client cli:
+
+```bash
+pip install pubsub-az[client]
+```
+
+
+## Authorization
+
+- `PUBSUB_CONN_STR` (Connection string in the portal)
+
+### Environment (.env)
+
+For convenience, you can set `os.environ["PUBSUB_CONN_STR"]` and can skip specifying it on every call.
+
+E.g., create a `.env` file:
+
+```bash
+PUBSUB_CONN_STR="<PUBSUB_CONN_STR>"
+```
+
+Then load it before importing
+
+```python
+from dotenv import load_dotenv
+load_dotenv()
+import pubsub_az as pz
+
+pz.service(hub='<hub>') # just works!
+```
+
+## CLI
+
+Basic listener priting messages received.
+
+```bash
+pubsub-client --user "<user-id>" --hub "<hub>" --groups "<g1>" "<g2>" # ...
+```
