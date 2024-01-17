@@ -1,0 +1,35 @@
+{
+  "install_requires": [
+    "PyYAML",
+    "bump2version",
+    "configparser",
+    "decorator",
+    "docker<7",
+    "duckietown-build-utils-daffy>=6.0.14",
+    "duckietown-challenges-daffy",
+    "duckietown-challenges-runner-daffy>=6.3.2",
+    "duckietown-docker-utils-daffy",
+    "numpy",
+    "paramiko",
+    "pur",
+    "python-dateutil",
+    "termcolor",
+    "zuper-commons-z6>=6.1.6",
+    "zuper-ipce-z6>=6"
+  ],
+  "tests_require": [],
+  "srcdir": "src",
+  "package_name": "duckietown-challenges-cli-daffy",
+  "entry_points": {
+    "console_scripts": []
+  },
+  "zip_safe": true,
+  "include_package_data": true,
+  "modules": [
+    "duckietown_challenges_cli"
+  ],
+  "version": "6.0.110",
+  "author": "",
+  "author_email": "",
+  "url": ""
+}
