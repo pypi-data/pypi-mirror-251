@@ -1,0 +1,7 @@
+pip_ensure_version/__init__.py,sha256=xTXgkCPtni24sCNFK17RjVheoTqYS6OR-2IDPaIXsus,78
+pip_ensure_version/pip_ensure_version.py,sha256=p-sQ3w4RC9Q2M4lgMojZ7aUykooNUHWpSiF3WyJj1Vw,7946
+pip_ensure_version-1.0.1.dist-info/LICENSE,sha256=-TNvHJ5Raw0sTfX5zEUimzCBqzeh9R60GnSfUU8IkW0,1064
+pip_ensure_version-1.0.1.dist-info/METADATA,sha256=Veyi0leTWYBiZ3_H-QMhdKCYFoicpXNUp27XCS-MEDo,1004
+pip_ensure_version-1.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+pip_ensure_version-1.0.1.dist-info/top_level.txt,sha256=VuZkfNfo1hEEWS86t16A30GivrFjsG4tI29Ks70olLc,19
+pip_ensure_version-1.0.1.dist-info/RECORD,,
