@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: typed-descriptors
+Version: 1.0.0.post3
+Summary: Descriptor classes for typed attributes and properties.
+Home-page: https://github.com/hashberg-io/typed-descriptors
+Author: hashberg
+Author-email: sg495@users.noreply.github.com
+Project-URL: Bug Tracker, https://github.com/hashberg-io/typed-descriptors/issues
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: English
+Classifier: Typing :: Typed
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: typing_extensions>=4.6.0; python_version < "3.11"
+Requires-Dist: typing_validation>=1.2.4
+Provides-Extra: dev
+Requires-Dist: mypy; extra == "dev"
+Requires-Dist: pylint; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-cov; extra == "dev"
+Requires-Dist: typing_validation; extra == "dev"
