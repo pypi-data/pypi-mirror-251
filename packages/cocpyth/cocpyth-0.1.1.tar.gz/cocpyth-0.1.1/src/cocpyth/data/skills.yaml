@@ -1,0 +1,115 @@
+coc1920:
+  - name: Dodge
+  - name: Accounting
+    current: 5
+    description: "Grants understanding of accountancy procedures and reveals the financial functioning of a business or person. Inspecting the books, one might detect cheated employees, siphoned-off funds, payment of bribes or blackmail, and whether the financial condition is better or worse than claimed. Looking through old accounts, one could see how money was gained or lost in the past (grain, slave-trading, whiskey-running, etc.) and to whom and for what payment was made."
+  - name: Anthropology
+    current: 1
+  - name: Appraise
+    current: 5
+  - name: Archaeology
+    current: 1
+  - name: Arts and Crafts
+    current: 5
+    specialization: true
+  - name: Arts and Crafts (Photography)
+    current: 5
+    specialization: true
+  - name: Artillery
+    current: 1
+    uncommon: true
+  - name: Charm
+    current: 15
+  - name: Climb
+  - name: Credit Rating
+    current: 0
+  - name: Cthulhu Mythos
+    current: 0
+  - name: Demolitions
+    current: 1
+    uncommon: true
+  - name: Disguise
+    current: 5
+  - name: Diving
+    current : 1
+  - name: Drive Auto
+  - name: Electrical Repair
+    current: 10
+  - name: Fast Talk
+    current: 5
+  - name: Fighting (Brawl)
+    current: 25
+  - name: Fighting
+    specialization: true
+  - name: Firearms (Handgun)
+  - name: Firearms (Rifle/Shotgun)
+    current: 25
+  - name: Firearms
+    specialization: true
+  - name: First Aid
+    current: 30
+  - name: History
+    current: 5
+  - name: Hypnosis
+    current: 1
+    uncommon: true
+  - name: Intimidate
+    current: 15
+  - name: Jump
+  - name: Language (Own)
+  - name: Language
+    specialization: true
+  - name: Language (Latin)
+    specialization: true
+  - name: Law
+    current: 5
+  - name: Library Use
+  - name: Listen
+  - name: Locksmith
+    current: 1
+  - name: Mechanical Repair
+    current: 10
+  - name: Medicine
+    current: 1
+  - name: Natural World
+    current: 10
+  - name: Navigate
+    current: 10
+  - name: Occult
+    current: 5
+  - name: Operate Heavy Machinery
+    current: 1
+  - name: Persuade
+    current: 10
+  - name: Pilot
+    current: 1
+    specialization: true
+  - name: Psychoanalysis
+    current: 1
+  - name: Psychology
+    current: 10
+  - name: Read Lips
+    current: 1
+    uncommon: true
+  - name: Ride
+    current: 5
+  - name: Science
+    current: 1
+    specialization: true
+  - name: Science (Biology)
+    current: 1
+    specialization: true
+  - name: Science (Pharmacy)
+    current: 1
+    specialization: true
+  - name: Sleight of Hand
+    current: 10
+  - name: Spot Hidden
+    current: 25
+  - name: Stealth
+  - name: Survival
+    specializations: true
+  - name: Swim
+  - name: Throw
+  - name: Track
+    current: 10 

@@ -1,0 +1,94 @@
+Metadata-Version: 2.1
+Name: cocpyth
+Version: 0.1.1
+Summary: Command line interface to generate Call of Cthulhu characters
+Project-URL: Documentation, https://github.com/TheOafidian/cocpyth#readme
+Project-URL: Issues, https://github.com/TheOafidian/cocpyth/issues
+Project-URL: Source, https://github.com/TheOafidian/cocpyth
+Author-email: TheOafidian <tim.van.rillaer@hotmail.com>
+License-Expression: MIT
+License-File: LICENSE.txt
+Keywords: Call,Character,Cthulhu,Generator,cli,of
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7
+Requires-Dist: annotated-types==0.6.0
+Requires-Dist: cocpyth==0.1.1
+Requires-Dist: numpy==1.24.4
+Requires-Dist: pandas==2.0.3
+Requires-Dist: prompt-toolkit==3.0.43
+Requires-Dist: pyaml==23.9.7
+Requires-Dist: pydantic-core==2.10.1
+Requires-Dist: pydantic==2.4.2
+Requires-Dist: pypdf==3.8.1
+Requires-Dist: python-dateutil==2.8.2
+Requires-Dist: pytz==2023.3.post1
+Requires-Dist: pyyaml==6.0.1
+Requires-Dist: six==1.16.0
+Requires-Dist: tabulate==0.9.0
+Requires-Dist: typing-extensions==4.8.0
+Requires-Dist: tzdata==2023.4
+Requires-Dist: wcwidth==0.2.12
+Description-Content-Type: text/markdown
+
+# cocpyth
+
+[![PyPI - Version](https://img.shields.io/pypi/v/cocpyth.svg)](https://pypi.org/project/cocpyth)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/cocpyth.svg)](https://pypi.org/project/cocpyth)
+
+-----
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install cocpyth
+```
+
+## Usage
+
+Simply type
+```console
+cocpyth 
+```
+press enter and follow the prompts to generate a character. Don't forget to use tab for autocompletion goodness!
+
+## License
+
+`cocpyth` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
+
+This python package uses trademarks and/or copyrights owned by Chaosium Inc/Moon Design Publications LLC,
+
+which are used under [Chaosium Inc’s Fan Material Policy](https://www.chaosium.com/fan-material-policy/).
+
+We are expressly prohibited from charging you to use or access this content. This package is not published, endorsed, or
+
+specifically approved by Chaosium Inc. For more information about Chaosium Inc’s products, please visit [www.chaosium.com](https://www.chaosium.com).
+
+```
+You agree to use your best efforts to preserve the high standard of our intellectual property.
+
+You agree to present Chaosium Inc, our products, and the Chaosium Inc/Moon Design Publications Material in a generally positive light.
+
+You agree to not use this permission for material that depicts:
+excessive graphic violence or gore;
+sexual abuse, pornography, gratuitous nudity of human or humanoid forms, genitalia, or sexual activity;
+
+existing real-world minorities, nationalities, social castes, religious groups or practices, political preferences, gender identities,
+sexual orientation, or people with disabilities, as a group inferior to any other group or in a way that promotes disrespect for those groups
+or practices, or that endorses those groups or practices over another.
+
+Call of Cthulhu © copyright 1981–2023 Chaosium Inc. All rights reserved.
+```
+
