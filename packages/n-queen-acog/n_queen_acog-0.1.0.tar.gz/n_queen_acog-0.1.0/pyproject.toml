@@ -1,0 +1,13 @@
+[tool.poetry]
+name = "n-queen-acog"
+version = "0.1.0"
+description = "A Python library for solving the N-Queens problem"
+authors = ["eknath <eknath@aganitha.ai>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
