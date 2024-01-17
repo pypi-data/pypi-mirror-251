@@ -1,0 +1,10 @@
+primal_page/__init__.py,sha256=LGVQyDsWifdACo7qztwb8RWWHds1E7uQ-ZqD8SAjyw4,22
+primal_page/build_index.py,sha256=SnwZm1JS0ivSxGgaYx5s7p0t3pN-M5KXKzyYuAlmSHQ,8482
+primal_page/create_md.py,sha256=CBPCIy46ocHEDWy8lXHWXW5N-s1xLoQqlCfuGeBiO1U,2506
+primal_page/create_repo.py,sha256=eXSHrfyDVQvWioRbNMvWXpmLdBbRwtk-2A8QDctV9T4,8023
+primal_page/main.py,sha256=6x6WZp4BdkTjfmEwJATvUeVZ9ZcwaZB4qrOEF7-6Ku4,24078
+primal_page/schemas.py,sha256=KImIdhsRp0MyNrJjA2s2_ZsL4D4DFIhlAWj8_GZ1XeA,5333
+primal_page-1.2.1.dist-info/METADATA,sha256=cSVR2q4Fc2q2RFcsFWzrV2JOOQtiVr7IKmCj2J4XaZc,1437
+primal_page-1.2.1.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+primal_page-1.2.1.dist-info/entry_points.txt,sha256=MooJ2Afw4SsEo4J_d9oowoNUj-h6kcMcTZo80U0nVAw,52
+primal_page-1.2.1.dist-info/RECORD,,
