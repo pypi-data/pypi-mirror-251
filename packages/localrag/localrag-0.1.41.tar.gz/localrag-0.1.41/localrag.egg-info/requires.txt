@@ -1,0 +1,9 @@
+unstructured
+unstructured[all-docs]
+langchain
+langchain-openai
+langchain-community
+langchain-core
+faiss-cpu
+transformers
+sentence_transformers
