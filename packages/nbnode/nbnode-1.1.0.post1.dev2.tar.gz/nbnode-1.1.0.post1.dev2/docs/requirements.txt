@@ -1,0 +1,16 @@
+anytree
+datatable
+dirichlet
+dtreeviz
+importlib-metadata
+matplotlib
+nbconvert <=7.12
+nbsphinx
+numpy>=1.21.1
+pandas>=1.2
+pydotplus
+# Requirements file for ReadTheDocs, check .readthedocs.yml.
+# To build the module reference correctly, make sure every external package
+# under `install_requires` in `setup.cfg` is also listed here!
+sphinx>=3.2.1
+sphinx_rtd_theme

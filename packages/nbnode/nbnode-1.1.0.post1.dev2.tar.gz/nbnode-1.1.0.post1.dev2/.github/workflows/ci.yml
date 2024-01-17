@@ -1,0 +1,200 @@
+name: tests
+
+on:
+  push:
+    # # Avoid using all the resources/limits available by checking only
+    # # relevant branches and tags. Other branches can be checked via PRs.
+    branches:
+      - "main"
+    tags: ["v[0-9]*", "[0-9]+.[0-9]+*"] # Match tags that resemble a version
+  pull_request: # Run in every PR
+  workflow_dispatch: # Allow manually triggering the workflow
+  schedule:
+    # Run roughly every 15 days at 00:00 UTC
+    # (useful to check if updates on dependencies break the package)
+    - cron: "0 0 1,16 * *"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: >-
+    ${{ github.workflow }}-${{ github.ref_type }}-
+    ${{ github.event.pull_request.number || github.sha }}
+  cancel-in-progress: true
+
+jobs:
+  # https://docs.github.com/en/actions/using-jobs/setting-default-values-for-jobs
+  pre_job:
+    # continue-on-error: true # Uncomment once integration is finished
+    runs-on: ubuntu-latest
+    # Map a step output to a job output
+    outputs:
+      should_skip: ${{ steps.skip_check.outputs.should_skip }}
+    steps:
+      - id: skip_check
+        uses: fkirc/skip-duplicate-actions@v5
+        with:
+          # All of these options are optional, so you can remove them if you are happy with the defaults
+          concurrent_skipping: "never"
+          skip_after_successful_duplicate: "true"
+          paths_ignore: '["**/README.md", "**/docs/**"]'
+          do_not_skip: '["pull_request", "workflow_dispatch", "schedule"]'
+  prepare:
+    needs: pre_job
+    if: needs.pre_job.outputs.should_skip != 'true'
+    runs-on: ubuntu-latest
+    outputs:
+      wheel-distribution: ${{ steps.wheel-distribution.outputs.path }}
+    steps:
+      - uses: actions/checkout@v3
+        with: { fetch-depth: 0 } # deep clone for setuptools-scm
+      - uses: actions/setup-python@v4
+        id: setup-python
+        with: { python-version: "3.11" }
+      - name: Run static analysis and format checkers
+        run: pipx run pre-commit run --all-files --show-diff-on-failure
+      - name: Build package distribution files
+        run: >-
+          pipx run --python '${{ steps.setup-python.outputs.python-path }}'
+          tox -e clean,build
+      - name: Record the path of wheel distribution
+        id: wheel-distribution
+        run: echo "path=$(ls dist/*.whl)" >> $GITHUB_OUTPUT
+      - name: Store the distribution files for use in other stages
+        # `tests` and `publish` will use the same pre-built distributions,
+        # so we make sure to release the exact same package that was tested
+        uses: actions/upload-artifact@v3
+        with:
+          name: python-distribution-files
+          path: dist/
+          retention-days: 1
+
+  download_big_testdata:
+    needs: pre_job
+    if: needs.pre_job.outputs.should_skip != 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Download test data
+        run: >-
+          pip install requests && python tests/specific_analyses/e03_download_intraassay_zenodo_zip.py
+      - name: Store the test data for use in other stages
+        uses: actions/upload-artifact@v3
+        with:
+          name: example_data
+          path: example_data/
+          retention-days: 1
+
+  # Starting point from: https://coderefinery.github.io/documentation/gh_workflow/
+  docs:
+    needs:
+      - pre_job
+      - prepare
+    if: needs.pre_job.outputs.should_skip != 'true'
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        id: setup-python
+        with:
+          python-version: "3.8"
+      - name: Retrieve pre-built distribution files
+        uses: actions/download-artifact@v3
+        with: { name: python-distribution-files, path: dist/ }
+      - name: Install pandoc and build documentation
+        run: |
+          sudo apt-get install pandoc
+          pipx run --python '${{ steps.setup-python.outputs.python-path }}' tox -e docs
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: docs/_build/html
+
+  test:
+    needs:
+      - pre_job
+      - prepare
+      - download_big_testdata
+    if: needs.pre_job.outputs.should_skip != 'true'
+    strategy:
+      matrix:
+        python:
+          - "3.8" # oldest Python supported by PSF
+          - "3.11" # newest Python that is stable
+        platform:
+          - ubuntu-latest
+          # - macos-latest  # graphviz would not install (2023-12-08)
+          - windows-latest
+      fail-fast: false # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idstrategyfail-fast
+    runs-on: ${{ matrix.platform }}
+    steps:
+      - uses: actions/checkout@v3
+      # https://github.com/marketplace/actions/setup-graphviz
+      - name: Setup Graphviz
+        uses: ts-graphviz/setup-graphviz@v1
+      - uses: actions/setup-python@v4
+        id: setup-python
+        with:
+          python-version: ${{ matrix.python }}
+      # https://docs.github.com/en/actions/using-workflows/storing-workflow-data-as-artifacts#passing-data-between-jobs-in-a-workflow
+      - name: Retrieve pre-built distribution files
+        uses: actions/download-artifact@v3
+        with: { name: python-distribution-files, path: dist/ }
+      - name: Retrieve downloaded big test files
+        uses: actions/download-artifact@v3
+        with: { name: example_data, path: example_data/ }
+      - name: Run tests
+        run: >-
+          pipx run --python '${{ steps.setup-python.outputs.python-path }}'
+          tox -e coverage_githubCI --installpkg '${{ needs.prepare.outputs.wheel-distribution }}' -- -rFEx --durations 10 --color yes
+      - name: Generate coverage report
+        run: pipx run coverage lcov -o coverage.lcov
+      - name: Upload partial coverage report
+        uses: coverallsapp/github-action@master
+        with:
+          path-to-lcov: coverage.lcov
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          flag-name: ${{ matrix.platform }} - py${{ matrix.python }}
+          parallel: true
+
+  finalize:
+    needs:
+      - pre_job
+      - test
+    if: needs.pre_job.outputs.should_skip != 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Finalize coverage report
+        uses: coverallsapp/github-action@master
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          parallel-finished: true
+
+  publish:
+    needs:
+      - pre_job
+      - finalize
+    if: ${{ github.event_name == 'push' && contains(github.ref, 'refs/tags/') }} && needs.pre_job.outputs.should_skip != 'true'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with: { python-version: "3.11" }
+      - name: Retrieve pre-built distribution files
+        uses: actions/download-artifact@v3
+        with: { name: python-distribution-files, path: dist/ }
+      - name: Publish Package
+        env:
+          # TODO: Set your PYPI_TOKEN as a secret using GitHub UI
+          # - https://pypi.org/help/#apitoken
+          # - https://docs.github.com/en/actions/security-guides/encrypted-secrets
+          TWINE_REPOSITORY: pypi
+          TWINE_USERNAME: __token__
+          TWINE_PASSWORD: ${{ secrets.PYPI_TOKEN }}
+        run: pipx run tox -e publish
