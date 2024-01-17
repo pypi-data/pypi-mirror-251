@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: xevent
+Version: 0.3
+Summary: Create event composites from xarray data.
+Author-email: Jonas Spaeth <jonas.spaeth@physik.uni-muenchen.de>
+License: BSD-3-Clause
+Project-URL: Source Code, https://gitlab.lrz.de/ru35hub/xevent
+Project-URL: Bug Tracker, https://gitlab.lrz.de/ru35hub/xevent
+Keywords: xarray,event,composite
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Atmospheric Science
+Classifier: Intended Audience :: Science/Research
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: xarray
+Requires-Dist: pandas
+Requires-Dist: dask
+
+# xevent
+
+
+ see docs: https://ru35hub.pages.gitlab.lrz.de/xevent/
