@@ -1,0 +1,25 @@
+[project]
+name = "llm-nosrun"
+version = "0.2"
+description = "LLM plugin for models hosted by NOS Cloud"
+readme = "README.md"
+authors = [{name = "Sudeep Pillai"}]
+license = {text = "Apache-2.0"}
+classifiers = [
+    "License :: OSI Approved :: Apache Software License"
+]
+dependencies = [
+    "llm>=0.8",
+]
+
+[project.urls]
+Homepage = "https://github.com/autonomi-ai/llm-nosrun"
+Changelog = "https://github.com/autonomi-ai/llm-nosrun/releases"
+Issues = "https://github.com/autonomi-ai/llm-nosrun/issues"
+CI = "https://github.com/autonomi-ai/llm-nosrun/actions"
+
+[project.entry-points.llm]
+nosrun = "llm_nosrun"
+
+[project.optional-dependencies]
+test = ["pytest", "pytest-httpx"]
