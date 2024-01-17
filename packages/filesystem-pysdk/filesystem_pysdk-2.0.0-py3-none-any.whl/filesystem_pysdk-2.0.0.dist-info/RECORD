@@ -1,0 +1,9 @@
+filesystem_pysdk/__init__.py,sha256=zVDK2VWY10B8RaHsz7jjjlZ7DPeQfpd5ouH2F3zlsNw,116
+filesystem_pysdk/bucket.py,sha256=rML9tG9vrAcAxxIdoG3XPmcttTZKr2Kno1_xGE758j8,739
+filesystem_pysdk/client.py,sha256=UjYGthujq_FFdkGKFv9TUevfm4Vf0S8jqiMe5uRlBRY,7160
+filesystem_pysdk/file.py,sha256=5gFnFTsW-dprJNqhNdmGlxzEaM_QwOXlvS8wa42B8f4,434
+filesystem_pysdk/user.py,sha256=Pv6g6VMcO6Z9xKMjwjqcBwr-biFjSJS3WNJCPeNSaD8,717
+filesystem_pysdk-2.0.0.dist-info/LICENSE,sha256=_XAhrBRLyW0g6hZ4or71prc8LPEKwxYv7jVxxNrbJ0w,1522
+filesystem_pysdk-2.0.0.dist-info/METADATA,sha256=3yFdpe2PzhrQUPlrbtsTG4v1X0bEg5NC0auNreiR6nA,2594
+filesystem_pysdk-2.0.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+filesystem_pysdk-2.0.0.dist-info/RECORD,,
