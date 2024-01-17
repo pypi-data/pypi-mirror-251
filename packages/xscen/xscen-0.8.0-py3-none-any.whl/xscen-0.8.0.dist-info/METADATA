@@ -1,0 +1,161 @@
+Metadata-Version: 2.1
+Name: xscen
+Version: 0.8.0
+Summary: A climate change scenario-building analysis framework, built with xclim/xarray.
+Author-email: Gabriel Rondeau-Genesse <rondeau-genesse.gabriel@ouranos.ca>
+Project-URL: About Ouranos, https://www.ouranos.ca/en/
+Project-URL: Changelog, https://xscen.readthedocs.io/en/stable/changes.html
+Project-URL: Homepage, https://xscen.readthedocs.io/
+Project-URL: Issue tracker, https://github.com/Ouranosinc/xscen/issues
+Project-URL: Source, https://github.com/Ouranosinc/xscen
+Keywords: xscen
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Scientific/Engineering :: Atmospheric Science
+Requires-Python: >=3.9.0
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: babel
+Requires-Dist: cartopy
+Requires-Dist: cftime
+Requires-Dist: cf-xarray >=0.7.6
+Requires-Dist: clisops >=0.10
+Requires-Dist: dask
+Requires-Dist: flox
+Requires-Dist: fsspec <2023.10.0
+Requires-Dist: geopandas
+Requires-Dist: h5netcdf
+Requires-Dist: h5py
+Requires-Dist: intake-esm >=2023.07.07
+Requires-Dist: matplotlib
+Requires-Dist: netCDF4
+Requires-Dist: numpy
+Requires-Dist: pandas >=2.0
+Requires-Dist: parse
+Requires-Dist: pyarrow
+Requires-Dist: pyyaml
+Requires-Dist: rechunker
+Requires-Dist: shapely >=2.0
+Requires-Dist: sparse <=0.14
+Requires-Dist: toolz
+Requires-Dist: xarray <2023.11.0
+Requires-Dist: xclim >=0.46.0
+Requires-Dist: xesmf >=0.7
+Requires-Dist: zarr
+Provides-Extra: dev
+Requires-Dist: pip >=23.1.2 ; extra == 'dev'
+Requires-Dist: black >=23.11.0 ; extra == 'dev'
+Requires-Dist: blackdoc >=0.3.9 ; extra == 'dev'
+Requires-Dist: bump-my-version >=0.12.0 ; extra == 'dev'
+Requires-Dist: coverage <7.0.0,>=6.2.2 ; extra == 'dev'
+Requires-Dist: coveralls >=3.3.1 ; extra == 'dev'
+Requires-Dist: flake8-alphabetize >=0.0.21 ; extra == 'dev'
+Requires-Dist: flake8-rst-docstrings >=0.3.0 ; extra == 'dev'
+Requires-Dist: flake8 >=6.1.0 ; extra == 'dev'
+Requires-Dist: isort >=5.12.0 ; extra == 'dev'
+Requires-Dist: pooch ; extra == 'dev'
+Requires-Dist: pre-commit >=3.3.2 ; extra == 'dev'
+Requires-Dist: pytest-cov >=4.0.0 ; extra == 'dev'
+Requires-Dist: pytest >=7.3.1 ; extra == 'dev'
+Requires-Dist: ruff >=0.1.0 ; extra == 'dev'
+Requires-Dist: tox >=4.5.1 ; extra == 'dev'
+Requires-Dist: watchdog >=3.0.0 ; extra == 'dev'
+Requires-Dist: xdoctest ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: ipykernel ; extra == 'docs'
+Requires-Dist: ipython ; extra == 'docs'
+Requires-Dist: jupyter-client ; extra == 'docs'
+Requires-Dist: nbsphinx ; extra == 'docs'
+Requires-Dist: nbval ; extra == 'docs'
+Requires-Dist: sphinx ; extra == 'docs'
+Requires-Dist: sphinx-autoapi ; extra == 'docs'
+Requires-Dist: sphinx-codeautolink ; extra == 'docs'
+Requires-Dist: sphinx-copybutton ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme >=1.0 ; extra == 'docs'
+Requires-Dist: sphinxcontrib-napoleon ; extra == 'docs'
+
+============
+xscen |logo|
+============
+
+|pypi| |conda| |status| |build| |coverage| |docs| |black| |pre-commit| |versions|
+
+A climate change scenario-building analysis framework, built with Intake-esm catalogs and xarray-based packages such as xclim and xESMF.
+
+For documentation concerning `xscen`, see: https://xscen.readthedocs.io/en/latest/
+
+Features
+--------
+* Supports workflows with YAML configuration files for better transparency, reproducibility, and long-term backups.
+* `Intake-esm`_-based catalog to find and manage climate data.
+* Climate dataset extraction, subsetting, and temporal aggregation.
+* Calculate missing variables through intake-esm's `DerivedVariableRegistry`_.
+* Regridding powered by `xESMF`_.
+* Bias adjustment tools provided by `xclim`_.
+
+Installation
+------------
+
+Please refer to the `installation docs`_.
+
+Acknowledgments
+---------------
+This package was created with Cookiecutter_ and the `Ouranosinc/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/cookiecutter/cookiecutter
+.. _Ouranosinc/cookiecutter-pypackage: https://github.com/Ouranosinc/cookiecutter-pypackage
+.. _installation docs: https://xscen.readthedocs.io/en/latest/installation.html
+.. _Intake-esm: https://intake-esm.readthedocs.io/
+.. _DerivedVariableRegistry: https://intake-esm.readthedocs.io/en/latest/how-to/define-and-use-derived-variable-registry.html
+.. _xclim: https://xclim.readthedocs.io/
+.. _xESMF: https://xesmf.readthedocs.io/
+
+.. |logo| image:: https://raw.githubusercontent.com/Ouranosinc/xscen/main/docs/_static/_images/xscen-logo-small.png
+        :target: https://github.com/Ouranosinc/xscen
+        :alt: xscen Logo
+
+.. |build| image:: https://github.com/Ouranosinc/xscen/actions/workflows/main.yml/badge.svg
+        :target: https://github.com/Ouranosinc/xscen/actions/workflows/main.yml
+        :alt: Build Status
+
+.. |coverage| image:: https://coveralls.io/repos/github/Ouranosinc/xscen/badge.svg
+        :target: https://coveralls.io/github/Ouranosinc/xscen
+        :alt: Code Coverage
+
+.. |pypi| image:: https://img.shields.io/pypi/v/xscen.svg
+        :target: https://pypi.python.org/pypi/xscen
+        :alt: Python Package Index Build
+
+.. |conda| image:: https://img.shields.io/conda/vn/conda-forge/xscen.svg
+        :target: https://anaconda.org/conda-forge/xscen
+        :alt: Conda Build
+
+.. |docs| image:: https://readthedocs.org/projects/xscen/badge/?version=latest
+        :target: https://xscen.readthedocs.io/en/latest/?badge=latest
+        :alt: Documentation Status
+
+.. |black| image:: https://img.shields.io/badge/code%20style-black-000000.svg
+        :target: https://github.com/psf/black
+        :alt: Python Black
+
+.. |pre-commit| image:: https://results.pre-commit.ci/badge/github/Ouranosinc/xscen/main.svg
+        :target: https://results.pre-commit.ci/latest/github/Ouranosinc/xscen/main
+        :alt: pre-commit.ci status
+
+.. |versions| image:: https://img.shields.io/pypi/pyversions/xscen.svg
+        :target: https://pypi.python.org/pypi/xscen
+        :alt: Supported Python Versions
+
+.. |status| image:: https://www.repostatus.org/badges/latest/active.svg
+        :target: https://www.repostatus.org/#active
+        :alt: Project Status: Active  The project has reached a stable, usable state and is being actively developed.
