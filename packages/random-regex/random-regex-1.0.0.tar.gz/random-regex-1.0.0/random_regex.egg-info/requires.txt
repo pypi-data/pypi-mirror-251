@@ -1,0 +1,4 @@
+exrex==0.11.0
+pybloom3
+regexfactory==1.0.0
+toolz==0.12.0
