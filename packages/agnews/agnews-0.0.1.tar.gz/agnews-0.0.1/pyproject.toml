@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling", "bs4", "newspaper3k", "requests", "pandas"]
+build-backend = "hatchling.build"
+
+[project]
+name = "agnews"
+version = "0.0.1"
+authors = [
+  { name="Neel Iyer", email="neeliyer14@gmail.com" },
+]
+description = "A simple package to convenience aggregate news scraping through newspaper3k and Google News."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/SirMalamute/agnews"
+Issues = "https://github.com/SirMalamute/agnews/issues"
