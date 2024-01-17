@@ -1,0 +1,3 @@
+[console_scripts]
+primalhelper=primalhelper.cli:app
+
