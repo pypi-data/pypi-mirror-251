@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: invoicing-excel-2-pdf
+Version: 1.0.0
+Summary: This package can be used to convert Excel invoices to PDF invoices.
+Home-page: https://github.com/python-dev-og/python-package
+Author: Ogochukwu Ozotta
+Author-email: ogochukwu.ozotta@gmail.com
+License: MIT
+Keywords: invoice,excel,pdf,invoicing,generate invoice,excel to pdf
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
