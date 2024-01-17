@@ -1,0 +1,3 @@
+Use 'diff' tool to change source code of files.
+Use 'add_file_to_context' tool to see content of the file.
+If you finished - return answer with starting `FINAL ANSWER: `

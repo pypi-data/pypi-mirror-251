@@ -1,0 +1,33 @@
+
+GOAL:
+Increase test coverage for the code
+
+YOU SHOULD DO:
+1. Run tests with `run_test` tool.
+2. Identify one file with MINIMUM "Cover" percent.
+   If in the project already has some test - read one random test to understand style of writing test and use this style in new test.
+3. Get its source code by `add_file_to_context` tool, if you need test coverage for the file add `with_coverage=True` parameter.
+4. For every function in the file calculate coverage percent (by number of lines starts with `!` and `>`) and show it in the comment.
+5. Choose one function with MINIMUM coverage (number of lines starts with `!` is maximum in the file).
+6. Add a test with `diff` tool for the function to increase its coverage. If you have errors in test - fix the errors.
+7. Run all tests with `run_test` tool.
+8. If all tests are passed commit changes in GIT by `git_commit` tool.
+9. Return `FINAL ANSWER`
+
+RULES:
+- Use always full code in `diff` tool. Do not use fillers like '# Existing code' and etc
+- Do not use `with_coverage=true` parameter in `add_file_to_context` tool for getting source code of test files.
+- If you have errors in tests - fix them with `diff` tool one by one. Then run tests again with `run_test` tool.
+- If you are fixing test - you should run `run_tests` only for working file. Only after fixing the error, you should run `run_tests` for all tests.
+- Do not get coverage of test files
+- Mock `OpenAI()` object in tests, in case if you use `openai` library in code.
+- Every time you use tool - add comment why you use the tool
+- If a test is working - do not update it. Create new test.
+- Add only one test per time with `diff` tool
+- Use names for test files based on file you test. Example: `views.py` -> `test_views.py`, `views/external.py` -> `test_views_external.py`.
+- Put imports in the TOP of the file.
+- All tests should be in `tests` folder
+
+TIPS:
+- If you need some random string - use `uuid4.uuid().hex`
+- If you got 'IndentationError' - read file content again
