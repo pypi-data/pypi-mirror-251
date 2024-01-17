@@ -1,0 +1,12 @@
+LICENSE,sha256=o5242_N2TgDsWwFhPn7yr8YJNF7XsJM5NxUMtcT97bc,1100
+dupan/__init__.py,sha256=m36RN0TdqbsmVuiReKRDxuWcGifeMwFS2fNIgmInBjI,93296
+dupan/util/__init__.py,sha256=JCoANAipLcCO0g-ZR9d-FpGGFOaXiEnRAPcCqd_gBCQ,61
+dupan/util/file.py,sha256=p4MZgdbziAPuv7pwi3wf5HnwE3nvjCzKLGqwfXsCuD0,13106
+dupan/util/property.py,sha256=yaZ4X_ZIomT2MOgyY4uAMi7F9Ht9bDSKiQayDdxMFl4,1795
+dupan/util/response.py,sha256=Vs1w-lux1rD73kKebPKz21QbqSjN6zjgm_LCVbdPfHw,2751
+dupan/util/text.py,sha256=KISupOWoYimwjQc5W5e-cA_L2fYIm2KDAh9JsXhgmwo,6295
+dupan/util/urlopen.py,sha256=EmtQ4Uvj19oXiz8NMf-VoctQCmektJflstXygVHmJGk,2114
+python_dupan-0.0.1.1.dist-info/LICENSE,sha256=o5242_N2TgDsWwFhPn7yr8YJNF7XsJM5NxUMtcT97bc,1100
+python_dupan-0.0.1.1.dist-info/METADATA,sha256=ixoZp_EruM2I8cyaJ66OiAQjQ0VPtVZgABYgj6yM3CQ,8506
+python_dupan-0.0.1.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+python_dupan-0.0.1.1.dist-info/RECORD,,
