@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+classesObjets.py
+dichotomie.py
+fuzzy.py
+pyproject.toml
+setup.cfg
+trouverY.py
+fuzzy_PaulUTC.egg-info/PKG-INFO
+fuzzy_PaulUTC.egg-info/SOURCES.txt
+fuzzy_PaulUTC.egg-info/dependency_links.txt
+fuzzy_PaulUTC.egg-info/top_level.txt
