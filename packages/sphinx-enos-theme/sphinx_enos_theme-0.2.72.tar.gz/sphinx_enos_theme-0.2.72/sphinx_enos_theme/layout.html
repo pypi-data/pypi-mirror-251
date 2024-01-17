@@ -1,0 +1,1936 @@
+{# TEMPLATE VAR SETTINGS #}
+{%- set url_root = pathto('', 1) %}
+{%- if url_root == '#' %}{% set url_root = '' %}{% endif %}
+{%- if not embedded and docstitle %}
+  {%- set titlesuffix = " &mdash; "|safe + docstitle|e %}
+{%- else %}
+  {%- set titlesuffix = "" %}
+{%- endif %}
+{%- set lang_attr = 'en' if language == None else (language | replace('_', '-')) %}
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="{{ lang_attr }}" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="{{ lang_attr }}" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  {{ metatags }}
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% block htmltitle %}
+  <title>{{ title|striptags|e }}{{ titlesuffix }}</title>
+  {% endblock %}
+
+  {# FAVICON #}
+  <!-- {% if favicon %}
+    <link rel="shortcut icon" href="{{ pathto('_static/' + favicon, 1) }}"/>
+  {% endif %} -->
+  <!-- <link rel="shortcut icon" href="data:image/x-icon;base64,AAABAAEAICAAAAEAIACoEAAAFgAAACgAAAAgAAAAQAAAAAEAIAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAfHx9JHh4e4x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7jHx8fSR4eHuMeHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7jHh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/0RERP+Kior/aWlp/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv9QUFD/+fn5////////////oaGh/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/7Ozs//////////////////+/v7/KSkp/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/u7u7//////////////////////8wMDD/Hh4e/x4eHv8eHh7/S0tL/6Wlpf+lpaX/S0tL/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8oKCj/l5eX/5mZmf8uLi7/Hh4e/x4eHv9sbGz/////////////////w8PD/x4eHv8eHh7/Hh4e/0lJSf/6+vr////////////6+vr/SEhI/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/6Wlpf///////////8DAwP8eHh7/Hh4e/x4eHv9vb2//ubm5/5mZmf8rKyv/Hh4e/x4eHv8eHh7/oKCg//////////////////////+fn5//Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/2tra/////////////v7+/yYmJv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv+enp7//////////////////////52dnf8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv+4uLj////////////y8vL/ISEh/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/0NDQ//39/f////////////39/f/Q0ND/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/z4+Pv/g4OD/9/f3/3d3d/8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/0NDQ/+bm5v/mpqa/0NDQ/8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8iIiL/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/zY2Nv8uLi7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/SUlJ/2pqav8fHx//Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/yUlJf+3t7f///////r6+v9zc3P/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv/q6ur//////6Wlpf8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/h4eH/////////////////+jo6P8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/+Tk5P///////Pz8/yoqKv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv+3t7f/////////////////6enp/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/cHBw//39/f/09PT/JiYm/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/4iIiP////////////////+Li4v/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/QkJC/zw8PP8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/ICAg/42Njf+7u7v/eXl5/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv9GRkb/mpqa/0dHR/8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/z8/P/+2trb/4eHh/6qqqv8hISH/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/2lpaf//////8/Pz/z09Pf8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8lJSX/6Ojo/////////////////1FRUf8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/4ODg//R0dH/Tk5O/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/z4+Pv/////////////////f39//JSUl/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8fHx//mJiY/8bGxv+ZmZn/Ly8v/x4eHv8eHh7/Hh4e/3p6ev+7u7v/lpaW/zAwMP8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/y4uLv/39/f///////////+RkZH/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/z4+Pv+Ojo7/g4OD/y8vL/8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7jHh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e4x8fH0keHh7jHh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHv8eHh7/Hh4e/x4eHuMfHx9JAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="/> -->
+  {# CANONICAL URL #}
+  {% if theme_canonical_url %}
+    <link rel="canonical" href="{{ theme_canonical_url }}{{ pagename }}.html"/>
+  {% endif %}
+
+  <script src="/static/vendor/jquery.js"></script>
+  <script>
+    window.addEventListener('searchResult', (event) => {
+      const result = event.detail.payload;
+      const doSearch = event.detail.payloadFunc;
+      window.searchResult = result;
+      window.doSearchFunc = doSearch;
+      const eventInner = new CustomEvent('searchResultInner', { detail: { payload: result, payloadFunc: doSearch } });
+      window.dispatchEvent(eventInner);
+    });
+    if (!window.jQuery && require) {
+      window.$ = require("jquery");
+      window.jQuery = window.$;
+    }
+  </script>
+  {%- if (language == 'en') or (language == 'en_us') or (language == 'en_US') or (language == 'EN_US') %}
+  {%- set versionLang = 'en' %}
+  {%- else %}
+  {%- set versionLang = 'zh_CN' %}
+  {%- endif %}
+  <script type="text/javascript">
+    const currentLang = '{{ versionLang }}';
+
+    function loadScript(url) {
+      return new Promise(function(resolve, reject) {
+        var script = document.createElement('script');
+        script.src = url;
+        script.type = "text/javascript";
+        script.onload = function() {
+          resolve();
+        };
+        script.onerror = function() {
+          reject();
+        };
+        document.head.appendChild(script);
+      });
+    }
+
+    Promise.all([loadScript(`/config/config.js?1705463120672`), loadScript(`/docs/static/js/versionTools.js?1705463120672`)])
+      .then(function() {
+        const nextVersion = '/' + ((window.versionTools && window.versionTools.findLatestVersion && window.versionTools.findLatestVersion(currentLang)) || '2.4.0') + '/';
+        const isDisplayDev = window.location.host === 'support.eniot.io' || window.displayDev;
+        if (!isDisplayDev && /\/docs\/\S+\/(zh_CN|en)\/dev\//.test(window.location.pathname)) {
+          var url = window.location.href;
+          url = url.replace(/\/dev\//, nextVersion);
+          window.location.href = url;
+        }
+      });
+  </script>
+
+  {# JAVASCRIPTS #}
+  {%- if not embedded %}
+  {# XXX Sphinx 1.8.0 made this an external js-file, quick fix until we refactor the template to inherert more blocks directly from sphinx #}
+    {% if sphinx_version >= "1.8.0" %}
+      <script type="text/javascript" id="documentation_options" data-url_root="{{ pathto('', 1) }}" src="{{ pathto('_static/documentation_options.js', 1) }}"></script>
+      {%- for scriptfile in script_files %}
+        {{ js_tag(scriptfile) }}
+      {%- endfor %}
+    {% else %}
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'{{ url_root }}',
+              VERSION:'{{ release|e }}',
+              LANGUAGE:'{{ language }}',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'{{ '' if no_search_suffix else file_suffix }}',
+              HAS_SOURCE:  {{ has_source|lower }},
+              SOURCELINK_SUFFIX: '{{ sourcelink_suffix }}'
+          };
+      </script>
+      {%- for scriptfile in script_files %}
+        <script type="text/javascript" src="{{ pathto(scriptfile, 1) }}"></script>
+      {%- endfor %}
+    {% endif %}
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+    {# OPENSEARCH #}
+    {%- if use_opensearch %}
+    <link rel="search" type="application/opensearchdescription+xml"
+          title="{% trans docstitle=docstitle|e %}Search within {{ docstitle }}{% endtrans %}"
+          href="{{ pathto('_static/opensearch.xml', 1) }}"/>
+    {%- endif %}
+
+    
+    {# AUTH #}
+    {% if theme_docs_auth|tobool %}
+    <script type="text/javascript">
+      localStorage.setItem('docsAuth', 'true');
+    </script>
+    {% else %}
+    <script type="text/javascript">
+      localStorage.setItem('docsAuth', '');
+    </script>
+    {% endif %}
+  {%- endif %}
+
+  {# CSS #}
+  <link rel="stylesheet" href="{{ pathto('_static/css/theme.css', 1) }}" type="text/css" />
+  <link rel="stylesheet" href="/static/css/badge_only.css" type="text/css" />
+  <!-- <link rel="stylesheet" href="{{ pathto('_static/pygments.css', 1) }}" type="text/css" /> -->
+  {%- for css in css_files %}
+    {%- if css|attr("rel") %}
+  <link rel="{{ css.rel }}" href="{{ pathto(css.filename, 1) }}" type="text/css"{% if css.title is not none %} title="{{ css.title }}"{% endif %} />
+    {%- else %}
+  <link rel="stylesheet" href="{{ pathto(css, 1) }}" type="text/css" />
+    {%- endif %}
+  {%- endfor %}
+
+  {%- for cssfile in extra_css_files %}
+    <link rel="stylesheet" href="{{ pathto(cssfile, 1) }}" type="text/css" />
+  {%- endfor %}
+
+  {%- block linktags %}
+    {%- if hasdoc('about') %}
+    <link rel="author" title="{{ _('About these documents') }}" href="{{ pathto('about') }}" />
+    {%- endif %}
+    {%- if hasdoc('genindex') %}
+    <link rel="index" title="{{ _('Index') }}" href="{{ pathto('genindex') }}" />
+    {%- endif %}
+    {%- if hasdoc('search') %}
+    <link rel="search" title="{{ _('Search') }}" href="{{ pathto('search') }}" />
+    {%- endif %}
+    {%- if hasdoc('copyright') %}
+    <link rel="copyright" title="{{ _('Copyright') }}" href="{{ pathto('copyright') }}" />
+    {%- endif %}
+    {%- if next %}
+    <link rel="next" title="{{ next.title|striptags|e }}" href="{{ next.link|e }}" />
+    {%- endif %}
+    {%- if prev %}
+    <link rel="prev" title="{{ prev.title|striptags|e }}" href="{{ prev.link|e }}" />
+    {%- endif %}
+  {%- endblock %}
+  {%- block extrahead %} {% endblock %}
+  <script src="/static/javascript/underscore.js"></script>
+</head>
+
+<body id='root'>
+  {%include "header.html"%}
+  {% block extrabody %} {% endblock %}
+  <div class="enos-doc">
+    <div class="enos-menu-icon dplicon_direction_left_s"></div>
+    {# SIDE NAV, TOGGLES ON MOBILE #}
+    <nav data-toggle="enos-nav-shift" class="enos-doc-side">
+    {%include "side.html"%}
+    </nav>
+
+    <section data-toggle="enos-nav-shift" class="enos-doc-content">
+      <div class="enos-doc-content-body">
+        {%- block content %}
+          {% if theme_style_external_links|tobool %}
+          <div class="rst-content style-external-links">
+          {% else %}
+          <div {% if toc %} class="rst-content" {%- else %} class="rst-content toc-is-hidden" {% endif %}>
+          {% endif %}
+            <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            {%- block document %}
+            <div itemprop="articleBody">
+              {% include "breadcrumbs.html" %}
+              {% block body %}{% endblock %}
+            </div>
+            {% if self.comments()|trim %}
+            <div class="articleComments">
+              {% block comments %}{% endblock %}
+            </div>
+            {% endif%}
+            </div>
+            {%- endblock %}
+            {% include "footer.html" %}
+          </div>
+        {%- endblock %}
+        {% if toc %}
+        <div class="enos-toc-toggle dplicon_direction_right_s"></div>
+        <div class="enos-doc-local-toc">
+          <div class="toc">
+            {%- if (language == 'en') or (language == 'en_us') or (language == 'en_US') or (language == 'EN_US') %}
+            {%- set tocTitle = 'On this page' %}
+            {%- else %}
+            {%- set tocTitle = '本页内容' %}
+            {%- endif %}
+            {% if toc %}
+            <div class="toc-title">{{tocTitle}}</div>
+            {% endif %}
+            {{ toc }}
+          </div>
+        </div>
+        {% endif %}
+      </div>
+      <!-- footer -->
+      {%- block footer %} {% endblock %}
+
+    {%include "gfooter.html"%}
+    </section>
+
+  </div>
+  <!-- if you are developing this theme, please change next line to  -->
+  <!-- <script type="text/javascript" src="_static/js/theme.js"></script> -->
+  <!-- end if -->
+  <script type="text/javascript">
+    const secScript = document.createElement("script");
+    const time = new Date().getFullYear() + '-' + new Date().getMonth() + '-' + new Date().getDate() + '-' + new Date().getHours();
+    secScript.setAttribute("type", "text/javascript");
+    secScript.setAttribute("src", '/docs/static/js/theme.js?' + time);
+    secScript.async = false;
+    document.body.appendChild(secScript);
+
+    const themeScript = document.createElement("script");
+    themeScript.setAttribute("type", "text/javascript");
+    themeScript.setAttribute("src", "{{ pathto('_static/js/theme.bd790628fca24f6310a5.js', 1) }}");
+    themeScript.async = false;
+    document.body.appendChild(themeScript);
+    const result = {
+        "count": 34,
+        "next": null,
+        "previous": null,
+        "results": [
+            {
+                "type": "page",
+                "project": "wmt-test-zh",
+                "project_alias": null,
+                "version": "2.2.0",
+                "title": "EnOS 工作管理",
+                "path": "/docs/wmt-test/zh_CN/2.2.0/index.html",
+                "domain": "https://rtd-devops1.eniot.io",
+                "highlights": {
+                    "title": [
+                        "EnOS <span>工</span><span>作</span><span>管</span><span>理</span>"
+                    ]
+                },
+                "blocks": [
+                    {
+                        "type": "section",
+                        "id": "",
+                        "title": "EnOS 工作管理",
+                        "content": "const gitInfo = { language: 'zh-CN', gitLabEditHref: 'https://git.eniot.io/enos_docs/wmt_zh/blob/2.2.0/index.rst', gitHubEditHref: 'https://github.com/EnvisionIot/wmt_zh/blob/2.2.0/index.rst', bitbucketEditHref: 'https://bitbucket.org//wmt_zh/src/2.2.0/index.rst?mode=view' }",
+                        "highlights": {
+                            "title": [
+                                "EnOS <span>工</span><span>作</span><span>管</span><span>理</span>"
+                            ],
+                            "content": []
+                        }
+                    },
+                    {
+                        "type": "section",
+                        "id": "enos",
+                        "title": "EnOS 工作管理",
+                        "content": "",
+                        "highlights": {
+                            "title": [
+                                "EnOS <span>工</span><span>作</span><span>管</span><span>理</span>"
+                            ],
+                            "content": []
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "page",
+                "project": "wmt-test-zh",
+                "project_alias": null,
+                "version": "2.2.0",
+                "title": "对 EnOS 工作管理的故障排除",
+                "path": "/docs/wmt-test/zh_CN/2.2.0/troubleshooting/troubleshooting.html",
+                "domain": "https://rtd-devops1.eniot.io",
+                "highlights": {
+                    "title": [
+                        "对 EnOS <span>工</span><span>作</span><span>管</span><span>理</span>的故障排除"
+                    ]
+                },
+                "blocks": [
+                    {
+                        "type": "section",
+                        "id": "enos",
+                        "title": "对 EnOS 工作管理的故障排除",
+                        "content": "本文解答工作管理中遇到的常见故障。 看不到部分服务请求或者工单 可看到操作按钮，但是无法选择",
+                        "highlights": {
+                            "title": [
+                                "对 EnOS <span>工</span><span>作</span><span>管</span><span>理</span>的故障排除"
+                            ],
+                            "content": [
+                                "本文解答<span>工</span><span>作</span><span>管</span><span>理</span>中遇到的常见故障。 看不到部分服务请求或者<span>工</span>单 可看到操<span>作</span>按钮，但是无法选择"
+                            ]
+                        }
+                    },
+                    {
+                        "type": "section",
+                        "id": "",
+                        "title": "对 EnOS 工作管理的故障排除",
+                        "content": "const gitInfo = { language: 'zh-CN', gitLabEditHref: 'https://git.eniot.io/enos_docs/wmt_zh/blob/2.2.0/troubleshooting/troubleshooting.md', gitHubEditHref: 'https://github.com/EnvisionIot/wmt_zh/blob/2.2.0/troubleshooting/troubleshooting.md', bitbucketEditHref: 'https://bitbucket.org//wmt_zh/src/2.2.0/troubleshooting/troubleshooting.md?mode=view' }",
+                        "highlights": {
+                            "title": [
+                                "对 EnOS <span>工</span><span>作</span><span>管</span><span>理</span>的故障排除"
+                            ],
+                            "content": []
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "page",
+                "project": "wmt-test-zh",
+                "project_alias": null,
+                "version": "2.2.0",
+                "title": "有关 EnOS 工作管理",
+                "path": "/docs/wmt-test/zh_CN/2.2.0/about.html",
+                "domain": "https://rtd-devops1.eniot.io",
+                "highlights": {
+                    "title": [
+                        "有关 EnOS <span>工</span><span>作</span><span>管</span><span>理</span>"
+                    ]
+                },
+                "blocks": [
+                    {
+                        "type": "section",
+                        "id": "enos",
+                        "title": "有关 EnOS 工作管理",
+                        "content": "工作管理（Work Management）是基于 EnOS Suite 的设备维护管理系统（Computerized Maintenance Management System，以下简称 CMMS），与 EnOS 原生的集控和高级分析等应用紧密集成。既可作为端到端的原生单据管理工具，也可作为 EnOS 集控和高级分析等应用与第三方 CMMS 之间的集成桥梁。",
+                        "highlights": {
+                            "title": [
+                                "有关 EnOS <span>工</span><span>作</span><span>管</span><span>理</span>"
+                            ],
+                            "content": [
+                                "既可<span>作</span>为端到端的原生单据<span>管</span><span>理</span><span>工</span>具，也可<span>作</span>为 EnOS 集控和高级分析等应用与第三方 CMMS 之间的集成桥梁。"
+                            ]
+                        }
+                    },
+                    {
+                        "type": "section",
+                        "id": "",
+                        "title": "有关 EnOS 工作管理",
+                        "content": "const gitInfo = { language: 'zh-CN', gitLabEditHref: 'https://git.eniot.io/enos_docs/wmt_zh/blob/2.2.0/about.md', gitHubEditHref: 'https://github.com/EnvisionIot/wmt_zh/blob/2.2.0/about.md', bitbucketEditHref: 'https://bitbucket.org//wmt_zh/src/2.2.0/about.md?mode=view' }",
+                        "highlights": {
+                            "title": [
+                                "有关 EnOS <span>工</span><span>作</span><span>管</span><span>理</span>"
+                            ],
+                            "content": []
+                        }
+                    },
+                    {
+                        "type": "section",
+                        "id": "id2",
+                        "title": "工单系统",
+                        "content": "工单系统模块提供原生 CMMS 服务，作为一个轻量级且低成本的单据管理工具，完成告警闭环及日常单据管理。其核心功能如下： 展示服务请求与工单的数据指标，了解整体工作情况。 审核服务请求，一键生成跟进工单。以日历视图查看工单安排，通过拖拽工单进行快速排程，对工单进行全生命周期管理。 周期性创建运维工单，满足预防性维护的需要。 可以在网页端或移动端上进行操作。并在单据产生变动时，实时通过邮件和移动端推送通知。 根据资产权限进行数据隔离，不同角色分配不同的工单操作权限，提高单据管理安全性。 自定义配置服务请求与工单的字段与工作流以适配不同的业务场景。 备注 如需进行自定义配置，联系系统管理员。",
+                        "highlights": {
+                            "title": [
+                                "<span>工</span>单系统"
+                            ],
+                            "content": [
+                                "<span>工</span>单系统模块提供原生 CMMS 服务，<span>作</span>为一个轻量级且低成本的单据<span>管</span><span>理</span><span>工</span>具，完成告警闭环及日常单据<span>管</span><span>理</span>。其核心功能如下： 展示服务请求与<span>工</span>单的数据指标，了解整体<span>工</span><span>作</span>情况。"
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "page",
+                "project": "wmt-test-zh",
+                "project_alias": null,
+                "version": "2.2.0",
+                "title": "探索 EnOS 工作管理",
+                "path": "/docs/wmt-test/zh_CN/2.2.0/getting_started/exploring.html",
+                "domain": "https://rtd-devops1.eniot.io",
+                "highlights": {
+                    "title": [
+                        "探索 EnOS <span>工</span><span>作</span><span>管</span><span>理</span>"
+                    ]
+                },
+                "blocks": [
+                    {
+                        "type": "section",
+                        "id": "enos",
+                        "title": "探索 EnOS 工作管理",
+                        "content": "本文介绍服务请求、工单、工单日历、排程看板和周期性任务页面的主要元素。",
+                        "highlights": {
+                            "title": [
+                                "探索 EnOS <span>工</span><span>作</span><span>管</span><span>理</span>"
+                            ],
+                            "content": [
+                                "本文介绍服务请求、<span>工</span>单、<span>工</span>单日历、排程看板和周期性任务页面的主要元素。"
+                            ]
+                        }
+                    },
+                    {
+                        "type": "section",
+                        "id": "",
+                        "title": "探索 EnOS 工作管理",
+                        "content": "const gitInfo = { language: 'zh-CN', gitLabEditHref: 'https://git.eniot.io/enos_docs/wmt_zh/blob/2.2.0/getting_started/exploring.md', gitHubEditHref: 'https://github.com/EnvisionIot/wmt_zh/blob/2.2.0/getting_started/exploring.md', bitbucketEditHref: 'https://bitbucket.org//wmt_zh/src/2.2.0/getting_started/exploring.md?mode=view' }",
+                        "highlights": {
+                            "title": [
+                                "探索 EnOS <span>工</span><span>作</span><span>管</span><span>理</span>"
+                            ],
+                            "content": []
+                        }
+                    },
+                    {
+                        "type": "section",
+                        "id": "id4",
+                        "title": "工单详情页",
+                        "content": "在工单详情页右上角的操作区可做以下操作： 流转：流转至下一个节点。 保存：保存编辑。 指派：将当前单据指派其他处理人或组。 撤销：撤销工单，终止工作流。 删除：删除该工单。",
+                        "highlights": {
+                            "title": [
+                                "<span>工</span>单详情页"
+                            ],
+                            "content": [
+                                "在<span>工</span>单详情页右上角的操<span>作</span>区可做以下操<span>作</span>： 流转：流转至下一个节点。 保存：保存编辑。 指派：将当前单据指派其他处<span>理</span>人或组。 撤销：撤销<span>工</span>单，终止<span>工</span><span>作</span>流。 删除：删除该<span>工</span>单。"
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "page",
+                "project": "wmt-test-zh",
+                "project_alias": null,
+                "version": "2.2.0",
+                "title": "使用场景",
+                "path": "/docs/wmt-test/zh_CN/2.2.0/overview/app_scenarios.html",
+                "domain": "https://rtd-devops1.eniot.io",
+                "highlights": {
+                    "title": []
+                },
+                "blocks": [
+                    {
+                        "type": "section",
+                        "id": "id3",
+                        "title": "管理日常维护工作",
+                        "content": "在工作管理中，管理人员可以创建周期性计划，工作管理将会根据设置的时间计划自动生成工单。设定周期性任务时，管理人员可以查看设备的历史工单，全面了解故障信息和处理情况，更合理地设定时间计划完成工单的排期。",
+                        "highlights": {
+                            "title": [
+                                "<span>管</span><span>理</span>日常维护<span>工</span><span>作</span>"
+                            ],
+                            "content": [
+                                "在<span>工</span><span>作</span><span>管</span><span>理</span>中，<span>管</span><span>理</span>人员可以创建周期性计划，<span>工</span><span>作</span><span>管</span><span>理</span>将会根据设置的时间计划自动生成<span>工</span>单。设定周期性任务时，<span>管</span><span>理</span>人员可以查看设备的历史<span>工</span>单，全面了解故障信息和处<span>理</span>情况，更合<span>理</span>地设定时间计划完成<span>工</span>单的排期。"
+                            ]
+                        }
+                    },
+                    {
+                        "type": "section",
+                        "id": "id2",
+                        "title": "闭环监控运维",
+                        "content": "工作管理与 EnOS 原生应用中的多个监控应用无缝集成，实现告警的快速处理闭环。在 EnOS 监控应用中，当告警产生后，监控人员可一键触发服务请求至工作管理。在工作管理中，管理人员对服务请求进行审核，如需进行后续处理则创建跟进工单。执行人员根据工单执行工作，填写解决结果并上传相关排查照片。同时，监控人员可在监控应用中持续跟踪工单的处理过程，确认问题被解决。",
+                        "highlights": {
+                            "title": [],
+                            "content": [
+                                "<span>工</span><span>作</span><span>管</span><span>理</span>与 EnOS 原生应用中的多个监控应用无缝集成，实现告警的快速处<span>理</span>闭环。在 EnOS 监控应用中，当告警产生后，监控人员可一键触发服务请求至<span>工</span><span>作</span><span>管</span><span>理</span>。"
+                            ]
+                        }
+                    },
+                    {
+                        "type": "section",
+                        "id": "id1",
+                        "title": "使用场景",
+                        "content": "EnOS 工作管理可在以下场景中使用。",
+                        "highlights": {
+                            "title": [],
+                            "content": [
+                                "EnOS <span>工</span><span>作</span><span>管</span><span>理</span>可在以下场景中使用。"
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "page",
+                "project": "wmt-test-zh",
+                "project_alias": null,
+                "version": "2.2.0",
+                "title": "处理工单",
+                "path": "/docs/wmt-test/zh_CN/2.2.0/howto/managing_work_order.html",
+                "domain": "https://rtd-devops1.eniot.io",
+                "highlights": {
+                    "title": [
+                        "处<span>理</span><span>工</span>单"
+                    ]
+                },
+                "blocks": [
+                    {
+                        "type": "section",
+                        "id": "id1",
+                        "title": "处理工单",
+                        "content": "管理人员与执行人员可以对工单进行处理、流转以及指派等一系列操作。可以 使用工单列表页处理工单，也可以 使用排程看板排程工单 。",
+                        "highlights": {
+                            "title": [
+                                "处<span>理</span><span>工</span>单"
+                            ],
+                            "content": [
+                                "<span>管</span><span>理</span>人员与执行人员可以对<span>工</span>单进行处<span>理</span>、流转以及指派等一系列操<span>作</span>。可以 使用<span>工</span>单列表页处<span>理</span><span>工</span>单，也可以 使用排程看板排程<span>工</span>单 。"
+                            ]
+                        }
+                    },
+                    {
+                        "type": "section",
+                        "id": "",
+                        "title": "处理工单",
+                        "content": "const gitInfo = { language: 'zh-CN', gitLabEditHref: 'https://git.eniot.io/enos_docs/wmt_zh/blob/2.2.0/howto/managing_work_order.md', gitHubEditHref: 'https://github.com/EnvisionIot/wmt_zh/blob/2.2.0/howto/managing_work_order.md', bitbucketEditHref: 'https://bitbucket.org//wmt_zh/src/2.2.0/howto/managing_work_order.md?mode=view' }",
+                        "highlights": {
+                            "title": [
+                                "处<span>理</span><span>工</span>单"
+                            ],
+                            "content": []
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "page",
+                "project": "wmt-test-zh",
+                "project_alias": null,
+                "version": "2.2.0",
+                "title": "查看工作概览",
+                "path": "/docs/wmt-test/zh_CN/2.2.0/howto/dashboard.html",
+                "domain": "https://rtd-devops1.eniot.io",
+                "highlights": {
+                    "title": [
+                        "查看<span>工</span><span>作</span>概览"
+                    ]
+                },
+                "blocks": [
+                    {
+                        "type": "section",
+                        "id": "id1",
+                        "title": "查看工作概览",
+                        "content": "在工作概览中，管理人员可以查看服务请求与工单的多个数据指标，了解整体工作情况。",
+                        "highlights": {
+                            "title": [
+                                "查看<span>工</span><span>作</span>概览"
+                            ],
+                            "content": [
+                                "在<span>工</span><span>作</span>概览中，<span>管</span><span>理</span>人员可以查看服务请求与<span>工</span>单的多个数据指标，了解整体<span>工</span><span>作</span>情况。"
+                            ]
+                        }
+                    },
+                    {
+                        "type": "section",
+                        "id": "id2",
+                        "title": "前提条件",
+                        "content": "开始之前，确保当前帐号已被分配所需的资产权限、操作权限点和包含 工作概览 在内的菜单组。如未分配，联系应用管理员。",
+                        "highlights": {
+                            "title": [],
+                            "content": [
+                                "开始之前，确保当前帐号已被分配所需的资产权限、操<span>作</span>权限点和包含 <span>工</span><span>作</span>概览 在内的菜单组。如未分配，联系应用<span>管</span><span>理</span>员。"
+                            ]
+                        }
+                    },
+                    {
+                        "type": "section",
+                        "id": "",
+                        "title": "查看工作概览",
+                        "content": "const gitInfo = { language: 'zh-CN', gitLabEditHref: 'https://git.eniot.io/enos_docs/wmt_zh/blob/2.2.0/howto/dashboard.md', gitHubEditHref: 'https://github.com/EnvisionIot/wmt_zh/blob/2.2.0/howto/dashboard.md', bitbucketEditHref: 'https://bitbucket.org//wmt_zh/src/2.2.0/howto/dashboard.md?mode=view' }",
+                        "highlights": {
+                            "title": [
+                                "查看<span>工</span><span>作</span>概览"
+                            ],
+                            "content": []
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "page",
+                "project": "wmt-test-zh",
+                "project_alias": null,
+                "version": "2.2.0",
+                "title": "常见问题",
+                "path": "/docs/wmt-test/zh_CN/2.2.0/resources/faqs.html",
+                "domain": "https://rtd-devops1.eniot.io",
+                "highlights": {
+                    "title": []
+                },
+                "blocks": [
+                    {
+                        "type": "section",
+                        "id": "cmms",
+                        "title": "问：工作管理连接器的适配器库中已有哪些 CMMS 系统适配器？",
+                        "content": "答：连接器适配器库是根据需求持续扩充的。现在已支持如下 CMMS： 江河智能 CMMS 金现代 CMMS 汇智 CMMS Samex 朗坤 如果您有其他 CMMS 的集成需求。连接器也提供统一 API 和适配器开发框架，支持快速开发适配器，以支持其他 CMMS 系统。有关工作管理 API 的更多信息，参见 工作管理 API。如需了解更多，请联系系统管理员。",
+                        "highlights": {
+                            "title": [
+                                "问：<span>工</span><span>作</span><span>管</span><span>理</span>连接器的适配器库中已有哪些 CMMS 系统适配器？"
+                            ],
+                            "content": [
+                                "有关<span>工</span><span>作</span><span>管</span><span>理</span> API 的更多信息，参见 <span>工</span><span>作</span><span>管</span><span>理</span> API。如需了解更多，请联系系统<span>管</span><span>理</span>员。"
+                            ]
+                        }
+                    },
+                    {
+                        "type": "section",
+                        "id": "enos-alarm",
+                        "title": "问：哪些 EnOS 原生应用可以自动触发服务请求？",
+                        "content": "答：工作管理已与以下 EnOS 原生应用集成，可从单据手动触发服务请求或工单至工作管理。若在应用内部启用自动触发配置，即可自动触发： EnOS™ Cloud 告警管理：告警。 EnOS™ 光伏集控：告警。 EnOS™ 风电集控：停机类告警。 EnOS™ 储能集控：告警。 风电高级分析：预警。 光伏高级分析：运维建议。",
+                        "highlights": {
+                            "title": [],
+                            "content": [
+                                "答：<span>工</span><span>作</span><span>管</span><span>理</span>已与以下 EnOS 原生应用集成，可从单据手动触发服务请求或<span>工</span>单至<span>工</span><span>作</span><span>管</span><span>理</span>。若在应用内部启用自动触发配置，即可自动触发： EnOS™ Cloud 告警<span>管</span><span>理</span>：告警。"
+                            ]
+                        }
+                    },
+                    {
+                        "type": "section",
+                        "id": "enos",
+                        "title": "问：EnOS 监控及分析系统中产生告警时，是先触发服务请求，再从服务请求生成工单。是否可以直接触发工单，而不使用服务请求？",
+                        "content": "答：推荐同时使用服务请求和工单。服务请求用于监控人员发现异常后上报问题，工单用于执行团队内部任务流转。但也可以支持只使用工单而不使用服务请求，如需启用该配置，请联系系统管理员。",
+                        "highlights": {
+                            "title": [
+                                "问：EnOS 监控及分析系统中产生告警时，是先触发服务请求，再从服务请求生成<span>工</span>单。是否可以直接触发<span>工</span>单，而不使用服务请求？"
+                            ],
+                            "content": [
+                                "答：推荐同时使用服务请求和<span>工</span>单。服务请求用于监控人员发现异常后上报问题，<span>工</span>单用于执行团队内部任务流转。但也可以支持只使用<span>工</span>单而不使用服务请求，如需启用该配置，请联系系统<span>管</span><span>理</span>员。"
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "page",
+                "project": "wmt-test-zh",
+                "project_alias": null,
+                "version": "2.2.0",
+                "title": "管理任务清单",
+                "path": "/docs/wmt-test/zh_CN/2.2.0/howto/manage_checklist.html",
+                "domain": "https://rtd-devops1.eniot.io",
+                "highlights": {
+                    "title": [
+                        "<span>管</span><span>理</span>任务清单"
+                    ]
+                },
+                "blocks": [
+                    {
+                        "type": "section",
+                        "id": "id1",
+                        "title": "管理任务清单",
+                        "content": "任务清单是一个标准的任务列表，涵盖了一系列所需完成的任务，能帮助执行人员标记任务完成情况并方便管理人员查看任务进展。 工作管理支持在任务清单页面中创建任务清单，添加工单中所需检查的条目，并支持对任务清单进行编辑、复制、删除等操作。",
+                        "highlights": {
+                            "title": [
+                                "<span>管</span><span>理</span>任务清单"
+                            ],
+                            "content": [
+                                "<span>工</span><span>作</span><span>管</span><span>理</span>支持在任务清单页面中创建任务清单，添加<span>工</span>单中所需检查的条目，并支持对任务清单进行编辑、复制、删除等操<span>作</span>。"
+                            ]
+                        }
+                    },
+                    {
+                        "type": "section",
+                        "id": "",
+                        "title": "管理任务清单",
+                        "content": "const gitInfo = { language: 'zh-CN', gitLabEditHref: 'https://git.eniot.io/enos_docs/wmt_zh/blob/2.2.0/howto/manage_checklist.md', gitHubEditHref: 'https://github.com/EnvisionIot/wmt_zh/blob/2.2.0/howto/manage_checklist.md', bitbucketEditHref: 'https://bitbucket.org//wmt_zh/src/2.2.0/howto/manage_checklist.md?mode=view' }",
+                        "highlights": {
+                            "title": [
+                                "<span>管</span><span>理</span>任务清单"
+                            ],
+                            "content": []
+                        }
+                    },
+                    {
+                        "type": "section",
+                        "id": "id2",
+                        "title": "前提条件",
+                        "content": "开始之前，确保当前帐号已被分配所需的资产权限、操作权限点和包含 任务清单 在内的菜单组。如未分配，联系应用管理员。",
+                        "highlights": {
+                            "title": [],
+                            "content": [
+                                "开始之前，确保当前帐号已被分配所需的资产权限、操<span>作</span>权限点和包含 任务清单 在内的菜单组。如未分配，联系应用<span>管</span><span>理</span>员。"
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "page",
+                "project": "wmt-test-zh",
+                "project_alias": null,
+                "version": "2.2.0",
+                "title": "使用限制",
+                "path": "/docs/wmt-test/zh_CN/2.2.0/overview/quota_and_limits.html",
+                "domain": "https://rtd-devops1.eniot.io",
+                "highlights": {
+                    "title": []
+                },
+                "blocks": [
+                    {
+                        "type": "section",
+                        "id": "id1",
+                        "title": "使用限制",
+                        "content": "EnOS 工作管理有以下使用限制。 资源 限制 服务请求与工单中的单个文件大小 30 MB 工作管理中的文件总存储空间 20 GB* [*] 如需申请扩展，请联系系统管理员。",
+                        "highlights": {
+                            "title": [],
+                            "content": [
+                                "EnOS <span>工</span><span>作</span><span>管</span><span>理</span>有以下使用限制。 资源 限制 服务请求与<span>工</span>单中的单个文件大小 30 MB <span>工</span><span>作</span><span>管</span><span>理</span>中的文件总存储空间 20 GB* [*] 如需申请扩展，请联系系统<span>管</span><span>理</span>员。"
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "page",
+                "project": "wmt-test-zh",
+                "project_alias": null,
+                "version": "2.2.0",
+                "title": "目标用户",
+                "path": "/docs/wmt-test/zh_CN/2.2.0/overview/target_users.html",
+                "domain": "https://rtd-devops1.eniot.io",
+                "highlights": {
+                    "title": []
+                },
+                "blocks": [
+                    {
+                        "type": "section",
+                        "id": "id4",
+                        "title": "应用管理员",
+                        "content": "应用管理员负责管理 OU 中的用户和权限，包括对菜单和资产的访问权限和在应用内的操作权限。终端用户在使用应用之前，需联系应用管理员分配所需的权限。",
+                        "highlights": {
+                            "title": [
+                                "应用<span>管</span><span>理</span>员"
+                            ],
+                            "content": [
+                                "应用<span>管</span><span>理</span>员负责<span>管</span><span>理</span> OU 中的用户和权限，包括对菜单和资产的访问权限和在应用内的操<span>作</span>权限。终端用户在使用应用之前，需联系应用<span>管</span><span>理</span>员分配所需的权限。"
+                            ]
+                        }
+                    },
+                    {
+                        "type": "section",
+                        "id": "id3",
+                        "title": "终端用户",
+                        "content": "工作管理提供给终端用户单据的全生命周期管理。通常不同的终端用户（例如管理人员与执行人员）在单据的不同阶段对单据进行不同的操作。",
+                        "highlights": {
+                            "title": [],
+                            "content": [
+                                "<span>工</span><span>作</span><span>管</span><span>理</span>提供给终端用户单据的全生命周期<span>管</span><span>理</span>。通常不同的终端用户（例如<span>管</span><span>理</span>人员与执行人员）在单据的不同阶段对单据进行不同的操<span>作</span>。"
+                            ]
+                        }
+                    },
+                    {
+                        "type": "section",
+                        "id": "id1",
+                        "title": "目标用户",
+                        "content": "EnOS 工作管理主要服务于以下角色。",
+                        "highlights": {
+                            "title": [],
+                            "content": [
+                                "EnOS <span>工</span><span>作</span><span>管</span><span>理</span>主要服务于以下角色。"
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "page",
+                "project": "wmt-test-zh",
+                "project_alias": null,
+                "version": "2.2.0",
+                "title": "配置应用",
+                "path": "/docs/wmt-test/zh_CN/2.2.0/delivery/config_app.html",
+                "domain": "https://rtd-devops1.eniot.io",
+                "highlights": {
+                    "title": []
+                },
+                "blocks": [
+                    {
+                        "type": "section",
+                        "id": "id5",
+                        "title": "步骤 4：分配组织结构及管理菜单组",
+                        "content": "操作人：交付人员 操作地点：EnOS 应用门户 按以下步骤配置组织结构及管理菜单组： 在 EnOS 应用门户中，进入管理后台。 在 应用管理 中找到 工作管理 为其 管理组织结构：将工作管理分配至正确的组织结构。 设置菜单组：对工作管理预设不同的菜单组，用于对不同角色权限的授权。 授予 API 访问权限：选择所有权限并授权。 建议创建如下两个菜单组，便于区分普通用户与管理员用户： Work Management 菜单组，为其配置以下菜单： 工作概览 服务请求 工单日历 工单 排程看板 周期性任务 Work Management Admin 菜单组，为其配置以下菜单： 工作概览 服务请求 工单日历 工单 排程看板 周期性任务 设置/自定义字段 此时已为工作管理分配了新建好的组织结构，进入应用会使用角色对应的组织结构树。",
+                        "highlights": {
+                            "title": [
+                                "步骤 4：分配组织结构及<span>管</span><span>理</span>菜单组"
+                            ],
+                            "content": [
+                                "在 应用<span>管</span><span>理</span> 中找到 <span>工</span><span>作</span><span>管</span><span>理</span> 为其 <span>管</span><span>理</span>组织结构：将<span>工</span><span>作</span><span>管</span><span>理</span>分配至正确的组织结构。 设置菜单组：对<span>工</span><span>作</span><span>管</span><span>理</span>预设不同的菜单组，用于对不同角色权限的授权。 授予 API 访问权限：选择所有权限并授权。"
+                            ]
+                        }
+                    },
+                    {
+                        "type": "section",
+                        "id": "id1",
+                        "title": "配置应用",
+                        "content": "本文介绍如何配置工作管理。",
+                        "highlights": {
+                            "title": [],
+                            "content": [
+                                "本文介绍如何配置<span>工</span><span>作</span><span>管</span><span>理</span>。"
+                            ]
+                        }
+                    },
+                    {
+                        "type": "section",
+                        "id": "id4",
+                        "title": "步骤 3：授权服务账号",
+                        "content": "操作人：运维人员 操作地点：EnOS 管理控制台 按以下步骤激活应用权限： 登录 EnOS 管理控制台，在导航窗格上选择 身份与授权 > 服务账号，找到工作管理对应的 授权 。 选择 添加权限策略，添加弹窗中的所有权限并 保存 更改。",
+                        "highlights": {
+                            "title": [],
+                            "content": [
+                                "操<span>作</span>人：运维人员 操<span>作</span>地点：EnOS <span>管</span><span>理</span>控制台 按以下步骤激活应用权限： 登录 EnOS <span>管</span><span>理</span>控制台，在导航窗格上选择 身份与授权 &gt; 服务账号，找到<span>工</span><span>作</span><span>管</span><span>理</span>对应的 授权 。"
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "page",
+                "project": "wmt-test-zh",
+                "project_alias": null,
+                "version": "2.2.0",
+                "title": "产品架构",
+                "path": "/docs/wmt-test/zh_CN/2.2.0/overview/product_architecture.html",
+                "domain": "https://rtd-devops1.eniot.io",
+                "highlights": {
+                    "title": []
+                },
+                "blocks": [
+                    {
+                        "type": "section",
+                        "id": "id1",
+                        "title": "产品架构",
+                        "content": "EnOS 工作管理既可用做端到端的单据管理工具，也可用为 EnOS 原生应用与第三方 CMMS 之间的集成桥梁。 作为工单系统时，工单系统已通过连接器内置的 API 和适配器统一连接了多个 EnOS 原生应用，用户可直接在工单系统中制定计划、管理服务请求和工单以及查看工作报告，也可自定义工作流与通知规则。工单与服务请求功能支持在移动端中使用，满足用户的不同使用场景。 作为连接器时，用户可使用连接器提供的统一 API 和第三方 CMMS 适配器，完成第三方 CMMS 集成。 架构图如下：",
+                        "highlights": {
+                            "title": [],
+                            "content": [
+                                "EnOS <span>工</span><span>作</span><span>管</span><span>理</span>既可用做端到端的单据<span>管</span><span>理</span><span>工</span>具，也可用为 EnOS 原生应用与第三方 CMMS 之间的集成桥梁。"
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "page",
+                "project": "wmt-test-zh",
+                "project_alias": null,
+                "version": "2.2.0",
+                "title": "创建并关闭一个工单",
+                "path": "/docs/wmt-test/zh_CN/2.2.0/tutorial/creating_and_completing_work_order.html",
+                "domain": "https://rtd-devops1.eniot.io",
+                "highlights": {
+                    "title": [
+                        "创建并关闭一个<span>工</span>单"
+                    ]
+                },
+                "blocks": [
+                    {
+                        "type": "section",
+                        "id": "id10",
+                        "title": "步骤 1：开启处理工单",
+                        "content": "使用具有 执行人员 角色权限的账号登录 EnOS 应用门户，进入 工作管理 应用。 在左侧导航栏中，选择 工单 进入工单列表。 选择左上角的 待我处理，选择刚刚创建的 检查设备运维情况 工单，进入工单详情。 选择页面顶部的 流转，在弹窗中，选择 开始处理。 选择 确定 开启工单处理。",
+                        "highlights": {
+                            "title": [
+                                "步骤 1：开启处<span>理</span><span>工</span>单"
+                            ],
+                            "content": [
+                                "使用具有 执行人员 角色权限的账号登录 EnOS 应用门户，进入 <span>工</span><span>作</span><span>管</span><span>理</span> 应用。 在左侧导航栏中，选择 <span>工</span>单 进入<span>工</span>单列表。"
+                            ]
+                        }
+                    },
+                    {
+                        "type": "section",
+                        "id": "id1",
+                        "title": "创建并关闭一个工单",
+                        "content": "本文介绍如何在 EnOS 工作管理创建一个工单，并对工单进行排程与指派，最后将其关闭。 备注 工作管理支持配置自定义字段与流程。本文中以默认字段为示例，可能与实际界面不同。",
+                        "highlights": {
+                            "title": [
+                                "创建并关闭一个<span>工</span>单"
+                            ],
+                            "content": [
+                                "本文介绍如何在 EnOS <span>工</span><span>作</span><span>管</span><span>理</span>创建一个<span>工</span>单，并对<span>工</span>单进行排程与指派，最后将其关闭。 备注 <span>工</span><span>作</span><span>管</span><span>理</span>支持配置自定义字段与流程。本文中以默认字段为示例，可能与实际界面不同。"
+                            ]
+                        }
+                    },
+                    {
+                        "type": "section",
+                        "id": "id7",
+                        "title": "步骤 1：创建工单",
+                        "content": "使用具有 管理人员 角色权限的账号登录 EnOS 应用门户，选择 工作管理。 在左侧导航栏中，选择 工单 菜单，进入工单列表。 选择 新建，进入工单创建页面，输入以下信息： 标题：检查设备运维情况。 描述：检查设备运维情况。 场站：WMT demo - Wind Site - WF007。 设备：风机基础 - DemoEnvisionDoubleFed 2. X 20。 工单类型：预防性维护。 工作负责人：账号 B。 选择 保存 完成工单创建。",
+                        "highlights": {
+                            "title": [
+                                "步骤 1：创建<span>工</span>单"
+                            ],
+                            "content": [
+                                "使用具有 <span>管</span><span>理</span>人员 角色权限的账号登录 EnOS 应用门户，选择 <span>工</span><span>作</span><span>管</span><span>理</span>。 在左侧导航栏中，选择 <span>工</span>单 菜单，进入<span>工</span>单列表。 选择 新建，进入<span>工</span>单创建页面，输入以下信息： 标题：检查设备运维情况。"
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "page",
+                "project": "wmt-test-zh",
+                "project_alias": null,
+                "version": "2.2.0",
+                "title": "配置自定义工作流",
+                "path": "/docs/wmt-test/zh_CN/2.2.0/delivery/config_workflow.html",
+                "domain": "https://rtd-devops1.eniot.io",
+                "highlights": {
+                    "title": [
+                        "配置自定义<span>工</span><span>作</span>流"
+                    ]
+                },
+                "blocks": [
+                    {
+                        "type": "section",
+                        "id": "id9",
+                        "title": "工作流文件 （可选）",
+                        "content": "工作管理集成了 Flowable 流程引擎，支持所有符合 BPMN 2.0 标准的工作流定义文件。建议直接采用 Flowable 的 modeler 设计工作流并导出成 XML 文件。 XML Sample 文件如下： 工作流示例.xml 备注 如需 Flowable Modeler 的账号，可联系工作管理产品团队获取。",
+                        "highlights": {
+                            "title": [
+                                "<span>工</span><span>作</span>流文件 （可选）"
+                            ],
+                            "content": [
+                                "<span>工</span><span>作</span><span>管</span><span>理</span>集成了 Flowable 流程引擎，支持所有符合 BPMN 2.0 标准的<span>工</span><span>作</span>流定义文件。建议直接采用 Flowable 的 modeler 设计<span>工</span><span>作</span>流并导出成 XML 文件。"
+                            ]
+                        }
+                    },
+                    {
+                        "type": "section",
+                        "id": "id1",
+                        "title": "配置自定义工作流",
+                        "content": "EnOS 工作管理工单系统支持为服务请求或者工单绑定工作流。自定义工作流设置目前需要产品开发团队进行配置。本文介绍自定义工作流的需求收集格式，项目团队参照格式明确用户需求即可。",
+                        "highlights": {
+                            "title": [
+                                "配置自定义<span>工</span><span>作</span>流"
+                            ],
+                            "content": [
+                                "EnOS <span>工</span><span>作</span><span>管</span><span>理</span><span>工</span>单系统支持为服务请求或者<span>工</span>单绑定<span>工</span><span>作</span>流。自定义<span>工</span><span>作</span>流设置目前需要产品开发团队进行配置。本文介绍自定义<span>工</span><span>作</span>流的需求收集格式，项目团队参照格式明确用户需求即可。"
+                            ]
+                        }
+                    },
+                    {
+                        "type": "section",
+                        "id": "id2",
+                        "title": "前提条件",
+                        "content": "配置工作管理的前提是当前环境和当前 OU 已成功部署工作管理服务。 已根据 配置应用 完成应用配置。",
+                        "highlights": {
+                            "title": [],
+                            "content": [
+                                "配置<span>工</span><span>作</span><span>管</span><span>理</span>的前提是当前环境和当前 OU 已成功部署<span>工</span><span>作</span><span>管</span><span>理</span>服务。 已根据 配置应用 完成应用配置。"
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "page",
+                "project": "wmt-test-zh",
+                "project_alias": null,
+                "version": "2.2.0",
+                "title": "新建工单",
+                "path": "/docs/wmt-test/zh_CN/2.2.0/howto/creating_work_order.html",
+                "domain": "https://rtd-devops1.eniot.io",
+                "highlights": {
+                    "title": [
+                        "新建<span>工</span>单"
+                    ]
+                },
+                "blocks": [
+                    {
+                        "type": "section",
+                        "id": "id1",
+                        "title": "新建工单",
+                        "content": "工单是执行团队进行维护工作的核心。工单包含了需完成的任务以及完成该工作所需的执行人员、时间与物料等信息。在工单中，管理人员对工单进行查看、排程与下发。在接到工单后，执行人员进行工单的处理与完成。 工单的默认工作流如下图所示： 蓝色框为工作流的节点。当用户在节点处完成对应的操作后，单据将流转至下一个节点。 灰色框为经过节点并完成操作后，单据的状态。 备注 EnOS 工作管理支持自定义配置工单字段与工单流程。本文中以默认工单配置为示例，可能与实际界面不同。如需进行自定义配置，请联系系统管理员。 工单有多种创建方式： 使用服务请求创建工单 使用周期性任务创建工单 手动创建工单 在 EnOS 监控与高级分析应用中，告警或者预警记录可以创建工单至工作管理",
+                        "highlights": {
+                            "title": [
+                                "新建<span>工</span>单"
+                            ],
+                            "content": [
+                                "<span>工</span>单是执行团队进行维护<span>工</span><span>作</span>的核心。<span>工</span>单包含了需完成的任务以及完成该<span>工</span><span>作</span>所需的执行人员、时间与物料等信息。在<span>工</span>单中，<span>管</span><span>理</span>人员对<span>工</span>单进行查看、排程与下发。在接到<span>工</span>单后，执行人员进行<span>工</span>单的处<span>理</span>与完成。"
+                            ]
+                        }
+                    },
+                    {
+                        "type": "section",
+                        "id": "",
+                        "title": "新建工单",
+                        "content": "const gitInfo = { language: 'zh-CN', gitLabEditHref: 'https://git.eniot.io/enos_docs/wmt_zh/blob/2.2.0/howto/creating_work_order.md', gitHubEditHref: 'https://github.com/EnvisionIot/wmt_zh/blob/2.2.0/howto/creating_work_order.md', bitbucketEditHref: 'https://bitbucket.org//wmt_zh/src/2.2.0/howto/creating_work_order.md?mode=view' }",
+                        "highlights": {
+                            "title": [
+                                "新建<span>工</span>单"
+                            ],
+                            "content": []
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "page",
+                "project": "wmt-test-zh",
+                "project_alias": null,
+                "version": "2.2.0",
+                "title": "快速入门：使用工单系统",
+                "path": "/docs/wmt-test/zh_CN/2.2.0/getting_started/quickstarted.html",
+                "domain": "https://rtd-devops1.eniot.io",
+                "highlights": {
+                    "title": [
+                        "快速入门：使用<span>工</span>单系统"
+                    ]
+                },
+                "blocks": [
+                    {
+                        "type": "section",
+                        "id": "id1",
+                        "title": "快速入门：使用工单系统",
+                        "content": "本文介绍 EnOS 工作管理中工单的常见使用流程。",
+                        "highlights": {
+                            "title": [
+                                "快速入门：使用<span>工</span>单系统"
+                            ],
+                            "content": [
+                                "本文介绍 EnOS <span>工</span><span>作</span><span>管</span><span>理</span>中<span>工</span>单的常见使用流程。"
+                            ]
+                        }
+                    },
+                    {
+                        "type": "section",
+                        "id": "id3",
+                        "title": "步骤 1：创建工单",
+                        "content": "工单有多种创建方式： 使用服务请求创建工单。例如，监控人员发现告警后，提交服务请求至执行团队进行处理。管理人员对服务请求进行审核，如需处理则创建跟进工单。 使用周期性任务创建工单。例如，执行人员根据预防性维护计划，创建周期性计划，工作管理根据设置的规则自动生成工单。 在 EnOS 监控与高级分析应用中，告警或者预警记录可以创建工单至工作管理。 手动创建工单",
+                        "highlights": {
+                            "title": [
+                                "步骤 1：创建<span>工</span>单"
+                            ],
+                            "content": [
+                                "例如，执行人员根据预防性维护计划，创建周期性计划，<span>工</span><span>作</span><span>管</span><span>理</span>根据设置的规则自动生成<span>工</span>单。 在 EnOS 监控与高级分析应用中，告警或者预警记录可以创建<span>工</span>单至<span>工</span><span>作</span><span>管</span><span>理</span>。 手动创建<span>工</span>单"
+                            ]
+                        }
+                    },
+                    {
+                        "type": "section",
+                        "id": "id2",
+                        "title": "前提条件",
+                        "content": "开始之前，确保已满足以下条件： 当前帐号已被分配所需的资产权限、操作权限点和包含 工单 与 工单日历 在内的菜单组。如未分配，联系应用管理员。 已在 EnOS 管理控制台配置了工作管理使用的资产树，并打上 EnosSolar:true 标签。",
+                        "highlights": {
+                            "title": [],
+                            "content": [
+                                "已在 EnOS <span>管</span><span>理</span>控制台配置了<span>工</span><span>作</span><span>管</span><span>理</span>使用的资产树，并打上 EnosSolar:true 标签。"
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "page",
+                "project": "wmt-test-zh",
+                "project_alias": null,
+                "version": "2.2.0",
+                "title": "概览",
+                "path": "/docs/wmt-test/zh_CN/2.2.0/delivery/index.html",
+                "domain": "https://rtd-devops1.eniot.io",
+                "highlights": {
+                    "title": []
+                },
+                "blocks": [
+                    {
+                        "type": "section",
+                        "id": "id3",
+                        "title": "前提条件",
+                        "content": "部署服务：确认当前环境和当前组织已成功部署工作管理服务。 配置资产树：确认实施人员已经在 EnOS 管理控制台配置了工作管理使用的资产树，并打上 EnosSolar:true 标签。",
+                        "highlights": {
+                            "title": [],
+                            "content": [
+                                "部署服务：确认当前环境和当前组织已成功部署<span>工</span><span>作</span><span>管</span><span>理</span>服务。 配置资产树：确认实施人员已经在 EnOS <span>管</span><span>理</span>控制台配置了<span>工</span><span>作</span><span>管</span><span>理</span>使用的资产树，并打上 EnosSolar:true 标签。"
+                            ]
+                        }
+                    },
+                    {
+                        "type": "section",
+                        "id": "id1",
+                        "title": "概览",
+                        "content": "本文介绍在 EnOS 管理控制台和 EnOS 应用门户中启用 EnOS 工作管理所需的配置。",
+                        "highlights": {
+                            "title": [],
+                            "content": [
+                                "本文介绍在 EnOS <span>管</span><span>理</span>控制台和 EnOS 应用门户中启用 EnOS <span>工</span><span>作</span><span>管</span><span>理</span>所需的配置。"
+                            ]
+                        }
+                    },
+                    {
+                        "type": "section",
+                        "id": "id2",
+                        "title": "相关角色",
+                        "content": "交付应用过程中涉及的角色包括但不限于： 角色 职责 用户账号权限 交付人员 负责准备应用组件和配置数据，并搭建应用菜单。 用户账号需要在 EnOS 管理控制台中被分配 administrator 角色，在 EnOS 应用门户中拥有组织管理员权限或可访问应用管理菜单的子管理员权限。 运维人员 负责管理各生产环境的模型和后台服务。 用户账号需有 EnOS 管理控制台的系统管理员权限。",
+                        "highlights": {
+                            "title": [],
+                            "content": [
+                                "用户账号需要在 EnOS <span>管</span><span>理</span>控制台中被分配 administrator 角色，在 EnOS 应用门户中拥有组织<span>管</span><span>理</span>员权限或可访问应用<span>管</span><span>理</span>菜单的子<span>管</span><span>理</span>员权限。"
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "page",
+                "project": "wmt-test-zh",
+                "project_alias": null,
+                "version": "2.2.0",
+                "title": "管理服务请求",
+                "path": "/docs/wmt-test/zh_CN/2.2.0/howto/processing_sr.html",
+                "domain": "https://rtd-devops1.eniot.io",
+                "highlights": {
+                    "title": [
+                        "<span>管</span><span>理</span>服务请求"
+                    ]
+                },
+                "blocks": [
+                    {
+                        "type": "section",
+                        "id": "id1",
+                        "title": "管理服务请求",
+                        "content": "管理人员与执行人员可以对服务请求进行筛选、处理、流转以及指派等一系列操作。",
+                        "highlights": {
+                            "title": [
+                                "<span>管</span><span>理</span>服务请求"
+                            ],
+                            "content": [
+                                "<span>管</span><span>理</span>人员与执行人员可以对服务请求进行筛选、处<span>理</span>、流转以及指派等一系列操<span>作</span>。"
+                            ]
+                        }
+                    },
+                    {
+                        "type": "section",
+                        "id": "",
+                        "title": "管理服务请求",
+                        "content": "const gitInfo = { language: 'zh-CN', gitLabEditHref: 'https://git.eniot.io/enos_docs/wmt_zh/blob/2.2.0/howto/processing_sr.md', gitHubEditHref: 'https://github.com/EnvisionIot/wmt_zh/blob/2.2.0/howto/processing_sr.md', bitbucketEditHref: 'https://bitbucket.org//wmt_zh/src/2.2.0/howto/processing_sr.md?mode=view' }",
+                        "highlights": {
+                            "title": [
+                                "<span>管</span><span>理</span>服务请求"
+                            ],
+                            "content": []
+                        }
+                    },
+                    {
+                        "type": "section",
+                        "id": "id4",
+                        "title": "处理服务请求",
+                        "content": "可以对服务请求进行编辑、流转以及指派等一系列操作。具体步骤如下： 在左侧导航栏中，选择 服务请求 菜单，进入服务请求列表。 查找目标服务请求，选择 处理 即可进入服务请求详情页。",
+                        "highlights": {
+                            "title": [
+                                "处<span>理</span>服务请求"
+                            ],
+                            "content": [
+                                "可以对服务请求进行编辑、流转以及指派等一系列操<span>作</span>。具体步骤如下： 在左侧导航栏中，选择 服务请求 菜单，进入服务请求列表。 查找目标服务请求，选择 处<span>理</span> 即可进入服务请求详情页。"
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "page",
+                "project": "wmt-test-zh",
+                "project_alias": null,
+                "version": "2.2.0",
+                "title": "使用工单页处理工单",
+                "path": "/docs/wmt-test/zh_CN/2.2.0/howto/processing_work_order.html",
+                "domain": "https://rtd-devops1.eniot.io",
+                "highlights": {
+                    "title": [
+                        "使用<span>工</span>单页处<span>理</span><span>工</span>单"
+                    ]
+                },
+                "blocks": [
+                    {
+                        "type": "section",
+                        "id": "id3",
+                        "title": "处理工单",
+                        "content": "可以对工单进行编辑、流转以及指派等一系列操作。具体步骤如下： 在左侧导航栏中，选择 工单 菜单，进入工单列表。 找到目标工单，选择 处理 即可进入工单详情页。",
+                        "highlights": {
+                            "title": [
+                                "处<span>理</span><span>工</span>单"
+                            ],
+                            "content": [
+                                "可以对<span>工</span>单进行编辑、流转以及指派等一系列操<span>作</span>。具体步骤如下： 在左侧导航栏中，选择 <span>工</span>单 菜单，进入<span>工</span>单列表。 找到目标<span>工</span>单，选择 处<span>理</span> 即可进入<span>工</span>单详情页。"
+                            ]
+                        }
+                    },
+                    {
+                        "type": "section",
+                        "id": "id1",
+                        "title": "使用工单页处理工单",
+                        "content": "在工单列表页中可以对工单进行处理，包括编辑、指派、排程以及流转等所有操作。",
+                        "highlights": {
+                            "title": [
+                                "使用<span>工</span>单页处<span>理</span><span>工</span>单"
+                            ],
+                            "content": [
+                                "在<span>工</span>单列表页中可以对<span>工</span>单进行处<span>理</span>，包括编辑、指派、排程以及流转等所有操<span>作</span>。"
+                            ]
+                        }
+                    },
+                    {
+                        "type": "section",
+                        "id": "id2",
+                        "title": "前提条件",
+                        "content": "开始之前，确保当前帐号已被分配所需的资产权限、操作权限点和包含 工单 在内的菜单组。如未分配，联系应用管理员。",
+                        "highlights": {
+                            "title": [],
+                            "content": [
+                                "开始之前，确保当前帐号已被分配所需的资产权限、操<span>作</span>权限点和包含 <span>工</span>单 在内的菜单组。如未分配，联系应用<span>管</span><span>理</span>员。"
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "page",
+                "project": "wmt-test-zh",
+                "project_alias": null,
+                "version": "2.2.0",
+                "title": "手动创建工单",
+                "path": "/docs/wmt-test/zh_CN/2.2.0/howto/creating_work_order_manulally.html",
+                "domain": "https://rtd-devops1.eniot.io",
+                "highlights": {
+                    "title": [
+                        "手动创建<span>工</span>单"
+                    ]
+                },
+                "blocks": [
+                    {
+                        "type": "section",
+                        "id": "id1",
+                        "title": "手动创建工单",
+                        "content": "在 EnOS 工作管理中，可以手动创建单个或批量导入工单。",
+                        "highlights": {
+                            "title": [
+                                "手动创建<span>工</span>单"
+                            ],
+                            "content": [
+                                "在 EnOS <span>工</span><span>作</span><span>管</span><span>理</span>中，可以手动创建单个或批量导入<span>工</span>单。"
+                            ]
+                        }
+                    },
+                    {
+                        "type": "section",
+                        "id": "id2",
+                        "title": "前提条件",
+                        "content": "开始之前，确保当前帐号已被分配所需的资产权限、操作权限点和包含 工单 在内的菜单组。如未分配，联系应用管理员。",
+                        "highlights": {
+                            "title": [],
+                            "content": [
+                                "开始之前，确保当前帐号已被分配所需的资产权限、操<span>作</span>权限点和包含 <span>工</span>单 在内的菜单组。如未分配，联系应用<span>管</span><span>理</span>员。"
+                            ]
+                        }
+                    },
+                    {
+                        "type": "section",
+                        "id": "create",
+                        "title": "创建单个工单",
+                        "content": "可以手动创建单个工单。具体步骤如下： 在左侧导航栏中，选择 工单 菜单，进入工单列表。 选择 新建 进入工单创建页面，输入以下信息： 标题：输入工单的标题。 场站：选择一个场站，支持按名称搜索。 设备：选择任意数量的设备，支持按名称搜索。 工单类型：选择一个工单类型。 优先级：选择优先级，如果不指定，默认为 未指定。 计划：可指定工单负责人以及计划日期，也可在后续排程时输入。 描述：输入工单的描述。 文件：可上传图片和文件。 任务：添加任务清单中的任务或手动创建任务。有关任务清单的更多信息，参见 管理任务清单。 历史工单：当选择设备后，页面底部历史工单会以列表形式展示当前已选设备的历史工单供参考，可对设备、工单类型以及状态进行筛选。 选择 保存 完成工单的创建。",
+                        "highlights": {
+                            "title": [
+                                "创建单个<span>工</span>单"
+                            ],
+                            "content": [
+                                "有关任务清单的更多信息，参见 <span>管</span><span>理</span>任务清单。 历史<span>工</span>单：当选择设备后，页面底部历史<span>工</span>单会以列表形式展示当前已选设备的历史<span>工</span>单供参考，可对设备、<span>工</span>单类型以及状态进行筛选。 选择 保存 完成<span>工</span>单的创建。"
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "page",
+                "project": "wmt-test-zh",
+                "project_alias": null,
+                "version": "2.2.0",
+                "title": "使用服务请求创建工单",
+                "path": "/docs/wmt-test/zh_CN/2.2.0/howto/managing_service_request.html",
+                "domain": "https://rtd-devops1.eniot.io",
+                "highlights": {
+                    "title": [
+                        "使用服务请求创建<span>工</span>单"
+                    ]
+                },
+                "blocks": [
+                    {
+                        "type": "section",
+                        "id": "id1",
+                        "title": "使用服务请求创建工单",
+                        "content": "服务请求通常用于向执行团队提报问题或者提交运维需求。在服务请求中，管理人员可以对服务请求进行审核，如需处理则创建跟进工单，若无需处理则关闭服务请求。 服务请求的默认工作流如下图所示： 蓝色框为工作流的节点。当用户在节点处完成对应的操作后，单据将流转至下一个节点。 灰色框为经过节点并完成操作后，单据的状态。 备注 EnOS 工作管理支持自定义配置服务请求字段与服务请求流程。本文以默认服务请求配置为示例，可能与实际界面不同。如需进行自定义配置，请联系系统管理员。",
+                        "highlights": {
+                            "title": [
+                                "使用服务请求创建<span>工</span>单"
+                            ],
+                            "content": [
+                                "在服务请求中，<span>管</span><span>理</span>人员可以对服务请求进行审核，如需处<span>理</span>则创建跟进<span>工</span>单，若无需处<span>理</span>则关闭服务请求。 服务请求的默认<span>工</span><span>作</span>流如下图所示： 蓝色框为<span>工</span><span>作</span>流的节点。"
+                            ]
+                        }
+                    },
+                    {
+                        "type": "section",
+                        "id": "",
+                        "title": "使用服务请求创建工单",
+                        "content": "const gitInfo = { language: 'zh-CN', gitLabEditHref: 'https://git.eniot.io/enos_docs/wmt_zh/blob/2.2.0/howto/managing_service_request.md', gitHubEditHref: 'https://github.com/EnvisionIot/wmt_zh/blob/2.2.0/howto/managing_service_request.md', bitbucketEditHref: 'https://bitbucket.org//wmt_zh/src/2.2.0/howto/managing_service_request.md?mode=view' }",
+                        "highlights": {
+                            "title": [
+                                "使用服务请求创建<span>工</span>单"
+                            ],
+                            "content": []
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "page",
+                "project": "wmt-test-zh",
+                "project_alias": null,
+                "version": "2.2.0",
+                "title": "管理周期性任务",
+                "path": "/docs/wmt-test/zh_CN/2.2.0/howto/managing_maintenance_plan.html",
+                "domain": "https://rtd-devops1.eniot.io",
+                "highlights": {
+                    "title": [
+                        "<span>管</span><span>理</span>周期性任务"
+                    ]
+                },
+                "blocks": [
+                    {
+                        "type": "section",
+                        "id": "id1",
+                        "title": "管理周期性任务",
+                        "content": "可以查看周期性任务。对于已创建的周期性任务，可以对其进行启用/停用、编辑以及删除操作。",
+                        "highlights": {
+                            "title": [
+                                "<span>管</span><span>理</span>周期性任务"
+                            ],
+                            "content": [
+                                "对于已创建的周期性任务，可以对其进行启用&#x2F;停用、编辑以及删除操<span>作</span>。"
+                            ]
+                        }
+                    },
+                    {
+                        "type": "section",
+                        "id": "",
+                        "title": "管理周期性任务",
+                        "content": "const gitInfo = { language: 'zh-CN', gitLabEditHref: 'https://git.eniot.io/enos_docs/wmt_zh/blob/2.2.0/howto/managing_maintenance_plan.md', gitHubEditHref: 'https://github.com/EnvisionIot/wmt_zh/blob/2.2.0/howto/managing_maintenance_plan.md', bitbucketEditHref: 'https://bitbucket.org//wmt_zh/src/2.2.0/howto/managing_maintenance_plan.md?mode=view' }",
+                        "highlights": {
+                            "title": [
+                                "<span>管</span><span>理</span>周期性任务"
+                            ],
+                            "content": []
+                        }
+                    },
+                    {
+                        "type": "section",
+                        "id": "id2",
+                        "title": "前提条件",
+                        "content": "开始之前，确保当前帐号已被分配所需的资产权限、操作权限点和包含 周期性任务 在内的菜单组。如未分配，联系应用管理员。",
+                        "highlights": {
+                            "title": [],
+                            "content": [
+                                "开始之前，确保当前帐号已被分配所需的资产权限、操<span>作</span>权限点和包含 周期性任务 在内的菜单组。如未分配，联系应用<span>管</span><span>理</span>员。"
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "page",
+                "project": "wmt-test-zh",
+                "project_alias": null,
+                "version": "2.2.0",
+                "title": "新建服务请求",
+                "path": "/docs/wmt-test/zh_CN/2.2.0/howto/creating_sr.html",
+                "domain": "https://rtd-devops1.eniot.io",
+                "highlights": {
+                    "title": []
+                },
+                "blocks": [
+                    {
+                        "type": "section",
+                        "id": "id1",
+                        "title": "新建服务请求",
+                        "content": "服务请求有多种来源： EnOS 监控与高级分析应用中产生告警或者预警时，可以自动或者手动触发服务请求到工作管理中。有关已集成的 EnOS 监控与高级分析应用更多信息，参见 已集成 EnOS 原生应用列表。 在工作管理中手动新建服务请求。",
+                        "highlights": {
+                            "title": [],
+                            "content": [
+                                "在<span>工</span><span>作</span><span>管</span><span>理</span>中手动新建服务请求。"
+                            ]
+                        }
+                    },
+                    {
+                        "type": "section",
+                        "id": "id3",
+                        "title": "操作步骤",
+                        "content": "本文介绍如何在工作管理中新建服务请求。 在左侧导航栏中，选择 服务请求 菜单，进入服务请求列表。 选择 新建 进入服务请求创建页面，输入以下信息： 标题：输入服务请求的标题。 场站：选择一个场站，支持按名称搜索。 优先级：选择优先级。默认为 未指定。 设备：选择任意数量的设备，支持按名称搜索。 截止日期：指定服务请求预期结束时间。 描述信息：输入服务请求的描述。 文件：根据情况上传图片和文件。 选择 保存 完成服务请求的创建。",
+                        "highlights": {
+                            "title": [
+                                "操<span>作</span>步骤"
+                            ],
+                            "content": [
+                                "本文介绍如何在<span>工</span><span>作</span><span>管</span><span>理</span>中新建服务请求。 在左侧导航栏中，选择 服务请求 菜单，进入服务请求列表。 选择 新建 进入服务请求创建页面，输入以下信息： 标题：输入服务请求的标题。"
+                            ]
+                        }
+                    },
+                    {
+                        "type": "section",
+                        "id": "id2",
+                        "title": "前提条件",
+                        "content": "开始之前，确保当前帐号已被分配所需的资产权限、操作权限点和包含 服务请求 在内的菜单组。如未分配，联系应用管理员。",
+                        "highlights": {
+                            "title": [],
+                            "content": [
+                                "开始之前，确保当前帐号已被分配所需的资产权限、操<span>作</span>权限点和包含 服务请求 在内的菜单组。如未分配，联系应用<span>管</span><span>理</span>员。"
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "page",
+                "project": "wmt-test-zh",
+                "project_alias": null,
+                "version": "2.2.0",
+                "title": "使用周期性任务创建工单",
+                "path": "/docs/wmt-test/zh_CN/2.2.0/howto/maintenance_plan.html",
+                "domain": "https://rtd-devops1.eniot.io",
+                "highlights": {
+                    "title": [
+                        "使用周期性任务创建<span>工</span>单"
+                    ]
+                },
+                "blocks": [
+                    {
+                        "type": "section",
+                        "id": "id1",
+                        "title": "使用周期性任务创建工单",
+                        "content": "可以周期性地生成运维工单，用于提前计划的重复性的维护任务。EnOS 工作管理将根据时间计划，自动生成工单。",
+                        "highlights": {
+                            "title": [
+                                "使用周期性任务创建<span>工</span>单"
+                            ],
+                            "content": [
+                                "可以周期性地生成运维<span>工</span>单，用于提前计划的重复性的维护任务。EnOS <span>工</span><span>作</span><span>管</span><span>理</span>将根据时间计划，自动生成<span>工</span>单。"
+                            ]
+                        }
+                    },
+                    {
+                        "type": "section",
+                        "id": "",
+                        "title": "使用周期性任务创建工单",
+                        "content": "const gitInfo = { language: 'zh-CN', gitLabEditHref: 'https://git.eniot.io/enos_docs/wmt_zh/blob/2.2.0/howto/maintenance_plan.md', gitHubEditHref: 'https://github.com/EnvisionIot/wmt_zh/blob/2.2.0/howto/maintenance_plan.md', bitbucketEditHref: 'https://bitbucket.org//wmt_zh/src/2.2.0/howto/maintenance_plan.md?mode=view' }",
+                        "highlights": {
+                            "title": [
+                                "使用周期性任务创建<span>工</span>单"
+                            ],
+                            "content": []
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "page",
+                "project": "wmt-test-zh",
+                "project_alias": null,
+                "version": "2.2.0",
+                "title": "查看工单",
+                "path": "/docs/wmt-test/zh_CN/2.2.0/howto/viewing_work_order.html",
+                "domain": "https://rtd-devops1.eniot.io",
+                "highlights": {
+                    "title": [
+                        "查看<span>工</span>单"
+                    ]
+                },
+                "blocks": [
+                    {
+                        "type": "section",
+                        "id": "calendar",
+                        "title": "在工单日历中查看工单",
+                        "content": "工单日历以日历的形式展示工单的排程。在工单日历中，管理人员可以清晰地浏览月度工单安排，快速获取工单完成与逾期信息。执行人员可以查看月度的工单安排，从而合理安排工作。工单日历中的新建工单与处理工单操作与工单列表中相同。更多信息，参见 创建单个工单 与 使用工单列表页处理工单。 在左侧导航栏中，选择 工单日历 菜单。 将鼠标悬浮至工单上方，将会浮现工单信息展示框。 选择工单或展示框，即可进入工单详情页面。",
+                        "highlights": {
+                            "title": [
+                                "在<span>工</span>单日历中查看<span>工</span>单"
+                            ],
+                            "content": [
+                                "<span>工</span>单日历以日历的形式展示<span>工</span>单的排程。在<span>工</span>单日历中，<span>管</span><span>理</span>人员可以清晰地浏览月度<span>工</span>单安排，快速获取<span>工</span>单完成与逾期信息。执行人员可以查看月度的<span>工</span>单安排，从而合<span>理</span>安排<span>工</span><span>作</span>。"
+                            ]
+                        }
+                    },
+                    {
+                        "type": "section",
+                        "id": "id2",
+                        "title": "前提条件",
+                        "content": "开始之前，确保当前帐号已被分配所需的资产权限、操作权限点和包含 工单 与 工单日历 在内的菜单组。如未分配，联系应用管理员。",
+                        "highlights": {
+                            "title": [],
+                            "content": [
+                                "开始之前，确保当前帐号已被分配所需的资产权限、操<span>作</span>权限点和包含 <span>工</span>单 与 <span>工</span>单日历 在内的菜单组。如未分配，联系应用<span>管</span><span>理</span>员。"
+                            ]
+                        }
+                    },
+                    {
+                        "type": "section",
+                        "id": "id4",
+                        "title": "在工单页中查看工单",
+                        "content": "可以以 只读方式 打开工单详情进行查看。具体步骤如下： 在左侧导航栏中，选择 工单 菜单，进入工单列表。 查找目标工单，选择 查看，以只读方式打开工单详情。详情展示信息与 处理工单 相同，但只读方式下不可进行任何操作。 备注 具有删除权限的用户，在只读方式下也可以执行删除操作。",
+                        "highlights": {
+                            "title": [
+                                "在<span>工</span>单页中查看<span>工</span>单"
+                            ],
+                            "content": [
+                                "详情展示信息与 处<span>理</span><span>工</span>单 相同，但只读方式下不可进行任何操<span>作</span>。 备注 具有删除权限的用户，在只读方式下也可以执行删除操<span>作</span>。"
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "page",
+                "project": "wmt-test-zh",
+                "project_alias": null,
+                "version": "2.2.0",
+                "title": "新建周期性任务",
+                "path": "/docs/wmt-test/zh_CN/2.2.0/howto/creating_maintenance_plan.html",
+                "domain": "https://rtd-devops1.eniot.io",
+                "highlights": {
+                    "title": []
+                },
+                "blocks": [
+                    {
+                        "type": "section",
+                        "id": "id3",
+                        "title": "操作步骤",
+                        "content": "在左侧导航栏中，选择 周期性任务，进入周期性任务列表。 选择 新建 进入创建页面，输入计划名称，选择启用状态，并在工单模板中配置工单的基本信息。 选择 下一步，进入时间计划配置。 在时间计划中配置任务的有效时段与时间计划。 计划的有效时段：设置有效时间范围，最长为 5 年。 时间计划类型：支持 固定周期 和 浮动周期。 固定周期：系统定期生成工单（无论工单是否完成）。生成日期 = 重复间隔中设置的时间 - 前置时间。 重复间隔：支持按日、周、月或年重复。 工单触发前置时间：默认为 1 周。 浮动周期：按年、月、周或日设置重复间隔。第一个工单将会立即生成，当前一个工单完成后，再开始计算重复间隔。 选择 保存 完成周期性任务创建。 备注 当选择多场站时，对于单个场站，仅当所选设备类型存在于该场站下时，才会创建对应的周期性任务。 当选择多设备时，在保存周期性任务时，可选择是否需要为每个设备创建单独的周期性任务。 若周期性任务状态选择 已启用，则工作管理将会根据时间计划自动创建工单。若状态为 已停用，则需根据 启用/停用周期性任务 中的操作启动周期性任务。",
+                        "highlights": {
+                            "title": [
+                                "操<span>作</span>步骤"
+                            ],
+                            "content": [
+                                "若周期性任务状态选择 已启用，则<span>工</span><span>作</span><span>管</span><span>理</span>将会根据时间计划自动创建<span>工</span>单。若状态为 已停用，则需根据 启用&#x2F;停用周期性任务 中的操<span>作</span>启动周期性任务。"
+                            ]
+                        }
+                    },
+                    {
+                        "type": "section",
+                        "id": "id2",
+                        "title": "前提条件",
+                        "content": "开始之前，确保当前帐号已被分配所需的资产权限、操作权限点和包含 周期性任务 在内的菜单组。如未分配，联系应用管理员。",
+                        "highlights": {
+                            "title": [],
+                            "content": [
+                                "开始之前，确保当前帐号已被分配所需的资产权限、操<span>作</span>权限点和包含 周期性任务 在内的菜单组。如未分配，联系应用<span>管</span><span>理</span>员。"
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "page",
+                "project": "wmt-test-zh",
+                "project_alias": null,
+                "version": "2.2.0",
+                "title": "创建跟进工单",
+                "path": "/docs/wmt-test/zh_CN/2.2.0/howto/creating_wo_from_sr.html",
+                "domain": "https://rtd-devops1.eniot.io",
+                "highlights": {
+                    "title": [
+                        "创建跟进<span>工</span>单"
+                    ]
+                },
+                "blocks": [
+                    {
+                        "type": "section",
+                        "id": "id3",
+                        "title": "操作步骤",
+                        "content": "在左侧导航栏中，选择 服务请求 菜单，进入服务请求列表。 查找目标服务请求，选择 处理。 选择右上方的 新建工单，输入以下信息： 基本信息：设置设备、工单类型以及优先级等信息。 计划：指定工作负责人、其他工作人员以及计划时间。 描述信息：输入工单的描述。 文件：可上传图片和文件。 选择 保存，创建的工单将显示在该服务请求的关联记录中。",
+                        "highlights": {
+                            "title": [
+                                "操<span>作</span>步骤"
+                            ],
+                            "content": [
+                                "查找目标服务请求，选择 处<span>理</span>。 选择右上方的 新建<span>工</span>单，输入以下信息： 基本信息：设置设备、<span>工</span>单类型以及优先级等信息。 计划：指定<span>工</span><span>作</span>负责人、其他<span>工</span><span>作</span>人员以及计划时间。 描述信息：输入<span>工</span>单的描述。"
+                            ]
+                        }
+                    },
+                    {
+                        "type": "section",
+                        "id": "id1",
+                        "title": "创建跟进工单",
+                        "content": "管理人员与执行人员可以对服务请求进行审核，如需要后续工单则进行创建跟进工单。",
+                        "highlights": {
+                            "title": [
+                                "创建跟进<span>工</span>单"
+                            ],
+                            "content": [
+                                "<span>管</span><span>理</span>人员与执行人员可以对服务请求进行审核，如需要后续<span>工</span>单则进行创建跟进<span>工</span>单。"
+                            ]
+                        }
+                    },
+                    {
+                        "type": "section",
+                        "id": "id2",
+                        "title": "前提条件",
+                        "content": "开始之前，确保当前帐号已被分配所需的资产权限、操作权限点和包含 服务请求 在内的菜单组。如未分配，联系应用管理员。",
+                        "highlights": {
+                            "title": [],
+                            "content": [
+                                "开始之前，确保当前帐号已被分配所需的资产权限、操<span>作</span>权限点和包含 服务请求 在内的菜单组。如未分配，联系应用<span>管</span><span>理</span>员。"
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "page",
+                "project": "wmt-test-zh",
+                "project_alias": null,
+                "version": "2.2.0",
+                "title": "关键概念",
+                "path": "/docs/wmt-test/zh_CN/2.2.0/overview/key_concepts.html",
+                "domain": "https://rtd-devops1.eniot.io",
+                "highlights": {
+                    "title": []
+                },
+                "blocks": [
+                    {
+                        "type": "section",
+                        "id": "id6",
+                        "title": "工单",
+                        "content": "工单是维护与管理工作的核心。工单包含了需完成的任务以及完成该任务的工作人员、时间与文件等信息。更多信息，参见 新建工单。",
+                        "highlights": {
+                            "title": [
+                                "<span>工</span>单"
+                            ],
+                            "content": [
+                                "<span>工</span>单是维护与<span>管</span><span>理</span><span>工</span><span>作</span>的核心。<span>工</span>单包含了需完成的任务以及完成该任务的<span>工</span><span>作</span>人员、时间与文件等信息。更多信息，参见 新建<span>工</span>单。"
+                            ]
+                        }
+                    },
+                    {
+                        "type": "section",
+                        "id": "id1",
+                        "title": "关键概念",
+                        "content": "EnOS 工作管理的用户和权限功能继承了 EnOS 应用门户，开始之前，需了解 EnOS 应用门户的 关键概念。 本文介绍工作管理中的关键概念。",
+                        "highlights": {
+                            "title": [],
+                            "content": [
+                                "EnOS <span>工</span><span>作</span><span>管</span><span>理</span>的用户和权限功能继承了 EnOS 应用门户，开始之前，需了解 EnOS 应用门户的 关键概念。 本文介绍<span>工</span><span>作</span><span>管</span><span>理</span>中的关键概念。"
+                            ]
+                        }
+                    },
+                    {
+                        "type": "section",
+                        "id": "id4",
+                        "title": "服务请求",
+                        "content": "服务请求通常用于提报问题或者提交运维需求。例如，当监控人员发现设备产生告警或者产生其他异常时，可以通过创建服务请求，将问题提交到场站运维团队进行处理。工作管理已与 EnOS 监控和高级分析应用集成，支持一键从告警或预警触发服务请求。更多信息，参见 使用服务请求创建工单。",
+                        "highlights": {
+                            "title": [],
+                            "content": [
+                                "例如，当监控人员发现设备产生告警或者产生其他异常时，可以通过创建服务请求，将问题提交到场站运维团队进行处<span>理</span>。<span>工</span><span>作</span><span>管</span><span>理</span>已与 EnOS 监控和高级分析应用集成，支持一键从告警或预警触发服务请求。"
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "page",
+                "project": "wmt-test-zh",
+                "project_alias": null,
+                "version": "2.2.0",
+                "title": "可看到操作按钮，但是无法选择",
+                "path": "/docs/wmt-test/zh_CN/2.2.0/troubleshooting/cannot_click_operation.html",
+                "domain": "https://rtd-devops1.eniot.io",
+                "highlights": {
+                    "title": [
+                        "可看到操<span>作</span>按钮，但是无法选择"
+                    ]
+                },
+                "blocks": [
+                    {
+                        "type": "section",
+                        "id": "id1",
+                        "title": "可看到操作按钮，但是无法选择",
+                        "content": "我可以看到在服务请求和工单的详情页面右上角有几个操作按钮，但是为什么选择后没有反应。",
+                        "highlights": {
+                            "title": [
+                                "可看到操<span>作</span>按钮，但是无法选择"
+                            ],
+                            "content": [
+                                "我可以看到在服务请求和<span>工</span>单的详情页面右上角有几个操<span>作</span>按钮，但是为什么选择后没有反应。"
+                            ]
+                        }
+                    },
+                    {
+                        "type": "section",
+                        "id": "id3",
+                        "title": "解决方法",
+                        "content": "联系应用管理员，为你的账号添加对应操作权限。",
+                        "highlights": {
+                            "title": [],
+                            "content": [
+                                "联系应用<span>管</span><span>理</span>员，为你的账号添加对应操<span>作</span>权限。"
+                            ]
+                        }
+                    },
+                    {
+                        "type": "section",
+                        "id": "",
+                        "title": "可看到操作按钮，但是无法选择",
+                        "content": "const gitInfo = { language: 'zh-CN', gitLabEditHref: 'https://git.eniot.io/enos_docs/wmt_zh/blob/2.2.0/troubleshooting/cannot_click_operation.md', gitHubEditHref: 'https://github.com/EnvisionIot/wmt_zh/blob/2.2.0/troubleshooting/cannot_click_operation.md', bitbucketEditHref: 'https://bitbucket.org//wmt_zh/src/2.2.0/troubleshooting/cannot_click_operation.md?mode=view' }",
+                        "highlights": {
+                            "title": [
+                                "可看到操<span>作</span>按钮，但是无法选择"
+                            ],
+                            "content": []
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "page",
+                "project": "wmt-test-zh",
+                "project_alias": null,
+                "version": "2.2.0",
+                "title": "配置自定义表单",
+                "path": "/docs/wmt-test/zh_CN/2.2.0/delivery/config_field.html",
+                "domain": "https://rtd-devops1.eniot.io",
+                "highlights": {
+                    "title": []
+                },
+                "blocks": [
+                    {
+                        "type": "section",
+                        "id": "id2",
+                        "title": "前提条件",
+                        "content": "配置工作管理的前提是当前环境和当前组织已成功部署工作管理服务。 已根据 配置应用 完成应用配置。",
+                        "highlights": {
+                            "title": [],
+                            "content": [
+                                "配置<span>工</span><span>作</span><span>管</span><span>理</span>的前提是当前环境和当前组织已成功部署<span>工</span><span>作</span><span>管</span><span>理</span>服务。 已根据 配置应用 完成应用配置。"
+                            ]
+                        }
+                    },
+                    {
+                        "type": "section",
+                        "id": "id4",
+                        "title": "配置自定义表单字段",
+                        "content": "工作管理通过上传模板文件进行表单配置，请下载以下 Excel 配置模板进行填写。 表单配置模板和说明文档.xlsx 备注 若导入报错，可能为模板版本过低，可联系工作管理产品团队获取最新版本。 工作管理支持以下三种方式配置自定义字段： 修改标准字段：对模板中已有字段进行修改。 新增字段：在模板中新增字段。 启用多模板：对于不同工单类型，配置不同字段。 在该章节中会分别介绍这三种配置方式：",
+                        "highlights": {
+                            "title": [],
+                            "content": [
+                                "<span>工</span><span>作</span><span>管</span><span>理</span>通过上传模板文件进行表单配置，请下载以下 Excel 配置模板进行填写。 表单配置模板和说明文档.xlsx 备注 若导入报错，可能为模板版本过低，可联系<span>工</span><span>作</span><span>管</span><span>理</span>产品团队获取最新版本。"
+                            ]
+                        }
+                    },
+                    {
+                        "type": "section",
+                        "id": "id17",
+                        "title": "Widget Type 说明",
+                        "content": "工作管理提供多种控件类型以支持字段的展现形式，例如输入框、单选、多选等等。不同控件类型具有特有的配置项。",
+                        "highlights": {
+                            "title": [],
+                            "content": [
+                                "<span>工</span><span>作</span><span>管</span><span>理</span>提供多种控件类型以支持字段的展现形式，例如输入框、单选、多选等等。不同控件类型具有特有的配置项。"
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "page",
+                "project": "wmt-test-zh",
+                "project_alias": null,
+                "version": "2.2.0",
+                "title": "使用排程看板排程工单",
+                "path": "/docs/wmt-test/zh_CN/2.2.0/howto/scheduling.html",
+                "domain": "https://rtd-devops1.eniot.io",
+                "highlights": {
+                    "title": [
+                        "使用排程看板排程<span>工</span>单"
+                    ]
+                },
+                "blocks": [
+                    {
+                        "type": "section",
+                        "id": "id11",
+                        "title": "风机设备排程辅助功能",
+                        "content": "备注 该功能需所在组织购买了 EnOS 集群控制，排程模式为设备模式，且待排设备类型为风机。如需了解更多关于集群控制的信息，请联系系统管理员。 系统会自动比较工作窗口期建议和工单的预计工时，对有超期风险的工单进行风险提示。并在所选设备下方将展示以下信息，帮助选择最优的工单执行时机。 每台风机 T+6 天内工作窗口期建议 损失电量预测数据",
+                        "highlights": {
+                            "title": [],
+                            "content": [
+                                "如需了解更多关于集群控制的信息，请联系系统<span>管</span><span>理</span>员。 系统会自动比较<span>工</span><span>作</span>窗口期建议和<span>工</span>单的预计<span>工</span>时，对有超期风险的<span>工</span>单进行风险提示。并在所选设备下方将展示以下信息，帮助选择最优的<span>工</span>单执行时机。"
+                            ]
+                        }
+                    },
+                    {
+                        "type": "section",
+                        "id": "id1",
+                        "title": "使用排程看板排程工单",
+                        "content": "在排程看板中，管理人员拖拽工单，快速设定工单的负责人和执行时间对工单进行排期。",
+                        "highlights": {
+                            "title": [
+                                "使用排程看板排程<span>工</span>单"
+                            ],
+                            "content": [
+                                "在排程看板中，<span>管</span><span>理</span>人员拖拽<span>工</span>单，快速设定<span>工</span>单的负责人和执行时间对<span>工</span>单进行排期。"
+                            ]
+                        }
+                    },
+                    {
+                        "type": "section",
+                        "id": "id3",
+                        "title": "操作步骤",
+                        "content": "使用排程看板的流程如下： 筛选待排任务 选择排程模式 排程任务",
+                        "highlights": {
+                            "title": [
+                                "操<span>作</span>步骤"
+                            ],
+                            "content": []
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "page",
+                "project": "wmt-test-zh",
+                "project_alias": null,
+                "version": "2.2.0",
+                "title": "查看服务请求",
+                "path": "/docs/wmt-test/zh_CN/2.2.0/howto/viewing_sr.html",
+                "domain": "https://rtd-devops1.eniot.io",
+                "highlights": {
+                    "title": []
+                },
+                "blocks": [
+                    {
+                        "type": "section",
+                        "id": "id2",
+                        "title": "前提条件",
+                        "content": "开始之前，确保当前帐号已被分配所需的资产权限、操作权限点和包含 服务请求 在内的菜单组。如未分配，联系应用管理员。",
+                        "highlights": {
+                            "title": [],
+                            "content": [
+                                "开始之前，确保当前帐号已被分配所需的资产权限、操<span>作</span>权限点和包含 服务请求 在内的菜单组。如未分配，联系应用<span>管</span><span>理</span>员。"
+                            ]
+                        }
+                    },
+                    {
+                        "type": "section",
+                        "id": "id5",
+                        "title": "查看服务请求详情",
+                        "content": "可以以 只读方式 打开服务请求详情进行查看。具体步骤如下： 在左侧导航栏中，选择 服务请求 菜单，进入服务请求列表。 查找目标服务请求，选择 查看，以只读方式打开服务请求详情。详情展示信息与 管理服务请求 中相同，但只读方式下不可进行任何操作。 备注 具有删除权限的用户，在只读方式下也可以执行删除操作。",
+                        "highlights": {
+                            "title": [],
+                            "content": [
+                                "详情展示信息与 <span>管</span><span>理</span>服务请求 中相同，但只读方式下不可进行任何操<span>作</span>。 备注 具有删除权限的用户，在只读方式下也可以执行删除操<span>作</span>。"
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "page",
+                "project": "wmt-test-zh",
+                "project_alias": null,
+                "version": "2.2.0",
+                "title": "看不到部分服务请求或者工单",
+                "path": "/docs/wmt-test/zh_CN/2.2.0/troubleshooting/cannot_access_part_of_ticket.html",
+                "domain": "https://rtd-devops1.eniot.io",
+                "highlights": {
+                    "title": [
+                        "看不到部分服务请求或者<span>工</span>单"
+                    ]
+                },
+                "blocks": [
+                    {
+                        "type": "section",
+                        "id": "id3",
+                        "title": "解决方法",
+                        "content": "联系系统管理员申请授予对应场站的权限。",
+                        "highlights": {
+                            "title": [],
+                            "content": [
+                                "联系系统<span>管</span><span>理</span>员申请授予对应场站的权限。"
+                            ]
+                        }
+                    },
+                    {
+                        "type": "section",
+                        "id": "id1",
+                        "title": "看不到部分服务请求或者工单",
+                        "content": "为什么有部分服务请求和工单，OU 中的其他用户可以看到而我看不到。",
+                        "highlights": {
+                            "title": [
+                                "看不到部分服务请求或者<span>工</span>单"
+                            ],
+                            "content": [
+                                "为什么有部分服务请求和<span>工</span>单，OU 中的其他用户可以看到而我看不到。"
+                            ]
+                        }
+                    },
+                    {
+                        "type": "section",
+                        "id": "",
+                        "title": "看不到部分服务请求或者工单",
+                        "content": "const gitInfo = { language: 'zh-CN', gitLabEditHref: 'https://git.eniot.io/enos_docs/wmt_zh/blob/2.2.0/troubleshooting/cannot_access_part_of_ticket.md', gitHubEditHref: 'https://github.com/EnvisionIot/wmt_zh/blob/2.2.0/troubleshooting/cannot_access_part_of_ticket.md', bitbucketEditHref: 'https://bitbucket.org//wmt_zh/src/2.2.0/troubleshooting/cannot_access_part_of_ticket.md?mode=view' }",
+                        "highlights": {
+                            "title": [
+                                "看不到部分服务请求或者<span>工</span>单"
+                            ],
+                            "content": []
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+    console.log('3333333333')
+    const event = new CustomEvent('searchResult', { detail: { payload: result, payloadFunc: (result) => {console.log('000', result)} } });
+    window.dispatchEvent(event);
+  </script>
+ <!-- <script type="text/javascript" src="{{ pathto('_static/js/theme.bd790628fca24f6310a5.js', 1) }}"></script> -->
+
+</body>
+</html>
