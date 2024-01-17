@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: flake8-profiles
+Version: 0.2.0
+Summary: profiles for flake8
+Author-email: Leif Walsh <leif@twosigma.com>
+License: MIT License
+Project-URL: Source Code, https://github.com/twosigma/flake8-profiles
+Project-URL: Homepage, https://github.com/twosigma/flake8-profiles
+Project-URL: Issues, https://github.com/twosigma/flake8-profiles/issues
+License-File: LICENSE
+Requires-Dist: flake8
+Provides-Extra: dev
+Requires-Dist: flake8-docstrings ; extra == 'dev'
+Requires-Dist: pip-tools ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: sphinx ; extra == 'dev'
+Requires-Dist: sphinx-rtd-theme ; extra == 'dev'
+Requires-Dist: exceptiongroup ; extra == 'dev'
+Requires-Dist: importlib-metadata ; extra == 'dev'
+Requires-Dist: tomli ; extra == 'dev'
+
