@@ -1,0 +1,8 @@
+setup.py
+analysisapi.egg-info/PKG-INFO
+analysisapi.egg-info/SOURCES.txt
+analysisapi.egg-info/dependency_links.txt
+analysisapi.egg-info/requires.txt
+analysisapi.egg-info/top_level.txt
+wrapper/__init__.py
+wrapper/fastapiwrapper.py
