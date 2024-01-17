@@ -1,0 +1,6 @@
+py_openai_assistant/Assistant.py,sha256=LnzSQ9BOBfeUICZXbu8UW7jMF7vD-sCW1i6y3I8ISHE,5167
+py_openai_assistant/FileManager.py,sha256=44mjJOUmxhhPVd2dWgcSOcaHkL9T8W28H79l6F8Te5s,3477
+py_openai_assistant/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+py_openai_assistant-0.1.1.dist-info/METADATA,sha256=oIz_7WokDGKiOH0hQ6808UEWRaWnsOefTcKhFt7C2Mc,1638
+py_openai_assistant-0.1.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+py_openai_assistant-0.1.1.dist-info/RECORD,,
