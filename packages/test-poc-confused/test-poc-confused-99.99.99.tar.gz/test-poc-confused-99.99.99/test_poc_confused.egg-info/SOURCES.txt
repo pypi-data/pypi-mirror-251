@@ -1,0 +1,6 @@
+LICENSE
+setup.py
+test_poc_confused.egg-info/PKG-INFO
+test_poc_confused.egg-info/SOURCES.txt
+test_poc_confused.egg-info/dependency_links.txt
+test_poc_confused.egg-info/top_level.txt
