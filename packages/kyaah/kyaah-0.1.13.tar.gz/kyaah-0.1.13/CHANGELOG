@@ -1,0 +1,30 @@
+Change Log
+==========
+
+## 0.1.13 (16/january/2024)
+
+- 0.1.13 Release
+
+    - Add character style print (text & logging style)
+    - Add POP and IMAP
+    - Improve files naming slices
+    - Include email link (with expiration age)
+    - Changed the a required module of 'pstyle' to 'rgbpy'
+
+- 0.1.12 Release
+
+Docs
+
+- 0.1.11 Release
+
+Docs
+
+- 0.1.10 Release
+
+OS compatibility
+
+- 0.1.9 Release
+
+- 0.1.8 Release
+
+This release mostly is for adding more documentations.
