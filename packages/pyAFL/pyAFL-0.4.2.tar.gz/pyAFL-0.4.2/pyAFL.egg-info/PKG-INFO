@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: pyAFL
+Version: 0.4.2
+Summary: Python data fetching library for the Australian Football League
+Home-page: https://github.com/RamParameswaran/pyAFL
+Author: Ram Parameswaran
+Author-email: ram@findram.dev
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: setuptools==65.6.0
+Requires-Dist: wheel==0.38.4
+Requires-Dist: pip>=22.3.1
+Requires-Dist: Cython==0.29.32
+Requires-Dist: beautifulsoup4==4.11.1
+Requires-Dist: fuzzywuzzy==0.18.0
+Requires-Dist: html5lib==1.1
+Requires-Dist: lxml==4.9.1
+Requires-Dist: pandas==1.5.1
+Requires-Dist: pytest==7.2.0
+Requires-Dist: pytest-cov==2.10.1
+Requires-Dist: requests==2.24.0
+Requires-Dist: requests-cache==0.9.7
+
+pyAFL is a AFL (Australian Football League) data fetching libary. It scrapes data from https://afltables.com/ and converts results to structured Python objects for easier analytics.
