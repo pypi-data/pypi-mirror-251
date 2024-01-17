@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "kirkush"
+version = "0.1.2"
+description = ""
+authors = ["k4144 <k4144.github@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.9,<=3.12"
+notebook = "^7.0.6"
+import-ipynb = "^0.1.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
