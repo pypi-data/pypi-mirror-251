@@ -1,0 +1,8 @@
+estimate_population/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+estimate_population/population_estimator.py,sha256=rhPYEnVCJnwrzmGXWGD_BNEQwFyxa5-Ad43Whog64vI,1245
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_population_estimator.py,sha256=xv5epUGNurZij5-T9vYsloFoUPst5N3-W5TozuVzQrQ,671
+estimate_population-0.1.0.dist-info/METADATA,sha256=qp1oq6NSPF0wy-nkyN8QdEesxfczumO_bXfw6PDxU5M,167
+estimate_population-0.1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+estimate_population-0.1.0.dist-info/top_level.txt,sha256=42UpMCtrOtICbVhMfpII2MCfSc7Blf0o2Ociohmgd0c,26
+estimate_population-0.1.0.dist-info/RECORD,,
