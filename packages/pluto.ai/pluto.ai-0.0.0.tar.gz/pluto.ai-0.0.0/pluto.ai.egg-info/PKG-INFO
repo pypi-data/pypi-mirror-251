@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pluto.ai
+Version: 0.0.0
+Summary: ai in development
+Home-page: https://github.com/pluto/pluto
+Author: Pluto
+Author-email: pluto.ai@gmail.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+
+pluto.ai <in development>
