@@ -1,0 +1,16 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+slicemap/__init__.py
+slicemap/benchmarks.py
+slicemap/plotting.py
+slicemap/slicemap.py
+slicemap/test_all.py
+slicemap/test_docs_automated.py
+slicemap.egg-info/PKG-INFO
+slicemap.egg-info/SOURCES.txt
+slicemap.egg-info/dependency_links.txt
+slicemap.egg-info/requires.txt
+slicemap.egg-info/top_level.txt
