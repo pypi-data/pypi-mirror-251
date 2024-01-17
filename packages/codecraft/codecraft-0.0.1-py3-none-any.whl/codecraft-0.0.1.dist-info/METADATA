@@ -1,0 +1,115 @@
+Metadata-Version: 2.1
+Name: codecraft
+Version: 0.0.1
+Summary: AI code assistant to help you write code faster, cover it with tests and more
+License: MIT
+Author: Aleksandr Lifanov
+Author-email: lifanov@welltory.app
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: langchain (>=0.0.350,<0.0.351)
+Requires-Dist: openai (>=1.6.1,<2.0.0)
+Requires-Dist: prompt_toolkit (>=3.0.43,<4.0.0)
+Requires-Dist: pydantic (>=1.10.7,<2.0.0)
+Requires-Dist: pytest-cov (>=4.1.0,<5.0.0)
+Requires-Dist: pytest-xdist (>=3.5.0,<4.0.0)
+Requires-Dist: python-dotenv (>=1.0.0,<2.0.0)
+Requires-Dist: structlog (>=23.3.0,<24.0.0)
+Requires-Dist: termcolor (>=2.3.0,<3.0.0)
+Requires-Dist: tiktoken (>=0.3.3,<0.4.0)
+Requires-Dist: tree-sitter-languages (>=1.9.1,<2.0.0)
+Requires-Dist: yaspin (>=3.0.1,<4.0.0)
+Description-Content-Type: text/markdown
+
+# CodeCraft
+
+AI code assistant to help you write code faster, cover it with tests and more
+
+## Getting started
+
+```shell
+cd path/to/your/project
+pip install codecraft
+export OPENAI_API_KEY=your-key-goes-here
+```
+
+## Usage
+
+Once installed, codecraft can be run through its command-line interface.
+
+### Command-line Interface
+
+Run a codecraft session using the following command:
+
+```python
+codecraft
+```
+
+Optional Arguments:
+- -q or --query: Run with a specific query.
+- -c or --coverage: Run with coverage analysis.
+
+```shell
+codecraft --query "Your query here"
+codecraft --coverage
+```
+
+## Requirements
+
+ - python: 3.10+
+
+## First run
+
+On the first run `codecraft` create folder `.codecraft/prompts` with main prompts so you can tune prompts for your project
+
+Also `codecraft` will add `.codecraft` to `.gitignore` file - not to use prompts in GIT
+
+## Envs
+
+### CODECRAFT_MODEL_NAME
+
+Model name in OpenAI API to use
+
+### OPENAI_API_KEY
+
+API key for OpenAI API
+
+### CODECRAFT_COV_FOLDER
+
+Folder to use in coverage report (default: `.`)
+
+## Contributing
+
+Contributions to `codecraft` are welcome! Please read our contributing guidelines for details on how to submit pull requests
+
+### Clone repository
+
+```shell
+git clone ...
+```
+
+### Install dependencies
+
+```shell
+poetry install
+```
+
+### Use with your project
+
+```shell
+cd path/to/your/project
+pip install -e path/to/cloned/codecraft
+codecraft
+```
+
+## License
+
+`codecraft` is licensed under MIT License
+
+## Contact
+
+For any queries or suggestions, feel free to contact us at [hello@welltory.com]
