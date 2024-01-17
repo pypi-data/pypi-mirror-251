@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: neet-nanopore
+Version: 0.0.2
+Home-page: https://github.com/dietvin/neet
+Author: Vincent Dietrich
+Author-email: dietricv@uni-mainz.de
+License: LICENSE
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Operating System :: OS Independent
+Requires-Python: >3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: plotly ==5.18.0
+Requires-Dist: tqdm ==4.66.1
+Requires-Dist: intervaltree ==3.1.0
+Requires-Dist: scipy ==1.11.4
+Requires-Dist: pyfiglet ==1.0.2
+Requires-Dist: setuptools ==69.0.3
+Requires-Dist: pandas ==2.1.4
+
+# NEET - Nanopore Error pattern Exploration Toolkit
+
+The Nanopore Error pattern Exploration Toolkit (`NEET`) provides a range of functionalities that provide an easily accessible and interactive analysis approach for (systematic) base-calling errors in direct RNA nanopore sequencing data. The implemented modules include options for condensing, visualizing and differentiating error features contained in direct RNA sequencing data - including mismatch, deletion and insertion rates, among others.
+
+## Installation
+It is recommended to use Conda or Mamba for installation:
+```
+conda install neet 
+```
+For more information and alternative installation approaches refer to the [Wiki](https://github.com/dietvin/neet/wiki/01-Installation).
+
+## General usage
+Once installed `NEET` can be accessed via the terminal:
+```
+neet --help
+```
+Individual modules can be accessed as follows:
+```
+neet [MODULE] --help
+```
+Available modules are: Pileup Extractor (`extractor`), Summary (`summmary`), Position-of-Interest Analyzer (`analyzepoi`), Two-Sample Extractor (`twosample`), Position Summary (`possummary`), Filter (`filter`) and Bedops (`bedops`). 
+The modules are interconnected to provide different workflows for different scenarios. An overview of the main workflows is given below:
+
+![Main workflow overview](https://github.com/dietvin/neet/blob/main/images/workflow_overview.jpg)
+
+A detailled description of all available modules is provided in the [Wiki](https://github.com/dietvin/neet/wiki/02-Modules). The Wiki also provides [walkthroughs](https://github.com/dietvin/neet/wiki/03-Example-Workflows) for some possible use cases.
