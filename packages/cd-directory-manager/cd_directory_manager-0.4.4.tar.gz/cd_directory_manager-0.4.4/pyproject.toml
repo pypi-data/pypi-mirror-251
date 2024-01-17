@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cd_directory_manager"
+version = "0.4.4"  # Replace with your actual version
+description = "A package containing utilities for file and directory management, ZIP operations, and more."
+readme = "README.md"
+authors = [
+    { name = "Code Docta", email = "codedocta@gmail.com" },
+]
+license = { text = "MIT" }
+requires-python = ">=3.6"
+dependencies = [
+    "pyside6==6.5.3",
+    "pyqt6==6.5.2"
+]
+
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+homepage = "https://codedocta.com"
+Bug-Reports = "https://github.com/codedocta/cd_directory_manager/issues"
+Source = "https://github.com/codedocta/cd_directory_manager/"
+
