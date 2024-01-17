@@ -1,0 +1,15 @@
+venv
+.env
+!/tests/.env
+locales
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+dist
+
+/.tox
+/.coverage
+/coverage.xml
