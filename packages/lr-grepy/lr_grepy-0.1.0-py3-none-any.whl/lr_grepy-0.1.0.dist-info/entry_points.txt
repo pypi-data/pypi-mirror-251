@@ -1,0 +1,2 @@
+[console_scripts]
+grepy = grepy.cli:main

@@ -1,0 +1,9 @@
+grepy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+grepy/cli.py,sha256=_UIYE6gNL2f4o1bIyySyh1IestVa0vVZH7cMVZso4N0,2665
+grepy/grep.py,sha256=lRY4azTrhWuv7wdL6Pt5kPuJWjhRNQFasPDEp8aXUhc,2364
+lr_grepy-0.1.0.dist-info/LICENSE,sha256=olH-o4AFSskPksfmDhqrQMWUv54ozqIaJvp6X-g2TkY,1065
+lr_grepy-0.1.0.dist-info/METADATA,sha256=ZYZ-UbIyo5X5dEaJNRVV4n2T-Pb_zIrl8atlpiYh2Yg,259
+lr_grepy-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+lr_grepy-0.1.0.dist-info/entry_points.txt,sha256=_3wtS2WQ4tJIe-L10SH-lDTyEma-TnMejLx_DMkYcDU,41
+lr_grepy-0.1.0.dist-info/top_level.txt,sha256=T9EMs8vwkhN9cODtl2xCkB7-m7lCvW6ZplWGxhRN80s,6
+lr_grepy-0.1.0.dist-info/RECORD,,
