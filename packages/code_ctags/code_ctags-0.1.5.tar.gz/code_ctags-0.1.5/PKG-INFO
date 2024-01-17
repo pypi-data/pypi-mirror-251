@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: code_ctags
+Version: 0.1.5
+Summary: output the labels of functions, classes, variables, etc. of all files currently downloaded to the terminal
+Author-Email: SengMitnick <sengmitnick@163.com>
+License: MIT
+Requires-Python: >=3.9
+Requires-Dist: networkx>=3.2.1
+Requires-Dist: configargparse>=1.7
+Requires-Dist: tqdm>=4.66.1
+Requires-Dist: numpy>=1.25.2
+Requires-Dist: scipy>=1.9.3
+Requires-Dist: pygments>=2.16.1
+Description-Content-Type: text/markdown
+
+# code-ctags
+
+output the labels of functions, classes, variables, etc. of all files currently downloaded to the terminal
