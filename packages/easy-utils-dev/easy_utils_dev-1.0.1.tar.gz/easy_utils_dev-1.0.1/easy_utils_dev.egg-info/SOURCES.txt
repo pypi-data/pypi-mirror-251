@@ -1,0 +1,9 @@
+setup.py
+easy_utils_dev.egg-info/PKG-INFO
+easy_utils_dev.egg-info/SOURCES.txt
+easy_utils_dev.egg-info/dependency_links.txt
+easy_utils_dev.egg-info/top_level.txt
+easy_utils_npi/__init__.py
+easy_utils_npi/debugger.py
+easy_utils_npi/simple_sqlite.py
+easy_utils_npi/utils.py
