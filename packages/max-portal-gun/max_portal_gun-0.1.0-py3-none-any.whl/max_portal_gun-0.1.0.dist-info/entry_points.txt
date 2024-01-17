@@ -1,0 +1,3 @@
+[console_scripts]
+max-portal-gun=max_portal_gun.main:app
+
