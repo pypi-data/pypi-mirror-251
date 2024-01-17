@@ -1,0 +1,4 @@
+[console_scripts]
+ifpd2=ifpd2q.scripts.ifpd2:main
+ifpd2-autocomplete=ifpd2q.scripts.autocomplete:main
+
