@@ -1,0 +1,29 @@
+echo "Started WDL code static analysis"
+
+echo "womtool start..."
+womtool_in_docker="/validatetools/womtool.jar"
+womtool_ver="86"
+womtool_local="womtool-${womtool_ver}.jar"
+
+if [ -f "$womtool_in_docker" ]; then
+    java -jar "$womtool_in_docker" validate $1
+else
+    wget -nc https://github.com/broadinstitute/cromwell/releases/download/${womtool_ver}/womtool-${womtool_ver}.jar
+    java -jar "$womtool_local" validate $1
+fi
+
+echo "womtool has finished it's job"
+
+echo "wdlTools start..." 
+wdlTools_in_docker=/validatetools/wdlTools.jar
+wdlTools_ver="0.17.16"
+wdlTools_local="wdlTools-${wdlTools_ver}.jar"
+
+if [ -f "$wdlTools_in_docker" ]; then
+    java -jar "$wdlTools_in_docker" check $1
+else
+    wget -nc https://github.com/dnanexus/wdlTools/releases/download/${wdlTools_ver}/wdlTools-${wdlTools_ver}.jar
+    java -jar "$wdlTools_local" check $1
+fi
+
+echo "wdlTools has finished it's job"

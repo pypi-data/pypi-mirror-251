@@ -1,0 +1,10 @@
+current_branch=$(git rev-parse --abbrev-ref HEAD)
+
+number_author=$(git shortlog origin/$current_branch..origin/dev -s)
+
+commits_count=$(awk '{sum+=$1} END {print sum}' <<< $number_author)
+
+if [ "$commits_count" -gt "0" ]; then
+    echo "There is the count of ${commits_count} [commits] behind the target branch"
+    exit 38
+fi
