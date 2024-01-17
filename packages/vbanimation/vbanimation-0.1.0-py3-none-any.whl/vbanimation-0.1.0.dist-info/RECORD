@@ -1,0 +1,9 @@
+vbanimation/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vbanimation/__main__.py,sha256=yv3Fq7PLe9nNlo8neUaTs9LRmcsujdA62O_7qfGCrdk,58
+vbanimation/functions.py,sha256=U8tNrWKqAvas8uzJBkiL1sNEEBZfU3xAcmwkQTj357U,7553
+vbanimation/main.py,sha256=U9YlmvKZb7HFMipyYuqqq3P_-m6fHQowSkn_vQRLsyo,774
+vbanimation/manim.cfg,sha256=JknrRS3xgRqjCs9dKeMhkB7lBiAsuTH6wx6Tiox6JzE,139
+vbanimation-0.1.0.dist-info/METADATA,sha256=w_ywetO0-fN6A1sbKEFKIAHYItkC10d8Tj2uW8aBEc0,524
+vbanimation-0.1.0.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+vbanimation-0.1.0.dist-info/entry_points.txt,sha256=H1TBQxZLmRyG3UX8C5B6qvwmf6z1M0Kkbf9_0xxPnMQ,53
+vbanimation-0.1.0.dist-info/RECORD,,
