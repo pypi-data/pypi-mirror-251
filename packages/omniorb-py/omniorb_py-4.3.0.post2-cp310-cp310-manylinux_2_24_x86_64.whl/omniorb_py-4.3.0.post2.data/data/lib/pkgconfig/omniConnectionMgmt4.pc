@@ -1,0 +1,11 @@
+prefix=/build-wheel
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: omniConnectionMgmt4
+Description: Connection management extension for omniORB4
+Version: 4.3.0
+Requires: omniORB4
+Libs: -L${libdir} -lomniConnectionMgmt4
+Cflags:

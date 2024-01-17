@@ -1,0 +1,6 @@
+OmniORB
+bin
+include
+lib
+setup
+share
