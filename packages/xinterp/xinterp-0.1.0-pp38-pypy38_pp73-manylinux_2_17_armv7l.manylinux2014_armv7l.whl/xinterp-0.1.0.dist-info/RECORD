@@ -1,0 +1,6 @@
+xinterp-0.1.0.dist-info/METADATA,sha256=LKGXNd3W7CrweSMKZmFWKvf1tn9Ra4hrFABtB5ScalM,1030
+xinterp-0.1.0.dist-info/WHEEL,sha256=tAnZjwXxa_sbqLKkxzlGWlXHpFATgDImVA_MHJ1jf_M,134
+xinterp/core.py,sha256=9hQUyidrvPMsw0B1TRrxuCBq-rUYwiB7WjFdVFgI8kU,1557
+xinterp/__init__.py,sha256=ETZRYY2I75NRaaLSguD6O1RA72xED_GZiks9mgW0KEc,47
+xinterp/rust.pypy38-pp73-arm-linux-gnu.so,sha256=1oRR4AJYrBZcdhrNvV7ADXrFYJj1ZocJQKfOl6WUC10,4371476
+xinterp-0.1.0.dist-info/RECORD,,
