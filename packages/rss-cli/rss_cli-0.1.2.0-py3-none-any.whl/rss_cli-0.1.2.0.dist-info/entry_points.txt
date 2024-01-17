@@ -1,0 +1,4 @@
+[console_scripts]
+rss=rss_cli.__main__:main
+rss-cli=rss_cli.__main__:main
+
