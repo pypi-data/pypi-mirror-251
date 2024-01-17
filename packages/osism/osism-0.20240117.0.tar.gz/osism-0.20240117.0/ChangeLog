@@ -1,0 +1,7 @@
+CHANGES
+=======
+
+v0.20240117.0
+-------------
+
+* Fix call of mariadb backup role (#767)
