@@ -1,0 +1,17 @@
+NC="\033[0m" # No Color
+PURPLE="\033[0;35m"
+
+echo -e "---------------------------------------"
+echo -e "* ${PURPLE}Welcome to the qBraid Lab Terminal!${NC} *"
+echo -e "---------------------------------------"
+echo -e ""
+echo -e "        ____            _     _  " 
+echo -e "   __ _| __ ) _ __ __ _(_) __| | "
+echo -e "  / _  |  _ \|  __/ _  | |/ _  | " 
+echo -e " | (_| | |_) | | | (_| | | (_| | " 
+echo -e "  \__  |____/|_|  \__ _|_|\__ _| "
+echo -e "     |_|                         "
+echo -e ""
+echo -e ""
+echo -e "Use \`qbraid -h\` to see available CLI commands."
+echo -e ""
