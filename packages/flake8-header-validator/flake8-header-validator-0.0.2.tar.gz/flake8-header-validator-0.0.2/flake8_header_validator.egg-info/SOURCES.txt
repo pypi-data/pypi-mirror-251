@@ -1,0 +1,11 @@
+LICENSE
+README.md
+flake8_copyright_validator.py
+setup.cfg
+setup.py
+flake8_header_validator.egg-info/PKG-INFO
+flake8_header_validator.egg-info/SOURCES.txt
+flake8_header_validator.egg-info/dependency_links.txt
+flake8_header_validator.egg-info/entry_points.txt
+flake8_header_validator.egg-info/requires.txt
+flake8_header_validator.egg-info/top_level.txt

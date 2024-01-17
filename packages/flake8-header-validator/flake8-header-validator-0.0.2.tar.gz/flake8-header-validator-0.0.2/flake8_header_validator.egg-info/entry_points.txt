@@ -1,0 +1,2 @@
+[flake8.extension]
+NCF = flake8_header_validator:CopyrightValidator
