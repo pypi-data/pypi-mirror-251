@@ -1,0 +1,17 @@
+[project]
+name = "dash_hash"
+version = "1.5.1"
+authors = [
+    { name="Pshen Mic", email="pshenmic@gmail.com" },
+]
+description = "Python module for Dash's X11 hashing"
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/dashpay/dash_hash"
+"Bug Tracker" = "https://github.com/dashpay/dash_hash/issues"
