@@ -1,0 +1,7 @@
+License.md,sha256=6kJEo06fhwU9uEd7a6GMWGKP-QWCBSf6YrimBcex1PY,1090
+ipytest/__init__.py,sha256=TDEVcv2Cnx6S8qS864azBVzcXMMSptFiRJUaTJKQxMQ,259
+ipytest/_config.py,sha256=VsdJi01y2-mRpu6abfmklBMDc6mM498TIQATvW9reN0,5209
+ipytest/_impl.py,sha256=I48f3zvItOd7PUhSNwOJrXB0oMIEiYqiOWCrneIEpOs,15879
+ipytest-0.14.0b1.dist-info/METADATA,sha256=eB7Jq3RxihG_IjHK1_gzgjCNRxj4iB3C8PKQSgMPfPk,15026
+ipytest-0.14.0b1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+ipytest-0.14.0b1.dist-info/RECORD,,
