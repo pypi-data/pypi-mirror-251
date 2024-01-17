@@ -1,0 +1,17 @@
+bayesian_mab/VERSION,sha256=atlhOkVXmNbZLl9fOQq0uqcFlryGntaxf1zdKyhjXwY,5
+bayesian_mab/__init__.py,sha256=99fkeHOJXoX_cOFAFuu68soaT1gZm_JOnR3MySJh8Fg,380
+bayesian_mab/arm.py,sha256=vVERyHZa2DjLP5sUVEfTSEZ6oeziO8JfPuwpNgkdpOQ,2428
+bayesian_mab/finisher.py,sha256=kjeeZCzEvwn4uPXbPkdSNVsJq1YI6GqGdasLrX0-qYo,4510
+bayesian_mab/models.py,sha256=Ysivnm6yy-FN63ksVHaqZR4c7I1Q7HupcAZUcqzRYAs,236
+bayesian_mab/multi_armed_bandit.py,sha256=hdQFucRGbH9CLuw_PgNxjChcFaxJRiZ7EYqG1cwejT8,4331
+bayesian_mab/reward.py,sha256=km_Oxqf2jXrntCSzloM92ObW_deHtbf934ajqU-2WAs,2311
+bayesian_mab/tracker.py,sha256=sS8vyo8t3FbnQqaBxgaMRfc02_xxgBQw77WPOLHNoAw,1758
+bayesian_mab/contrib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bayesian_mab/contrib/calc_bayesian_prob.py,sha256=q_UPC43by8W4jRv3ZMB__OZ_xav7Cc5M7YmX3aHjBho,852
+bayesian_mab/contrib/logger.py,sha256=vWSqb1Y1vun33Fh_q-oPWOkt9D3YsNzOPZTzHV4BnRg,898
+bayesian_mab-0.1.0.data/data/VERSION,sha256=atlhOkVXmNbZLl9fOQq0uqcFlryGntaxf1zdKyhjXwY,5
+bayesian_mab-0.1.0.dist-info/LICENSE,sha256=2_p6BOMf1ruBr0ML9U4nFrUKUg3Lyr9rinF5X-XEhZI,1078
+bayesian_mab-0.1.0.dist-info/METADATA,sha256=1TBYO_m-gOhpc5PfovgKJ93225bpkkUPS8qpf1IdTqM,4101
+bayesian_mab-0.1.0.dist-info/WHEEL,sha256=Xo9-1PvkuimrydujYJAjF7pCkriuXBpUPEjma1nZyJ0,92
+bayesian_mab-0.1.0.dist-info/top_level.txt,sha256=e8vfYL28mfgFndwUiFPVcbO62Bty-StOThdSVVt8XyE,13
+bayesian_mab-0.1.0.dist-info/RECORD,,
