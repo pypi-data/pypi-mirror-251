@@ -1,0 +1,27 @@
+[project]
+name = "LMchain"
+version = "0.1.77"
+authors = [
+  { name="xiaohuaWang", email="5847713@qq.com" },
+]
+description = "A large chinese freelanguage chain tools,you can get free API from:open.bigmodel.cn"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies =[
+    'uvicorn>= 0.23.2',
+    'fastapi>=0.108.0',
+    'numexpr>=2.8.7',
+    'langchain>=0.1.0',
+    'zhipuai>=1.0.7',
+    'nltk>=3.8.1'
+]
+
+[project.urls]
+"Homepage" = "https://github.com/virgo777/lmchain"
+"Bug Tracker" = "https://github.com/virgo777/lmchain/issues"
