@@ -1,0 +1,8 @@
+requests
+requests_toolbelt
+pycryptodome
+websockets
+protobuf<4,>3
+
+[flask]
+Flask>=2
