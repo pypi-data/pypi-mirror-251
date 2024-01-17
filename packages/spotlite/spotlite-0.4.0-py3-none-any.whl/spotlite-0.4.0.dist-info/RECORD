@@ -1,0 +1,11 @@
+spotlite/__init__.py,sha256=CQpt98ws1ew0WqB7G9LBgq0l-X1drIdD6JoHRvGChzA,268
+spotlite/monitor.py,sha256=zO_jjvPUpCfGxgBFoChwRgxrbfMw9DGHrOylJhc4bKI,15973
+spotlite/search.py,sha256=YyS4qyD5yI4ZGN7-uYs7JKMu10qwBcdgAr7iYhXDCs8,9993
+spotlite/spotlite.py,sha256=xlsniMgv9sN3nW0X0nEqqBXECBYWNFhlk-wWMmtglrs,13200
+spotlite/task.py,sha256=WdQcV6XGRC2nnpN_-RoZd-mpasjrn89CbWidozMTpBo,15422
+spotlite/tile.py,sha256=xxoNK6ecV-z_PWxvure_KQrGBFZ1IEy5rJlNfBFFLp4,40992
+spotlite-0.4.0.dist-info/LICENSE,sha256=76iir2B7BDLOgrxPfjeJ5egNJbwNxTE4_KYn6n_op6o,1076
+spotlite-0.4.0.dist-info/METADATA,sha256=cRnrFFyTTgiFr3R2ceO8nnqsytgZ3rBlSjIigiRWE4c,5350
+spotlite-0.4.0.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+spotlite-0.4.0.dist-info/top_level.txt,sha256=NyJr4YOgNGmFASYlA-jN1Z3oFAY6d6LB1FIoakHuN0I,9
+spotlite-0.4.0.dist-info/RECORD,,
