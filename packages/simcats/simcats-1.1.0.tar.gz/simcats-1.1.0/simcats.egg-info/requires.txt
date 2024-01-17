@@ -1,0 +1,8 @@
+bezier
+colorednoise
+diplib
+matplotlib
+numpy
+opencv-python
+scipy
+sympy
