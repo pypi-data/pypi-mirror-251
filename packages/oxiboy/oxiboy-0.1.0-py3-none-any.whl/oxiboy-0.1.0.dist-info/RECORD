@@ -1,0 +1,10 @@
+oxiboy/__init__.py,sha256=ZBVhZ4xqsZvUMRiIFjc1Img1lAKL2RKEodEeCUKnSr8,20
+oxiboy/app.py,sha256=O74CHk5vnQKa5bbqkK1KvCwHekI5bdo21VnQlLmnRnY,421
+oxiboy/migrations/README,sha256=JL0NrjOrscPcKgRmQh1R3hlv1_rohDot0TvpmdM27Jk,41
+oxiboy/migrations/alembic.ini,sha256=SjYEmJKzz6K8QfuZWtLJAJWcCKOdRbfUhsVlpgv8ock,857
+oxiboy/migrations/env.py,sha256=kZkrijkFGOPiSb3H9PGzvjJJ7Qw6LqkQTRkYVS6pU5E,2767
+oxiboy/migrations/script.py.mako,sha256=8_xgA-gm_OhehnO7CiIijWgnm00ZlszEHtIHrAYFJl0,494
+oxiboy/migrations/versions/ec938bba34d4_initial_migration.py,sha256=SRkyaJWBIL19Lwb9rlcKQpD1QNsiVFhk-BUkpx5HpdA,724
+oxiboy-0.1.0.dist-info/METADATA,sha256=eAokF_-ZaN1FdFWpBNAMnKdFMcEq1qotsINSwY-Jzis,550
+oxiboy-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+oxiboy-0.1.0.dist-info/RECORD,,
