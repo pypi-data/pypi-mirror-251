@@ -1,0 +1,6 @@
+bigquery_wrapper/__init__.py,sha256=ZjhrT7IOGtMdnsTUwjIPNdfPKxJVCeO4un8Sy7N-kL0,83
+bigquery_wrapper/bigquery_wrapper.py,sha256=FY9Re33jNrx9RgnVpiIZN57NxByFSY1DkAYX47I6pC8,1631
+bigquery_wrapper_gcp-0.0.6.dist-info/METADATA,sha256=bmv64SDlwDsD9SU-6FIYlYIPUo18pZkWpt4x3tzvbVc,566
+bigquery_wrapper_gcp-0.0.6.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+bigquery_wrapper_gcp-0.0.6.dist-info/top_level.txt,sha256=LYj8G0ZU12iyyRKP5vDvbR_TA88iGBEfmoQs18tPssA,17
+bigquery_wrapper_gcp-0.0.6.dist-info/RECORD,,
