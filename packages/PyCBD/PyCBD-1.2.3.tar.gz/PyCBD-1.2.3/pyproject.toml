@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"*" = ["*.dll", "*.pyd"]
+
+[project]
+name = "PyCBD"
+version = "1.2.3"
+authors = [
+  { name="Michaël Hillen", email="michael.hillen@uantwerpen.be"},
+  { name="Ivan De Boi", email="ivan.deboi@uantwerpen.be"},
+  { name="Edgar Cardenas", email="edgar.cardenas@uantwerpen.be"},
+  { name="Thomas De Kerf", email="thomas.dekerf@uantwerpen.be"},
+  { name="Seppe Sels", email="seppe.sels@uantwerpen.be"},
+  { name="Jona Gladines", email="jona.gladines@uantwerpen.be"},
+  { name="Rudi Penne", email="rudi.penne@uantwerpen.be"},
+  { name="Steve Vanlanduit", email="steve.vanlanduit@uantwerpen.be"},
+  { name="Gunther Steenackers", email="gunther.steenackers@uantwerpen.be"}
+]
+description = "PyCBD: Python checkerboard detection toolbox"
+readme = "README.md"
+requires-python = "~=3.8, ~=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    'numpy >= 1.20.0, <= 1.23.5',
+    'matplotlib',
+    'scikit-learn',
+    'scipy',
+    'opencv-python',
+    'gpy',
+]
+
+[project.urls]
+"Source" = "https://github.com/InViLabUAntwerp/PyCBD"
