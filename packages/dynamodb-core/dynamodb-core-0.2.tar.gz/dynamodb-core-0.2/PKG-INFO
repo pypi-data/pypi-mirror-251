@@ -1,0 +1,101 @@
+Metadata-Version: 2.1
+Name: dynamodb-core
+Version: 0.2
+Summary: UNKNOWN
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+
+# dynamodb_core
+
+python application packaging with dynamodb
+
+his package provides an interface to interact with DynamoDB. It allows you to create tables, insert data and perform queries.
+
+
+## Requeriments
+
+- Python 3.6 or higher
+- A running DynamoDB instance
+## Installation
+
+You can install this package with pip:
+
+```sh
+pip install dynamodb_core
+
+## Deployment
+
+To use this package, you will need to have a running DynamoDB instance
+
+option 1:
+
+- java -Djava.library.path=./DynamoDBLocal_lib -jar DynamoDBLocal.jar -sharedDb
+
+remember that it must be executed in the directory where dynamodb-local was hosted.
+
+option 2:
+
+ You can start DynamoDB locally with Docker using the following command:
+
+- docker run -d -p 8000:8000 amazon/dynamodb-local
+
+
+## Running Tests
+
+Once your DynamoDB instance is running, you can use the package as follows:
+
+from dynamodb_core import create_table, insert_data, query_example1, query_example2 
+
+# Create a table
+create_table.create_table()
+
+# Insert data
+insert_data.write_data()
+
+# Perform queries
+key = '2020-01-01-01' #these keys are trial keys
+sort_key = 'dc815571-5d6d-44b1-8e1c-5816d6255f49'
+result1 = query_example1.query_table(key)
+result2 = query_example2.query_table(key, sort_key)
+
+
+## Documentation
+
+if you have already created the table more than once and it generates an error you can use this form in your test.py:
+--------------------------------------------------------------------------------
+from dynamodb_core import create_table, insert_data, query_example1, query_example2 
+import botocore.exceptions # import botocore.exceptions
+
+try:
+    print("Creating the table...")
+    create_table.create_table()
+    print("Table created successfully.")
+except botocore.exceptions.ClientError as e:
+    if e.response['Error']['Code'] != 'ResourceInUseException':
+        raise # If the error is not a ResourceInUseException, throw the exception.
+
+# Now you can call the functions of your package
+print("Inserting data...")
+insert_data.write_data() # Call write_data instead of insert
+print("Data inserted successfully.")
+
+# Define your keys
+key = '2020-01-01-01-01'
+sort_key = 'dc815571-5d6d-44b1-8e1c-5816d6255f49'
+
+# Pass the keys to the query functions
+print("Querying with query_example1...")
+result1 = query_example1.query_table(key,)
+print("Result of query_example1:", result1)
+
+print("Querying with query_example2...")
+result2 = query_example2.query_table(key, sort_key)
+print("Result of query_example2:", result2)
+
+---------------------------------------------------------------------------------
+remember that you must have an instance of dynamodb-local to be able to run the application correctly here is the link to the official website: 
+- https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBLocal.html
+
