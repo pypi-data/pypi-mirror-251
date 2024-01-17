@@ -1,0 +1,135 @@
+Metadata-Version: 2.1
+Name: fuzzy_PaulUTC
+Version: 0.0.4
+Summary: Package pour traiter les mathématiques du floue.
+Home-page: https://github.com/Popolito2/fuzzy
+Author: Paul Coulombel
+Author-email: paul.coulombel@etu.utc.fr
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+"# fuzzy" 
+Documentation de la bibliothèque fuzzy de python
+
+Première partie : La création de système flou
+
+La fonction creerExcel() du module permet de créer un Excel dans le dossier du programme. Cet Excel comporte 3 parties : 
+-	Les entrées
+-	La sortie
+-	Les règles
+
+Les entrées :
+Tout d’abord, il faut remplir le nombre d’entrées de votre système flou. Ensuite, pour chaque entrée, il faut remplir le nom de l’entrée (/!\ : ce nom doit être le même dans le programme et sur l’Excel), les bornes du système flou et les classes. Comme l’image ci-dessus nous le montre, il y a 3 types de classes différentes, pour chaque type, le tableau nous montre quels paramètres remplir.
+
+INFORMATIONS COMPLEMENTAIRES :
+-	Chaque tableau doit être éloigné d’une colonne par rapport au précédent.  
+-	Un nombre illimité de classes peuvent être rajoutée, c’est la case « XXX » qui termine la partie « Les entrées ».
+-	Si une des entrées est déjà fuzzifiée, seule la colonne des noms des règles doit être remplie (même nom que les sorties du système flou précédent).
+-	Il est important de garder la partie sous « Les entrées » vide (entre les 2 « XXX »).
+
+La sortie :
+
+
+
+
+
+
+
+
+
+
+Pour cette partie, il faut remplir le nom de la sortie et des conséquences. Tout comme les entrées, un nombre quelconque de conséquences peuvent être notée tant qu’elles sont dans la partie « Sortie » (entre les 2 lignes « XXX »).
+
+Les règles :
+Chaque colonne correspond à une entrée, sauf la dernière que correspond à la sortie. Remplir ensuite le tableau avec les noms des classes (resp. Conséquences) des entrées (resp. Sortie). 
+/!\ : Chaque nom de classes, d’entrées… doit être exactement le même que plus haut dans les parties précédentes.
+
+
+
+
+
+
+
+
+
+
+
+
+Deuxième partie : Les fonctions
+
+Liste des fonctions : 
+-	 ajoutExcel
+-	creationSF
+-	fuzzifier
+-	max_min_intersection
+-	AlgoZalilaGeneralise
+-	defuzzification_Barycentre
+-	defuzzification_Maximum
+
+ajoutExcel
+Cette fonction ne prend aucun paramètre en entrée et ajoute l’Excel permettant de rentrer les informations d’un système flou dans le dossier du programme. (Cette fonction ne renvoie rien).
+Exemple : creerExcel()
+
+
+creationSF
+Cette fonction prend en entrée le nom de l’Excel d’un système flou. Ce sera ce nom qui sera affiché lors de l’affichage des conséquences. 
+
+Exemple : creationSF(‘exemple’)
+Return : Informations du système flou
+
+
+fuzzifier
+Cette fonction retourne un dictionnaire avec comme clé les entrées du système flou et comme valeur un dictionnaire (Nom de la classe => valeur). /!\ : Si une valeur est à l’extérieure des bornes fixées dans l’Excel, le programme ramènera automatiquement ces valeurs aux bornes les plus proches.
+Elle prend en paramètre :
+-	Un dictionnaire avec comme clé : le nom de l’entrée que vous voulez fuzzifier et comme valeur : la valeur de l’entrée.
+-	Le système flou utilisé.
+
+Exemple : fuzzifier( {'Quantité eau': 1.8, 'Équivalent CO2': 7}, SF1)
+Return : {'Quantité eau': {'Beaucoup': 0, 'Moyen': 0.79, 'Peu': 0}, 'Équivalent CO2': {'Nul': 0.29, 'Très faible': 0.7, 'Faible': 0, 'Moyen': 0, 'Fort': 0, 'Très fort': 0}}
+
+max_min_intersection
+Cette fonction retourne un dictionnaire avec comme clé les entrées du système flou et comme valeur un dictionnaire (Nom de la classe => valeur). 
+Elle prend en paramètre :
+-	Un dictionnaire avec comme clé : le nom de l’entrée que vous voulez fuzzifier et comme valeur : une liste du nombre flou (même notation que dans l’Excel). /!\ : Dans la version 1, on ne peut fuzzifier que des nombres triangulaires, trapézoïdaux ou gaussiens (on peut les mélanger entre eux).
+-	Un dictionnaire avec comme clé : le nom de l’entrée que vous voulez fuzzifier et comme valeur : une chaine de caractère exprimant la forme de nombre flou (« Triangulaire », « Trapézoïdale » ou « Gaussienne » (avec cette écriture précisément).
+-	Le système flou utilisé.
+
+Exemple : max_min_intersection( { 'Eau': [0,1,2,1], 'Poussière': [0,1,0,1,1]}, {'Eau' :  'Triangulaire', 'Poussière' :  'Gaussienne'}, SF1)
+Return : {'Quantité eau': {'Beaucoup': 0, 'Moyen': 0.79, 'Peu': 0}, 'Équivalent CO2': {'Nul': 0.29, 'Très faible': 0.7, 'Faible': 0, 'Moyen': 0, 'Fort': 0, 'Très fort': 0}}
+
+
+AlgoZalilaGeneralise
+Cette fonction calcul les conséquences du système flou avec l’algorithme de Zalila généralisée.
+Elle prend en paramètre :
+-	Un dictionnaire des valeurs fuzzifiées (nom de l’entrée => valeur entre 0 et 1).
+-	Le système flou utilisé.
+-	La fonction T-norme utilisée sous forme de chaine de caractère. Le module connaît déjà le min et la T-norme probabiliste. Il est possible de mettre une T-norme crée soi-même (Voir à la fin des fonctions).
+-	Une chaine de caractère (vide si la fonction voulue est min ou probabiliste).
+-	Un booléen qui vaut True si l’on veut afficher le résultat des conséquences de cet algorithme.
+Les 2 derniers paramètres ne sont pas obligatoires.
+
+Exemple : AlgoZalilaGeneralise( {'Quantité eau': {'Beaucoup': 0, 'Moyen': 0.79, 'Peu': 0}, 'Équivalent CO2': {'Nul': 0.29, 'Très faible': 0.7, 'Faible': 0, 'Moyen': 0, 'Fort': 0, 'Très fort': 0}}, SF1, « probabiliste »)
+Return : {'Très bon': 0, 'Bon': 0.13, 'Neutre': 0.57, 'Mauvais': 0.0, 'Très mauvais': 0.0, 'Nul': 0.0}
+defuzzification_Barycentre
+Cette fonction défuzzifie par barycentre les conséquences d’un système. Ces entrées doivent être des float. 
+Elle prend en entrée un dictionnaire des valeurs fuzzifiées.
+Exemple : defuzzification_Barycentre ({ '5': 0, '7': 0.13, '9': 0.57, '11': 0.0, 13': 0.0, '15': 0.0})
+Return : 8.63
+
+defuzzification_Maximum
+Cette fonction défuzzifie par barycentre les conséquences d’un système. Ces entrées doivent être des float. 
+Elle prend en entrée un dictionnaire des valeurs fuzzifiées.
+Exemple : defuzzification_Maximum ( {'Très bon': 0, 'Bon': 0.13, 'Neutre': 0.57, 'Mauvais': 0.0, 'Très mauvais': 0.0, 'Nul': 0.0})
+Return : « Neutre »
+
+
+Troisième partie : Choix de la T-norme dans l’algorithme de Zalila généralisé
+
+Il est possible de choisir la T-norme de l’algorithme. Pour ce faire, il faut créer la T-norme et la coder dans un fichier python. Ce fichier python et cette fonction doivent porter exactement le même nom. 
+Cette fonction doit prendre en entrée une liste contenant les valeurs à « T-normiser ». Elle devra retourner le résultat du calcul (float, int…).
+Le chemin d’accès de ce fichier devra être spécifié en appelant la fonction AlgoZalilaGeneralise.
+Exemple : AlgoZalilaGeneralise( {'Quantité eau': {'Beaucoup': 0, 'Moyen': 0.79, 'Peu': 0}, 'Équivalent CO2': {'Nul': 0.29, 'Très faible': 0.7, 'Faible': 0, 'Moyen': 0, 'Fort': 0, 'Très fort': 0}}, SF1, « T-norme », « C:/Users/Utilisateur/Documents/utc/ »)
