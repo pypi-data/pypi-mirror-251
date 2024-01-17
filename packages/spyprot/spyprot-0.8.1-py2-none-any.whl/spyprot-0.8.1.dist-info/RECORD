@@ -1,0 +1,17 @@
+spyprot/Command.py,SHA256=uQRtgzPMHRTuo1AighElbeBJvhvCP0q2y6jt3xTfmfM,4901
+spyprot/EditPdbXyz.py,SHA256=2btsdDIbEi_v9176ibrR5NBLyn2-xMfWcER2I1_JPeg,2866
+spyprot/__init__.py,SHA256=DejefbjzD1rNWM2RLvzExG4Ee68mjIKbDeVNAzYLFEs,236
+spyprot/cddf_parser.py,SHA256=x9f80MgeUHzUXeTf-umRY0LjE0xO7B1Kv1NpJGqlPyc,2207
+spyprot/cif2Wanda.py,SHA256=ICIwt-51mu76iu5jp1TJysnlYPzCoR9xfdR2yHeqB9s,16188
+spyprot/common.py,SHA256=NCdgf5eMezYyverxG-QvE6MvUAstzmVs3eyj7r8dPEw,1907
+spyprot/fetchAnnotations.py,SHA256=uyJFF0PR0F2EQd3bXZVKpKJgIKWeI2TN3b5TN0Tpkw8,15507
+spyprot/fetchChainInfo.py,SHA256=fZ5eRyI7tpAkcLmz-h3OrsFnsZ1KadN1o8MjMYF5cSE,18786
+spyprot/fetchPDBinfo.py,SHA256=H3KPwHT1wmndgsdNYWoeDLFdzjTJxRXcSnRI0D__UoY,18861
+spyprot/idMapping.py,SHA256=Q_LOrUQp8QebUbZDtIRM1ZB1wWTIQZFbRy4pmVvbj2Q,10055
+spyprot/ilbsm_database_downloader.py,SHA256=26uqeFkf23KFtdDdJJjB9o-Ao49Iq3mE2mqmbK_3ZJA,1934
+spyprot/pdb2Wanda.py,SHA256=rsfgY_j8fOpW244DVQ6dyrZPe4tnLd9EIEG0SOiUmDo,21142
+spyprot/spyProt.py,SHA256=BqY6LAnJSm-44-mb5KkCvNmr4kaFjTvsIGqBPKc74b4,15140
+spyprot-0.8.1.dist-info/METADATA,SHA256=jXGEbL6FGQf_wunlO2A1Y1GSBbXaf3PclwHi5XlPZOk,1415
+spyprot-0.8.1.dist-info/WHEEL,SHA256=VhhiOZJcX29D2aGhpQ_ikp0MeMjicMLDi6oJVVwsu5I,86
+spyprot-0.8.1.dist-info/top_level.txt,SHA256=_JSz314Is19_4IVMW8VzAtpHCueCVF2yP6Lz7aQAYug,8
+spyprot-0.8.1.dist-info/RECORD,,
