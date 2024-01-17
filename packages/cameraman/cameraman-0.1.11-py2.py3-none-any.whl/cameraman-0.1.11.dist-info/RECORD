@@ -1,0 +1,17 @@
+cameraman/__init__.py,sha256=gjt08dIzvIi2Q-DW4dL1ZwDgeaIdIKYbvClF7OdUhiU,134
+cameraman/cameraman.py,sha256=l0VV0DUnoqrpjbN1oRzy2cAfBVVnr8CssamkdjFalKM,554
+cameraman/helpers.py,sha256=K9DCYDB1eRc0Z52eVAZhZqhLv8fIqC5C_31jtGsbHGQ,6942
+cameraman/cli/__init__.py,sha256=u8JpPOKi27dLsZ6DDVHYTfKrjoMXOhMg2ulx4YgHgyY,1456
+cameraman/cli/config.py,sha256=GjYpll6AVfUYYTzbYSkK40401lirCdqGDr_KUa00tS4,3709
+cameraman/cli/inventory.py,sha256=2DXwWMKnZUy0v-USHWZXFwHOsaeh5XHFywoDGmGoI_s,4016
+cameraman/cli/main.py,sha256=0RS1x97zid1alDia488OVgyjoYxnnI_i5mTZlD8syz0,1561
+cameraman/cli/setup.py,sha256=SVGZ9R0disg6OBl8AnBdzbvUEFNhDW5pv8JrgnhpmKI,3850
+cameraman/cli/wingdbstub.py,sha256=I3By1QTw627OKwcf2aUX61lrqfQE15FJZhy1mDBskEU,17377
+cameraman/cli/workspace.py,sha256=ze6_MNVZe3s0szY8r-MPRalvtxcQWqZO2d1FMDKLqh0,3368
+cameraman-0.1.11.dist-info/AUTHORS.rst,sha256=DJWRsAX9L2yG7FsyDzWBb8G9Oeb0cvjnUxyPZR_5elM,162
+cameraman-0.1.11.dist-info/LICENSE,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+cameraman-0.1.11.dist-info/METADATA,sha256=LkMSbLglmy6LVoZKYf6WhnJ7eyWBkIH7j7hkJDwv3lA,1307
+cameraman-0.1.11.dist-info/WHEEL,sha256=-G_t0oGuE7UD0DrSpVZnq1hHMBV9DD2XkS5v7XpmTnk,110
+cameraman-0.1.11.dist-info/entry_points.txt,sha256=74h1pgPyhyOkXDF1FUlEDey-6MhKotUtpbS6X04uPqw,49
+cameraman-0.1.11.dist-info/top_level.txt,sha256=Dbn89CxLAZJe04wJ8bSnlLZ4G_WCHQnPo4UDDzafeIo,10
+cameraman-0.1.11.dist-info/RECORD,,
