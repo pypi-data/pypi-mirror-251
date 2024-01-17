@@ -1,0 +1,16 @@
+codeas/__init__.py,sha256=VrXpHDu3erkzwl_WXrqINBm9xWkcyUy53IQOj042dOs,22
+codeas/agents.py,sha256=-SxUNC57cA-21mE9SxUQoirzykrnNax2QriOz3Mk03I,3356
+codeas/chat.py,sha256=gW1RSxzRoOda69o9BDl0m8Glf6GuK1mEGZhI7i70aLM,3003
+codeas/codebase.py,sha256=JiVlaEmS0s09IhP4XfBz3mnsG9CSFZelXE3zO__9XoQ,10030
+codeas/commands.py,sha256=cmzovx52VBDc99C5hEzaAnnXct7o_pExmCzj01iloCI,1719
+codeas/configs.py,sha256=ekzA0teL-sYoUbMmAywSozuRTNybo4IRuOXIdX-bQAs,4032
+codeas/terminal.py,sha256=X01lRFCym_BCqZnlve0OTeUOZzTfs2DYY9zWNAmTugg,2630
+codeas/thread.py,sha256=BnZCqxfbnRQVsfWHS7TXHJuQxvx4YKTFs3oeFzne1XI,11180
+codeas/tools.py,sha256=Kxb0C_8xzJB5w7UQqHX5SytlHl7faWrFBFib7mFiAFA,6809
+codeas/utils.py,sha256=KP-qSjSb8AlXqNhlKshtKqRLXQZFVARmrL2neObSeQE,2093
+codeas-0.3.0.dist-info/LICENSE,sha256=EVYb1pB5VPNl3eKbzI2l1GyXuIbj0WNwtLposSASLjY,1105
+codeas-0.3.0.dist-info/METADATA,sha256=KvM2RZrNQ9IgkaWQCnlJSB6BXvMA4zlWdJVnbbCkJLI,7240
+codeas-0.3.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+codeas-0.3.0.dist-info/entry_points.txt,sha256=-RU2vHPlVOaL9BMyLALbKf2xd88RwbGcXgXomEFOCFY,58
+codeas-0.3.0.dist-info/top_level.txt,sha256=bhZUe-Pxnz-LWdi2cyzfcKV6oDadJdOKu0jZtmAE9JU,7
+codeas-0.3.0.dist-info/RECORD,,
