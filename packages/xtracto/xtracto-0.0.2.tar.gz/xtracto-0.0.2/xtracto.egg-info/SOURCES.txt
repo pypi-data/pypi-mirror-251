@@ -1,0 +1,12 @@
+LICENSE.txt
+setup.py
+dev/__init__.py
+dev/tests.py
+dev/xtracto.config.py
+xtracto/__init__.py
+xtracto/_images.py
+xtracto.egg-info/PKG-INFO
+xtracto.egg-info/SOURCES.txt
+xtracto.egg-info/dependency_links.txt
+xtracto.egg-info/requires.txt
+xtracto.egg-info/top_level.txt
