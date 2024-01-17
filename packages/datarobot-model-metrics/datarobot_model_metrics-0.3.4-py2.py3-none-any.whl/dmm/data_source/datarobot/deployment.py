@@ -1,0 +1,104 @@
+import datetime
+from enum import Enum
+from typing import List, Optional
+
+from datarobot.errors import ClientError
+from dateutil.parser import parse
+
+from dmm.datarobot_api_client import DataRobotApiClient
+from dmm.exceptions import ConflictError, DRSourceNotSupported
+
+
+class DeploymentType(Enum):
+    """
+    Supported deployment types (based on deployment.model.targetType)
+    """
+
+    REGRESSION = 0
+    BINARY_CLASSIFICATION = 1
+    MULTICLASS = 2
+    TEXT_GENERATION = 3
+
+
+class Deployment:
+    """
+    Provides access to relevant deployment properties.
+    """
+
+    def __init__(self, deployment_id: str, api: DataRobotApiClient = None):
+        self._api = api if api else DataRobotApiClient()
+        self._deployment = self._api.get_deployment(deployment_id)
+
+        self._model_package = self._get_champion_model_package(deployment_id)
+        if self._model_package is None:
+            if "modelPackage" not in self._deployment:
+                raise DRSourceNotSupported(
+                    "We do not support deployments without model packages!"
+                )
+            model_package_id = self._deployment["modelPackage"]["id"]
+            self._model_package = self._api.get_model_package(model_package_id)
+
+        if self._model_package["modelKind"]["isTimeSeries"]:
+            raise DRSourceNotSupported("Time series models are not yet supported")
+
+    @property
+    def target_column(self) -> str:
+        return self._deployment["model"]["targetName"]
+
+    @property
+    def type(self) -> DeploymentType:
+        target_type = self._deployment["model"]["targetType"]
+        if target_type == "Binary":
+            return DeploymentType.BINARY_CLASSIFICATION
+        elif target_type == "Regression":
+            return DeploymentType.REGRESSION
+        elif target_type == "Multiclass":
+            return DeploymentType.MULTICLASS
+        elif target_type == "TextGeneration":
+            return DeploymentType.TEXT_GENERATION
+        else:
+            raise DRSourceNotSupported(f"Unsupported model target type {target_type}")
+
+    @property
+    def positive_class_label(self) -> str:
+        if self.type != DeploymentType.BINARY_CLASSIFICATION:
+            raise ConflictError(
+                "Positive class label can only be retrieved for binary classification deployments"
+            )
+        # according to API spec - positive class comes first
+        return self._model_package["target"]["classNames"][0]
+
+    @property
+    def negative_class_label(self) -> str:
+        if self.type != DeploymentType.BINARY_CLASSIFICATION:
+            raise ConflictError(
+                "Negative class label can only be retrieved for binary classification deployments"
+            )
+        # according to API spec - negative class is second
+        return self._model_package["target"]["classNames"][1]
+
+    @property
+    def class_labels(self) -> List[str]:
+        if self.type != DeploymentType.MULTICLASS:
+            raise ConflictError(
+                "This method returns class names for multiclass deployment"
+            )
+        return self._model_package["target"]["classNames"]
+
+    @property
+    def prediction_threshold(self) -> float:
+        if self.type != DeploymentType.BINARY_CLASSIFICATION:
+            raise ConflictError(
+                "Prediction threshold can only be retrieved for binary classification deployments"
+            )
+        return self._model_package["target"]["predictionThreshold"]
+
+    @property
+    def created_at(self) -> datetime:
+        return parse(self._deployment["createdAt"])
+
+    def _get_champion_model_package(self, deployment_id: str) -> Optional[dict]:
+        try:
+            return self._api.get_champion_model_package(deployment_id)
+        except ClientError:
+            return None
