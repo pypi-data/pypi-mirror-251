@@ -1,0 +1,11 @@
+python setup.py sdist bdist_wheel
+twine upload dist/*
+
+aojoytec
+sl1122334
+
+[pypi]
+  username = __token__
+  password = pypi-AgEIcHlwaS5vcmcCJGNjNmJlYjFkLWVkNTQtNDc0ZS04OTJlLWE0OTFmNjcwMDA1NgACEFsxLFsiYWlyY2xpY2siXV0AAixbMixbIjBjN2ZmNzVhLWZkYmYtNDkzNS1hMTA1LTE2ZTE4ZWNhNjYyZSJdXQAABiCFw_wDU2-vUlfAxuKvNGhKY4pw_gz4jTeHp1KIBjXAtA
+
+注意编译前清空  dist文件夹目录
