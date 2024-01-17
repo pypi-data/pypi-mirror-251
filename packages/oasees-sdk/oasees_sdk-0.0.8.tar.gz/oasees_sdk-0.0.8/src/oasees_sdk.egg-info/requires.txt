@@ -1,0 +1,4 @@
+web3
+ipfshttpclient==0.8.0a2
+requests
+python-dotenv
