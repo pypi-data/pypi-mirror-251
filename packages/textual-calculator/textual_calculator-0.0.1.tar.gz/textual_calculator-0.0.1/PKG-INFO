@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: textual-calculator
+Version: 0.0.1
+Project-URL: Documentation, https://github.com/unknown/textual-calculator#readme
+Project-URL: Issues, https://github.com/unknown/textual-calculator/issues
+Project-URL: Source, https://github.com/unknown/textual-calculator
+Author-email: Will McGugan <willmcgugan@gmail.com>
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# textual calculator
+
+[![PyPI - Version](https://img.shields.io/pypi/v/textual-calculator.svg)](https://pypi.org/project/textual-calculator)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/textual-calculator.svg)](https://pypi.org/project/textual-calculator)
+
+-----
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install textual-calculator
+```
+
+## License
+
+`textual-calculator` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
