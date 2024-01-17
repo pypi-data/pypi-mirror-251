@@ -1,0 +1,9 @@
+README.md
+setup.py
+src/copilotsdk/__init__.py
+src/copilotsdk/copilot.py
+src/copilotsdk/ws.py
+src/copilotsdk.egg-info/PKG-INFO
+src/copilotsdk.egg-info/SOURCES.txt
+src/copilotsdk.egg-info/dependency_links.txt
+src/copilotsdk.egg-info/top_level.txt

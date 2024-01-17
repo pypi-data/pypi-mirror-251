@@ -1,0 +1,3 @@
+copilotsdk/__init__
+copilotsdk/copilot
+copilotsdk/ws
