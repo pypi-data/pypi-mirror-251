@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+pysimpler/__init__.py
+pysimpler/caches.py
+pysimpler/constants.py
+pysimpler/errors.py
+pysimpler/report.py
+pysimpler/requirements.txt
+pysimpler/timers.py
+pysimpler.egg-info/PKG-INFO
+pysimpler.egg-info/SOURCES.txt
+pysimpler.egg-info/dependency_links.txt
+pysimpler.egg-info/requires.txt
+pysimpler.egg-info/top_level.txt

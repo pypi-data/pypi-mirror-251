@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: pysimpler
+Version: 0.0.6
+Summary: pysimpler
+Home-page: https://github.com/m-pektas/pysimpler
+Author: Muhammed Pektas
+Keywords: software engineering,exception,cache,timer,python,decorators
+Requires-Python: >=3.7, <4
+License-File: LICENSE
+Requires-Dist: loguru
+
+This package simplifies the fundamental software engineering practices such as logging, exception handling etc.
