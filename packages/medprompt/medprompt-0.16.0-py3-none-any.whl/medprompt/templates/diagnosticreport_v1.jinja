@@ -1,0 +1,24 @@
+{% if status is defined %}
+A {{ status }} report
+{% endif %}
+{% if category is defined %}
+of type
+{% for _category in category%}
+{% if _category.coding[0].code is defined %}
+{{ _category.coding[0].code }}
+{% endif %}
+{% endfor %}
+{% endif %}
+{% if time_diff is defined %}
+recorded {{ time_diff(effectiveDateTime, datetime_format|default("%Y-%m-%dT%H:%M:%S%z", true))}} ago
+{% endif %}
+{% if process_result is defined and result is defined %}
+has the following labtest results: {{ process_result(result) }}
+{% endif %}
+{% if process_result is defined and result is defined %}
+has the following labtest results: {{ process_result(result) }}
+{% endif %}
+{% if process_specimen is defined and specimen is defined %}
+ from specimens: {{ process_specimen(specimen) }}
+{% endif %}
+.
