@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: neuron_morphology_tools
+Version: 1.0.1
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Brendan Celii
+Author-email: brendanacelii@gmail.com
+License: UNKNOWN
+Project-URL: Source, https://github.com/reimerlab/neuron_morphology_tools
+Project-URL: Documentation, https://reimerlab.github.io/neuron_morphology_tools/
+Platform: UNKNOWN
+
+neuron\_morphology\_tools
+=========================
+
+Algorithms and analysis tools for networkx graph objects representing
+individual neurons output through the mesh processing pipeline outline
+in the following study:
+https://www.biorxiv.org/content/10.1101/2023.03.14.532674v1
+
+
