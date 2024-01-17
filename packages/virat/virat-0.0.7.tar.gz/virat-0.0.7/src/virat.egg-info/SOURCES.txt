@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/virat/__init__.py
+src/virat/mongo_crud.py
+src/virat.egg-info/PKG-INFO
+src/virat.egg-info/SOURCES.txt
+src/virat.egg-info/dependency_links.txt
+src/virat.egg-info/requires.txt
+src/virat.egg-info/top_level.txt
