@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: turing-calculator-package
+Version: 0.2
+Summary: This Python package provides a simple calculator with basic mathematical operations
+Home-page: https://github.com/TuringCollegeSubmissions/utahir-DWWP.1.5
+Author: M Usman Tahir
+Author-email: usmantahir78@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE.txt
+Requires-Dist: mypy-extensions >=1.0.0
+Requires-Dist: mypy >=1.8.0
+Requires-Dist: packaging >=23.2
+Requires-Dist: pyflakes >=3.2.0
+Requires-Dist: pytest >=7.4.4
+Requires-Dist: typing-extensions ==4.9.0
+
+This Python package provides a simple calculator with basic mathematical operations as per the sprint one assingment. Following requirments has been implemented in the code.
+
