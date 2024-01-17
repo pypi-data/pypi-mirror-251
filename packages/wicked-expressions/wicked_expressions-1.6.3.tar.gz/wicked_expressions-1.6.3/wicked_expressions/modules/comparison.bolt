@@ -1,0 +1,290 @@
+from dataclasses import dataclass, field
+from contextlib import contextmanager
+from bolt_expressions import ExpressionNode
+from typing import Any, ClassVar
+from ./config import Config
+from ./utils import raw, logger
+from ./loader import load
+from ./loader_components import RootLibraryScoreboard
+from ./raw_operation import store_expression_value
+from ./var_types import Float, Bool
+from ./operations import autonest, UnaryOperation, BinaryOperation, ScoreRegister, StorageRegister
+from bolt import Runtime
+
+ScoreSource = None
+DataSource = None
+VarSource = None
+StaticVar = None
+
+def provide_sources(score_source, data_source, var_source, static_var):
+    """
+    Hacky solution to expose this module to necessary classes while avoiding circular imports.
+    """
+    global ScoreSource, DataSource, VarSource, StaticVar
+
+    ScoreSource = score_source
+    DataSource = data_source
+    VarSource = var_source
+    StaticVar = static_var
+
+@dataclass
+class DataExists(UnaryOperation):
+    """
+    Checks if data exists.
+    """
+    def condition(self):
+        with self.store_success():
+            if self.expr._type == 'storage':
+                if data storage self.expr._target self.expr._path
+            elif self.expr._type == 'entity':
+                if data entity self.expr._target self.expr._path
+            elif self.expr._type == 'block':
+                if data block self.expr._target self.expr._path
+
+    def result(self):
+        """
+        Since this is a boolean operation, the result is the same as the condition.
+        """
+        self.condition()
+
+class ScoreEQ(BinaryOperation):
+    def condition(self):
+        if isinstance(self.right, ScoreSource):
+            with self.store_success():
+                if score var self.left = var self.right
+        elif isinstance(self.right, DataSource):
+            reg_a = StorageRegister('a')
+            reg_b = ScoreRegister('b')
+
+            self._move_data_to_storage(self.right, reg_a)
+            self._convert_storage_to_score(reg_a, reg_b)
+
+            with self.store_success():
+                if score var self.left = reg_b.holder reg_b.obj
+        else:
+            with self.store_success():
+                if score var self.left matches self.right
+
+class ScoreNE(BinaryOperation):
+    def condition(self):
+        if isinstance(self.right, ScoreSource):
+            with self.store_success():
+                unless score var self.left = var self.right
+        elif isinstance(self.right, DataSource):
+            reg_a = StorageRegister('a')
+            reg_b = ScoreRegister('b')
+
+            self._move_data_to_storage(self.right, reg_a)
+            self._convert_storage_to_score(reg_a, reg_b)
+
+            with self.store_success():
+                unless score var self.left = reg_b.holder reg_b.obj
+        else:
+            with self.store_success():
+                unless score var self.left matches self.right
+
+class ScoreLT(BinaryOperation):
+    def condition(self):
+        if isinstance(self.right, ScoreSource):
+            with self.store_success():
+                if score var self.left < var self.right
+        elif isinstance(self.right, DataSource):
+            reg_a = StorageRegister('a')
+            reg_b = ScoreRegister('b')
+
+            self._move_data_to_storage(self.right, reg_a)
+            self._convert_storage_to_score(reg_a, reg_b)
+
+            with self.store_success():
+                if score var self.left < reg_b.holder reg_b.obj
+        else:
+            with self.store_success():
+                unless score var self.left matches (self.right, None)
+
+class ScoreGT(BinaryOperation):
+    def condition(self):
+        if isinstance(self.right, ScoreSource):
+            with self.store_success():
+                if score var self.left > var self.right
+        elif isinstance(self.right, DataSource):
+            reg_a = StorageRegister('a')
+            reg_b = ScoreRegister('b')
+
+            self._move_data_to_storage(self.right, reg_a)
+            self._convert_storage_to_score(reg_a, reg_b)
+
+            with self.store_success():
+                if score var self.left > reg_b.holder reg_b.obj
+        else:
+            with self.store_success():
+                unless score var self.left matches (None, self.right)
+
+class ScoreLE(BinaryOperation):
+    def condition(self):
+        if isinstance(self.right, ScoreSource):
+            with self.store_success():
+                if score var self.left <= var self.right
+        elif isinstance(self.right, DataSource):
+            reg_a = StorageRegister('a')
+            reg_b = ScoreRegister('b')
+
+            self._move_data_to_storage(self.right, reg_a)
+            self._convert_storage_to_score(reg_a, reg_b)
+
+            with self.store_success():
+                if score var self.left <= reg_b.holder reg_b.obj
+        else:
+            with self.store_success():
+                if score var self.left matches (None, self.right)
+
+class ScoreGE(BinaryOperation):
+    def condition(self):
+        if isinstance(self.right, ScoreSource):
+            with self.store_success():
+                if score var self.left >= var self.right
+        elif isinstance(self.right, DataSource):
+            reg_a = StorageRegister('a')
+            reg_b = ScoreRegister('b')
+
+            self._move_data_to_storage(self.right, reg_a)
+            self._convert_storage_to_score(reg_a, reg_b)
+
+            with self.store_success():
+                if score var self.left >= reg_b.holder reg_b.obj
+        else:
+            with self.store_success():
+                if score var self.left matches (self.right, None)
+
+class DataEQ(BinaryOperation):
+    def condition(self):
+        if isinstance(self.right, ScoreSource):
+            reg_a = StorageRegister('a')
+            reg_b = ScoreRegister('b')
+
+            self._move_data_to_storage(self.left, reg_a)
+            self._convert_storage_to_score(reg_a, reg_b)
+
+            with self.store_success():
+                if score reg_b.holder reg_b.obj = var self.right
+        else:
+            reg_a = StorageRegister('a')
+            reg_b = StorageRegister('b')
+            override = ScoreRegister('c')
+
+            self._move_data_to_storage(self.left, reg_a)
+
+            if isinstance(self.right, DataSource):
+                self._move_data_to_storage(self.right, reg_b)
+            else:
+                if isinstance(self.left, VarSource) and self.left._var_type == 'float':
+                    data modify storage reg_b._target reg_b._path set value Float(self.right)
+                else:
+                    data modify storage reg_b._target reg_b._path set value self.right
+
+            store result score override.holder override.obj:
+                data modify storage reg_a._target reg_a._path set from storage reg_b._target reg_b._path
+
+            # override = (reg_b => reg_a)
+            #
+            # if override == 1     # override success  => value does not exist
+            # if override == 0     # override fail => value exists
+
+            with self.store_success():
+                if score override.holder override.obj matches 0
+
+class DataNE(BinaryOperation):
+    def condition(self):
+        if isinstance(self.right, ScoreSource):
+            reg_a = StorageRegister('a')
+            reg_b = ScoreRegister('b')
+
+            self._move_data_to_storage(self.left, reg_a)
+            self._convert_storage_to_score(reg_a, reg_b)
+
+            with self.store_success():
+                unless score reg_b.holder reg_b.obj = var self.right
+        else:
+            reg_a = StorageRegister('a')
+            reg_b = StorageRegister('b')
+            override = ScoreRegister('c')
+
+            self._move_data_to_storage(self.left, reg_a)
+
+            if isinstance(self.right, DataSource):
+                self._move_data_to_storage(self.right, reg_b)
+            else:
+                if isinstance(self.left, VarSource) and self.left._var_type == 'float':
+                    data modify storage reg_b._target reg_b._path set value Float(self.right)
+                else:
+                    data modify storage reg_b._target reg_b._path set value self.right
+
+            store result score override.holder override.obj:
+                data modify storage reg_a._target reg_a._path set from storage reg_b._target reg_b._path
+
+            # override = (reg_b => reg_a)
+            #
+            # if override == 1     # override success  => value does not exist
+            # if override == 0     # override fail => value exists
+
+            with self.store_success():
+                unless score override.holder override.obj matches 0
+
+class DataLT(BinaryOperation):
+    def condition(self):
+        if isinstance(self.right, ScoreSource):
+            reg_a = StorageRegister('a')
+            reg_b = ScoreRegister('b')
+
+            self._move_data_to_storage(self.left, reg_a)
+            self._convert_storage_to_score(reg_a, reg_b)
+
+            with self.store_success():
+                if score reg_b.holder reg_b.obj < var self.right
+        else:
+            logger.error(f"Unsupported operation type (({self.left}) < ({self.right}))")
+            exit()
+
+class DataGT(BinaryOperation):
+    def condition(self):
+        if isinstance(self.right, ScoreSource):
+            reg_a = StorageRegister('a')
+            reg_b = ScoreRegister('b')
+
+            self._move_data_to_storage(self.left, reg_a)
+            self._convert_storage_to_score(reg_a, reg_b)
+
+            with self.store_success():
+                if score reg_b.holder reg_b.obj > var self.right
+        else:
+            logger.error(f"Unsupported operation type (({self.left}) > ({self.right}))")
+            exit()
+
+class DataLE(BinaryOperation):
+    def condition(self):
+        if isinstance(self.right, ScoreSource):
+            reg_a = StorageRegister('a')
+            reg_b = ScoreRegister('b')
+
+            self._move_data_to_storage(self.left, reg_a)
+            self._convert_storage_to_score(reg_a, reg_b)
+
+            with self.store_success():
+                if score reg_b.holder reg_b.obj <= var self.right
+        else:
+            logger.error(f"Unsupported operation type (({self.left}) <= ({self.right}))")
+            exit()
+
+class DataGE(BinaryOperation):
+    def condition(self):
+        if isinstance(self.right, ScoreSource):
+            reg_a = StorageRegister('a')
+            reg_b = ScoreRegister('b')
+
+            self._move_data_to_storage(self.left, reg_a)
+            self._convert_storage_to_score(reg_a, reg_b)
+
+            with self.store_success():
+                if score reg_b.holder reg_b.obj >= var self.right
+        else:
+            logger.error(f"Unsupported operation type (({self.left}) >= ({self.right}))")
+            exit()
