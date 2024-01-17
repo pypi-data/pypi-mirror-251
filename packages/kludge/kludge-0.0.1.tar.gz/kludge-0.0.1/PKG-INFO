@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: kludge
+Version: 0.0.1
+Summary: 
+Home-page: https://github.com/JoshKarpel/kludge
+License: MIT
+Author: JoshKarpel
+Author-email: josh.karpel@gmail.com
+Requires-Python: >=3.11.2,<4
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Typing :: Typed
+Requires-Dist: aiohttp (>=3.9)
+Requires-Dist: counterweight (>=0.0.5)
+Requires-Dist: pydantic (>=2)
+Requires-Dist: pyyaml (>=6.0)
+Requires-Dist: structlog (>=23.1)
+Requires-Dist: typer (>=0.6)
+Description-Content-Type: text/markdown
+
+# Kludge
+
