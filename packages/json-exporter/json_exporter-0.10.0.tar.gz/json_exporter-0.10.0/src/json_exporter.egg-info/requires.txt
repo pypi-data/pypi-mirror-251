@@ -1,0 +1,2 @@
+prometheus_exporter>=0.10.0
+zenlib>=1.6.2
