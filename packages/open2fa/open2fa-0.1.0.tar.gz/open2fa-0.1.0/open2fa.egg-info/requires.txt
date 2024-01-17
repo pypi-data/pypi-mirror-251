@@ -1,0 +1,12 @@
+requests
+logfunc==1.9.1
+
+[dev]
+pytest
+pytest-cov
+pytest-mock
+black
+isort
+flake8
+twine
+build
