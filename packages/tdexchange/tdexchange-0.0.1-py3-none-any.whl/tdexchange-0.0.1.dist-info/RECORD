@@ -1,0 +1,8 @@
+tdexchange/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tdexchange/bot.py,sha256=UyvH8DcyS0Keauu2mzgY-Cues0Hux1zTUMcNeioN7Ew,3246
+tdexchange/client.py,sha256=fCbBC2q3r8p13RNGVIINja6AOipB9mSe_TY4SOktpGA,6415
+tdexchange/runner.py,sha256=avuIbiplpyqOyZdAQCxMki0uG7Cl-ydWzqA6_DrjuXU,523
+tdexchange-0.0.1.dist-info/METADATA,sha256=0F4-ayD_aItKm9wa2V2RhmGIF29Aagn6hTzTglzllQg,19950
+tdexchange-0.0.1.dist-info/WHEEL,sha256=mRYSEL3Ih6g5a_CVMIcwiF__0Ae4_gLYh01YFNwiq1k,87
+tdexchange-0.0.1.dist-info/licenses/LICENSE.txt,sha256=S4nUUYvRNatO4VSnvOciJGtXqYw9fvwaCUCYmBYMK9E,16724
+tdexchange-0.0.1.dist-info/RECORD,,
