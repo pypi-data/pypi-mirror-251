@@ -1,0 +1,13 @@
+private_values/__init__.py,sha256=AfipRdMgiOkHG_8Ifr3-Inr79QLwlx3S5-CL9mMZ9aY,151
+private_values/auto.py,sha256=d4Z40qUHcHq7DXHH_IjEPCjQJksNsSGyjKoJnrlEa6Q,1393
+private_values/base.py,sha256=n5nQksix9EEhOkTyFzuq2kpQpriAoIK-B0zfgO2pXSQ,4877
+private_values/csv.py,sha256=hnDvQli55uIKZ4x1E3ZA-2zqrVQvj3EFyxHRi0E1MBs,3045
+private_values/derivatives.py,sha256=mciu6mdfBidZOUHCRPBn_QSWxrvSqruj5ksR8G-91mI,747
+private_values/env.py,sha256=Iwq7YJOuSSZffUCBdZ0sKn6lAJPFTuvdSByCWK7ankY,1717
+private_values/ini.py,sha256=-Ou0YxqbMi3rET7lnk9rqDWz_qiPrtbHsIPfH9u37Sw,1343
+private_values/json.py,sha256=l2A_TcwZjY9jRRbMWqS_eKYdDwwiXGqIbiba_7nJbQs,1223
+private_values-0.5.5.dist-info/LICENSE,sha256=BUWiayi7RqcCCQGoo6Mms531bDS9you-qasSm4FOlHE,1082
+private_values-0.5.5.dist-info/METADATA,sha256=GVH3h8cJ67Sw5eJ_MrlxCIZyOvKaksAA6Pq3oZ4Oobs,5770
+private_values-0.5.5.dist-info/WHEEL,sha256=Xo9-1PvkuimrydujYJAjF7pCkriuXBpUPEjma1nZyJ0,92
+private_values-0.5.5.dist-info/top_level.txt,sha256=UXEvuOFf82eWFoBgUCrCo7WNXse-4YA_JiUETXHYU6s,15
+private_values-0.5.5.dist-info/RECORD,,
