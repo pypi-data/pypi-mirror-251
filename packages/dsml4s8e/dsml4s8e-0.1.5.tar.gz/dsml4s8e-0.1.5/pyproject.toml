@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "dsml4s8e"
+version = "0.1.5"
+description = "lib to build dagster pipelines from standalone notebooks"
+authors = ["Aleksander Motuzov <motuzov@gmail.com>"]
+license = "Apache License 2.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
