@@ -1,0 +1,12 @@
+b1 >> pluck([0,2,5]+var([0,2]), dur=.25, oct=4).fadein()
+
+b2 >> blip([0,2,0,5,2], dur=.25, oct=[6,7], amp=1).fadein()
+
+b3 >> blip([0,2,0,5,2], dur=.5, oct=[3,4,8], amp=1.7, lpf=20000).fadein()
+
+
+b1.eclipse()
+b2.eclipse(4,12)
+b3.eclipse(4,16,5)
+
+b1.eclipse(smooth=.5)
