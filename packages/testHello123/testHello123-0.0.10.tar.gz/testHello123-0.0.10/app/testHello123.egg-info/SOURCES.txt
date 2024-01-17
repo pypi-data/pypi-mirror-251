@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+app/idgenerator/__init__.py
+app/idgenerator/src/__init__.py
+app/idgenerator/src/idgenerator.py
+app/testHello123.egg-info/PKG-INFO
+app/testHello123.egg-info/SOURCES.txt
+app/testHello123.egg-info/dependency_links.txt
+app/testHello123.egg-info/requires.txt
+app/testHello123.egg-info/top_level.txt
