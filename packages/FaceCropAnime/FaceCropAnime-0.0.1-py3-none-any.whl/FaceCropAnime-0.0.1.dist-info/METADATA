@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: FaceCropAnime
+Version: 0.0.1
+Summary: A Pipeline to Implement FaceCrop for Anime Images
+Home-page: https://github.com/pypa/FaceCropAnime
+Author: Carzit
+Author-email: ccarzit@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: matplotlib >=3.2.2
+Requires-Dist: numpy >=1.18.5
+Requires-Dist: opencv-python >=4.1.2
+Requires-Dist: opencv-python-headless ==4.9.0.80
+Requires-Dist: pillow
+Requires-Dist: PyYAML >=5.3
+Requires-Dist: scipy >=1.4.1
+Requires-Dist: torch >=1.6.0
+Requires-Dist: torchvision >=0.7.0
+Requires-Dist: tqdm >=4.41.0
+
+# FaceCropAnime-Pipeline
+A Pipeline to Implement FaceCrop for Anime Images
