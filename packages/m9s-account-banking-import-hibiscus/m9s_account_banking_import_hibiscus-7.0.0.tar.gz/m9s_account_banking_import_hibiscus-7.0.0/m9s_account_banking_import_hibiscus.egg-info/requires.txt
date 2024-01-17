@@ -1,0 +1,5 @@
+m9s-trytond<7.1,>=7.0
+m9s_account_banking_import<7.1,>=7.0
+requests
+
+[test]
