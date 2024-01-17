@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: truva-sql-parser
+Version: 0.0.3
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Truva Inc.
+Author-email: team@truva.com
+Maintainer: Truva
+Maintainer-email: team@truva.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+Blazing fast SQL parsing.
+
