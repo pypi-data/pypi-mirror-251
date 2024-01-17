@@ -1,0 +1,16 @@
+setup.py
+ZSync.egg-info/PKG-INFO
+ZSync.egg-info/SOURCES.txt
+ZSync.egg-info/dependency_links.txt
+ZSync.egg-info/entry_points.txt
+ZSync.egg-info/top_level.txt
+zsync/CLI.py
+zsync/Config.py
+zsync/SyncEngine.py
+zsync/ZSync.py
+zsync/__init__.py
+zsync.egg-info/PKG-INFO
+zsync.egg-info/SOURCES.txt
+zsync.egg-info/dependency_links.txt
+zsync.egg-info/entry_points.txt
+zsync.egg-info/top_level.txt
