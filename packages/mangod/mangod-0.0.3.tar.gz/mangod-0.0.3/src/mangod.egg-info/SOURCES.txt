@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/mangod/__init__.py
+src/mangod/mongo_crud.py
+src/mangod.egg-info/PKG-INFO
+src/mangod.egg-info/SOURCES.txt
+src/mangod.egg-info/dependency_links.txt
+src/mangod.egg-info/requires.txt
+src/mangod.egg-info/top_level.txt
