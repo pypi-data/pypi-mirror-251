@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: datasketchesframework
+Version: 0.0.3
+Summary: Library for operating on data sketches
+Home-page: UNKNOWN
+Author: Karol Janic
+Author-email: <29999@student.pwr.edu.pl>
+License: UNKNOWN
+Keywords: python,data sketches,data stream,data analysis
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+This package is a implementation of paper "Efficient framework for operating on data sketches" authored by Jakub Lemiesz, Ph.D. The paper can be found here: https://www.vldb.org/pvldb/vol16/p1967-lemiesz.pdf. Package is a python wrapper for C++ library created by Karol Janic
+
