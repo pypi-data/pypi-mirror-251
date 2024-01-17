@@ -1,0 +1,8 @@
+gen1/__init__.py,sha256=pu0MRHWFMUcQatW_dvs8gxbxUD5qXvXA7gh5O16U5Go,48
+gen1/clip.py,sha256=_olSUNNvXEzespsZsMUhJs5eyQj5oqfL_nmDwfyJPPc,870
+gen1/midas.py,sha256=ffbrYB0DvqEismFjntEF6OV4mSlf9WWLNcwZLHmPBF8,1159
+gen1/model.py,sha256=3jOkD909cb-tpxQXHcCeYIQHeVl2UM1fWxS8WgfHdu0,24065
+gen1-0.0.6.dist-info/LICENSE,sha256=GHYD0Vn7cqu6O1FibXB1ix_cx8js09uZI1rKjCjW5sY,1074
+gen1-0.0.6.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+gen1-0.0.6.dist-info/METADATA,sha256=0PO5a69AIBt8qNRLmMctWIunzZ4h3IyeT7ikbu134GQ,2741
+gen1-0.0.6.dist-info/RECORD,,
