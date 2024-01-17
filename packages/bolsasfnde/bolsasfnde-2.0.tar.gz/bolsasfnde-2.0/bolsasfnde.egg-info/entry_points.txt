@@ -1,0 +1,2 @@
+[console_scripts]
+bolsasfnde = bolsasfnde.__main__:main
