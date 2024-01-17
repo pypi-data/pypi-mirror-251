@@ -1,0 +1,8 @@
+README.md
+setup.py
+src/YTAnalytics.py
+src/YouTubeAnalytics.egg-info/PKG-INFO
+src/YouTubeAnalytics.egg-info/SOURCES.txt
+src/YouTubeAnalytics.egg-info/dependency_links.txt
+src/YouTubeAnalytics.egg-info/requires.txt
+src/YouTubeAnalytics.egg-info/top_level.txt
