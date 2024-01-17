@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: fbref_package
+Version: 0.4
+Summary: A Python package to scrap fbref.com
+Home-page: UNKNOWN
+Author: Lucas Bracamonte
+Author-email: ing.lucasbracamonte@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+
+# Scrap fbref.com
+
+A Python package to scrap fbref.com
+
+## Usage
+
+```python
+
+# Pre install
+# pip install sqlalchemy
+
+# Ejemplo de uso
+table_names = getTables()
+table_names
+
+df_competition = getCompetitions()
+df_competition
+
+df_result = getData('12', '2023-2024', 'competition_goals')
+df_result
+
+
+```
+
+
+
