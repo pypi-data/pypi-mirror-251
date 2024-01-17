@@ -1,0 +1,5 @@
+[altair.vegalite.v5.theme]
+accessible_theme = altair_easeviz.themes:accessible_theme
+dark_accessible_theme = altair_easeviz.themes:dark_accessible_theme
+filler_pattern_theme = altair_easeviz.themes:filler_pattern_theme
+print_theme = altair_easeviz.themes:print_friendly_theme
