@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: qweatherPyAPI
+Version: 0.1.4
+Summary: QWeatherPython API
+Home-page: https://github.com/shaun17/qweather-api.git
+Author: shaun
+Author-email: shaun.17g@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+
+# QWeather API
+oho ~, find me here: https://github.com/shaun17/qweather-api.git
