@@ -1,0 +1,12 @@
+mailupy/__init__.py,sha256=DPX-Ol9ltWuK63e7Z3CmbIRZ1D0QxCr-ZpGM4a2iAy8,131
+mailupy/client.py,sha256=1lKjOzW649x1wOfCpsplgJO8A5nDcoBRZOxXGa-Tzm8,26634
+mailupy/exceptions.py,sha256=9J3Vpt7q4Qq_Z6rl3BUzmNa7L43gUBwO41WwLgMBEEk,620
+mailupy/utils.py,sha256=cclBGk7mvjxKfFETFiZxyGYjjqYX3YuicoM1cSSfR3I,185
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_main.py,sha256=Q8fsoIpWNq0OCi9Mu3ZRTB131yq8KvpMf9T9qzG_SJU,6136
+tests/tools.py,sha256=ur9n_HqH2cgKNx2DKC8kkjQX1HTMRkoMq67YpwdHZII,1749
+mailupy-1.1.1.dist-info/LICENSE,sha256=pNKLOJi9UM_Oyl_sPwr1Sz2k9doRTDqWh-EP9VK3-bI,1059
+mailupy-1.1.1.dist-info/METADATA,sha256=27aB1rD1oOlttM9S6KilgWmUxt7mn5OAeLbzNQz9afM,2879
+mailupy-1.1.1.dist-info/WHEEL,sha256=-G_t0oGuE7UD0DrSpVZnq1hHMBV9DD2XkS5v7XpmTnk,110
+mailupy-1.1.1.dist-info/top_level.txt,sha256=opQPl_a7TVnNzQH1JAzMbKcM5shAQcIgM6sflt_-M0s,14
+mailupy-1.1.1.dist-info/RECORD,,
