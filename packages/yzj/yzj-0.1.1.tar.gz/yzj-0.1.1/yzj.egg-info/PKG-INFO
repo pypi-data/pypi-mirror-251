@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: yzj
+Version: 0.1.1
+Summary: A newb package
+Home-page: http://m.zzsjsbfzyy.com/
+Author: yzj
+Author-email: youngzhanjie@qq.com
+License: UNKNOWN
+Description: # TO MY SON
+        This is a new be package. You can use
+        [Github-flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+        For My Son.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
