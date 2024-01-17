@@ -1,0 +1,3 @@
+[console_scripts]
+piland-http-health-checker=piland_http_health_checker.main:app
+
