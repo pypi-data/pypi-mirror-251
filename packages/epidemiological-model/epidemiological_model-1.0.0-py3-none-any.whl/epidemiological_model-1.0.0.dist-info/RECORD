@@ -1,0 +1,12 @@
+src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/simulation.py,sha256=JJArFOKCnaYgRfWFJ2C5mUyCOUCH2H4CSVEpkdq72-s,3322
+src/visualization.py,sha256=rJ5sTq8k2ZqQ48LHkeI6NYXr1WLJmR9QqJhod2XzuvU,3273
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_simulation.py,sha256=3ZodBpeCj-HshjmLswQV07D9oKdg8VOCV7kqjoaBMTA,5056
+tests/test_visualization.py,sha256=aSh-6PUBHU9-4WLt4doUyopl5n6_bo4r7EuQwmpcRoU,3012
+epidemiological_model-1.0.0.dist-info/LICENSE,sha256=_lIkuyVol7x-7fSKeB2ZQp0nJ3KKDHc5prrbJc-varw,1084
+epidemiological_model-1.0.0.dist-info/METADATA,sha256=M25ZmltljCgYJWwgKc0OJdyg5i-40sJ7ADUCeuufPg0,514
+epidemiological_model-1.0.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+epidemiological_model-1.0.0.dist-info/entry_points.txt,sha256=AQ6uRfaoIyFsQXz1p_nwFgKCxoOmYhbSOsC2BEiUgXA,86
+epidemiological_model-1.0.0.dist-info/top_level.txt,sha256=KW3xgkz9NLMTcmmzgKvW8RFpCFkRIQ085qzq2diFf68,10
+epidemiological_model-1.0.0.dist-info/RECORD,,
