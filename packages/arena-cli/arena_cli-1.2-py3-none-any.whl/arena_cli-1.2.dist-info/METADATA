@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: arena-cli
+Version: 1.2
+Summary: Use Arena through command line interface
+Home-page: 
+Author: Synkrotron
+Author-email: 
+Platform: Any
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: beautifulsoup4 (==4.7.1)
+Requires-Dist: beautifultable (==0.7.0)
+Requires-Dist: boto3 (>=1.9.88)
+Requires-Dist: click (==6.7)
+Requires-Dist: docker (==3.6.0)
+Requires-Dist: lxml (==4.6.2)
+Requires-Dist: python-dateutil (==2.7.3)
+Requires-Dist: requests (==2.25.1)
+Requires-Dist: validators (==0.12.6)
+Requires-Dist: termcolor (==1.1.0)
+Requires-Dist: tqdm (>=4.49.0)
+
