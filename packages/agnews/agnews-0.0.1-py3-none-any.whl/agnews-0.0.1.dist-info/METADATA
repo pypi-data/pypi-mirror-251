@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: agnews
+Version: 0.0.1
+Summary: A simple package to convenience aggregate news scraping through newspaper3k and Google News.
+Project-URL: Homepage, https://github.com/SirMalamute/agnews
+Project-URL: Issues, https://github.com/SirMalamute/agnews/issues
+Author-email: Neel Iyer <neeliyer14@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# Aggregate News Scraping
+
+A simple package to convenience aggregate news scraping through newspaper3k and Google News.
+
+# Usage
+
+```
+from agnews.scraper import scrape_ag, parse_ag
+query = "YOUR QUERY HERE"
+path = "PATH TO DATAFRAME HERE"
+
+scrape_ag(query, path)
+parse_ag(path)
+
+```
+
+Credits: Darshan Khandelwal, newspaper3k
