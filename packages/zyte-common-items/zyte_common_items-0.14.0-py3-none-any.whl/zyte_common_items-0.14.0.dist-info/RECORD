@@ -1,0 +1,15 @@
+zyte_common_items/VERSION,sha256=BlWCZVqs1vyD_3QqVxXAS7Slc5W_PuRVl5j6QsLORYk,7
+zyte_common_items/__init__.py,sha256=v93IkfnWCZUsYr6lR2B3xtnLAH22eIFSMTQhs8BH3y0,1747
+zyte_common_items/adapter.py,sha256=OSfunZ9Q3Et4Kz4ZBI0nm2moWP2CnTHwKhJ9FZyk5LI,4153
+zyte_common_items/base.py,sha256=_W-vHBr7RS-xdLUpHE_EqFwgqxbpzYTULWdsHTHXdSI,6922
+zyte_common_items/components.py,sha256=mFg9sIGNw_mM3kdOOQq6YAFVmJZEQDyS0KrKmBWNUYs,14679
+zyte_common_items/items.py,sha256=NkIH88jvk_yH9kNEHBmjEn93l00J_DF7LhDV5xtj2RU,38732
+zyte_common_items/pages.py,sha256=DiEslIoRp2T4bmeiJE4cnr6P9qGWv92zJZ836NquYxc,30317
+zyte_common_items/processors.py,sha256=Z2pQG2BQtGeegFBW1X4m8MEDEez7kkQTfu_e6Z46HQI,7678
+zyte_common_items/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zyte_common_items/util.py,sha256=u9Ot7xUv2gXHiL-gt-gi_0fryQNlH8p5XhdH2euYDLs,4070
+zyte_common_items-0.14.0.dist-info/LICENSE,sha256=3gGt4l6Y8kdxOgzTYnfEa5JEh11pPD8srZDYTkaDhao,1509
+zyte_common_items-0.14.0.dist-info/METADATA,sha256=vkFDgT4GepddgUt8c7rOn3s7v0qGgTnGg0Gs2UNEHJI,2229
+zyte_common_items-0.14.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+zyte_common_items-0.14.0.dist-info/top_level.txt,sha256=TYbUnTxKu5R5uLUxMJsbpr47Uc1hGu5GcSR8yiQz6og,18
+zyte_common_items-0.14.0.dist-info/RECORD,,
