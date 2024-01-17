@@ -1,0 +1,134 @@
+### clickhouse-s3-etl-tools
+
+clickhouse-s3-etl-tools is a powerful utility designed for seamless data transfers between ClickHouse clusters using the
+flexibility of Amazon S3 or any S3-compatible storage as an intermediate staging area.
+
+## Introduction
+
+Managing and orchestrating data movement between different ClickHouse clusters can be a challenging task. The
+clickhouse-s3-etl-tools service simplifies this process by acting as a bridge, enabling efficient transfers via S3
+storage. This toolset is especially useful in scenarios where you need to synchronize or backup data between ClickHouse
+databases or clusters with ease.
+
+## Installation
+
+To quickly get started with clickhouse-s3-etl-tools, you can install the package using the following:
+
+```pip install clickhouse-s3-etl-tools```
+
+## Utilities
+
+The ClickHouse S3 ETL Tools consist of two main utilities:
+
+* s3_exporter: Processes data from a ClickHouse instance and exports it to an S3 bucket.
+
+```
+s3_exporter --ch-url-source='clickhouse+native://user:password@localhost:9000/database' \
+            --s3-access-key='your_s3_access_key' \
+            --s3-secret-key='your_s3_secret_key' \
+            --s3-path='s3://your_bucket/path/to/data' \
+            --table-name='your_table' \
+            --database='your_database'
+```
+
+* s3_to_clickhouse_transfer: Retrieves data from an S3 bucket and transfers it to a ClickHouse instance.
+
+```
+s3_to_clickhouse_transfer --ch-url-destination='clickhouse+native://user:password@localhost:9000/destination_database' \
+                          --s3-access-key='your_s3_access_key' \
+                          --s3-secret-key='your_s3_secret_key' \
+                          --s3-path='s3://your_bucket/path/to/data' \
+                          --table-name='your_table' \
+                          --database='your_database' \
+                          --database-destination='your_destination_database' \
+                          --drop-destination-table-if-exists \
+                          --use-s3-cluster \
+                          --on-cluster-directive='your_directive'
+
+```
+
+### Common Parameters (Applicable to both `s3_exporter` and `s3_to_clickhouse_transfer`):
+
+- `--ch-url-source` (s3_exporter) / `--ch-url-destination` (s3_to_clickhouse_transfer):
+    - **Description:** ClickHouse URL for either source or destination, depending on the utility.
+    - **Example:** `--ch-url-source='clickhouse+native://user:password@localhost:9000/database'`
+
+- `--s3-access-key`:
+    - **Description:** Access key for the S3 bucket.
+    - **Example:** `--s3-access-key='your_s3_access_key'`
+
+- `--s3-secret-key`:
+    - **Description:** Secret key for the S3 bucket.
+    - **Example:** `--s3-secret-key='your_s3_secret_key'`
+
+- `--s3-path`:
+    - **Description:** Path to the data in the S3 bucket.
+    - **Example:** `--s3-path='s3://your_bucket/path/to/data'`
+
+- `--table-name`:
+    - **Description:** Name of the table in ClickHouse.
+    - **Example:** `--table-name='your_table'`
+
+- `--database` (s3_exporter) / `--database-destination` (s3_to_clickhouse_transfer):
+    - **Description:** Database in ClickHouse.
+    - **Example:** `--database='your_database'`
+
+- `--batch-size`:
+    - **Description:** Batch size for data transfer (optional, default: `DEFAULT_VALUE_BATCH_SIZE`).
+    - **Example:** `--batch-size=100`
+
+- `--log-level`:
+    - **Description:** Log level for the utility (optional, default: `DEFAULT_VALUE_LOG_LEVEL`).
+    - **Example:** `--log-level='DEBUG'`
+
+- `--drop-destination-table-if-exists` (s3_to_clickhouse_transfer only):
+    - **Description:** Drop destination table if it exists.
+    - **Example:** `--drop-destination-table-if-exists`
+
+- `--use-s3-cluster` (s3_to_clickhouse_transfer only):
+    - **Description:** Use S3 cluster for data transfer.
+    - **Example:** `--use-s3-cluster`
+
+- `--on-cluster-directive` (s3_to_clickhouse_transfer only):
+    - **Description:** Directive for cluster configuration (default: "").
+    - **Example:** `--on-cluster-directive='your_directive'`
+
+### Environment Variables:
+
+- `NUM_PARTITIONS_DROP_IN_QUERY`:
+    - **Description:** Number of partitions to drop in each query.
+
+- `MAX_TABLE_SIZE_TO_DROP_TABLE_MB`:
+    - **Description:** Maximum table size (in MB) to trigger table dropping.
+
+- `NUMB_RECONNECT_ATTEMPTS_CH`:
+    - **Description:** Number of attempts to reconnect to ClickHouse.
+
+- `MAX_PERCENTAGE_DIFF_EXTRACT`:
+    - **Description:** Maximum percentage difference for extraction.
+
+- `MAX_PERCENTAGE_DIFF_TRANSFORM`:
+    - **Description:** Maximum percentage difference for transformation.
+
+- `MAX_PARTITIONS_PER_INSERT_BLOCK`:
+    - **Description:** Maximum partitions per insert block.
+
+- `DELAY_BETWEEN_DROP_PARTITIONS_SEC`:
+    - **Description:** Delay between drop partitions (in seconds).
+
+### Example Usage with Environment Variables:
+
+```bash
+NUM_PARTITIONS_DROP_IN_QUERY=100 \
+MAX_TABLE_SIZE_TO_DROP_TABLE_MB=1000 \
+NUMB_RECONNECT_ATTEMPTS_CH=3 \
+MAX_PERCENTAGE_DIFF_EXTRACT=1 \
+MAX_PERCENTAGE_DIFF_TRANSFORM=1 \
+MAX_PARTITIONS_PER_INSERT_BLOCK=500 \
+DELAY_BETWEEN_DROP_PARTITIONS_SEC=10 \
+s3_exporter --ch-url-source='clickhouse+native://user:password@localhost:9000/database' \
+            --s3-access-key='your_s3_access_key' \
+            --s3-secret-key='your_s3_secret_key' \
+            --s3-path='s3://your_bucket/path/to/data' \
+            --table-name='your_table' \
+            --database='your_database'
