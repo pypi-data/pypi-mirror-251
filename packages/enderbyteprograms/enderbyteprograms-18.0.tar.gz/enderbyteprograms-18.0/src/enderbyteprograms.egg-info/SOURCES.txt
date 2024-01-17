@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/epadvertisements.py
+src/epappdata.py
+src/epdoc.py
+src/epprodkey.py
+src/pngdim.py
+src/enderbyteprograms.egg-info/PKG-INFO
+src/enderbyteprograms.egg-info/SOURCES.txt
+src/enderbyteprograms.egg-info/dependency_links.txt
+src/enderbyteprograms.egg-info/top_level.txt
