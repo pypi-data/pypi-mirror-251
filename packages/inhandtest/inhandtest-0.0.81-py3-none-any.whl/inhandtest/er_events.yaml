@@ -1,0 +1,169 @@
+en:
+  test_email:
+    type: Test Email
+    message:
+  login_success:      #  唯一的事件类型，不能重复
+    find_param: login_ok       # 在api请求时，带入的指定的查询参数
+    type: Login successfully    # 事件类型，存在国际化
+    message: login successfully   # 事件内容，存在国际化
+  login_fail:
+    find_param: login_fail
+    type: Login failed
+    message: login failed
+  config_change:
+    find_param: config
+    type: Configuration changed
+    message: Router configuration updated
+  cell_type_threshold:
+    find_param: cellular_flow
+    type: Cellular traffic reaches the threshold
+    message: traffic reaches
+  detection_success:
+    find_param: uplink_detect
+    type: Link detection status changed
+    message: link detection is successful
+  detection_fail:
+    find_param: uplink_detect
+    type: Link detection status changed
+    message: link detection is unreachable, please check the interface or network
+  wan1_connect:
+    find_param: uplink_state
+    type: Uplink status changed
+    message: WAN1 is connected
+  wan1_disconnect:
+    find_param: uplink_state
+    type: Uplink status changed
+    message: WAN1 is disconnected
+  wan1_to_sim1:
+    find_param: uplink_switch
+    type: Uplink switched
+    message: WAN1 switched to Cellular(SIM1)
+  sim1_to_wan1:
+    find_param: uplink_switch
+    type: Uplink switched
+    message: Cellular(SIM1) switched to WAN1
+  wan1_to_wan2:
+    find_param: uplink_switch
+    type: Uplink switched
+    message: WAN1 switched to WAN2
+  wan2_to_wan1:
+    find_param: uplink_switch
+    type: Uplink switched
+    message: WAN2 switched to WAN1
+  ipsec_connect:
+    find_param: vpn_state
+    type: VPN status changed
+    message: IPSec VPN.*is connected
+  ipsec_disconnect:
+    find_param: vpn_state
+    type: VPN status changed
+    message: IPSec VPN.*is disconnected
+  l2tp_connect:
+    find_param: vpn_state
+    type: VPN status changed
+    message: L2TP VPN.*is connected
+  l2tp_disconnect:
+    find_param: vpn_state
+    type: VPN status changed
+    message: L2TP VPN.*is disconnected
+  wan2_to_lan1:
+    find_param: wan2_lan1_s
+    type: WAN2/LAN1 switched
+    message: WAN2 Switched to LAN1
+  lan1_to_wan2:
+    find_param: wan2_lan1_s
+    type: WAN2/LAN1 switched
+    message: LAN1 Switched to WAN2
+  reboot:
+    find_param: reboot
+    type: Reboot
+    message: The device rebooted
+  upgrade:
+    find_param: upgrade
+    type: Upgrade
+    message: Device upgrade successfully
+
+cn:
+  test_email:
+    type: 测试邮件
+    message:
+  login_success:
+    find_param: login_ok
+    type: 用户登录成功
+    message: 登录成功
+  login_fail:
+    find_param: login_fail
+    type: 用户登录失败
+    message: 登录失败
+  config_change:
+    find_param: config
+    type: 配置变化
+    message: 路由器配置更新
+  cell_type_threshold:
+    find_param: cellular_flow
+    type: 蜂窝流量到达阈值
+    message: 流量到达
+  detection_success:
+    find_param: uplink_detect
+    type: 链路探测状态变化
+    message: 链路探测成功
+  detection_fail:
+    find_param: uplink_detect
+    type: 链路探测状态变化
+    message: 链路探测不可达，请检查接口或网络
+  wan1_connect:
+    find_param: uplink_state
+    type: 上行链路状态变化
+    message: WAN1 已连接
+  wan1_disconnect:
+    find_param: uplink_state
+    type: 上行链路状态变化
+    message: WAN1 断开连接
+  wan1_to_sim1:
+    find_param: uplink_switch
+    type: 上行链路切换
+    message: WAN1 切换至 Cellular(SIM1)
+  sim1_to_wan1:
+    find_param: uplink_switch
+    type: 上行链路切换
+    message: Cellular(SIM1) 切换至 WAN1
+  wan1_to_wan2:
+    find_param: uplink_switch
+    type: 上行链路切换
+    message: WAN1 接口切换至 WAN2
+  wan2_to_wan1:
+    find_param: uplink_switch
+    type: 上行链路切换
+    message: WAN2 接口切换至 WAN1
+  vpn_state:
+    find_param: 登录成功
+    type: VPN状态变化
+    message: 已连接
+  ipsec_disconnect:
+    find_param: vpn_state
+    type: VPN状态变化
+    message: 断开连接
+  l2tp_connect:
+    find_param: vpn_state
+    type: VPN状态变化
+    message: 已连接
+  l2tp_disconnect:
+    find_param: vpn_state
+    type: VPN状态变化
+    message: 断开连接
+  wan2_to_lan1:
+    find_param: wan2_lan1_s
+    type: WAN2/LAN1 切换
+    message: WAN2 接口切换为 LAN1
+  lan1_to_wan2:
+    find_param: wan2_lan1_s
+    type:  WAN2/LAN1 切换
+    message: LAN1 接口切换为 WAN2
+  reboot:
+    find_param: reboot
+    type: 重 启
+    message: 设备发生重启
+  upgrade:
+    find_param: upgrade
+    type: 升 级
+    message: 设备升级成功

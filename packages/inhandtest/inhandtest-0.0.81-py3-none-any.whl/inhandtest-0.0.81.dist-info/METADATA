@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: inhandtest
+Version: 0.0.81
+Summary: inhand test tools, so easy
+Home-page: https://inhandnetworks.yuque.com/irhb08/mrpu1r/qgu0imvigkm2xry9?singleDoc# 《inhandtest docs》
+Author: liwei
+Author-email: liwei@inhand.com.cn
+Maintainer: liwei
+Maintainer-email: liwei@inhand.com.cn
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: pytz
+Requires-Dist: requests
+Requires-Dist: playwright ==1.40.0
+Requires-Dist: pyserial
+Requires-Dist: modbus-tk
+Requires-Dist: paho-mqtt
+Requires-Dist: urllib3
+Requires-Dist: paramiko
+Requires-Dist: emails
+Requires-Dist: flash
+Requires-Dist: Jinja2 ==3.1.2
+Requires-Dist: pymongo
+Requires-Dist: psutil
+Requires-Dist: lxml
+Requires-Dist: dynaconf
+Requires-Dist: colorlog
+Requires-Dist: pandas
+Requires-Dist: pyyaml
+Requires-Dist: speedtest-cli
+Requires-Dist: python-consul
+Requires-Dist: allure-pytest
+Requires-Dist: telnetlib3
+
+方便inhand测试同事在自动化测试时，对通用协议或者常用工具及方法做封装，需要使用时即在线安装；
+映翰通出品，追尾必究！
