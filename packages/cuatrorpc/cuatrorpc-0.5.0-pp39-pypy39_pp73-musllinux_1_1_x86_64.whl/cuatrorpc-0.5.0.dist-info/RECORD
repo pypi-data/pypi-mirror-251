@@ -1,0 +1,10 @@
+cuatrorpc-0.5.0.dist-info/METADATA,sha256=uIAXr83LpRO20upq2essP2_O_iyNvVx4IuRVT89Cv7s,4252
+cuatrorpc-0.5.0.dist-info/WHEEL,sha256=Ef_jKm2euZykP6MHbuq5fbgqOKrEFw5Q_W0cjHuWhwU,112
+cuatrorpc-0.5.0.dist-info/license_files/LICENSE,sha256=yPYBWLKps5ZVuQC2vID0oKn7hnTWNhtzvioSgMJopzs,1065
+cuatrorpc.libs/libgcc_s-1e52349c.so.1,sha256=Ani0u_W_tB8ESsFePO4D2mn2lrgWLhyFdw6RETxBTYM,437537
+cuatrorpc/__init__.pyi,sha256=_U1gMocAGvzTquMfa9Di5nzv1ngfcjCC1lUXcLhKJYY,2183
+cuatrorpc/__init__.py,sha256=Duujihg2RSTCVilsLdhzu9jH_Y7sM7NOQKA_tWsOcT4,10354
+cuatrorpc/cuatrorpc_rs.pyi,sha256=6uKzMLtaY2NGODq_5TOhEzxGWUbJROPAXSn-sPnyy6g,292
+cuatrorpc/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cuatrorpc/cuatrorpc_rs.pypy39-pp73-x86_64-linux-gnu.so,sha256=4J2aCttAcAm9KzFlKp7CR3ylbopDhJ5ut2d6-sO46wA,8744129
+cuatrorpc-0.5.0.dist-info/RECORD,,
