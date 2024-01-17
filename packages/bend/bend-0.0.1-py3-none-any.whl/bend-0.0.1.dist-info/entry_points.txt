@@ -1,0 +1,2 @@
+[console_scripts]
+bend = bend.main:main
