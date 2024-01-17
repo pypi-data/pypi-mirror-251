@@ -1,0 +1,13 @@
+CODE_OF_CONDUCT.md
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/README_pypi.md
+src/TestRepo995.egg-info/PKG-INFO
+src/TestRepo995.egg-info/SOURCES.txt
+src/TestRepo995.egg-info/dependency_links.txt
+src/TestRepo995.egg-info/not-zip-safe
+src/TestRepo995.egg-info/top_level.txt
+src/testrepo995/__init__.py
+src/testrepo995/py.typed
