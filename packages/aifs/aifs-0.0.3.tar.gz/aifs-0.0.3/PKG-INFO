@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: aifs
+Version: 0.0.3
+Summary: Local semantic search. Stupidly simple.
+License: MIT
+Author: Killian Lucas
+Author-email: killian@openinterpreter.com
+Requires-Python: >=3.9.0,<3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: chromadb (>=0.4.22,<0.5.0)
+Requires-Dist: unstructured[all-docs] (>=0.12.0,<0.13.0)
+Description-Content-Type: text/markdown
+
+# AI Filesystem
+
+Local semantic search. Stupidly simple.
+
+```shell
+pip install aifs
+```
+
+```python
+from aifs import search
+
+search("How does AI Filesystem work?", path="/path/to/folder")
+search("It's not unlike how Spotlight works.") # Path defaults to CWD
+```
+
