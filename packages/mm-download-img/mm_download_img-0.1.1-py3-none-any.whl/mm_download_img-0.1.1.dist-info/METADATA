@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: mm-download-img
+Version: 0.1.1
+Summary: A library to download image from s3
+Author: Viet Nguyen Ba
+Author-email: nbviet98@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: opencv-python
+
+# Download tool for s3 path
+```
+from mm_donwloader.downloader import download
+
+save_path = 'save_path.jpg'
+s3_path = 's3_path.jpg'
+download(save_path, s3_path)
+```
