@@ -1,0 +1,6 @@
+xinterp-0.1.0.dist-info/METADATA,sha256=OKBVWHskYPR718pPhYwO3V4N8nqpY2a5QmjGRMjG70s,1057
+xinterp-0.1.0.dist-info/WHEEL,sha256=zWYjyrndoXjOoElok3d6rrB-N0Fv2I_2mGtMRzMv-Lk,91
+xinterp/core.py,sha256=T9FMdqLzmHIcikNEjxNu4GqI5JNQdyMk-HTnESxeDfk,1608
+xinterp/__init__.py,sha256=NcFCrvea7TbGiguazRSKEaEeQPFXJHU87zVD247C_34,48
+xinterp/rust.cp310-win32.pyd,sha256=WFWU-WM2-n-XnGRbW1H6SXFMHW5FpXol6iLRnFC8_Ns,278016
+xinterp-0.1.0.dist-info/RECORD,,
