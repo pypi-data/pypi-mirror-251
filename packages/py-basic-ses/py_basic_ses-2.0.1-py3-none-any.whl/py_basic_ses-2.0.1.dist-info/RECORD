@@ -1,0 +1,10 @@
+py_basic_ses/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+py_basic_ses/emailing.py,sha256=ASkgIH-T1vq79AWOLiNIq9FgeFebD6pbWXHxQfJ5N0w,6255
+py_basic_ses/entry.py,sha256=Hh9u_QPg5f_XAgimiSeccg0gfUiYi_chp3kf3tcwq78,4371
+py_basic_ses/exceptions.py,sha256=8h6G3I8rcIIvFH87PuSUlvEMSUmZPoJbdlyvM_mWI_4,118
+py_basic_ses-2.0.1.dist-info/LICENSE,sha256=NbWo5N7PSxWHV7X3JFuq3x6KZ4krcMCm4HIzxs0ivts,1079
+py_basic_ses-2.0.1.dist-info/METADATA,sha256=GtsaAfbjZI0_fSyUu8vq_w0EzWctYcxghrfKIj0Fd5A,17188
+py_basic_ses-2.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+py_basic_ses-2.0.1.dist-info/entry_points.txt,sha256=t7ZFQ7axeXLPEsWIKAulmjMkhWuX8wMDHa3nb15m3yQ,108
+py_basic_ses-2.0.1.dist-info/top_level.txt,sha256=NBg7d10yjFGTLr6uEuZWUeUE2yutdF1yt-Az4WDgS6c,13
+py_basic_ses-2.0.1.dist-info/RECORD,,
