@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: py3ioc
+Version: 1.0.0
+Summary: Python 3 IoC tools.
+Home-page: https://github.com/atanistra/pyioc
+Author: Jakub (Mr. UPGrade) Czapliński / atanistra
+Author-email: pypi@serwis.atamail.eu
+License: MIT
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: enum34>=1.1.1
+Provides-Extra: test
+Requires-Dist: pytest>=2.8.0; extra == "test"
+Requires-Dist: mock>=1.3.0; extra == "test"
+Requires-Dist: coverage>=4.0.0; extra == "test"
+Provides-Extra: dev
+Requires-Dist: ipython; extra == "dev"
+Requires-Dist: flake8; extra == "dev"
+Provides-Extra: doc
+Requires-Dist: sphinx; extra == "doc"
+
+
+        Python 3 IoC tools.
+        https://github.com/atanistra/pyioc/README.MD
+        
