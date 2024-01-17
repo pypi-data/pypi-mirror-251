@@ -1,0 +1,12 @@
+numpy
+ase
+scipy
+spglib>=1.15.0
+scikit-learn
+networkx>=2.4
+
+[dev]
+coverage
+pytest
+black
+pydoc-markdown
