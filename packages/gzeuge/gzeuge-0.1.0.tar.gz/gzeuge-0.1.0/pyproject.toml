@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "gzeuge"
+version = "0.1.0"
+description = "A collection of basic and common graph utilities"
+authors = ["Kun Lu <kun.lu.brain@gmail.com>"]
+readme = "README.md"
+packages = [{include = "gzeuge"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pydantic = "^2.3.0"
+fire = "^0.5.0"
+pyyaml = "^6.0.1"
+jsonpickle = "^3.0.2"
+jsonlines = "^4.0.0"
+jinja2 = "^3.1.2"
+graphviz = "^0.20.1"
+networkx = "^3.1"
+pyparsing = "^3.1.1"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.25.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
