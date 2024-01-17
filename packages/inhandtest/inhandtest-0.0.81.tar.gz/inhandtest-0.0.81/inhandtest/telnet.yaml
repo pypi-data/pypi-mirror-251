@@ -1,0 +1,140 @@
+login_spe:
+  default: '#'
+  odu2002_ir302_ir305_ir615_cr202: '>'
+normal_mode:
+  user_mode:
+    default:    # 从normal_mode进入user_mode的命令，默认
+      - enable
+      - pwd
+  config_mode:
+    default:
+      - enable
+      - pwd
+      - con t
+  super_mode:
+    default:
+      - enable
+      - pwd
+      - super_user super_password
+    ir302_ir305_ir615_cr202:   # 从normal_mode进入super_mode的命令，如果型号不是ir302_ir305_ir615，就用默认的， 如果是就用自己的， 可以任意加
+      - support enable
+      - super_user super_password
+  factory_mode:
+    default:
+      - enable
+      - pwd
+      - factory_user factory_password
+    ir302_ir305_ir615_cr202:
+      - support enable
+      - factory_user factory_password
+user_mode:
+  super_mode:
+    default:
+      - super_user super_password
+    ir302_ir305_ir615_cr202:
+      - exit
+      - support enable
+      - super_user super_password
+  config_mode:
+    default:
+      - con t
+  normal_mode:
+    default:
+      - disable
+    ir302_ir305_ir615_cr202:
+      - exit
+  factory_mode:
+    default:
+      - factory_user factory_password
+config_mode:
+  normal_mode:
+    default:
+      - exit
+      - disable
+    ir302_ir305_ir615_cr202:
+      - exit
+      - exit
+  user_mode:
+    default:
+      - exit
+  super_mode:
+    default:
+      - exit
+      - super_user super_password
+    ir302_ir305_ir615_cr202:
+      - exit
+      - exit
+      - support enable
+      - super_user super_password
+  factory_mode:
+    default:
+      - exit
+      - factory_user factory_password
+    ir302_ir305_ir615_cr202:
+      - exit
+      - exit
+      - support enable
+      - factory_user factory_password
+super_mode:
+  normal_mode:
+    default:
+      - cli
+      - disable
+    ir302_ir305_ir615_cr202:
+      - console
+    odu2002:
+      - cli
+  user_mode:
+    default:
+      - cli
+    ir302_ir305_ir615_cr202:
+      - console
+      - enable
+      - pwd
+  config_mode:
+    default:
+      - cli
+      - con t
+    ir302_ir305_ir615_cr202:
+      - console
+      - enable
+      - pwd
+      - con t
+    odu2002:
+      - cli
+      - enable
+      - pwd
+      - con t
+  factory_mode:
+    default:
+      - cli
+      - factory_user factory_password
+    ir302_ir305_ir615_cr202:
+      - console
+      - enable
+      - pwd
+      - factory_user factory_password
+factory_mode:
+  normal_mode:
+    default:
+      - exit
+      - disable
+    ir302_ir305_ir615_cr202:
+      - exit
+      - exit
+  user_mode:
+    default:
+      - exit
+  config_mode:
+    default:
+      - exit
+      - con t
+  super_mode:
+    default:
+      - exit
+      - super_user super_password
+    ir302_ir305_ir615_cr202:
+      - exit
+      - exit
+      - support enable
+      - super_user super_password
