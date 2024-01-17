@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: Rasgulla
+Version: 0.0.1
+Summary: A small example package
+Author-email: Nihar Sarkar <admin@sarkarnihar.com>
+Project-URL: Homepage, https://open-range-org.github.io/
+Project-URL: Issues, https://github.com/Open-range-org/Rasgulla/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+##Rasgulla
