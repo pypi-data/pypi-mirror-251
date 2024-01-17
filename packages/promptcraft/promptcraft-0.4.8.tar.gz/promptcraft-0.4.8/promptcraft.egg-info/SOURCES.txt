@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+promptcraft/__init__.py
+promptcraft/character.py
+promptcraft/parrot.py
+promptcraft/sentence.py
+promptcraft/styleformer.py
+promptcraft/word.py
+promptcraft.egg-info/PKG-INFO
+promptcraft.egg-info/SOURCES.txt
+promptcraft.egg-info/dependency_links.txt
+promptcraft.egg-info/requires.txt
+promptcraft.egg-info/top_level.txt
