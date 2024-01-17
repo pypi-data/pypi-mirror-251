@@ -1,0 +1,26 @@
+[project]
+name = "GeneralSQL"
+dynamic = ["version"]
+authors = [
+    {name = "joker-zzp", email = "joker_zzp@qq.com"},
+]
+description = "Sql generator tool."
+readme = "./GeneralSQL/README.md"
+license = {file = "./GeneralSQL/LICENSE"}
+requires-python = ">=3.8"
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/joker-zzp/GeneralSQL"
+Issues = "https://github.com/joker-zzp/GeneralSQL/issues"
+
+[tool.poetry.dependencies]
+mysql-connector = {version = ">=2.2.9", optional = true}
+
+[tool.setuptools.dynamic]
+version = {attr = "GeneralSQL.__version__"}
