@@ -1,0 +1,12 @@
+gulagcleaner/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gulagcleaner/_lib.cp38-win_amd64.pyd,sha256=el6TUyxlNXFJvgrDm_wJDD8P1GNZK5TEVY33L_tlO6I,744960
+gulagcleaner/clean.py,sha256=DAfHz1TgsHaX4G8emSkzyy3rW796I6zuZWtfbK42dms,1432
+gulagcleaner/command_line.py,sha256=rJ4Fv-9IzY97yoC7xs8AHaJjotDtrOq5DTKVKBIj6oc,4407
+gulagcleaner/decrypt.py,sha256=pmHAWg4zNLeUoYUz-5-jXEYSN4748L5hBtq55hNBuDs,465
+gulagcleaner/metadata.py,sha256=bKwxikJO3Q6pGawwIt3pT_MZtv5StdIY0QjeDOyV064,968
+gulagcleaner-0.12.1.dist-info/LICENSE,sha256=e4_mXlhr_NAvyKHude7iF4RnWfqmO4HSIDwg0vBMqJw,71644
+gulagcleaner-0.12.1.dist-info/METADATA,sha256=xKzDVmpUNUjx7AH9bmjumKIYnQ096Pm_gMQAkEAgUb0,86108
+gulagcleaner-0.12.1.dist-info/WHEEL,sha256=3SeyPJ5-Us2Ct5GSftUVKtLSlm-bNefW4m5qd0GLzww,100
+gulagcleaner-0.12.1.dist-info/entry_points.txt,sha256=eQusLRQShH5pUIaZot3vxhJUmIl3WZ3Od3jcHe50jAw,64
+gulagcleaner-0.12.1.dist-info/top_level.txt,sha256=fUsQ7UtKqrhW4ZfKQ-CsBR6X7jaVInjxVObxxpI_HVc,13
+gulagcleaner-0.12.1.dist-info/RECORD,,
