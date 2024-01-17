@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+skoots.egg-info/PKG-INFO
+skoots.egg-info/SOURCES.txt
+skoots.egg-info/dependency_links.txt
+skoots.egg-info/entry_points.txt
+skoots.egg-info/not-zip-safe
+skoots.egg-info/requires.txt
+skoots.egg-info/top_level.txt
