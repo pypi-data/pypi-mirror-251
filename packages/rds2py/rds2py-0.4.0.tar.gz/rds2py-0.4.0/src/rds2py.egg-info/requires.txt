@@ -1,0 +1,19 @@
+Cython
+numpy
+pandas
+scipy
+singlecellexperiment>=0.4.1
+summarizedexperiment>=0.4.1
+
+[:python_version < "3.8"]
+importlib-metadata
+
+[testing]
+setuptools
+pytest
+pytest-cov
+numpy
+pandas
+scipy
+singlecellexperiment
+summarizedexperiment

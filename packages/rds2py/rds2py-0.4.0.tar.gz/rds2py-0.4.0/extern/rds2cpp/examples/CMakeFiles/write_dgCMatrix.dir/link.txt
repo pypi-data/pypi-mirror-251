@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/write_dgCMatrix.dir/src/write_dgCMatrix.cpp.o -o write_dgCMatrix  /usr/lib/x86_64-linux-gnu/libz.so 
