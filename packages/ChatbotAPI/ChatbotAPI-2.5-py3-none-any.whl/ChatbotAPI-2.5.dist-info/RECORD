@@ -1,0 +1,10 @@
+ChatbotAPI/__init__.py,sha256=md2eRDYk3oQvjFvhRTkPHPjUC4q98LkcGwSxp1z-wu0,110
+ChatbotAPI/chatbasics.py,sha256=2UNE-0di2aZOdqsEfRNQWaOSspFa1--3lxjBUO2SfVI,5388
+ChatbotAPI/errors.py,sha256=lbwc8t6qayyint9Hw-LNvOYxo14gPOlC52U4Ta0MQY8,158
+ChatbotAPI/test_main.py,sha256=7YY3_cXjDxJ-f1OBAEqiC7DNSfEGOwp34YXrOdGRjOI,234
+ChatbotAPI/utils.py,sha256=mYsvCr7jUUlgMqPVSeX10nDjiLQD6iUhIpx1V-wsEHs,384
+ChatbotAPI-2.5.dist-info/LICENSE,sha256=gcuuhKKc5-dwvyvHsXjlC9oM6N5gZ6umYbC8ewW1Yvg,35821
+ChatbotAPI-2.5.dist-info/METADATA,sha256=yYx6iQwqdCU3JI623umlqEpqiySi0QOd-ECq0UmsbkM,2137
+ChatbotAPI-2.5.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+ChatbotAPI-2.5.dist-info/top_level.txt,sha256=jv0TDT5MmolQgMypOCalY6pUKD2pmqdp04ionw7-jdk,11
+ChatbotAPI-2.5.dist-info/RECORD,,
