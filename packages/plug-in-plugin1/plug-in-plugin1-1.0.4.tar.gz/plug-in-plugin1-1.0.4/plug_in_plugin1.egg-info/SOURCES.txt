@@ -1,0 +1,7 @@
+pyproject.toml
+plug_in/plugin1/__init__.py
+plug_in/plugin1/constants.py
+plug_in_plugin1.egg-info/PKG-INFO
+plug_in_plugin1.egg-info/SOURCES.txt
+plug_in_plugin1.egg-info/dependency_links.txt
+plug_in_plugin1.egg-info/top_level.txt
