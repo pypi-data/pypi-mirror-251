@@ -1,0 +1,334 @@
+coc1920:
+  - name: Antiquarian
+    credit: 30-70
+    points: Education*4
+    skills:
+      - Appraise
+      - History
+      - Library Use
+      - Spot Hidden
+      - Interpersonal
+      - Arts and Crafts
+      - Language (Own)
+      - Language
+      - Any
+  - name: Archaelogist
+    credit: 10-40
+    points: Education*4
+    skills:
+      - Appraise
+      - Archaelogy
+      - History
+      - Library Use
+      - Spot Hidden
+      - Navigate
+      - Science
+      - Language
+      - Mechanical Repair
+  - name: Artist
+    credit: 9-50
+    points: Education*2+Power*2|Education*2+Dexterity*2
+    skills:
+      - Arts and Crafts
+      - History|Natural World
+      - Interpersonal
+      - Language
+      - Spot Hidden
+      - Psychology
+      - Any
+      - Any
+  - name: Athlete
+    credit: 9-70
+    points: Education*2+Strength*2|Education*2+Dexterity*2
+    skills:
+      - Climb
+      - Jump
+      - Fighting (Brawl)
+      - Ride
+      - Interpersonal
+      - Swim
+      - Throw
+      - Any
+  - name: Author
+    credit: 9-30
+    points: Education*4
+    skills:
+      - Arts and Crafts
+      - History
+      - Library Use
+      - Language
+      - Language (Own)
+      - Natural World|Occult
+      - Psychology
+      - Any
+  - name: Clergy, member of the
+    credit: 9-60
+    points: Education*4
+    skills:
+      - Accounting
+      - History
+      - Library Use
+      - Listen
+      - Interpersonal
+      - Language
+      - Psychology
+      - Any  
+  - name: Criminal
+    credit: 5-65
+    points: Education*2+Strength*2|Education*2+Dexterity*2
+    skills:
+      - Interpersonal
+      - Psychology
+      - Spot Hidden
+      - Stealth
+      - 4(Appraise|Disguise|Fighting|Firearms|Locksmith|Mechanical Repair|Sleight of Hand)
+  - name: Dilettante
+    credit: 50-99
+    points: Education*2+Appearance*2
+    skills:
+      - Arts and Crafts
+      - Firearms
+      - Language
+      - Ride
+      - Interpersonal
+      - Any
+      - Any
+      - Any
+  - name: Doctor of Medicine
+    credit: 30-80
+    points: Education*4
+    skills:
+      - First Aid
+      - Language (Latin)
+      - Medicine
+      - Psychology
+      - Science (Biology)
+      - Science (Pharmacy)
+      - Any
+      - Any
+  - name: Drifter
+    credit: 0-5
+    points: Education*2+Appearance*2|Education*2+Dexterity*2|Education*2+Strength*2
+    skills:
+      - Climb
+      - Jump
+      - Listen
+      - Navigate
+      - Interpersonal
+      - Stealth
+      - Any
+      - Any
+  - name: Engineer
+    credit: 30-60
+    points: Education*4
+    skills:
+      - Arts and Crafts
+      - Electrical Repair
+      - Library Use
+      - Mechanical Repair
+      - Science (Engineering)
+      - Science (Physics)
+      - Operate Heavy Machinery
+      - Any
+  - name: Entertainer
+    credit: 9-70
+    points: Education*2+Appearance*2
+    skills:
+      - Arts and Crafts
+      - Disguise
+      - Interpersonal
+      - Interpersonal
+      - Listen
+      - Psychology
+      - Any
+      - Any
+  - name: Farmer
+    credit: 9-30
+    points: Education*2+Strength*2|Education*2+Dexterity*2
+    skills:
+      - Arts and Crafts
+      - Drive Auto
+      - Interpersonal
+      - Mechanical Repair
+      - Natural World
+      - Track
+      - Operate Heavy Machinery
+      - Any
+  - name: Journalist
+    credit: 9-30
+    points: Education*4
+    skills:
+      - Interpersonal
+      - Language (Own)
+      - Arts and Crafts (Photography)
+      - History
+      - Library Use
+      - Psychology
+      - Any
+      - Any
+  - name: Lawyer
+    credit: 30-80
+    points: Education*4
+    skills:
+      - Accounting
+      - Law
+      - Library Use
+      - Interpersonal
+      - Interpersonal
+      - Psychology
+      - Any
+      - Any
+  - name: Librarian
+    credit: 9-35
+    points: Education*4
+    skills:
+      - Accounting
+      - Library Use
+      - Language
+      - Language (Own)
+      - Any
+      - Any
+      - Any
+      - Any
+  - name: Military Officer
+    credit: 20-70
+    points: Education*2+Strength*2|Education*2+Dexterity*2
+    skills:
+      - Accounting
+      - Navigate
+      - Firearms
+      - Interpersonal
+      - Interpersonal
+      - Psychology
+      - Survival
+      - Any
+  - name: Missionary
+    credit: 0-30
+    points: Education*4
+    skills:
+      - Arts and Crafts
+      - First Aid
+      - Mechanical Repair
+      - Medicine
+      - Natural World
+      - Interpersonal
+      - Any  
+      - Any      
+  - name: Musician
+    credit: 9-30
+    points: Education*2+Dexterity*2|Education*2+Strength*2
+    skills:
+      - Arts and Crafts
+      - Listen
+      - Interpersonal
+      - Any  
+      - Any
+      - Any  
+      - Any
+  - name: Parapsychologist
+    credit: 9-30
+    points: Education*4
+    skills:
+      - Anthropology
+      - Arts and Crafts
+      - History
+      - Library Use  
+      - Occult
+      - Language
+      - Psychology
+      - Any  
+  - name: Pilot
+    credit: 20-70
+    points: Education*2+Dexterity*2
+    skills:
+      - Electrical Repair
+      - Mechanical Repair
+      - Navigate
+      - Operate Heavy Machinery
+      - Pilot
+      - Science (Astronomy)  
+      - Any
+      - Any
+  - name: Police Detective
+    credit: 20-50
+    points: Education*2+Dexterity*2|Education*2+Strength*2
+    skills:
+      - Arts and Crafts|Disguise
+      - Firearms
+      - Law
+      - Listen
+      - Interpersonal
+      - Psychology  
+      - Spot Hidden
+      - Any
+  - name: Police Officer
+    credit: 9-30
+    points: Education*2+Dexterity*2|Education*2+Strength*2
+    skills:
+      - Fighting (Brawl)
+      - Firearms
+      - First Aid
+      - Interpersonal
+      - Law
+      - Psychology  
+      - Spot Hidden
+      - Drive|Ride
+  - name: Private Investigator
+    credit: 9-30
+    points: Education*2+Dexterity*2|Education*2+Strength*2
+    skills:
+      - Arts and Crafts
+      - Disguise
+      - Law
+      - Library Use
+      - Interpersonal
+      - Psychology  
+      - Spot Hidden
+      - Any
+  - name: Professor
+    credit: 20-70
+    points: Education*4
+    skills:
+      - Library Use
+      - Language
+      - Language (Own)
+      - Psychology  
+      - Any
+      - Any
+      - Any
+      - Any
+  - name: Soldier
+    credit: 9-30
+    points: Education*2+Dexterity*2|Education*2+Strength*2
+    skills:
+      - Climb|Swim
+      - Dodge
+      - Fighting
+      - Firearms
+      - Stealth
+      - Survival
+      - 2(First Aid|Mechanical Repair|Language)
+  - name: Nurse
+    credit: 9-30
+    points: Education*4
+    skills:
+      - Interpersonal
+      - Listen
+      - First Aid
+      - Medicine
+      - Science (Biology)
+      - Science (Chemistry)
+      - Spot Hidden
+  - name: Zealot
+    credit: 0-30
+    points: Education*2+Appearance*2|Education*2+Power*2
+    skills:
+      - History
+      - Interpersonal
+      - Interpersonal
+      - Psychology
+      - Stealth
+      - Any
+      - Any
+      - Any
+      

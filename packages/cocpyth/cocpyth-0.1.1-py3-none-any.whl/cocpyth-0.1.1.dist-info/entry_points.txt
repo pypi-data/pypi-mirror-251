@@ -1,0 +1,2 @@
+[console_scripts]
+cocpyth = cocpyth.__main__:cli
