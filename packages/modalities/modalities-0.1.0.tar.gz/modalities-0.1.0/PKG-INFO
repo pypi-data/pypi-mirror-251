@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: modalities
+Version: 0.1.0
+Summary: Modalities, a python framework for distributed and reproducible foundation model training.
+Requires-Python: <3.12,>=3.8
+License-File: LICENSE
+Requires-Dist: torch>=2.0
+Requires-Dist: tqdm
+Requires-Dist: pyyaml
+Requires-Dist: transformers
+Requires-Dist: datasets
+Requires-Dist: protobuf
+Requires-Dist: SentencePiece
+Requires-Dist: accelerate
+Requires-Dist: rich
+Requires-Dist: xformers
+Requires-Dist: omegaconf
+Requires-Dist: pydantic
+Requires-Dist: click
+Requires-Dist: click_pathlib
+Requires-Dist: jq
+Requires-Dist: xformers
+Requires-Dist: class_resolver
+Requires-Dist: wandb
+Provides-Extra: linting
+Requires-Dist: pre-commit; extra == "linting"
+Provides-Extra: tests
+Requires-Dist: pytest; extra == "tests"

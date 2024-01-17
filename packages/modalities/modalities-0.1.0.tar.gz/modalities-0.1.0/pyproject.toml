@@ -1,0 +1,47 @@
+[project]
+name = "modalities"
+version = "0.1.0"
+requires-python = ">=3.8,<3.12"
+description = "Modalities, a python framework for distributed and reproducible foundation model training."
+dependencies = [
+    "torch>=2.0",
+    "tqdm",
+    "pyyaml",
+    "transformers",
+    "datasets",
+    "protobuf",
+    "SentencePiece",
+    "accelerate",
+    "rich",
+    "xformers",
+    "omegaconf",
+    "pydantic",
+    "click",
+    "click_pathlib",
+    "jq",
+    "xformers",
+    "class_resolver",
+    "wandb"
+]
+
+[project.optional-dependencies]
+linting = ["pre-commit"]
+tests = ["pytest"]
+
+[project.scripts]
+modalities = "modalities.__main__:main"
+
+[build-system]
+requires = ["setuptools >= 61.0.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.black]
+target-version = ["py310"]
+line-length = 120
+
+[tool.isort]
+profile = "black"
+line_length = 120
+
+[tool.ruff]
+line-length = 120
