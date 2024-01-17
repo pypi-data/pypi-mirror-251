@@ -1,0 +1,12 @@
+PyYAML
+
+[docs]
+sphinx
+
+[test]
+pytest
+toml
+pyaml
+mypy
+types-PyYAML
+types-toml
