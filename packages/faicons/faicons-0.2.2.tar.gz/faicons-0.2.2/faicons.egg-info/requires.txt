@@ -1,0 +1,14 @@
+htmltools>=0.1.4.9002
+
+[dev]
+black>=23.1.0
+wheel
+
+[dev:python_version <= "3.7"]
+flake8==3.9.2
+
+[dev:python_version > "3.7"]
+flake8>=6.0.0
+
+[test]
+pytest>=6.2.4

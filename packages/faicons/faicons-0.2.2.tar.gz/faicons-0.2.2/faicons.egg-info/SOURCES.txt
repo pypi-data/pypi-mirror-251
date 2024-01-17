@@ -1,0 +1,17 @@
+AUTHORS.rst
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+faicons/__init__.py
+faicons/_core.py
+faicons/icons.json
+faicons.egg-info/PKG-INFO
+faicons.egg-info/SOURCES.txt
+faicons.egg-info/dependency_links.txt
+faicons.egg-info/not-zip-safe
+faicons.egg-info/requires.txt
+faicons.egg-info/top_level.txt
+tests/__init__.py
+tests/test_faicons.py
