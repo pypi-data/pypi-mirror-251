@@ -1,0 +1,11 @@
+tkintermapview
+pyproj
+jenkspy
+odfpy
+openpyxl
+xlrd
+matplotlib
+seaborn
+loess
+statsmodels
+scipy
