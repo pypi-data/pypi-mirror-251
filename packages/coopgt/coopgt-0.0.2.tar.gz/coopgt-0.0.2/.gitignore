@@ -1,0 +1,7 @@
+.pypirc
+dist/
+**__pycache__**
+.coverage
+.tox/
+docs/_build/
+*.DS_Store*
