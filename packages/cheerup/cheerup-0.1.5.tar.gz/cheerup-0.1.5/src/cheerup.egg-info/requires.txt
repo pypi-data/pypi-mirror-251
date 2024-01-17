@@ -1,0 +1,9 @@
+openai
+python-dotenv
+
+[dev]
+black
+mypy
+pylint
+build
+twine
