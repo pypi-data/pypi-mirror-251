@@ -1,0 +1,14 @@
+dvuploader/__init__.py,sha256=FOxH1ztFBCt54yRPYp3vCNH2ZdxzkSvb3D-17sZrzFM,134
+dvuploader/checksum.py,sha256=9rlNANccQUibTIzlcRuXt1eNM0xt_PjIhFCsKnVC8B4,2436
+dvuploader/cli.py,sha256=XwRhmXDPfPMJX4yf0_RgcQ8vMRpEc4nX5bgZcNPuQAk,4719
+dvuploader/directupload.py,sha256=IYjyfSPIhRhX4Hst1PXMLqxIiurNrApoZBNkeS5DjmI,15262
+dvuploader/dvuploader.py,sha256=EkcybuQnkeiAGTvVx2n3B2zK-RNmvA3Lk7M31Jb3W_k,8824
+dvuploader/file.py,sha256=OnIaUbYDV2NGSRWdvpV0d5-HhGmf6qFBzZeVKYliHfQ,2866
+dvuploader/nativeupload.py,sha256=pt3YMyDV_fP6__tqR3oTkCvfS46pv-ktVySo447Zy7o,6846
+dvuploader/packaging.py,sha256=CaEvR-aJ9dzV1hBtGDgUqAIEZbUgYj6723YMNwkhU50,3014
+dvuploader/utils.py,sha256=SzHxMuzLLNHiAYQZcO_0w50VS9i0qshrOqSxj5NmhIE,4367
+dvuploader-0.2.1.dist-info/LICENSE,sha256=I1yQsUyJbRKjBgaiY8wOFwRpBiimgCqNeIfrCRYEI7U,1066
+dvuploader-0.2.1.dist-info/METADATA,sha256=-h7l_jU2lGPYQkI-IH37_kJyqUrT5uuD2EEUEXPORzc,5041
+dvuploader-0.2.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+dvuploader-0.2.1.dist-info/entry_points.txt,sha256=qTXeSXs87oGiYFlJiHGmvBuZrWiBOp8wVYX19zzm8OI,49
+dvuploader-0.2.1.dist-info/RECORD,,
