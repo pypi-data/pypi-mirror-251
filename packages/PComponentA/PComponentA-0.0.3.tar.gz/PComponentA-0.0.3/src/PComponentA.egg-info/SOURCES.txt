@@ -1,0 +1,8 @@
+README.md
+setup.py
+src/PComponentA.py
+src/PComponentA.egg-info/PKG-INFO
+src/PComponentA.egg-info/SOURCES.txt
+src/PComponentA.egg-info/dependency_links.txt
+src/PComponentA.egg-info/entry_points.txt
+src/PComponentA.egg-info/top_level.txt
