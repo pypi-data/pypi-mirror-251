@@ -1,0 +1,10 @@
+textual_calculator/__about__.py,sha256=okny5HOAr3VxZhP92Lag5w-O7PYe_BvjGdKEDmAuFew,131
+textual_calculator/__init__.py,sha256=brJ7Ii3vN18tZULqKw_fD5RPESKagdqHrRu8q1KCiYc,109
+textual_calculator/calculator.py,sha256=NtP9dyxw28jtjOD46aWyo7piamhmUaPs7V6tY0vlKZA,5789
+textual_calculator/calculator.tcss,sha256=wsas4ZVl3S-Pkrs5xZeJ3_Uwju-ojj8nw7hb63yvUxI,506
+textual_calculator/entry_points.py,sha256=RYOc-mokugMYxOqaHlOisVQAO3408IAYB1tEyLfZ030,116
+textual_calculator-0.0.2.dist-info/METADATA,sha256=uV2qUTkVRIeMrXMDBUj5wocFCLu15c7U_xRGJ2ZoZgk,1508
+textual_calculator-0.0.2.dist-info/WHEEL,sha256=mRYSEL3Ih6g5a_CVMIcwiF__0Ae4_gLYh01YFNwiq1k,87
+textual_calculator-0.0.2.dist-info/entry_points.txt,sha256=s_N6ae3LEX5pzfj-f7Ov7zz8ZhTaTUP50YrL0zqvE4E,74
+textual_calculator-0.0.2.dist-info/licenses/LICENSE.txt,sha256=btRmzayt30oYsZt65rpS4t_mq6nJ5cnyJokVs9Le8K4,1101
+textual_calculator-0.0.2.dist-info/RECORD,,
