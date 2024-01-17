@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.py
+tests/test_composite.py
+xevent.egg-info/PKG-INFO
+xevent.egg-info/SOURCES.txt
+xevent.egg-info/dependency_links.txt
+xevent.egg-info/requires.txt
+xevent.egg-info/top_level.txt
