@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+haikus/__init__.py
+haikus/kigo.json
+haikus/main.py
+haikus.egg-info/PKG-INFO
+haikus.egg-info/SOURCES.txt
+haikus.egg-info/dependency_links.txt
+haikus.egg-info/requires.txt
+haikus.egg-info/top_level.txt

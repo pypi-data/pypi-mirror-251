@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: haikus
+Version: 0.3.8
+Summary: A Python package for analyzing haikus.
+Home-page: https://github.com/ituyama/haikus
+Author: YAMANO Itsuki
+License: CC BY-SA 4.0
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pykakasi
+
+[![Downloads](https://static.pepy.tech/badge/haikus)](https://pepy.tech/project/haikus)
+<br>
+haikusは、与えられた俳句から季語を識別し、その俳句の形式と構造を分析するPythonモジュールです。
+## 機能
+    季語の識別: 俳句に含まれる季語を識別します。
+    俳句の形式分析: 与えられた文字列がどのような種類の詩であるか判別します
+    
+## 使用方法
+
+まず、モジュールをインポートします：
+```python
+from haikus import haikus
+```
+次に、分析したい俳句をリスト形式で関数に渡します：
+
+```python
+
+user_haiku = ["古池", "蛙飛び込む", "水の音"]
+#入力配列は３項目or５項目がサポートされます
+result = haikus(user_haiku)
+print(result)
+```
+```Javascript
+{'kigo': ['蛙'],
+ 'yomi': ['ふるいけや', 'かえるとびこむ', 'みずのおと'],
+ 'type': 'haiku',
+ 'len': [0, 0, 0]}
+```
+このような形で
++ 季語（配列）
++ 俳句の読み（配列）
++ 俳句の種類（俳句or川柳or短歌or自由律俳句）
++ 既定文字数の過不足　字足らず、字余り（配列）
+が出力されます。
+
+
+## 依存関係
+
+    PyKakasi: 日本語テキストのカナ変換に使用されます。
+## ライセンス
+このプロジェクトは、季語検索によって使用された季語リストを含みます。この季語リストは、Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) ライセンスの下で提供されています。
+クレジット
+https://jpsearch.go.jp/database/irc04
+季語リストの原作者：国際日本文化研究センター
+
+ライセンス
+
+この季語リストは、以下の条件に従って使用されています：
+
+    表示：あなたは適切なクレジットを表示し、ライセンスへのリンクを提供し、変更があった場合はその旨を示さなければなりません。これらの条件は合理的な方法で行われるべきですが、ライセンス提供者によって提案された方法であることを意味するものではありません。
+    継承：あなたがこの素材をリミックス、変形、またはビルドアップする場合、あなたの貢献はオリジナルのライセンスと同じCC BY-SA 4.0 ライセンスの下で配布されなければなりません。
+
+このライセンスの全文と情報は、次のリンクで確認できます：https://creativecommons.org/licenses/by-sa/4.0/
