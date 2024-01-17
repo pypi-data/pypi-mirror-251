@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: trainingutils
+Version: 0.0.1
+Summary: Training tools for Deep Learning
+Author: Michael-Holland-Dev (Michael Holland)
+Author-email: <michael.w.holland@gmail.com>
+Keywords: artificial intellgience,machine learning,computer vision,deep learning
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: torch
+Requires-Dist: torchvision
+Requires-Dist: matplotlib
+
+
+# training
+Training utilities and modules to assist in training various types of networks.

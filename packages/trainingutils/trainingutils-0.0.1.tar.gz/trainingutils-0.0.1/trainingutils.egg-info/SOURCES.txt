@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+trainingutils.egg-info/PKG-INFO
+trainingutils.egg-info/SOURCES.txt
+trainingutils.egg-info/dependency_links.txt
+trainingutils.egg-info/requires.txt
+trainingutils.egg-info/top_level.txt
