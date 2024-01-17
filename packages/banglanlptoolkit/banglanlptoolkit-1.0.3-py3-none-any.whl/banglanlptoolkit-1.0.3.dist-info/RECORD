@@ -1,0 +1,12 @@
+banglanlptoolkit/BanglaAugmentation.py,sha256=W_jvOsu_6pts__5QEdkiseh8lZfJQmPyGLnlgF0QF94,4882
+banglanlptoolkit/BanglaPunctuation.py,sha256=LQCeVW2LxnNo-aCsPEgU8cvim0WXDfurKjQZ5fBUjMw,1878
+banglanlptoolkit/BnNLPNormalizer.py,sha256=-9cG8B2XpZxfOmIFOOa9jtn6xdgeZtycV7sZCPG_hPk,3648
+banglanlptoolkit/Seq2SeqAug.py,sha256=WCABupsMyVJvNwz4rHiyE0G5erKxP1vPZrntzLXP-BA,4530
+banglanlptoolkit/SequenceClassificationAug.py,sha256=WbZrKWHkP7iryVxALXiCzk-9DwXJA3TIPfKKp0zfgAo,4233
+banglanlptoolkit/__init__.py,sha256=8HuR4PF3aA7Bk8cEL0_RKXz0r9c5941WPSDgK32GtUw,244
+banglanlptoolkit/utils.py,sha256=mH0-FmBRgys6kKNVuZZbWmswZMK3iz-CSut6IOckn-A,309
+banglanlptoolkit-1.0.3.dist-info/LICENSE.txt,sha256=CQpLSh5ef1I_mLD67I1TihkupDEWQ-I4bRi34tLy-0g,1076
+banglanlptoolkit-1.0.3.dist-info/METADATA,sha256=5U5HDbRMZkQnto_wWKQZ7V6reh4L217hVJv6Bn3Xi_o,9950
+banglanlptoolkit-1.0.3.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+banglanlptoolkit-1.0.3.dist-info/top_level.txt,sha256=AzAvEtnQwZISbga15naFg-F52jcLi_Le_ymQJrbmK0o,17
+banglanlptoolkit-1.0.3.dist-info/RECORD,,
