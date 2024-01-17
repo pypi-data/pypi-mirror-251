@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","sources":["../../../../../static/rb/js/admin/index.ts"],"sourcesContent":["/* Define a namespace for RB.Admin. */\nexport const Admin = {};\n"],"names":["Admin"],"mappings":";;;;;;CAAA;AACaA,OAAAA,KAAK,GAAG;;;;;;;;;;"}
