@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: nlpfreq
+Version: 1.0
+Summary: Advanced Feature-Rich CLI-based Word Frequency Analysis Tool
+Home-page: https://github.com/vivekkdagar/NLPFreq
+Author: Vivek Dagar
+Author-email: vivekdagar2017@gmail.com
+License: GNU General Public License v3.0
+License-File: LICENSE

@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+nlpfreq/__init__.py
+nlpfreq/main.py
+nlpfreq.egg-info/PKG-INFO
+nlpfreq.egg-info/SOURCES.txt
+nlpfreq.egg-info/dependency_links.txt
+nlpfreq.egg-info/entry_points.txt
+nlpfreq.egg-info/requires.txt
+nlpfreq.egg-info/top_level.txt
+nlpfreq/core/__init__.py
+nlpfreq/core/input_handler.py
+nlpfreq/core/text_processor.py
