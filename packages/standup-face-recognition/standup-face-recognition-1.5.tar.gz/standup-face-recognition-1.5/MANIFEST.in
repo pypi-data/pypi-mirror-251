@@ -1,0 +1,4 @@
+include standup_face_recognition/team_embedding.pth
+include standup_face_recognition/facenet_pytorch/data/onet.pt
+include standup_face_recognition/facenet_pytorch/data/pnet.pt
+include standup_face_recognition/facenet_pytorch/data/rnet.pt
