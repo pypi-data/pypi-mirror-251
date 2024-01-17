@@ -1,0 +1,8 @@
+cv_xtractor/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cv_xtractor/extract_entities.py,sha256=xU_gNWgYFfGdwb_mTIjTSI0YnNoFRNxYcSiYZpGCdhk,17296
+cv_xtractor/jz_skill_patterns.jsonl,sha256=BpbI6ruEpeSNyGvDTJAV1XHEb5GoOI-dA4UdGjjs1cc,143937
+cv_xtractor-0.1.1.dist-info/LICENSE,sha256=tAmFlV5opLVtIhFif_Uc0OzQc05YKnB2-vG4XQx3reM,35158
+cv_xtractor-0.1.1.dist-info/METADATA,sha256=oia9zFspS1Ib7724upiASiB677b2dgBxUqNsEOrEF4g,1485
+cv_xtractor-0.1.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+cv_xtractor-0.1.1.dist-info/top_level.txt,sha256=Lq_yhKyqx5fn0AKF3SvaZX5SQXchVtumcx8YvqmWIQY,12
+cv_xtractor-0.1.1.dist-info/RECORD,,
