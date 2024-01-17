@@ -1,0 +1,12 @@
+bug_buddy/__init__.py,sha256=wqXnq-YceYTQsjIaicFOirr_QgU2s-N12biNXDDrufw,66
+bug_buddy/_config.py,sha256=U5Dun5f7zgkI8LObfBstJePwRdo2Drr9YqF4MFPtADc,190
+bug_buddy/_di_container.py,sha256=R-k0ZeEGxX1Aeor-lB9yaZNZNHQjFdDW3ctZT-Th4zo,1615
+bug_buddy/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bug_buddy/cli/_entrypoint.py,sha256=XPZ4fTEnV4Ov6njR3gQ_n5MIMXDFjQ2YebfU-2OdBik,360
+bug_buddy/cli/_runner.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bug_buddy/issue.py,sha256=efi1erCsxWRbhbEwMj9EsUbE_4B3XCehTVhO4MNiXnY,5802
+bug_buddy/listener.py,sha256=SFIInxk4agWSaZ4gLoFrRYjvgp71esHe7hP_Y6_ckxI,4921
+bug_buddy-1.0.1.dist-info/LICENSE,sha256=82BUE1NIh4OnB33ajIO1t8yj0AkG_II5VRLBc1JGvuU,1070
+bug_buddy-1.0.1.dist-info/METADATA,sha256=j5_vjWfjegovwrD08SK7cYaDCito8Q9FoKYWQyo9Bjg,6393
+bug_buddy-1.0.1.dist-info/WHEEL,sha256=WGfLGfLX43Ei_YORXSnT54hxFygu34kMpcQdmgmEwCQ,88
+bug_buddy-1.0.1.dist-info/RECORD,,
