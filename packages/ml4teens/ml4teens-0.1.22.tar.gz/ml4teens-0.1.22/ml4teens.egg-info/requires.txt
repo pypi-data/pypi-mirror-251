@@ -1,0 +1,11 @@
+Pillow
+face_recognition
+ipycanvas==0.11
+ipyevents
+ipython
+numpy
+opencv-python
+pandas>=1.3.4
+requests
+transformers
+ultralytics
