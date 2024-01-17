@@ -1,0 +1,46 @@
+[build]
+requires = ["setuptools ~= 64.0", "setuptools_scm"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["python/src"]
+
+[project]
+name = "hushh-vibe-catalog"
+version = "0.0.2"
+readme = "README.md"
+authors = [{name = "Justin Donaldson", email = "justin@hushh.ai"}]
+dependencies = [
+  "pandas",
+  "flatbuffers",
+  "transformers",
+  "torch",
+  "Pillow"
+]
+
+[project.optional-dependencies]
+dev = [
+  "sentence-transformers",
+  "twine",
+  "kaggle",
+  "jupyter",
+  "matplotlib",
+  "torch",
+  "numpy",
+  "quartodoc",
+  "black",
+  "pip-tools",
+  "flake8",
+  "bumpversion",
+  "hushh-vibe-catalog[ci]"
+]
+ci = [
+  "pytest-cov",
+  "requests-mock"
+]
+[tool.pytest.ini_options]
+filterwarnings = [
+    "ignore::UserWarning",
+    # note the use of single quote below to denote "raw" strings in TOML
+    "ignore:Pydantic V1 style `@validator` validators are deprecated.",
+]
