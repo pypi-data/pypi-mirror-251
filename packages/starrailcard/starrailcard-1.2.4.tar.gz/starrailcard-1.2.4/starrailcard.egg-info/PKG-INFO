@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: starrailcard
+Version: 1.2.4
+Summary: Module for generating Honkai Star Rail character cards
+Home-page: https://github.com/DEViantUA/StarRailCard
+Author: None
+Project-URL: Source, https://github.com/DEViantUA/StarRailCard
+Project-URL: Documentation, https://github.com/DEViantUA/StarRailCard/blob/main/README.md
+Keywords: honkai,cards,generation,honkaistarraill,raill,starraill,builds,honkairail,honkai
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: Pillow>=10.0.1
+Requires-Dist: honkairail>=1.1.4
+Requires-Dist: python>=3.9
+Provides-Extra: dev
+Requires-Dist: cachetools>=5.3.1; extra == "dev"
