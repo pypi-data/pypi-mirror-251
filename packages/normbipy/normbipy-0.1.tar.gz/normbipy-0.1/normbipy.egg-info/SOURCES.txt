@@ -1,0 +1,10 @@
+setup.py
+normbipy/Binomialdistribution.py
+normbipy/Gaussiandistribution.py
+normbipy/Generaldistribution.py
+normbipy/__init__.py
+normbipy.egg-info/PKG-INFO
+normbipy.egg-info/SOURCES.txt
+normbipy.egg-info/dependency_links.txt
+normbipy.egg-info/not-zip-safe
+normbipy.egg-info/top_level.txt
