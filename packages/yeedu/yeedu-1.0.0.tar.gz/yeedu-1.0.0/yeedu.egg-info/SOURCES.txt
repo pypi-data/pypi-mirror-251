@@ -1,0 +1,8 @@
+README.md
+setup.py
+yeedu.egg-info/PKG-INFO
+yeedu.egg-info/SOURCES.txt
+yeedu.egg-info/dependency_links.txt
+yeedu.egg-info/entry_points.txt
+yeedu.egg-info/requires.txt
+yeedu.egg-info/top_level.txt
