@@ -1,0 +1,3 @@
+[console_scripts]
+bengrn=bengrn.__main__:main
+
