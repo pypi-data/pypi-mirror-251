@@ -1,0 +1,8 @@
+[
+  "test/amplification_factor_test.py::test_freq_amp",
+  "test/amplification_factor_test.py::test_integrator_cpu",
+  "test/amplification_factor_test.py::test_integrator_gpu",
+  "test/amplification_factor_test.py::test_plot_freq_abs",
+  "test/amplification_factor_test.py::test_plot_freq_pha",
+  "test/amplification_factor_test.py::test_plot_time"
+]
