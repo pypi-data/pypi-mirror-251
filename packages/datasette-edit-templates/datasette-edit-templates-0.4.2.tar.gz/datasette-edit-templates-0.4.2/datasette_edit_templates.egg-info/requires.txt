@@ -1,0 +1,11 @@
+datasette>=0.63
+
+[playwright]
+pytest-playwright
+
+[test]
+pytest
+pytest-asyncio
+sqlite-utils
+datasette-test>=0.2
+nest-asyncio
