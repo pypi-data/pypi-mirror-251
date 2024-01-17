@@ -1,0 +1,2 @@
+[hatch]
+flex = hatch_flex
