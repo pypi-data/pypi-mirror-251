@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+aix/__init__.py
+aix/np.py
+aix/pd.py
+aix/sk.py
+aix.egg-info/PKG-INFO
+aix.egg-info/SOURCES.txt
+aix.egg-info/dependency_links.txt
+aix.egg-info/not-zip-safe
+aix.egg-info/requires.txt
+aix.egg-info/top_level.txt
