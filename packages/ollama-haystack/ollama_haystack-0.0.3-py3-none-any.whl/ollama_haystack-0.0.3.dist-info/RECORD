@@ -1,0 +1,7 @@
+haystack_integrations/components/generators/ollama/__init__.py,sha256=14U1ZYpuzQnr8iZAWWZfkX-jnpRRZVKou7oJV3OKwag,146
+haystack_integrations/components/generators/ollama/generator.py,sha256=OGmaWBLKliPZu-A9wydpmGhkzkV3e8oyOXrbl2ZF6kc,4716
+haystack_integrations/components/generators/ollama/chat/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+haystack_integrations/components/generators/ollama/chat/chat_generator.py,sha256=enYjU-jyWAEl6E0fSdn0cPuSGyidtAt2ReO0DvNlOb4,4200
+ollama_haystack-0.0.3.dist-info/METADATA,sha256=QrEP5Zb0MRwHB9ta1i2TLK-JzK1OQULMV6dmV_Fy48M,2223
+ollama_haystack-0.0.3.dist-info/WHEEL,sha256=mRYSEL3Ih6g5a_CVMIcwiF__0Ae4_gLYh01YFNwiq1k,87
+ollama_haystack-0.0.3.dist-info/RECORD,,
