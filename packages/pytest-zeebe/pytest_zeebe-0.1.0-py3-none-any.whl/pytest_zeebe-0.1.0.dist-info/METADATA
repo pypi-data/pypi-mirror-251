@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: pytest-zeebe
+Version: 0.1.0
+Summary: Pytest fixtures for testing Camunda 8 processes using a Zeebe test engine.
+Home-page: https://www.holisticon.de/
+License: Apache-2.0
+Author: Bennet Krause
+Author-email: bennet.krause@holisticon.de
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: grpcio (>=1.60.0,<2.0.0)
+Requires-Dist: pytest (>=7.4.2,<8.0.0)
+Requires-Dist: testcontainers (>=3.7.1,<4.0.0)
+Project-URL: Repository, https://github.com/holunda-io/pytest-zeebe
+Description-Content-Type: text/markdown
+
+# pytest-zeebe
