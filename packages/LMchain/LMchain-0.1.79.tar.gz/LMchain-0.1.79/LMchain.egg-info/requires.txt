@@ -1,0 +1,6 @@
+uvicorn>=0.23.2
+fastapi>=0.108.0
+numexpr>=2.8.7
+langchain>=0.1.0
+zhipuai==1.0.7
+nltk>=3.8.1
