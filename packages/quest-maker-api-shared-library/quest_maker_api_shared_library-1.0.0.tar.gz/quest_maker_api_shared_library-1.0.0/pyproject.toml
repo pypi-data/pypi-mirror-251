@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quest_maker_api_shared_library"
+version = "1.0.0"
+authors = [
+    { name = "Akinola Abiodun Emmanuel", email = "akinolaemmanuel49@gmail.com" },
+]
+description = "This package contains code shared by the Quest Maker microservices."
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    # "bson==0.5.10",
+    # "pydantic==2.5.3",
+    # "PyJWT==2.8.0",
+    # "pytest==7.4.4",
+    "bson",
+    "pydantic",
+    "PyJWT",
+    "pytest",
+]
+
+[project.urls]
+Homepage = "https://github.com/akinolaemmanuel49/QuestMakerAPISharedLibrary"
+Issues = "https://github.com/akinolaemmanuel49/QuestMakerAPISharedLibrary/issues"
