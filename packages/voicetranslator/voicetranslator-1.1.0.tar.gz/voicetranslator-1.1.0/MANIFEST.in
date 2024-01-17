@@ -1,0 +1,3 @@
+include src/voicetranslator/*.pyd
+include src/voicetranslator/*.exe
+include src/voicetranslator/*.dll

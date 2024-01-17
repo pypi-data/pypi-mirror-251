@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: voicetranslator
+Version: 1.1.0
+Summary: Real time translation for live streams
+Home-page: https://github.com/voicetranslator/voicetranslator
+License: UNKNOWN
+Project-URL: Documentation, https://github.com/voicetranslator/voicetranslator
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+<p>
+  <h1>Real Time Translation for Live Streams</h1>
+</p>
+
+
+## Setup
+
+### 1. Install with pip
+
+Available for Python 3
+
+```
+pip install voicetranslator
+```
+
+### 2. Quick start - Example
+
+Play any audio from your desktop and run this example
+
+```
+import voicetranslator
+desktop_audio=voicetranslator.Translate('en-US','es-ES')
+desktop_audio.start()
+```
+
+### 3. Languages
+
+| Languages   |    Code     | 
+|:-----------:|:-----------:|
+| English     |    en-US    |
+| Spanish     |    es-ES    |
+| French      |    fr-FR    | 
+| German      |    de-DE    | 
+| Italian     |    it-IT    | 
+| Portuguese  |    pt-PT    | 
+| Dutch       |    nl-NL    | 
+| Swedish     |    sv-SE    | 
+| Danish      |    da-DK    | 
+| Norwegian   |    no-NO    | 
+| Japanese    |    ja-JP    | 
+
+
+
+
