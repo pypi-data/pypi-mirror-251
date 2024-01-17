@@ -1,0 +1,11 @@
+llm_prompting_gen/__about__.py,sha256=JjCrhSl1WXUvukanhQzZRNoEEzB6SZ6m-EVydCeD0MQ,131
+llm_prompting_gen/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+llm_prompting_gen/constants.py,sha256=YC0qvN5rWdhzO-1YT_8Tb1Ftfd6sLrUvhw7NJv-B4fQ,67
+llm_prompting_gen/generators.py,sha256=DZ9DwoJHi7wt93Af53tU-uuMfMC44TonW-EO2avCVgY,4947
+llm_prompting_gen/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+llm_prompting_gen/models/output.py,sha256=TaRjht1n3dblAf4T_jJqzaqGXlPv_GOwUsdgpKZVkHE,312
+llm_prompting_gen/models/prompt_engineering.py,sha256=6M6MrOUBWCStNOFcOP9zc4vxOp48n7gnb_6lNCzeKRg,9141
+llm_prompting_gen-0.1.6.dist-info/METADATA,sha256=ToU1RfTMX8nqO1T-ely-ZuQ1YOPeKCXZI4c164NwAr4,5573
+llm_prompting_gen-0.1.6.dist-info/WHEEL,sha256=9QBuHhg6FNW7lppboF2vKVbCGTVzsFykgRQjjlajrhA,87
+llm_prompting_gen-0.1.6.dist-info/licenses/LICENSE.txt,sha256=LFGI2El1m-BJiq_CfvILGvE0SPpQPMC5RST4v7snC2U,1101
+llm_prompting_gen-0.1.6.dist-info/RECORD,,
