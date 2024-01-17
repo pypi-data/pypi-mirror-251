@@ -1,0 +1,7 @@
+casual/__init__.py,sha256=2IhFLlQcZhBGTT5oGi8jFuQgNqrnKVzj1dyss283-BE,307
+casual/static/casual.css,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+casual/templates/index.html.j2,sha256=qLJ0LPBloR2YNI69tC4aZo3TN0kOZJ3RBOU8ZVBZi6U,293
+casual/wsgi.py,sha256=iOyTe714xE0o8QtW-mbKTJwSjWCE01XgPmW-hMFKmo0,141
+casual-2024.1.0.dist-info/METADATA,sha256=zgZiIHTnDt4Ua5RdQelNSz7oepsCqIUcjkSymud4hfc,631
+casual-2024.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+casual-2024.1.0.dist-info/RECORD,,
