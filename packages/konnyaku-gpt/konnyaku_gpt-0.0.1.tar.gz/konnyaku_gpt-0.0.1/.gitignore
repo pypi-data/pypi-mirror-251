@@ -1,0 +1,25 @@
+*__pycache__
+
+*.mp4
+*.mp3
+*.wav
+*.flac
+*.jpg
+*.jpeg
+
+*.json
+
+*.ipynb
+
+test.*
+tmp
+tmp.*
+tmp[0-9].*
+
+*.srt
+*_workspace
+
+# build artifacts
+dist/
+
+.vscode/
