@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.py
+MallGoEmail/backend.py
+MallGoEmail/conf.py
+MallGoEmail/emailmessage.py
+MallGoEmail/send.py
+mallgo_email.egg-info/PKG-INFO
+mallgo_email.egg-info/SOURCES.txt
+mallgo_email.egg-info/dependency_links.txt
+mallgo_email.egg-info/top_level.txt
