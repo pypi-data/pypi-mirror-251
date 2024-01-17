@@ -1,0 +1,7 @@
+README.md
+setup.py
+t3rminal_genai.egg-info/PKG-INFO
+t3rminal_genai.egg-info/SOURCES.txt
+t3rminal_genai.egg-info/dependency_links.txt
+t3rminal_genai.egg-info/requires.txt
+t3rminal_genai.egg-info/top_level.txt
