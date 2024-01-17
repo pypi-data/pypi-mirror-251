@@ -1,0 +1,16 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+DelPdfPage/DelPdfPage.pyd
+DelPdfPage/DelPdfPage_f.pyd
+DelPdfPage/DelPdfPage_ui.pyd
+DelPdfPage/DelPdfPage_windows.pyd
+DelPdfPage/__init__.py
+DelPdfPage.egg-info/PKG-INFO
+DelPdfPage.egg-info/SOURCES.txt
+DelPdfPage.egg-info/dependency_links.txt
+DelPdfPage.egg-info/top_level.txt
+DelPdfPage/icons/__init__.py
+DelPdfPage/icons/filep.png

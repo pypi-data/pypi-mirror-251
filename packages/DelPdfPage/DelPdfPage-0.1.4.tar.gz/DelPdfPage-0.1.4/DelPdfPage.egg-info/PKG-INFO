@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: DelPdfPage
+Version: 0.1.4
+Summary: 删除pdf中的指定页
+Home-page: https://alidocs.dingtalk.com/i/p/4oJRz0VRJyvmLZMydy0mV7WvjQn7MG89
+Author: zhaojianhau
+Author-email: 17891967090@163.com
+Classifier: Programming Language :: Python
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+删除pdf中的指定页
