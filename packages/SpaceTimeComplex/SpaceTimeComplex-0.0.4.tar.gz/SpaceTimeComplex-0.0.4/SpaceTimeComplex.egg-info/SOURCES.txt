@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+SpaceTimeComplex/__init__.py
+SpaceTimeComplex/main.py
+SpaceTimeComplex.egg-info/PKG-INFO
+SpaceTimeComplex.egg-info/SOURCES.txt
+SpaceTimeComplex.egg-info/dependency_links.txt
+SpaceTimeComplex.egg-info/requires.txt
+SpaceTimeComplex.egg-info/top_level.txt
