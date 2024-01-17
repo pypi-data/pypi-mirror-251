@@ -1,0 +1,78 @@
+Metadata-Version: 2.1
+Name: gitlab-download-artifacts
+Version: 1.4
+Summary: Download the gitlab artifacts matching a git repo or submodule, or provided repo http url (optionally with @<commit>)
+Home-page: https://gitlab.com/alelec/gitlab-download-artifacts
+Author: Andrew Leech
+Author-email: andrew@alelec.net
+License: MIT
+License-File: LICENSE
+
+gitlab-download-artifacts
+=========================
+
+This Python utility is used to download artifacts from gitlab ci.
+
+It can be used to grab artifacts from a CI job matching a git repo (or submodule) at the current commit, or
+from the https url of a repo, optionally at provided commit ref
+
+gitlab-ci usage
+---------------
+
+When used in Gitlab CI a project / private token with api access will be required or user:pass specified in the url.
+Currently (Jan 2022) the CI Job Token doesn't have enough api access to find the correct artifacts to download.
+
+developer/desktop usage
+-----------------------
+
+If run from desktop the default browser will be used, however in this case an ``@<commit hash>`` cannot be used as
+the gitlab artifact urls don't support this: https://docs.gitlab.com/ee/api/job_artifacts.html#download-the-artifacts-archive
+
+
+gitlab-download-artifacts options
+---------------------------------
+
+To download build artifacts for the current git project, simply run the tool from within the project folder and refer to the job whose artifacts are needed, eg:
+
+::
+
+  cd myproject
+  gitlab-download-artifacts . build
+
+The artifacts from the ``build`` job are downloaded and extracted into the repo folder.
+
+
+To download the artifacts for a submodule it can be used like:
+
+::
+
+  gitlab-download-artifacts ./submodule build
+
+The artifacts will be downloaded from the commit the submodule is checked out at and expanded into its folder.
+
+Alternatively to just grab from a project page:
+
+::
+
+  gitlab-download-artifacts https://gitlab.com/alelec/gitlab-download-artifacts@65ad5e1 release
+
+Command Line
+------------
+
+::
+
+    usage: gitlab-download-artifacts [-h] [-p PROJECT_TOKEN] [-t TIMEOUT] target job
+
+    Download gitlab artifacts
+
+    positional arguments:
+      target                                              Path to git repo to grab or repo url (optionally with @<commit>)
+      job                                                 Gitlab CI job name to grab from
+
+    optional arguments:
+      -h, --help                                          show this help message and exit
+      -p PROJECT_TOKEN, --project-token PROJECT_TOKEN     Project / private token to auth with, env: ${PROJECT_TOKEN} by default
+      -t TIMEOUT, --timeout TIMEOUT                       Timeout (in minutes) to wait for dependent jobs to be ready
+
+
+version: 1.4+g4a2cb1e
