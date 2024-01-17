@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+grepy/__init__.py
+grepy/cli.py
+grepy/grep.py
+lr_grepy.egg-info/PKG-INFO
+lr_grepy.egg-info/SOURCES.txt
+lr_grepy.egg-info/dependency_links.txt
+lr_grepy.egg-info/entry_points.txt
+lr_grepy.egg-info/top_level.txt
