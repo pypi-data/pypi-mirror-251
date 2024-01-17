@@ -1,0 +1,11 @@
+nlpfreq/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+nlpfreq/main.py,sha256=BT9Ppd1Rog-vFFiVG6tGkVkfd_uQHjwuJsRbjDYf-e0,5870
+nlpfreq/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nlpfreq/core/input_handler.py,sha256=tjFfNzx203wZl77w1TAW6SZb6FtXL_ragVGbIfAvSdY,1344
+nlpfreq/core/text_processor.py,sha256=zcEFxNYt_hwsjEuHujd_9opWaexXjf776ofpt7arePw,4596
+nlpfreq-1.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+nlpfreq-1.0.dist-info/METADATA,sha256=ovBIT1H_yutTdoyLkEK4cPbWaiRUlk3BcEAPDDfX7jc,485
+nlpfreq-1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+nlpfreq-1.0.dist-info/entry_points.txt,sha256=ZTuPPu3lQrYx8geYPLhR3irjwZ7Bxm8u-Jzkp9L-QV4,45
+nlpfreq-1.0.dist-info/top_level.txt,sha256=6CV2qQB4syLg0n9ZOKF_s9j3ZiJApAiP-oRqhpQaSSA,8
+nlpfreq-1.0.dist-info/RECORD,,
