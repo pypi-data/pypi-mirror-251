@@ -1,0 +1,4 @@
+[console_scripts]
+clearml-import-offline = qualia_core.experimenttracking.pytorch.ClearML:ClearML.import_and_clear_all_offline_sessions
+qualia = qualia_core.main:main
+
