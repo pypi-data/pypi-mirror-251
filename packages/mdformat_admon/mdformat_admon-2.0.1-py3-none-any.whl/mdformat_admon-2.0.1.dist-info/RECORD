@@ -1,0 +1,11 @@
+mdformat_admon/__init__.py,sha256=3knHYGdpsYJKfMwAivH3rtY00MyLJWce5JBpJv0D4SA,109
+mdformat_admon/plugin.py,sha256=etah7vCydW5tD1ObhRNVLLEbE8tHZDoYAnnpAxduL6Y,1764
+mdformat_admon/factories/__init__.py,sha256=D9bH4VRPcVdkuIXi2lX5h-abHepdfiUXd55l67q1mLs,159
+mdformat_admon/factories/_factories.py,sha256=ZWthrC-Sbv3K-h8VYW8Ww4dh5a5YXib0M13KqeFgMzQ,6649
+mdformat_admon/mdit_plugins/__init__.py,sha256=D1QNSAPwbqdQwgeyaAO4Q9nJ9ebQK9aGmLjSgWeABhI,115
+mdformat_admon/mdit_plugins/_python_markdown_admon.py,sha256=cBpu9RljAtshd_vTLVF1yQd90MQvrlVY9Fisraqrm18,2380
+mdformat_admon-2.0.1.dist-info/entry_points.txt,sha256=g7RzWJMrfTVklN9sbQ10W1o5epeX8P0lugcu5FEzy3M,55
+mdformat_admon-2.0.1.dist-info/LICENSE,sha256=-voxTd2luDRUXIFkSXQRQGL3cHzC9AnnJkv3LJrla3o,1073
+mdformat_admon-2.0.1.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+mdformat_admon-2.0.1.dist-info/METADATA,sha256=mRfJXyJ5ME0qhubZdoJXaJrBj0Sv5kxyUKjNJ4Nr3fw,4128
+mdformat_admon-2.0.1.dist-info/RECORD,,
