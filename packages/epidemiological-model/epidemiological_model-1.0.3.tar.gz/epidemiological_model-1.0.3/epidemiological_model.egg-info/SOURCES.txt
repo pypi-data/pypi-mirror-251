@@ -1,0 +1,14 @@
+README.md
+setup.py
+epidemiological_model.egg-info/PKG-INFO
+epidemiological_model.egg-info/SOURCES.txt
+epidemiological_model.egg-info/dependency_links.txt
+epidemiological_model.egg-info/entry_points.txt
+epidemiological_model.egg-info/requires.txt
+epidemiological_model.egg-info/top_level.txt
+src/__init__.py
+src/simulation.py
+src/visualization.py
+tests/__init__.py
+tests/test_simulation.py
+tests/test_visualization.py

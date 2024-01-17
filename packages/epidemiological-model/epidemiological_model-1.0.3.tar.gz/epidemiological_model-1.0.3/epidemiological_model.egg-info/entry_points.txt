@@ -1,0 +1,4 @@
+[console_scripts]
+run_simulation = epidemiological_model.scripts.run_simulation:main
+run_simulation_direct = run_simulation:main
+
