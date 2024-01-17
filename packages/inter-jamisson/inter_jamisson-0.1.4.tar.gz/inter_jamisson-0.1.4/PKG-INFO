@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: inter-jamisson
+Version: 0.1.4
+Project-URL: Documentation, https://github.com/unknown/inter-jamisson#readme
+Project-URL: Issues, https://github.com/unknown/inter-jamisson/issues
+Project-URL: Source, https://github.com/unknown/inter-jamisson
+Author-email: jjader <jamisson.junior@a3data.com.br>
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Requires-Dist: click
+Requires-Dist: cookiecutter==2.2.3
+Requires-Dist: pandas==2.0.3
+Requires-Dist: scikit-learn==1.3.2
+Description-Content-Type: text/markdown
+
+# inter-jamisson
+
+[![PyPI - Version](https://img.shields.io/pypi/v/inter-jamisson.svg)](https://pypi.org/project/inter-jamisson)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/inter-jamisson.svg)](https://pypi.org/project/inter-jamisson)
+
+-----
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install inter-jamisson
+```
+
+## License
+
+`inter-jamisson` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
+
+
+git tag v2.5 HEAD -m "Version 2.5 released"
+git push origin --tags
+
+

@@ -1,0 +1,68 @@
+image: python:3.8-slim-bookworm
+
+cache:
+  paths:
+    - $CI_PROJECT_DIR/.cache/pip
+
+stages:
+  - test
+  - build
+  - deploy
+
+variables:
+  HATCH_VERSION: "1.9.1"
+
+.install_hatch:
+  - pip3 install hatch==$HATCH_VERSION
+
+.before_script_common:
+  before_script:
+    - !reference [.install_hatch]
+
+unit-test-job:
+  stage: test
+  extends:
+    - .before_script_common
+  script:
+    - echo "Running unit tests..."
+    - hatch run test
+
+lint-test-job:
+  stage: test
+  extends:
+    - .before_script_common
+  script:
+    - echo "Linting code..."
+    - hatch run lint:check
+
+build-job:
+  stage: build
+  before_script:
+    - !reference [.install_hatch]
+    - sed -i -e "s/0.1.1/$CI_COMMIT_TAG/" src/inter_jamisson/__about__.py
+    - cat src/inter_jamisson/__about__.py
+  script:
+    - echo "Compiling the code..."
+    - hatch build
+  artifacts:
+    paths:
+      - dist/
+      - src/inter_jamisson/__about__.py
+  only:
+    - tags
+
+deploy-job:
+  stage: deploy
+  variables:
+    HATCH_INDEX_USER: $PYPI_USERNAME
+    HATCH_INDEX_AUTH: $PYPI_PASSWORD
+  extends:
+    - .before_script_common
+  script:
+    - echo "Deploying application..."
+    - hatch publish
+    - echo "Application successfully deployed."
+  dependencies:
+    - build-job
+  only:
+    - tags
