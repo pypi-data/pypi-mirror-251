@@ -1,0 +1,77 @@
+[project]
+name = "officialeye"
+version = "1.1.2"
+description = "AI-powered generic document-analysis tool"
+authors = [
+    { name = "Alexander Mayorov", email = "zb@zerobone.net" },
+]
+dependencies = [
+    "click>=8.1.7",
+    "numpy>=1.26.2",
+    "opencv-contrib-python-headless",
+    "pytesseract",
+    "pyyaml",
+    "strictyaml==1.7.3",
+    "z3-solver",
+]
+requires-python = ">=3.10"
+readme = "README.md"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Image Recognition",
+    "Topic :: Scientific/Engineering :: Image Processing",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+]
+
+[project.license]
+file = "LICENSE"
+
+[project.scripts]
+officialeye = "officialeye.officialeye:cli"
+
+[project.urls]
+Homepage = "https://github.com/ZeroBone/OfficialEye"
+Documentation = "https://officialeye.zerobone.net"
+Issues = "https://github.com/ZeroBone/OfficialEye/issues"
+
+[tool.pdm]
+package-type = "application"
+
+[tool.pdm.scripts]
+docs-serve = "mkdocs serve"
+docs-build = "mkdocs build"
+docs-deploy = "mkdocs gh-deploy --force"
+
+[tool.pdm.scripts.install]
+shell = "pip install -e ."
+
+[tool.pdm.scripts.oe-demo-test]
+shell = "officialeye -q -d --dedir .docs_temp --edir .docs_temp test demo/input_images/driver_license_ru_01.jpg demo/templates/driver_license_ru.yml"
+
+[tool.pdm.scripts.tests-integration]
+shell = "pytest src/tests/integration/*.py"
+
+[tool.pdm.scripts.count-loc]
+shell = "find src/officialeye -name '*.py' | xargs wc -l"
+
+[tool.pdm.dev-dependencies]
+doc = [
+    "mkdocs-material",
+    "mkdocs-material[imaging]",
+    "mkdocs-minify-plugin",
+    "mkdocstrings",
+    "mkdocstrings[python]",
+    "mkdocs-gen-files",
+    "mkdocs-literate-nav",
+]
+test = [
+    "pytest",
+]
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
