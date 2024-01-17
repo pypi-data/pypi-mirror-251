@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: splitflow
+Version: 0.0.2
+Summary: Empower your data journey today.
+Home-page:  
+Author: Daniel Lawrence
+Author-email: daniellawrence4150@gmail.com
+License: MIT
+Keywords: python,data science,data analytics,machine learning,data,analysis
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE.txt
+
+
+Introducing splitflow

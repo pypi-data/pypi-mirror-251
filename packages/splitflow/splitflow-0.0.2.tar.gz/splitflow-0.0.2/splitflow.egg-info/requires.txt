@@ -1,0 +1,8 @@
+pandas
+sklearn
+scipy
+matplotlib
+seaborn
+numpy
+concurrent
+functools
