@@ -1,0 +1,12 @@
+conv_html_to_markdown-0.1.3.dist-info/METADATA,sha256=wSykuku06zlgLsERNRvVQxGPSG9fRNp9p6By5pz1j60,1605
+conv_html_to_markdown-0.1.3.dist-info/WHEEL,sha256=N2J68yzZqJh3mI_Wg92rwhw0rtJDFpZj9bwQIMJgaVg,90
+conv_html_to_markdown-0.1.3.dist-info/licenses/LICENSE,sha256=dr6fGawH5_DEkEb1FtaLBQ7H8td1FQQD1G6JI_KfPSY,1061
+conv_html_to_markdown/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+conv_html_to_markdown/converter.py,sha256=Lr0hvxPd5-GCC7rw45_YJER8j9yrX8762J2qVZTpXEE,4914
+conv_html_to_markdown/download_jina.py,sha256=8rtMmXYr89mFYPSpVqGrxjSifiuGF1CFTiYLVyhWcX4,752
+conv_html_to_markdown/formatter.py,sha256=oKgqiSMarVIwaXLPoVmQx1_TDLGnGUro9pjhLvid9UA,2584
+conv_html_to_markdown/gpt-crawler-curated_markdown.md,sha256=igmEPk8nEb-UWS2OGhJVE5TnD0HMRerNlPMsqDjt6IQ,163896
+conv_html_to_markdown/main.py,sha256=ft0IdBVyY5N1rUEIR6ltHzEsiuH_EavRk_SV3MwyUaY,2478
+conv_html_to_markdown/output-1.json,sha256=8KGP_7ckG2e0WoR9Bv75YvpT35r8bZM3kzddpdgEIok,87949
+conv_html_to_markdown/utils.py,sha256=09TDilAuxeKT0VqFdwoFTwMVdEByONDxwNd7-GaxrzQ,1767
+conv_html_to_markdown-0.1.3.dist-info/RECORD,,
