@@ -1,0 +1,8 @@
+README.md
+setup.py
+gold33423322/__init__.py
+gold33423322/gold33423322.py
+gold33423322.egg-info/PKG-INFO
+gold33423322.egg-info/SOURCES.txt
+gold33423322.egg-info/dependency_links.txt
+gold33423322.egg-info/top_level.txt
