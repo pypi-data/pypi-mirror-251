@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: clustroai-sdk
+Version: 0.1.1
+Summary: clustroai-sdk
+Home-page: https://www.clustro.ai/
+Author: clustro ai
+Author-email: clustro@clustro.ai
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+# ClustroAI SDK
+
+ClustroAI SDK is a powerful toolkit designed to harness idle computing resources for AI applications. It provides a comprehensive platform for AI enthusiasts and developers to utilize and monetize computing power efficiently.
+
+## Key Features
+- **Resource Utilization**: ClustroAI SDK helps in tapping into underutilized computing resources, turning them into valuable assets for AI computation.
+- **AI Platform Integration**: Seamlessly integrates with AI platforms, enabling easy access to computational resources.
+
+## Common APIs
+- `create_model`: Create a new AI model.
+- `list_models`: List all available AI models.
+- `get_model`: Retrieve details of a specific model.
+- `create_inference_job`: Set up a job for model inference.
+- `create_worker`: Initialize a worker for computation tasks.
+- `run`: Execute a predefined task or process.
+- `username_run`: Run a task under a specific user context.
+
+## Warning
+<mark>In the clustroai-sdk, the 'create' API requires the 'admin' role for creation. Additionally, the call frequency for other APIs is limited to 10 times per minute.</mark>
+
+## Getting Started
+To get started with ClustroAI SDK, install the package from PyPI:
+
+```bash
+pip install clustroai-sdk
+
+from clustroai_sdk import ClustroAI
+api_key = "Your Clustro API_Key"
+clustroai = ClustroAI(api_key, timeout=180)
+all_models = clustroai.list_models()
+print(all_models)
+
+single_model = clustroai.get_model("097d04a6-1b30-424d-bf55-675fbc405a40")
+print(single_model)
+#clustroai.create_inference_job(model_id="9d1a93eb-0c6e-46ff-9014-f265ab04c7bd", name="test_job", set_as_model_default=True)
+result = clustroai.run(input="A majestic lion jumping from a big stone at night", job_id='4ece46f4-f06d-4962-96c8-91e5c1d08ad6', sync=True)
+print(result)
+```
+## More Information
+For more information, detailed documentation, and API reference, visit [ClustroAI](https://www.clustro.ai/).
+
