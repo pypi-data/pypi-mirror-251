@@ -1,0 +1,10 @@
+invoke
+boto3
+pyyaml
+black
+pytest
+mypy
+
+[docs]
+mkdocs-material
+mkdocs-git-revision-date-localized-plugin
