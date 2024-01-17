@@ -1,0 +1,2 @@
+[console_scripts]
+inter = inter_jamisson.cli:inter
