@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/nimbaldetach/__init__.py
+src/nimbaldetach/nimbaldetach.py
+src/nimbaldetach.egg-info/PKG-INFO
+src/nimbaldetach.egg-info/SOURCES.txt
+src/nimbaldetach.egg-info/dependency_links.txt
+src/nimbaldetach.egg-info/requires.txt
+src/nimbaldetach.egg-info/top_level.txt
