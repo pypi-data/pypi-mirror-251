@@ -1,0 +1,9 @@
+django_sequential_pagination/__init__.py,SHA256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_sequential_pagination/pagination.py,SHA256=gX-hMr-ADRHKm5WQr5zXZydBsaakt5ee1I9dB2CH7pw,3032
+django_sequential_pagination/settings.py,SHA256=tMFVPIjRxkViwqaT5er9yBUNAeXX3-T-RUAnd6B246k,208
+django_sequential_pagination/templatetags/__init__.py,SHA256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_sequential_pagination/templatetags/pagination.py,SHA256=rr67T7oTEfwC4OtdmjFPHpxLZcN7IKV4GxVJ_JOj5ag,747
+django_sequential_pagination-0.1.0.dist-info/METADATA,SHA256=T4ZmUvqS-4nvqyZFvUtBTv67FUftp7x8FdfJBm-4KMI,3921
+django_sequential_pagination-0.1.0.dist-info/WHEEL,SHA256=1VPi6hfNQaRRNuEdK_3dv9o8COtLGnHWJghhj4CQ28k,92
+django_sequential_pagination-0.1.0.dist-info/top_level.txt,SHA256=hJx5kvNHQYo9Q9Bwt2xhLO7Ulmas0_dwOqwpMk1EQu8,29
+django_sequential_pagination-0.1.0.dist-info/RECORD,,
