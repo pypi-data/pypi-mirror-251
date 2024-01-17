@@ -1,0 +1,10 @@
+README.md
+license.txt
+setup.py
+ferramentas/__init__.py
+ferramentas/camera.py
+ferramentas/video.py
+ferramentas.egg-info/PKG-INFO
+ferramentas.egg-info/SOURCES.txt
+ferramentas.egg-info/dependency_links.txt
+ferramentas.egg-info/top_level.txt
