@@ -1,0 +1,5 @@
+include src/syngen/VERSION
+include src/syngen/*.py
+include src/syngen/ml/metrics/accuracy_test/src/fonts/*.ttf
+recursive-include src
+recursive-include src/syngen/streamlit_app/.*
