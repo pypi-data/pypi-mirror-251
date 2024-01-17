@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: python-cli-menu
+Version: 1.0
+Summary: A simple cross-platform module to create pretty menu in console
+Home-page: https://github.com/MathisJANKOVIC/py-cli-menu
+Author: Rasting (Mathis Jankovic)
+Author-email: mathis.jankovic@gmail.com
+License: MIT
+Keywords: python,menu,console,cli,command,line
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+License-File: LICENSE.txt
