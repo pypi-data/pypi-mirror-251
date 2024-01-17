@@ -1,0 +1,10 @@
+zsync/CLI.py,sha256=jyqiy6c8RzMCUY1Nn2OkZS-ZfLQgF4pENcJf1S9ZkG4,1518
+zsync/Config.py,sha256=fLXIbf1YjhaGNRNHrRnvc1p3U_Mn7eCnNH29CbITqy0,1983
+zsync/SyncEngine.py,sha256=N_P_T1vr1TSL0dJhiL-zjXgKVXEfR_Lsf6UqjSl9rQo,2943
+zsync/ZSync.py,sha256=NCOy14v8FT7ImUy7FdGZ1XyrAZzR9pSgub0u678ImXM,1603
+zsync/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ZSync-1.0.dist-info/METADATA,sha256=U9_c05sdY0nHDYoFy7182zDJYuBy21zKYlcn6QtCrkc,122
+ZSync-1.0.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+ZSync-1.0.dist-info/entry_points.txt,sha256=C41K2-9NiAU1lbPMulfZUd1WGMAaauX528F6fYhN8BA,43
+ZSync-1.0.dist-info/top_level.txt,sha256=sM0X-P7CI-r8vnUC81X5Mn7WW-vffdNVemic5kXJXQ0,6
+ZSync-1.0.dist-info/RECORD,,
