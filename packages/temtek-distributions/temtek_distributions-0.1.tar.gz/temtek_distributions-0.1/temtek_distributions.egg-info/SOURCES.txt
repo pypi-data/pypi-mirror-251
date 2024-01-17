@@ -1,0 +1,10 @@
+setup.py
+temtek_distributions/Binomialdistribution.py
+temtek_distributions/Gaussiandistribution.py
+temtek_distributions/Generaldistribution.py
+temtek_distributions/__init__.py
+temtek_distributions.egg-info/PKG-INFO
+temtek_distributions.egg-info/SOURCES.txt
+temtek_distributions.egg-info/dependency_links.txt
+temtek_distributions.egg-info/not-zip-safe
+temtek_distributions.egg-info/top_level.txt
