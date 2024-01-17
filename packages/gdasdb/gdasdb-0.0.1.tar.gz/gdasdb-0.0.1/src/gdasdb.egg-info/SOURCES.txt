@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/gdasdb/__init__.py
+src/gdasdb/gdasdb.py
+src/gdasdb.egg-info/PKG-INFO
+src/gdasdb.egg-info/SOURCES.txt
+src/gdasdb.egg-info/dependency_links.txt
+src/gdasdb.egg-info/requires.txt
+src/gdasdb.egg-info/top_level.txt

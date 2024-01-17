@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: gdasdb
+Version: 0.0.1
+Summary: GDAS - Database connection library
+Author-email: Ricardo Santos <ricardo@diasantos.com>
+Project-URL: Homepage, https://gitlab.gdas.com.pt/
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: mimesis>=4.1.3
+Requires-Dist: numpy>=1.24.1
+Requires-Dist: singlestoredb>=0.5.3
