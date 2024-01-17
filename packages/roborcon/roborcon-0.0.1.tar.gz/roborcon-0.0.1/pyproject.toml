@@ -1,0 +1,18 @@
+[project]
+name = "roborcon"
+version = "0.0.1"
+authors = [
+  { name="Artem Robocodovich", email="garo109696@gmail.com" },
+]
+description = "A rcon-dependent library made only for Robocode school. No docs provided"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "mcrcon",
+    "requests"
+]
