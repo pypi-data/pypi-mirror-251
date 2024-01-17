@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+shunkei_sdk/__init__.py
+shunkei_sdk/find_shunkei.py
+shunkei_sdk/webrtc.py
+shunkei_sdk.egg-info/PKG-INFO
+shunkei_sdk.egg-info/SOURCES.txt
+shunkei_sdk.egg-info/dependency_links.txt
+shunkei_sdk.egg-info/requires.txt
+shunkei_sdk.egg-info/top_level.txt
