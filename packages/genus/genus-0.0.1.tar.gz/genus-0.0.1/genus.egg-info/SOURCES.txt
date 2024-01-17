@@ -1,0 +1,8 @@
+README.md
+setup.py
+genus/__init__.py
+genus.egg-info/PKG-INFO
+genus.egg-info/SOURCES.txt
+genus.egg-info/dependency_links.txt
+genus.egg-info/entry_points.txt
+genus.egg-info/top_level.txt
