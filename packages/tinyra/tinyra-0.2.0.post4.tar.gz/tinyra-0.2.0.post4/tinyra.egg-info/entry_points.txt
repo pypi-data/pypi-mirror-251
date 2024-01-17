@@ -1,0 +1,2 @@
+[console_scripts]
+tinyra = tinyra:run_tinyra
