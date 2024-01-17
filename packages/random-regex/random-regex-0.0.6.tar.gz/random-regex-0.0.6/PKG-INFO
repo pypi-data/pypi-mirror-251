@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: random-regex
+Version: 0.0.6
+Summary: Generate Random Regex
+Home-page: https://github.com/jeffrey82221/regex_generator
+Author: jeffreylin
+Author-email: jeffrey82221@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8, !=3.11.*
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: exrex==0.11.0
+Requires-Dist: toolz==0.12.0
+Requires-Dist: regexfactory==1.0.0
+Requires-Dist: pybloom3
+
+# regex_generator
+Generate Random Regex
+
+# Install 
+
+```bash
+pip install random-regex
+```
+
+
+# Usage
+
+
+```python
+import re
+from random_regex import RegexGenerator
+from rbloom import Bloom # This is a faster bloom filter implemented in rust.s
+regex_generator = RegexGenerator(bloom_cls=Bloom).generate()
+
+
+def assert_all_match(examples, regex):
+    re_com = re.compile(regex)
+    for ex in examples:
+        assert re_com.fullmatch(ex) is not None
+
+
+for i, instance in enumerate(regex_generator):
+    if i > 1000:
+        break
+    regex = instance['regex']
+    complexity = instance['complexity']
+    length = instance['length']
+    examples = instance['examples']
+    re.compile(regex)
+    assert len(regex) == length
+    assert len(examples) == complexity
+    assert_all_match(examples, regex)
+    print(regex)
+```
+>>
+```
+((?:(([\s]C\s))))
+((\sR2{1,3}\+[m]))
+((3{1}[\(-y]a\[))
+((\d{1,1}[^08]1A))
+(([3-c]))
+(([^Rp][CJ]f))
+(((G[/]){4,7}))
+((.))
+(((?:(D2[Qh]))?))
+(((!\s)){3})
+(([9d])([9d]))
+((\s))((\s))
+((\d))
+((a\s)(a\s)(a\s))
+...
+```
