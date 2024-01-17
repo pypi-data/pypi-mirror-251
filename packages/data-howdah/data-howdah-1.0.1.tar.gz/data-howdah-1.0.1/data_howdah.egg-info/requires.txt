@@ -1,0 +1,10 @@
+pandas
+matplotlib
+ipython
+numpy
+cryptography
+matplotlib
+mplcyberpunk
+tqdm
+azure-keyvault-secrets
+azure-identity
