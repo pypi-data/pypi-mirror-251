@@ -1,0 +1,10 @@
+cloudmesh/apptainer/__init__.py,sha256=3KRBJRMqAeS9He9z8EmZFP-1e-8HB3WRBuTW16TGxtw,22
+cloudmesh/apptainer/apptainer.py,sha256=gi3iXO2opannzYHx0KwSv-9OMWWd4tDY4I-2DH5iBFI,16492
+cloudmesh/apptainer/command/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cloudmesh/apptainer/command/apptainer.py,sha256=5A3HryM8x79SUmsS1y1MlRujsEWQK8J8tM47jzF0P5c,7900
+cloudmesh_apptainer-5.0.3.dist-info/LICENSE,sha256=g8MzEIFSMQbc7dOFLonpIA3yEcrSmMcka7VmSlgQeOk,842
+cloudmesh_apptainer-5.0.3.dist-info/METADATA,sha256=P1iKIrewtgwyOC4egJqc2aL_eILOjGDzaecpb69P4cI,9230
+cloudmesh_apptainer-5.0.3.dist-info/WHEEL,sha256=-G_t0oGuE7UD0DrSpVZnq1hHMBV9DD2XkS5v7XpmTnk,110
+cloudmesh_apptainer-5.0.3.dist-info/entry_points.txt,sha256=GBhtYrq5DiHpBLvkt153-KL5YKEAjTyhGOhicD_k3a0,59
+cloudmesh_apptainer-5.0.3.dist-info/top_level.txt,sha256=aTw_KEhKv-8X8yWzikhSTeYlXkcauZxg_98rOi1SJHg,10
+cloudmesh_apptainer-5.0.3.dist-info/RECORD,,
