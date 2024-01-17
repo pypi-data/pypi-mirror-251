@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: AlanTA
+Version: 0.101.9
+Summary: Private Python library for technical analysis
+Home-page: https://github.com/fdoooch/AlanTA
+Author: fdoooch & Alan
+Author-email: fdoooch@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.10
+Requires-Dist: numba
+Requires-Dist: numpy
+Requires-Dist: pandas
+
+UNKNOWN
+
