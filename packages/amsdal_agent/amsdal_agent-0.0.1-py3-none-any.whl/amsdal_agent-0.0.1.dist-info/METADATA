@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: amsdal_agent
+Version: 0.0.1
+Summary: Agent to connect AMSDAL SDK with server
+Project-URL: Documentation, https://github.com/unknown/amsdal_agent#readme
+Project-URL: Issues, https://github.com/unknown/amsdal_agent/issues
+Project-URL: Source, https://github.com/unknown/amsdal_agent
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7
+Requires-Dist: httpx~=0.23
+Requires-Dist: rich~=13.7
+Provides-Extra: redis
+Requires-Dist: redis==5.0.1; extra == 'redis'
+Description-Content-Type: text/markdown
+
+# amsdal_agent
+
+[![PyPI - Version](https://img.shields.io/pypi/v/amsdal-agent.svg)](https://pypi.org/project/amsdal-agent)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/amsdal-agent.svg)](https://pypi.org/project/amsdal-agent)
+
+-----
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install amsdal-agent
+```
+
+## License
+
+`amsdal-agent` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
