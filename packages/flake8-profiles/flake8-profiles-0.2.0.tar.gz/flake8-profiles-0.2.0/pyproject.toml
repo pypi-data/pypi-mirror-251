@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "flake8-profiles"
+version = "0.2.0"
+description = "profiles for flake8"
+license = { "text" = "MIT License" }
+authors = [
+    { "name" = "Leif Walsh", "email" = "leif@twosigma.com" }
+]
+dependencies = [
+    "flake8"
+]
+
+[project.urls]
+"Source Code" = "https://github.com/twosigma/flake8-profiles"
+Homepage = "https://github.com/twosigma/flake8-profiles"
+Issues = "https://github.com/twosigma/flake8-profiles/issues"
+
+[project.optional-dependencies]
+dev = [
+    "flake8-docstrings",
+    "pip-tools",
+    "pytest",
+    "sphinx",
+    "sphinx_rtd_theme",
+    # Needed to make pip-compile generate pip-installable requirements.txt
+    "exceptiongroup",
+    "importlib-metadata",
+    "tomli",
+]
+
+[project.entry-points]
+"flake8.report" = { "CNF101" = "flake8_profiles:ProfilePlugin" }
+
+[tool.pip-tools]
+allow-unsafe = true
+generate-hashes = true

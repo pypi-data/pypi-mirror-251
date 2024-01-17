@@ -1,0 +1,11 @@
+flake8
+
+[dev]
+flake8-docstrings
+pip-tools
+pytest
+sphinx
+sphinx_rtd_theme
+exceptiongroup
+importlib-metadata
+tomli

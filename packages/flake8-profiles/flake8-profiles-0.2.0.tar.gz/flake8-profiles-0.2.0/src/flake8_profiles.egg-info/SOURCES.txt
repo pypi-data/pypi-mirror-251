@@ -1,0 +1,10 @@
+LICENSE
+pyproject.toml
+src/flake8_profiles/__init__.py
+src/flake8_profiles.egg-info/PKG-INFO
+src/flake8_profiles.egg-info/SOURCES.txt
+src/flake8_profiles.egg-info/dependency_links.txt
+src/flake8_profiles.egg-info/entry_points.txt
+src/flake8_profiles.egg-info/requires.txt
+src/flake8_profiles.egg-info/top_level.txt
+tests/test_flake8_profiles.py

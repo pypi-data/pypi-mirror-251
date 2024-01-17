@@ -1,0 +1,2 @@
+[flake8.report]
+CNF101 = flake8_profiles:ProfilePlugin
