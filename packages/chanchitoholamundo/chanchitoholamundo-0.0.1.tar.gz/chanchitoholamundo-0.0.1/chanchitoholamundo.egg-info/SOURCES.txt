@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+chanchitoholamundo.egg-info/PKG-INFO
+chanchitoholamundo.egg-info/SOURCES.txt
+chanchitoholamundo.egg-info/dependency_links.txt
+chanchitoholamundo.egg-info/top_level.txt
+holamundoplayer/__init__.py
+holamundoplayer/lala.py
+holamundoplayer/player.py
