@@ -1,0 +1,3 @@
+[console_scripts]
+SNS_diffusion_simulator = SNS_diffusion_simulator:main
+
