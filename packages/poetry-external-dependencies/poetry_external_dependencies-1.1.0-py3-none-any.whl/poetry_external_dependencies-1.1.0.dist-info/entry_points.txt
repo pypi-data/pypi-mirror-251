@@ -1,0 +1,3 @@
+[poetry.plugin]
+external-dependencies=poetry_external_dependencies.plugin:ExternalInjector
+
