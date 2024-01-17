@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: piland-http-health-checker
+Version: 0.1.1
+Summary: A program to check the health of a set of HTTP endpoints
+Author: Dave Piland
+Author-email: dave.l.piland@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: pyyaml (>=6.0.1,<7.0.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Requires-Dist: typer[all] (>=0.9.0,<0.10.0)
+Requires-Dist: urllib3 (>=2.1.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+# piland_http_health_checker
+
+A program to check the health of a set of HTTP endpoints
