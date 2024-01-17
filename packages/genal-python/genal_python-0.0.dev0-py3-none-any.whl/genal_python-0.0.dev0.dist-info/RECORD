@@ -1,0 +1,17 @@
+genal/Geno.py,sha256=cN-zjd7_ukgBCbJ_FFLkgwGkLDwUzdWH8R8aq6NBo1w,51527
+genal/MR.py,sha256=Z0V3hbCou7x8_HVrF4bA4A4sObSvXY5kLx8aC8xIkxw,26044
+genal/MR_tools.py,sha256=DRYjee59zPMnDBxs2V88iMCfIbMOZyj0yJIjlXuYVbg,20324
+genal/MRpresso.py,sha256=tQlOpkZUhFKVMNXpoRliPSF1p8nZTRoKaXH47iMHbyc,11084
+genal/__init__.py,sha256=meB0nCXRVuXHZSyM_uqFeGjtarjtWrqX1aijWSAJoxE,507
+genal/association.py,sha256=dOnzE39jC9Jdy0CAl-mxYpgIEwpvJR0W6Ti9hpmexw0,14230
+genal/clump.py,sha256=9fRValEWE7QVtK-L_tFskcdMUIdodIEFpFXQwpaEDWE,3376
+genal/constants.py,sha256=MMX6cUQMOS8_avMbksuNQcAbruCFRdWPT-A8A4EUvl8,824
+genal/extract_prs.py,sha256=K7qN_MbQyABoCVNMhQuuZ399dexb1Dr-ThIbKlLHV2I,12187
+genal/geno_tools.py,sha256=Zie_McH3JOmQnhT0ElkakVfZSZTnHoFto82LHaCtM4o,15860
+genal/lift.py,sha256=pNfGh9yV8x2oPGS8r3Yl9g_MKaSysKdvZPg_XaUGSJk,10227
+genal/proxy.py,sha256=I_2h6oX1jlas9qkp9nJjefXfw66BKxP6ZJG2PSWkMi4,10380
+genal/tools.py,sha256=DKqrVzNeBJGyqqcMvf3G4nPgFYv52VSIofQr4lzhZSc,9911
+genal_python-0.0.dev0.dist-info/LICENSE,sha256=ljOS4DjXvqEo5VzGfdaRwgRZPbNScGBmfwyC8PChvmQ,32422
+genal_python-0.0.dev0.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+genal_python-0.0.dev0.dist-info/METADATA,sha256=18sY8MuXBiZ2loaZDQqMyjYP1FBboPSM04DKYq2GtMo,34575
+genal_python-0.0.dev0.dist-info/RECORD,,
