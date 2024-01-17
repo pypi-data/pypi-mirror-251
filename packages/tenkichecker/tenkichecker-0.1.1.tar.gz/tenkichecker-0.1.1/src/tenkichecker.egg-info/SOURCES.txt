@@ -1,0 +1,7 @@
+README.md
+setup.py
+src/tenkichecker.egg-info/PKG-INFO
+src/tenkichecker.egg-info/SOURCES.txt
+src/tenkichecker.egg-info/dependency_links.txt
+src/tenkichecker.egg-info/requires.txt
+src/tenkichecker.egg-info/top_level.txt
