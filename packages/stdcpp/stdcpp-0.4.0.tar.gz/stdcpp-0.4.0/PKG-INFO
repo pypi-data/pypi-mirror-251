@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: stdcpp
+Version: 0.4.0
+Summary: cout & cerr like in C++
+Home-page: https://github.com/gergelyk/python-stdcpp
+License: MIT
+Author: Grzegorz Krason
+Author-email: grzegorz.krason@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Project-URL: Repository, https://github.com/gergelyk/python-stdcpp
+Description-Content-Type: text/markdown
+
+# cout & cerr like in C++
+
+Usge:
+
+```py
+from stdcpp import cout, cerr, endl
+
+cout << "Hello" << " " << "world!" << endl
+cerr << "Hello" << " " << "world!" << endl
+```
+
+Bonus 1:
+
+```py
+from stdcpp import Stream
+
+s = Stream('log.txt', 'a+')
+s << "Hello "
+s.close()
+
+with Stream('log.txt', 'a+') as s:
+    s << "world!" << endl
+```
+
+Bonus 2:
+
+```py
+import io
+from stdcpp import Stream, cout
+
+ios = io.StringIO()
+s = Stream(ios)
+s << "Hello world!" << endl
+ios.seek(0)
+cout << ios.read()
+```
+
+Bonus 3:
+```py
+from stdcpp import cdbg
+
+x = 123
+y = 'foobar'
+
+cdbg << x << y
+```
+
