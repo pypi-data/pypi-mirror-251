@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+ExchangeComparison/__init__.py
+ExchangeComparison/exchange.py
+ExchangeComparison.egg-info/PKG-INFO
+ExchangeComparison.egg-info/SOURCES.txt
+ExchangeComparison.egg-info/dependency_links.txt
+ExchangeComparison.egg-info/requires.txt
+ExchangeComparison.egg-info/top_level.txt
