@@ -1,0 +1,10 @@
+typing_validation/__init__.py,sha256=bTp4sPOmVRe8hIv1_PFt_A3bPs9H3LTa6qE11DTNq6I,559
+typing_validation/inspector.py,sha256=8hCyXmtlx1HFAWsSOhdZVS3V29lKhoGfcb3qmA3dBMg,15561
+typing_validation/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+typing_validation/validation.py,sha256=J41I_1DoBE7fmuhM2Jn1rmdpOF2vF8LlpzfXzGSIOjA,27217
+typing_validation/validation_failure.py,sha256=KRj71p4yXTpTVq3sbQW2h__zwiErAtht6h5bFpVNuZY,17334
+typing_validation-1.2.4.dist-info/LICENSE,sha256=MuOBWp9UiM1wg8a22greQggnp5uDhSE-osj1KzWtD4s,1086
+typing_validation-1.2.4.dist-info/METADATA,sha256=AT9utyB_r2YhabCg3FMTvZUNtQwPz_tSWV4cvKBpbSg,4037
+typing_validation-1.2.4.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+typing_validation-1.2.4.dist-info/top_level.txt,sha256=rkHGoS8VH6WFm-NBqfsOY_lGbNUs90O0jWBEehLdccM,18
+typing_validation-1.2.4.dist-info/RECORD,,
