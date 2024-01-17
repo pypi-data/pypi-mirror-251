@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: api-sports-io-nfl
+Version: 0.0.2
+Summary: API Wrapper for api-sports.io's NFL feeds.
+Home-page: https://github.com/ianpittwood/api-sports-io-nfl
+License: Apache 2.0
+Keywords: api,sports,nfl,api-sports.io,football,american football,gridiron
+Author: Ian Pittwood
+Author-email: pittwoodian@gmail.com
+Maintainer: Ian Pittwood
+Maintainer-email: pittwoodian@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Project-URL: Repository, https://github.com/ianpittwood/api-sports-io-nfl
+Description-Content-Type: text/markdown
+
+# api-sports-io-nfl
+An unofficial Python API wrapper for [api-sports.io's NFL feeds](https://api-sports.io/documentation/nfl/v1).
+
+## Installation
+```bash
+pip install api-sports-io-nfl
+```
+
+## Usage
+```python
+from api_sports_io_nfl import ApiNfl
+
+# Initialize the API wrapper with your API key
+api = ApiNfl(api_key='YOUR_API_KEY')
+
+# Make your calls!
+teams = api.teams(league=api.Leagues.NFL)
+```
+
