@@ -1,0 +1,10 @@
+my_clippings/__init__.py,sha256=PqzN2tvbw-E7SGMZ3wvLnI2_z0GuxG2eD7fc3JLA91U,50
+my_clippings/main.py,sha256=1zrD2tDGXcW9J6kaU6ZFQhCFKUO7WPHUzbH1RTSzMzY,952
+my_clippings/classes/clipping.py,sha256=JMXBxcUsDVBPBQ8D2p5q2vG_WiprL9T9KdQ0KLvHqBo,1662
+my_clippings/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+my_clippings/utils/parsers.py,sha256=te-K9lKv4DoKpCnUebZQ0EpFPLoFrQIpqyRvOofHccg,2464
+my_clippings/utils/reader.py,sha256=M8HyN5XCDzOksjSwQAN121oRpOZgIPAFKvTlElq9gT4,1062
+myclippings-0.0.1.dist-info/METADATA,sha256=hiTIkau4C2UA9vEn1IbPCJgVqy7CwxCluxuntvifNB0,1391
+myclippings-0.0.1.dist-info/WHEEL,sha256=mRYSEL3Ih6g5a_CVMIcwiF__0Ae4_gLYh01YFNwiq1k,87
+myclippings-0.0.1.dist-info/licenses/LICENSE,sha256=LKudyYyLoobMpu7Odx-Tp1TvexnkDM-egIqls8LXpNk,1070
+myclippings-0.0.1.dist-info/RECORD,,
