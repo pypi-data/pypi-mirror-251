@@ -1,0 +1,21 @@
+{% load actions djblets_utils gravatars i18n rb_extensions %}
+
+<div id="headerbar">
+{% include "base/branding.html" %}
+ <div id="nav_toggle" role="button" aria-label="{% trans 'Toggle navigation' %}"><span class="fa fa-navicon"></span></div>
+ <nav class="rb-c-actions" aria-label="{% trans 'Account and product' %}" role="presentation">
+  <menu class="rb-c-actions__content" id="accountnav" role="menu">
+{% actions_html "header" %}
+  </menu>
+ </nav>
+
+ <div id="search">
+{% if siteconfig_settings.search_enable %}
+  <form method="get" action="{% url 'search' %}" role="search">
+{% endif %}
+   <input type="search" name="q" placeholder="{% if siteconfig_settings.search_enable %}{% trans "Search" %}{% else %}{% trans "Jump to..." %}{% endif %}" id="search_field" {% attr "value" %}{{query}}{% endattr %} />
+{% if siteconfig_settings.search_enable %}
+  </form>
+{% endif %}
+ </div>
+</div>

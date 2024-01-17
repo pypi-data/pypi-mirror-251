@@ -1,0 +1,324 @@
+@import (reference) "rb/css/defs.less";
+
+@banner-padding: 10px;
+@banner-padding-horizontal: 10px;
+
+
+.banner {
+  background: @draft-color;
+  border-width: 1px;
+  border-color: @draft-border-color;
+  border-style: solid;
+  margin-bottom: 10px;
+  padding: @banner-padding;
+  z-index: @z-index-banner;
+
+  &>h1, &>p {
+    display: inline;
+    margin-right: 0.2em;
+    padding: 0;
+  }
+
+  .on-mobile-medium-screen-720({
+    p {
+      display: block;
+      margin: 1em 0;
+    }
+  });
+
+  .banner-actions {
+    margin-left: 1em;
+
+    .on-mobile-medium-screen-720({
+      display: block;
+      margin-left: 0;
+      margin-top: 1em;
+    });
+  }
+}
+
+
+/**
+ * The unified banner.
+ *
+ * This banner replaces a number of previous banners -- banners for the review
+ * request draft, review draft, and review reply drafts. It's split into two
+ * major parts:
+ *
+ * 1. The review area. This deals with reviews and drafts. It contains the main
+ *    "Review" menu, publish button, mode switcher (for choosing different
+ *    active drafts), and the change description field (when there's a review
+ *    request update draft).
+ *
+ * 2. The dock area. This is currently unused, but we have plans to use this
+ *    for an expandable file display on the diffviewer, as well as allow
+ *    extensions to drop in their own content.
+ *
+ * Modifiers:
+ *     -has-draft:
+ *         Whether there are any drafts present.
+ *
+ *     -has-multiple:
+ *         Whether there are multiple drafts present.
+ *
+ * Structure:
+ *     <div class="rb-c-unified-banner">
+ *      <div class="rb-c-unified-banner__review">...</div>
+ *      <div class="rb-c-unified-banner__dock">...</div>
+ *     </div>
+ */
+.rb-c-unified-banner {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  display: none;
+  margin: -@page-container-padding -@page-container-padding
+          @page-container-padding -@page-container-padding;
+  z-index: @z-index-banner;
+
+  &.-has-multiple {
+    box-shadow: none;
+
+    &::after {
+      background: @draft-color;
+      border-color: @draft-border-color;
+      border-style: solid;
+      border-width: 0 1px 1px 1px;
+      box-shadow: 0 0 4px rgba(0, 0, 0, 0.6);
+      content: ' ';
+      display: block;
+      height: 2px;
+      margin: 0 0.3em;
+    }
+  }
+
+  a {
+    color: #rb-ns-ui.colors[@black];
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  /**
+   * The main section of the review banner relating to reviews and drafts.
+   *
+   * Modifiers:
+   *     -has-draft:
+   *         Whether there's any draft objects present.
+   *
+   * Structure:
+   *     <div class="rb-c-unified-banner__review">
+   *      <div class="rb-c-unified-banner__controls">
+   *      </div>
+   *      <div class="rb-c-unified-banner__changedesc">...</div>
+   *     </div>
+   */
+  &__review {
+    background: @review-request-bg;
+    border-bottom: 1px @review-request-border-color solid;
+    display: flex;
+    flex-direction: column;
+    padding: 0 @banner-padding;
+    position: relative;
+
+    .-has-draft & {
+      background: @draft-color;
+      border-bottom: 1px @draft-border-color solid;
+    }
+  }
+
+  /**
+   * The change description field.
+   *
+   * Structure:
+   *     <div clas="rb-c-unified-banner__changedesc">
+   *      <p>
+   *       <label for="field_change_description">
+   *        Describe your changes (optional):
+   *       </label>
+   *      </p>
+   *      <pre id="field_change_description" class="field field-text-area"
+   *           data-field-id="field_change_description"></pre>
+   *     </div>
+   */
+  &__changedesc {
+    padding-bottom: @banner-padding;
+
+    > label {
+      // Match to the height of rb-icon-edit to prevent jumps.
+      line-height: @rb-icon-edit-height;
+    }
+
+    > p {
+      margin: 0 0 @banner-padding;
+    }
+
+    .rb-c-text-editor {
+      margin-top: 0;
+    }
+  }
+
+  /**
+   * The block of controls relating to reviews and drafts.
+   *
+   * Structure:
+   *     <div class="rb-c-unified-banner__controls">
+   *      <div class="rb-c-unified-banner__mode-selector">
+   *       ...
+   *      </div>
+   *      <div class="rb-c-unified-banner__draft-actions">
+   *       <input type="button" id="btn-review-request-discard"
+   *              value="Discard">
+   *      </div>
+   *      <menu class="rb-c-unified-banner__review-actions rb-c-actions"
+   *            role="menu">
+   *       ...
+   *      </menu>
+   *     </div>
+   */
+  &__controls {
+    align-items: baseline;
+    display: flex;
+    gap: @banner-padding;
+
+    > div:not(:empty) {
+      margin-right: 1em;
+    }
+  }
+
+  /**
+   * The draft mode selector.
+   *
+   * Structure:
+   *     <div class="rb-c-unified-banner__mode-selector">
+   *      <div class="rb-c-unified-banner__menu">
+   *       <a class="rb-c-unified-banner__mode">
+   *        <span class="rb-c-unified-banner__menu-label">...<?span>
+   *       </a>
+   *       <div class="rb-c-menu">...</div>
+   *      </div>
+   *     </div>
+   */
+  &__mode-selector {
+    margin-left: -@banner-padding;
+
+    .rb-c-menu {
+      background: @draft-color;
+      border-color: @draft-border-color;
+      font-size: 9pt;
+      font-weight: bold;
+      margin-left: -1px;
+      min-width: 30em;
+    }
+
+    .rb-c-menu__item:not(.rb-c-button) {
+      &:focus, &:hover {
+        background: @draft-hover-color;
+      }
+    }
+  }
+
+  /**
+   * The menu within the draft mode selector.
+   *
+   * Modifiers:
+   *     -is-open:
+   *         The menu is open.
+   */
+  &__menu {}
+
+  /**
+   * The mode label.
+   */
+  &__mode {}
+
+  &__menu.-is-open &__mode {
+    border-bottom: 1px @draft-color solid;
+    border-left: 1px @draft-border-color solid;
+    border-right: 1px @draft-border-color solid;
+    box-sizing: border-box;
+    margin: 0 -1px -1px -1px;
+    position: relative;
+    z-index: @z-index-menu + 1;
+  }
+
+  /**
+   * The "Review" menu and other actions.
+   */
+  &__review-actions {
+    margin: 0;
+    padding: 0;
+  }
+
+  .rb-c-actions {
+    list-style: none;
+  }
+
+  &__mode,
+  #action-review-menu > a {
+    box-sizing: border-box;
+    display: block;
+    font-size: 9pt;
+    font-weight: bold;
+    padding: @banner-padding;
+  }
+
+  /*
+   * This makes sure that items in the review menu are clickable across
+   * their entire breadth.
+   */
+  #action-review-menu .rb-c-menu__item {
+    padding: 0;
+
+    & > a {
+      @_menu-vars: #rb-ns-ui.menus();
+
+      display: inline-block;
+      padding: @_menu-vars[@item-padding-vert] @_menu-vars[@item-padding-horiz];
+    }
+  }
+
+  /**
+   * The link to the interdiff, if present.
+   *
+   * Structure:
+   *     <div class="rb-c-unified-banner__interdiff-link">
+   *      This draft adds a new diff.
+   *      <a href="...">Show changes</a>
+   *     </div>
+   */
+  &__interdiff-link {
+    margin-top: 1em;
+
+    a {
+      color: @link-color;
+    }
+  }
+
+  /**
+   * The "dock" portion of the unified banner.
+   */
+  &__dock:not(:empty) {
+    background: @review-request-bg;
+    border-bottom: 1px @review-request-border-color solid;
+    padding: @banner-padding;
+  }
+}
+
+.on-mobile-medium-screen-720({
+  .rb-c-unified-banner {
+    &__changedesc {
+      padding: 0 @banner-padding @banner-padding @banner-padding;
+    }
+
+    &__controls {
+      flex-wrap: wrap;
+    }
+
+    &__mode-selector {
+      margin-left: 0;
+    }
+
+    &__review {
+      padding: 0;
+      z-index: @z-index-menu;
+    }
+  }
+});
