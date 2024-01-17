@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "filesystem-pysdk"
+version = "2.0.0"
+description = "python filesystem sdk"
+authors = ["i-curve <i-curve@qq.com>"]
+readme = "README.md"
+homepage = "https://github.com/i-curve/filesystem-pysdk"
+repository = "https://github.com/i-curve/filesystem-pysdk"
+license = "BSD-3-Clause"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+requests = "^2.13"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
