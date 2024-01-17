@@ -1,0 +1,4 @@
+mkdocs<2,>=1
+mkdocs-material
+tqdm
+packaging
