@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: konnyaku_gpt
+Version: 0.0.1
+Summary: AI-powered multimodal subtitle generator.
+Project-URL: GitHub, https://github.com/Trent-Fellbootman/konnyaku-gpt
+Author-email: Trent Fellbootman <trentfellbootman@gmail.com>
+License-File: LICENSE
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: <4.0,>=3.11
+Requires-Dist: imageio-ffmpeg<0.5.0,>=0.4.8
+Requires-Dist: imageio<3.0.0,>=2.31.1
+Requires-Dist: librosa<0.11.0,>=0.10.1
+Requires-Dist: moviepy<2.0.0,>=1.0.3
+Requires-Dist: numpy<2.0.0,>=1.24.3
+Requires-Dist: openai<2.0.0,>=1.7.1
+Requires-Dist: pillow<10.0.0,>=9.4.0
+Requires-Dist: proglog<0.2.0,>=0.1.10
+Requires-Dist: requests<3.0.0,>=2.31.0
+Requires-Dist: srt<4.0.0,>=3.5.3
+Requires-Dist: torch<3.0.0,>=2.0.0
+Requires-Dist: transformers<5.0.0,>=4.32.1
+Description-Content-Type: text/markdown
+
+# KonnyakuGPT: AI Anime Subtitle Generator
+
+Visit [KonnyakuGPT's GitHub repo](https://github.com/Trent-Fellbootman/konnyaku-gpt)
+for project description and documentation.
