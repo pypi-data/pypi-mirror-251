@@ -1,0 +1,8 @@
+README.md
+setup.py
+src/multiCompare.py
+src/multiCompare.egg-info/PKG-INFO
+src/multiCompare.egg-info/SOURCES.txt
+src/multiCompare.egg-info/dependency_links.txt
+src/multiCompare.egg-info/entry_points.txt
+src/multiCompare.egg-info/top_level.txt
