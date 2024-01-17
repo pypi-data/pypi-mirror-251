@@ -1,0 +1,59 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "drf-jsonmask"
+dynamic = ["version"]
+description = "Implements Google's partial response in Django RestFramework (Fork from Zapier's package)"
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [
+    { name = "Craig Labenz", email = "craig.labenz@zapier.com" },
+    { name = "João Luiz Lorencetti", email = "jll.linux@gmail.com" },
+]
+maintainers = [
+    { name = "Christian Hartung", email = "hartungstenio@outlook.com" },
+]
+license = { file = "LICENSE" }
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Web Environment",
+    "Framework :: Django",
+    "Framework :: Django :: 4.2",
+    "Framework :: Django :: 5.0",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Internet :: WWW/HTTP",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = [
+    "jsonmask",
+    "django>=4.2",
+    "djangorestframework>=3.14",
+]
+
+[project.urls]
+Repository = "https://github.com/jllorencetti/drf-jsonmask.git"
+
+[tool.hatch.version]
+path = "drf_jsonmask/__init__.py"
+
+[tool.coverage.run]
+source = ["drf_jsonmask"]
+branch = true
+
+[tool.isort]
+line_length = 119
+combine_as_imports = true
+include_trailing_comma = true
+multi_line_output = 5
+default_section = "THIRDPARTY"

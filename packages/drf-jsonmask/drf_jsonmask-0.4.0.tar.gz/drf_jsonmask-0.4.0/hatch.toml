@@ -1,0 +1,45 @@
+[envs.default]
+dependencies = [
+    "coverage[toml]",
+    "factory-boy",
+    "jsonmask",
+]
+
+[envs.style]
+detached = true
+dependencies = [
+  "flake8",
+  "isort",
+]
+[envs.style.scripts]
+check = [
+  "flake8 .",
+  "isort --check-only --diff .",
+]
+fmt = [
+  "isort .",
+  "check",
+]
+
+[envs.test.scripts]
+test = [
+    "coverage run -m django test -v2 --settings=tests.settings",
+    "coverage report",
+]
+
+[envs.test.overrides]
+matrix.django.dependencies = [
+    { value = "django>=4.2,<5.0", if = ["4.2"] },
+    { value = "django>=5.0,<5.1", if = ["5.0"] },
+]
+matrix.drf.dependencies = [
+    { value = "djangorestframework>=3.14,<3.15", if = ["3.14"] },
+]
+
+[[envs.test.matrix]]
+python = ["3.8", "3.9", "3.10", "3.11", "3.12"]
+django = ["4.2"]
+
+[[envs.test.matrix]]
+python = ["3.10", "3.11", "3.12"]
+django = ["5.0"]
