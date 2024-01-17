@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: oasees_sdk
+Version: 0.0.8
+Summary: Oasees SDK
+Author-email: Example Author <author@example.com>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: web3
+Requires-Dist: ipfshttpclient ==0.8.0a2
+Requires-Dist: requests
+Requires-Dist: python-dotenv
+
