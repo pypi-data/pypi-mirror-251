@@ -1,0 +1,8 @@
+sparsely/__init__.py,sha256=lDczk-dylSkJ4SVSdgKbN-L7s5pueBvddfnm-U6EJv4,160
+sparsely/regressor.py,sha256=J5CLEWdmLNEH9WUZPx-HSbxg9n6lGMYrjTNAC0NVkTk,6477
+sparsely/tune.py,sha256=2h3jxGookjfjHaNX16BbXo6Jd5zBvzsN4c6-cFxWIMY,4797
+sparsely-0.0.1.dist-info/LICENSE,sha256=cEst06wisjf6mpvS-oiSw-gZKowAW4_Q3esoGIV_rcM,1071
+sparsely-0.0.1.dist-info/METADATA,sha256=YLAfQJyR3MTV-1xAzkahsdZMPXpQA8Xzn7_nH1A684o,4106
+sparsely-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+sparsely-0.0.1.dist-info/top_level.txt,sha256=KHlFmCyoyAQzAhTCe3XoCmUfDUqgXT3jOEOwoSIxy7k,9
+sparsely-0.0.1.dist-info/RECORD,,
