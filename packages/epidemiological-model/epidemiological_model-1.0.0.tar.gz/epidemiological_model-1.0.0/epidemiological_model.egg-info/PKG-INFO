@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: epidemiological-model
+Version: 1.0.0
+Summary: A Python package for epidemiological modelling
+Home-page: https://github.com/babak2/epidemiological_model
+Author: Babak Mahdavi Ardestani
+Author-email: babak.m.ardestani@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
