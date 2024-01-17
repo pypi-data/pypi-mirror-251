@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: mspython
+Version: 1.0.0
+Summary: An Scratch API Wrapper for scratch.mit.edu
+Author: simasimanekosan
+Author-email: simaneko.meow4649@gmail.com
+Keywords: scratch api,scratch api python,scratch python,scratch for python,scratch,scratch cloud,scratch cloud variables,scratch bot
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: websocket-client
+Requires-Dist: numpy
+Requires-Dist: requests
+Requires-Dist: bs4
+
+# Manipulating Scratch in python
+
+これはscratchattachの日本語版のものです
+
+## インストール
+
+```
+pip install mspython
+```
+またはpythonで
+```
+import os
+
+os.system("pip install -U mspython")
+```
+でインストールできます。
+Manipulating Scratch in pythonの機能はすべて`[documentation](https://github.com/TimMcCool/scratchattach/wiki/)`に書いてあります
