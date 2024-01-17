@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+cv_xtractor/__init__.py
+cv_xtractor/extract_entities.py
+cv_xtractor/jz_skill_patterns.jsonl
+cv_xtractor.egg-info/PKG-INFO
+cv_xtractor.egg-info/SOURCES.txt
+cv_xtractor.egg-info/dependency_links.txt
+cv_xtractor.egg-info/requires.txt
+cv_xtractor.egg-info/top_level.txt
+tests/test.py
