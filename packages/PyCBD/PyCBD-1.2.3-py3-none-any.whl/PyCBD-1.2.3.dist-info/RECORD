@@ -1,0 +1,17 @@
+PyCBD/__init__.py,sha256=zAcQgCvU6Nbl6rPgkkqG4AY11N1S5cpT1hItN-8WX4o,57
+PyCBD/logger_configuration.py,sha256=8pAKxCuIpNOXvJQvaTx8y1bKCkzHin0f70CKrlT5ke4,942
+PyCBD/pipelines.py,sha256=bKFFWXXTXVqIQquUxBAK2-4ZwVvDVvHrW2PNPy052GQ,12841
+PyCBD/checkerboard_detection/__init__.py,sha256=LwbHzXHKEwgg9Koq3b-XlbEIn151DMKh3CPAZrPsoHY,100
+PyCBD/checkerboard_detection/checkerboard_detector.py,sha256=AtDhTTSPk4KXuQ6RIsT5ruPxdUV8PTH0uCYbtsPKabU,5125
+PyCBD/checkerboard_detection/DLL/Checkerboard.py,sha256=cKzjMx92TIm5nbX4fDW4S9xjxAX_-TTBRkXS-S-zuj0,14648
+PyCBD/checkerboard_detection/DLL/_Checkerboard.cp310-win_amd64.pyd,sha256=hXQClhsfUkJLejeLJa8_WNtcyJHcVD-17oSUyxA95BM,227328
+PyCBD/checkerboard_detection/DLL/_Checkerboard.cp38-win_amd64.pyd,sha256=pVZE93hqcKL1wJL0GwVzc9vmSfhkKy8Cm70tYC6FpPM,227328
+PyCBD/checkerboard_detection/DLL/cbdetect.dll,sha256=ccEanp4LKkNzOR4A_IimB6WhUmccX4D1gaoUW4TQD-U,192512
+PyCBD/checkerboard_detection/DLL/opencv_world460.dll,sha256=4wAftFnlRjSTWVV7V3lBKTsuyTk0dxJ2abPUHK0a_wE,75841536
+PyCBD/checkerboard_enhancement/__init__.py,sha256=bJOFGM8yLDgp1BBfIQXJiwyVCgwHU_m4_QmPKc3QXJE,94
+PyCBD/checkerboard_enhancement/checkerboard_enhancer.py,sha256=VuQt4ahs8bhk7ZnSYG2mNYpkPZLYCzvP5uz4ViN3dPo,26811
+PyCBD-1.2.3.dist-info/LICENSE,sha256=e3mIpdX9wvVaLQfEskr2uTDOXEfbHIwcWxioGlIjENw,35831
+PyCBD-1.2.3.dist-info/METADATA,sha256=UGeIgWpeI11GsJKw6m7HsYg_As9uHkNZYhBOYH6i8Xc,7465
+PyCBD-1.2.3.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+PyCBD-1.2.3.dist-info/top_level.txt,sha256=rX77y02JJSKj-TwqtQ8rwbebQ8AE4qEhyNkC2YXjYmw,6
+PyCBD-1.2.3.dist-info/RECORD,,
