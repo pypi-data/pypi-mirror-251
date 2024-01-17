@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: omniorb-py
+Version: 4.3.0.post3
+Summary: Ready to use omniorb distribution for unix
+Home-page: http://omniorb.sourceforge.net/
+Author: Duncan Grisby
+Author-email: duncan@grisby.org
+License: LGPL for libraries, GPL for tools
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)
+Classifier: Operating System :: POSIX
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+This is not an official package from the creators of omniORB or omniORBpy.
+It is a forked version OmniORB SVN. 
+The changes in the source code are publicly available at : https://github.com/IT-ML-Team/OmniORB/tree/4.3.0.insiders
+The creator of these wheels does not hold any rights to omniORB as well as omniORBpy.
+We do not give any support and are not liable for any damage caused by the use of this software.
+
+For more information about the copyright holders please visit
+http://omniorb.sourceforge.net/contact.html
