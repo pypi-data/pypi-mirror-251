@@ -1,0 +1,15 @@
+checkpointed-core>=1.0
+pandas
+gensim
+numpy
+nltk
+contractions
+scipy
+scikit-learn
+torch==2.1.2
+transformers
+sentence-transformers
+umap-learn
+hdbscan
+matplotlib
+seaborn
