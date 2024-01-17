@@ -1,0 +1,9 @@
+setup.py
+genaiterminal/__init__.py
+genaiterminal/config.py
+genaiterminal/generate_code.py
+genaiterminal.egg-info/PKG-INFO
+genaiterminal.egg-info/SOURCES.txt
+genaiterminal.egg-info/dependency_links.txt
+genaiterminal.egg-info/requires.txt
+genaiterminal.egg-info/top_level.txt
