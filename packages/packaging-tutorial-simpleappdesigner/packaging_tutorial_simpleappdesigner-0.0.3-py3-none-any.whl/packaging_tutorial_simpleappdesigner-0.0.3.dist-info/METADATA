@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: packaging_tutorial_simpleappdesigner
+Version: 0.0.3
+Project-URL: Documentation, https://github.com/unknown/packaging-tutorial#readme
+Project-URL: Issues, https://github.com/unknown/packaging-tutorial/issues
+Project-URL: Source, https://github.com/unknown/packaging-tutorial
+Author-email: Dimri <simpleappdesigner@gmail.com>
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# packaging_tutorial
+
+[![PyPI - Version](https://img.shields.io/pypi/v/packaging-tutorial.svg)](https://pypi.org/project/packaging-tutorial)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/packaging-tutorial.svg)](https://pypi.org/project/packaging-tutorial)
+
+-----
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install packaging-tutorial-simpleappdesigner
+```
+
+## License
+
+`packaging-tutorial` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
