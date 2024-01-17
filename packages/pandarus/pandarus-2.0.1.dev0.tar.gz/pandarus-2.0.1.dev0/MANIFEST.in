@@ -1,0 +1,6 @@
+include LICENSE
+include *.txt
+include README.md
+include pandarus/*.py
+include pandarus/utils/*.py
+include tests/data/*.*
