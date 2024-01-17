@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=59.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "conll_transform"
+version = "0.1.0"
+authors = [
+  { name="Bruno Oberle", email="bruno@boberle.com" },
+]
+description = "Various functions to manipulate CONLL files"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/boberle/corefconversion/"
+Issues = "https://github.com/boberle/corefconversion/issues"

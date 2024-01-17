@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+src/conll_transform/__init__.py
+src/conll_transform.egg-info/PKG-INFO
+src/conll_transform.egg-info/SOURCES.txt
+src/conll_transform.egg-info/dependency_links.txt
+src/conll_transform.egg-info/top_level.txt
