@@ -1,0 +1,11 @@
+visualobjecteditor/__init__.py,sha256=ME-rXni9fy3R8CsRDvMirv4nlsWZWJCW8kbQBlQPU7A,89
+visualobjecteditor/base.py,sha256=OAj2ECQ78nHUb-geFmeGSv3c97sHqvugO2kMhGaTGu4,19551
+visualobjecteditor/block.py,sha256=kyN4sCTrvxNqSEU9eEDpeX8970TKOkgs_X5LnSzXH0g,2048
+visualobjecteditor/line.py,sha256=P9BHPxpEfF_xO-x6QxjWTQdYTAfBB8o5S9L8jiJ13ZQ,1824
+visualobjecteditor/nested.py,sha256=MVuYBhwcsfMOnCSU6T8uKzFTau5GSp1qo-qo8uqn6-o,2129
+visualobjecteditor/page.py,sha256=V72hvsrz2MxPWwblxmGXYURE26HY6CKtx1X5QaoLL_c,677
+visualobjecteditor/table.py,sha256=mWMyVEhF9Hg5w82MDYk3oxnBtbm29ZXTauf-eO2FQh8,8193
+visualobjecteditor/utils.py,sha256=Xd6W90db0MWq20nL-PoSsE8On9d3JMlULpiU4JrIvRQ,2633
+visualobjecteditor-0.1.dist-info/METADATA,sha256=AslokOcgITSHICyvqB0WWyhQNdpR_0wyYs7csKoCtoI,657
+visualobjecteditor-0.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+visualobjecteditor-0.1.dist-info/RECORD,,
