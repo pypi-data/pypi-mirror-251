@@ -1,0 +1,2 @@
+[console_scripts]
+kolibri2zim = kolibri2zim:entrypoint.main
