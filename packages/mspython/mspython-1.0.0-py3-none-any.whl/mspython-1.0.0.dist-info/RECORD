@@ -1,0 +1,15 @@
+mspython/__init__.py,sha256=bDby-LsB1Q-VdlSTzJfP9ePCezOGGqkDsu-YLMgzEWw,2719
+mspython/cloud.py,sha256=F6xpHhIqzWgwytuHPWao2qcolZx0HmKXnPyj385-c2g,20202
+mspython/cloud_requests.py,sha256=pJuihBnBQQrh0_0WQXaeFCZ6_dklrSmIkMa9pmYOEa0,23531
+mspython/encoder.py,sha256=wkJ0xpEHGRCM2nCGEybLSZWtat9HA6Uf4SNcGnvjpjs,2119
+mspython/exceptions.py,sha256=vqpYCevpacuKBH26BaYC277_i8oyUVMNvR-n3NcCGhg,4116
+mspython/forum.py,sha256=n1ojYarT_vrHtqP7erapPeztVzjpySJK36WmwXxsSZ0,10196
+mspython/project.py,sha256=yxdJiOsk0E2X3M1iPxsAkamTxbQ8N98LXk9gT2DNG_Y,29450
+mspython/session.py,sha256=ANtdyKLB1HU-bE-9oubr4z-9ofwIvxaQy1yXM_Z_tm4,22736
+mspython/studio.py,sha256=ZEINMUurHEnZYCEBGpA3_pVJsMqf2n2rjhZ4Pu29UdY,18449
+mspython/user.py,sha256=oFUa5bTXyh2Nz5nJCtU-Z9FBJ4tuehjCuxCAS88G7V0,34062
+mspython-1.0.0.dist-info/LICENSE,sha256=grJmV1XQ3Et7au2-t50R-un95RsJcHBJCChKVQW6Jeg,1107
+mspython-1.0.0.dist-info/METADATA,sha256=f3IySLgYvY9skeFWtzhorxzIRhfB0hss5qESJ5TwnbM,1144
+mspython-1.0.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+mspython-1.0.0.dist-info/top_level.txt,sha256=AHk2ROQbRPmPqHm9L2dlrQzLcPCBNAzxw_jUPnftm5o,9
+mspython-1.0.0.dist-info/RECORD,,
