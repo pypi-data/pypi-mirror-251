@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+src/keeleastrolab/__init__.py
+src/keeleastrolab.egg-info/PKG-INFO
+src/keeleastrolab.egg-info/SOURCES.txt
+src/keeleastrolab.egg-info/dependency_links.txt
+src/keeleastrolab.egg-info/top_level.txt
