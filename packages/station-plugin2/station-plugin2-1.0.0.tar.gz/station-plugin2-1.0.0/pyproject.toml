@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["station.plugin2"]
+namespaces = true
+
+[project]
+name = "station-plugin2"
+version = "1.0.0"
+description = "Station plugin : plugin 2"
+license = { text = "Station Corp Software License Agreement" }
