@@ -1,0 +1,9 @@
+fyg/__init__.py,sha256=V2W8dVttN0bXGnWsYqtUkCzVTOcAY6a7KMXkNhYsdJQ,123
+fyg/config.py,sha256=sNxZdDDZJ1f7N-xdCTF2gdQ4KqiT_bzI9Te9ONxcuhI,1026
+fyg/membank.py,sha256=-iNPR14Hh4gMRvuvF2GRHNTh4JaXQAKNbTR7cXKT9Jc,591
+fyg/pcache.py,sha256=Npg8NFn3y07zTlbMmcDJWAkznRMfB1JPJUsNS1XKKMM,649
+fyg/util.py,sha256=9V41wDnACJBZJpt7W8JvxwSSVJ4r8H8jOKZNmVyafBw,313
+fyg-0.1.0.dist-info/METADATA,sha256=jA53gGDLp4UG_QvV6l0doWT4v-FRsmkpRts_PU7cM5A,506
+fyg-0.1.0.dist-info/WHEEL,sha256=k3vXr0c0OitO0k9eCWBlI2yTYnpb_n_I2SGzrrfY7HY,110
+fyg-0.1.0.dist-info/top_level.txt,sha256=CzYGbHb8dU-N06sbFG1vCwzo0g2nLuuWM9wvIdqSfQI,4
+fyg-0.1.0.dist-info/RECORD,,
