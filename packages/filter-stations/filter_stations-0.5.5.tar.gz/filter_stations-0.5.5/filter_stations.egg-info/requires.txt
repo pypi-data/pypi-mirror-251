@@ -1,0 +1,15 @@
+pandas
+requests
+python-dateutil
+argparse
+haversine
+matplotlib
+numpy
+IPython
+folium
+datetime
+statsmodels
+tqdm
+geopandas
+matplotlib-scalebar
+scikit-learn
