@@ -1,0 +1,3 @@
+[console_scripts]
+tte=moneyterm.__main__:main
+
