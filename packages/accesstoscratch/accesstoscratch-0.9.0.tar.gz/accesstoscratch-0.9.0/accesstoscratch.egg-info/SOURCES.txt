@@ -1,0 +1,5 @@
+accesstoscratch.egg-info/PKG-INFO
+accesstoscratch.egg-info/SOURCES.txt
+accesstoscratch.egg-info/dependency_links.txt
+accesstoscratch.egg-info/requires.txt
+accesstoscratch.egg-info/top_level.txt
