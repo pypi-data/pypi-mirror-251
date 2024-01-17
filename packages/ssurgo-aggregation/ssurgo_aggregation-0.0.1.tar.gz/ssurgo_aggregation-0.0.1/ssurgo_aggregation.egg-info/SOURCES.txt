@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+ssurgo_aggregation/__init__.py
+ssurgo_aggregation/common.py
+ssurgo_aggregation/ssurgo_aggregation.py
+ssurgo_aggregation.egg-info/PKG-INFO
+ssurgo_aggregation.egg-info/SOURCES.txt
+ssurgo_aggregation.egg-info/dependency_links.txt
+ssurgo_aggregation.egg-info/not-zip-safe
+ssurgo_aggregation.egg-info/top_level.txt
+tests/test_ssurgo_aggregation.py
