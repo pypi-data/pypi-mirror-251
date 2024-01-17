@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["plug-in"]
+namespaces = true
+
+[project]
+name = "plug-in-plugin1"
+version = "1.0.0"
+description = "Plugin 1"
+license = { text = "Plug-in Software License Agreement" }
