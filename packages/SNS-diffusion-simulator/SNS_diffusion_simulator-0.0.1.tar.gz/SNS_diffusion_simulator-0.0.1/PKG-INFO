@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: SNS_diffusion_simulator
+Version: 0.0.1
+Summary: Simulator for estimating the spread of SNS
+Home-page: https://github.com/umeryu1121ac/diffusion_sim.git
+Author: umeryu1121ac
+Author-email: s2122007@stu.musashino-u.ac.jp
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/umeryu1121ac/diffusion_sim.git
+Description: # diffusion_sim
+        フォロワー数や、インプレッション数を参考に、投稿が今後どのくらいまで拡散され、いつまで語られ続けるのかをシミュレートするアプリ。
+        ウイルスの感染推定などに用いられるSEIRモデルを参考にしている。
+        
+        ## 使い方
+        $ python SNS_diffusion_simulator.py [処理回数] [総人口] [免疫ができる回数] [１人が１日に感染させた人数] [潜伏時間]<br>
+        処理回数(t_max)：推定したい最終日数<br>
+        総人口(N)：SNSの総利用者数など<br>
+        免疫ができる回数(rday)：飽きられる日数など（人の噂も七十五日→75）<br>
+        １人が１日に感染させた人数(x)：２４時間のインプレッション数、フォロワー数など<br>
+        潜伏時間(cday)：見過ごす時間
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
