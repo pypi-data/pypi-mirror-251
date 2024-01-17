@@ -1,0 +1,11 @@
+README.md
+setup.py
+confidence_calculator/__init__.py
+confidence_calculator/calculator.py
+confidence_calculator.egg-info/PKG-INFO
+confidence_calculator.egg-info/SOURCES.txt
+confidence_calculator.egg-info/dependency_links.txt
+confidence_calculator.egg-info/requires.txt
+confidence_calculator.egg-info/top_level.txt
+tests/__init__.py
+tests/test_calculator.py
