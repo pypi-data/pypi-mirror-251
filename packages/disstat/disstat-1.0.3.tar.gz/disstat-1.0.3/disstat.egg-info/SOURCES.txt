@@ -1,0 +1,9 @@
+README.md
+setup.py
+disstat/__init__.py
+disstat/client.py
+disstat/types.py
+disstat.egg-info/PKG-INFO
+disstat.egg-info/SOURCES.txt
+disstat.egg-info/dependency_links.txt
+disstat.egg-info/top_level.txt
