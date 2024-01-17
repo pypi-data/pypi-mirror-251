@@ -1,0 +1,10 @@
+COPYING
+README
+doclifter
+doclifter.1.gz
+setup.py
+src/doclifter/__init__.py
+src/doclifter.egg-info/PKG-INFO
+src/doclifter.egg-info/SOURCES.txt
+src/doclifter.egg-info/dependency_links.txt
+src/doclifter.egg-info/top_level.txt
