@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["station"]
+namespaces = true
+
+[project]
+name = "station-core"
+version = "1.0.0"
+description = "Station core module"
+license = { text = "Station Corp Software License Agreement" }
