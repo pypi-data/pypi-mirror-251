@@ -1,0 +1,40 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "algo-ops"
+version = "0.0.1.7.1"
+authors = [
+  { name="Prateek Tandon", email="prateek1.tandon@gmail.com" },
+]
+description = "Algo-Ops Framework"
+readme = "README.md"
+license = "MIT"
+requires-python = "<=3.11.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "hatch",
+    "matplotlib",
+    "numpy",
+    "opencv-python-headless",
+    'ezplotly',
+    'natsort',
+    "blosc",
+    "nose2",
+    "black",
+]
+
+[tool.hatch.build.targets.sdist]
+exclude = [
+    "/.github",
+    "/.gitignore",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/prateekt/algo-ops"
+"Bug Tracker" = "https://github.com/prateekt/algo-ops/issues"
