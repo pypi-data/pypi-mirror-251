@@ -1,0 +1,15 @@
+atacnet/__init__.py,sha256=hAWLYGRQj8O0b721BjEog1eMhGJMhGug5dxRzXw1IVI,123
+atacnet/atacnet.py,sha256=dx4Qkp8kKB7JKO-EUAo1OOm36ApdgUquJG1JgEhJg1w,23421
+atacnet/inverse_covariance.py,sha256=yXQq1keX67Evz3aAycd7SRv-lbLnZJHMCmvYWDzfLJ4,12194
+atacnet/metacells.py,sha256=jWSh-Tnx4QPG1C2uHqi4lFNtEOeOqKNF9NCtICP6Ncg,5402
+atacnet/metrics.py,sha256=gJEkXfoqEFrCS4ItiQGQyLyZdfJEIb5qxyMJV8jmgnc,3781
+atacnet/pyquic/QUIC.C,sha256=NpHyqrgnxhY0RsFVwWqB0j3bYjNM6GuLRUmpdGHUD9Q,15020
+atacnet/pyquic/QUIC.h,sha256=FIkeFqy8N6n8HtyeFBjNtO-SMYiJ0Rzq5d4WtJW1FYM,358
+atacnet/pyquic/pyquic.cpp,sha256=Xr-oHDdhYwtqDLgnz1-zKeuVKPM-Nn_XTLVWvJ5Ba0s,407573
+atacnet/pyquic/pyquic.pyx,sha256=dq9LbIR4WO6JufKpS9Jq8uM8rnpxVRsLYH_l4SgUK9k,1320
+atacnet/quic_graph_lasso.py,sha256=UVb1dvu-8HphIAjRVezivK9miFyft3JLRETTUBd41CU,33346
+atacnet/rank_correlation.py,sha256=I8oLJbNJDmIpk8JAf-jh3hved760HHGXnyBxuHC5SdA,5396
+atacnet/pyquic.cpython-311-x86_64-linux-gnu.so,sha256=NbxfKEtaxpBmTK91bRUTt7mo0OYb8pD99wrko7QTOf4,87608
+atacnet-0.1.1.dist-info/METADATA,sha256=_kjHx40cW-gro_QwXlLEA_nASloM7iaI8rXT7el9PFo,757
+atacnet-0.1.1.dist-info/WHEEL,sha256=JMbjFgWWGruQ_B9nmKJVXocKrAbv_Iplkjwu36iI4PY,110
+atacnet-0.1.1.dist-info/RECORD,,
