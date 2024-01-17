@@ -1,0 +1,15 @@
+primod/__init__.py,sha256=6okTNXnqgQNgQs3NW0I1x7hmHUlJM__p1pO6Sfv47bo,192
+primod/metamod/__init__.py,sha256=sZtub61vSCuQDss4WOaoMoMTYGE-8Dz7yF1JW9Z3BHw,318
+primod/metamod/mappingbase.py,sha256=qduPpqpOnw4DCyVvjM4_Sw0_BAX5LcpJz8jtBeTi3c8,3681
+primod/metamod/metamod.py,sha256=vj8ptt1E8xRgvPq_xRoZJc3rm21wSYSvGdS9jaEUQL0,11705
+primod/metamod/node_svat_mapping.py,sha256=I16EDuO3RyXqMGEV3BRSb5yHPVL5jgqsBFVQvW3ybp0,2670
+primod/metamod/rch_svat_mapping.py,sha256=FpTu3xHz7ATbRrgIxPcUNeIj7-cHBX_K2YoKwg250e4,2944
+primod/metamod/wel_svat_mapping.py,sha256=8gQW8SJ_85XHCqzto1fhSdkvnkBOfrgE7ZZrgRsdeOM,2988
+primod/ribametamod/__init__.py,sha256=DKtD2NaC-LQYO0UoxkKNHvF9gCJhT_GMMNJJwyirxj0,119
+primod/ribametamod/ribametamod.py,sha256=LLJh1pYjv5kKPK90SbStJvQpCM-Y73kow80IfQcFyrY,10045
+primod/ribamod/__init__.py,sha256=9Rk9pWT4ZoPhO5FbRlRxd4jiFG_mA80ltxXr2OL3Owk,103
+primod/ribamod/ribamod.py,sha256=q8P0HOr5B6uLe09KFvZ1GOyUr30DtDNImqeZwW7BIjM,10058
+primod-0.4.0.dist-info/METADATA,sha256=LUpNiyMu0S58FHuQQyzslvQBfw9liKFecx0o_9T2wfw,876
+primod-0.4.0.dist-info/WHEEL,sha256=mRYSEL3Ih6g5a_CVMIcwiF__0Ae4_gLYh01YFNwiq1k,87
+primod-0.4.0.dist-info/licenses/LICENSE,sha256=NlFq79yExdWh50hUJZE6ItvaaesZMMXoTWrklytRlLk,1046
+primod-0.4.0.dist-info/RECORD,,
