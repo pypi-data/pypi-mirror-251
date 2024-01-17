@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: bend
+Version: 0.0.1
+Summary: ai in development
+Home-page: https://github.com/bend/bend
+Author: bend
+Author-email: bend.ai@gmail.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
