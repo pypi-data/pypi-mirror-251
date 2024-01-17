@@ -1,0 +1,1 @@
+from eztcolors.colors import Colors

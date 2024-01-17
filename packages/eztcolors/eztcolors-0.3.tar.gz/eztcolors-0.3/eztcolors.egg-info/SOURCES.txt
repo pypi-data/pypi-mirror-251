@@ -1,0 +1,9 @@
+LICENSE.txt
+setup.cfg
+setup.py
+eztcolors/__init__.py
+eztcolors/colors.py
+eztcolors.egg-info/PKG-INFO
+eztcolors.egg-info/SOURCES.txt
+eztcolors.egg-info/dependency_links.txt
+eztcolors.egg-info/top_level.txt

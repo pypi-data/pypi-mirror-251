@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: eztcolors
+Version: 0.3
+Summary: Use to make color printing in terminal easy.
+Home-page: https://github.com/mamar828/eztcolors.git
+Download-URL: https://github.com/mamar828/eztcolors_package/archive/refs/tags/v_03.tar.gz
+Author: Mathieu Marquis
+Author-email: mathieu.marquis.2@ulaval.ca
+License: MIT
+Keywords: Cool,Colorful,Useful
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+License-File: LICENSE.txt
