@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: EasyReflectometryLib
+Version: 0.0.3
+Summary: A reflectometry python package built on the EasyScience framework.
+Project-URL: homepage, https://docs.easyreflectometry.org
+Project-URL: documentation, https://docs.easyreflectometry.org
+Author: Andrew Sazonov, Simon Ward
+Author-email: "Andrew R. McCluskey" <andrew.mccluskey@ess.eu>
+Maintainer-email: "Andrew R. McCluskey" <andrew.mccluskey@ess.eu>
+License-Expression: BSD-3-Clause
+License-File: AUTHORS.rst
+License-File: LICENSE
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: <3.12,>=3.9
+Requires-Dist: easysciencecore>=0.3.1
+Requires-Dist: orsopy>=0.0.4
+Requires-Dist: refl1d>=0.8.14
+Requires-Dist: refnx>=0.1.15
+Requires-Dist: scipp>=23.12.0
+Provides-Extra: dev
+Requires-Dist: build; extra == 'dev'
+Requires-Dist: codecov>=2.1.11; extra == 'dev'
+Requires-Dist: coverage; extra == 'dev'
+Requires-Dist: coveralls; extra == 'dev'
+Requires-Dist: flake8>=6.0.0; extra == 'dev'
+Requires-Dist: ipykernel; extra == 'dev'
+Requires-Dist: jupyter>=1.0.0; extra == 'dev'
+Requires-Dist: jupyterlab; extra == 'dev'
+Requires-Dist: nbsphinx; extra == 'dev'
+Requires-Dist: plopp; extra == 'dev'
+Requires-Dist: pytest-cov>=3.0.0; extra == 'dev'
+Requires-Dist: pytest>=5.2; extra == 'dev'
+Requires-Dist: sphinx-autodoc-typehints; extra == 'dev'
+Requires-Dist: sphinx-book-theme; extra == 'dev'
+Requires-Dist: toml>=0.10; extra == 'dev'
+Requires-Dist: yapf>=0.31.0; extra == 'dev'
+Description-Content-Type: text/x-rst
+
+.. image:: https://github.com/easyScience/EasyReflectometryLib/raw/main/docs/_static/logo.png
+        :target: https://easyscience.github.io/EasyReflectometryLib/
+
+|
+
+.. image:: https://github.com/easyScience/EasyReflectometryLib/actions/workflows/python-ci.yml/badge.svg
+        :target: https://github.com/easyScience/easyReflectometryLib/actions/workflows/python-ci.yml
+.. image:: https://codecov.io/gh/easyScience/EasyReflectometryLib/branch/main/graph/badge.svg?token=LcnB8AMGkw
+        :target: https://codecov.io/gh/easyScience/EasyReflectometryLib
+.. image:: https://www.codefactor.io/repository/github/easyscience/easyreflectometrylib/badge
+        :target: https://www.codefactor.io/repository/github/easyscience/easyreflectometrylib
+        :alt: CodeFactor
+.. image:: https://img.shields.io/badge/docs-built-blue
+        :target: http://docs.easyreflectometry.org
+        :alt: Docs
+
+|
+
+What is EasyReflectometry?
+--------------------------
+
+EasyReflectometry is a reflectometry analysis package built on the `easyScience framework`_.
+
+This is the documentation for the EasyReflectometry Python library, but a graphical user application is also available. 
+Find out about that at `easyreflectometry.org`_.
+
+
+.. _`easyScience framework`: https://easyscience.software
+.. _`easyreflectometry.org`: https://easyreflectometry.org
