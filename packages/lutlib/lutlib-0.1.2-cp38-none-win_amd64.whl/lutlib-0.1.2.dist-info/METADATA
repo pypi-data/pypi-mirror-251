@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: lutlib
+Version: 0.1.2
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+License-File: LICENSE
+Summary: A Python library for applying 3D LUTs to images.
+Keywords: lut,3dlut,3d-luts
+Author: phyng
+Author-email: phyngk@gmail.com
+Maintainer-email: phyng <phyngk@gmail.com>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: homepage, https://github.com/phyng/lutlib
+Project-URL: documentation, https://github.com/phyng/lutlib
+Project-URL: repository, https://github.com/phyng/lutlib
+
+
+# lutlib
+
+A Python library for applying 3D LUTs to images.
+
+## Installation
+
+```bash
+pip install lutlib
+```
+
+## Usage
+
+```python
+from lutlib import apply_lut
+
+apply_lut("path/to/lut.cube", "path/to/image.jpg", "path/to/output.jpg")
+```
+
+## License
+
+MIT
+
+## Thanks
+
+- [ray-cast/lut](https://github.com/ray-cast/lut)
+- [nothings/stb](https://github.com/nothings/stb)
+
