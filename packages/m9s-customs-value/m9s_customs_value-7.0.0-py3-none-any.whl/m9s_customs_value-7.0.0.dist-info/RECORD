@@ -1,0 +1,14 @@
+trytond/modules/customs_value/__init__.py,sha256=E3D8cNhfnGB-AUUDCbDGDZQb8EKZrLnjFVNLG25wBaI,301
+trytond/modules/customs_value/product.py,sha256=vZnPwmpowJw71VZJDZ3Sam4_5hVFQRQMyVFa_qBuoWg,2236
+trytond/modules/customs_value/product.xml,sha256=SLAFAo77NNqq3CdAyD09Y45AAulXfe2ynA1XV4nNdm0,437
+trytond/modules/customs_value/tryton.cfg,sha256=WkiTbK4Cd8cupL01BVmdKsTVGVT9lT_LDDbzH7ysnTA,87
+trytond/modules/customs_value/locale/de.po,sha256=uhPN9APSlScCyySgkg1oH8y5QCbkQ5GO_jEON9dzF_M,968
+trytond/modules/customs_value/tests/__init__.py,sha256=DV5KPn-d5C79OPFIOF3gh3OHr4glMJ-RId0MMdt9FMM,115
+trytond/modules/customs_value/tests/test_module.py,sha256=1q83mAV9OzgNqwDaBRxdgvjM1mpcolHemGoHylK9-IQ,3786
+trytond/modules/customs_value/view/product_form.xml,sha256=WYCx9291hHLpG7wmvCgFmOj-rXl-LzU_b4-nG7uEf2c,752
+m9s_customs_value-7.0.0.dist-info/LICENSE,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+m9s_customs_value-7.0.0.dist-info/METADATA,sha256=_iMfF7me14UEgDry1gmvpzPIg2iT3V--2aeBzuYvy7Y,3570
+m9s_customs_value-7.0.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+m9s_customs_value-7.0.0.dist-info/entry_points.txt,sha256=BBL06fiwZtk17uP9bTkZfjFDOtfbVmDuYXFAxYJBs50,64
+m9s_customs_value-7.0.0.dist-info/top_level.txt,sha256=1UNriCfRfjRjutJbJ_B8i13huVUoV_Otp9RlW3mCfw4,8
+m9s_customs_value-7.0.0.dist-info/RECORD,,

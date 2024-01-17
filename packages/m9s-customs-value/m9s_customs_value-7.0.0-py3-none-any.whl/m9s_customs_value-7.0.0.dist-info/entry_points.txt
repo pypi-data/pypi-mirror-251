@@ -1,0 +1,2 @@
+[trytond.modules]
+customs_value = trytond.modules.customs_value
