@@ -1,0 +1,10 @@
+LICENSE.txt
+setup.py
+SambdaTester/__init__.py
+SambdaTester/__main__.py
+SambdaTester/app.py
+SambdaTester.egg-info/PKG-INFO
+SambdaTester.egg-info/SOURCES.txt
+SambdaTester.egg-info/dependency_links.txt
+SambdaTester.egg-info/entry_points.txt
+SambdaTester.egg-info/top_level.txt
