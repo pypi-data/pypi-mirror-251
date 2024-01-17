@@ -1,0 +1,4 @@
+classesObjets
+dichotomie
+fuzzy
+trouverY
