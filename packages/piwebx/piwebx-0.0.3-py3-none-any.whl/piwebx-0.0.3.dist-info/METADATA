@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: piwebx
+Version: 0.0.3
+Summary: Async data client for the AVEVA PI Web API
+Project-URL: Changelog, https://github.com/hyprxa/piwebx/blob/master/CHANGELOG.md
+Project-URL: Homepage, https://github.com/hyprxa/piwebx
+Project-URL: Source, https://github.com/hyprxa/piwebx
+Author-email: Chris Newville <christopher.newville@hyprxa.io>
+License-Expression: MIT
+License-File: LICENSE
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: <4.0,>=3.8
+Requires-Dist: dateparser
+Requires-Dist: httpx
+Requires-Dist: orjson
+Requires-Dist: pendulum
+Requires-Dist: python-dateutil
+Requires-Dist: typing-extensions
+Provides-Extra: kerberos
+Requires-Dist: httpx-kerberos; extra == 'kerberos'
+Description-Content-Type: text/markdown
+
+
+## Release Information
+
+# Changelog
+
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
+
+## 0.0.2 (12 Jan 2024)
+
+- Added WebId search functions for
+
+  - Points (`find_points_web_id`)
+  - Attributes (`find_attributes_web_id`)
+
+  The resolved WebId's can be used directly in all streams data collection functions
+
+- Added data type search for
+
+  - Points (`find_points_type`)
+  - Attributes (`find_attributes_type`)
+
+- Added `get_current` , `get_recorded_at_time` and `get_interpolated_at_time` streams functions
+
+## 0.0.3 (16 Jan 2024)
+
+- Added WebId search functions for
+
+  - Assetservers (`find_assetserver_web_id`)
+  - Assetdatabase (`find_assetdatabase_web_id`)
+  - Dataservers (`find_dataserver_web_id`)
+
+---
+
+[Full changelog](https://github.com/hyprxa/piwebx/blob/master/CHANGELOG.md)
