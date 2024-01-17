@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: xpt2csv-cli
+Version: 0.1.0
+Summary: CLI app to convert xpt file to csv
+Author: Yousuf Ali
+Description-Content-Type: text/markdown
+Requires-Dist: pyreadstat
+Requires-Dist: click
+

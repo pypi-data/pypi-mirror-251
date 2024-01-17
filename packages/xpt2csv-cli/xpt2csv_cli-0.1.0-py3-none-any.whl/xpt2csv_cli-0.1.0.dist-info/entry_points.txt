@@ -1,0 +1,2 @@
+[console_scripts]
+to_csv = xpt2csv.to_csv:xpt_to_csv
