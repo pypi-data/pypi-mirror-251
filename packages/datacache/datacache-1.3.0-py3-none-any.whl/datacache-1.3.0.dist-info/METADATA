@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: datacache
+Version: 1.3.0
+Summary: Helpers for transparently downloading datasets
+Home-page: https://github.com/openvax/datacache
+Author: Alex Rubinsteyn
+Author-email: alex.rubinsteyn@unc.edu
+License: http://www.apache.org/licenses/LICENSE-2.0.html
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas >=0.15.2
+Requires-Dist: appdirs >=1.4.0
+Requires-Dist: progressbar33 >=2.4
+Requires-Dist: requests >=2.5.1
+Requires-Dist: typechecks >=0.0.2
+Requires-Dist: mock
+
+<a href="https://travis-ci.org/openvax/datacache">
+    <img src="https://travis-ci.org/openvax/datacache.svg?branch=master" alt="Build Status" />
+</a>
+<a href="https://coveralls.io/github/openvax/datacache?branch=master">
+    <img src="https://coveralls.io/repos/openvax/datacache/badge.svg?branch=master&service=github" alt="Coverage Status" />
+</a>
+<a href="https://pypi.python.org/pypi/datacache/">
+    <img src="https://img.shields.io/pypi/v/datacache.svg?maxAge=1000" alt="PyPI" />
+</a>
+
+DataCache
+=========
+
+Helpers for transparently downloading datasets
+
+## API
+
+* **fetch_file**(download_url, filename = *None*, decompress = *False*, subdir = *None*)
+* **fetch_and_transform**(transformed_filename, transformer, loader,
+        source_filename, source_url, subdir = *None*)
+* **fetch_fasta_dict**(download_url, filename = *None*, subdir = *None*)
+* **fetch_fasta_db**(table_name, download_url, fasta_filename = *None*,
+        key_column = *'id'*, value_column = *'seq'*, subdir = *None*)
+* **fetch_csv_db**(table_name, download_url, csv_filename = *None*, subdir = *None*,
+        \*\*pandas_kwargs)
