@@ -1,0 +1,8 @@
+LICENSE.txt
+setup.py
+GetResourcePath.egg-info/PKG-INFO
+GetResourcePath.egg-info/SOURCES.txt
+GetResourcePath.egg-info/dependency_links.txt
+GetResourcePath.egg-info/top_level.txt
+get_resource_path/GetResourcePath.py
+get_resource_path/__init__.py

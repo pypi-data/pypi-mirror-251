@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: GetResourcePath
+Version: 1.0
+Summary: A Python package for managing resource paths and file operations in cross-platform applications.
+Home-page: https://github.com/jjvoka/getpath
+Author: voka
+Author-email: jjvoka@gmail.com
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+404: Not Found
