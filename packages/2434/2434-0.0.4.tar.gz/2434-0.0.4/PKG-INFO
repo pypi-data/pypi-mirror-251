@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: 2434
+Version: 0.0.4
+Summary: An analysis of vTuber Nijisanji's connections (collaborations)
+Home-page: https://github.com/okumura-0128/2434
+Author: Okumura Sora
+Author-email: soraoku0128@icloud.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/okumura-0128/2434
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# CyberSecurityLecture
+サイバーセキュリティー授業のapp
+vTuberにじさんじの繋がり(コラボ)を分析するもの
+

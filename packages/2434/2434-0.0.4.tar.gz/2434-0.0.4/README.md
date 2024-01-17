@@ -1,0 +1,3 @@
+# CyberSecurityLecture
+サイバーセキュリティー授業のapp
+vTuberにじさんじの繋がり(コラボ)を分析するもの
