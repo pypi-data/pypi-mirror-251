@@ -1,0 +1,3 @@
+[console_scripts]
+umlizer=umlizer.__main__:app
+
