@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: simplevec
+Version: 0.0.3
+Summary: SimpleVec: Elementary Examples of Vector Modeling
+Home-page: https://github.com/jrolf/simplevec
+Author: James A. Rolfsen
+Author-email: james.rolfsen@think.dev
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: English
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: numpy >=1.1.1
+Requires-Dist: pandas >1.7.7
+Requires-Dist: gensim >4.1.1
+Requires-Dist: scipy
+Requires-Dist: scikit-learn
+Requires-Dist: sympy
+Requires-Dist: statsmodels
+Requires-Dist: xgboost
+
+UNKNOWN
+
+
