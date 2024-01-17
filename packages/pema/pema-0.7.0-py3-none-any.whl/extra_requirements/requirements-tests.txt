@@ -1,0 +1,19 @@
+strax>=1.6.0
+straxen>=2.2.0
+wfsim>=1.2.0
+epix>=0.3.6
+git+https://github.com/XENONnT/ax_env
+
+# For testing running notebooks
+nbmake
+pytest-xdist
+cython
+ipython
+nbconvert==7.4.0
+nbmake
+pytest
+coverage
+coveralls
+pytest-cov
+pytest-notebook
+ipython_genutils
