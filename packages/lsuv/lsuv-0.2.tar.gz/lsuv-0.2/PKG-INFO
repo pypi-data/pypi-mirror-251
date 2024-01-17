@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: lsuv
+Version: 0.2
+Summary: LSUV initialization for PyTorch
+Home-page: http://github.com/ducha-aiki/lsuv
+Author: Dmytro Mishkin
+Author-email: ducha.aiki@gmail.com
+License: MIT
+License-File: LICENSE.md
