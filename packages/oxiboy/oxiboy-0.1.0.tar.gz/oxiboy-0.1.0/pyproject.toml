@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "oxiboy"
+version = "0.1.0"
+description = ""
+authors = ["Andres Lagos <andres.lagos@evalueserve.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+flask = "^2.2.2"
+waitress = "^2.1.2"
+gevent = "^23.9.1"
+werkzeug = "2.2.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

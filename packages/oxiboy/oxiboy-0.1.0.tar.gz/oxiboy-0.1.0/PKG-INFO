@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: oxiboy
+Version: 0.1.0
+Summary: 
+Author: Andres Lagos
+Author-email: andres.lagos@evalueserve.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: flask (>=2.2.2,<3.0.0)
+Requires-Dist: gevent (>=23.9.1,<24.0.0)
+Requires-Dist: waitress (>=2.1.2,<3.0.0)
+Requires-Dist: werkzeug (==2.2.2)
+Description-Content-Type: text/markdown
+
+
