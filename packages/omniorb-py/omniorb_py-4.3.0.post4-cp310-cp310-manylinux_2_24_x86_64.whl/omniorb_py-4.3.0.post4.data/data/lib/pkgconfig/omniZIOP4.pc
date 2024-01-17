@@ -1,0 +1,11 @@
+prefix=/build-wheel
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: omniZIOP4
+Description: CORBA Object Request Broker - ZIOP library
+Version: 4.3.0
+Requires: omniORB4
+Libs: -L${libdir} -lomniZIOP4
+Cflags:
