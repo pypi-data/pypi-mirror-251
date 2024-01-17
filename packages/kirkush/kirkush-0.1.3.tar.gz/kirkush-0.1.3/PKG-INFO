@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: kirkush
+Version: 0.1.3
+Summary: 
+Author: k4144
+Author-email: k4144.github@gmail.com
+Requires-Python: >=3.9,<=3.12
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: import-ipynb (>=0.1.4,<0.2.0)
+Requires-Dist: notebook (>=6.5.4)
+Description-Content-Type: text/markdown
+
+
