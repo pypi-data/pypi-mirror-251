@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "encrypted-datasets"
+version = "0.3.0"
+description = "Convenience functions for symetrically encrypting/decrypting huggingface Datasets"
+authors = ["nvjoshi2 <nvj1300@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+datasets = "^2.16.1"
+cryptography = "^41.0.7"
+pandas = "^2.1.4"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
