@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: mgatk
+Version: 0.7.0
+Summary: Mitochondrial genome analysis toolkit.
+Home-page: https://github.com/caleblareau/mgatk
+Author: Caleb Lareau
+Author-email: caleb.lareau@gmail.com
+License: MIT
+Platform: any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+License-File: LICENSE.txt
+Requires-Dist: click
+Requires-Dist: pysam
+Requires-Dist: pytest
+Requires-Dist: snakemake
+Requires-Dist: biopython
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: optparse-pretty
+Requires-Dist: regex
+Requires-Dist: ruamel.yaml
+
+
+mgatk: a mitochondrial genome analysis toolkit
