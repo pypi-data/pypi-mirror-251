@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "piland-http-health-checker"
+version = "0.1.0"
+description = "A program to check the health of a set of HTTP endpoints"
+authors = ["Dave Piland <dave.l.piland@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+typer = {extras = ["all"], version = "^0.9.0"}
+pyyaml = "^6.0.1"
+requests = "^2.31.0"
+urllib3 = "^2.1.0"
+
+[tool.poetry.scripts]
+piland-http-health-checker = "piland_http_health_checker.main:app"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
