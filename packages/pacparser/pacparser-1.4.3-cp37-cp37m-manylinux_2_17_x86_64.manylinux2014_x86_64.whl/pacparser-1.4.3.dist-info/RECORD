@@ -1,0 +1,6 @@
+pacparser-1.4.3.dist-info/WHEEL,sha256=PptpQvQpMj4c6zoTgYAOmR3hDGeYN43ZmgdEwmXeaM8,150
+pacparser-1.4.3.dist-info/RECORD,,
+pacparser-1.4.3.dist-info/top_level.txt,sha256=R4ARIU3RhTiQ639-2yMNqVTbtpQA4VwPw5U7LP0HWHw,21
+pacparser-1.4.3.dist-info/METADATA,sha256=VpQN8ncjUScQSYkdY02OlAFOx8dMTRu80FNMzRgjsFk,250
+pacparser/_pacparser.cpython-37m-x86_64-linux-gnu.so,sha256=-Lz4BuC3gy5mw04aYh4SViADPZY_kM9uvhrMeOVoPc8,2639696
+pacparser/__init__.py,sha256=80iKCx6cB58tc84N1YirahZAfq3ulQ6ADVPg8RcxzxQ,3408
