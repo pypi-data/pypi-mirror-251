@@ -1,0 +1,7 @@
+README.md
+setup.py
+haik_info.egg-info/PKG-INFO
+haik_info.egg-info/SOURCES.txt
+haik_info.egg-info/dependency_links.txt
+haik_info.egg-info/requires.txt
+haik_info.egg-info/top_level.txt
