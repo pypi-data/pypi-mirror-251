@@ -1,0 +1,1 @@
+from SDR33423312.gyat import goldenratio

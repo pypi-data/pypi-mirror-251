@@ -1,0 +1,8 @@
+README.md
+setup.py
+SDR33423312/__init__.py
+SDR33423312/gyat.py
+SDR3423312.egg-info/PKG-INFO
+SDR3423312.egg-info/SOURCES.txt
+SDR3423312.egg-info/dependency_links.txt
+SDR3423312.egg-info/top_level.txt
