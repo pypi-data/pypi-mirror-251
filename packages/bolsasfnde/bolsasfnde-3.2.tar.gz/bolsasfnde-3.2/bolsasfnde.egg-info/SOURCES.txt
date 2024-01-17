@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+bolsasfnde/__init__.py
+bolsasfnde/__main__.py
+bolsasfnde/main.py
+bolsasfnde.egg-info/PKG-INFO
+bolsasfnde.egg-info/SOURCES.txt
+bolsasfnde.egg-info/dependency_links.txt
+bolsasfnde.egg-info/entry_points.txt
+bolsasfnde.egg-info/requires.txt
+bolsasfnde.egg-info/top_level.txt
