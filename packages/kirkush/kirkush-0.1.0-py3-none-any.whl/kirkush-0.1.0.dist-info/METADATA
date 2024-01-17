@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: kirkush
+Version: 0.1.0
+Summary: 
+Author: k4144
+Author-email: k4144@example.local
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: notebook (>=7.0.6,<8.0.0)
+Description-Content-Type: text/markdown
+
+
