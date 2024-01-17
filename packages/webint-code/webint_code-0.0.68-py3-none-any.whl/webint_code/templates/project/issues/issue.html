@@ -1,0 +1,18 @@
+$def with (project, issue, comments)
+$var breadcrumbs = ("projects", "Projects", project, f"<b>{project}</b>", "issues", "Issues")
+$var title: $issue["name"][0]
+
+<div style=font-size:1.2em>$:mkdn(issue["content"][0])</div>
+
+$for comment in comments:
+    <div>$:mkdn(comment["content"][0]) $comment["published"][0].diff_for_humans()</div>
+
+$if tx.user.session:
+    <form method=post>
+    <label class=bounding><textarea name=comment rows=10 cols=60></textarea></label>
+    <div class=buttons>
+    $if tx.user.is_owner:
+        <button class=secondarysubmit name=action value=close>Close issue</button>
+    <button name=action value=comment type=submit>Comment</button>
+    </div>
+    </form>
