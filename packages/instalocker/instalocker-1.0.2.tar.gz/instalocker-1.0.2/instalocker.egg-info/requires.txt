@@ -1,0 +1,4 @@
+valclient
+colorama
+pystyle
+requests
