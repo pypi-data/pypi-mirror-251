@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+myIPstats.egg-info/PKG-INFO
+myIPstats.egg-info/SOURCES.txt
+myIPstats.egg-info/dependency_links.txt
+myIPstats.egg-info/top_level.txt
