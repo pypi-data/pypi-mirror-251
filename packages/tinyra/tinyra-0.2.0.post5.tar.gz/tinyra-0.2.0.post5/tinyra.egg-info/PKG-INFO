@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: tinyra
+Version: 0.2.0.post5
+Summary: A minimalistic research assistant built with AutoGen.
+Requires-Dist: textual
+Requires-Dist: tiktoken
+Requires-Dist: pyautogen
