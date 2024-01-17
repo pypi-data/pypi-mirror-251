@@ -1,0 +1,9 @@
+LICENSE.txt
+setup.py
+splitflow/__init__.py
+splitflow/dataframe.py
+splitflow.egg-info/PKG-INFO
+splitflow.egg-info/SOURCES.txt
+splitflow.egg-info/dependency_links.txt
+splitflow.egg-info/requires.txt
+splitflow.egg-info/top_level.txt
