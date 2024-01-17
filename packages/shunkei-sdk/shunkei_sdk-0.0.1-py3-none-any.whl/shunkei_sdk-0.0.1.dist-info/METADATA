@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: shunkei_sdk
+Version: 0.0.1
+Summary: Shunkei SDK for Python
+Author-email: "Shunkei, LLC" <info@shunkei.jp>
+Project-URL: Homepage, https://github.com/shunkei-jp/shunkei_sdk
+Project-URL: Bug Tracker, https://github.com/shunkei-jp/shunkei_sdk/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: zeroconf ==0.119.0
+Provides-Extra: dev
+Requires-Dist: build ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+
+# shunkei_sdk 
