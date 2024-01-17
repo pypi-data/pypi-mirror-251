@@ -1,0 +1,5 @@
+httpx>=0.24
+
+[test]
+pytest>=7.0
+respx>=0.20
