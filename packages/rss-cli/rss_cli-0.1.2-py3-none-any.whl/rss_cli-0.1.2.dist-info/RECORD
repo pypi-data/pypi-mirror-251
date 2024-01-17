@@ -1,0 +1,17 @@
+rss_cli/.DS_Store,sha256=-EnDyALTD1xyS03ljKcMPTCm_lxL43RNfbjTNjEltwU,6148
+rss_cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rss_cli/__main__.py,sha256=kSmJm9lCht3gZ2DvsdluTDuHD5sMt26WlhpZxikhwII,733
+rss_cli/app.py,sha256=u0YWOm3duvt6I7oK2QJc6XbfvvVlZxM24WZF8MxfKYc,820
+rss_cli/data/__init__.py,sha256=3yN6zgqQNZFVU5wfM4gcE6-mgWNPCYslMYkE2Ba5mOs,114
+rss_cli/data/config.py,sha256=0Nx3IdcIOx-72dUkAmMGm8BUSK0RUALDGkqKkUwmOIs,1529
+rss_cli/models/__init__.py,sha256=q-9zj_3Ox3zAqNmlhb1QKoI1dZvsg9ounmo9_0YQ6eU,125
+rss_cli/models/rss_model.py,sha256=azK91p8kbyibhIwrYI4DzokHGx9O19zX0HpYihvZsNI,2432
+rss_cli/widgets/__init__.py,sha256=nKj3MI8qa6Qe05a31aVohfgwguajGyVr2IrqDLw6zvM,209
+rss_cli/widgets/article.py,sha256=dbA7IbiYHTYI1ckScuoAyOVcERIksPQJJKDtKdWPONI,1326
+rss_cli/widgets/base_class.py,sha256=MCFLLpV-Qk2VAGDmhrPIeQPFo-F5KkT2ZQdIRH8lj8w,131
+rss_cli/widgets/rss_table.py,sha256=Xh-f7hRpdt-A20dKO79_hO-vs88BYlmgIsrzUkvJkJI,1140
+rss_cli/widgets/user_input.py,sha256=2EEExPndBQPhZTy0Cm6oPpga3-gA_ABgrDcDr_rSOsA,875
+rss_cli-0.1.2.dist-info/METADATA,sha256=_5aejfiidSZeL3dFe8dKlZN0IPTAmDnEwh7uruqGg-I,1431
+rss_cli-0.1.2.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+rss_cli-0.1.2.dist-info/entry_points.txt,sha256=vkmzveFIincDfjcTLbsG56zfrGOX2lvuN8i-1wkd1CQ,75
+rss_cli-0.1.2.dist-info/RECORD,,
