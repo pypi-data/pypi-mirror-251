@@ -1,0 +1,113 @@
+stages:
+  - prepare
+  - test
+  - documentation
+  - release
+
+variables:
+  main_python_version: "3.10"
+
+workflow:
+  rules:
+    # Restrict the number of times the pipeline runs to save resources/limits
+    - if: $CI_COMMIT_BRANCH && $CI_OPEN_MERGE_REQUESTS && $CI_PIPELINE_SOURCE == 'push'
+      when: never  # Avoid running the pipeline twice (push + merge request)
+    - if: $CI_COMMIT_BRANCH || $CI_COMMIT_TAG
+    # You can also set recurring execution of the pipeline, see:
+    # https://docs.gitlab.com/ee/ci/pipelines/schedules.html
+
+default:
+  tags:
+    - ggrlab_container_user
+  before_script:
+    - python --version  # useful for debugging
+    # Setup git (used for setuptools-scm)
+    - git config --global user.email "gunthergl@gmx.net"
+    - git config --global user.name "GitlabCI"
+    # Install dependencies for the testing environment
+    - pip install -U pip tox pipx
+
+pre-commit:
+  stage: prepare
+  image: "python:$main_python_version"
+  script:
+    - pipx run pre-commit run --all-files --show-diff-on-failure
+
+build:
+  stage: prepare
+  image: "python:$main_python_version"
+  script:
+    - tox -e clean,build
+  variables:
+    GIT_DEPTH: "0"  # deep-clone
+  artifacts:
+    expire_in: 1 day
+    paths: [dist]
+
+.parallel: &parallel
+  parallel:
+    matrix:
+      - MATRIX_PLATFORM:
+          - "linux"
+          # Cannot run on windows or MAC currently
+          # - "windows"
+          # - "mac"
+        MATRIX_IMAGE:
+          - "python:3.8"
+          - "python:3.9"
+          # https://stackoverflow.com/questions/71262596/gitlab-not-expanding-variable-used-in-parallel-matrix
+          - "python:$main_python_version"
+          - "python:3.11"
+
+.test_script: &test_script
+  dependencies: [build]
+  script:
+    # - apt-get install curl
+    - curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | bash
+    - apt-get install git-lfs
+    - git lfs --version  # to check if git-lfs is installed. If it is NOT installed, many tests will fail
+    - cat /proc/self/cgroup
+    - pip freeze
+    - ls -lath
+    - tox --installpkg dist/*.whl -- -rFEx --durations 10 --color yes --cov=src/
+    - pipx run coverage lcov -o coverage.lcov
+
+testmatrix:
+  stage: test
+  # https://stackoverflow.com/questions/71192632/error-map-keys-must-be-unique-while-using-yaml-extension-field-in-docker-compose
+  <<: [*test_script, *parallel]
+  image: $MATRIX_IMAGE
+
+# mamba:
+#   stage: test
+#   image: "condaforge/mambaforge"
+#   before_script:
+#     - mamba install -y pip pipx 'tox!=4.0.*,!=4.1.*'
+#   <<: *test_script
+
+docs:
+  stage: documentation
+  dependencies: [build, testmatrix]
+  image: "python:$main_python_version"
+  script:
+    - tox -e docs
+  artifacts:
+    paths:
+      - public
+
+
+publish:
+  stage: release
+  dependencies: [build]
+  image: "python:$main_python_version"
+  rules: [if: $CI_COMMIT_TAG]
+  variables:
+    # See: https://pypi.org/help/#apitoken
+    # Needs a PYPI_TOKEN protected variable to be configured for `v*` tags, see:
+    # https://docs.gitlab.com/ee/ci/variables/#add-a-cicd-variable-to-a-project
+    # https://docs.gitlab.com/ee/user/project/protected_tags.html
+    TWINE_REPOSITORY: pypi
+    TWINE_USERNAME: __token__
+    TWINE_PASSWORD: $PYPI_TOKEN
+  script:
+    - tox -e publish

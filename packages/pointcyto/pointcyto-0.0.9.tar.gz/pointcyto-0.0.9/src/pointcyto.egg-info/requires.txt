@@ -1,0 +1,24 @@
+torch
+torch_geometric
+pandas
+numpy
+matplotlib
+pytorch_lightning
+flowio
+flowkit
+datatable
+
+[:python_version < "3.8"]
+importlib-metadata
+
+[testing]
+setuptools
+pytest
+pytest-cov
+pytest-testmon
+docstr-coverage
+nbsphinx
+ipykernel
+ipython
+wand
+pyarrow
