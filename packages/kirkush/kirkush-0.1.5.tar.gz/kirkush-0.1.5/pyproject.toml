@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "kirkush"
+version = "0.1.5"
+description = ""
+authors = ["k4144 <k4144.github@gmail.com>"]
+readme = "README.md"
+packages = [{include = "kirkush"}]
+
+[tool.poetry.dependencies]
+python = ">=3.9,<=3.12"
+notebook = ">=6.5.4"
+import-ipynb = "^0.1.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[metadata]
+name = 'kirkush'
+version = '0.1.4'
+author = 'k4144'
+author_email = 'github.k4144@gmail.com'
+description = 'simple utilities'
+long_description = ['file: README.md', 'LICENSE.txt']
+long_description_content_type = 'text/markdown'
+url = 'https://github.com/k4144/kirkush'
