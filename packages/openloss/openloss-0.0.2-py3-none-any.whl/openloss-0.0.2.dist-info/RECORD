@@ -1,0 +1,12 @@
+openloss/__init__.py,sha256=6VTv8Neuh1zYgYToMkXfRZdo-nVvabkhAhDXm6CrNJM,123
+openloss/src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+openloss/src/eos.py,sha256=2X1KCGztqzlEDJjDUqo1XsG9xcO1sVXGA0-bJDCBMUo,3738
+openloss/src/mel.py,sha256=eNWWj2fJ2kG0bOLZ8lv7_j6uT8OUtdpgMAYqFm0QHSc,4335
+openloss/src/osl.py,sha256=HjRUdvtN18VROoi9Ti6hcwb2mRPMCMtx8QTq8AlSRHM,3148
+openloss/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+openloss/tests/test_loss.py,sha256=BiYvx3d5aN9M97D7RYkV_uPev9cFCt2vG80kCtsewi8,1478
+openloss-0.0.2.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+openloss-0.0.2.dist-info/METADATA,sha256=IeVVRx-n_mDG0dC_fs6m6-2ZD30g_KUVC0HO3sALp4Y,4025
+openloss-0.0.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+openloss-0.0.2.dist-info/top_level.txt,sha256=kH4kqtW2iIyWHqXEDvJgIN3kbTGe4NoRtdNWd7bZcFE,9
+openloss-0.0.2.dist-info/RECORD,,
