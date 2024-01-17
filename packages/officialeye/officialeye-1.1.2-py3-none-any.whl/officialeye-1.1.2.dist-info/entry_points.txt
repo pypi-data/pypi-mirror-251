@@ -1,0 +1,3 @@
+[console_scripts]
+officialeye = officialeye.officialeye:cli
+
