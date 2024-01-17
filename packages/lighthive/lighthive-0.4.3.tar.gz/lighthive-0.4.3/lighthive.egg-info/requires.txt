@@ -1,0 +1,9 @@
+requests
+backoff~=2.0
+ecdsa
+dateutils
+httpx
+cachetools
+
+[dev]
+requests_mock
