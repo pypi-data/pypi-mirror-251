@@ -1,0 +1,8 @@
+README.md
+setup.py
+src/kisyou.py
+src/Kisyouchecker.egg-info/PKG-INFO
+src/Kisyouchecker.egg-info/SOURCES.txt
+src/Kisyouchecker.egg-info/dependency_links.txt
+src/Kisyouchecker.egg-info/requires.txt
+src/Kisyouchecker.egg-info/top_level.txt
