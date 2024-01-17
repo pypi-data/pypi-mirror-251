@@ -1,0 +1,6 @@
+dowsing==0.8.0
+libcst==1.1.0
+pkginfo==1.9.6
+imperfect==0.3.0
+moreorless==0.4.0
+tomlkit==0.12.3
