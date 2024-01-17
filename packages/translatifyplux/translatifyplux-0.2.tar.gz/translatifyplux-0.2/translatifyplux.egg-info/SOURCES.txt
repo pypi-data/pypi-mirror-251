@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+Translation/__init__.py
+Translation/translator.py
+translatifyplux.egg-info/PKG-INFO
+translatifyplux.egg-info/SOURCES.txt
+translatifyplux.egg-info/dependency_links.txt
+translatifyplux.egg-info/requires.txt
+translatifyplux.egg-info/top_level.txt
