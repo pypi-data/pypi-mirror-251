@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: QueenSolution
+Version: 0.0.10
+Summary: solution of 8 queen problem
+Home-page: 
+Author: pallav-acog
+Author-email: pallav@aganitha.ai
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+
+# app

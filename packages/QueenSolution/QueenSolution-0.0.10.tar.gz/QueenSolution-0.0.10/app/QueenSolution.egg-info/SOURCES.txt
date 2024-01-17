@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+app/QueenSolution/__init__.py
+app/QueenSolution.egg-info/PKG-INFO
+app/QueenSolution.egg-info/SOURCES.txt
+app/QueenSolution.egg-info/dependency_links.txt
+app/QueenSolution.egg-info/requires.txt
+app/QueenSolution.egg-info/top_level.txt
+app/QueenSolution/src/QueenSolution.py
+app/QueenSolution/src/__init__.py

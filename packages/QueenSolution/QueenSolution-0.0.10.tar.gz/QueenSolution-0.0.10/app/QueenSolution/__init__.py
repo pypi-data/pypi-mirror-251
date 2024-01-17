@@ -1,0 +1,1 @@
+from .src.QueenSolution import (solve8Queen)
