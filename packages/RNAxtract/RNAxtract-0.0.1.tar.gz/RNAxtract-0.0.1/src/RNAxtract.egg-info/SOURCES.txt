@@ -1,0 +1,14 @@
+setup.py
+src/RNAxtract/__init__.py
+src/RNAxtract/constants.py
+src/RNAxtract/model.py
+src/RNAxtract/precision.py
+src/RNAxtract/rnabs.py
+src/RNAxtract/train.py
+src/RNAxtract/train_data.py
+src/RNAxtract.egg-info/PKG-INFO
+src/RNAxtract.egg-info/SOURCES.txt
+src/RNAxtract.egg-info/dependency_links.txt
+src/RNAxtract.egg-info/requires.txt
+src/RNAxtract.egg-info/top_level.txt
+src/RNAxtract/model/ont.RNA.r94.hdf5
