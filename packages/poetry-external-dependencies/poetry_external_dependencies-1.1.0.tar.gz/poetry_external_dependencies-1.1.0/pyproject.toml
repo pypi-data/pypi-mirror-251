@@ -1,0 +1,44 @@
+[tool.poetry]
+name = "poetry-external-dependencies"
+version = "1.1.0"
+description = ""
+authors = ["Jimmy Huguet <jimmy.huguet@skillcorner.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+poetry = "^1.2, <=1.6.1"
+
+[tool.poetry.group.test.dependencies]
+coverage = "^7.2.3"
+pytest = "^7.3.0"
+
+[tool.poetry.plugins."poetry.plugin"]
+external-dependencies = "poetry_external_dependencies.plugin:ExternalInjector"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line_length = 120
+skip-string-normalization = true
+
+[tool.mypy]
+namespace_packages = false
+
+[tool.ruff]
+fix = true
+line-length = 120
+select = ["B", "E", "F", "I001", "Q", "W"]
+target-version = "py37"
+
+[tool.ruff.flake8-bugbear]
+extend-immutable-calls = ["typer.Argument", "typer.Option"]
+
+[tool.ruff.flake8-quotes]
+inline-quotes = "single"
+
+[tool.ruff.isort]
+combine-as-imports = true
+force-wrap-aliases = true
