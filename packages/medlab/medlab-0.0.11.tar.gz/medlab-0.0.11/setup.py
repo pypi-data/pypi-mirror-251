@@ -1,0 +1,27 @@
+from setuptools import setup, find_packages
+import os
+with open('README.md', 'r', encoding='utf-8') as fh:
+    long_description = fh.read()
+
+setup(
+    name='medlab',
+    version='0.0.11',
+    author='yjiang',
+    author_email='1900812907@qq.com',
+    description='medical deep learning toolkit',
+    long_description=long_description,
+    long_description_content_type='text/markdown',
+    license='MIT',
+    url='https://gitee.com/Eason596/py-package-release-test',
+    packages=find_packages(),
+    install_requires=[],
+    python_requires='>=3.8',
+    entry_points={
+        'console_scripts': [
+            'med-init-env = medlab:init_enviroment',
+            'med-init-config = medlab:init_config',
+            'med-train = script:train',
+            'med-test = script:test'
+        ]
+    }
+)
