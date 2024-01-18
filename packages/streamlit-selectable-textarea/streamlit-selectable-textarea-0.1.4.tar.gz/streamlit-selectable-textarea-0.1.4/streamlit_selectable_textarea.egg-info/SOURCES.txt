@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+st_selectable_textarea/__init__.py
+st_selectable_textarea/frontend/build/asset-manifest.json
+st_selectable_textarea/frontend/build/bootstrap.min.css
+st_selectable_textarea/frontend/build/index.html
+st_selectable_textarea/frontend/build/static/js/main.d2dd3902.js
+st_selectable_textarea/frontend/build/static/js/main.d2dd3902.js.LICENSE.txt
+st_selectable_textarea/frontend/build/static/js/main.d2dd3902.js.map
+streamlit_selectable_textarea.egg-info/PKG-INFO
+streamlit_selectable_textarea.egg-info/SOURCES.txt
+streamlit_selectable_textarea.egg-info/dependency_links.txt
+streamlit_selectable_textarea.egg-info/requires.txt
+streamlit_selectable_textarea.egg-info/top_level.txt
