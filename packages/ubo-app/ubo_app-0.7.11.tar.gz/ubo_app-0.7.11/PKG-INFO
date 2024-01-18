@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: ubo-app
+Version: 0.7.11
+Summary: Ubo main app, running on device initialization. A platform for running other apps.
+License: Apache-2.0
+Author: Sassan Haradji
+Author-email: sassanh@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Provides-Extra: dev
+Requires-Dist: adafruit-circuitpython-neopixel (>=6.3.11,<7.0.0)
+Requires-Dist: headless-kivy-pi (>=0.5.12,<0.6.0) ; extra == "dev"
+Requires-Dist: headless-kivy-pi[dev] (>=0.5.12,<0.6.0) ; extra == "dev"
+Requires-Dist: psutil (>=5.9.6,<6.0.0)
+Requires-Dist: python-debouncer (>=0.1.3,<0.2.0)
+Requires-Dist: python-redux (>=0.9.11,<0.10.0)
+Requires-Dist: pyzbar (>=0.1.9,<0.2.0)
+Requires-Dist: rpi_ws281x (>=5.0.0,<6.0.0) ; platform_machine == "aarch64"
+Requires-Dist: sdbus-networkmanager (>=2.0.0,<3.0.0) ; platform_machine == "aarch64"
+Requires-Dist: ubo-gui (>=0.7.6,<0.8.0) ; extra == "dev"
+Requires-Dist: ubo-gui[dev] (>=0.7.6,<0.8.0) ; extra == "dev"
+Description-Content-Type: text/markdown
+
+# 🚀 Ubo App
+
+## 🌟 Overview
+
+Ubo App is a Python application for managing Raspberry Pi utilities and UBo-specific
+features.
+
+## ⚙️ Features
+
+[To be written]
+
+## 📋 Requirements
+
+These things are already taken care of in the official Ubo Pod image, so if you are
+botting from that image, you can ignore this section.
+
+- Python 3.9 or later.
+- Run `raspi-config` -> Interface Options -> Enable SPI
+- Install these packages:
+
+  ```sh
+  sudo apt install pip virtualenv libmtdev libgl1 libegl1 libcap-dev \
+       python3-libcamera python3-alsaaudio python3-pyaudio libzbar0 \
+       --no-install-recommends
+  ```
+
+## 📦 Installation
+
+```bash
+virtualenv --system-site-packages ubo-app
+source ubo-app/bin/activate
+pip install ubo-app
+# Run this if you want to run it automatically when RPi boots
+sudo ubo-app/bin/ubo install_services
+```
+
+## 🤝 Contributing
+
+Contributions following Python best practices are welcome.
+
+### ⚠️ Important Notes
+
+- Use `Ubo_` prefix for environment variables.
+
+## 🔒 License
+
+This project is released under the Apache-2.0 License. See the [LICENSE](./LICENSE)
+file for more details.
+
