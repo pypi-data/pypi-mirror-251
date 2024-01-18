@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cc_taxii2_client"
+version = "0.1.5"
+authors = [
+  { name="Nick Bowling", email="nbowling@cloudcover.net" },
+]
+description = "CloudCover minimal TAXII2.1 Python client library."
+readme = "README.md"
+keywords = [
+    "cloudcover", "taxii", "taxii2", "taxii2.1","stix", "stix2.1",
+    "api", "client", "SDK",
+]
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "requests>=2.31.0",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/cloudcover-cc/cc-taxii2-client"
