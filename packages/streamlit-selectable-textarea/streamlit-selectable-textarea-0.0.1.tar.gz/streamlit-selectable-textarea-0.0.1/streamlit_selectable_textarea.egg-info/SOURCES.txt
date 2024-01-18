@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+st_selectable_textarea/__init__.py
+streamlit_selectable_textarea.egg-info/PKG-INFO
+streamlit_selectable_textarea.egg-info/SOURCES.txt
+streamlit_selectable_textarea.egg-info/dependency_links.txt
+streamlit_selectable_textarea.egg-info/requires.txt
+streamlit_selectable_textarea.egg-info/top_level.txt
