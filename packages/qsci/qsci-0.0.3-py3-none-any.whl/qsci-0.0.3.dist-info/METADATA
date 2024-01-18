@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: qsci
+Version: 0.0.3
+Summary: High level application based on isqdeployer
+Home-page: https://www.arclightquantum.com/
+License: LICENSE.md
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: isqdeployer (>=0.0.50)
+Requires-Dist: matplotlib
+Requires-Dist: rich
+
+<u>**Q**uantum **sci**ence</u> is a tool designed to simplify the deployment of algorithms or applications onto quantum circuits. It builds upon the foundation of isqdeployer, which, in turn, utilizes isqc. As a result, qsci also possesses the potential to optimize circuit-level calculations.
+
+
+```
+      ╔════════╗
+      ║  qsci  ║   high level application 
+      ╚═══╦════╝
+          ║   
+    ╔═════╩═══════════╗
+    ║ isqdeployer     ║
+    ║                 ║
+    ║       ╔══════╗  ║   ╭────╮
+    ║       ║pyisqc╠══╬═══╡isqc│  circuit optimization
+    ║       ╚══════╝  ║   ╰────╯ 
+    ╚══╤══════╤═════╤═╝
+  ╭────┴────╮ │     │      
+  │ hardware│ │     │     
+  ╰─────────╯ │     │
+        ╭─────┴───╮ │
+        │simulator│ │ 
+        ╰─────────╯ │
+               ╭────┴───────╮
+               │user-defined│  any prospective machine
+               │   backend  │
+               ╰────────────╯
+```
+
+
+
+
+
+
