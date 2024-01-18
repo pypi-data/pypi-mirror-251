@@ -1,0 +1,4 @@
+https://bcms.bloomberg.com/pip/simple/blpapi/
+git+https://github.com/PaulMest/tia.git#egg=tia
+git+https://github.com/nathanramoscfa/pyetrade.git#egg=pyetrade
+git+https://github.com/nathanramoscfa/pandas_market_calendars.git#egg=pandas-market-calendars
