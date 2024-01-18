@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+kode/__init__.py
+kode/triangle.py
+segitiga.egg-info/PKG-INFO
+segitiga.egg-info/SOURCES.txt
+segitiga.egg-info/dependency_links.txt
+segitiga.egg-info/top_level.txt
