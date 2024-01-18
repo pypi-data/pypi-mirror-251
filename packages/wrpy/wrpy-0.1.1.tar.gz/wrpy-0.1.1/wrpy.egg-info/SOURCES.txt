@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+tests/test_core.py
+wrpy/__init__.py
+wrpy/core.py
+wrpy/services.py
+wrpy.egg-info/PKG-INFO
+wrpy.egg-info/SOURCES.txt
+wrpy.egg-info/dependency_links.txt
+wrpy.egg-info/requires.txt
+wrpy.egg-info/top_level.txt
