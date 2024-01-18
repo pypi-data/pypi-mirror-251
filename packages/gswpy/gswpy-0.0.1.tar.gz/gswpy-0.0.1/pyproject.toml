@@ -1,0 +1,27 @@
+[project]
+name = "gswpy"
+version = "0.0.1"
+authors = [
+  { name="Feng Qiao", email="qiaofeng@sjtu.edu.cn" },
+]
+description = "Read global surface water from https://global-surface-water.appspot.com/"
+readme = "README.md"
+dependencies = [
+  "numpy",
+  "netCDF4",
+  "gdal",
+]
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/fengqiaogh/gswpy"
+Issues = "https://github.com/fengqiaogh/gswpy/issues"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"

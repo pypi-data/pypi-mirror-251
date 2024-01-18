@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/gswpy.py
+src/gswpy.egg-info/PKG-INFO
+src/gswpy.egg-info/SOURCES.txt
+src/gswpy.egg-info/dependency_links.txt
+src/gswpy.egg-info/requires.txt
+src/gswpy.egg-info/top_level.txt
