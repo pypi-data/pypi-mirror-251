@@ -1,0 +1,7 @@
+macrostrat/utils/__init__.py,sha256=gmYUZyknuDg1G49L3TLvdwnCxS_lCsawYDGqPTAnme8,715
+macrostrat/utils/logs.py,sha256=u2TXhhZLoWtuZsnm80VUHI6ZRCL0TsgFuOb7hcyLzOQ,1528
+macrostrat/utils/shell.py,sha256=23WY3VsN4gWkapYmtSHu6XousZsnLIhv1vfoHM6IIBQ,1011
+macrostrat/utils/timer.py,sha256=utjznXcc80Tx3cMoU4Sts0YanM46CHUpybntQV6tczY,1411
+macrostrat_utils-1.2.1.dist-info/METADATA,sha256=bVrB6SWc3jKkmR_oZssk2ckmXJg7D1MwPeFY5QTlcvI,525
+macrostrat_utils-1.2.1.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+macrostrat_utils-1.2.1.dist-info/RECORD,,
