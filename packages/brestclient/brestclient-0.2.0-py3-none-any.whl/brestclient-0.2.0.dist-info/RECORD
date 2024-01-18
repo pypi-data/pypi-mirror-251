@@ -1,0 +1,13 @@
+brestclient/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+brestclient/__main__.py,sha256=naAHnvSJgxjAtGVUSRFx2AHhVbaynDeWOXXvlcV5zA4,85
+brestclient/command_line_ui.py,sha256=VyJfWMY_Pwp7-vKD5A3IdJqpGqGBpFgdQiT6OTKVcFw,2203
+brestclient/http_stuff.py,sha256=bsCkzMa40WYeaJipI6eXTaySgDDSiV_e_2SE4_ChRow,2981
+brestclient/parsers.py,sha256=lHCDosLTPG7DYh4FELUvJlmix8Q_lLNDQqqzk6m8KIM,2531
+brestclient/pretty_print.py,sha256=fp9Cp_fF62u4o0geCB_HbKMab_JKYCZ1-NISWD6EEG8,460
+brestclient/request_picker.py,sha256=NPbmavM_MoncCES0vx-LU6xNL3jE3EsSFvTMg9nxSPQ,1227
+brestclient/utils.py,sha256=HdYIPsZIJAASecROcmUNvhNzzQiUTAfD7OVazUvl-IQ,315
+brestclient/variables.py,sha256=VjlLtp2b1eGkJc97JqaMZFRLy1Rw8gK5yenm5-fHOXc,1461
+brestclient-0.2.0.dist-info/METADATA,sha256=_x6OFBRbkoSNj0QcMJ1ogyRGXv4UVcRq567kZpPwV-s,3695
+brestclient-0.2.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+brestclient-0.2.0.dist-info/entry_points.txt,sha256=7--JQoA_3CYtiPEhAMl7A5SJ5o6u7kGoGbOBcvkQ8TY,60
+brestclient-0.2.0.dist-info/RECORD,,

@@ -1,0 +1,3 @@
+[console_scripts]
+clui=src.brestclient.command_line_ui:run
+
