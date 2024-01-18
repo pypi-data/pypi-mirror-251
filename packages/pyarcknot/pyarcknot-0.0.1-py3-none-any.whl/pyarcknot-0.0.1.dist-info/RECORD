@@ -1,0 +1,10 @@
+pyarcknot/__init__.py,sha256=daEdpEyAJIa8b2VkCqSKcw8PaExcB6Qro80XNes_sHA,2
+pyarcknot/knot_calculate.py,sha256=LcBq_o16EyEV6gPwEgEst6tlLfKw0IHX7oSebIg-SB4,6679
+pyarcknot/knot_diagram.py,sha256=va5DHuWNRNNziqH4Ic_tDWJrxFTEGGfIN0BxrjdryEQ,8312
+pyarcknot/knot_matrix.py,sha256=A5WJg5nggVlzAkBkMcLCPKaaANJv7dVQ3HbjZUP0gZk,2242
+pyarcknot/turaev_surface.py,sha256=Cq7PhcpEhlVlVFnGykwOv_K2-5VJdxMyH3XEjDWOhow,5014
+pyarcknot-0.0.1.dist-info/LICENSE.txt,sha256=mV6tYoLleSRZpM7EqEYMrqhDj7OWOq0G5t98eZR8ysY,1066
+pyarcknot-0.0.1.dist-info/METADATA,sha256=GM8749vpcmD3FxocfYNLlDf9xODeg4UusPJEAOByMNI,3437
+pyarcknot-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pyarcknot-0.0.1.dist-info/top_level.txt,sha256=E-Y_pTxbK-2SinLoQVajdRgfC-5WZvg3hbhwjd3tGM4,10
+pyarcknot-0.0.1.dist-info/RECORD,,
