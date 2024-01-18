@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "pyvi-editor"
+version = "0.1.0"
+description = ""
+authors = ["MuongKimhong <muongkimhong086@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+textual = "^0.47.1"
+textual-dev = "^1.4.0"
+tree-sitter-languages = "^1.9.1"
+numpy = "^1.26.3"
+
+[tool.poetry.scripts]
+pyvi = "pyvi_editor.main:main"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
