@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: py5-rfid
+Version: 0.1
+Summary: Raspberry pi 5 interface with RFID(MFR522)
+Home-page: UNKNOWN
+Author: M.Karthickraja
+Author-email: karthickrajam8100@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE.txt
+Requires-Dist: gpiod
+Requires-Dist: time
+Requires-Dist: spidev
+
+UNKNOWN
+
