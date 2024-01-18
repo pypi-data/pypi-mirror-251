@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: jccc
+Version: 0.1.2
+Summary: Jit compiled color conversion.
+Home-page: https://github.com/garth74/jccc
+License: BSD3
+Keywords: jit,color conversion,python3
+Author: Garrett Shipley
+Author-email: garrett.shipley7+github@gmail.com
+Requires-Python: >=3.11,<3.12
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: numba (>=0.58.1,<0.59.0)
+Requires-Dist: numpy (>=1.26.3,<2.0.0)
+Project-URL: Bug Tracker, https://github.com/garth74/jccc/issues
+Project-URL: Repository, https://github.com/garth74/jccc
+Description-Content-Type: text/markdown
+
+# JCCC
+
+This package provides several color conversion methods that are compatible with [numba](https://github.com/numba/numba). It also provides a [color quantization](https://en.wikipedia.org/wiki/Color_quantization) procedure, which can reduce an image to a set of predetermined pixels. This isn't ideal for compression tasks but is useful for tagging images with color names.
+
+## Installation
+
+```
+pip install jccc
+```
+
+## Supported conversions
+
+### RGB
+
+- RGB --> HSV
+- RGB --> HLS
+- RGB --> XYZ
+- RGB --> CIELAB
+
+### HSV
+
+- HSV --> RGB
+- HSV --> HLS
+- HSV --> XYZ
+- HSV --> CIELAB
+
+### HLS
+
+- HLS --> RGB
+- HLS --> HSV
+- HLS --> XYZ
+- HLS --> CIELAB
+
+### XYZ
+
+- XYZ --> RGB
+- XYZ --> HSV
+- XYZ --> HLS
+- XYZ --> CIELAB
+
+### CIE LAB
+
+- CIELAB --> RGB
+- CIELAB --> HSV
+- CIELAB --> HLS
+- CIELAB --> XYZ
+
