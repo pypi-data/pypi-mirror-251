@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: Kahi_impactu
+Version: 0.0.4
+Summary: Kahi impactu metapackage to install all plugins for impactu ETL
+Home-page: https://github.com/colav/Kahi_plugins
+Author: Colav
+Author-email: colav@udea.edu.co
+License: BSD
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: kahi==0.0.2a0
+Requires-Dist: Kahi_doaj_sources==0.1.0b0
+Requires-Dist: Kahi_minciencias_opendata_affiliations==0.1.0b0
+Requires-Dist: Kahi_minciencias_opendata_person==0.1.0b0
+Requires-Dist: Kahi_openalex_affiliations==0.1.0b0
+Requires-Dist: Kahi_openalex_person==0.1.0b0
+Requires-Dist: Kahi_openalex_sources==0.1.0b0
+Requires-Dist: Kahi_openalex_subjects==0.1.1b0
+Requires-Dist: Kahi_openalex_works==0.1.2b0
+Requires-Dist: Kahi_ranking_udea_works==0.1.0b0
+Requires-Dist: Kahi_ror_affiliations==0.1.0b0
+Requires-Dist: Kahi_scholar_works==0.1.0b0
+Requires-Dist: Kahi_scienti_affiliations==0.1.0b0
+Requires-Dist: Kahi_scienti_person==0.1.1b0
+Requires-Dist: Kahi_scienti_sources==0.1.0b0
+Requires-Dist: Kahi_scienti_works==0.1.0b0
+Requires-Dist: Kahi_scimago_sources==0.1.0b0
+Requires-Dist: Kahi_scopus_works==0.1.0b0
+Requires-Dist: Kahi_staff_udea_affiliations==0.1.1b0
+Requires-Dist: Kahi_staff_udea_person==0.1.0b0
+Requires-Dist: Kahi_wos_works==0.1.0b0
+
+<center><img src="https://raw.githubusercontent.com/colav/colav.github.io/master/img/Logo.png"/></center>
+
+# Kahi impactu
+Meta package for kahi plugins, specifically for the impactu project.
+
+# Description
+This helps to install the different plugins for kahi with the corresponding version.
+
+# Installation
+
+## Dependencies
+Please take a look at the dependencies of the plugins you want to run.
+
+## Package
+Install it with pip:
+`pip install kahi_impactu`
+
+
+# License
+BSD-3-Clause License 
+
+# Links
+http://colav.udea.edu.co/
+
+
+
