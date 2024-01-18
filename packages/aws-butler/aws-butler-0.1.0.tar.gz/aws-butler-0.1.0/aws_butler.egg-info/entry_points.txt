@@ -1,0 +1,3 @@
+[console_scripts]
+cloudwatch = cloudwatch:main
+parameters = parameters:main
