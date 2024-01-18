@@ -1,0 +1,12 @@
+LICENSE,sha256=K66UgSHKxDGxMjUVR4BP4bXTKCt8c5oHgvTjo7zUUOk,1071
+dindbox/__init__.py,sha256=SBSi5bo7FgPAcPBUseuKDT05BkdhFj5XC9pZ4iFXeFo,192
+dindbox/__main__.py,sha256=u4XqLGO0Pv1bfI4je-67O3BzzAUBkm4dcNyuwe5taBo,151
+dindbox/box.py,sha256=MV3ouI1dQxkCBs2elFpFQtv5Lza8yujAevKuUdV8cVM,82108
+dindbox/cli.py,sha256=Qf0_6bOY_dPwVB9mWC96oznAcjjnNS0Cr92sqEHxMIs,18459
+dindbox/errors.py,sha256=4W0RqDxcEX_pyw93qdFmEuaxSYtA2Q35_8OIlx1F1jg,2772
+dindbox/status_screen.py,sha256=MqNRimXxftNEFp3J2fK5X13opDzdmyYetanhebKF9GA,16831
+dindbox-1.0.0.dist-info/LICENSE,sha256=K66UgSHKxDGxMjUVR4BP4bXTKCt8c5oHgvTjo7zUUOk,1071
+dindbox-1.0.0.dist-info/METADATA,sha256=2tcPIk-GOVgV_mOMEoZz-BECWgMzrCZYjOWlrX4lpcA,11804
+dindbox-1.0.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+dindbox-1.0.0.dist-info/entry_points.txt,sha256=Vx5ATL96aR9ki36wl-O9gF4pcZC7u5tKc9lVVx9-5wE,44
+dindbox-1.0.0.dist-info/RECORD,,

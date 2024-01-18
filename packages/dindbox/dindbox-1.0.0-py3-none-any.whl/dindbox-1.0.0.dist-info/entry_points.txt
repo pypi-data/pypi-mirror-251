@@ -1,0 +1,3 @@
+[console_scripts]
+dindbox=dindbox.cli:main
+
