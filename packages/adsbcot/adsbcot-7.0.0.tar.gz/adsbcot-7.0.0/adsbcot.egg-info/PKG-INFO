@@ -1,0 +1,81 @@
+Metadata-Version: 2.1
+Name: adsbcot
+Version: 7.0.0
+Summary: ADSBCOT: ADS-B to TAK Gateway
+Home-page: https://github.com/snstac/adsbcot
+Maintainer: Greg Albrecht <oss@undef.net>
+Maintainer-email: oss@undef.net
+License: Apache 2.0
+Project-URL: CI: GitHub Actions, https://github.com/snstac/adsbcot/actions
+Project-URL: GitHub: issues, https://github.com/snstac/adsbcot/issues
+Project-URL: GitHub: repo, https://github.com/snstac/adsbcot
+Keywords: Cursor on Target,CoT,ATAK,TAK,WinTAK,TAK,TAK Server,ADS-B,ADSB,Aircraft
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: OS Independent
+Requires-Python: <4,>=3.6
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: aircot>=1.2.0
+Requires-Dist: pytak>=5.4.0
+Requires-Dist: aiohttp<4.0.0
+Requires-Dist: asyncinotify
+Provides-Extra: with-pymodes
+Requires-Dist: pymodes>=2.8; extra == "with-pymodes"
+Provides-Extra: with-takproto
+Requires-Dist: takproto>=2.0.0; extra == "with-takproto"
+Provides-Extra: test
+Requires-Dist: pytest-asyncio; extra == "test"
+Requires-Dist: pytest-cov; extra == "test"
+Requires-Dist: pylint; extra == "test"
+Requires-Dist: flake8; extra == "test"
+Requires-Dist: black; extra == "test"
+
+.. image:: https://adsbxcot.readthedocs.io/en/latest/atak_screenshot_with_pytak_logo-x25.png
+   :alt: ATAK screenshot with PyTAK logo.
+
+Display Aircraft in TAK 
+************************
+
+ADSBCOT is software for monitoring and analyzing aviation surveillance data via the Team Awareness Kit (TAK) ecosystem of products.
+
+ADSBCOT captures & reports real-time ADS-B data received from aircraft (or other airbrone vehicles and drones) into TAK products using native TAK protocols, including Cursor on Target (CoT). 
+
+ADSBCOT has been evaluated with WinTAK, iTAK, ATAK & TAK Server.
+
+ADSBCOT is in active use today in a variety of missions.
+
+`Documentation is available here. <https://adsbcot.rtfd.io>`_
+
+   Use ADS-B Aggregators? Check out my sister software `ADSBXCOT <https://adsbxcot.rtfd.io>`_.
+
+   Want a turn-key ADS-B to TAK Gateway? Check out `AirTAK <https://www.snstac.com/store/p/airtak-v1>`_.
+
+License
+=======
+
+Copyright Sensors & Signals LLC https://www.snstac.com
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
