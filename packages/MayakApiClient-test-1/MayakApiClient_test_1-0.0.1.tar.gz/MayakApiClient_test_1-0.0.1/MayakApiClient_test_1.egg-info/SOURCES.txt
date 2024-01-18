@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+MayakApiClient_test_1.egg-info/PKG-INFO
+MayakApiClient_test_1.egg-info/SOURCES.txt
+MayakApiClient_test_1.egg-info/dependency_links.txt
+MayakApiClient_test_1.egg-info/requires.txt
+MayakApiClient_test_1.egg-info/top_level.txt
