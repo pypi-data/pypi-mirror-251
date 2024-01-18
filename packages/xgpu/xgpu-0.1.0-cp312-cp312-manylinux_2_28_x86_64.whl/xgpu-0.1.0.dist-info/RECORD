@@ -1,0 +1,11 @@
+xgpu/libwgpu_native.so,sha256=mfOV5GCzaDHo08wyN9WdCfRUE-_PsPOOTJsMe9XRXgQ,12092904
+xgpu/__init__.py,sha256=g5T-MgGBmcQb7Zhqp7V9RbmJkXgIjV3ngIbsQEVluiQ,24
+xgpu/_wgpu_native_cffi.cpython-312-x86_64-linux-gnu.so,sha256=Vd4fMAyLBAS8blzEqPFlK-H3GxWEBBR5_89PtmQXQq4,1150577
+xgpu/bindings.py,sha256=PPnY5NK4sFmk2SV3iONPHQed9kLPJQ4OO9qlePc0IO4,258187
+xgpu/_build_ext.py,sha256=HemWnhjhRyZ3WHliY75f4afKGPa9w92P3UqvNpGqOP0,76115
+xgpu/conveniences.py,sha256=Nw6B-dJS6ufFrjLsFay3NHrGPOUAF6TebQJOTmfUhjY,3782
+xgpu-0.1.0.dist-info/WHEEL,sha256=AtnMA43BB6caIvUDqo9cxLM9epm3xe4lIOiN34B-OdA,114
+xgpu-0.1.0.dist-info/LICENSE,sha256=ywcS5hV1O2Laf_jmWbJ8612MW1bBRAExjRvgJvphtx4,1062
+xgpu-0.1.0.dist-info/RECORD,,
+xgpu-0.1.0.dist-info/top_level.txt,sha256=8YZR9bJi6aEHDR2Y3RHd8Yqh5cQWD0uBOiHZmrVd-Eg,5
+xgpu-0.1.0.dist-info/METADATA,sha256=P8MX7oUFfySmpAQFZQRb4gXm_IzN7LDg-tVFYUcOWZM,1311
