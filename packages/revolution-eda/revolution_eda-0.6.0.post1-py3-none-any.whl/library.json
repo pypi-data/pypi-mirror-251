@@ -1,0 +1,6 @@
+{
+    "libdefs": {
+        "analogLib": "./exampleLibraries/analogLib",
+        "designs": "./exampleLibraries/designs"
+    }
+}
