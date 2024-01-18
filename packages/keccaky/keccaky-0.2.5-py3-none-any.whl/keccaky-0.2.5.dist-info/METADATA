@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: keccaky
+Version: 0.2.5
+Summary: Secure and easy-to-use keccak
+Home-page: https://github.com/olivmath/keccaky.git
+License: MIT
+Keywords: keccak,ethereum,sha3,hash
+Author: Lucas Oliveira
+Author-email: olivmath@protonmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Security :: Cryptography
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Project-URL: Documentation, https://pypi.org/project/keccaky/
+Project-URL: Repository, https://github.com/olivmath/keccaky.git
+Description-Content-Type: text/markdown
+
+# Keccaky
+
+Secure and easy-to-use keccak
+
+> **🚨 WARNING:** Not yet ready for production!!!
+
+
+## Roadmap
+
+- [x] Create Keccak 256 hash
+- [ ] Create massive tests agains pycryptodome
+- [ ] Create benchmark tests agains pycryptodome
+- [ ] API made easy for client
+- [ ] Docs dos dev
+- [ ] Re-write Keccak algorithm in Rust using FFI
+
+## Docs
+
+**INSTALL**
+
+```
+pip install keccaky
+```
+
+```
+poetry add keccaky
+```
+
+**USE**
+
+
+```python
+import keccak
+
+assert keccak("Hello, world") == bytes.fromhex("db99debe7fc546756227481ecaf5136f5b86180d99c5666a14421367c7187e5c")
+assert keccak("Hello, world").hex() == "db99debe7fc546756227481ecaf5136f5b86180d99c5666a14421367c7187e5c"
+```
