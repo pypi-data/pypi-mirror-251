@@ -1,0 +1,17 @@
+irt-data<2,>=1.2
+ktz<2
+click<9,>=8.1
+pyyaml>=5
+matplotlib
+tabulate
+jupyter
+pretty_errors
+
+[dev]
+twine
+build
+pudb
+ipython
+black
+flake8
+pytest
