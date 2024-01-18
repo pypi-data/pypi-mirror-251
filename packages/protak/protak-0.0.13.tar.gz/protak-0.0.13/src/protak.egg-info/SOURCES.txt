@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/protak/__init__.py
+src/protak/prota.py
+src/protak.egg-info/PKG-INFO
+src/protak.egg-info/SOURCES.txt
+src/protak.egg-info/dependency_links.txt
+src/protak.egg-info/top_level.txt
