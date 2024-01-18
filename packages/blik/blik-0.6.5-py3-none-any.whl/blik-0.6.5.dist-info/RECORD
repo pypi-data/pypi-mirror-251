@@ -1,0 +1,17 @@
+blik/__init__.py,sha256=nCVOr5uael4ZiZo2THwv414DpRS4pEra2m7VXGSLcSA,108
+blik/_version.py,sha256=sEv3DzazPNsgfs0u6fCMtzR1tFugVVUD5KV7-WOQeZg,216
+blik/napari.yaml,sha256=dtLjUd-NtWz7To5dor4qzgYiPpAAo4l-1kkVZC2d0h8,3866
+blik/reader.py,sha256=5vINJ_ReUGLEbe-iB7M8qbZPanQjigW5IsOVPWI0bwE,7558
+blik/utils.py,sha256=raXgaOEanYasE71fGAY6ipfXIRk-NsEPTJWRsJQFpO0,875
+blik/writer.py,sha256=H77_GqWtnoYAV2Id2nOKj5K0w-E4l2_I8kkK8yHWKHI,4483
+blik/widgets/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+blik/widgets/file_reader.py,sha256=gk6iWFj2FRQ5V8Jcped8JcXXn3A6V7Nl85EoAWYF_Pk,800
+blik/widgets/filter.py,sha256=0PbwyQLyZ31K12PlDiMUKHX90WZt47ZPTkVz5IumjoU,1405
+blik/widgets/main_widget.py,sha256=lWprcUl9uEgrS1J1EjRUE74XOJNqwHa-zHkYsDVtcM4,8382
+blik/widgets/picking.py,sha256=5QA0xqy5l8ah8HAE-Kvmxkciz4TEwzwvMaBqD2tmL20,10867
+blik/widgets/power_spectrum.py,sha256=NvNfyatQMzTeZcZyjBrC2QTK3CLB31rtwwWCV93epUs,822
+blik-0.6.5.dist-info/METADATA,sha256=syKHgQAYWBSBjlHcKzaviDmSYDD_WAd6f8pwaH4mcUw,5831
+blik-0.6.5.dist-info/WHEEL,sha256=mRYSEL3Ih6g5a_CVMIcwiF__0Ae4_gLYh01YFNwiq1k,87
+blik-0.6.5.dist-info/entry_points.txt,sha256=voCXLq-xH3Lk6bBhJ3Xg_E4Bjvao2KLHlGnOeZDsVsM,42
+blik-0.6.5.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+blik-0.6.5.dist-info/RECORD,,
