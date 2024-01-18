@@ -1,0 +1,14 @@
+nxopen/__init__.py,sha256=ka9OWKErC8nbZU-EzSc3Iawo-DGtSHkF_mW2uk-GAzQ,56
+nxopen/cad/__init__.py,sha256=x3ExOnuNHUHUBvV_GO7LfGqNSWuiNRkCInqv5BP89dY,19
+nxopen/cad/code.py,sha256=NlzWkv9t0lt3E-s25ZXupCx2l_17aXJGxU7K2YK9qcQ,395
+nxopen/cae/__init__.py,sha256=GN-I7oPKrgn7Ou_Hvq7gmmkBub7GN-8VTTYd7baGOxo,81
+nxopen/cae/postprocessing.py,sha256=_c-KqN58YzO9qpF2gdkZdsxjQyqqkla6LbPAFZMTpcg,78
+nxopen/cae/preprocessing.py,sha256=E8mYTKNO0ss_233Z08cie7_S-f_riO0knvCaGkEEzEM,34476
+nxopen/cae/solving.py,sha256=1xrHTLvnh5cJ_DC0MdV2cbv9KSgPRLp3SyxjJDo68hI,4432
+nxopen/tools/__init__.py,sha256=o9-oJjqV_NlFwHgBTolC5rwaulQVnx58bWRDB6U0UnA,43
+nxopen/tools/excel.py,sha256=_c-KqN58YzO9qpF2gdkZdsxjQyqqkla6LbPAFZMTpcg,78
+nxopen/tools/general.py,sha256=SfMLn-94GJEIXhty61GS-ImfhRFiiHTbknF7DHzePaI,1598
+nxopen-0.0.1a0.dist-info/METADATA,sha256=KZlfINSAzOpHq7M1INxnuFpRR4b82Z7T6HXSrmPbvfk,835
+nxopen-0.0.1a0.dist-info/WHEEL,sha256=mRYSEL3Ih6g5a_CVMIcwiF__0Ae4_gLYh01YFNwiq1k,87
+nxopen-0.0.1a0.dist-info/licenses/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+nxopen-0.0.1a0.dist-info/RECORD,,
