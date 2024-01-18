@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/pydesync/__init__.py
+src/pydesync/all.py
+src/pydesync.egg-info/PKG-INFO
+src/pydesync.egg-info/SOURCES.txt
+src/pydesync.egg-info/dependency_links.txt
+src/pydesync.egg-info/top_level.txt
