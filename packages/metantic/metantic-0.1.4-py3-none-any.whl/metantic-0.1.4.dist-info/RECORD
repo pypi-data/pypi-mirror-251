@@ -1,0 +1,12 @@
+metantic/__init__.py,sha256=BNzSl3rse645Csdc_hyLD3MDfSK-ARjKfbkJ4nnG2Rs,98
+metantic/_paths.py,sha256=4X34rg4LNbnEi9oBd6BFpnGmEMFgWesBtP3ikUnGmqY,3078
+metantic/fields.py,sha256=RjEuYjKHBwcg2argJ2S2kdKDCYPnaFxP3pS3tyXrii4,226
+metantic/omit.py,sha256=dX5hPzdlpt5mM9-JZHy-77xO5UqSuKYJBykf_qmOicI,549
+metantic/partial.py,sha256=8s9HNzcHIiZSGlb5g2mxqvw8qPjVZtuZQcs61XUdXuU,459
+metantic/paths/__init__.py,sha256=KoyY1ZF0KxwK0pEv3NH62uR-EhK-ytPkHCUTje04ti8,74
+metantic/paths/_builder.py,sha256=ZRMwxu_UzDc-GpLiQXOsdt2qJjaoavdAuYUC_C1X5hk,4157
+metantic/paths/_validate.py,sha256=ii_VZBU6-lBDbmrHQa3-GDJk187AbvMz19lsMBmzmP8,1290
+metantic-0.1.4.dist-info/METADATA,sha256=SqqQNgpNm954F-zzHGUVLh77qCxzJ6OYQh0dqMwpe1Y,2117
+metantic-0.1.4.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+metantic-0.1.4.dist-info/top_level.txt,sha256=G6s-kWZBYD14xINHQ9fZ-xtKv06IA_8uZ2CSyh8GcuY,9
+metantic-0.1.4.dist-info/RECORD,,
