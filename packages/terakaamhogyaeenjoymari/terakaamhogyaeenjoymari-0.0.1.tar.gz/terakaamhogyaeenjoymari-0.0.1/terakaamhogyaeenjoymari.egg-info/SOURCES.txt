@@ -1,0 +1,7 @@
+setup.py
+libname/__init__.py
+libname/hello.py
+terakaamhogyaeenjoymari.egg-info/PKG-INFO
+terakaamhogyaeenjoymari.egg-info/SOURCES.txt
+terakaamhogyaeenjoymari.egg-info/dependency_links.txt
+terakaamhogyaeenjoymari.egg-info/top_level.txt
