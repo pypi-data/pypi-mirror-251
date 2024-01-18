@@ -1,0 +1,13 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.py
+maxdev/Fore.py
+maxdev/Init.py
+maxdev/Webhook.py
+maxdev/__init__.py
+maxdev.egg-info/PKG-INFO
+maxdev.egg-info/SOURCES.txt
+maxdev.egg-info/dependency_links.txt
+maxdev.egg-info/requires.txt
+maxdev.egg-info/top_level.txt
