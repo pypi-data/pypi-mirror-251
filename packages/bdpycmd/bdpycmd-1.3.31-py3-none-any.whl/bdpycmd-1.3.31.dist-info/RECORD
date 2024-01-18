@@ -1,0 +1,13 @@
+bdpycmd/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bdpycmd/pycmd.py,sha256=t88og3Ih5twm29ut3CdKdGjkr-Ocqg5zznaekSG-14c,8746
+bdpycmd/cmd/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bdpycmd/cmd/camp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bdpycmd/cmd/camp/assistant.py,sha256=IhccCG1yX6V5zU0Uuemvd4jTpXKF_WsWkB2eNySWGoE,3344
+bdpycmd/cmd/factory/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bdpycmd/cmd/factory/base.py,sha256=HJ4Q2o9reb8WUaP2N422r2YGSfCuoGghuwB8HzOKnHM,6300
+bdpycmd/cmd/factory/dacmd.py,sha256=vPbxR0c1LbLcY2r-m6l5eDqrPexwAaOzTwe9_FzfvPY,927
+bdpycmd/cmd/factory/dafunc.py,sha256=knAFglmTjZbg7tr5xwd3b8qnfaCdMzTVi5QPdn_gOZ4,890
+bdpycmd-1.3.31.dist-info/METADATA,sha256=KRK2id2CDhHvwLpCLqz5afs2jZxLd2AcPjBgBSt7X3o,12085
+bdpycmd-1.3.31.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+bdpycmd-1.3.31.dist-info/top_level.txt,sha256=HUXS42pPutozRV0yzzA8gkpe1z79HyxFmfMi5bFagnc,8
+bdpycmd-1.3.31.dist-info/RECORD,,
