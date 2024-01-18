@@ -1,0 +1,17 @@
+asgiref
+diskcache
+dj-database-url
+dj-email-url
+django-bootstrap5
+django-cancan
+django-cors-headers
+django-mailer
+django-q2
+django-widget-tweaks
+django_select2
+markdown
+polib
+pscript
+pyquery
+pytigon-lib
+whitenoise
