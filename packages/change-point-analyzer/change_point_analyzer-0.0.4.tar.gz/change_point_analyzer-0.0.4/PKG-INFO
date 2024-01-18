@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: change-point-analyzer
+Version: 0.0.4
+Summary: A Python package for analyzing change points in time series data based on Dr. Wayne Taylor's algorithm.
+License: MIT
+Author: Jonah Breslow
+Author-email: jonahbreslow@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: matplotlib (>=3.6.0,<4.0.0)
+Requires-Dist: numpy (>=1.26.0,<2.0.0)
+Description-Content-Type: text/markdown
+
+# Change Point Analyzer
+
+## TBD
+
