@@ -1,0 +1,2 @@
+[console_scripts]
+plugin-tools = plugin_tools.main:app
