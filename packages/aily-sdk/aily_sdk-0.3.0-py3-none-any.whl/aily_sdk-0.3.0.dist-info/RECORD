@@ -1,0 +1,13 @@
+aily_sdk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aily_sdk/message/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aily_sdk/message/chat.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aily_sdk/message/fields.py,sha256=W1_dRb6mCdT3Rp-uRmzG5FRRzdzGHkaKnbIdy497BUE,2477
+aily_sdk/message/record.py,sha256=GlC-Ol-OEasRa8ckfATz3ifflRCH0WSc6n57rFJyzBg,1171
+aily_sdk/message/table.py,sha256=x6jOG4TgbmXtjmPnd-qePgn5Lw1cCETSShjf-K8_C9g,788
+aily_sdk/message/utils.py,sha256=e-xMg4BS-ESSL9VMssuTnmbiJ-laMMSejuY9b-rTlxc,191
+aily_sdk/util/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aily_sdk/util/channel_context.py,sha256=PKmDEg95zdsKmmgRxQznbkzc6ScO9hPoABTrcfS_Dxc,509
+aily_sdk-0.3.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+aily_sdk-0.3.0.dist-info/METADATA,sha256=etdqyrRAZDVdB28v1nrJUJF_pmtE1xYvie_og1E7atk,408
+aily_sdk-0.3.0.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+aily_sdk-0.3.0.dist-info/RECORD,,
