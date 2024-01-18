@@ -1,0 +1,2 @@
+[console_scripts]
+oursfirstchatapp2 = oursfirstchatapp2:main
