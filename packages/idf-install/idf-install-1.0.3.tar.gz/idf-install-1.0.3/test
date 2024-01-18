@@ -1,0 +1,7 @@
+#!/bin/bash
+
+set -e
+. ./activate.sh
+echo "Running unittests"
+python tests/test_cli.py
+python tests/test_install.py
