@@ -1,0 +1,15 @@
+LICENSE
+LICENSES_THIRD_PARTY
+README.md
+setup.py
+mRNAid.egg-info/PKG-INFO
+mRNAid.egg-info/SOURCES.txt
+mRNAid.egg-info/dependency_links.txt
+mRNAid.egg-info/entry_points.txt
+mRNAid.egg-info/requires.txt
+mRNAid.egg-info/top_level.txt
+mrnaid/__init__.py
+mrnaid/__version__.py
+mrnaid/cli/__init__.py
+mrnaid/cli/main.py
+mrnaid/cli/optimize.py
