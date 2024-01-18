@@ -1,0 +1,6 @@
+setup.py
+ytapy/__init__.py
+ytapy.egg-info/PKG-INFO
+ytapy.egg-info/SOURCES.txt
+ytapy.egg-info/dependency_links.txt
+ytapy.egg-info/top_level.txt
