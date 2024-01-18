@@ -1,0 +1,12 @@
+bs4
+tqdm
+lxml
+numpy
+numba
+joblib
+pandas
+pyarrow
+requests
+requests
+matplotlib
+backtrader
