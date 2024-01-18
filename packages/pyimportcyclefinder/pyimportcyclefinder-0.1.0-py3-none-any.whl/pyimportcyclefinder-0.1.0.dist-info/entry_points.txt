@@ -1,0 +1,3 @@
+[console_scripts]
+find-import-cycles = pyimportcyclefinder.cli:main
+

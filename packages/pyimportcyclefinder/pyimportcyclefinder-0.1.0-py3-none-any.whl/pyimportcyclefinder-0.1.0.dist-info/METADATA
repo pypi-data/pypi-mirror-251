@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: pyimportcyclefinder
+Version: 0.1.0
+Summary: A project built with PDM-Backend
+Author-Email: Michael Gooch <goochmi@gmail.com>
+License: The Unlicense
+Project-URL: Repository, https://github.com/kotoroshinoto/PyImportCycleFinder
+Requires-Python: >=3.10
+Requires-Dist: networkx>=3.2.1
+Requires-Dist: regex>=2023.12.25
+Requires-Dist: typing-extensions>=4.9.0
+Requires-Dist: click>=8.1.7; extra == "cli"
+Requires-Dist: rich>=13.7.0; extra == "extras"
+Requires-Dist: pydantic>1.10; extra == "validation"
+Requires-Dist: packaging>=23.2; extra == "validation"
+Requires-Dist: sphinx>=7.2.6; extra == "docs"
+Requires-Dist: pdm>=2.12.1; extra == "dev"
+Requires-Dist: pytest>=7.4.4; extra == "dev"
+Requires-Dist: flake8>=7.0.0; extra == "dev"
+Requires-Dist: flake8-import-order>=0.18.2; extra == "dev"
+Requires-Dist: nox>=2023.4.22; extra == "dev"
+Requires-Dist: pylint>=3.0.3; extra == "dev"
+Requires-Dist: pytest>=7.4.4; extra == "test"
+Requires-Dist: pylint>=3.0.3; extra == "test"
+Requires-Dist: flake8>=7.0.0; extra == "test"
+Requires-Dist: flake8-import-order>=0.18.2; extra == "test"
+Requires-Dist: nox>=2023.4.22; extra == "test"
+Provides-Extra: cli
+Provides-Extra: extras
+Provides-Extra: validation
+Provides-Extra: docs
+Provides-Extra: dev
+Provides-Extra: test
+Description-Content-Type: text/markdown
+
+# PyImportCycleFinder
+Small utility using networkx package's directed graph representation built from import statements to find the cycles.
