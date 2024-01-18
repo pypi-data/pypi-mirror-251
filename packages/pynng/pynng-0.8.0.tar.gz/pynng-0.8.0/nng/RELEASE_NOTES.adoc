@@ -1,0 +1,71 @@
+ifdef::env-github[]
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+endif::[]
+
+= RELEASE NOTES FOR NNG v1.6.0
+
+After a very long time indeed (over 2 years!), we are happy to announce v1.6.0 of NNG!
+
+This document has the following sections:
+
+* Notable Changes
+* End of Feature Announcements
+
+== Notable Changes (since 1.5.2)
+
+Numerous critical bugs were fixed; some of these led to seg faults, crashes, and
+memory leaks.  See bugs #1523, #1713, #1702, #1657, #1347, #1518, #1526, #1541, #1638, #1543, #1657, #1658
+
+Significant performance optimizations have been made, especially to the BUS protocol, the
+`nng_sendmsg()` and `nng_recvmsg()` functions, when connecting and disconnecting lots of pipes,
+and when using very different expiration times with vast numbers of requests.
+
+New APIs were added for `nng_aio_busy()`, `nng_ctx_sendmsg()`, `nng_ctx_recvmsg()`, `nng_device_aio()`.
+
+A CMake tunable for limiting the number of threads use for request expiration is provided
+via the `NNG_MAX_EXPIRE_THREADS` option.
+
+Additionally various fixes for compilation problems, documentation errata, test case, and so forth
+have been applied.
+
+== End of Feature Announcements
+
+=== Windows Legacy Support
+
+NNG no longer officially claims support for Windows Vista, Windows 7, Windows 8, or Windows 8.1.
+We have no ability to build or test these versions, and Microsoft no longer supports them.
+Continued use of these systems may be possible, but future changes may break
+compatibity with these systems wihout further notice.
+
+=== Windows Named Pipe Support Changes
+
+A future release of NNG may make the ipc:// URL format operate over UNIX domain sockets by default.
+We plan to do this for the other projects we control, such as mangos, as well.
+
+Should this occur, it will be breaking for Windows versions older than Windows 10 17063.
+
+=== macOS Legacy Support
+
+NNG no longer officially supports macOS versions older than 10.12.
+Future versions of NNG may depend on features not available on versions of macOS older than 10.12.
+
+=== Documentation Restructuring
+
+A future release of NNG may restructure the documentation to make it more
+approachable for more users.  This would break the organization as UNIX manual
+pages, and would also drop the ability to format them as UNIX nroff source.
+The best way to view this documentation is on the NNG website, or with the PDF or printed manual.
+
+=== ZeroTier Incompatible Changes
+
+A future release of NNG may break compatibility for applications built using earlier versions
+of NNG when using the ZeroTier transport.  ZeroTier support is an experimental feature.
+
+=== Pair1 Polyamorous Mode
+
+A future release of NNG may remove Pair 1 Polyamorous support, but *only* if a suitable
+replacement is provided.  Pair1 Polyamorous mode is an experimental feature.
+
+Alternatively we may change the Pair1 wire protocol in a way that breaks compatibility with
+earlier versions of Pair1 Polyamorous mode.
