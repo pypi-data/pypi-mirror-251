@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: bitformat
+Version: 0.0.1
+Summary: A library for creating and interpreting binary formats.
+Author-email: Scott Griffiths <dr.scottgriffiths@gmail.com>
+Project-URL: homepage, https://github.com/scott-griffiths/bitformat
+Project-URL: documentation, https://bitformat.readthedocs.io/
+Keywords: binary,bitarray,bitvector,bitfield,bitstring
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: bitstring <5.0.0,>=4.2.0b1
+
+
+![bitformat](https://raw.githubusercontent.com/scott-griffiths/bitformat/main/doc/bitformat_logo_small.png "bitformat")
+
+---------
+
+**bitformat** is a Python module for creating and parsing file formats, especially at the bit rather than byte level.
+
+It is intended to complement the [**bitstring**](https://github.com/scott-griffiths/bitstring) module, but is currently at a planning stage and is not yet recommended for use.
+
+[![CI badge](https://github.com/scott-griffiths/bitformat/actions/workflows/.github/workflows/ci.yml/badge.svg)](https://github.com/scott-griffiths/bitformat/actions/workflows/ci.yml)
+[![Docs](https://img.shields.io/readthedocs/bitformat?logo=readthedocs&logoColor=white)](https://bitformat.readthedocs.io/en/latest/)
+[![Dependents (via libraries.io)](https://img.shields.io/librariesio/dependents/pypi/bitformat?logo=libraries.io&logoColor=white)](https://libraries.io/pypi/bitformat)
+&nbsp; &nbsp;
+[![Pepy Total Downlods](https://img.shields.io/pepy/dt/bitformat?logo=python&logoColor=white&labelColor=blue&color=blue)](https://pypistats.org/packages/bitformat)
+[![PyPI - Downloads](https://img.shields.io/pypi/dm/bitformat?label=%40&labelColor=blue&color=blue)](https://pypistats.org/packages/bitformat)
