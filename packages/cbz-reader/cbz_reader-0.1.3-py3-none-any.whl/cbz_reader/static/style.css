@@ -1,0 +1,82 @@
+:root {
+    --background-color:  #280516;
+    --color: #E3DAFF;
+    --font-family: Arial, sans-serif;
+    --font-size: clamp(.9rem, 2.5dvw, 1rem);
+    --a-color: #6D1E97;
+    --a-hover-color: #C13AC6;
+
+    --title-font-family: monospace;
+
+    --nav-button-background-color: #AA3648;
+}
+* {
+    margin: 0;
+    padding: 0;
+    min-width: 0;
+}
+a {
+    color: var(--a-color);
+    text-decoration: none;
+}
+a:hover {
+    color: var(--a-hover-color);
+}
+html {
+    height: 100dvh;
+    width: 100dvw;
+}
+body {
+    min-width: 100%;
+    background-color: var(--background-color);
+    color: var(--color);
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+}
+main {
+    display: grid;
+    margin-left: clamp(1rem, 2.5dvw, 5rem);
+    margin-right: clamp(1rem, 2.5dvw, 5rem);
+
+}
+.title {
+    font-family: var(--title-font-family);
+}
+header {
+    margin-top: clamp(2rem, 7.5dvw, 3rem);
+    margin-bottom: clamp(2rem, 7.5dvw, 3rem);
+    text-align: center;
+}
+#images {
+    display: grid;
+    justify-items: center;
+}
+#images img {
+    width: 100%;
+    max-width: clamp(15rem, 100dvw, 37.5rem);
+}
+#nav-buttons {
+    margin-left: clamp(0rem, 7.5dvw, 10rem);
+    margin-right: clamp(0rem, 7.5dvw, 10rem);
+    margin-top: clamp(2rem, 7.5dvw, 3rem);
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-evenly;
+}
+#nav-buttons a {
+    color: #CE66B1;
+    font-weight: bold;
+}
+#page-details {
+    text-align: center;
+    margin-top: clamp(.75rem, 2.5dvw, 1rem);
+    line-height: 2rem;
+}
+footer {
+    margin-top: clamp(2rem, 7.5dvw, 3rem);
+    margin-bottom: clamp(2rem, 7.5dvw, 3rem);
+    text-align: center;
+}
+#footer-credit {
+    margin-top: 1rem;
+}
