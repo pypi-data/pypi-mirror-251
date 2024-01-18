@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+tests/test_events.py
+tests/test_plugin.py
+vedro_telemetry/__init__.py
+vedro_telemetry/_send_request.py
+vedro_telemetry/_utils.py
+vedro_telemetry/_vedro_telemetry.py
+vedro_telemetry/events.py
+vedro_telemetry/py.typed
+vedro_telemetry.egg-info/PKG-INFO
+vedro_telemetry.egg-info/SOURCES.txt
+vedro_telemetry.egg-info/dependency_links.txt
+vedro_telemetry.egg-info/requires.txt
+vedro_telemetry.egg-info/top_level.txt
