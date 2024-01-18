@@ -1,0 +1,2 @@
+[console_scripts]
+cleanup = bb_cleanup.command:main
