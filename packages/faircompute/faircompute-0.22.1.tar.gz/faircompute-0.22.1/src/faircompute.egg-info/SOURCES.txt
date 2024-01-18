@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/fair/__init__.py
+src/fair/client.py
+src/faircompute.egg-info/PKG-INFO
+src/faircompute.egg-info/SOURCES.txt
+src/faircompute.egg-info/dependency_links.txt
+src/faircompute.egg-info/requires.txt
+src/faircompute.egg-info/top_level.txt
