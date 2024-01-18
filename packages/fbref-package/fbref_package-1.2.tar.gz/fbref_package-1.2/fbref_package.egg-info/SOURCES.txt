@@ -1,0 +1,9 @@
+README.md
+setup.py
+fbref_package/__init__.py
+fbref_package/function_package.py
+fbref_package.egg-info/PKG-INFO
+fbref_package.egg-info/SOURCES.txt
+fbref_package.egg-info/dependency_links.txt
+fbref_package.egg-info/requires.txt
+fbref_package.egg-info/top_level.txt
