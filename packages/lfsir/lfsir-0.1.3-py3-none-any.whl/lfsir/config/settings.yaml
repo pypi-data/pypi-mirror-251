@@ -1,0 +1,8 @@
+# Package Name
+package_name: LFSIR
+
+# Years (list of years or range in for of: "first_year - last_year")
+years: "1384-1401"
+
+# Local Settings
+local_settings: config/lfsir_settings.yaml
