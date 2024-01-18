@@ -1,0 +1,8 @@
+LICENSE
+README.md
+confdb.py
+setup.py
+ConfDB.egg-info/PKG-INFO
+ConfDB.egg-info/SOURCES.txt
+ConfDB.egg-info/dependency_links.txt
+ConfDB.egg-info/top_level.txt
