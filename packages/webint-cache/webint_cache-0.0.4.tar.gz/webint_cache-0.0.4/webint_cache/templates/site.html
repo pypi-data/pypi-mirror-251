@@ -1,0 +1,712 @@
+$def with (url, details, audits, a11y, manifest)
+$ short_title = str(url).removeprefix("@").removeprefix("https://")
+$# var title = short_title
+
+$ axes = ["identity", "authentication", "posts", "syndication", "posting UI",
+$         "navigation", "search", "aggregation", "interactivity", "security",
+$         "responses"]
+$ statuses = ["pass", "maybe", "fail"]
+
+$def render_uninterpreted(title, object, type):
+    <div class=uninterpreted>
+    <a href=//microformats.org/wiki/$title.rstrip("=")><img src=/static/specs/microformats.png
+    style=float:right;height:2em alt="microformats logo"></a>
+    <p><em>Uninterpreted <code>$title</code> $type</em>:</p>
+    <dl>
+    $for key, values in sorted(object.items()):
+        <dt>$key</dt>
+        $if not isinstance(values, list):
+            $ values = [values]
+        $for value in values:
+            <dd>
+            $if type == "links":
+                $uri(value).minimized
+            $elif type == "properties":
+                $value
+            </dd>
+    </dl>
+    </div>
+
+$ card = details["card"]
+
+$if featured := card.pop("featured", [None])[0]:
+    <img src=$featured style=width:100%>
+
+$ all_urls = []
+$ rels = details["mf2json"]["rels"]
+
+$ meta_props = {}
+$ items = details["mf2json"]["items"]
+$if items and items[-1]["source"] == "metaformats":
+    $ meta_props = items[-1]["properties"]
+
+<header>
+$ name = card.pop("name", [None])[0]
+$if name:
+    $var title = name
+$elif meta_name := meta_props.get("name"):
+    $var title = meta_name[0]
+<p>
+<a href=$url class=urlbox rel=me>
+<span><img src=/sites/$(url.minimized)/icon.png style=height:1em;width:1em title="\
+$if page_title := details.get("title"):
+    $page_title\
+">
+$if details["domain"]["hsts"]:
+    <span class=pass><strong>https://</strong></span>
+$elif url.scheme == "https":
+    <span class=pass>https://</span>
+$else:
+    <span class=fail>http://</span>
+<small
+$if whois_created := details.get("whois_created", None):
+    title="$whois_created"
+    $ years_held = (pendulum.now() - pendulum.parse(whois_created)).years
+    $if years_held < 1:
+        $ whois_color = "red"
+    $elif years_held < 5:
+        $ whois_color = "orange"
+    $elif years_held < 10:
+        $ whois_color = "yellow"
+    $elif years_held < 15:
+        $ whois_color = "green"
+    $elif years_held < 20:
+        $ whois_color = "blue"
+    $elif years_held < 25:
+        $ whois_color = "purple"
+    style="color:$whois_color"
+>$details["domain"]["name"]</small></span></a>
+$if "metaverse" in details:
+    $ hash = details["metaverse"][:5]
+    <small><a href=/the-street#$hash><code>$hash</code></a></small>
+</p>
+
+<p>Accessed $details["accessed"]</p>
+
+<p>
+$ response = details["response"]
+<strong title="initial weight">$response["length"] KB</strong>
+$if audits:
+    / <strong title="total weight">$get_human_size(audits["audits"]["total-byte-weight"]["numericValue"])</strong>
+/ <strong title="response time">
+$if response["time"] < 1:
+    $round(response["time"] * 1000) ms
+$else:
+    $round(response["time"], 2) s
+</strong>
+</p>
+</header>
+
+<div style=font-size:.9em>
+
+$ urls = []
+$ web_sign_in = []
+$if card:
+    <div class=h-card>
+    $# XXX $var title: $:name
+    $ card.pop("family-name", None)
+    $ card.pop("given-name", None)
+    $ nicknames = card.pop("nickname", [])
+    $ orgs = card.pop("org", None)
+    $if photo := card.pop("photo", None):
+        <img src=/sites/$url.minimized/photo.png style=width:100% alt="$name's profile picture">
+    $# XXX <h1 style=margin-bottom:0>$name</h1>
+    $ ipa = card.pop("ipa", None)
+    $ sound = card.pop("sound", None)
+    <p>
+    $if ipa:
+        $ipa[0]
+    $if sound:
+        <button>🗣️</button>
+    </p>
+    $if nicknames:
+        <p style=margin-top:0><small>a.k.a. $", ".join(nicknames)</small></p>
+
+    $ pronouns = card.pop("pronouns", [])
+    $ card.pop("pronoun", None)
+    $if orgs and name == orgs[0]:
+        🧑‍🤝‍🧑
+    $elif pronouns:
+        $if "they" in pronouns[0]:
+            🧑
+        $elif "she" in pronouns[0]:
+            👩
+        $elif "he" in pronouns[0]:
+            👨
+    $else:
+        🧑
+    <small>
+    $if pronouns:
+        $:pronouns[0].replace(" ", "").replace("/", "&thinsp;/&thinsp;")
+    $elif pronouns := card.pop("pronoun", None):
+        $for pronoun in pronouns:
+            $pronoun\
+            $if not loop.last:
+                &thinsp;/&thinsp;\
+    </small>
+    $if bday := card.pop("bday", None):
+        $ year, month, day = re.match("(\d\d\d\d|-)-(\d\d?|-)-(\d\d?|-)", bday[0]).groups()
+        $if year != "-":
+            $ year = int(year)
+        $ month = int(month)
+        $ day = int(day)
+        $ months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun"]
+        $ months += ["Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+        $ n = now()
+        <span title="$months[int(month)-1] $day, $year"
+        $if not (month == n.month and day == n.day):
+            style="opacity:25%"
+        >🎂</span>
+    $if "rel_me" in details:
+        $ details["rel_me"] = details["rels"].pop("me", [])  # TODO REMOVE
+    $ urls = set(uri(u).minimized for u in card.pop("url", []) + details["rel_me"])
+    $ reciprocals = set(details.pop("reciprocals", []))
+    $ self_rel_me = f"indieweb.rocks/{url.minimized}"
+    $if self_rel_me in reciprocals:
+        $ urls.discard(self_rel_me)
+        $ reciprocals.discard(self_rel_me)
+        🍄
+    $if orgs:
+        <br><small>🧑‍🤝‍🧑
+        $for org in orgs:
+            $if isinstance(org, dict):
+                $ org_props = org.pop("properties")
+                $if "url" in org_props:
+                    <a href=$org_props["url"][0]>\
+                $org_props["name"][0]\
+                $if "url" in org_props:
+                    </a>\
+            $else:
+                $org\
+            $if not loop.last:
+                ,
+        </small>
+    $if roles := card.pop("role", None):
+        <br><small>
+        $for role in roles:
+            <code>$role</code>\
+            $if not loop.last:
+                ,
+        </small>
+    $if note := card.pop("note", None):
+        <p style=font-size:.75em;hyphens:auto>$note[0]</p>
+    $if categories := card.pop("category", None):
+        <p>🏷️ <small>
+        $for category in categories:
+            <code>\
+            $if isinstance(category, dict):
+                $ cat_props = category.pop("properties")
+                $if "url" in cat_props:
+                    <a href=$cat_props["url"][0]>\
+                $cat_props["name"][0]\
+                $if "url" in cat_props:
+                    </a>\
+            $else:
+                $category\
+            </code>\
+            $if not loop.last:
+                ,
+        </small></p>
+    $ street_address = card.pop("street-address", None)
+    $ locality = card.pop("locality", None)
+    $ region = card.pop("region", None)
+    $ postal_code = card.pop("postal-code", None)
+    $ country_name = card.pop("country-name", None)
+    $if street_address:
+        <p>📍
+        $if street_address:
+            $street_address[0]
+        $ area_line = []
+        $if locality:
+            $ area_line.append(locality[0])
+        $if region:
+            $ area_line.append(region[0])
+        $", ".join(area_line)
+        $if postal_code:
+            $postal_code[0]
+        $if country_name:
+            $country_name[0]
+        </p>
+    $ emails = [e.partition(":")[2] for e in card.pop("email", [])]
+    $ tels = []
+    $for tel in card.pop("tel", []):
+        $if ":" in tel:
+            $tels.append(tel.partition(":")[2])
+        $else:
+            $tels.append(tel)
+    $ keys = set(card.pop("key", []) + rels.pop("pgpkey", []))
+    $ all_urls = list(urls)
+    $for _url in sorted(urls):
+        $if _url.startswith("sms:") or _url.startswith("callto:"):
+            $ tel = _url.partition(":")[2]
+            $if tel not in tels:
+                $ tels.append(tel)
+            $urls.remove(_url)
+        $elif _url.startswith("mailto:"):
+            $ email = _url.partition(":")[2]
+            $if email not in emails:
+                $ emails.append(email)
+            $urls.remove(_url)
+    $if emails:
+        <ul class=elsewhere>
+        $for email in emails:
+            <li>📧 <small><a href=mailto:$email>$email</a></small>
+            $if "gravatars" in details:
+                $if gravatar := details["gravatars"].pop(email, None):
+                    <a href=//www.gravatar.com/$gravatar><img style=height:1em
+                    src=//www.gravatar.com/avatar/$(gravatar).jpg></a>
+            </li>
+            $ web_sign_in.append(email)
+        </ul>
+    $if tels:
+        <ul class=elsewhere>
+        $for tel in tels:
+            <li>📱 <small>$format_phonenumber(tel)</small><br>
+            <small><a href=callto:$tel>call</a> <a href=sms:$tel>message</a></small>
+            </li>
+            $ web_sign_in.append(tel)
+        </ul>
+    $if keys:
+        <p>🔐
+        $for key in keys:
+            $key
+            $if not loop.last:
+                ,
+            $ web_sign_in.append(uri(key).minimized)
+        </p>
+
+    $def render_rel_me(silo_name, domain, profile_pattern, user):
+        $ path = re.sub(r"(\(.+\))", user, profile_pattern).replace("\\", "")
+        <a href=/$domain title=$silo_name><img src=/sites/$domain/icon.png
+        style=height:1em></a> <a href=https://$domain/$path>$user</a>
+
+    $ supported_web_signin_silos = ["github.com", "twitter.com"]
+    $if urls:
+        $for _url in sorted(urls):
+            $if _url.startswith(url.minimized):
+                $ urls.remove(_url)
+                $continue
+        <ul class=elsewhere>
+        $for _url in sorted(urls):
+            $if _url in reciprocals:
+                $ urls.remove(_url)
+                <li>
+                $if silo := get_silo(_url):
+                    $:render_rel_me(*silo)
+                $else:
+                    $_url
+                ☑️
+                </li>
+                $if _url.partition("/")[0] in supported_web_signin_silos:
+                    $ web_sign_in.append(_url)
+        $for _url in sorted(urls):
+            $if silo := get_silo(_url):
+                $ urls.remove(_url)
+                <li>$:render_rel_me(*silo)</li>
+        $for _url in sorted(urls):
+            <li>\
+            $if _url.endswith(".onion"):
+                🧅 <a href=http://$_url>$(_url[:12])&hellip;</a></li>
+            $else:
+                <a href=//$_url>$_url</a></li>
+        </ul>
+    $ card.pop("uid", None)  # FIXME: what is it good for?
+    $if card:
+        $:render_uninterpreted("h-card", card, "properties")
+    </div>
+    $if payments := rels.pop("payment", None):
+        <h3>Payment</h3>
+        <ul>
+        $for payment in payments:
+            $ payment_url = uri(payment)
+            <li><img src=/sites/$payment_url.host/icon.png><a href=$payment>$payment_url</a></li>
+        </ul>
+$else:
+    $if meta_props:
+        $if meta_photo := meta_props.get("photo"):
+            <img style=width:100% src=$meta_photo[0]><br>
+        $if meta_summary := meta_props.get("summary"):
+            <p>$meta_summary[0]</p>
+        $if meta_content := meta_props.get("content"):
+            <div>$meta_content[0]</div>
+    <p>No <a href=https://indieweb.org/representative_h-card>representative
+    card</a> found.
+    $if meta_props:
+        Falling back to <a href=//microformats.org/wiki/metaformats>metaformats</a>.
+    </p>
+
+$ license = rels.pop("license", None)
+$if license:
+    <p><a href=$license[0]>
+    $if cc := re.match(r"https://creativecommons.org/licenses/([a-z-]+)/(\d.\d)", license[0]):
+        $ license, version = cc.groups()
+        <span title="CC $license.upper() $version">
+        <img class=cclicense src=/static/cc/cc.svg alt="Creative Commons logo">\
+        $for part in license.split("-"):
+            <img class=cclicense src=/static/cc/$(part).svg \
+            alt="Creative Commons $(part) license logo">\
+        </span>
+    $else:
+        Licensed $license[0].
+    </a></p>
+
+$if "search_url" in details:
+    $ search_url, search_query_name = details["search_url"]
+    <form action=$search_url method=get>
+    <input type=text name=$search_query_name>
+    <button>Search</button>
+    </form>
+    $ rels.pop("search")
+
+$if manifest:
+    $ bgcolor = manifest.get("background_color", "none")
+    <div style="background-color:$bgcolor;height:3em;width:100%"></div>
+
+$ auth_ep = rels.pop("authorization_endpoint", None)
+$ token_ep = rels.pop("token_endpoint", None)
+$ ticket_ep = None
+$ indieauth_metadata = details.pop("indieauth_metadata", None)
+$ openid_delegate = rels.pop("openid.delegate", None)
+$ openid_server = rels.pop("openid.server", None)
+$if indieauth_metadata:
+    $ auth_ep = indieauth_metadata.get("authorization_endpoint", None)
+    $ token_ep = indieauth_metadata.get("token_endpoint", None)
+    $ ticket_ep = indieauth_metadata.get("ticket_endpoint", None)
+
+$if auth_ep:
+    <p class=pass>Supports
+$else:
+    <p class=fail>Does not support
+<a href=/indieauth><img src=/static/specs/indieauth.svg style=height:1.5em;opacity:25%> IndieAuth</a>\
+$if auth_ep:
+    $if token_ep:
+         with a <a href=//indieauth.spec.indieweb.org/#token-endpoint>token endpoint</a>\
+        $if ticket_ep:
+             and a <a href=//indieweb.org/IndieAuth_Ticket_Auth#Create_the_IndieAuth_ticket>ticket endpoint</a>\
+.
+</p>
+
+$# $if auth_ep and not indieauth_metadata:
+$#     <p class=NOTE><code>rel=authorization_endpoint</code> is deprecated, leave
+$#     it for now but start using <code>rel=indieauth-metadata</code> instead
+$#     <sup><a href=https://indieauth.spec.indieweb.org/\
+$#     #changes-from-26-november-2020-to-this-version-li-1>read more</a></sup></p>
+
+$ authn = [uri(authn).minimized for authn in rels.pop("authn", [])]
+$if web_sign_in:
+    <p class=pass>Supports <a href=https://microformats.org/wiki/web_sign-in>web sign-in</a>.</p>
+    <ul>
+    $for web_sign_in_endpoint in web_sign_in:
+        $if authn and web_sign_in_endpoint not in authn:
+            $continue
+        <li>$web_sign_in_endpoint</li>
+    </ul>
+
+$# $if openid_delegate and openid_server:
+$#     <p class=NOTE>OpenID <strong>was a protocol</strong> for using a web address
+$#     as an identity to sign-in to websites; it is losing support, <strong>is
+$#     effectively dead</strong> (versions 1 & 2 are both deprecated, sites are
+$#     dropping support), and <strong>has been replaced on the IndieWeb with
+$#     web-sign-in and IndieAuth</strong>. <sup><a
+$#     href=https://indieweb.org/OpenID>read more</a></sup></p>
+
+$ webmention_ep = rels.pop("webmention", None)
+$if webmention_ep:
+    <p class=pass>Supports
+$else:
+    <p class=fail>Does not support
+<a href=//www.w3.org/TR/webmention/><img src=/static/specs/webmention.svg style=height:1.5em;opacity:25%> Webmention</a> on the homepage.
+</p>
+
+$ micropub_ep = rels.pop("micropub", None)
+$ media_ep = rels.pop("media-endpoint", None)
+$if micropub_ep:
+    <p class=pass>Supports
+$else:
+    <p class=fail>Does not support
+<a href=//micropub.spec.indieweb.org><img src=/static/specs/micropub.svg style=height:1.5em;opacity:25%> Micropub</a>\
+$if micropub_ep and media_ep:
+     with a <a href=//micropub.spec.indieweb.org/#media-endpoint>media endpoint</a>\
+.
+</p>
+
+$ microsub_ep = rels.pop("microsub", None)
+$if microsub_ep:
+    <p class=pass>Supports
+$else:
+    <p class=fail>Does not support
+<a href=//indieweb.org/Microsub><img src=/static/specs/microsub.svg style=height:1.5em;opacity:25%> Microsub</a>.
+</p>
+</div>
+
+$ dependencies = []
+$#details.pop("stylesheets")
+$# $for stylesheet in details.pop("stylesheets"):
+$#     $if not stylesheet.startswith(url.normalized):
+$#         $ dependencies.append(stylesheet)
+$# $for script in details.pop("scripts"):
+$#     $if "src" in script:
+$#         $if not script["src"].startswith(url.normalized):
+$#             $ dependencies.append(script["src"])
+
+$# <h2>Media</h2>
+$#
+$# <h3>Stylesheets</h3>
+$# $if details["stylesheets"]:
+$#     <ol>
+$#     $for stylesheet in details["stylesheets"]:
+$#         <li>$uri(stylesheet).normalized</li>
+$#     </ol>
+$# $else:
+$#     <p><em>No external stylesheets.</em></p>
+$# $# TODO inline stylesheets
+$#
+$# <h3>Scripts</h3>
+$# $ scripts = details.pop("scripts")
+$# $if scripts:
+$#     <!--p class=NOTE>Some users have scripting turned off. See
+$#     <a href=https://indieweb.org/js;dr>js;dr</a>.</p-->
+$#     <ul>
+$#     $for script in scripts:
+$#         <li>
+$#         $if "src" in script:
+$#             $if not script["src"].startswith(url.normalized):
+$#                 $ dependencies.append(script["src"])
+$#             $uri(script["src"]).normalized
+$#         $elif "text" in script:
+$#             $# TODO $if script.get("type", None) == "application/ld+json":
+$#             <details><summary>inline, $len(script["text"]) characters</summary><pre>$script["text"]</pre></details>
+$#         $else:
+$#             Unknown: $script
+$#         </li>
+$#     </ul>
+$# $else:
+$#     <p><em>No scripting.</em></p>
+$#
+$# <h3>Images/Audio/Video</h3>
+$# <p>...</p>
+
+<h2>Privacy</h2>
+$ dns_prefetches = rels.pop("dns-prefetch", None)
+$ preconnects = rels.pop("preconnect", None)
+$if dns_prefetches or preconnects:
+    $if dns_prefetches:
+        $ dependencies.extend(dns_prefetches)
+        <h5>DNS Prefetch</h5>
+        <ol>
+        $for dns_prefetch in dns_prefetches:
+            <li>$dns_prefetch</li>
+        </ol>
+    $if preconnects:
+        $ dependencies.extend(preconnects)
+        <h5>Preconnect</h5>
+        <ol>
+        $for preconnect in preconnects:
+            <li>$preconnect</li>
+        </ol>
+
+$if dependencies:
+    <p class=fail>This site has external dependencies.</p>
+    <ul>
+    $for dependency in dependencies:
+        <li>$dependency</li>
+    </ul>
+$else:
+    <p class=pass>This site is truly independent.</p>
+
+<h2>Accessibility</h2>
+$if a11y:
+    <p class=fail>$len(a11y) accessibility concerns.</p>    
+$else:
+    <p class=pass>There are no accessibility concerns.</p>
+
+<img src=/sites/$(url.minimized)/screenshot.png style=width:100%>
+
+<div>
+$if feed := details.pop("feed", None):
+    $if feed["items"]:
+        <div class=h-feed>
+        $for entry in feed["items"]:
+            $# <pre>$pformat(entry)</pre>
+
+            $# $if details["whostyle"]:
+            $#     <iframe
+            $#     onload="this.style.height=(this.contentWindow.document.body.scrollHeight+25)+'px'"
+            $#     style=border:0;width:100% srcdoc='<link rel=stylesheet href=$uri(details["whostyle"][0]).normalized>
+            $#     <div class=whostyle-$uri(url).minimized.replace(".", "-")>
+
+            <div class=entry>
+            $ entry_url = entry.pop("url", [None])[0]
+            $ entry_type = entry.pop("type")[0].partition("-")[2]
+            $ post_type = entry.pop("post-type", None)
+            $if entry_type == "entry":
+                $if in_reply_to := entry.pop("in-reply-to", None):
+                    $ reply_url = in_reply_to[0]
+                    $if isinstance(reply_url, dict):
+                        $ reply_url = reply_url["properties"]["url"][0]
+                    <p>↩️
+                    $ gh_issue_re = r"https://github.com/(\w+)/([\w-]+)/issues/(\d+)(#([\w-]+))?"
+                    $if gh_match := re.match(gh_issue_re, reply_url):
+                        $ user, repo, issue, _, comment = gh_match.groups()
+                        <img src=/sites/github.com/icon.png style=height:1em alt="GitHub logo">
+                        <a href=https://github.com/$user>$user</a> /
+                        <a href=https://github.com/$user/$repo>$repo</a> /
+                        <a href=https://github.com/$user/$repo/issues>issues</a> /
+                        <a href=https://github.com/$user/$repo/issues/$issue>$issue</a> #
+                        <a href=https://github.com/$user/$repo/issues/$issue#$comment>$comment</a>
+                    $elif tw_match := re.match(r"https://twitter.com/(\w+)/status/(\d+)", reply_url):
+                        $ user, tweet = tw_match.groups()
+                        <img src=/sites/twitter.com/icon.png style=height:1em class="Twitter logo">
+                        <a href=https://twitter.com/$user>$user</a> /
+                        <a href=https://twitter.com/$user/status/$tweet>$tweet</a>
+                    $else:
+                        <a href=$reply_url>$reply_url</a>
+                    </p>
+                $if photo := entry.pop("photo", [None])[0]:
+                    <p><img src=$photo style=max-width:100% alt=$photo /></p>
+                $if entry_name := entry.pop("name", None):
+                    <h3>$entry_name[0]</h3>
+                $if summary := entry.pop("summary", None):
+                    $if entry_name != summary:
+                        <p>$summary</p>
+                $if like_of := entry.pop("like-of", [None])[0]:
+                    <p>♥️ <a href=$like_of>$like_of</a></p>
+                $if content := entry.pop("content", [None])[0]:
+                    $# XXX $if post_type == "article":
+                    $# XXX     <p>$content["value"][:280]&hellip;</p>
+                    $# XXX $else:
+                    <p>$" ".join(content["value"].split()[:50])&hellip;&nbsp;\
+                    <small><a href=$entry_url>read more</a></small></p>
+                $if categories := entry.pop("category", None):
+                    <p><small>
+                    $for category in categories:
+                        <code>$category</code>\
+                        $if not loop.last:
+                            ,
+                    </small></p>
+            $elif entry_type == "event":
+                <p>$entry.pop("name")<br>
+                <small>$entry.pop("start")&thinsp;&ndash;&thinsp;$entry.pop("end", None)</small></p>
+                $ entry.pop("start-str", None)
+                $ entry.pop("end-str", None)
+                <form method=post action=/micropub>
+                <input type=hidden name=in-reply-to value="$entry_url">
+                <select name=rsvp>
+                <option value=yes>Yes</option>
+                <option value=no>No</option>
+                <option value=maybe>Maybe</option>
+                </select>
+                <button>RSVP</button>
+                </form>
+            <p style=text-align:right>\
+            $if author := entry.pop("author", [None])[0]:
+                $if isinstance(author, str):
+                    $author
+                $elif author_url := author.pop("url", None):
+                    $if uri(author_url).minimized not in all_urls:
+                        $author_url
+            <small>
+            $if location := entry.pop("location", None):
+                $if "latitude" in location:
+                    <a href=/map?lat=$location['latitude']&lng=$location['longitude']>\
+                    $location["latitude"], $location["longitude"]</a>
+            $if published := entry.pop("published", [None])[0]:
+                <time value="$published.isoformat()" datetime="$published"
+                class="dt-published">$published.isoformat()</time>
+                $# $get_dt(published).diff_for_humans()
+                $# $if updated := entry.pop("updated", None):
+                $#     $if updated != published:
+                $#         , <small>updated $get_dt(updated).diff_for_humans()</small>
+                $ entry.pop("published-str", None)
+                $ entry.pop("updated", None)
+                $ entry.pop("updated-str", None)
+    
+            $if entry_url:
+                <br><a href=$entry_url>/$uri(entry_url).path.rstrip("/")</a>
+    
+            $if syndication_urls := entry.pop("syndication", None):
+                $for syndication_url in syndication_urls:
+                    $if tw_match := re.match(r"https://twitter.com/(\w+)/status/(\d+)", syndication_url):
+                        $ user, tweet = tw_match.groups()
+                        <a href=https://twitter.com/$user/status/$tweet><img
+                        src=/sites/twitter.com/icon.png style=height:1em class="Twitter logo"></a>
+                        $# <a href=https://twitter.com/$user>$user</a> /
+                        $# <a href=https://twitter.com/$user/status/$tweet>$tweet</a>
+                    $else:
+                        $syndication_url\
+                    $if not loop.last:
+                        ,
+            </small></p>
+            $ entry.pop("uid", None)  # FIXME: what is it good for?
+            $if entry:
+                $:render_uninterpreted(f"h-{entry_type}", entry, "properties")
+            </div>
+            $if details["whostyle"]:
+                </div>'>
+                </iframe>
+        $if rel_next := rels.pop("next", None):
+            <p>next: <a href=$rel_next[0]>$rel_next[0]</a></p>
+        $if rel_prev := rels.pop("prev", None):
+            <p>previous: <a href=$rel_prev[0]>$rel_prev[0]</a></p>
+        </div>
+$else:
+    <p><em>No <a href=https://indieweb.org/feed#How_to_Publish>content
+    feed</a> available.</em></p>
+</div>
+
+$if scores := details.get("scores"):
+    <div style="display:grid;grid-template-columns:50% 50%;">
+
+    $def list_reasons(level):
+        <ul id=level$level>
+        $for n, (status, reason) in enumerate(details["scores"][level-1]):
+            $if status != 3:
+                <li id=$(level)-$axes[n] class=$statuses[status]>$:(reason.capitalize()).</li>
+        </ul>
+    
+    <object id=scoreboard data=/sites/$(url.minimized)/scoreboard.svg></object>
+    <div id=indiemark>
+    <div style="background-color:#222;color:#999;font-size:.8em;padding:.5em 1em;">
+    <h4>Level 1: Use your domain for identity, sign-in, and publishing posts</h4>
+    $:list_reasons(1)
+    <h4>Level 2: Improve your personal identity and post multiple types of posts</h4>
+    $:list_reasons(2)
+    <h4>Level 3: Post and send replies from your own site</h4>
+    $:list_reasons(3)
+    <h4>Level 4: Receive and show comments</h4>
+    $:list_reasons(4)
+    <h4>Level 5: Manage comments</h4>
+    $:list_reasons(5)
+    </div>
+    </div>
+
+    </div>
+</div>
+
+$if rels:
+    $:render_uninterpreted("rel=", rels, "links")
+
+<footer style=font-size:.8em>
+<p><a href=/details/$(url.minimized)>Details (JSON)</a></p>
+
+<form method=post>
+$# $if headers := details.get("headers", None):
+$#     <p>$details["headers"]</p>
+<button>Recrawl</button>
+</form>
+$if not tx.user.session:
+    <form method=get action=/guests/sign-in>
+    <input type=hidden name=me value=$url.normalized>
+    <p>If you are the owner of this site you may sign in to gain access to more tools.</p>
+    <button>Sign in as $details["domain"]["name"]</button>
+    </form>
+$# $if tx.user.session and (tx.user.session["uid"][0] == details["url"]):
+$#     <h3>Site Owner Controls</h3>
+$#     <button>Test</button>
+</footer>
+
+<style>
+h2 {
+  border-bottom: .1em solid #333;
+  font-size: .9em; }
+</style>
