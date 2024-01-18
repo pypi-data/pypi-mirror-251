@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: fairshare
+Version: 0.1.2
+Summary: Fair queue implementation on Python
+Home-page: https://github.com/jerzy-kurowski/fairshare
+Author: Jerzy Kurowski
+Platform: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENCE
+Requires-Dist: redis[hiredis]>=5.0.1
+Requires-Dist: pydantic>=2.5.0
+Provides-Extra: speedups
+Requires-Dist: ujson>=5.2.0; extra == "speedups"
+Requires-Dist: xxhash>=3.0.0; extra == "speedups"
+Requires-Dist: msgpack>=1.0.4; extra == "speedups"
+
+# FairShare - a fair way to queue messages
+
+## Installation
+
+    pip install fairshare
+
+## Usage Example
+
+```python3
+import asyncio
+
+from fairshare.base import BaseMessage
+from fairshare.core import FairQueue
+from fairshare.helpers import init_redis
+
+
+class DownloadRequest(BaseMessage):
+    image_url: str
+
+
+async def main():
+    redis_url = "redis://127.0.0.1:6379/0"
+
+    async with init_redis(redis_url) as client:
+        queue = FairQueue("downloads", client)
+
+        for i in range(2):
+            share_id = f"user-{i + 1}"
+            for _ in range(3):
+                await queue.put(
+                    DownloadRequest(
+                        share_id=share_id,
+                        image_url="https://picsum.photos/200"
+                    )
+                )
+
+        async for message in queue.poll():
+            print(f"Message from {message.share_id}")
+
+
+if __name__ == '__main__':
+    with asyncio.Runner() as runner:
+        runner.run(main())
+
+```
+
+Running the above code should produce the following output:
+
+```bash
+$ python main.py
+
+Output: "Message from user-1"
+Output: "Message from user-2"
+Output: "Message from user-1"
+Output: "Message from user-2"
+Output: "Message from user-1"
+Output: "Message from user-2"
+```

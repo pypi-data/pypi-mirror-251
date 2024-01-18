@@ -1,0 +1,7 @@
+redis[hiredis]>=5.0.1
+pydantic>=2.5.0
+
+[speedups]
+ujson>=5.2.0
+xxhash>=3.0.0
+msgpack>=1.0.4
