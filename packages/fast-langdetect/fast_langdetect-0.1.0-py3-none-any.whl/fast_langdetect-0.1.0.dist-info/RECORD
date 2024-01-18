@@ -1,0 +1,10 @@
+fast_langdetect-0.1.0.dist-info/METADATA,sha256=qz_x5ee4nPRQ9TKxIHFSjyYVLqtJlbIYCxZaHsh9Tyk,2615
+fast_langdetect-0.1.0.dist-info/WHEEL,sha256=N2J68yzZqJh3mI_Wg92rwhw0rtJDFpZj9bwQIMJgaVg,90
+fast_langdetect-0.1.0.dist-info/licenses/LICENSE,sha256=8u28K1sYUp8UBl7JcpqtMJPvs4ppPu1GBrlyuO5FH6c,1065
+fast_langdetect/__init__.py,sha256=rfaGI8wIz1mdJ-w-26DyKrF4OpTTAMIxvj3KV02CpOw,152
+fast_langdetect/ft_detect/LICENSE,sha256=oIjKk21VnOkMTwO_x4t78BrL6tPd0rfN_IwtI3OdrYY,1070
+fast_langdetect/ft_detect/__init__.py,sha256=Se_VYTv93Mw_NvoYYXO0T21_zoBmPc3S7DjfmJ4rD8M,763
+fast_langdetect/ft_detect/infer.py,sha256=5iG3jGseoIi4Js2p0u5pkKYOM_wgCHkyI2Oz8zGzumM,3457
+fast_langdetect/split/__init__.py,sha256=DFnXQT5nZUIC_RYyT61y83Z914lCWFfagccVR3DoFPc,2002
+fast_langdetect/split/cut.py,sha256=qI03tfbF2wGRfVsylHHD9gBpYaOhCG2Ouzh5JogzVg4,2202
+fast_langdetect-0.1.0.dist-info/RECORD,,
