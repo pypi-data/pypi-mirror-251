@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: dashseo
+Version: 0.0.3
+Summary: A set of tools to make Dash SEO-friendly.
+Author-email: Elias Dabbas <eliasdabbas@gmail.com>
+Requires-Dist: dash
+Requires-Dist: markdown
+
