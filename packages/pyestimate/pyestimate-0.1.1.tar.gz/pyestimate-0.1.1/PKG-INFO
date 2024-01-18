@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: pyestimate
+Version: 0.1.1
+Summary: Various algorithms in statistical signal processing
+Home-page: https://github.com/alexishumblet/pyestimate
+Author: Alexis Humblet
+Author-email: alexishumblet@gmail.com
+License: BSD 3-clause
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+License-File: LICENSE
