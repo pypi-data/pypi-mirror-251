@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: ehr
+Version: 0.0.dev1
+Summary: Data Science Toolkit for Healthcare EHR Data
+Author-email: name <author@example.com>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: pathlib
+Requires-Dist: seaborn
+Requires-Dist: wasabi
+Provides-Extra: dev
+Requires-Dist: ipykernel ; extra == 'dev'
+Requires-Dist: pip-tools ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: build ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+
+# EHR: Data Science Toolkit for Healthcare EHR Data
+
+## Goal
+
+OHDSI OMOP CDM analytic tools are mainly R based. This repo aims to approach it using python tools and MIMIC dataset as an example.
+
+
+## References
+* OHDSI 
+    * software tools: https://www.ohdsi.org/software-tools/
+    * CDM v6.0: https://ohdsi.github.io/CommonDataModel/cdm60.html
+* Others
+  * https://realpython.com/pypi-publish-python-package/
