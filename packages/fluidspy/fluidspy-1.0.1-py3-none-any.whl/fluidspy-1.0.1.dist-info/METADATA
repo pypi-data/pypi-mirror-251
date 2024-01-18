@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: fluidspy
+Version: 1.0.1
+Summary: Implementation of CFD methods in Python
+Home-page: https://github.com/AVAniketh0905/fluidspy.git
+Author: A V Aniketh
+Author-email: adimoolamaniketh@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: numpy >=1.24.0
+Requires-Dist: typing >=3.7
+Requires-Dist: scipy >=1.11.4
+Requires-Dist: matplotlib >=3.8.2
+Provides-Extra: dev
+Requires-Dist: twine >=4.0.0 ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: ruff ; extra == 'dev'
+Requires-Dist: black ; extra == 'dev'
+
+# fluidspy
+
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
+Your `fluidspy` is a Python library for Computational Fluid Dynamics (CFD) simulations.
+
+## Features
+
+- Most famous algorithms implemented in python.
+- Animations included!
+- Easy to use!
+
+## Installation
+
+You can install `fluidspy` using pip:
+
+```bash
+pip install fluidspy
+```
+
+## Usage
+
+```python
+import fluidspy
+
+fluidspy.standard.one_dim_constant_heat_transfer()
+
+# Should ouput a matplotlib animation.
+```
+
+## Contributing
+
+If you want to contribute to this project, see `CONTRIBUTING.md` for guidelines.
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+## Contact
+
+AVAniketh0905 (dekomori_sanae09)
+Project Link: [fluidspy](https://github.com/AVAniketh0905/fluidspy)
+
+## Acknowledgments
+
+`Manim` has inspired me a lot!
