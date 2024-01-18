@@ -1,0 +1,2 @@
+[console_scripts]
+exvis = exvis.visualize:main
