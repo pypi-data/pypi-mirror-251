@@ -1,0 +1,15 @@
+Changelog
+=========
+
+0.1.2 - 2024-01-11
+------------------
+
+- Restructured as a mosaik component
+- Active power output in [MW]
+- scale_factor added as input
+- Readme and examples added
+
+0.1.1 - 2023-05-10
+------------------
+
+- Initial release of version implemented by Cornelius Steinbrink
