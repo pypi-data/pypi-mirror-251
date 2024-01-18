@@ -1,0 +1,8 @@
+location_ipfire_db_reader/__init__.py,sha256=dCAUmK-G10lfm1DInkSvUBUKVSDWl1PqNsEKE8fvk5k,74
+location_ipfire_db_reader/database.py,sha256=0l1qJGvLaG3qSWXfkUkEqvVHCG4u6ggV6BDXRGm2tU8,4211
+location_ipfire_db_reader/decompress_db.py,sha256=cVngny-os3FHjTf9x6BYkmW7uzDlpHSsWBYP_lM3eqE,547
+location_ipfire_db_reader/download_db.py,sha256=NBNsDUGUC6oNOZ9MSCK2o4aPvb76BuLVRlR0vy7MZU4,1628
+location_ipfire_db_reader/interpret_location_db.py,sha256=3A1qZAdUljh8ykw-tBhFj4LZ9_KekWl6E5zR2ZY4EzE,10114
+location_ipfire_db_reader-1.0.4.dist-info/METADATA,sha256=r78cMXP2B6hTGa1AUA59GLVSaqfU-cZhS_nYAP5BcjU,2009
+location_ipfire_db_reader-1.0.4.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+location_ipfire_db_reader-1.0.4.dist-info/RECORD,,
