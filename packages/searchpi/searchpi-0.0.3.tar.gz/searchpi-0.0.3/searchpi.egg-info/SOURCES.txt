@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+searchpi/__init__.py
+searchpi/command_executer.py
+searchpi/empty_logger.py
+searchpi/errors.py
+searchpi/main.py
+searchpi.egg-info/PKG-INFO
+searchpi.egg-info/SOURCES.txt
+searchpi.egg-info/dependency_links.txt
+searchpi.egg-info/entry_points.txt
+searchpi.egg-info/requires.txt
+searchpi.egg-info/top_level.txt
