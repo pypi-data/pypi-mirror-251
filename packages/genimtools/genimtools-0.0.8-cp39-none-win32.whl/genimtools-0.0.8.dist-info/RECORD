@@ -1,0 +1,12 @@
+genimtools-0.0.8.dist-info/METADATA,sha256=SRjOvG1xnT0n07rwp_MAkPoApY24Lhx4vANGNAn-QO8,867
+genimtools-0.0.8.dist-info/WHEEL,sha256=r4Te48OdXB4bdfpHUw4V5gHpGacxTrI9wQ9WUHbsGok,90
+genimtools/ailist/__init__.py,sha256=9k3zra9iynNF8R-28WzaZpKI0-eeAGQzDHRtPqzMlK0,32
+genimtools/ailist/__init__.pyi,sha256=chmOWvetAVE_Q_HcXdKrP8pKvXd7yMPRB6gXacl2-0g,757
+genimtools/tokenizers/__init__.py,sha256=G5x74oR9spyxfY841-B1o-vvq_OW4T00CNdHSulSxgg,38
+genimtools/tokenizers/__init__.pyi,sha256=38riMq6ayfhHQqwyuUNngt2cSmp3xvYNhG4TmUc4q90,1131
+genimtools/vocab/__init__.py,sha256=Vqm0lmH6Arj8EMfI2ofYPIKbR9iLDM2kVGPvLRPV8_Q,31
+genimtools/vocab/__init__.pyi,sha256=KtUPVGHZZ8qhW763Yew6NUwQGZ2o8z10kS-sS11miGk,719
+genimtools/__init__.py,sha256=5ugWYdEdec8euKTH61GZj7FB8s9IggctNS2wmghlVqw,25
+genimtools/__init__.pyi,sha256=HBQMYXGUSbn7iQ7T7nwo1pOn1sKPduJ8LKYOrrpL8RA,102
+genimtools/genimtools.cp39-win32.pyd,sha256=j0J4_HnVSuMjf9FJtAKQNvUh00DSlUquK93lDWS2dnI,10937856
+genimtools-0.0.8.dist-info/RECORD,,
