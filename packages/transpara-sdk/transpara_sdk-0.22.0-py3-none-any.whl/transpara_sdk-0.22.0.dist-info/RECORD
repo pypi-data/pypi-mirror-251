@@ -1,0 +1,10 @@
+transpara/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+transpara/logging_config.py,sha256=qZDyDPBkguEe0wOFkLy1tTUHD6IuXvMlXMfxJXeSlDc,2755
+transpara/tlogging.py,sha256=hcMa6gO51g3bVzMXXjx48NvP8KPHTPaHP7jj8yDveFI,14487
+transpara/tracing.py,sha256=gvC1dC8t9iVyECo08q6f4zovLDPNpsd83LOgIWVgSqQ,6838
+transpara/internal/settings.py,sha256=i93pV7GCOXiYuJEa27AydhqL3K7CgnOiTizRE9Mqxw4,2875
+transpara_sdk-0.22.0.dist-info/LICENSE.txt,sha256=SFa3XQXFrF4dH_oJ9iMmj5z-tLbFRk04YTVO9-py-1A,797
+transpara_sdk-0.22.0.dist-info/METADATA,sha256=SGkKSdVtIfeOvnVDK6sZQuH3kpkttFblEvXxNkmVbUI,487
+transpara_sdk-0.22.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+transpara_sdk-0.22.0.dist-info/top_level.txt,sha256=NoHYkMFupBQ59GJ7HNPdxL6UwP0H0m1MiVLuxq0lF28,10
+transpara_sdk-0.22.0.dist-info/RECORD,,
