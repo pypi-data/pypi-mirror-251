@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: electricalsim_opf_quadratic
+Version: 1.3
+Summary: Optimal Power Flow calculation with quadratic costs for the Electrical Grid Simulator (EGS)
+Project-URL: Homepage, https://github.com/aloytag/electricalsim-opf-quadratic
+Project-URL: Bug Tracker, https://github.com/aloytag/electricalsim-opf-quadratic/issues
+Project-URL: Repository, https://github.com/aloytag/electricalsim-opf-quadratic
+Author-email: "Dr. Ing. Ariel S. Loyarte" <aloyarte@frsf.utn.edu.ar>
+License: MIT
+License-File: LICENSE
+Keywords: Electrical Grid Simulator,electrical networks,energy,optimal power flow,pandapower,power systems,simulation
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: electricalsim>=0.0.8.0
+Description-Content-Type: text/markdown
+
+# electricalsim-opf-quadratic
+
+Extension for solving the Optimal Power Flow calculation (OPF) with quadratic costs for the [Electrical Grid Simulator (EGS)](https://github.com/aloytag/electrical-grid-simulator).
+
+This extension uses the `pandapower` capabilities for OPF through the `PYPOWER` solver, according to the `runopp()` and `rundcopp()` functions (AC OPF and DC OPF). For more details, see the `pandapower` documentation [here](https://pandapower.readthedocs.io/en/latest/opf.html).
+
+## Intallation & updates
+
+Using `pip`:
+
+```bash
+pip install electricalsim-opf-quadratic -U
+```
+
+On MS Windows you may prefer:
+```bash
+python -m pip install electricalsim-opf-quadratic -U
+```
