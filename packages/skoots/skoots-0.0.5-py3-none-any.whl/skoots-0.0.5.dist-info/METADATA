@@ -1,0 +1,90 @@
+Metadata-Version: 2.1
+Name: skoots
+Version: 0.0.5
+Summary: SKeletOn ObjecT Segmentation (SKOOTS)
+Home-page: https://github.com/buswinka/skoots
+Author: Chris Buswinka
+Author-email: buswinka@g.harvard.edu
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: bism >=0.0.6
+Requires-Dist: click >=8.1.3
+Requires-Dist: Cython >=0.29.34
+Requires-Dist: docutils >=0.19
+Requires-Dist: furo >=2023.3.27
+Requires-Dist: gunpowder >=1.2.2
+Requires-Dist: h5py >=3.8.0
+Requires-Dist: imagecodecs >=2021.8.26
+Requires-Dist: imageio >=2.26.0
+Requires-Dist: ipython >=8.13.1
+Requires-Dist: ipython-genutils >=0.2.0
+Requires-Dist: ipywidgets >=8.0.6
+Requires-Dist: kiwisolver >=1.4.4
+Requires-Dist: llvmlite >=0.40.0
+Requires-Dist: Markdown >=3.4.3
+Requires-Dist: markdown-it-py >=2.2.0
+Requires-Dist: matplotlib >=3.7.1
+Requires-Dist: matplotlib-inline >=0.1.6
+Requires-Dist: mpmath >=1.3.0
+Requires-Dist: mypy-extensions >=1.0.0
+Requires-Dist: myst-nb >=0.17.2
+Requires-Dist: myst-parser >=0.18.1
+Requires-Dist: numba >=0.57.0
+Requires-Dist: numcodecs >=0.11.0
+Requires-Dist: numpy >=1.23.5
+Requires-Dist: pandas >=1.5.3
+Requires-Dist: pandocfilters >=1.5.0
+Requires-Dist: Pillow >=10.2.0
+Requires-Dist: pip >=23.3.2
+Requires-Dist: psutil >=5.9.5
+Requires-Dist: scikit-image >=0.19.3
+Requires-Dist: scipy >=1.10.1
+Requires-Dist: setuptools >=66.0.0
+Requires-Dist: Sphinx >=5.3.0
+Requires-Dist: sphinx-autodoc-typehints >=1.23.0
+Requires-Dist: sphinx-basic-ng >=1.0.0b1
+Requires-Dist: sphinx-copybutton >=0.5.2
+Requires-Dist: sphinx-design >=0.4.1
+Requires-Dist: sphinx-inline-tabs >=2023.4.21
+Requires-Dist: sphinxcontrib-applehelp >=1.0.4
+Requires-Dist: sphinxcontrib-devhelp >=1.0.2
+Requires-Dist: sphinxcontrib-htmlhelp >=2.0.1
+Requires-Dist: sphinxcontrib-jsmath >=1.0.1
+Requires-Dist: sphinxcontrib-qthelp >=1.0.3
+Requires-Dist: sphinxcontrib-serializinghtml >=1.1.5
+Requires-Dist: sympy >=1.11.1
+Requires-Dist: tensorboard >=2.12.3
+Requires-Dist: tensorboard-data-server >=0.7.0
+Requires-Dist: termcolor >=2.3.0
+Requires-Dist: tifffile >=2021.7.2
+Requires-Dist: torch >=2.1.0
+Requires-Dist: torchvision >=0.14.1
+Requires-Dist: tqdm >=4.64.1
+Requires-Dist: wheel >=0.38.4
+Requires-Dist: yacs >=0.1.8
+Requires-Dist: zarr >=2.14.2
+Requires-Dist: zipp >=3.15.0
+Requires-Dist: kimimaro >=3.0.0
+
+![](resources/skooting_in_progress_v2.png)
+
+# SKOOTS
+
+<img src="resources/overview.png" align="center" width="150px"/> 
+SKeletOn ObjecT Segmentation - 2D/3D instance segmentation of arbitrary biomedical images.
+
+## <img src="resources/installation.png" align="center" width="150px"/>
+
+<!-- start installation -->
+To install, make sure pyTorch 2.1 is installed with CUDA support.
+
+```bash
+pip install skoots
+```
+
+Documentation: skoots.readthedocs.io
+
+BioRxiv: https://www.biorxiv.org/content/10.1101/2023.05.05.539611v1
+

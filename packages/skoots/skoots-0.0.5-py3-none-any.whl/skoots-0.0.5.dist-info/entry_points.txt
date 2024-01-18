@@ -1,0 +1,4 @@
+[console_scripts]
+skoots = skoots.__main__:main
+skoots-train = skoots.train.__main__:main
+skoots-validate = skoots.validate.__main__:main
