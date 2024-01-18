@@ -1,0 +1,6 @@
+# Include all directories and files
+include *
+
+# Exclude some directories and files
+exclude some_directory/
+exclude *.txt

@@ -1,0 +1,9 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/GWASkit/__init__.py
+src/GWASkit.egg-info/PKG-INFO
+src/GWASkit.egg-info/SOURCES.txt
+src/GWASkit.egg-info/dependency_links.txt
+src/GWASkit.egg-info/top_level.txt
