@@ -1,0 +1,2 @@
+[console_scripts]
+remote_etc_hosts = remote_etc_hosts.cli:main

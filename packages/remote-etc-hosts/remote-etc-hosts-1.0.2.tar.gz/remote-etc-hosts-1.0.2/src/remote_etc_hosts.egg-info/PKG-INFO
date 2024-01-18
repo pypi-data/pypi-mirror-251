@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: remote-etc-hosts
+Version: 1.0.2
+Summary: A simple package for handling `/etc/hosts` in remote hosts
+Home-page: https://github.com/Jane1Q94/remote-etc-hosts
+Author: Jane1Q94
+Author-email: janblue1q943@gmail.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: paramiko
+Requires-Dist: fire<1
