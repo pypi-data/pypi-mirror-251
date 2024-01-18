@@ -1,0 +1,10 @@
+dev/__init__.py,sha256=VZyMgBMH3YXS8H7tBSJMQjTpM5CdATW1gahaaAwXmoI,34131
+dev/tests.py,sha256=WCclfwiMkyxEeUOC8dIEpS5C6cRZI-9jLiDNfAmEAcY,4729
+dev/xtracto.config.py,sha256=RF8HD-GnFXbfkzbX0vhwuXumhZYrur1y782a-rErA1I,74
+xtracto/__init__.py,sha256=VZyMgBMH3YXS8H7tBSJMQjTpM5CdATW1gahaaAwXmoI,34131
+xtracto/_images.py,sha256=3PDy0XkkmKWoJ1lp_B3hyGEVedkF9Q2HcSi0UU6ynrc,1604430
+xtracto-0.0.3.dist-info/LICENSE.txt,sha256=xWogBBynLGmaLOmI85TT3l_KHDdYEvRGFzikIepd5B8,1071
+xtracto-0.0.3.dist-info/METADATA,sha256=AVtm49NY-xp-TXhQAkufmTsvzSHMFEX4et-0Uz9ig2I,3317
+xtracto-0.0.3.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+xtracto-0.0.3.dist-info/top_level.txt,sha256=8mNo3wCdAFfXx6OW-ofN7M5TZkBg0-04TOV1VpzdQSQ,12
+xtracto-0.0.3.dist-info/RECORD,,
