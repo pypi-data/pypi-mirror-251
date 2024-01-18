@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: streamlit-selectable-textarea
+Version: 0.1.2
+Summary: Streamlit components with selectable text fields
+Home-page: https://github.com/Kaping/streamlit-Selectable-Text-Area
+Author: yeom_soohyung
+Author-email: yeomsoo@tecace.com
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: streamlit (>=0.63)
+Provides-Extra: devel
+Requires-Dist: wheel ; extra == 'devel'
+Requires-Dist: pytest (==7.4.0) ; extra == 'devel'
+Requires-Dist: playwright (==1.39.0) ; extra == 'devel'
+Requires-Dist: requests (==2.31.0) ; extra == 'devel'
+Requires-Dist: pytest-playwright-snapshot (==1.0) ; extra == 'devel'
+Requires-Dist: pytest-rerunfailures (==12.0) ; extra == 'devel'
+
+# streamlit-selectable-textarea
+
+Streamlit components with selectable text fields
+
+## Installation instructions
+
+```sh
+pip install streamlit-selectable-textarea
+```
+
+## Usage instructions
+
+```python
+import streamlit as st
+from st_selectable_textarea import st_selectable_textarea
+
+text_input = st.text_input("Enter a text", value="Streamlit")
+
+dragged_area = st_selectable_textarea(value=text_input, key="foo")
+
+st.write(label="result", value=dragged_area)
+
+```
