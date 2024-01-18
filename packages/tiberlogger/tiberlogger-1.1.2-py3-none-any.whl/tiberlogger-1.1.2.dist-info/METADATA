@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: tiberlogger
+Version: 1.1.2
+Summary: Common logging routine for Tiber Health Python  scripts and appplications
+Home-page: https://github.com/tiberhealth/TiberLogger
+Author: Tiber Health Innovations
+Author-email: tiber-tools@tiberhealth.com
+License-File: LICENSE
+
+Tiber Logger is a common Python package to assist with a common logging routine for Tiber Health scripts and applications
