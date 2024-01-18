@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+nyaruko/main.py
+nyaruko.egg-info/PKG-INFO
+nyaruko.egg-info/SOURCES.txt
+nyaruko.egg-info/dependency_links.txt
+nyaruko.egg-info/entry_points.txt
+nyaruko.egg-info/requires.txt
+nyaruko.egg-info/top_level.txt
