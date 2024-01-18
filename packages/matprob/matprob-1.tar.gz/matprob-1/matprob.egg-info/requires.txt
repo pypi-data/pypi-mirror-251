@@ -1,0 +1,4 @@
+pyperclip
+sklearn
+numpy
+IPython
