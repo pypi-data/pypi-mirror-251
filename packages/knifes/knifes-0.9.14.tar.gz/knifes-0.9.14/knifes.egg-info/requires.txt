@@ -1,0 +1,6 @@
+python-decouple
+validators
+prompt_toolkit
+attrs
+cattrs
+httpx[http2]
