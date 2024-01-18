@@ -1,0 +1,9 @@
+simplelogin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+simplelogin/alias.py,sha256=L8TP5hWqnAtfgTgdoGKPQz_qg8xPmZ3qtxlRG95TpDs,5369
+simplelogin/auth.py,sha256=PFuzYSkIKJqKFMMiOIV9uE2ub_gA_UvvT8w8fmBUoTg,2013
+simplelogin/main.py,sha256=XPz5e4RNFy5T4xvVW66enWoChTCO6jYzQ60DJoW06h4,5703
+simplelogin/settings.py,sha256=HdEzdzh8Ac4MQ8zSunoFMR06WIzEB0BTH6EPaWOn58w,1478
+simplelogin-0.1.1.dist-info/LICENSE.md,sha256=XJnSbed9GD8KPrXFKSOXIKwZ38G5JRM7XpygDiaHJis,1062
+simplelogin-0.1.1.dist-info/METADATA,sha256=AmXLmWQOQztfN7XEHaw9kRIHkhO6NoNynHwfbvNUQ2k,1789
+simplelogin-0.1.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+simplelogin-0.1.1.dist-info/RECORD,,
