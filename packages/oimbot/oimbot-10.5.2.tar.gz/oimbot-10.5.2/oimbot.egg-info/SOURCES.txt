@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+oimbot/__init__.py
+oimbot.egg-info/PKG-INFO
+oimbot.egg-info/SOURCES.txt
+oimbot.egg-info/dependency_links.txt
+oimbot.egg-info/requires.txt
+oimbot.egg-info/top_level.txt
