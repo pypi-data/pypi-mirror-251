@@ -1,0 +1,10 @@
+RikPy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+RikPy/common.py,sha256=_9eMZQASWTplT_miO2Cr8KP9ZerbYb311C0x5AfqZRU,1337
+RikPy/commongoogle.py,sha256=OkZWtptP8jDNhcxhSD1aU7grtozLopcIhY1xKAEzf5c,2982
+RikPy/commonheroku.py,sha256=52Q1uLyvVGz-qd64QEDZBWBsw3-AKxC5EBhXYpFgXYE,11805
+RikPy/commonopenai.py,sha256=onXUBwwuj8JhemoPRXByg0LZfwM1YkfvJG8jnAAu_IU,1376
+RikPy/test.py,sha256=jztHDXr2Zk2mke9YWMncm_ZXtCrE-SWikShsy481bFI,1556
+RikPy-0.2.7.dist-info/METADATA,sha256=9Kd_Y0sv_rWyt9enUFLKjsAd1-RNfcTEqJEOfbt80U0,188
+RikPy-0.2.7.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+RikPy-0.2.7.dist-info/top_level.txt,sha256=_rGEMe67KIkuQgxZZwGBqMjQp6r4x-3DnFadaMHGF6g,6
+RikPy-0.2.7.dist-info/RECORD,,
