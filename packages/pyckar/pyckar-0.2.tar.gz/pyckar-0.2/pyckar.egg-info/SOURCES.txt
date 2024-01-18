@@ -1,0 +1,8 @@
+setup.py
+pyckar/__init__.py
+pyckar/main.py
+pyckar.egg-info/PKG-INFO
+pyckar.egg-info/SOURCES.txt
+pyckar.egg-info/dependency_links.txt
+pyckar.egg-info/entry_points.txt
+pyckar.egg-info/top_level.txt
