@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: rspolib
+Version: 0.1.0
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Summary: Python bindings for the Rust crate rspolib.
+License: MIT
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: Source Code, https://github.com/mondeja/rspolib
+
+# rspolib
+
+[![pypi](https://img.shields.io/pypi/v/rspolib?logo=pypi&logoColor=white)](https://pypi.org/project/rspolib/) [![Bindings docs](https://img.shields.io/badge/bindings-docs-blue?logo=python&logoColor=white)](https://github.com/mondeja/rspolib/blob/master/python/REFERENCE.md)
+
+Python bindings for the Rust crate [rspolib]. Check the [reference](https://github.com/mondeja/rspolib/blob/master/python/REFERENCE.md) for more information.
+
+## Install
+
+[![pyversions](https://img.shields.io/pypi/pyversions/rspolib?logo=python&logoColor=white)](https://pypi.org/project/rspolib/)
+
+```bash
+pip install rspolib
+```
+
+## Usage
+
+### Read and save a PO file
+
+```python
+import rspolib
+
+try:
+    po = rspolib.pofile("path/to/file.po")
+except rspolib.SyntaxError as e:
+    print(e)
+    exit(1)
+
+for entry in po:
+    print(entry.msgid)
+
+po.save("path/to/other/file.po")
+```
+
+### Read and save a MO file
+
+```python
+import rspolib
+
+try:
+    mo = rspolib.mofile("path/to/file.mo")
+except rspolib.IOError as e:
+    print(e)
+    exit(1)
+
+for entry in mo:
+    print(entry.msgid)
+
+mo.save("path/to/other/file.mo")
+```
+
+[rspolib]: https://github.com/mondeja/rspolib
+
