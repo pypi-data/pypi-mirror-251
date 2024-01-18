@@ -1,0 +1,11 @@
+rollnw.cpython-310-x86_64-linux-gnu.so,sha256=Hy99uX6EerrbpNWXHBdyQnM4k2FlpYJKNDiM3ZHHIno,13149400
+rollnw-stubs/model.pyi,sha256=fFQRzNh4y0L4PyjRWMYbcpy-apxVXD71bLcmHWF3-6A,12409
+rollnw-stubs/nwn1.pyi,sha256=fblXifdydnAFQGbo_UuXhPA81pHgmV5PHHhVuGhQ0uc,4128
+rollnw-stubs/__init__.pyi,sha256=d09FIYEUzDbCV5UDOZKn0N6k7ovuonIg4T3-xC4tqcc,88817
+rollnw-stubs/kernel.pyi,sha256=TuHFlprZnrry1V39huXo1JC3eylUsCeHXpn3quddJJY,3788
+rollnw-stubs/script.pyi,sha256=-NZjqCOd1z2VEMRQpjP--f8vHWT8SFJzCh0uiaxGNzM,12689
+rollnw-0.24.dev0.dist-info/WHEEL,sha256=1FEjxEYgybphwh9S0FO9IcZ0B-NIeM2ko8OzhFZeOeQ,152
+rollnw-0.24.dev0.dist-info/top_level.txt,sha256=LoJYRO7WeOw8sRk9BcRdUoGdlSBHXYkyD2M2N-7T1LE,17
+rollnw-0.24.dev0.dist-info/LICENSE,sha256=yjQdNANEe8_t9GwAmqwWoFKxQIscuSRruK2JbkJdCgU,1101
+rollnw-0.24.dev0.dist-info/RECORD,,
+rollnw-0.24.dev0.dist-info/METADATA,sha256=QA3_ZGIrvxGnJXAEsxw_MY78rsTTin3RiiuZURGt8tY,5080
