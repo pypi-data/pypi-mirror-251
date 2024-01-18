@@ -1,0 +1,43 @@
+[project]
+name = "pretix-wallets"
+version = "1.0.1"
+description = "Allow users to save the ticket into wallet apps"
+readme = "README.rst"
+license = {text = "Apache"}
+keywords = ["pretix"]
+authors = [
+    {name = "Robin Ferch", email = "hi@robinferch.me"},
+]
+maintainers = [
+    {name = "Robin Ferch", email = "hi@robinferch.me"},
+]
+
+dependencies = [
+    "google-auth"
+]
+
+[project.entry-points."pretix.plugin"]
+pretix_wallets = "pretix_wallets:PretixPluginMeta"
+
+[project.entry-points."distutils.commands"]
+build = "pretix_plugin_build.build:CustomBuild"
+
+[build-system]
+requires = [
+    "setuptools",
+    "pretix-plugin-build",
+]
+
+[project.urls]
+homepage = "https://github.com/Nachwahl/pretix-wallets"
+repository = "https://github.com/Nachwahl/pretix-wallets"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.dynamic]
+version = {attr = "pretix_wallets.__version__"}
+
+[tool.setuptools.packages.find]
+include = ["pretix*"]
+namespaces = false
