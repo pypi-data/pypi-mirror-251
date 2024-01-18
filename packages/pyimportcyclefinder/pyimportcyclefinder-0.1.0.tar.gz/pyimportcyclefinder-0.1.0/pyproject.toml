@@ -1,0 +1,66 @@
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[project]
+name = "pyimportcyclefinder"
+dynamic = []
+description = "A project built with PDM-Backend"
+authors = [
+    { name = "Michael Gooch", email = "goochmi@gmail.com" },
+]
+requires-python = ">=3.10"
+readme = "README.md"
+dependencies = [
+    "networkx>=3.2.1",
+    "regex>=2023.12.25",
+    "typing-extensions>=4.9.0",
+]
+version = "v0.1.0"
+
+[project.license]
+text = "The Unlicense"
+
+[project.optional-dependencies]
+cli = [
+    "click>=8.1.7",
+]
+extras = [
+    "rich>=13.7.0",
+]
+validation = [
+    "pydantic>1.10",
+    "packaging>=23.2",
+]
+docs = [
+    "sphinx>=7.2.6",
+]
+dev = [
+    "pdm>=2.12.1",
+    "pytest>=7.4.4",
+    "flake8>=7.0.0",
+    "flake8-import-order>=0.18.2",
+    "nox>=2023.4.22",
+    "pylint>=3.0.3",
+]
+test = [
+    "pytest>=7.4.4",
+    "pylint>=3.0.3",
+    "flake8>=7.0.0",
+    "flake8-import-order>=0.18.2",
+    "nox>=2023.4.22",
+]
+
+[project.scripts]
+find-import-cycles = "pyimportcyclefinder.cli:main"
+
+[project.urls]
+Repository = "https://github.com/kotoroshinoto/PyImportCycleFinder"
+
+[tool.pdm.version]
+source = "call"
+getter = "pyimportcyclefinder._get_version:get_version_for_pyproject_toml"
+write_to = "pyimportcyclefinder/_version.py"
+write_template = "__version__ = '{}'"
