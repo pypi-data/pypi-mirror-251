@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: Plugin-Tools
+Version: 0.1.0
+Summary: Python library to help build Flow Launcher plugins.
+Author-email: William McAllister <dev.garulf@gmail.com>
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: typer[all] >=0.9.0
+
