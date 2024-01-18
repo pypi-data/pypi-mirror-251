@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+catsay/__init__.py
+catsay/cat.py
+catsay.egg-info/PKG-INFO
+catsay.egg-info/SOURCES.txt
+catsay.egg-info/dependency_links.txt
+catsay.egg-info/top_level.txt
