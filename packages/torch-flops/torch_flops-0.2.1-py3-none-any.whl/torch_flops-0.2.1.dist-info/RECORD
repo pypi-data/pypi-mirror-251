@@ -1,0 +1,9 @@
+torch_flops/__init__.py,sha256=CnISTfS6eGU0Dcd40GDuRVqJ5UojDX85rWagSXXb_U4,63
+torch_flops/flops_engine.py,sha256=77-xRZF-4lmHPtOiaeYBp734XeRD91fsqlQ1k5XAw9g,15823
+torch_flops/flops_ops.py,sha256=7dvE2GxM5z2nqZoj48wfgAWuo6luUGfWMY56sXdJ5yA,11330
+torch_flops-0.2.1.data/data/README.md,sha256=xpLi93xg4l0JgvVJ24pUXrX7038yXXIovM_chuooVmQ,11410
+torch_flops-0.2.1.dist-info/LICENCE,sha256=b0aufasurpvpRV4Y0cueOH_9ECnp2a8gn9fI2G0E19w,1062
+torch_flops-0.2.1.dist-info/METADATA,sha256=2gDhcwHmKGYn0V7rhuWnxbjR2ArO8BDX3A0cYnKmWVA,13015
+torch_flops-0.2.1.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+torch_flops-0.2.1.dist-info/top_level.txt,sha256=nUAJu5MU_XD6kuF1rH7g__NinYM1zRO9-ms5qCcS4mc,12
+torch_flops-0.2.1.dist-info/RECORD,,
