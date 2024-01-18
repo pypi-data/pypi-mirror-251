@@ -1,0 +1,123 @@
+Metadata-Version: 2.1
+Name: tanco
+Version: 0.0.1
+Summary: A tool for test-driven teaching.
+Maintainer-email: Michal J Wallace <michal.wallace@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2024 Michal J. Wallace
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://tangentcode.com/
+Project-URL: Source, https://github.com/tangentstorm/tanco
+Project-URL: Live Server, https://tanco.tangentcode.com/
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: jwt ~=1.3.1
+Requires-Dist: requests ~=2.31.0
+Requires-Dist: quart ~=0.19.4
+Requires-Dist: hypercorn ~=0.16.0
+
+# tanco
+
+A test-driven teaching environment for programmers.
+
+
+This is a work in progress. There are videos about it on:
+
+https://www.youtube.com/@tangentstream
+
+## Installation
+
+```bash
+# eventually:
+# pip install tanco
+
+# but for now, this is still very alpha stage, so:
+git clone https://github.com/tangentstorm/tanco.git
+cd tanco
+pip install -e .
+```
+
+## setting up the database
+
+Currently expects `tanco.sdb` in the current directory.
+
+You need one copy for the server, and one copy for each challenge attempt.
+(So these should run in separate directories.)
+
+(Eventually on the client side, there will only be one global database
+shared by all attempts on your machine, but because tanco still expects
+the database to be in the current directory, you need multiple copies.)
+
+For now, you have to do this manually, by running the following commands:
+
+```bash
+cd /path/to/tanco-repo
+echo '.read tanco/sql/init.sql' | sqlite3 tanco.sdb 
+```
+
+
+## Using the Client
+
+```bash
+tanco login
+cd /path/to/your/project
+tanco init
+tanco test     # keep doing this until it passes
+git commit    # once the test passes
+tanco next     # to fetch the next test
+```
+
+## Running the Server
+
+First set up a private key, then run quart.
+
+### Private Key
+
+The `tanco login` command lets the command-line client
+log into the server in a multi-user setup.
+
+In this setup, the server uses a private key to sign
+a [json web token](https://jwt.io/).
+
+To set up the private key, do this:
+
+```bash
+cd /path/to/tanco-server
+ssh-keygen -t rsa -b 4096 -m PEM -f tanco_auth_key.pem
+```
+
+This will also create a public key in `tanco_auth_key.pem.pub`.
+This is not currently used for anything.
+
+### Quart server
+
+``bash
+QUART_APP=tanco.app:app quart run # --reload
+``
+
+Note that the above runs the standard asgiref server, and as the message will say:
+
+```
+Please use an ASGI server (e.g. Hypercorn) directly in production 
+```
