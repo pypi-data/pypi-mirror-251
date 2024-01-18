@@ -1,0 +1,3 @@
+[console_scripts]
+amcheck=amcheck.amcheck:cli
+
