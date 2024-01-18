@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+helperdb/__init__.py
+helperdb/helperdb.py
+helperdb.egg-info/PKG-INFO
+helperdb.egg-info/SOURCES.txt
+helperdb.egg-info/dependency_links.txt
+helperdb.egg-info/requires.txt
+helperdb.egg-info/top_level.txt
+tests/__init__.py
+tests/test_database.py
