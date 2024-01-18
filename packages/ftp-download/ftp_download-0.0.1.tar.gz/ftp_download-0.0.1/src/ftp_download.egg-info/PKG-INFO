@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: ftp_download
+Version: 0.0.1
+Summary: Your description of the project
+Home-page: https://github.com/VFLins/ftp_download
+Author: Vitor Ferreira Lins
+Author-email: vflins@live.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: testing
+Requires-Dist: flake8>=7.0.0; extra == "testing"
+Requires-Dist: pytest>=7.4.4; extra == "testing"
+Requires-Dist: pytest-cov>=4.1.0; extra == "testing"
+Requires-Dist: tox>=4.12.0; extra == "testing"
+Requires-Dist: mypy>=1.8.0; extra == "testing"
+
+# ftp_download
+Utilities to download files from ftp servers with minimum dependencies.
+
+Documentation currently in the code.
