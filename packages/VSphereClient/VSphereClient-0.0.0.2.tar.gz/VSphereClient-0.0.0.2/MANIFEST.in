@@ -1,0 +1,10 @@
+include *.md
+include *.cfg
+include *.py
+include *.in
+include *.txt
+include VSphere/
+include VSphere/*
+include VSphere/*.*
+recursive-include examples *.txt *.py
+prune examples/sample?/build
