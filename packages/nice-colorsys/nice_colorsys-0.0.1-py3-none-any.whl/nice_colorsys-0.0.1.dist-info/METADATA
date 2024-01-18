@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: nice_colorsys
+Version: 0.0.1
+Summary: A very small library that may offer a nicer way of working with color systems.
+Author-email: Andrew Tapia <andrew.tapia@uky.edu>
+Project-URL: Homepage, https://github.com/actapia/nice_colorsys
+Project-URL: Bug Tracker, https://github.com/actapia/nice_colorsys
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# nice_colorsys
+
+This is a very small library that may offer a nicer way of working with and
+converting between color systems than the default Python colorsys library.
+
+In this library, a color in each supported color system is represented as a
+`namedtuple` with `to_` methods for converting to different color systems.
+
+## Supported color systems
+
+* RGB (0.0&ndash;1.0)
+* RGB (0&ndash;255) (via [rgb255.py](rgb255.py))
+* HLS
+* HSV
+* YIQ
+* HSLuv (via [nice_hsluv.py](nice_hsluv.py))
+
+## Example
+
+```python
+from nice_colorsys import *
+
+print(hsv(0.5, 1, 1).to_hls())
+
+# Output:
+#
+# hls(hue=0.5, lightness=0.5, saturation=1.0)
+```
