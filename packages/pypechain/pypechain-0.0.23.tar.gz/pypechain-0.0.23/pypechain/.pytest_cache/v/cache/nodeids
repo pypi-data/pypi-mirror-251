@@ -1,0 +1,22 @@
+[
+  "render/contract_test.py::TestOverloading::test_has_events",
+  "render/contract_test.py::TestOverloading::test_notoverloading",
+  "render/contract_test.py::TestOverloading::test_overloading",
+  "render/init_test.py::TestRenderInit::test_render_init",
+  "test/deployment/test_deployment.py::TestNoConstructorContract::test_deployment_with_constructor",
+  "test/deployment/test_deployment.py::TestNoConstructorContract::test_deployment_with_constructor_and_default_signer",
+  "test/overloading/test_overloading.py::TestOverloading::test_overloading",
+  "test/return_types/test_returntypes.py::TestReturnTypes::test_mix_structs_and_primitives",
+  "test/return_types/test_returntypes.py::TestReturnTypes::test_named_single_struct",
+  "test/return_types/test_returntypes.py::TestReturnTypes::test_named_single_value",
+  "test/return_types/test_returntypes.py::TestReturnTypes::test_named_two_mixed_structs",
+  "test/return_types/test_returntypes.py::TestReturnTypes::test_named_two_values",
+  "test/return_types/test_returntypes.py::TestReturnTypes::test_no_name_single_value",
+  "test/return_types/test_returntypes.py::TestReturnTypes::test_no_name_two_values",
+  "test/return_types/test_returntypes.py::TestReturnTypes::test_single_nested_struct",
+  "test/return_types/test_returntypes.py::TestReturnTypes::test_single_simple_struct",
+  "test/return_types/test_returntypes.py::TestReturnTypes::test_two_mixed_structs",
+  "test/return_types/test_returntypes.py::TestReturnTypes::test_two_simple_structs",
+  "test/test_file_recursion.py::test_recursive_json_discovery",
+  "utilities/abi_test.py::TestStructs::test_hyperdrive_structs"
+]
