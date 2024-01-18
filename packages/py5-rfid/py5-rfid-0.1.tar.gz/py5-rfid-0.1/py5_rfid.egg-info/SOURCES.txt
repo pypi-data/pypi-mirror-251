@@ -1,0 +1,10 @@
+LICENSE.txt
+setup.py
+py5-rfid/SimpleMFRC522.py
+py5-rfid/__init__.py
+py5-rfid/mfrc522.py
+py5_rfid.egg-info/PKG-INFO
+py5_rfid.egg-info/SOURCES.txt
+py5_rfid.egg-info/dependency_links.txt
+py5_rfid.egg-info/requires.txt
+py5_rfid.egg-info/top_level.txt
