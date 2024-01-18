@@ -1,0 +1,12 @@
+gunicorn
+Django==4.*
+pycryptodome
+pytz
+pyyaml
+ua-parser
+user-agents
+django-user-agents
+django-bootstrap-v5
+fontawesomefree
+crontab
+ansible-runner
