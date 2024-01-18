@@ -1,0 +1,42 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "webint-cache"
+version = "0.0.11"
+description = "manage resource caching on your website"
+keywords = ["micropub"]
+homepage = "https://ragt.ag/code/projects/webint-cache"
+repository = "https://ragt.ag/code/projects/webint-cache.git"
+documentation = "https://ragt.ag/code/projects/webint-cache/api"
+authors = ["Angelo Gladding <angelo@ragt.ag>"]
+license = "AGPL-3.0-or-later"
+packages = [{include="webint_cache"}]
+
+[tool.pyright]
+reportGeneralTypeIssues = false
+reportOptionalMemberAccess = false
+
+[tool.poetry.plugins."webapps"]
+cache = "webint_cache:app"
+
+[[tool.poetry.source]]
+name = "main"
+url = "https://ragt.ag/code/pypi"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.11"
+webint = ">=0.0"
+svglib = "^1.5.1"
+python-whois = "^0.8.0"
+feedparser = "^6.0.11"
+phonenumbers = "^8.13.27"
+
+[tool.poetry.group.dev.dependencies]
+gmpg = {path="../gmpg", develop=true}
+bgq = {path="../bgq", develop=true}
+newmath = {path="../newmath", develop=true}
+sqlyte = {path="../sqlyte", develop=true}
+webagt = {path="../webagt", develop=true}
+webint = {path="../webint", develop=true}
