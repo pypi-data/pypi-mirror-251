@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: bocoel
+Version: 0.0.1
+Summary: Bayesian Optimization as a Coverage Tool for Evaluating Large Language Models
+Author-email: RenChu Wang <patrick1031wang@gmail.com>
+License: Apache-2.0
+License-File: LICENSE.md
+Requires-Python: <3.11,>=3.10
+Requires-Dist: ax-platform>=0.3.6
+Requires-Dist: botorch>=0.9.5
+Requires-Dist: fire>=0.5.0
+Requires-Dist: gpytorch>=1.11
+Requires-Dist: numba>=0.58.1
+Requires-Dist: numpy>=1.26.3
+Requires-Dist: pandas>=2.1.4
+Requires-Dist: pyyaml>=6.0.1
+Requires-Dist: scikit-learn>=1.3.2
+Requires-Dist: scipy>=1.11.4
+Requires-Dist: structlog>=24.1.0
+Requires-Dist: torch>=2.1.2
+Requires-Dist: typing-extensions>=4.9.0
+Requires-Dist: ujson>=5.9.0
+Provides-Extra: cma
+Requires-Dist: cma>=3.3.0; extra == 'cma'
+Provides-Extra: datasets
+Requires-Dist: datasets>=2.16.1; extra == 'datasets'
+Provides-Extra: index
+Requires-Dist: faiss-cpu>=1.7.4; extra == 'index'
+Requires-Dist: hnswlib>=0.8.0; extra == 'index'
+Provides-Extra: metrics
+Requires-Dist: nltk>=3.8.1; extra == 'metrics'
+Requires-Dist: rouge-score>=0.1.2; extra == 'metrics'
+Requires-Dist: rouge>=1.0.1; extra == 'metrics'
+Requires-Dist: sacrebleu>=2.4.0; extra == 'metrics'
+Provides-Extra: sklearn-extra
+Requires-Dist: scikit-learn-extra>=0.3.0; extra == 'sklearn-extra'
+Provides-Extra: transformers
+Requires-Dist: sentence-transformers>=2.2.2; extra == 'transformers'
+Requires-Dist: transformers>=4.36.2; extra == 'transformers'
+Provides-Extra: visual
+Requires-Dist: dash>=2.14.2; extra == 'visual'
+Requires-Dist: flask>=3.0.0; extra == 'visual'
+Requires-Dist: hiplot>=0.1.33; extra == 'visual'
+Requires-Dist: plotly>=5.18.0; extra == 'visual'
+Description-Content-Type: text/markdown
+
+# BoCoEL
+
+### Bayesian Optimization as a Coverage Tool for Evaluating Large Language Models
