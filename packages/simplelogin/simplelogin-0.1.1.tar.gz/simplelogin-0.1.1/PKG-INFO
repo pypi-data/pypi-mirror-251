@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: simplelogin
+Version: 0.1.1
+Summary: A CLI tool for Simplelogin
+Author: Joseph Demcher
+Author-email: joedemcher@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Requires-Dist: keyring (>=24.3.0,<25.0.0)
+Requires-Dist: questionary (>=2.0.1,<3.0.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Requires-Dist: rich (>=13.7.0,<14.0.0)
+Requires-Dist: validators (>=0.22.0,<0.23.0)
+Description-Content-Type: text/markdown
+
+# Simplelogin CLI
+
+A command line interface for Simplelogin.
+
+## Capabilities
+
+- [x] Login to account (`login`)
+  - [x] Login with MFA
+- [x] Logout (`logout`)
+- [x] Search aliases (`alias`)
+  - [x] Search aliases using [flags](https://github.com/simple-login/app/blob/master/docs/api.md#get-apiv2aliases) (ex. `alias --pinned`)
+- [x] Get user stats (`stats`)
+- [x] Generate custom alias (`create`)
+- [x] Generate random alias (`random`)
+- [x] Delete an alias (`delete`)
+- [x] Disable/enable an alias (`toggle`)
+- [x] `--help` available for all commands
+- [x] Installable via `pip install simplelogin`
+
+## Todos
+
+- [ ] Consolidate `auth.py` into `settings.py` :construction:
+- [ ] Tests
+- [ ] Better commenting
+
+## Contributions
+
+If you would like to contribute in any way feel free to open a [pull request](https://github.com/joedemcher/simplelogin-cli/pulls) or suggest something by opening an [issue](https://github.com/joedemcher/simplelogin-cli/issues).
+
+### How to run
+
+1. [Install Poetry](https://python-poetry.org/docs/#installing-with-pipx)
+2. Clone this repository
+3. Navigate to the base directory
+4. Install the dependencies (`poetry install`)
+5. Run the program (`poetry run python simplelogin_cli/main.py`)
+
