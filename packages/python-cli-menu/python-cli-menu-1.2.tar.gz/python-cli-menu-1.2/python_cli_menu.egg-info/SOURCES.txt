@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.py
+python_cli_menu.egg-info/PKG-INFO
+python_cli_menu.egg-info/SOURCES.txt
+python_cli_menu.egg-info/dependency_links.txt
+python_cli_menu.egg-info/top_level.txt
+pythonclimenu/__init__.py
+pythonclimenu/climenu.py
