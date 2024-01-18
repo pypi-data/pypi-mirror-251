@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: arztalepkutuphanesi
+Version: 0.1.0
+Summary: Epias seffaflik sitesinden Arz Talep verilerini çeken python kutuphanesi
+Author: Tugba Ozkan
+Requires-Dist: pandas
+Requires-Dist: datetime
+Requires-Dist: requests
+
