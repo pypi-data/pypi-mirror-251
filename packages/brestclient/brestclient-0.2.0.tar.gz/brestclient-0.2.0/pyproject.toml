@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "brestclient"
+version = "0.2.0"
+description = "best terminal rest client"
+authors = ["e <skipper224483@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/e9000000000/brestclient"
+
+[tool.poetry.dependencies]
+python = ">=3.11"
+requests = "^2.31.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+clui = 'src.brestclient.command_line_ui:run'
