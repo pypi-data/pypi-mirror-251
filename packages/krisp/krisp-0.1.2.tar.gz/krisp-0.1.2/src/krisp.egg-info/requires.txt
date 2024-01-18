@@ -1,0 +1,8 @@
+pysam
+Bio
+nltk
+prettytable
+pandas
+prettytable
+primjer3-py
+colorama
