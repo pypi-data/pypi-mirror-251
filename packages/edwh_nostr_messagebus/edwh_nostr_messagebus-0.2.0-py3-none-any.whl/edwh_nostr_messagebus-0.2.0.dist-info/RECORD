@@ -1,0 +1,9 @@
+edwh-nostr-messagebus/__about__.py,sha256=axeTa-hWaYQePC9YXuzMVXGCDsL8czwvxUVJ7C7MTsw,130
+edwh-nostr-messagebus/__init__.py,sha256=wSzAK7L5GeCQtdtXceCmO3vn0p3vd6LJU5pmxYFhDqQ,108
+edwh-nostr-messagebus/client.py,sha256=yiWTEoCdZ8dTssJGcZd-IwA4QU2G7jdiXgYS6k5I050,12737
+edwh-nostr-messagebus/config.toml,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+edwh-nostr-messagebus/tasks.py,sha256=ORlPmo67mdz-uMIvnXpPfzYBeaaTsn2Lp0aA1dq3QuY,5577
+edwh_nostr_messagebus-0.2.0.dist-info/METADATA,sha256=yiTR3QxsFK_X7FtvnRDsI_La544Qb8U_4a0GNtIP7vM,1325
+edwh_nostr_messagebus-0.2.0.dist-info/WHEEL,sha256=mRYSEL3Ih6g5a_CVMIcwiF__0Ae4_gLYh01YFNwiq1k,87
+edwh_nostr_messagebus-0.2.0.dist-info/licenses/LICENSE.txt,sha256=fk7GYRcGjSPRCFwLOsrj6ghR5xaFEzJ8CVdcp5_OgyQ,1109
+edwh_nostr_messagebus-0.2.0.dist-info/RECORD,,
