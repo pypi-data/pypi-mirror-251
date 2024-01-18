@@ -1,0 +1,10 @@
+umlizer/__init__.py,sha256=B-qU5RbO06-LhZOUJi3vXuGxIXok0CI5Cbc7XZ5vr88,493
+umlizer/__main__.py,sha256=D-kZetLkD5bXyAmuEcx6KrvGvMvKKGo47JGgttR5zEA,126
+umlizer/class_graph.py,sha256=jSeiONDuEIgBuijKNot5IXO-9Gqxwzvnp4Dg-JdlzuE,8371
+umlizer/cli.py,sha256=vvCg3c32efx2mavmsu4mNG5mpzY6layEspzp4rVhGc8,2030
+umlizer/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+umlizer-0.1.1.dist-info/LICENSE,sha256=3C6sFhJ6UsDiRvj93OWcOWt1ENhgcijLluH5c0wAFv8,1504
+umlizer-0.1.1.dist-info/METADATA,sha256=NdzjWKRpvOXZGKD1xNRndPozwEez5Rs-jZrCGyCO1-s,952
+umlizer-0.1.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+umlizer-0.1.1.dist-info/entry_points.txt,sha256=r8nUrvh04scB4ZDDK9K2Rd3zhK25L1njL3qlTnyE1WY,48
+umlizer-0.1.1.dist-info/RECORD,,
