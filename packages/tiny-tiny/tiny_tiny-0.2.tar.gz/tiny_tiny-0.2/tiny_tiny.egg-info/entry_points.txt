@@ -1,0 +1,3 @@
+[console_scripts]
+tiny_tiny = tiny_tiny:hello
+
