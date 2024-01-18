@@ -1,0 +1,21 @@
+#!/usr/bin/env python3
+
+from games.maze import Maze
+from argparse import ArgumentParser
+
+def main():
+    parser = ArgumentParser()
+    parser.add_argument('--height', required=True, help='The height of the maze.')
+    parser.add_argument('--width',  required=True, help='The width of the maze.')
+    args = parser.parse_args()
+
+    try:
+        maze = Maze(int(args.height), int(args.width))
+        print(maze.make())
+    except ValueError:
+        print("ERROR: Invalid height/width, must be >= 3.")
+    except Exception as e:
+        print(e)
+
+if __name__ == "__main__":
+    main()
