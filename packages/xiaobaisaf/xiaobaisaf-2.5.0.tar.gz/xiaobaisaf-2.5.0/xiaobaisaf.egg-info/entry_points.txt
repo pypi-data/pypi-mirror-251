@@ -1,0 +1,4 @@
+[console_scripts]
+xiaobaicmd = saf.utils.xiaobaicmd:main
+xiaobaimanager = saf.utils.SoftwareManager:main
+
