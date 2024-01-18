@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+gameboy/__init__.py
+gameboy/version.py
+gameboy_python.egg-info/PKG-INFO
+gameboy_python.egg-info/SOURCES.txt
+gameboy_python.egg-info/dependency_links.txt
+gameboy_python.egg-info/top_level.txt
