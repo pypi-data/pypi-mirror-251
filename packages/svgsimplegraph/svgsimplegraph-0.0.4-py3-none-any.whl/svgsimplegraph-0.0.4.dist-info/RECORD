@@ -1,0 +1,17 @@
+svgsimplegraph/__init__.py,sha256=Mpps94dWby3agwCEbKU8laERO6kS8uMxn4nU5Zp59vk,124
+svgsimplegraph/base.py,sha256=4jafAKmavTAnNGEjGPhYtxxoniGIp288QK1mB2K666Y,10349
+svgsimplegraph/bubble_and_arrow.py,sha256=uqqHWDO-L3obU1WJCaAzLNZPC65RH28bSykltw8nbr4,16211
+svgsimplegraph/categorical.py,sha256=C0hFlYXWGipD5rBOJEK90Ms0tWD7sVQmqCFCmgWGx0M,19473
+svgsimplegraph/ribbon.py,sha256=34Cgw1uZlTLAtljJjof-gDszDFa1WLEmXcj-MWxRgdw,14890
+svgsimplegraph/utils.py,sha256=OCBLstzEoEL9QZqzKoOBlQr5hyHrkc4tzrVsYhE5L5U,10103
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_bubble_and_arrow.py,sha256=jDTHq31plVMyUMryvaui4OJyQNF9mLZUisHZMe9eSUE,2778
+tests/test_categorical.py,sha256=Xm-bsNsjWf6DPPLjwQ1pWZbOxOQfilbq-WeY02I2YzE,2882
+tests/test_gist.py,sha256=dMnTSsM_QjcCHnbHgsAtfNsfXylF0XGazeAVBLiGKmY,1700
+tests/test_readme_examples.py,sha256=srmFgI4b6ATlRNNBZzjtKKegFChkH8zA9M8bRZz_1kg,3316
+tests/test_ribbon.py,sha256=GK8-m9piYJ9tAJqq3jtRWnagK0KJuKdEumsnrNh9t5Y,1116
+svgsimplegraph-0.0.4.dist-info/LICENSE,sha256=Ix3cnt1noexLLLqL2ONF37gKlp8I8eRwNuaWExKQ9R8,1072
+svgsimplegraph-0.0.4.dist-info/METADATA,sha256=5oONTOQhr9MrQ4DMIXVTi9sR41JNpeB9zRJb0fHkzEc,7100
+svgsimplegraph-0.0.4.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+svgsimplegraph-0.0.4.dist-info/top_level.txt,sha256=z9cUIFzWw3YVOy8VDO1xG8TY-5wtLG6lFQ1YGl5wrZg,21
+svgsimplegraph-0.0.4.dist-info/RECORD,,
