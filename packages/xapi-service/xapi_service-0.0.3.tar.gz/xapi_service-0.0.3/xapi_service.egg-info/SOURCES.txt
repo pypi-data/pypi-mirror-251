@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+xapi_service/__init__.py
+xapi_service/connect.py
+xapi_service/servers.py
+xapi_service.egg-info/PKG-INFO
+xapi_service.egg-info/SOURCES.txt
+xapi_service.egg-info/dependency_links.txt
+xapi_service.egg-info/top_level.txt
