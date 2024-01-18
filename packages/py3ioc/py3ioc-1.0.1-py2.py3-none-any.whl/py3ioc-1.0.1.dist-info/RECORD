@@ -1,0 +1,8 @@
+py3ioc/__init__.py,sha256=eoZ6GfifbqhMLNzjlqRDVil-yyBkOmVN9ujSgJWNBlY,15
+py3ioc/containers.py,sha256=vAyXwbBklyqboBcQ1V9ojhzRRiEjm42VAwHRNeoehqU,8488
+py3ioc/locators.py,sha256=7PNWP26V4_gXSWXG2P8tv4Wmpd2WCn5mRMrobSIUwDI,3516
+py3ioc/providers.py,sha256=0ni2KuSVTGZREJEAw6ztW12Xqglqo226ns0BjvUwzFc,4009
+py3ioc-1.0.1.dist-info/METADATA,sha256=cC5ImEK_dhSbKwnPD6qRs7XNYMO9hG4zmYz-fq2TtN4,1161
+py3ioc-1.0.1.dist-info/WHEEL,sha256=-G_t0oGuE7UD0DrSpVZnq1hHMBV9DD2XkS5v7XpmTnk,110
+py3ioc-1.0.1.dist-info/top_level.txt,sha256=Qi_b2Ibuqps2RkcR8LWLTlZq3sYrNZ4YipNbJDVmqgU,7
+py3ioc-1.0.1.dist-info/RECORD,,
