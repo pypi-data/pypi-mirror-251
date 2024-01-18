@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: edwh-nostr-messagebus
+Version: 0.2.0
+Summary: EducationWarehouse NOSTR Messagebus
+Project-URL: Documentation, https://github.com/educationwarehouse/edwh-nostr-messagebus#readme
+Project-URL: Issues, https://github.com/educationwarehouse/edwh-nostr-messagebus/issues
+Project-URL: Source, https://github.com/educationwarehouse/edwh-nostr-messagebus
+Author-email: Remco <remco@educationwarehouse.nl>
+License-Expression: MIT
+License-File: LICENSE.txt
+Keywords: education,edwh,nostr
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.11
+Requires-Dist: edwh
+Requires-Dist: monstr
+Requires-Dist: pyinvoke
+Description-Content-Type: text/markdown
+
+# .
+
+[![PyPI - Version](https://img.shields.io/pypi/v/-.svg)](https://pypi.org/project/-)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/-.svg)](https://pypi.org/project/-)
+
+-----
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install -
+```
+
+## License
+
+`-` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
