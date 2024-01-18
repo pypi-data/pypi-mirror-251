@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: whoopi
+Version: 1.0.0
+Summary: Whoopi python SDK
+Home-page: https://github.com/0verread/whoopi-py
+Author: Subhajit Das
+Author-email: iamsubhajit.d@gmail.com
+License: MIT
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+
+# whoopi-py
+whoopi's python sdk
+
+## Usage
+
+### Installation
+```sh
+pip3 install whoopi
+```
+
+### Import Lib
+```python
+from whoopi import Whoopi
+```
+
+### Initialize Client
+```python
+
+whoopi = Whoopi(ptoken='<whoopi-app-token>')
+
+```
+
+### Start tracking API Events
+
+```python
+whoopi.logit(ukey="<unique-value>", method="<API HTTP VERB>", endpoint="<API ENDPOINT>", status="<RESPONSE CODE>")
+```
+
+### Explantion
+
+#### ukey
+
+This is unique key value to track API call usage. It could be userId, event name or anything that trigger that API call.
+
