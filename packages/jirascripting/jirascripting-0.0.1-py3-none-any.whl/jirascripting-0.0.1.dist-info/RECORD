@@ -1,0 +1,16 @@
+__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jirascripting/__init__.py,sha256=Pch40p655sWjmFJUqoKitpFQHAMSrZ5YQWhf33PWFfg,380
+jirascripting/auth_and_headers.py,sha256=4wUfk0fTWSp3RIjuAn6IVdt4-QtbSPLK0k7hKolSFT4,701
+jirascripting/helpers.py,sha256=PV8ARFyiajW98S_UClJSXdq9i0_taLuAc0GJN46B4No,15974
+jirascripting/assignable_users/__init__.py,sha256=0csCGfYLDoXgddT3fwT3dRlhnu3-7eoGJXgV6gWLjCY,126
+jirascripting/assignable_users/get_assignable_users.py,sha256=CNkORuW_f0YYWv7H1ERwuHkT8bGubryYrzCiqiSOkGc,2459
+jirascripting/create_jira_tickets/__init__.py,sha256=sMYaaDKdmQ-YI-o409epXuvHw7B9geimZ1BJXx_oqWA,201
+jirascripting/create_jira_tickets/create_fancy_jira_issue.py,sha256=ufw6SnGJsrjEz7xu3PamsxhIGwTWfaJv-db9ipeRIA0,6725
+jirascripting/create_jira_tickets/create_jira_epic.py,sha256=Ij6Q2ZGLWqaOxyfQvzI6tZu4WKb-xSEAnBsBBLWmSqQ,2159
+jirascripting/create_jira_tickets/create_jira_issue.py,sha256=qwVD6ZD6DAjMZyBfUL0jf7QGmO-Z69p_73ORRpokVsQ,2634
+jirascripting/create_jira_tickets/create_jira_issue_with_parent.py,sha256=EGyA_xAUAIG5pC5fNZIHEy5Uqalokvy_qSpF7lYiqsI,2644
+jirascripting-0.0.1.dist-info/LICENSE,sha256=V2jjNs1HTz4VzlMWs1Ano52yYryHQz8XfgfhtamdLOA,1069
+jirascripting-0.0.1.dist-info/METADATA,sha256=u6u2hTiGbDNLGwQoNzivzmF6QI5kIhGMA76NHIJGuCs,444
+jirascripting-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+jirascripting-0.0.1.dist-info/top_level.txt,sha256=X9Kn5P6OoGDTXtDT-kR1SlIcWt5jNAj-ROFgK7EhSgU,23
+jirascripting-0.0.1.dist-info/RECORD,,
