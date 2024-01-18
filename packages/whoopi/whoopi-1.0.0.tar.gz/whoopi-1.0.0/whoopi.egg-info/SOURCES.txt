@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+whoopi/__init__.py
+whoopi/constants.py
+whoopi/version.py
+whoopi/whoopi.py
+whoopi.egg-info/PKG-INFO
+whoopi.egg-info/SOURCES.txt
+whoopi.egg-info/dependency_links.txt
+whoopi.egg-info/requires.txt
+whoopi.egg-info/top_level.txt
