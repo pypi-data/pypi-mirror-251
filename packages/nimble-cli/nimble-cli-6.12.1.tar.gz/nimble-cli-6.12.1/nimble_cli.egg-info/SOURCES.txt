@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+nimble_cli.egg-info/PKG-INFO
+nimble_cli.egg-info/SOURCES.txt
+nimble_cli.egg-info/dependency_links.txt
+nimble_cli.egg-info/top_level.txt
