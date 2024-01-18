@@ -1,0 +1,8 @@
+README.md
+setup.py
+src/eiyou.py
+src/eiyou.egg-info/PKG-INFO
+src/eiyou.egg-info/SOURCES.txt
+src/eiyou.egg-info/dependency_links.txt
+src/eiyou.egg-info/entry_points.txt
+src/eiyou.egg-info/top_level.txt
