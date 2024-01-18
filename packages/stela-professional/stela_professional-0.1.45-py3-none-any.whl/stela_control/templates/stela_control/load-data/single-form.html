@@ -1,0 +1,15 @@
+{% load i18n %}
+{% load crispy_forms_tags %}
+{{form|crispy}}
+<input type="hidden" name="form-id" value="SingleFormsetForm">
+{% if pk %}
+    <input type="hidden" name="pk" value="{{pk}}">
+{% elif user_id %}
+    <input type="hidden" name="user_id" value="{{user_id}}">
+{% elif model_parent %}
+    <input type="hidden" name="user_id" value="{{model_parent}}">
+{% elif model_child %}
+    <input type="hidden" name="user_id" value="{{model_child}}">
+{% elif schedule %}
+    <input type="hidden" name="schedule" value="{{schedule}}">
+{% endif %}
