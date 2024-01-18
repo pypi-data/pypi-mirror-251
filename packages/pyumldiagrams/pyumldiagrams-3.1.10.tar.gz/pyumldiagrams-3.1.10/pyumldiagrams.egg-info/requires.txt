@@ -1,0 +1,5 @@
+fpdf2==2.7.5
+Pillow==10.0.1
+untangle==1.2.1
+codeallybasic>=1.1.0
+codeallyadvanced>=1.1.0
