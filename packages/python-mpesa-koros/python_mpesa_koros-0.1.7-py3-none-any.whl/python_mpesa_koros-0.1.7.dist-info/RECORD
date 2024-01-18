@@ -1,0 +1,10 @@
+python_mpesa_koros/__ init __.py,sha256=JU5Zv5_jFlxd9-X0u2At8-AxiNVX_IGqhNN74EuSE2U,266
+python_mpesa_koros/access_token.py,sha256=xkmwUkKdxkrvenwtz05jueFrxiFVDfudDKWsjwktoew,854
+python_mpesa_koros/business_to_customer.py,sha256=VdcTylCqJiY86Zi401hbMD6QCFn8F_s9DbgdiXCkVMA,3140
+python_mpesa_koros/customer_to_business.py,sha256=5NwAIkOwoyKeuDWf7dADokPeoX9fKAn8i3_6DxEd84U,1953
+python_mpesa_koros/transaction_query.py,sha256=RbE85aOAgbfUYFo-jMjqs602RXbtOgMdmeU_m_vZBJo,3574
+python_mpesa_koros/utils.py,sha256=tA1zMme1FRK6ad32ybUObpyKLpAKn8Uiq5AfKMZCSLI,1011
+python_mpesa_koros-0.1.7.dist-info/METADATA,sha256=ORJFeVr4bICFTYxmfUhidhAb_e5PPYW1w_3LtTNSn1M,439
+python_mpesa_koros-0.1.7.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+python_mpesa_koros-0.1.7.dist-info/top_level.txt,sha256=Eevj4rUP0I6dYoc6Bot281Q45q4Bee1P73zMbK5kQsQ,19
+python_mpesa_koros-0.1.7.dist-info/RECORD,,
