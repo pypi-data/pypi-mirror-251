@@ -1,0 +1,12 @@
+setup.py
+odoo/addons/vertical_carsharing_rest_api/__init__.py
+odoo/addons/vertical_carsharing_rest_api/__manifest__.py
+odoo/addons/vertical_carsharing_rest_api/services/__init__.py
+odoo/addons/vertical_carsharing_rest_api/services/schemas.py
+odoo/addons/vertical_carsharing_rest_api/services/services_res_partner.py
+odoo12_addon_vertical_carsharing_rest_api.egg-info/PKG-INFO
+odoo12_addon_vertical_carsharing_rest_api.egg-info/SOURCES.txt
+odoo12_addon_vertical_carsharing_rest_api.egg-info/dependency_links.txt
+odoo12_addon_vertical_carsharing_rest_api.egg-info/not-zip-safe
+odoo12_addon_vertical_carsharing_rest_api.egg-info/requires.txt
+odoo12_addon_vertical_carsharing_rest_api.egg-info/top_level.txt
