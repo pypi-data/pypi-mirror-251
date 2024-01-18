@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: eiyou
+Version: 0.0.2
+Summary: Select foods and find the optimal amount of calories and protein that you want to consume, as well as the amount of remaining fat and carbohydrates that person should consume.
+Home-page: https://github.com/tsubakimotosinnosuke/eiyou
+Author: tsubakimotosinnosuke
+Author-email: s2122081@stu.musashino-u.ac.jp
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/tsubakimotosinnosuke/eiyou
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+#CyberSecurityLecture
+Select foods and find the optimal amount of calories and protein that you want to consume, as well as the amount of remaining fat and carbohydrates that person should consume.
+
