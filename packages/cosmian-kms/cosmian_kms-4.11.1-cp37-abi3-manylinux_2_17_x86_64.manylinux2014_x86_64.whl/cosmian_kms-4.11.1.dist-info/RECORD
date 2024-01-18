@@ -1,0 +1,10 @@
+cosmian_kms-4.11.1.dist-info/METADATA,sha256=HVkAB0MEEpzUJg_rl50nRCHdPzheXReuEYOu6D6Ke_E,1037
+cosmian_kms-4.11.1.dist-info/WHEEL,sha256=5YmfUSNnzbcjpGpD5YH-zHZ4a6Vk5TFEDSOdsvGjypQ,127
+cosmian_kms-4.11.1.dist-info/license_files/LICENSE.md,sha256=_zfsPgqYDWuqWECzE0w-LQfkkgg28_DMNj87xgn6OUI,32275
+cosmian_kms.libs/libssl-f40ddc33.so.1.1,sha256=CQvnJOCEBCQXjBdskoSxDoho-sqqzGG-BrXXGijlbTs,736161
+cosmian_kms.libs/libcrypto-5805f609.so.1.1,sha256=033Ey1kldze5uEbxerQo9mm5w6WusZT37Pa-ZBWrkpY,3477145
+cosmian_kms/py.typed,sha256=bWew9mHgMy8LqMu7RuqQXFXLBxh2CRx0dUbSx-3wE48,27
+cosmian_kms/__init__.py,sha256=hFdRE02W0kEFxAj-F7jcOb91vgyojXlHWmhXKUDKl_U,352
+cosmian_kms/__init__.pyi,sha256=ZuHpvjGQ4hq34EMxwWeQ2YTk3t_sXayOh5_GB5pdIII,15914
+cosmian_kms/cosmian_kms.abi3.so,sha256=_33p593CP8Kp0cipmH0Hs9OA0xrHMwVkKV--PRFgqxI,7280529
+cosmian_kms-4.11.1.dist-info/RECORD,,
