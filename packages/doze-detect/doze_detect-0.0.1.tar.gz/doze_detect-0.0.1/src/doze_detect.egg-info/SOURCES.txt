@@ -1,0 +1,8 @@
+README.md
+setup.py
+src/doze_detect.py
+src/doze_detect.egg-info/PKG-INFO
+src/doze_detect.egg-info/SOURCES.txt
+src/doze_detect.egg-info/dependency_links.txt
+src/doze_detect.egg-info/entry_points.txt
+src/doze_detect.egg-info/top_level.txt

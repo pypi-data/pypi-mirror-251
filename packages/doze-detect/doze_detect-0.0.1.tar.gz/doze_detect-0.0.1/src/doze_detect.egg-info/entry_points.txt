@@ -1,0 +1,3 @@
+[console_scripts]
+doze_detect = doze_detect:main
+
