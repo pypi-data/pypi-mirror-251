@@ -1,0 +1,59 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  lint:
+    # pull requests are a duplicate of a branch push if within the same repo.
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name != github.repository
+    uses: ./.github/workflows/_lint.yml
+
+  test:
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name != github.repository
+    strategy:
+      matrix:
+        runs-on: ["ubuntu-latest", "windows-latest", "macos-latest"]
+        python-version: ["3.8", "3.9", "3.10", "3.11"]
+        include:
+          # Include one that runs in the dev environment
+          - runs-on: "ubuntu-latest"
+            python-version: "dev"
+      fail-fast: false
+    uses: ./.github/workflows/_test.yml
+    with:
+      runs-on: ${{ matrix.runs-on }}
+      python-version: ${{ matrix.python-version }}
+
+  dist:
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name != github.repository
+    uses: ./.github/workflows/_dist.yml
+
+  container:
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name != github.repository
+    uses: ./.github/workflows/_container.yml
+    permissions:
+      packages: write
+
+  docs:
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name != github.repository
+    uses: ./.github/workflows/_docs.yml
+    permissions:
+      pages: write
+      id-token: write
+      contents: read
+
+  pypi:
+    needs: dist
+    if: github.ref_type == 'tag'
+    uses: ./.github/workflows/_pypi.yml
+    permissions:
+      id-token: write
+
+  release:
+    needs: [dist, docs]
+    if: github.ref_type == 'tag'
+    uses: ./.github/workflows/_release.yml
+    permissions:
+      contents: write
