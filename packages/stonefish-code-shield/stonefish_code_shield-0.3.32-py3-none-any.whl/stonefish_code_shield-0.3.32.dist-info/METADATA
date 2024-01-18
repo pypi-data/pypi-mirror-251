@@ -1,0 +1,421 @@
+Metadata-Version: 2.1
+Name: stonefish-code-shield
+Version: 0.3.32
+Summary: Python code protection
+Author-email: Nico Schlömer <nico.schloemer@gmail.com>
+Project-URL: Homepage, https://github.com/stonefish-dev/code-shield
+Project-URL: Issues, https://github.com/stonefish-dev/code-shield/issues
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Utilities
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: x21 (>=0.4.30,<0.5.0)
+Requires-Dist: libcst
+Requires-Dist: rich
+Requires-Dist: rich-argparse
+Requires-Dist: setuptools
+Requires-Dist: stonefish-license-manager
+Requires-Dist: tomli-w
+Requires-Dist: x21 >=0.4.25
+Requires-Dist: tomli ; python_version < "3.11"
+Requires-Dist: importlib-metadata ; python_version < "3.8"
+Requires-Dist: astunparse ; python_version < "3.9"
+
+<p align="center">
+  <a href="https://github.com/stonefish-dev/code-shield"><img alt="stonefish-code-shield" src="https://raw.githubusercontent.com/stonefish-dev/code-shield/main/images/stonefish-code-shield-logo.svg" width="60%"></a>
+
+Industry-grade Python code protection.
+
+</p>
+
+[![PyPi Version](https://img.shields.io/pypi/v/stonefish-code-shield.svg?style=flat-square)](https://pypi.org/project/stonefish-code-shield/)
+
+For a comprehensive license management solution that is both developer- and
+user-friendly, check out the [Stonefish License
+Manager](https://github.com/stonefish-dev/license-manager).
+
+### Quickstart
+
+#### Protecting Python Packages
+
+To protect a Python project using the Stonefish Code Shield, ensure that it
+includes a minimal
+[`pyproject.toml`](https://packaging.python.org/en/latest/guides/writing-pyproject-toml/)
+file. Then simple replace your build system (e.g., `setuptools`) with
+`stonefish_code_shield` in the `pyproject.toml` file:
+
+```toml
+[build-system]
+# requires = ["setuptools"]
+# build-backend = "setuptools.build_meta"
+requires = ["stonefish-code-shield"]
+build-backend = "stonefish_code_shield.build_meta"
+
+# ...
+# additional project metadata as per PEP 621
+# <https://peps.python.org/pep-0621/>
+# (recommended)
+# ...
+```
+
+Done! Your project is now protected with Stonefish Code Shield. Try it
+out by running
+
+```
+pip install .
+```
+
+or
+
+```
+(pip install build)
+python -m build . --wheel
+```
+
+#### Protecting Standalone Python Scripts
+
+For individual Python files, you can use the `scs` command-line utility:
+
+```
+scs /path/to/file.py
+```
+
+#### How Stonefish Protects Your Code
+
+While compiled languages (C, C++, etc.) keep code hidden, Python packages ship
+their code to all users, who can access it in various ways. However, this
+changes when the code is built with the Stonefish Code Shield. Here are some
+examples of what happens:
+
+###### Accessing Source Files
+
+- Without Stonefish Code Shield:
+
+  After installation, users will find the package code in, e.g.,
+  `~/.local/lib/python3.12/site-packages/numpy`. (The path is different for
+  different operation systems.)
+
+- When building with the _Stonefish Code Shield_, though, a source code like
+
+  ```
+  ├── pyproject.toml
+  └── stonefish_example
+      └── __init__.py
+  ```
+
+  is installed as
+
+  ```
+  ├── _agg
+  │   ├── __init__.dat
+  │   ├── __init__.py
+  │   └── __pycache__
+  │       └── __init__.cpython-311.pyc
+  ├── __init__.py
+  └── __pycache__
+      └── __init__.cpython-311.pyc
+  ```
+
+  All program logic is encrypted within the binary `__init__.dat`, while the
+  actual source code remains protected.
+
+###### [`inspect` — Inspect live objects](https://docs.python.org/3/library/inspect.html)
+
+```python
+import stonefish_example
+import inspect
+
+print(inspect.getsource(stonefish_example.solve))
+```
+
+<table>
+<tr>
+<td> Without Stonefish </td> <td> With Stonefish </td>
+</tr>
+<tr>
+<td>
+
+```
+def solve():
+    magic = 42
+    return 2 * magic - 1
+```
+
+</td>
+<td>
+
+```
+[...]
+OSError: could not get source code
+```
+
+</td>
+</tr>
+</table>
+
+###### [Dill](https://pypi.org/project/dill/)
+
+```python
+import stonefish_example
+from dill.source import getsource
+
+print(getsource(stonefish_example.solve))
+```
+
+<table>
+<tr>
+<td> Without Stonefish </td> <td> With Stonefish </td>
+</tr>
+<tr>
+<td>
+
+```
+def solve():
+    magic = 42
+    return 2 * magic - 1
+```
+
+</td>
+<td>
+
+```
+[...]
+IndexError: list index out of range
+```
+
+</td>
+</tr>
+</table>
+
+###### [IPython's `??`](https://ipython.org/)
+
+```ipython
+In [1]: import stonefish_example
+
+In [2]: stonefish_example.solve??
+```
+
+<table>
+<tr>
+<td> Without Stonefish </td> <td> With Stonefish </td>
+</tr>
+<tr>
+<td>
+
+```
+Signature: stonefish_example.solve()
+Docstring: <no docstring>
+Source:
+def solve():
+    magic = 42
+    return 2 * magic - 1
+File:      ~/path/to/file.py
+Type:      function
+```
+
+</td>
+<td>
+
+```
+Signature: stonefish_example.solve(*args, **kwargs)
+Docstring: <no docstring>
+File:      Dynamically generated function.
+           No source code available.
+Type:      function
+```
+
+</td>
+</tr>
+</table>
+
+###### [dis — Disassembler for Python bytecode](https://docs.python.org/3/library/dis.html)
+
+```python
+import stonefish_example
+import dis
+
+dis.dis(stonefish_example.solve)
+```
+
+<table>
+<tr>
+<td> Without Stonefish </td> <td> With Stonefish </td>
+</tr>
+<tr>
+<td>
+
+```
+1        0 RESUME                0
+
+2        2 LOAD_CONST            1 (42)
+         4 STORE_FAST            0 (magic)
+
+3        6 LOAD_CONST            2 (2)
+         8 LOAD_FAST             0 (magic)
+        10 BINARY_OP             5 (*)
+        14 LOAD_CONST            3 (1)
+        16 BINARY_OP            10 (-)
+        20 RETURN_VALUE
+```
+
+</td>
+<td>
+
+```
+         0 COPY_FREE_VARS        1
+
+3        2 RESUME                0
+         4 PUSH_NULL
+         6 LOAD_DEREF            2 (f)
+         8 LOAD_FAST             0 (args)
+        10 BUILD_MAP             0
+        12 LOAD_FAST             1 (kwargs)
+        14 DICT_MERGE            1
+        16 CALL_FUNCTION_EX      1
+        18 RETURN_VALUE
+```
+
+</td>
+</tr>
+</table>
+
+###### [xdis](https://github.com/rocky/python-xdis)
+
+```python
+import stonefish_example
+import xdis.std as dis
+
+dis.dis(stonefish_example.solve)
+```
+
+<table>
+<tr>
+<td> Without Stonefish </td> <td> With Stonefish </td>
+</tr>
+<tr>
+<td>
+
+```
+2:     0 LOAD_CONST           (42)
+       2 STORE_FAST           (magic)
+
+3:     4 LOAD_CONST           (2)
+       6 LOAD_FAST            (magic)
+       8 BINARY_MULTIPLY
+      10 LOAD_CONST           (1)
+      12 BINARY_SUBTRACT
+      14 RETURN_VALUE
+```
+
+</td>
+<td>
+
+```
+3:     0 LOAD_DEREF           (f)
+       2 LOAD_FAST            (args)
+       4 BUILD_MAP            0
+       6 LOAD_FAST            (kwargs)
+       8 DICT_MERGE           1
+      10 CALL_FUNCTION_EX     (keyword and positional arguments)
+      12 RETURN_VALUE
+```
+
+</td>
+</tr>
+</table>
+
+###### [decompyle3](https://github.com/rocky/python-decompile3), [uncompyle6](https://github.com/rocky/python-uncompyle6/) etc.
+
+Those tools are meant to recreated Python code from `.pyc` files.
+Since _Stonefish_ moves the actual code into an encrypted
+
+```
+decompyle3  ~/path/to/__init__.cpython-38.pyc
+```
+
+<table>
+<tr>
+<td> Without Stonefish </td> <td> With Stonefish </td>
+</tr>
+<tr>
+<td>
+
+```
+def solve():
+    magic = 42
+    return 2 * magic - 1
+```
+
+</td>
+<td>
+
+```
+from ._agg import _Qcbq7 as solve
+```
+
+</td>
+</tr>
+</table>
+
+### Guidelines
+
+Here are some guidelines to keep in mind while working with Stonefish Code
+Shield:
+
+- Stonefish renames class and function names, so relying on the `__name__`
+  attribute in your code won't be possible.
+
+- Stonefish cannot yet handle relative `*` imports, e.g.,
+
+  ```python
+  from .utils import *
+  ```
+
+  Make all imports explicit:
+
+  ```python
+  from .utils import div_to_mod, Extractor
+  ```
+
+- Stonefish discards private (underscored) names from the API. If you want your
+  users to use these variables or functions, you'll have to rename them.
+
+- Users must add `*.dat` files to their package data, e.g.,
+
+  ```toml
+  [tool.setuptools.package-data]
+  "*" = ["*.dat"]
+  ```
+
+  in `pyproject.toml`. This is because the encrypted code must be shipped with
+  the package.
+
+- Local imports should be relative (`from . import x`) instead of using
+  absolute imports (`import x`) if `x/` or `x.py` is an internal folder or
+  directory.
+
+- Stonefish places all data files in a flat directory structure, so it cannot
+  handle files that are read from two different Python paths.
+
+  ```
+  ./data.dat
+
+  ./a.py
+      Path(__file__).parent / "data.dat"
+
+  ./b/b.py
+      Path(__file__).parent / .. / "data.dat"
+  ```
+
+### More info
+
+Contact support@mondaytech.com for more info.
