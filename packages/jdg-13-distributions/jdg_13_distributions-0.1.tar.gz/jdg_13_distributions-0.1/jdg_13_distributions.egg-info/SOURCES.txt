@@ -1,0 +1,10 @@
+setup.py
+jdg_13_distributions/Binomialdistribution.py
+jdg_13_distributions/Gaussiandistribution.py
+jdg_13_distributions/Generaldistribution.py
+jdg_13_distributions/__init__.py
+jdg_13_distributions.egg-info/PKG-INFO
+jdg_13_distributions.egg-info/SOURCES.txt
+jdg_13_distributions.egg-info/dependency_links.txt
+jdg_13_distributions.egg-info/not-zip-safe
+jdg_13_distributions.egg-info/top_level.txt
