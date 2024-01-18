@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: aivatar_project_widgets
+Version: 0.0.4
+Summary: widgets for aivatar_project_widgets
+Home-page: https://git.woa.com/DCC_Client/Framework/aivatar_project_widgets
+Author: lavenderyao
+Author-email: lavenderyao@tencent.com
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: aivatar_project_api<0.1.0,>=0.0.0
+Requires-Dist: Qt.py
