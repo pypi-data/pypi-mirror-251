@@ -1,0 +1,11 @@
+rabbitmq_utils/__init__.py,sha256=ccOsyppy4xXA2g6Uy06zVknUoqN-Aw3DeTaCKI0pVJs,129
+rabbitmq_utils/consumer.py,sha256=6c3uUabn5NJ4jKaXfR3jw6jmD4oJvn3qRr82Fbc7mCA,3766
+rabbitmq_utils/producer.py,sha256=gHxDpW9M4w7xuImM5MCnrBS1iuuYKyIEYyDu0UQ7B1o,3774
+rabbitmq_utils/requirements.txt,sha256=YgYdr5unZ2UfFI8nxgh5GJDjqMW7FeUgsfOowH_XNs8,12
+rabbitmq_utils/rpc/__init__.py,sha256=F3DX7GwnIU8xRJVs2ok8H-wS1weEvlmQXKJ6a06GbCc,59
+rabbitmq_utils/rpc/client.py,sha256=cDdKbBnIUY2myVUY_vDO8WcGqQ_-tKODk_KqqJCcVuU,3417
+rabbitmq_utils/rpc/server.py,sha256=GJmxUpOsgtI4tRkosUeveN3XN5qyo7lH6ybYHTwCsv8,1876
+rabbitmq_utils-1.4.1.dist-info/METADATA,sha256=uSasP3qBkD4oPvNGAFcN8moRbNCEYi8nMjdAkyGyfNE,7182
+rabbitmq_utils-1.4.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+rabbitmq_utils-1.4.1.dist-info/top_level.txt,sha256=j1fVeX1D3evDNhmRcOb-WT3c3lKOpeS4dRLtGW-zdrY,15
+rabbitmq_utils-1.4.1.dist-info/RECORD,,
