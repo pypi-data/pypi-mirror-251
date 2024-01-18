@@ -1,0 +1,14 @@
+rpm_spec_language_server/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rpm_spec_language_server/__main__.py,sha256=zbUf1_mNt5UZAUD47IvfSyTkWefcKeYjU2mMGo4J-Yo,56
+rpm_spec_language_server/document_symbols.py,sha256=DoZWfekXRjau0mLNuY3-_SaDZSQ34x7RGZSSUVZs1mY,2599
+rpm_spec_language_server/extract_docs.py,sha256=8ChqaxsWGhdq70hAlQSIPg2f1_XnmrhtK3BfS0TCarI,5000
+rpm_spec_language_server/logging.py,sha256=dR2TebyNVX-l-1OpXOII-S8jBJvJ_fW1DThGu4XiLn8,220
+rpm_spec_language_server/macros.py,sha256=lUCqPmneqtrDePF4c1Le9Ur6LjexcyxS8BLAqGeu-oI,3255
+rpm_spec_language_server/main.py,sha256=chGABBIbFSjzVwsgBwVJiAL5KBnvJx_vajdm6-Kepeo,1478
+rpm_spec_language_server/server.py,sha256=gJY4ZKo9R673zwqwFkC6H9UiwAoObndMmJhwuWyY3s0,15450
+rpm_spec_language_server/util.py,sha256=J2Epy4Oo2g9mDOVf-4NqVZgLpkK2CCilypD7nse3wcQ,2774
+rpm_spec_language_server-0.0.1.dist-info/LICENSE,sha256=LRil3ZO_LN2i6S44jjBOyHOxz4REa7fbfGwobkHi7Vs,17632
+rpm_spec_language_server-0.0.1.dist-info/METADATA,sha256=cpKOZGvUSKL65iAZFUNE4V5KXkY9CDRFLxVDpop7Uvk,5141
+rpm_spec_language_server-0.0.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+rpm_spec_language_server-0.0.1.dist-info/entry_points.txt,sha256=AzL-sLq6ya_P-1AbLfyUQHh_QBakuRWUlKj-blYKaQU,69
+rpm_spec_language_server-0.0.1.dist-info/RECORD,,
