@@ -1,0 +1,9 @@
+scmtools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scmtools/augment.py,sha256=lErVRlkFyBPk5sViRdEW_cdNR7NfmJ7pWzydlmSegMU,4559
+scmtools/backtracking.py,sha256=cGuBzWg8EE_mxRamrLS_CQYaKg3bM7UHtIUKCcK8OvI,15661
+scmtools/model.py,sha256=LnLXwMiyOZDnc6yolh6joOux1O2S4rlvq2KNAmDOaC4,6114
+scmtools/utils.py,sha256=yPE4rqzFJVHErUM_scGhACJsbAUTFsjRdlCDKE2l7Hc,4629
+scmtools-0.0.2.dist-info/METADATA,sha256=e-GBfkGIbcijYRraWTDlB19nuTklNpKXIJeIa6gVu3Y,660
+scmtools-0.0.2.dist-info/WHEEL,sha256=mRYSEL3Ih6g5a_CVMIcwiF__0Ae4_gLYh01YFNwiq1k,87
+scmtools-0.0.2.dist-info/licenses/LICENSE,sha256=DoNlAP-5YQGvJw87zQjA5WLn52nhfWHGVrmygYcdC8E,1063
+scmtools-0.0.2.dist-info/RECORD,,
