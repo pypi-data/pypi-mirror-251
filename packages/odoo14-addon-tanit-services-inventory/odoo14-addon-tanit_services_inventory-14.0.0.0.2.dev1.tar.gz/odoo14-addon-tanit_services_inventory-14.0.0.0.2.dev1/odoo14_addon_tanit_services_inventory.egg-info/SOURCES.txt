@@ -1,0 +1,7 @@
+setup.py
+odoo14_addon_tanit_services_inventory.egg-info/PKG-INFO
+odoo14_addon_tanit_services_inventory.egg-info/SOURCES.txt
+odoo14_addon_tanit_services_inventory.egg-info/dependency_links.txt
+odoo14_addon_tanit_services_inventory.egg-info/not-zip-safe
+odoo14_addon_tanit_services_inventory.egg-info/requires.txt
+odoo14_addon_tanit_services_inventory.egg-info/top_level.txt
