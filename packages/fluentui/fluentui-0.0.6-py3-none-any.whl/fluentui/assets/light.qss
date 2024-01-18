@@ -1,0 +1,24 @@
+QWidget {
+    color: #242424;
+    background-color: #fff;
+    border-style: solid;
+    border-color: #d1d1d1;
+}
+
+QWidget:disabled {
+    color: #bdbdbd;
+    background: #f0f0f0;
+    border-color: #e0e0e0;
+}
+
+Button { padding: 5 12; border-radius: 4px; border-width: 1px; }
+SubtleButton { border: none; }
+
+Combobox { border-width: 1; border-radius: 4; padding: 0 4 0 12; }
+Combobox:hover:on { background: #ebebeb; border-color: #bdbdbd; }
+Combobox QAbstractItemView { outline: none; padding: 4 9; border-width: 1px; }
+
+Button:hover, Combobox:hover, Combobox QAbstractItemView:item:hover, Combobox QAbstractItemView:item:selected {
+    background: #f5f5f5; border-color: #c7c7c7;
+}
+Button:pressed { background: #e0e0e0; border-color: #b3b3b3; }
