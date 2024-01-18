@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: utt
+Version: 1.30
+Summary: A simple command-line time tracker
+Home-page: https://github.com/larose/utt
+License: GPL-3.0-only
+Author: Mathieu Larose
+Author-email: mathieu@mathieularose.com
+Maintainer: Mathieu Larose
+Maintainer-email: mathieu@mathieularose.com
+Requires-Python: >=3.8.1,<4.0.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: argcomplete (>=3.2.1,<4.0.0)
+Requires-Dist: cargo (>=0.3,<0.4)
+Requires-Dist: python_dateutil (>=2.8.1,<3.0.0)
+Requires-Dist: pytz (>=2023.3.post1,<2024.0)
+Requires-Dist: tzlocal (>=5.2,<6.0)
