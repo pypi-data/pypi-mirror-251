@@ -1,0 +1,7 @@
+FROM registry.ndp-systemes.fr/dockers/pyenv-ubuntu:3.10
+
+COPY . /addons-installer
+WORKDIR /addons-installer
+ENV ADDONS_LOCAL_PROJECT_SRC=tests/repo
+RUN pip install .
+RUN addons-installer install --all

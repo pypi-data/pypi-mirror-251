@@ -1,0 +1,30 @@
+location: dependency-modules
+
+sources:
+  - repo: git@gitlab.ndp-systemes.fr:odoo-addons/common-modules.git
+    name: common
+    rev: '14.0'
+  - repo: git@gitlab.ndp-systemes.fr:odoo-addons/community-addons.git
+    name: community
+    rev: '14.0'
+  - repo: git@gitlab.ndp-systemes.fr:odoo-cloud/s3-filestore.git
+    name: s3_filestore
+    rev: main
+groups:
+  - name: code
+    members: &code
+      - common
+      - community
+  - name: prod
+    members:
+      - common
+      - community
+      - s3_filestore
+default_group: code
+sources_locked:
+  - repo: git@gitlab.ndp-systemes.fr:odoo-addons/community-addons.git
+    name: community
+    rev: "14.0-mousset-production"
+  - repo: git@gitlab.ndp-systemes.fr:odoo-addons/common-modules.git
+    name: common
+    rev: '14.0-mousset-production'

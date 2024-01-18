@@ -1,0 +1,5 @@
+python-dotenv==1.0.0
+gitman~=3.4
+
+[:python_version <= "3"]
+typing==3.10.0.0
