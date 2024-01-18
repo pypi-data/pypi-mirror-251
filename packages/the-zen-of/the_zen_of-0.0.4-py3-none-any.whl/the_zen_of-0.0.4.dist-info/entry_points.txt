@@ -1,0 +1,5 @@
+[console_scripts]
+zen-of = the_zen_of.setup:cli
+
+[nbdev]
+the_zen_of = the_zen_of._modidx:d
