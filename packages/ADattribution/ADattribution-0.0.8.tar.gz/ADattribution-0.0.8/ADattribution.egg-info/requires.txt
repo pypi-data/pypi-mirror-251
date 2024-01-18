@@ -1,0 +1,2 @@
+ua-parser==0.10.0
+lazysdk>=0.1.82
