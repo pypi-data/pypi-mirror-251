@@ -1,0 +1,11 @@
+obspy
+pyyaml
+IPython
+dill
+pyatoa<=0.2.2
+pysep-adjtomo<=0.4.1
+
+[dev]
+pytest
+ipython
+ipdb
