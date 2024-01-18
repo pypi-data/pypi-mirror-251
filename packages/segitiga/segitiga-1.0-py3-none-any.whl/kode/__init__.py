@@ -1,0 +1,1 @@
+from kode.triangle import Segitiga
