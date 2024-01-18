@@ -1,0 +1,3 @@
+th2-data-services~=2.0.0.dev5974388707
+orjson<4,>=3
+aiohttp<4,>=3
