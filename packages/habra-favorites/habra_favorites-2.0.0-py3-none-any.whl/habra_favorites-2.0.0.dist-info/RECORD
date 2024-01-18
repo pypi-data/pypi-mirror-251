@@ -1,0 +1,16 @@
+habra_favorites/__init__.py,sha256=N3eWZEImR_vBiwF4Vv9RQpf4i61JqP25wS9g-Mnai3s,99
+habra_favorites/exporters.py,sha256=NtWuvmnDgtfgFO8fUmBeGBAi9zTbxmYJn3unZs1ctLI,687
+habra_favorites/items.py,sha256=QkA6EMP62N4RE6JGq1nTfMldt9zB0vo0k_xWj27iPB0,637
+habra_favorites/loaders.py,sha256=k1bkQmLPPJt6Gx6BPSzUEqg5QI_Ul4ZBL9ol65wPNR8,1897
+habra_favorites/main.py,sha256=6dMx8nhkXsTMccoInYXRl596S8nwNfDlj0af3OfnUsY,1512
+habra_favorites/pipelines.py,sha256=2fVFZzsqUaTSL4HJ8mku3btZiunT7FSdm7g45XCznG0,313
+habra_favorites/settings.py,sha256=8FhSlYid8D5DWdXh_ec2L6jfhYQiKX5M2y6skf9Hzxg,308
+habra_favorites/spiders/__init__.py,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+habra_favorites/spiders/favorites_spider.py,sha256=L9sRfZL1y5MNdOAY5T9KPEdT9akSn_pKWEWXmZ3CHA0,2222
+habra_favorites/templates/base.html,sha256=Crd7PRTtzosGtcl9I5H-aBHrhpS7-F7d5QfhI0VAx5M,3464
+habra_favorites-2.0.0.dist-info/LICENSE,sha256=CJ3slml3BZe2cqE2BdSJKB8SjITYk5nL9lw_LkDBczA,1101
+habra_favorites-2.0.0.dist-info/METADATA,sha256=RrfYlxuj8KE-FSFYMSS7hcQLrBH3Qx9S-JnCalCG9uY,2753
+habra_favorites-2.0.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+habra_favorites-2.0.0.dist-info/entry_points.txt,sha256=-Qra3QFfWqFv45lkTzwTAGh8PHee29KlMkc-OeANuWU,62
+habra_favorites-2.0.0.dist-info/top_level.txt,sha256=panVS7121nyd-H1NWN8YQVpophYyEQ4jPGMTg1D4GNs,16
+habra_favorites-2.0.0.dist-info/RECORD,,
