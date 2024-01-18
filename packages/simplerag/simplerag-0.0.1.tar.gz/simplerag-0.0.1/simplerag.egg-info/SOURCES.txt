@@ -1,0 +1,10 @@
+README.md
+setup.py
+simplerag/__init__.py
+simplerag/db_creation.py
+simplerag/rag_inferencing.py
+simplerag.egg-info/PKG-INFO
+simplerag.egg-info/SOURCES.txt
+simplerag.egg-info/dependency_links.txt
+simplerag.egg-info/requires.txt
+simplerag.egg-info/top_level.txt

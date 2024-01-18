@@ -1,0 +1,7 @@
+transformers
+accelerate
+SentencePiece
+langchain==0.0.165
+chromadb==0.3.22
+typing-inspect==0.8.0
+typing_extensions==4.5.0

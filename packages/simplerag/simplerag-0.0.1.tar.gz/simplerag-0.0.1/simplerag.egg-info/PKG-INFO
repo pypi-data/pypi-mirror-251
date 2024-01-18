@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: simplerag
+Version: 0.0.1
+Summary: This package will help you talk to your data using Retrieval Augmented Generation (RAG).
+Home-page: https://github.com/samarthsarin/simplerag/
+Author: Samarth Sarin
+Author-email: sarin.samarth07@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/samarthsarin/simplerag/issues
+Description: # simplerag
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
