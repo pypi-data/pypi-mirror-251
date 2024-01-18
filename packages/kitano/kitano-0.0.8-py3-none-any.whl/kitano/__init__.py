@@ -1,0 +1,1 @@
+from kitano.logs import puts
