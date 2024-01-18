@@ -1,0 +1,10 @@
+lsprotocol/__init__.py,sha256=zoT6Do2JtGHGb7pOeKpahg4ocXIsSpyowjhOrhUhx8g,94
+lsprotocol/_hooks.py,sha256=B92o8SzDOjZT_LsUA5M_61ILnJ0_9x3Xd2A3mDv5ruQ,41799
+lsprotocol/converters.py,sha256=404tQOVoZL31R9CBrDe6Gx9Nok5cRph3glKlnSx00fo,433
+lsprotocol/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lsprotocol/types.py,sha256=L9TXQkOwSQk9A2DXz5b-bENpdPBMLSHz8dDtQHtxWos,466565
+lsprotocol/validators.py,sha256=5UMUmWhk52_Ps66_KFydjNkMfLNUsPH3wmV0Buv645s,1420
+lsprotocol-2024.0.0a1.dist-info/LICENSE,sha256=ws_MuBL-SCEBqPBFl9_FqZkaaydIJmxHrJG2parhU4M,1141
+lsprotocol-2024.0.0a1.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+lsprotocol-2024.0.0a1.dist-info/METADATA,sha256=rnVIRDZ3RsTdf5pk1VMA-9W8EGNfZAqOLQVHOolLku8,2165
+lsprotocol-2024.0.0a1.dist-info/RECORD,,
