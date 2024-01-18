@@ -1,0 +1,12 @@
+sqlalchemy_odbc4abap/__init__.py,sha256=Gx4k67P34LEzBx0MdUZZhgE36iSPBaqKwUjh9hf5OLs,429
+sqlalchemy_odbc4abap/base.py,sha256=Y79gIEuV0eTJ849BQ8TO-dFFVM2M3ZIO-rSS2018wJw,24627
+sqlalchemy_odbc4abap/pyodbc.py,sha256=dtWpvJF92VGvgsRYP_b0N2H7LL29HbdQtq3fiMqlCj4,3463
+sqlalchemy_odbc4abap/requirements.py,sha256=uGCcK8y_P6lPAo_zEuUG8xGFyWEcPdxbI6f047A2J2s,2030
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/testcases_01.py,sha256=UY8HwjkMuXV6WyyrIIX_JnC-evdRRNt6LBPHb5KxTp0,1581
+sqlalchemy_odbc4abap-0.0.5.dist-info/LICENSE,sha256=_0NBnmFjdUQeH6kH-enuVb0Hsl5IVBW-0XayHKaBJVA,1095
+sqlalchemy_odbc4abap-0.0.5.dist-info/METADATA,sha256=0HVTEFbA2npIAiRDBbz3Y6hps_3CoiexTTdPVsfPgtg,4737
+sqlalchemy_odbc4abap-0.0.5.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+sqlalchemy_odbc4abap-0.0.5.dist-info/entry_points.txt,sha256=EFpRJ181uFOicZVziL69HqVWIQ7gE74Uvq5ZmOG3CmI,87
+sqlalchemy_odbc4abap-0.0.5.dist-info/top_level.txt,sha256=3NkcubaxmMawvYk-_9An40bdt3e6Djl-Lhng1G3lZMs,27
+sqlalchemy_odbc4abap-0.0.5.dist-info/RECORD,,
