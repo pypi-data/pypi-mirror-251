@@ -1,0 +1,2 @@
+[console_scripts]
+mtat-weditor = weditor.__main__:main
