@@ -1,0 +1,7 @@
+fbenum-1.0.0.dist-info/METADATA,sha256=Ga2yzMOA5G_Qcmaaisi0SfjN1UqTQmbSPmfyYlkI6lc,3945
+fbenum-1.0.0.dist-info/WHEEL,sha256=N2J68yzZqJh3mI_Wg92rwhw0rtJDFpZj9bwQIMJgaVg,90
+fbenum-1.0.0.dist-info/licenses/LICENSE,sha256=s9rZ4hgJxTZIB8d4VVp_zhDgnViF8bQqZodKzfoIoZs,1073
+fbenum/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fbenum/adapter.py,sha256=QgnOtmfdtkWxxDMlp_hQA6xRDu3Y_HA4m2qCkBWYuPg,10040
+fbenum/enum.py,sha256=4U6xUuqhp79kECHx8c-HsOFfCY7Lm0N4bGtjf1k69c8,3876
+fbenum-1.0.0.dist-info/RECORD,,
