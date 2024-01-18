@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: floggit
+Version: 0.0.4
+Summary: log function inputs and outputs at runtime
+Home-page: https://github.com/dcyd-inc/floggit
+Author: dcyd, inc.
+Author-email: info@dcyd.io
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: google-cloud-logging ==2.2.0
+
+
+# python function in/out logger
+
+## Install
+
+Requires Python 3
+
+### Using pip
+
+```
+pip3 install loggit -U
+```
+
+### Using pipenv
+
+```
+pipenv install loggit
+```
+
+## Usage
+
+### Simple monitoring
+
+```python
+from floggit import flog
+
+@flog
+def myfunc(*args, **kwargs):
+    ...
+    return result
+```
