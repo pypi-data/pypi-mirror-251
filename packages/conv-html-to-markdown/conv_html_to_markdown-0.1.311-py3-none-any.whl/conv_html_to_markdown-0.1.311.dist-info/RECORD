@@ -1,0 +1,10 @@
+conv_html_to_markdown-0.1.311.dist-info/METADATA,sha256=1zZDhEpERwlSahZrz0O1A-oSx0BWHuRHVBKZcnoV5Q4,1871
+conv_html_to_markdown-0.1.311.dist-info/WHEEL,sha256=N2J68yzZqJh3mI_Wg92rwhw0rtJDFpZj9bwQIMJgaVg,90
+conv_html_to_markdown-0.1.311.dist-info/licenses/LICENSE,sha256=c-m8cwc6RY08I3cS_oJlJ-wBoMgMQ_2Tkhr9ZjGLJkM,1055
+conv_html_to_markdown/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+conv_html_to_markdown/converter.py,sha256=91-z6w9hiRnE7BdG1n-CnQ2N-_18mDr-008RRnCKwy0,4780
+conv_html_to_markdown/download_jina.py,sha256=CvMyYJITY-UP7D7_pZecxAgw6yBBePufa9zFpwQo2F0,735
+conv_html_to_markdown/formatter.py,sha256=Btj_LXYMh1G3prp7-gEopPANM7BXXQtRuqpcrRLAklo,2546
+conv_html_to_markdown/main.py,sha256=T_BTpxNX_y1FKz_6K0IbZ94t-4HnuRuOhmjkcZpYY20,2396
+conv_html_to_markdown/utils.py,sha256=D00mV1deO4D8y_Xc8D8FWtLnjGjfwnDBsMHatV2HIH8,1709
+conv_html_to_markdown-0.1.311.dist-info/RECORD,,
