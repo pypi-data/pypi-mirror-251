@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/qdpxlib.egg-info/PKG-INFO
+src/qdpxlib.egg-info/SOURCES.txt
+src/qdpxlib.egg-info/dependency_links.txt
+src/qdpxlib.egg-info/top_level.txt

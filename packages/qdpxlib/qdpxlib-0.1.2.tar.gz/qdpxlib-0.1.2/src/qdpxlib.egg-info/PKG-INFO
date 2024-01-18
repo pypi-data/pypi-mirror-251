@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: qdpxlib
+Version: 0.1.2
+Summary: Python API for easy handling (importing and exporting) of QDPX (MAXQDA) files.
+Home-page: https://github.com/oriyonay/qdpxlib
+Author: Ori Yonay, Anwesha Basu, Carlos Morales, Texas A&M Center for Teaching Excellence
+Author-email: Ori Yonay <oyonay12@tamu.edu>, Anwesha Basu <anwesha.basu@tamu.edu>
+Project-URL: Homepage, https://github.com/oriyonay/qdpxlib
+Project-URL: Issues, https://github.com/oriyonay/qdpxlib/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# qdpxlib
+
+This is `qdpxlib`, a Python API for easy handling (importing and exporting) of QDPX (MAXQDA) files.
+
+## Installation
+
+You can install `qdpxlib` using pip:
+
+```bash
+pip install qdpxlib
+```
+
+## Usage
+
+Here's a simple example of how to use `qdpxlib`:
+
+```python
+import qdpxlib
+
+# Example usage
+```
+
+## Contributing
+
+Contributions are welcome! Please reach out to oyonay12@tamu.edu or make a pull request to contribute. We will post more detailed contribution guidelines soon.
+
+## License
+
+This project is licensed under the MIT license.
