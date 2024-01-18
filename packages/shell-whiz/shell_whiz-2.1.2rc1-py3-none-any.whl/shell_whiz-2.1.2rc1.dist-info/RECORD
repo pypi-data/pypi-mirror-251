@@ -1,0 +1,14 @@
+shell_whiz/cli/__init__.py,sha256=-AhL5FDzN-ekBjDFPjPc7mdj_TZSo9SfUsBRJvPJt8k,33
+shell_whiz/cli/commands/ask.py,sha256=bLVv8YB0oOFVdHdz5YL628Jg-6f5CNWecesYFBglcDg,7764
+shell_whiz/config.py,sha256=bqRjtRH7afS1exrWt6dgDcQS4E5gKU0WWkyD_X_iuoQ,2319
+shell_whiz/llm/__init__.py,sha256=6urvTt545LBOvK9eyBuVGVcqiluFU5fEVDo8kECSkZA,75
+shell_whiz/llm/client.py,sha256=BgqwyHYH262sCdOOqddStwPkjtQW6TxANzgzeCHpRRI,4508
+shell_whiz/llm/errors.py,sha256=8Vxn7SF5O4EX_M5MLzgzwTW0FUZsE2I8Dzi4yPnSOmI,208
+shell_whiz/llm/providers/api.py,sha256=CN3YdJPIDVcxXNKE-glnrOzfncjGdeoBBf27L2hmCro,752
+shell_whiz/llm/providers/openai.py,sha256=0grNzVRcTPfshnw3eQA92h-tVpEyYXDO6T0_AP0XTF0,6227
+shell_whiz/main.py,sha256=Kd8VY_SpBHJdxNB3ZoEuHUfjAhUoWWFQRsgvcqXV8wI,6214
+shell_whiz-2.1.2rc1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+shell_whiz-2.1.2rc1.dist-info/METADATA,sha256=aqeDXLplji6tg0CX9CIqtaaeRsDFpVs24CA7EEh1sAs,7258
+shell_whiz-2.1.2rc1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+shell_whiz-2.1.2rc1.dist-info/entry_points.txt,sha256=wWrkUP1-FQLvISL7euPg0ZzBymBhkqC4MESN0MQ_Myo,42
+shell_whiz-2.1.2rc1.dist-info/RECORD,,
