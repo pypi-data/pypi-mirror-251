@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: pearwise
+Version: 0.1.2
+Summary: PearWiseAI SDK to log and score interactions
+Author: pearwise
+Author-email: hello@pearwise.com
+Requires-Dist: requests
+Requires-Dist: pydantic
+
