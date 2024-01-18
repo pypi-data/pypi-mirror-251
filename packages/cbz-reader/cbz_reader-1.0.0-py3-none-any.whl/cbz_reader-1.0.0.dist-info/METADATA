@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: cbz-reader
+Version: 1.0.0
+Summary: A good ol' CBZ Reader!
+License: MIT
+Author: devops117
+Author-email: devops117.main@protonmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: natsort (>=8.4.0,<9.0.0)
+Requires-Dist: quart (>=0.19.4,<0.20.0)
+Description-Content-Type: text/markdown
+
+# CBZ-Reader
+A good ol' CBZ Reader!
+
+## Installation:
+```
+pip install cbz_reader
+```
+
+## Usage (inside the directory containing the CBZ files):
+```
+python -m cbz_reader
+```
+## Usage (outside the dir):
+```
+CBZ_BASE_PATH=<path to the dir containing the CBZ files> python -m cbz_reader
+```
+

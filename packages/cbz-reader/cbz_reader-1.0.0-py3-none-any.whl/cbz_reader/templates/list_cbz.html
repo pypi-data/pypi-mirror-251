@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}List of CBZ{% endblock %}
+{% block header %}
+    <h1 class="title">List of CBZ:</h1>
+{% endblock %}
+{% block main %}
+    <ul>
+    {% for page_index, cbz_name in cbz_map %}
+        <li><a href="/load_cbz/{{ page_index }}">{{ cbz_name }}</a></li>
+    {% endfor %}
+    </ul>
+{% endblock %}
