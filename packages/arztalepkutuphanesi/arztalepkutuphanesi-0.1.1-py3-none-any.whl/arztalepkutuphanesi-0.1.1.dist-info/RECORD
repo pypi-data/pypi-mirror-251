@@ -1,0 +1,8 @@
+arztalepkutuphanesi/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+arztalepkutuphanesi/arztalepcekme.py,sha256=xJUxFZCkS-L6ddHqpUXW0mDa5jwd7jvx9ucosMgjpyg,1805
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_arztalepcekme.py,sha256=Upu8tv1lIY5VyL0so6U_jX73iA9voZdyNc8XXEP0pW8,141
+arztalepkutuphanesi-0.1.1.dist-info/METADATA,sha256=L71_IX7Da6yoo9kcEPwx1DUJcfsGOnvgkZN59IMY46o,246
+arztalepkutuphanesi-0.1.1.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+arztalepkutuphanesi-0.1.1.dist-info/top_level.txt,sha256=SD2AZdIBNehAnWDJZqB4YAXVVnEWflAFeMbipx6A61o,26
+arztalepkutuphanesi-0.1.1.dist-info/RECORD,,
