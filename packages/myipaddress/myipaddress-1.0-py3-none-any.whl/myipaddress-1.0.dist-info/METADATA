@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: myipaddress
+Version: 1.0
+Summary: A package to get your/others IP information.
+Home-page: https://github.com/ericdennis7/myIPaddress
+Author: Eric Dennis
+Author-email: ericdennis11@gmail.com
+License: MIT
+Keywords: IP,myip,IP address,geolocation,public IP,private IP,socket,ports,open ports
+Platform: UNKNOWN
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENCE
+
+UNKNOWN
+
