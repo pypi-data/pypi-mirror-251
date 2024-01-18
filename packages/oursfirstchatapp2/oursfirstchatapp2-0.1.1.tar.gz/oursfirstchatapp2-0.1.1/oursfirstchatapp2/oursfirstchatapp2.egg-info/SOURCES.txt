@@ -1,0 +1,8 @@
+README.md
+setup.py
+oursfirstchatapp2/oursfirstchatapp2.egg-info/PKG-INFO
+oursfirstchatapp2/oursfirstchatapp2.egg-info/SOURCES.txt
+oursfirstchatapp2/oursfirstchatapp2.egg-info/dependency_links.txt
+oursfirstchatapp2/oursfirstchatapp2.egg-info/entry_points.txt
+oursfirstchatapp2/oursfirstchatapp2.egg-info/requires.txt
+oursfirstchatapp2/oursfirstchatapp2.egg-info/top_level.txt
