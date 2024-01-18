@@ -1,0 +1,7 @@
+commit d5fe54981d5f36c78f57a6f46523d1c808c8f4c0
+Author: Moshe Zadka <moshez@users.noreply.github.com>
+Date:   2024-01-17 15:54:42 -0800
+
+    Merge pull request #43 from elcaminoreal/use-cd-run
+    
+    use commander data's run abstractions
