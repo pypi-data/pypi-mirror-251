@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: CountToCython
+Version: 0.0.4
+Summary: Module containing fast counting methods by using Cython.
+Home-page: UNKNOWN
+License: UNKNOWN
+Keywords: counting,cython,Fast,Beginner Friendly,Python,Cython,Hybrid
+Platform: UNKNOWN
+
+Module containing fast counting methods by using Cython.
+
