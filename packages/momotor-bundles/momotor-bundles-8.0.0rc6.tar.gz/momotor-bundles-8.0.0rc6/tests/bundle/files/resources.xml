@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe xmlns="http://momotor.org/1.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://momotor.org/1.0 http://momotor.org/schema/momotor-1.0.xsd"
+  id="resources">
+
+  <checklets>
+    <checklet id="checklet1">
+      <resources>
+        <resource name="resource1" value="value1a" />
+        <resource name="resource1" value="value1b" />
+        <resource name="resource2">value2a</resource>
+      </resources>
+    </checklet>
+
+    <checklet id="checklet2" />
+  </checklets>
+
+  <steps>
+    <step id="step1">
+      <checklet ref="checklet1"/>
+      <resources>
+        <resource name="resource2" value="value2b" />
+        <resource name="resource3" value="value3"/>
+      </resources>
+    </step>
+
+    <step id="step2">
+      <checklet ref="checklet1"/>
+    </step>
+
+    <step id="step3">
+      <checklet ref="checklet2"/>
+      <resources>
+        <resource name="resource4" value="value4"/>
+      </resources>
+    </step>
+
+    <step id="step4">
+      <checklet>
+        <resources>
+          <resource name="resource5" value="value5"/>
+        </resources>
+      </checklet>
+      <resources>
+        <resource name="resource6" value="value6"/>
+      </resources>
+    </step>
+
+    <step id="step5">
+      <resources>
+        <resource name="resource7" value="value7"/>
+      </resources>
+    </step>
+
+    <step id="step6"/>
+  </steps>
+
+</recipe>

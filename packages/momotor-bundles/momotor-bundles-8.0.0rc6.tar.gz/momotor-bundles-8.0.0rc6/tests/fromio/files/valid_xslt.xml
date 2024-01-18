@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="#stylesheet"?>
+
+<!DOCTYPE doc [
+<!ATTLIST xsl:stylesheet
+    version CDATA #REQUIRED
+        xmlns:xsl CDATA #REQUIRED
+    id ID #REQUIRED>
+]>
+
+<doc>
+    <file name="file_name" src="file_src" type="text/plain"/>
+
+    <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" id="stylesheet">
+        <xsl:template match="/">
+            <product xmlns="http://momotor.org/1.0"
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xsi:schemaLocation="http://momotor.org/1.0 http://momotor.org/schema/momotor-1.0.xsd"
+                id="product">
+             <files basesrc="files">
+                 <xsl:for-each select="doc/file">
+                      <file name="{@name}" src="{@src}" type="{@type}"/>
+                 </xsl:for-each>
+             </files>
+            </product>
+        </xsl:template>
+    </xsl:stylesheet>
+</doc>

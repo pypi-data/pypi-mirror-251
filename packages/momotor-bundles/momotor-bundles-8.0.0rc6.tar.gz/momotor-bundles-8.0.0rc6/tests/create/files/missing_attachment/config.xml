@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config xmlns="http://momotor.org/1.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://momotor.org/1.0 http://momotor.org/schema/momotor-1.0.xsd">
+
+    <files>
+        <file name="missing" src="missing" />
+    </files>
+
+</config>

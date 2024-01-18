@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results xmlns="http://momotor.org/1.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://momotor.org/1.0 http://momotor.org/schema/momotor-1.0.xsd"
+	id="content-tests">
+
+    <result step="r1" outcome="pass">
+        <options>
+            <option name="is-true"><true/></option>
+            <option name="is-false">
+                <false/>
+            </option>
+            <option name="is-none">
+                <none></none>
+            </option>
+            <option name="is-int" type="integer" value="1"/>
+            <option name="is-float" type="float" value="0.5"/>
+            <option name="is-value-string" type="string" value="test"/>
+            <option name="is-content-string">
+                test
+            </option>
+            <option name="is-base64" encoding="base64">dGVzdAo=</option>
+            <option name="is-quopri" encoding="quopri">test=0A</option>
+            <option name="is-empty"/>
+        </options>
+    </result>
+</results>

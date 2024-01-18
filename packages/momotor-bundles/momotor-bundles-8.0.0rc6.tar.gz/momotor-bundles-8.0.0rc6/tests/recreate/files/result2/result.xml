@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results xmlns="http://momotor.org/1.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://momotor.org/1.0 http://momotor.org/schema/momotor-1.0.xsd">
+    <result step="step2" outcome="pass">
+        <files>
+            <file name="result.txt" />
+            <file name="other.txt" encoding="quopri">Other result for step 2</file>
+        </files>
+        <properties>
+            <property name="property">value</property>
+        </properties>
+        <options>
+            <option name="option">value</option>
+        </options>
+</result>
+</results>

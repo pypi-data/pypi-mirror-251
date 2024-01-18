@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe xmlns="http://momotor.org/1.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://momotor.org/1.0 http://momotor.org/schema/momotor-1.0.xsd"
+	id="full-recipe">
+
+    <steps>
+        <step id="step-1"/>
+        <step id="step-2" priority="high">
+            <dependencies>
+                <depends step="step-1"/>
+            </dependencies>
+        </step>
+        <step id="step-3" priority="normal">
+            <dependencies>
+                <depends step="step-1"/>
+                <depends step="step-2"/>
+            </dependencies>
+        </step>
+        <step id="step-4" priority="low">
+            <dependencies>
+                <depends step="step-1"/>
+            </dependencies>
+        </step>
+        <step id="step-5" priority="must-pass">
+            <dependencies>
+                <depends step="step-3"/>
+            </dependencies>
+        </step>
+    </steps>
+
+    <tests>
+        <expectedResult id="expected-result-1">
+            <expect step="step-1" outcome="pass"/>
+            <expect step="step-2" outcome="pass"/>
+            <expect step="step-3" outcome="pass"/>
+            <expect step="step-4" outcome="pass"/>
+            <expect step="step-5" outcome="pass"/>
+        </expectedResult>
+
+        <test id="test-1">
+            <expectedResult ref="expected-result-1">
+            </expectedResult>
+            <product>
+
+            </product>
+        </test>
+
+        <test id="test-2">
+            <expectedResult>
+                <expect step="step-1" outcome="fail"/>
+                <expect step="step-2" outcome="fail"/>
+                <expect step="step-3" outcome="fail"/>
+                <expect step="step-4" outcome="fail"/>
+                <expect step="step-5" outcome="fail"/>
+            </expectedResult>
+            <product>
+
+            </product>
+        </test>
+    </tests>
+</recipe>

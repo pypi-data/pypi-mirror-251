@@ -1,0 +1,1 @@
+include src/momotor/bundles/schema/*.xsd

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe xmlns="http://momotor.org/1.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://momotor.org/1.0 http://momotor.org/schema/momotor-1.0.xsd"
+    id="recipe-with-files">
+
+    <files baseclass="files1">
+        <file id='file1' name="file-in-root.txt"/>
+        <file id='file2' name="in-subdir.txt" src="subdir/file-in-dir.txt"/>
+    </files>
+
+    <files basesrc="subdir">
+        <file id="file3" name="also-in-subdir.txt" src="file-in-dir.txt"/>
+    </files>
+
+    <files basename="basedir">
+        <!-- As 'file:` uri -->
+        <file id="file4" name="from-root.txt" src="file:file-in-root.txt"/>
+    </files>
+
+    <files>
+        <!-- Encoded text: "Base64 encoded content\n" -->
+        <file id="file5" name="inline-base64.txt" encoding="base64">QmFzZTY0IGVuY29kZWQgY29udGVudAo=</file>
+    </files>
+
+    <steps>
+        <step id='step1'>
+            <files>
+                <file ref="file1" />
+                <file ref="file5" />
+                <file name="step1-file.txt" src="file-in-root.txt" />
+            </files>
+
+            <files baseclass="step1">
+                <file ref="file2" />
+            </files>
+
+            <files basesrc="step1">
+                <file ref="file3" />
+                <file ref="file4" />
+            </files>
+
+            <files basename="step1">
+                <file ref="file4" />
+                <file name="inline-quopri.txt" encoding="quopri">Quopri=20encoded=20content=0A</file>
+                <file name="empty.txt" encoding="quopri"/>
+            </files>
+        </step>
+    </steps>
+</recipe>

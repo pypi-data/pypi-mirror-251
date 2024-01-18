@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipe xmlns="http://momotor.org/1.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://momotor.org/1.0 http://momotor.org/schema/momotor-1.0.xsd"
+	id="recipe-with-multiple-meta">
+
+    <meta>
+        <name>name 1</name>
+        <description>description 1</description>
+        <author>author 1</author>
+        <version>1.0</version>
+        <generator>generator 1</generator>
+    </meta>
+    <meta>
+        <name>name 2</name>
+        <description>description 2</description>
+        <author>author 2</author>
+        <version>2.0</version>
+        <generator>generator 2</generator>
+    </meta>
+</recipe>

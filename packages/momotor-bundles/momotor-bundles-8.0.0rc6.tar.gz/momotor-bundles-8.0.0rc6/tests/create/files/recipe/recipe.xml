@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<recipe xmlns="http://momotor.org/1.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://momotor.org/1.0 http://momotor.org/schema/momotor-1.0.xsd"
+    id="example-local-checklet">
+  <meta>
+    <name>example-local-checklet</name>
+  </meta>
+
+  <checklets>
+    <checklet name="generate-score" id="score-chk">
+      <repository type="local" src="checklet/generate-score/"/>
+    </checklet>
+  </checklets>
+
+  <steps>
+    <step id="score-submitted">
+      <checklet ref="score-chk" />
+    </step>
+  </steps>
+</recipe>

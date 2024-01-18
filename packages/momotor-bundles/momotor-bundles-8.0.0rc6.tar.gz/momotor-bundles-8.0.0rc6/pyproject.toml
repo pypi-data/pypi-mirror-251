@@ -1,0 +1,111 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "momotor-bundles"
+authors = [
+    { name = "Erik Scheffers", email = "e.t.j.scheffers@tue.nl" }
+]
+description = "Momotor bundle reader, writer, tools"
+requires-python = ">=3.9"
+dynamic = ["version", "readme"]
+license = { text="GNU Lesser General Public License v3 (LGPLv3)" }
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3 :: Only",
+]
+dependencies = [
+    "pathvalidate",
+    "xsdata==23.8.*",
+    "typing-extensions; python_version < '3.11'",
+]
+
+[project.optional-dependencies]
+lxml = [
+    'xsdata[lxml]==23.8.*'
+]
+test = [
+    'momotor-bundles[lxml]',
+    'pytest~=7.4',
+    'pytest-cov',
+    'pytest-doctestplus',
+    'xmljson',
+]
+docs = [
+    'momotor-bundles[test]',
+    'Sphinx',
+    'sphinx-autodoc-typehints!=1.14.0',
+    'furo',
+]
+dev = [
+    'momotor-bundles[lxml,test,docs]',
+    'xsdata[cli]==23.8.*',
+]
+build = [
+    'momotor-bundles[docs]',
+    'setuptools',
+    'build[virtualenv]',
+    'python-semantic-release~=8.0',
+    'twine',
+]
+
+[project.urls]
+Homepage = "https://momotor.org"
+Documentation = "https://momotor.org/doc/engine/momotor-bundles/"
+Repository = "https://gitlab.tue.nl/momotor/engine-py3/momotor-bundles/"
+Tracker = 'https://gitlab.tue.nl/momotor/engine-py3/momotor-bundles/issues'
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["momotor.*"]
+
+[tool.setuptools.dynamic]
+version = { attr = "momotor.bundles.version.__VERSION__" }
+readme = { file = ["README.md"], content-type = "text/markdown" }
+
+[tool.pytest.ini_options]
+required_plugins = ["pytest-doctestplus"]
+norecursedirs = [".git", "files"]
+pythonpath = "src"
+addopts = "--cov=src --doctest-plus --doctest-rst --doctest-modules -p no:django"
+xfail_strict = true
+
+[tool.coverage.report]
+exclude_lines = [
+    'pragma: no cover',
+    'assert False',
+    'def __repr__',
+    'raise NotImplementedError',
+    '\.\.\.',
+]
+
+[tool.semantic_release]
+version_variables = ["src/momotor/bundles/version.py:__VERSION__"]
+commit_message = 'chore: bump version number'
+build_command = "python -m build --outdir ."
+
+[tool.semantic_release.release]
+upload_to_vcs_release = false
+
+[tool.semantic_release.remote]
+type = "gitlab"
+token = { env = "GL_TOKEN" }
+
+[tool.semantic_release.branches.master]
+match = "master"
+prerelease = false
+
+[tool.semantic_release.branches.other]
+match = ".*"
+prerelease = true
+prerelease-token = "rc"
