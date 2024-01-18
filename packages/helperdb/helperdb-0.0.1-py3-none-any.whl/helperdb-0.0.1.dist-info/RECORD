@@ -1,0 +1,10 @@
+helperdb/__init__.py,sha256=OWtzaMGNgVWtET7U_KyZpO06pgX2IQcaQjEjxsaMM_o,30
+helperdb/helperdb.py,sha256=z5U2Y4UQ1JBxhr9wtyn4wYsGB5SfjesoaKyWgA_PCmA,770
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test1.py,sha256=1K8oWcfmk1I4KvSLDe72wxzNBxci7zE7LkBV67s0sJI,1743
+tests/test_database.py,sha256=1K8oWcfmk1I4KvSLDe72wxzNBxci7zE7LkBV67s0sJI,1743
+helperdb-0.0.1.dist-info/LICENSE,sha256=QzW5JYPBKcm37OqqM08qjlTBwbB7y5n5hrGuDVRK6ls,1084
+helperdb-0.0.1.dist-info/METADATA,sha256=dTtG8xaTnzSir7NZaVGThExuDz7OWWdb4pty79BYHas,151
+helperdb-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+helperdb-0.0.1.dist-info/top_level.txt,sha256=W8pQg6gctk5v_c-nLJGaVU1dviA_vlL3jLitFcuhKac,15
+helperdb-0.0.1.dist-info/RECORD,,
