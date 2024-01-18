@@ -1,0 +1,15 @@
+idf_install/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+idf_install/cli.py,sha256=7wn9DW6aFz0Km9Xiv2Uqes3kCqgs_aZxzAd19dInmk8,118
+idf_install/install_idf.bat,sha256=aMlpkZ6DMhHt8LXEYrWsiqKOUDBfsJj8WHHosU7DM9Y,684
+idf_install/install_idf.py,sha256=ocSywaQ6zO0GabW8X-jd6gWt4vGjLETSui85nVL1Xbo,3965
+idf_install/install_idf_repo.py,sha256=LvsacCW7UCU-jSTyK-bd5CyrIXDM3GfKse_T-ozyO9U,761
+idf_install/platform_install.py,sha256=qxDamgPNoWdih5hjG_9NY9L5ispmWvYCKrShk4kAfcI,2706
+idf_install/settings.py,sha256=F9EeoSjBP8mV3N8zKTzfiABGN4YA0ATIfVzgQAKJ5g8,54
+idf_install/util.py,sha256=UxC31_yDuqUPjO06uPgAEjvDxj4k-WPrF8dVgPtjox8,870
+idf_install/assets/example.txt,sha256=lTBovRjiz0_TgtAtbA1C5hNi2ffbqnNPqkKg6UiKCT8,54
+idf_install-1.0.3.dist-info/LICENSE,sha256=b6pOoifSXiUaz_lDS84vWlG3fr4yUKwB8fzkrH9R8bQ,1064
+idf_install-1.0.3.dist-info/METADATA,sha256=xP3YZmHYIMNhmOt9gW-NwSA0PqifEPkWMyG2exqkU4o,408
+idf_install-1.0.3.dist-info/WHEEL,sha256=-G_t0oGuE7UD0DrSpVZnq1hHMBV9DD2XkS5v7XpmTnk,110
+idf_install-1.0.3.dist-info/entry_points.txt,sha256=aNOfwu9o3xzoow11tjuri99sKBvbmC13VRsKesr_CL0,53
+idf_install-1.0.3.dist-info/top_level.txt,sha256=tTImHlL1T3eV9ohiSYZETthvvdOhZAmyO2FS5gtbLE8,12
+idf_install-1.0.3.dist-info/RECORD,,
