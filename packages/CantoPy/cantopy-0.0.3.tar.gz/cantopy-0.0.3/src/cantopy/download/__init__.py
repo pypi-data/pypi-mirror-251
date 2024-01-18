@@ -1,0 +1,1 @@
+from cantopy.download.download_manager import DownloadManager  # type: ignore

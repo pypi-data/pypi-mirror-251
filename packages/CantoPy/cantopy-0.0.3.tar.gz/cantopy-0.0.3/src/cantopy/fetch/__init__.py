@@ -1,0 +1,1 @@
+from cantopy.fetch.fetch_manager import FetchManager  # type: ignore
