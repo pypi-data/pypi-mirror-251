@@ -1,0 +1,9 @@
+sqlalchemy>=2.0.23
+pyodbc>=5.0.1
+
+[dev]
+black
+bumpver
+isort
+pip-tools
+pytest

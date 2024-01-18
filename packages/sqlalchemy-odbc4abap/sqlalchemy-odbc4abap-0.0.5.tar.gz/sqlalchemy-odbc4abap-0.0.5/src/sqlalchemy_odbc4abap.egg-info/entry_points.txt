@@ -1,0 +1,2 @@
+[sqlalchemy.dialects]
+odbc4abap.pyodbc = sqlalchemy_odbc4abap.pyodbc:O4ADialect_pyodbc
