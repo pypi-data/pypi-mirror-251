@@ -1,0 +1,37 @@
+# -*- coding: utf-8 -*-
+from setuptools import setup
+
+packages = \
+['amcheck']
+
+package_data = \
+{'': ['*']}
+
+install_requires = \
+['Diophantine>=0.2.0,<0.3.0',
+ 'ase>=3.22.1,<4.0.0',
+ 'numpy>=1.19.5,<2.0.0',
+ 'spglib>=2.0.0,<3.0.0']
+
+entry_points = \
+{'console_scripts': ['amcheck = amcheck.amcheck:cli']}
+
+setup_kwargs = {
+    'name': 'amcheck',
+    'version': '1.0.0',
+    'description': 'amcheck is the program (and a library) to check, based on the symmetry arguments, whether a given material is an altermagnet.',
+    'long_description': '# amcheck\n`amcheck` is the program (and a library) to check, based on the symmetry arguments,\nwhether a given material is an altermagnet.\n\nAltermagnet is a collinear magnet with symmetry-enforced zero net magnetization,\nwhere the opposite spin sublattices are coupled by symmetry operations that are not inversions or translations.\n\nThe user is supposed to provide a crystal structure and a magnetic pattern to describe the material of interest.\nIt is implicitly assumed that the net magnetic moment is zero, i.e. if user types in a ferromagnet, the program will return an error.\nThe underlying idea is that some pre-classification was already done\nand the user wants to figure out if the given material is an altermagnet or not, thus an antiferromagnet.\n\n## Installation\nThe code is written in `python` and can be installed using `pip`:\n```\npip install amcheck\n```\nIt has the following packages among its dependencies: `ase`, `spglib` and `diophantine`.\n\n## Usage\nTo use it as a command line tool, one provides one or more structure files\n(the code will internally loop over all listed files) and, when prompted,\ntypes in spin designation for each atom: \'u\' or \'U\' for spin-up, \'d\' or \'D\'\nfor spin-down and \'n\' or \'N\' if the atom is non-magnetic.\nAll atoms will be grouped into sets of symmetry-related atoms (orbits),\nand the user will need to provide spin designations per such a group.\nTo mark the entire group as non-magnetic, one can use the \'nn\' or \'NN\' designation.\nNote that here, we treat spins as pseudoscalars (up and down, black and white),\nnot as pseudovectors, and thus, no spatial anisotropy for spins is assumed.\n\n## Examples\n### Checking if a given material is altermagnetic\n```\n$ amcheck FeO.vasp MnTe.vasp\n==========================================================\nProcessing: FeO.vasp\n----------------------------------------------------------\nSpacegroup: P6_3/mmc (194)\nWriting the used structure to auxiliary file:\ncheck FeO.vasp_amcheck.vasp.\n\nOrbit of Fe atoms at positions:\n1 (1) [0.33333334 0.66666669 0.25      ]\n2 (2) [0.66666663 0.33333331 0.75      ]\nType spin (u, U, d, D, n, N, nn or NN) for each of them (space\nseparated):\nu d\n\nOrbit of O atoms at positions:\n3 (1) [0. 0. 0.]\n4 (2) [0.  0.  0.5]\nType spin (u, U, d, D, n, N, nn or NN) for each of them (space\nseparated):\nn n\nGroup of non-magnetic atoms (O): skipping.\n\nAltermagnet? False\n==========================================================\nProcessing: MnTe.vasp\n----------------------------------------------------------\nSpacegroup: P6_3/mmc (194)\nWriting the used structure to auxiliary file:\ncheck MnTe.vasp_amcheck.vasp.\n\nOrbit of Mn atoms at positions:\n1 (1) [0. 0. 0.]\n2 (2) [0.  0.  0.5]\nType spin (u, U, d, D, n, N, nn or NN) for each of them (space\nseparated):\nu d\n\nOrbit of Te atoms at positions:\n3 (1) [0.33333334 0.66666669 0.25      ]\n4 (2) [0.66666663 0.33333331 0.75      ]\nType spin (u, U, d, D, n, N, nn or NN) for each of them (space\nseparated):\nnn\nGroup of non-magnetic atoms (Te): skipping.\n\nAltermagnet? True\n```\n\n\n### Using as a library\nHere is a code snippet providing an example on how to use the `amcheck` as a\nlibrary:\n```python\nimport numpy as np\nfrom amcheck import is_altermagnet\n\nsymmetry_operations = [(np.array([[-1,  0,  0],\n                                  [ 0, -1,  0],\n                                  [ 0,  0, -1]],\n                                 dtype=int),\n                       np.array([0.0, 0.0, 0.0])),\n                       # for compactness reasons,\n                       # other symmetry operations are omitted\n                       # from this example\n                       ]\n\n# positions of atoms in NiAs structure: ["Ni", "Ni", "As", "As"]\npositions = np.array([[0.00, 0.00, 0.00],\n                      [0.00, 0.00, 0.50],\n                      [1/3., 2/3., 0.25],\n                      [2/3., 1/3., 0.75]])\n\nequiv_atoms  = [0, 0, 1, 1]\n\n# high-pressure FeO: Fe at As positions, O at Ni positions => afm\nchem_symbols = ["O", "O", "Fe", "Fe"]\nspins = ["n", "n", "u", "d"]\nprint(is_altermagnet(symops, positions, equiv_atoms, chem_symbols,\n                     spins))\n\n# MnTe: Mn at Ni positions, Te at As positions => am\nchem_symbols = ["Mn", "Mn", "Te", "Te"]\nspins = ["u", "d", "n", "n"]\nprint(is_altermagnet(symops, positions, equiv_atoms, chem_symbols,    \n                     spins))\n```\n\n\n### Determining the form of Anomalous Hall coefficient\n```\n$ amcheck --ahc RuO2.vasp\n==========================================================\nProcessing: RuO2.vasp\n----------------------------------------------------------\nList of atoms:\nRu [0. 0. 0.]\nRu [0.5 0.5 0.5]\nO [0.30557999 0.30557999 0.        ]\nO [0.19442001 0.80558002 0.5       ]\nO [0.80558002 0.19442001 0.5       ]\nO [0.69441998 0.69441998 0.        ]\n\nType magnetic moments for each atom\n (\'mx my mz\' or empty line for non-magnetic atom):\n 1  1  0\n-1 -1  0\n 0  0  0\n 0  0  0\n 0  0  0\n 0  0  0\n\nAssigned magnetic moments:\n[[1.0, 1.0, 0.0], [-1.0, -1.0, 0.0], [0, 0, 0], [0, 0, 0],\n[0, 0, 0], [0, 0, 0]] \n\nMagnetic Space Group: {\'uni_number\': 584,\n\'litvin_number\': 550, \'bns_number\': \'65.486\',\n\'og_number\': \'65.6.550\', \'number\': 65, \'type\': 3}\n\nConductivity tensor:\n[[ \'xx\'  \'xy\' \'-yz\']\n [ \'xy\'  \'xx\'  \'yz\']\n [ \'yz\' \'-yz\'  \'zz\']]\n\nThe antisymmetric part of the conductivity tensor\n (Anomalous Hall Effect):\n[[\'0\'   \'0\' \'-yz\']\n [\'0\'   \'0\'  \'yz\']\n [\'yz\' \'-yz\' \'0\']]\n\nHall vector:\n[\'-yz\', \'-yz\', \'0\']\n```\n\n\n## Contributors\nAndriy Smolyanyuk[1], Libor Šmejkal[2] and Igor I. Mazin[3]\n\n[1] Institute of Solid State Physics, TU Wien, 1040 Vienna, Austria\n\n[2] Johannes Gutenberg Universität Mainz, Mainz, Germany\n\n[3] George Mason University, Fairfax, USA\n\n## How to cite\nIf you\'re using the `amcheck` package, please cite the manuscript describing the underlying ideas:\n[A tool to check whether a symmetry-compensated collinear magnetic material is antiferro- or altermagnetic](https://arxiv.org/abs/2401.08784).\n\n```bibtex\n@misc{smolyanyuk2024tool,\n      title={A tool to check whether a symmetry-compensated collinear magnetic material is antiferro- or altermagnetic}, \n      author={Andriy Smolyanyuk and Libor \\v{S}mejkal and Igor I. Mazin},\n      year={2024},\n      eprint={2401.08784},\n      archivePrefix={arXiv},\n      primaryClass={cond-mat.mtrl-sci}\n}\n```\n',
+    'author': 'Andriy Smolyanyuk',
+    'author_email': 'andriysmolyanyuk@gmail.com',
+    'maintainer': 'Andriy Smolyanyuk',
+    'maintainer_email': 'andriysmolyanyuk@gmail.com',
+    'url': None,
+    'packages': packages,
+    'package_data': package_data,
+    'install_requires': install_requires,
+    'entry_points': entry_points,
+    'python_requires': '>=3.6,<4.0',
+}
+
+
+setup(**setup_kwargs)

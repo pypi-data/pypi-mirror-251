@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "amcheck"
+version = "1.0.0"
+description = "amcheck is the program (and a library) to check, based on the symmetry arguments, whether a given material is an altermagnet."
+authors = ["Andriy Smolyanyuk <andriysmolyanyuk@gmail.com>",
+           "Libor Smejkal <lsmejkal@uni-mainz.de>",
+           "Igor I. Mazin <imazin2@gmu.edu>"]
+maintainers = ["Andriy Smolyanyuk <andriysmolyanyuk@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+numpy = "^1.19.5"
+ase = "^3.22.1"
+spglib = "^2.0.0"
+Diophantine = "^0.2.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[tool.poetry.scripts]
+amcheck = "amcheck.amcheck:cli"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
