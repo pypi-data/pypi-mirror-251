@@ -1,0 +1,12 @@
+_frm_cpp.cp39-win32.pyd,sha256=kf8v93uHxGUrVtBkA9mhDvuaWIxQjW3FKiCNtypdHhk,177152
+frm/__init__.py,sha256=kdNnNh96i_Sto6vfPYZ-n87iEPKiXl6K1xveDMfTD1E,83
+frm/_frm_py/__init__.py,sha256=wDFzDaxRKepBZFMEbTwk6XL5hmhzdVq_WHqwuhDeMw4,24
+frm/_frm_py/miner.py,sha256=QbvOf8Dt8gQumd1BAYeQaoXeZk__85se2XyyplNdEcw,3009
+frm/_frm_py/motif.py,sha256=cpRJcyo4MXCbT1D5_MB3szAP4TPUxk7g_Dc3jf_9g2c,2606
+frm/_frm_py/patterns.py,sha256=XjIRPAjnlg1wkmZUaoX-x-4FUzS6GB-R2nMgPzHHhFE,8000
+frm/_frm_py/preprocessing.py,sha256=OAWL9_7pqDosLV-xDUMNuVtSK3z7z2GLEuFKBLAnQe0,2834
+frm_miner-0.0.8.dist-info/LICENSE,sha256=adpI9CYbNL9qHhMmCWlNa8V_C8zxpeKjm468HYiAli8,1093
+frm_miner-0.0.8.dist-info/METADATA,sha256=I_TrVdVYdRstFQoL9UUmSh5ZOPG7kUToah-j_ACZ_TQ,2847
+frm_miner-0.0.8.dist-info/WHEEL,sha256=ox_whmEWdOvRyK6TeOPzEmRk4K2lM8LLVKChtBzmjZU,96
+frm_miner-0.0.8.dist-info/top_level.txt,sha256=FrFIvYb9lnZZqBF_EK0GGTsQSJUuxvfg-Sk0X_xwtIU,13
+frm_miner-0.0.8.dist-info/RECORD,,
