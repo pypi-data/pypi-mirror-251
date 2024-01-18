@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "lintfree"
+version = "0.0.1"
+description = "Placeholder for an upcoming Python linter project"
+authors = ["Predrag Gruevski <obi1kenobi82@gmail.com>"]
+license = "proprietary"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
