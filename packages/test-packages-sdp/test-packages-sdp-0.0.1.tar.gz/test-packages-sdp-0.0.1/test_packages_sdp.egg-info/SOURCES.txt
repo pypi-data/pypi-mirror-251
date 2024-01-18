@@ -1,0 +1,11 @@
+README.md
+setup.py
+src/__init__.py
+src/logic.py
+src/main.py
+test_packages_sdp.egg-info/PKG-INFO
+test_packages_sdp.egg-info/SOURCES.txt
+test_packages_sdp.egg-info/dependency_links.txt
+test_packages_sdp.egg-info/entry_points.txt
+test_packages_sdp.egg-info/requires.txt
+test_packages_sdp.egg-info/top_level.txt
