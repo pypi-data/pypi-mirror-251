@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: gswpy
+Version: 0.0.1
+Summary: Read global surface water from https://global-surface-water.appspot.com/
+Author-email: Feng Qiao <qiaofeng@sjtu.edu.cn>
+Project-URL: Homepage, https://github.com/fengqiaogh/gswpy
+Project-URL: Issues, https://github.com/fengqiaogh/gswpy/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: netCDF4
+Requires-Dist: gdal
+
