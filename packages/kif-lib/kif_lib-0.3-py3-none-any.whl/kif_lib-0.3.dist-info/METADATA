@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: kif-lib
+Version: 0.3
+Summary: A knowledge integration framework based on Wikidata
+Home-page: https://github.com/IBM/kif
+Author: IBM
+Author-email: Guilherme.Lima@ibm.com
+License: Apache-2.0
+Keywords: kif-lib
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: lark
+Requires-Dist: more-itertools
+Requires-Dist: rdflib
+Requires-Dist: requests
+Requires-Dist: types-requests
+Provides-Extra: docs
+Requires-Dist: myst-parser ; extra == 'docs'
+Requires-Dist: pydata-sphinx-theme ; extra == 'docs'
+Provides-Extra: tests
+Requires-Dist: flake8 ; extra == 'tests'
+Requires-Dist: isort ; extra == 'tests'
+Requires-Dist: mypy ; extra == 'tests'
+Requires-Dist: pytest ; extra == 'tests'
+Requires-Dist: pytest-cov ; extra == 'tests'
+Requires-Dist: pytest-mypy ; extra == 'tests'
+Requires-Dist: tox ; extra == 'tests'
+
+# Knowledge Integration Framework #
+
+A knowledge integration framework based on Wikidata.
+
+## Hello world! ##
+
+Prints an arbitrary statement from [Wikidata](https://www.wikidata.org/):
+```python
+from kif_lib import Store
+kb = Store('sparql', 'https://query.wikidata.org/sparql')
+print(next(kb.filter()))
+```
+
+## Installation ##
+
+```shell
+$ pip install kif-lib
+```
+
+Or, for the development version:
+```shell
+$ git clone https://github.com/IBM/kif.git
+$ cd kif
+$ pip install -e .
+```
+
+## Documentation ##
+
+See the notebooks in [examples](https://github.com/IBM/kif/tree/main/examples).
+
+## Testing ##
+
+Install the test dependencies:
+```shell
+$ make install-deps
+```
+
+Run all tests:
+```shell
+$ make check
+```
+
+## License ##
+
+Released under the [Apache-2.0 license](https://github.com/IBM/kif/blob/main/LICENSE).
