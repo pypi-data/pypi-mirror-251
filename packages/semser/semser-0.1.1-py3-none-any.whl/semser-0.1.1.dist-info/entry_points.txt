@@ -1,0 +1,3 @@
+[console_scripts]
+semser=semser.semantic_search:app
+
