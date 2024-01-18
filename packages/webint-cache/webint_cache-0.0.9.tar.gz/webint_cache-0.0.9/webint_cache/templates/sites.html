@@ -1,0 +1,16 @@
+$def with (urls)
+$var title: Indexed Sites
+
+<ul>
+$for url in urls:
+    <li><a href=/$url["url"]>$url["url"]</a>
+    $# <code>\
+    $# $ size = url["details"]["size"]
+    $# $if size < 10:
+    $#     $round(size, 1)\
+    $# $else:
+    $#     $round(size)\
+    $# <small style=text-transform:uppercase>kb</small></code>
+    $# last crawled $url["crawled"].diff_for_humans()
+    </li>
+</ul>
