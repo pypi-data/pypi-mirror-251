@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: mainshortcuts
+Version: 1.5.4
+Summary: Simplifying Python Built-in Commands
+Home-page: https://github.com/MainPlay-TG/MainShortcuts.py
+Author: MainPlay YT
+Author-email: xbox.roman6666666666@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Project-URL: Repository, https://github.com/MainPlay-TG/MainShortcuts.py
+Description-Content-Type: text/markdown
+
+# MainShortcuts
+## Описание
+Сокращение и упрощение встроенных операций Python
+## Установка
+Для установки через PIP используйте
+```bash
+pip install -U mainshortcuts
+```
+## Использование
+Для импорта рекомендуется сокращённое название
+```python
+import MainShortcuts as ms
+```
+Встроенная информация о модуле
+```python
+ms.__version__ -> str # Версия модуля
+ms.__functions__ -> list # Функции, которые существуют в модуле
+ms.__variables__ -> list # Переменные, которые существуют в модуле
+ms.__depends__ -> dict # Обязательные и необязательные зависимости
+```
+### Выход с кодом ошибки
+Закрывает процесс программы с указанным кодом ошибки
+```python
+# Любой ненулевой код означает ошибку
+ms.exit() # Выход с кодом 0 (нет ошибки)
+ms.exit(1) # Выход с кодом 1
+```
+### Очистка терминала
+Очищает окно терминала от всего текста
+```python
+ms.clear() # Очистить окно терминала
+mc.cls() # То же самое, но с названием из Windows CMD
+```
+**Поддерживается только на Windows и Linux**
+### (будет продолжение)
