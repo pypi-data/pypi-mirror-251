@@ -1,0 +1,7 @@
+# Terraform ignore
+**/.terraform/**
+**/*.tfstate*
+**/.terraform.lock.hcl
+**/*.tfvars
+**/*.plan
+*.log

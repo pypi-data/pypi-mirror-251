@@ -1,0 +1,3 @@
+include VERSION
+include requirements.txt
+recursive-include covalent_oci_plugin/assets/infra/ *

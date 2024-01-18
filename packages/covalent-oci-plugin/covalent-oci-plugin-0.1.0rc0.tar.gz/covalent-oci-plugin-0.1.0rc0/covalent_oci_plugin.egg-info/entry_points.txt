@@ -1,0 +1,2 @@
+[covalent.executor.executor_plugins]
+oci = covalent_oci_plugin.oci
