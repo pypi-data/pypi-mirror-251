@@ -1,0 +1,22 @@
+[build-system]
+build-backend = "pdm.backend"
+requires = [
+    "pdm-backend",
+]
+
+[project]
+authors = [
+    { name = "Tohrusky", email = "65994850+Tohrusky@users.noreply.github.com" },
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+name = "cccv"
+readme = "README.md"
+requires-python = ">=3.8"
+version = "0.0.1"
+
+[project.license]
+text = "MIT"
+
+[tool.pdm]
