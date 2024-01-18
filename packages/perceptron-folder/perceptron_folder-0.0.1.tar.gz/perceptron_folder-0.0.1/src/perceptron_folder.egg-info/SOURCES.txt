@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/perceptron_folder/__init__.py
+src/perceptron_folder/all_utils.py
+src/perceptron_folder/perceptron.py
+src/perceptron_folder.egg-info/PKG-INFO
+src/perceptron_folder.egg-info/SOURCES.txt
+src/perceptron_folder.egg-info/dependency_links.txt
+src/perceptron_folder.egg-info/top_level.txt
