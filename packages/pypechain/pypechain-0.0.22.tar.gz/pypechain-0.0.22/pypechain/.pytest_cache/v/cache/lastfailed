@@ -1,0 +1,20 @@
+{
+  "render/contract_test.py::TestOverloading::test_overloading": true,
+  "render/contract_test.py::TestOverloading::test_notoverloading": true,
+  "render/contract_test.py::TestOverloading::test_has_events": true,
+  "render/init_test.py::TestRenderInit::test_render_init": true,
+  "test/overloading/test_overloading.py::TestOverloading::test_overloading": true,
+  "test/return_types/test_returntypes.py::TestReturnTypes::test_no_name_single_value": true,
+  "test/return_types/test_returntypes.py::TestReturnTypes::test_no_name_two_values": true,
+  "test/return_types/test_returntypes.py::TestReturnTypes::test_named_single_value": true,
+  "test/return_types/test_returntypes.py::TestReturnTypes::test_named_two_values": true,
+  "test/return_types/test_returntypes.py::TestReturnTypes::test_single_simple_struct": true,
+  "test/return_types/test_returntypes.py::TestReturnTypes::test_single_nested_struct": true,
+  "test/return_types/test_returntypes.py::TestReturnTypes::test_two_simple_structs": true,
+  "test/return_types/test_returntypes.py::TestReturnTypes::test_two_mixed_structs": true,
+  "test/return_types/test_returntypes.py::TestReturnTypes::test_named_single_struct": true,
+  "test/return_types/test_returntypes.py::TestReturnTypes::test_named_two_mixed_structs": true,
+  "test/return_types/test_returntypes.py::TestReturnTypes::test_mix_structs_and_primitives": true,
+  "test/deployment/test_deployment.py::TestNoConstructorContract::test_deployment_with_constructor_and_default_signer": true,
+  "test/deployment/test_deployment.py::TestNoConstructorContract::test_deployment_with_constructor": true
+}
