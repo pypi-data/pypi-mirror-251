@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+d666_rpg_system/__init__.py
+d666_rpg_system/char.py
+d666_rpg_system/data.py
+d666_rpg_system.egg-info/PKG-INFO
+d666_rpg_system.egg-info/SOURCES.txt
+d666_rpg_system.egg-info/dependency_links.txt
+d666_rpg_system.egg-info/requires.txt
+d666_rpg_system.egg-info/top_level.txt
