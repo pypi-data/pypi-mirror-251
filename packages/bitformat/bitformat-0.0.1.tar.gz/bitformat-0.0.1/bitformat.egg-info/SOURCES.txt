@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+bitformat/__init__.py
+bitformat/py.typed
+bitformat.egg-info/PKG-INFO
+bitformat.egg-info/SOURCES.txt
+bitformat.egg-info/dependency_links.txt
+bitformat.egg-info/requires.txt
+bitformat.egg-info/top_level.txt
+tests/test_format.py
