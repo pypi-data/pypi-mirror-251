@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+fb4/__init__.py
+fb4/ekz_data.py
+fb4/poisk.py
+fb4.egg-info/PKG-INFO
+fb4.egg-info/SOURCES.txt
+fb4.egg-info/dependency_links.txt
+fb4.egg-info/requires.txt
+fb4.egg-info/top_level.txt
