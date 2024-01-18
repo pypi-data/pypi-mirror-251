@@ -1,0 +1,5 @@
+attrs
+shapely>=1.7.0
+
+[spark]
+pyspark>=2.3.0

@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: pineapple-spark
+Version: 1.4.2
+Summary: Pineapple is an extension of Apache Sedona for processing large-scale complex spatial queries
+Home-page: https://github.com/laila-abdelhafeez/pineapple
+Author: Laila Abdelhafeez
+Author-email: labde005@ucr.edu
+Project-URL: Documentation, https://https://github.com/laila-abdelhafeez/pineapple
+Project-URL: Source code, https://github.com/laila-abdelhafeez/pineapple
+Project-URL: Bug Reports, https://github.com/laila-abdelhafeez/pineapple
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: attrs
+Requires-Dist: shapely>=1.7.0
+Provides-Extra: spark
+Requires-Dist: pyspark>=2.3.0; extra == "spark"
+
+# Pyneapple
+
+This library is the Python wrapper for Pyneapple project.
+
+Pyneapple is an extension of Apache Sedona supporting complex spatial operators
+including spatial group-by aggregate counting and a parallel doubly-connected edge list.
