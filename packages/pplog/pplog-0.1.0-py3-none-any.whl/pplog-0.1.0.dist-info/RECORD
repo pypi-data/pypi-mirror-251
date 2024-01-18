@@ -1,0 +1,10 @@
+pplog/__init__.py,sha256=EHeUlxF4Pn2o1pIF6drwhf1qpAkiBaELWs4X4hwblhM,82
+pplog/app.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pplog/config/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pplog/config/manager.py,sha256=RmDcbw4Dc6xcChcU0SMkudVoYMSf5gRnKIzia6MHhz8,2942
+pplog/log_checks/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pplog/log_checks/log_checks.py,sha256=QLHLs0cOKD5m81Ctpwj7bbyroNP6qgjoinjK03UTPww,490
+pplog/ppconf/ppconf.yaml,sha256=5FHySj9RfXB8W0iLuaBEq-WLYx6EIQJ95zlcx7wzhaM,48
+pplog-0.1.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+pplog-0.1.0.dist-info/METADATA,sha256=bbYtcZxrCUxGCEIz2OT3q4-6jGcYcMMFzDX8gZHLqws,1767
+pplog-0.1.0.dist-info/RECORD,,
