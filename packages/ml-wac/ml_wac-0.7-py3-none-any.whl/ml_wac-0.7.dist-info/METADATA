@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: ml_wac
+Version: 0.7
+Summary: A Machine Learning Web-based Attack Classifier to detect and identify LFI, RFI, SQLI, and XSS attacks using the request paths
+Home-page: https://github.com/izak0s/ml_wac/
+Author: Jord & Isaac
+Author-email: ml_wac@izak.dev
+License: GPLv3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: setuptools
+Requires-Dist: scikit-learn ==1.2.2
+Requires-Dist: xgboost
+Requires-Dist: numpy
+
+# WAC: ML Web-based Attack Classifier
+
