@@ -1,0 +1,10 @@
+README.md
+setup.py
+estimate_population/__init__.py
+estimate_population/population_estimator.py
+estimate_population.egg-info/PKG-INFO
+estimate_population.egg-info/SOURCES.txt
+estimate_population.egg-info/dependency_links.txt
+estimate_population.egg-info/top_level.txt
+tests/__init__.py
+tests/test_population_estimator.py
