@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "cbz_reader"
+version = "1.0.0"
+description = "A good ol' CBZ Reader!"
+authors = ["devops117 <devops117.main@protonmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+quart = "^0.19.4"
+natsort = "^8.4.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

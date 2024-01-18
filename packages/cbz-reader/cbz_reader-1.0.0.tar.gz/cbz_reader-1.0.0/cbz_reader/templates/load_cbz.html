@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block title %}{{ chapter_title }}{% endblock %}
+{% block header %}
+    <h1 id="chapter-title" class="title">{{ chapter_title }}</h1>
+{% endblock %}
+{% block main %}
+    <div id="images">
+        {% for img_src in image_sources %}
+            <img src="{{ img_src }}"></img>
+        {% endfor %}
+    </div>
+    <div id="nav-buttons">
+        <div id="first-page">
+        {% if first_page_index %}
+	    <a href="{{ first_page_index }}">&lt;&lt;</a>
+        {% else %}
+	    <p>&lt;&lt;</p>
+        {% endif %}
+        </div>
+        <div id="previous-page">
+        {% if previous_page_index %}
+            <a href="{{ previous_page_index }}">&lt;</a>
+        {% else %}
+	    <p>&lt;</p>
+        {% endif %}
+        </div>
+	<div id="next-page">
+        {% if next_page_index %}
+            <a href="{{ next_page_index }}">&gt;</a>
+        {% else %}
+            <p>&gt;</p>
+        {% endif %}
+        </div>
+        <div id="last-page">
+        {% if last_page_index %}
+            <a href="{{ last_page_index }}">&gt;&gt;</a>
+        {% else %}
+            <p>&gt;&gt;</p>
+        {% endif %}
+        </div>
+    </div>
+    <div id="page-details">
+        <p id="current-page-index">Page: {{ current_page_index }}</p>
+        <a id="list_cbz" href="/">CBZ list</a>
+    </div>
+{% endblock %}

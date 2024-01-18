@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="A good ol' CBZ Reader! at https://github.com/devops117/CBZ-Reader">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>{% block header %}{% endblock %}</header>
+    <main>{% block main %}{% endblock %}</main>
+    <footer>
+        {% block footer %}
+        <h1 id="footer-title" class="title">CBZ-Reader</h2>
+        <h5 id="footer-credit"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/devops117/CBZ-Reader">CBZ-Reader</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://github.com/devops117">devops117</a></h5>
+        <h5 id="footer-license">licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer">CC BY-SA 4.0</a></h5>
+        {% endblock %}
+    </footer>
+</body>
