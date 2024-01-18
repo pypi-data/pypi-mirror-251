@@ -1,0 +1,18 @@
+Version 0.2.3     17 Jan 2024
+
+	* Update jinja2 to address CVE-2024-22195 from Dependabot.
+
+Version 0.2.2     05 Nov 2023
+
+	* Update urllib3 to address Dependabot warnings.
+	* Upgrade to Poetry v1.7.0 for official Python 3.12 support.
+
+Version 0.2.1     11 Oct 2023
+
+	* Upgrade major dependencies.
+	* Upgrade build process to Poetry v1.6.1.
+	* Add support for Python v3.12.
+
+Version 0.2.0     17 Sep 2023
+
+	* Initial release to PyPI.
