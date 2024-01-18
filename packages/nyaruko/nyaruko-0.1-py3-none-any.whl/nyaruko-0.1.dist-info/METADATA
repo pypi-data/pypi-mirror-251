@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: nyaruko
+Version: 0.1
+License-File: LICENSE
+Requires-Dist: Click
+Requires-Dist: python-telegram-bot[socks]
+

@@ -1,0 +1,2 @@
+[console_scripts]
+ny = nyaruko.main:cli
