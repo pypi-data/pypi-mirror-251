@@ -1,0 +1,10 @@
+_numpy_minmax.pypy38-pp73-x86_64-linux-gnu.so,sha256=9KVsbfw8WBSCYqXgiqJuwtU9lalPKNZ2iZxEFJ2fTME,16712
+numpy_minmax/_minmax_cffi.py,sha256=yJof9vtwCdre80xUJiCmsvhYXceVbtWPhV0KS-fs76Q,762
+numpy_minmax/_version.py,sha256=sDPtavEvBPxFwCcBbyeIEKg0y_zisyTNqBzVjobKbkQ,440
+numpy_minmax/__init__.py,sha256=fQE0SPwsQ5Kc95Z77SOrrAJkQi5t6H_929Ol609hO7Q,1020
+numpy_minmax/_minmax.c,sha256=43YV9SEYNV1ZCX-0iGs0r8P8oX8ZDzdsmRQM6Ty3p5A,5388
+numpy_minmax-0.2.0.dist-info/WHEEL,sha256=2WTK7ulGG9AfJxhQYOYlkrwAaQ288jOHbeQIHLFV5xo,245
+numpy_minmax-0.2.0.dist-info/LICENSE,sha256=O-3x-1aaHJPorLGJUFNphc-YzgPMjhmiyTOUbODYa7o,1063
+numpy_minmax-0.2.0.dist-info/RECORD,,
+numpy_minmax-0.2.0.dist-info/top_level.txt,sha256=lWZgQ_A9X2cC4wFf4lDfOY5HQ9Rb6iPIEVxgOmvQ9Q4,33
+numpy_minmax-0.2.0.dist-info/METADATA,sha256=0ppeW-W43_jPrbG-xlI9VQMDzrlgM9Pr-Hk3tviZPgY,3784
