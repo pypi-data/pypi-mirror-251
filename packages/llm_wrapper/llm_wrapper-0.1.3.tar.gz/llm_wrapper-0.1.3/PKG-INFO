@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: llm_wrapper
+Version: 0.1.3
+Summary: run llm functions with just inline documentation and no code
+Author: Meir Michanie
+Author-email: meirm@riunx.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: langchain (>=0.1.0,<0.2.0)
+Requires-Dist: langchain_community (>=0.0.12,<0.0.13)
+Requires-Dist: pydantic (>=2.5.3,<3.0.0)
