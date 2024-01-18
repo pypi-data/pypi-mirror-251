@@ -1,0 +1,8 @@
+README.md
+setup.py
+amazon_review_analyzer/__init__.py
+amazon_review_analyzer/reviews.py
+amazon_review_analyzer.egg-info/PKG-INFO
+amazon_review_analyzer.egg-info/SOURCES.txt
+amazon_review_analyzer.egg-info/dependency_links.txt
+amazon_review_analyzer.egg-info/top_level.txt
