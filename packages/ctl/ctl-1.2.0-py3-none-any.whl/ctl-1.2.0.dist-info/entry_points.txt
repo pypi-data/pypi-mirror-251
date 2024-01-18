@@ -1,0 +1,6 @@
+[console_scripts]
+ctl=ctl.cli:main
+
+[markdown.extensions]
+pymdgen=pymdgen.md:Extension
+

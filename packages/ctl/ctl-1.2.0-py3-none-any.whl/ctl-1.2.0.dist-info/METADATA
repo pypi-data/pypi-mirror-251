@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: ctl
+Version: 1.2.0
+Summary: Full control of your environment
+Home-page: https://github.com/20c/ctl
+License: Apache-2.0
+Author: 20C
+Author-email: code@20c.com
+Requires-Python: >=3.9,<4.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Topic :: Software Development :: Documentation
+Requires-Dist: GitPython (>=3.1.36)
+Requires-Dist: confu (>=1.4)
+Requires-Dist: grainy (>=1.4)
+Requires-Dist: munge (>=1)
+Requires-Dist: natsort (>=8)
+Requires-Dist: ogr (>=0.46.0)
+Requires-Dist: pluginmgr (>=1)
+Requires-Dist: pydantic (>=2.3.0)
+Requires-Dist: semver (<=3)
+Project-URL: Repository, https://github.com/20c/ctl
+Description-Content-Type: text/markdown
+
+
+# Ctl
+
+[![PyPI](https://img.shields.io/pypi/v/ctl.svg?maxAge=60)](https://pypi.python.org/pypi/ctl)
+[![PyPI](https://img.shields.io/pypi/pyversions/ctl.svg?maxAge=600)](https://pypi.python.org/pypi/ctl)
+[![tests](https://github.com/20c/ctl/actions/workflows/tests.yml/badge.svg)](https://github.com/20c/ctl/actions/workflows/tests.yml)
+[![Codecov](https://img.shields.io/codecov/c/github/20c/ctl/master.svg?maxAge=60)](https://codecov.io/github/20c/ctl)
+
+Full control of your environment
+
+## Documentation
+
+- latest: https://ctl.readthedocs.io/en/latest
+
+## License
+
+Copyright 2016-2024 20C, LLC
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this software except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
