@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: pulsar-spectra
+Version: 2.0.4
+Summary: A simple interface to record pulsar's flux density measurements for a large number of papers and perform fitting of spectral models. 
+Home-page: https://github.com/NickSwainston/pulsar_spectra.git
+Requires-Python: >=3.7
+License-File: LICENSE
