@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: classical_doa
+Version: 0.1.0
+Summary: Classical DOA estimation algorithms implemented in Python
+Home-page: https://github.com/zhiim/classical_doa
+Author: Qian Xu
+Author-email: xuq3196@outlook.com
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: scipy
+
+Some classical DOA Estimation algorithms implemented in Python.
+
+## project structure
+
+```shell
+classical_doa
+├── algorithm  # differen DOA estimation algorithms
+│   ├── esprit.py
+│   └── music.py
+├── array.py  # different arrays
+├── signal.py  # different signal
+├── readme.md
+└── run  # examples of running algorithms
+    ├── music.py
+    └── xxx.py
+```
+
+## Roadmap
+
+- [x] MUSIC
+- [x] ESPRIT
+- [x] Root-MUSIC
+- [x] OMP
+- [ ] l1-SVD
+- [ ] UCA-RB-MUSIC
+- [ ] UCA-ESPRIT
+- [x] ISSM
+- [x] CSSM
+- [x] TOPS
