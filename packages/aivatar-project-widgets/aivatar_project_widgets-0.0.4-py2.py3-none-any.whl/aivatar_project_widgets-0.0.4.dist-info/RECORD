@@ -1,0 +1,14 @@
+aivatar_project_widgets/__init__.py,sha256=FnZz24IjExPuChNZOH5OAm3VZQheV2QG4LcQONNUUg8,452
+aivatar_project_widgets/constants.py,sha256=4Wqquz-YfuIbyAKPMQz7CCU_ZwHzoaeZOIda7rKpWGM,70
+aivatar_project_widgets/core.py,sha256=35GUNoWb4-vSsc_JcH-D-jZal7mImlPa6hSF3-DByNA,10016
+aivatar_project_widgets/icons/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aivatar_project_widgets/icons/arrow-down-16.png,sha256=v81Z49OuPIuSEe5weG4SNgvQCMdtKaBNu7kHQFpo63Q,204
+aivatar_project_widgets/icons/project-0-50.png,sha256=gKTZyXM7i0pROm_f3KSv8Rruxb_Cpzd47H_hBo6A2yI,1142
+aivatar_project_widgets/icons/project@1x.png,sha256=FKqkQf-AxqQZRFB5ZpiPaTJg4G7DAAMs4GVRgfIHADk,632
+aivatar_project_widgets/test/__init__.py,sha256=8z-2KvGKibmCgk3_nvDulDAyb9sANUJDTWdpV1ZGFfk,176
+aivatar_project_widgets/test/test_core.py,sha256=-znuSv3pRuMF-rNDsgti8IKwvMZbmIzSc9GCAyo3n0A,598
+aivatar_project_widgets/test/test_imports.py,sha256=b_vv2spnOuRXBVm_AhS_Vd9jez0vsCPHa68xAaVBJ9I,714
+aivatar_project_widgets-0.0.4.dist-info/METADATA,sha256=3_6aAta4KJctXQBgU9DwWHtH0Iu9vf1ddCqjtsTnEsE,470
+aivatar_project_widgets-0.0.4.dist-info/WHEEL,sha256=-G_t0oGuE7UD0DrSpVZnq1hHMBV9DD2XkS5v7XpmTnk,110
+aivatar_project_widgets-0.0.4.dist-info/top_level.txt,sha256=i4F7QNxGH2qHv16V-nCtpc1psy2vDZeDDwTWwgVZanI,24
+aivatar_project_widgets-0.0.4.dist-info/RECORD,,
