@@ -1,0 +1,10 @@
+v3iofs/__init__.py,sha256=9j-f6LIkmwL87ecufeIPXNXS4WIQ-K38cojHAtPX7t4,1232
+v3iofs/file.py,sha256=rrjKNUlo2zZENGmmjpDJq0qD2lYZGrvjHnqwj_CDu4g,2062
+v3iofs/fs.py,sha256=37CJSVtjSWait3nMqdBIm-wyms4YscIvCmu_shB0f0c,15170
+v3iofs/path.py,sha256=Rq6xdSQYyHDmw-dVq4gERGMPg9yqa8HPm-KTusQuO_E,1531
+v3iofs/utils.py,sha256=8Cs1ZTOxedFVG8hC-9QVjlSrA_82eZM829Cj9nKyhAM,920
+v3iofs-0.1.18.dist-info/LICENSE.txt,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+v3iofs-0.1.18.dist-info/METADATA,sha256=9zvVSy6bhDwj_YFf1iwE5fOlXnBbUMzEhMdGdH_zfJA,2590
+v3iofs-0.1.18.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+v3iofs-0.1.18.dist-info/top_level.txt,sha256=NqpSySHRBHYYjUxXmPBLjRNKKkd8aalIJ_6T9b8oUU4,7
+v3iofs-0.1.18.dist-info/RECORD,,
