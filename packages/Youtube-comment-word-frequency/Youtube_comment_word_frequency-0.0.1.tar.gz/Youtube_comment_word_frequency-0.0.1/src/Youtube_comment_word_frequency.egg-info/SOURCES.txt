@@ -1,0 +1,8 @@
+README.md
+setup.py
+src/Youtube_comment_word_frequency.py
+src/Youtube_comment_word_frequency.egg-info/PKG-INFO
+src/Youtube_comment_word_frequency.egg-info/SOURCES.txt
+src/Youtube_comment_word_frequency.egg-info/dependency_links.txt
+src/Youtube_comment_word_frequency.egg-info/entry_points.txt
+src/Youtube_comment_word_frequency.egg-info/top_level.txt

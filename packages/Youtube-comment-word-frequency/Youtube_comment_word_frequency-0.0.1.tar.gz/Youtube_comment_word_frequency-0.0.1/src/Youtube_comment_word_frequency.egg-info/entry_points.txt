@@ -1,0 +1,3 @@
+[console_scripts]
+Youtube_comment_word_frequency = Youtube_comment_word_frequency:main
+
