@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: arduiglitch
+Version: 0.0.6
+Summary: Python module for the eponym voltage glitch training. Contains everything required to run the Jupyterlab notebooks.
+Author-email: Hugo Perrin <h.perrin@emse.fr>
+License: GPL-3.0-or-later
+Requires-Python: >=3.10.12
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: pyserial
+Requires-Dist: jupyterlab
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: panel
+Requires-Dist: pandas
+Requires-Dist: hvplot
+Requires-Dist: pycryptodome >=3.19.0
+Requires-Dist: jupyter-bokeh
+Requires-Dist: ipykernel
+
+===========
+Arduiglitch
+===========
+
+This package contains all the companion scripts required to run the Jupyterlab 
+notebooks of the Arduiglitch voltage glitch training developed by the 
+hardware security department (SAS) of l'École des Mines de Saint-Étienne.
+
+-------
+License
+-------
+
+GNU General Public License version 3
+
+For more information, see the `LICENSE` file at the root of the project.
