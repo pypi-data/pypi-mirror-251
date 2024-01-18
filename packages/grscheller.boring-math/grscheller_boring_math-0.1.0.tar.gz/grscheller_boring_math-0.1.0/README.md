@@ -1,0 +1,70 @@
+# PyPI grscheller.boring-math Project
+
+Daddy's Boring Math Library.
+
+* Example of a Python package with both libraries and executables
+* Package name suggested by my then 13 year old daughter Mary
+* [Detailed grscheller.datastructures API's][1]
+
+## Package overview grscheller.boring_math
+
+* [Integer Math Module](#integer-math-module)
+  * [Number Theory](#number-theory)
+  * [Pythagorean Triples](#pythagorean-triples)
+  * [Ackermann's Function](#ackermanns-function)
+  * [Fibonacci Sequences](#fibonacci-sequences)
+* [Semantic Versioning](#semantic-versioning)
+
+### Integer Math Module
+
+#### Number theory 
+
+* Function **gcd**(fst: int, snd: int) -> int
+  * takes two integers, returns greatest common divisor (gcd)
+  * where `gcd >= 0`
+  * `gcd(0,0)` returns `0` but in this case the gcd does not exist
+
+* Function **lcm**(fst: int, snd: int) -> int
+  * takes two integers, returns least common multiple (lcm)
+
+* Function **primes**(start: int=2, end_before: int=100) -> Iterator
+  * takes two integers, returns least common multiple (lcm)
+
+#### Pythagorean Triples
+
+The values `a, b, c > 0` represent integer sides of a right triangle.
+
+* Function **pythag3**(a_max: int=3, all_max: int|None=None) -> Iterator
+  * Return an interator of tuples of Pythagorean Tiples
+  * Side `a <= a_max` and sides `a, b, c <= all_max`
+  * Iterator finds all primative pythagorean triples up to a given a_max
+
+#### Ackermann's Function
+
+* Function **ackermann**(m: int, n: int) -> int
+  * Ackermann's function is a doublely recursively defined function
+  * An example of a computable but not primitive recursive function
+  * Becomes numerically intractable after m=4
+
+#### Fibonacci Sequences
+
+* Function **fibonacci**(f0: int=0, f1: int=1) -> Iterator
+  * Return an iterator for a Fibonacci sequence
+  * Defaults to `0, 1, 1, 2, 3, 5, 8, ...`
+
+## Semantic Versioning
+
+* Semantic versioning for PyPI releases:
+  * first digit signifies a major event, epoch, or paradigm shift
+  * second digit means
+    * PyPI breaking API changes
+    * PyPI major changes
+  * third digit either means
+    * PyPI API additions
+    * PyPI bugfixes or minor changes
+    * PyPI documentation updates
+    * first development branch breaking API changes
+
+---
+
+[1]: https://grscheller.github.io/boring-math/
