@@ -1,0 +1,10 @@
+eNlightSDK/__init__.py,sha256=9KC3XhvML-Z8HL7GuB1ImNeoqBdVvfYqJpvg4xVECRs,53
+eNlightSDK/enlight_cloud.py,sha256=Wh1Bd8XSjaKk43AmafkUJRKG2eceHuDbyxv0Hk537Ns,2341
+eNlightSDK/classes/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+eNlightSDK/classes/caller.py,sha256=z6SJ39sCOufO5310TzhSiinDZtc2_E9dWU9eOGsjcn4,1275
+eNlightSDK/classes/set_projects.py,sha256=3eDnzwub1v_srtLeoglVMeFWHWmd0AQpDtn8pn35Ln8,872
+eNlightSDK/classes/vm.py,sha256=1YfPlAie3J0TXINLbKEZAnBUhCVTzRQ5VRC4ExPe8uU,7117
+CloudVmDemo-4.0.dist-info/METADATA,sha256=_2VFMs-NjoSxLrkKyrleknpAv0P16IrmWCialR1x1N4,220
+CloudVmDemo-4.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+CloudVmDemo-4.0.dist-info/top_level.txt,sha256=xmxaTaRo55FOXmQeCr1LTvqo7Zva7NHkQKur_XHVpWM,11
+CloudVmDemo-4.0.dist-info/RECORD,,
