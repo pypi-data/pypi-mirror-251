@@ -1,0 +1,8 @@
+myre/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+myre/match.py,sha256=XlXUuwyxCWDm0C01MYGoJslgUl1QMcbeicuhJ97ZI70,2146
+myre/pattern.py,sha256=2clGIBlWKUMsmPu3j73JwyO5s2unteiiI9SGBIDEf3U,2242
+myre/protocol.py,sha256=nA3nzPV0u0UsKey9Is_5QdKNVzkjyJ6bR8QZRgdtYdk,1403
+myre-0.0.1.dist-info/LICENSE,sha256=w_0bdLVjW0FOZjL8qyPB0rGpeZr-LTiNbWABgU1gd-E,1078
+myre-0.0.1.dist-info/METADATA,sha256=TJ8U9i33CLGdtVUvxm0Lf_sMo6uEeOZ1BlawDHwg5KQ,661
+myre-0.0.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+myre-0.0.1.dist-info/RECORD,,
