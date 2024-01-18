@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+dashseo/__init__.py
+dashseo/convert_to_html.py
+dashseo.egg-info/PKG-INFO
+dashseo.egg-info/SOURCES.txt
+dashseo.egg-info/dependency_links.txt
+dashseo.egg-info/requires.txt
+dashseo.egg-info/top_level.txt
+tests/test_htmlify.py
