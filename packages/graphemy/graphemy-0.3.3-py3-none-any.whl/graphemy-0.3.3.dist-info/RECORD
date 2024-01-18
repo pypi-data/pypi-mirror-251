@@ -1,0 +1,9 @@
+graphemy/__init__.py,sha256=M_H5wF6IFdLbFBfjZzzTEGci1PSiWvjOOu-TAWWgYrE,202
+graphemy/dl.py,sha256=p8XDL0i8LcFd5ZOU0vUZL9OvJB5F3hbA1z0A_cTBpxw,3961
+graphemy/models.py,sha256=m4e6Eu_UBnxmPgXf47vSBfHgTJm17xZFpd5Ps7fbMKE,15788
+graphemy/router.py,sha256=jglxtn_QnWjLEKq6LShZ6OAVBZJusjv8-ZywZ5Ni_hI,6789
+graphemy/setup.py,sha256=OOeLpNz2W8WGMKUOfOII2CPiMHi66CsfhxmOBpd1zjU,2366
+graphemy-0.3.3.dist-info/LICENSE,sha256=zG5pvj0q8uYEW4Pd5hHMMjq7o7VX8tq67baV-D-TC_g,1100
+graphemy-0.3.3.dist-info/METADATA,sha256=5nar1DJNbJdksLBj_atkMfC_g-uUfjE8-0azJZOjVNE,4744
+graphemy-0.3.3.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+graphemy-0.3.3.dist-info/RECORD,,
