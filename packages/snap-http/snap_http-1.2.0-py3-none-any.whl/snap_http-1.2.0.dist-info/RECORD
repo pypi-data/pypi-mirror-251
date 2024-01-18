@@ -1,0 +1,8 @@
+snap_http/__init__.py,sha256=PRuRyIsOvEiAGlJKQfDDDyipA-M-3AuXYOWDs0Bp1zQ,565
+snap_http/api.py,sha256=qtH7jtCTEL--w-4Fk8NSetXI_g2BL572gOTNWEztBAk,7106
+snap_http/http.py,sha256=Hi-lCp2UOysvCtk-LZwx7Xf7elfjQ5dvSEfpFVdc0JY,2323
+snap_http/types.py,sha256=ywxMPQ2Ccb16HqmS3_e7WpmdYki9V6dw3iYhXOssxac,4126
+snap_http-1.2.0.dist-info/LICENSE,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+snap_http-1.2.0.dist-info/METADATA,sha256=rNK5fn2CFpz7JcixOL42GvFSntXN7PaJAhSX1Abudto,2021
+snap_http-1.2.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+snap_http-1.2.0.dist-info/RECORD,,
