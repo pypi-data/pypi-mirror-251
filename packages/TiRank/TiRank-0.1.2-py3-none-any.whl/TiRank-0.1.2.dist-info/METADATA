@@ -1,0 +1,86 @@
+Metadata-Version: 2.1
+Name: TiRank
+Version: 0.1.2
+Summary: A comprehensive analysis tool for transfering phenotype of bulk transcritomic data to single cell or spatial transcriptomic data.
+Home-page: https://github.com/LenisLin/TiRank
+Author: Lenis Lin
+Author-email: 727682308@qq.com
+License: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: torch
+Requires-Dist: torchvision
+Requires-Dist: optuna ==3.4.0
+Requires-Dist: numpy ==1.22.3
+Requires-Dist: scipy ==1.8.1
+Requires-Dist: pandas ==1.5.3
+Requires-Dist: leidenalg
+Requires-Dist: scikit-learn ==1.0.2
+Requires-Dist: lifelines ==0.27.8
+Requires-Dist: statsmodels ==0.14.0
+Requires-Dist: imbalanced-learn ==0.11.0
+Requires-Dist: matplotlib ==3.7.1
+Requires-Dist: seaborn ==0.12.2
+Requires-Dist: pillow ==9.4.0
+Requires-Dist: scanpy ==1.9.5
+Requires-Dist: gseapy ==1.1.1
+Requires-Dist: dash ==2.14.2
+Requires-Dist: dash-bootstrap-components ==1.5.0
+
+
+# TiRank
+
+TiRank is a comprehensive analysis tool designed for transferring phenotype of bulk transcriptomic data to single cell or spatial transcriptomic data. Developed by Lenis Lin, TiRank is aimed at facilitating deeper insights into transcriptomic analysis through a robust and user-friendly interface.
+
+## Installation
+
+To install TiRank, simply use pip:
+
+```bash
+pip install TiRank
+```
+
+## Features
+
+- Transfer phenotype from bulk to single-cell data.
+- Spatial transcriptomic data analysis.
+- Integration with popular data science libraries like Pandas, NumPy, and SciPy.
+- Advanced visualization tools included.
+
+## Dependencies
+
+TiRank depends on several libraries, which are automatically installed with the package:
+
+- PyTorch (`torch`, `torchvision`)
+- Optuna (`optuna==3.4.0`)
+- Pandas, NumPy, and SciPy
+- Scikit-Learn, Lifelines, Statsmodels, Imbalanced-Learn
+- Matplotlib, Seaborn, Pillow
+- Scanpy (`scanpy==1.9.5`), GSEAPY (`gseapy==1.1.1`)
+- Dash (`dash==2.14.2`), Dash Bootstrap Components (`dash-bootstrap-components==1.5.0`)
+
+## Usage
+
+Provide some basic usage examples or a link to the documentation where users can learn how to utilize TiRank.
+
+## Contributing
+
+Contributions to TiRank are welcome! Please read our contribution guidelines (link to contribution guidelines) to learn how you can contribute.
+
+## License
+
+TiRank is licensed under the MIT License.
+
+## Contact
+
+For support or queries, please reach out to Lenis Lin at 727682308@qq.com.
+
+## Acknowledgements
+
+Thank you to all contributors and users of TiRank. Your support is greatly appreciated!
+
+## Further Information
+
+For more detailed information, please visit our [GitHub repository](https://github.com/LenisLin/TiRank).
