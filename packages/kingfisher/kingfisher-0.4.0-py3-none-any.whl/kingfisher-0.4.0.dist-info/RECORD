@@ -1,0 +1,16 @@
+kingfisher/__init__.py,sha256=Gn8jBH300Kq8iSax2JmF4sMVAtdpkfeO-t7GCuV15Zw,42267
+kingfisher/ena.py,sha256=N3dDWqpZWH9oi0Ma-IZICMyag8mWE0xJydcrxAs3GsY,6408
+kingfisher/exception.py,sha256=HGMuTh-gchL1fqjOSf3rp3xZbMnPGSH32h4ZTqzdPqY,48
+kingfisher/location.py,sha256=Um2Yl1i9E0FdqZ4TWmmtTO9aSZGPMQvW55YaTNbidAE,7056
+kingfisher/md5sum.py,sha256=QMURtYWs2520J-UpvaVJBkoXFUaB94RSfIFWYK84TLA,498
+kingfisher/sra_metadata.py,sha256=bwgem_BWUqINOYrfkw5TLNSDpXGXxyJhYu7yYS8vxbU,15327
+kingfisher/version.py,sha256=42STGor_9nKYXumfeV5tiyD_M8VdcddX7CEexmibPBk,22
+kingfisher/data/asperaweb_id_dsa.openssh,sha256=ce9NgZYmKgB4WK_6ZpgVkS4ISSca8BmqiOZ6_Bk7huE,668
+kingfisher-0.4.0.data/data/LICENCE.txt,sha256=CuBIWlvTemPmNgNZZBfk6w5lMzT6bH-TLKOg6F1K8ic,35148
+kingfisher-0.4.0.data/data/README.md,sha256=cWfW0qa8FkkBEhqbvp8j28jYxvdWto1cRxEaLlDan08,488
+kingfisher-0.4.0.data/scripts/kingfisher,sha256=tXb0Y0G6yamhGn2gGIy_iyDdlWYIwFX3jdFYd6NzPQw,16319
+kingfisher-0.4.0.dist-info/LICENCE.txt,sha256=CuBIWlvTemPmNgNZZBfk6w5lMzT6bH-TLKOg6F1K8ic,35148
+kingfisher-0.4.0.dist-info/METADATA,sha256=yoGU6vEnF6QdDEBkAAl9rws6reRuiDbbvwYelVFNsek,1014
+kingfisher-0.4.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+kingfisher-0.4.0.dist-info/top_level.txt,sha256=tyxMZEB-M5Wqt43dXYvPbgScNsvvZXRJ2OoZW7-IPd8,11
+kingfisher-0.4.0.dist-info/RECORD,,
