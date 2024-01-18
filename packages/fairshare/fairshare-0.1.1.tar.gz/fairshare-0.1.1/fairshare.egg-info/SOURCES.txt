@@ -1,0 +1,16 @@
+LICENCE
+README.md
+setup.py
+fairshare/__init__.py
+fairshare/core.py
+fairshare/helpers.py
+fairshare/patches.py
+fairshare/serializers.py
+fairshare.egg-info/PKG-INFO
+fairshare.egg-info/SOURCES.txt
+fairshare.egg-info/dependency_links.txt
+fairshare.egg-info/requires.txt
+fairshare.egg-info/top_level.txt
+fairshare/base/__init__.py
+fairshare/base/messages.py
+fairshare/base/serializers.py
