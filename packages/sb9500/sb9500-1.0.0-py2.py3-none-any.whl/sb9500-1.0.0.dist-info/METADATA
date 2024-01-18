@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: sb9500
+Version: 1.0.0
+Summary: =?utf-8?b?QnUga8O8dMO8cGhhbmUgU0ItOTUwMCBpbnNhbnPEsSByb2JvdHVudW4gacWfbGVkacSfaSBZYXBheSBaZWthIHNpc3RlbWluZGVraSBiYXrEsSDDtnplbCBrw7x0w7xwaGFuZWxlcmkga3VsbGFuxLFtYSBhw6dhci4=?=
+Home-page: https://www.bashtan.store
+Author: Salih Bastan
+Author-email: sb9500mail@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: requests
+Requires-Dist: colorama
+Requires-Dist: playsound
+
+UNKNOWN
+
