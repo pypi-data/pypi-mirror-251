@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: battlefy.py
+Version: 0.2.0
+Summary: A Python Library for Battlefy.com
+License: MIT
+Author: Vincent Lee
+Author-email: vlee@vlee.me.uk
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: aiohttp (>=3.9.1,<4.0.0)
+Requires-Dist: python-dateutil (>=2.8.2,<3.0.0)
+Description-Content-Type: text/markdown
+
+# WORK IN PROGRESS
+
+This library is still a wip and is far from ready to be used. Feel free to use but expect breaking changes if you don't lock a version.
+
+# Battlefy.py 
+A Python Library for Battlefy.com
+
+Battlefy.py is an asyncio library for accessing information off of Battlefy.com.
+
+This library has been designed for use by IPL for Splatoon tournaments primarily. 
+
+## Installation
+```sh
+pip install battlefy.py
+```
+
+## Usage
+
+### Tournaments
+```py
+from battlefy import TournamentClient
+
+client = TournamentClient(headers = {})
+
+tour_id = "5d167f61ddd2f83f429dc858"
+tournament = await client.get_tournament(tour_id)
+
+print(tournament.name)
+```
