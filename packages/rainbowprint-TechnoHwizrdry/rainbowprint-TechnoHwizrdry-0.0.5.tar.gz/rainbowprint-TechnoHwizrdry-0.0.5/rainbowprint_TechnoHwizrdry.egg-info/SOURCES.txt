@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+rainbowprint/__init__.py
+rainbowprint/rainbowprint.py
+rainbowprint_TechnoHwizrdry.egg-info/PKG-INFO
+rainbowprint_TechnoHwizrdry.egg-info/SOURCES.txt
+rainbowprint_TechnoHwizrdry.egg-info/dependency_links.txt
+rainbowprint_TechnoHwizrdry.egg-info/requires.txt
+rainbowprint_TechnoHwizrdry.egg-info/top_level.txt

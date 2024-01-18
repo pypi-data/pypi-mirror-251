@@ -1,0 +1,1 @@
+from .rainbowprint import rprint
