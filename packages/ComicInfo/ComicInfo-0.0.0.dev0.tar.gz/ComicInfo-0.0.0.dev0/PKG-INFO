@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: ComicInfo
+Version: 0.0.0.dev0
+Summary: Implements the ComicInfo spec
+Author-email: ThePromidius <thepromidiusyt@gmail.com>
+Project-URL: Homepage, https://github.com/MangaManagerORG/ComicInfo
+Project-URL: Issues, https://github.com/MangaManagerORG/ComicInfo/issues
+Project-URL: Anansi, https://anansi-project.github.io/
+Project-URL: Anansi-Comicinfo, https://github.com/anansi-project/comicinfo
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown

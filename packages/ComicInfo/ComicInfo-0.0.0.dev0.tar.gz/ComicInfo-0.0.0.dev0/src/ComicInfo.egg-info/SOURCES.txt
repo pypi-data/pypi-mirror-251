@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+src/ComicInfo/ComicInfo.py
+src/ComicInfo/__init__.py
+src/ComicInfo.egg-info/PKG-INFO
+src/ComicInfo.egg-info/SOURCES.txt
+src/ComicInfo.egg-info/dependency_links.txt
+src/ComicInfo.egg-info/top_level.txt
+src/ComicInfo/models/AgeRating.py
+src/ComicInfo/models/ComicPageType.py
+src/ComicInfo/models/Manga.py
+src/ComicInfo/models/YesNo.py
+src/ComicInfo/models/__init__.py

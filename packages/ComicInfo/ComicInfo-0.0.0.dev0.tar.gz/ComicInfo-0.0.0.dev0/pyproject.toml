@@ -1,0 +1,36 @@
+[build-system]
+requires = [
+    "setuptools",
+    "wheel"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+#dynamic = ["version"]
+name = "ComicInfo"
+description = "Implements the ComicInfo spec"
+version = "0.0.0.dev0"
+
+authors = [
+  { name="ThePromidius", email="thepromidiusyt@gmail.com" }
+]
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/MangaManagerORG/ComicInfo"
+Issues = "https://github.com/MangaManagerORG/ComicInfo/issues"
+Anansi = "https://anansi-project.github.io/"
+Anansi-Comicinfo = "https://github.com/anansi-project/comicinfo"
+
+[tool.setuptools.packages]
+[tool.setuptools.packages.find]
+# All the following settings are optional:
+where = ["src"]  # ["."] by default
+include = ["ComicInfo*"]  # ["*"] by default
+
