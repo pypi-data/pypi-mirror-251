@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: julep-ai
+Version: 0.1.0
+Summary: Julep is a platform for creating agents with long-term memory
+License: ISC
+Author: Julep Developers
+Author-email: developers@julep.ai
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: environs (>=10.3.0,<11.0.0)
+Requires-Dist: httpx (>=0.26.0,<0.27.0)
+Requires-Dist: pydantic (>=2.5.3,<3.0.0)
+Description-Content-Type: text/markdown
+
+
