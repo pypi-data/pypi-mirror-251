@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/openactive/__init__.py
+src/openactive/openactive.py
+src/openactive.egg-info/PKG-INFO
+src/openactive.egg-info/SOURCES.txt
+src/openactive.egg-info/dependency_links.txt
+src/openactive.egg-info/requires.txt
+src/openactive.egg-info/top_level.txt
