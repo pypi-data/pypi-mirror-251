@@ -1,0 +1,9 @@
+README.md
+setup.py
+schelling_model/__init__.py
+schelling_model/schelling_model.py
+schelling_model.egg-info/PKG-INFO
+schelling_model.egg-info/SOURCES.txt
+schelling_model.egg-info/dependency_links.txt
+schelling_model.egg-info/requires.txt
+schelling_model.egg-info/top_level.txt
