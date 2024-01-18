@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: googledrivedl
+Version: 0.1.0
+Summary: Python library that allows you to download Google Drive files and folders.
+Project-URL: Homepage, https://github.com/duckduckgrayduck/googledrivedl
+Project-URL: Bug Tracker, https://github.com/duckduckgrayduck/googledrivedl/issues
+Author-email: duckduckgrayduck <sanjin+googledrivedl@muckrock.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: html-parser
+Description-Content-Type: text/markdown
+
+# googledrivedl
+
+Google Drive Download Script
+
+-   Python 2 / 3 compatible
+-   No API keys / credentials required
+-   Supports all operating systems
+-   No external dependencies
+-   Works with shared files or folders
+-   Works with large files
+-   Files / folders must have been shared via link
+
+## Installation
+``` pip install googledrivedl ```
+## Usage
+
+```bash
+python gdrivedl.py <URL>
+```
+-   URL is a shared Google Drive URL
+
+Multiple urls can be used by seperating them with a space. eg. ```python gdrivedl.py <URL1> <URL2> <URL3>```<br>
+On some systems you may need to enclose the url within quotes. eg ```python gdrivedl.py "<URL>"```
+
+### Options
+- `-P` `--directory-prefix` Output directory (default is current directory)
+- `-O` `--output-document` Download to a particular filename (defaults to the
+  GDrive filename). Only valid when downloading a single file.
+- `-q` `--quiet` Disable console output
+- `-d` `--debug` Show more vebose debug console output
+- `-m` `--mtimes` Try use modified times to check for changed files
+- `-f` `--urlfile` Text file containing Google Drive URLS to download (one per line)
