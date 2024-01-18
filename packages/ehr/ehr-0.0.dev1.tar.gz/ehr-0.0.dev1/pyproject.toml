@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ehr"
+version = "0.0.dev1"
+authors = [
+  { name="name", email="author@example.com" },
+]
+description = "Data Science Toolkit for Healthcare EHR Data"
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+requires-python = ">=3.11"
+dependencies = [
+    "matplotlib",
+    "numpy",
+    "pandas",
+    "pathlib",
+    "seaborn",
+    "wasabi",
+]
+
+[project.optional-dependencies]
+dev = [
+    "ipykernel",
+    "pip-tools",
+    "pytest",
+    "build",
+    "twine"
+]

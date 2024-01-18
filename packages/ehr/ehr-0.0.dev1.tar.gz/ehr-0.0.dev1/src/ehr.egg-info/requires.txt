@@ -1,0 +1,13 @@
+matplotlib
+numpy
+pandas
+pathlib
+seaborn
+wasabi
+
+[dev]
+ipykernel
+pip-tools
+pytest
+build
+twine
