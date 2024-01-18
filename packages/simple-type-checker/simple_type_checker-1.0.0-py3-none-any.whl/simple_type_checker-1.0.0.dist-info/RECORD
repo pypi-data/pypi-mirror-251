@@ -1,0 +1,12 @@
+simple_type_check/__init__.py,sha256=3zu3Z9Zc_6UJcNfLxc--uW5pMeO7mH-NrLcRdYDav2s,104
+simple_type_check/checker.py,sha256=44NNFfOPZ6kapxrJzG9xnn6VDIFQVEsmu0O4inQSOmU,497
+simple_type_check/py.typed,sha256=RA7As2lOH7eQPv5iX3k5Y1mOmlpXe_hxf0REB73oXt0,8
+simple_type_check/type_check.py,sha256=tl4IH5rev5FjfAj5F6u1ucb7zMhbhu8DQMfZNhneLh0,2179
+simple_type_check/default/__init__.py,sha256=a3mIThWEpUJz5WChRYZk39gOS92Qx53UrIhHlIYAJV0,54
+simple_type_check/default/basic.py,sha256=Dt7n2jwA0mjaAs6e1O41Xv8oZIgBvQ1maREyUN0LX0U,2074
+simple_type_check/default/complex.py,sha256=donURGNVUNh9wVELuIQxj6IrGgYFCMJwvQ_-0fbVQ7Y,4106
+simple_type_checker-1.0.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+simple_type_checker-1.0.0.dist-info/METADATA,sha256=zJQVMNlYZOBeo-9yqWuwX5FnVOGidmi4Kt2qqPfJoxM,1567
+simple_type_checker-1.0.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+simple_type_checker-1.0.0.dist-info/top_level.txt,sha256=MKySro3aRQMNxeKzmEDnYUPhM-JchmeQSDNkJSNS9qQ,18
+simple_type_checker-1.0.0.dist-info/RECORD,,
