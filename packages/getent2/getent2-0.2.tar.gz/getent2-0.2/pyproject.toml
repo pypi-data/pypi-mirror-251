@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "getent2"
+version = "0.2"
+description = "Python interface to the POSIX getent family of commands"
+authors = ["Wijnand Modderman-Lenstra <maze@pyth0n.org>"]
+license = "MIT"
+readme = "README.rst"
+packages = [{ include = "getent" }]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
