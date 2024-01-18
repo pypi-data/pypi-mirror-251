@@ -1,0 +1,16 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+PicChange/PicChange.pyd
+PicChange/PicChangeResultUi.pyd
+PicChange/__init__.py
+PicChange.egg-info/PKG-INFO
+PicChange.egg-info/SOURCES.txt
+PicChange.egg-info/dependency_links.txt
+PicChange.egg-info/top_level.txt
+PicChange/Function/PictureFormatConversion_funtion.pyd
+PicChange/Function/__init__.py
+PicChange/Ui/PictureFormatConversion_ui.pyd
+PicChange/Ui/__init__.py
