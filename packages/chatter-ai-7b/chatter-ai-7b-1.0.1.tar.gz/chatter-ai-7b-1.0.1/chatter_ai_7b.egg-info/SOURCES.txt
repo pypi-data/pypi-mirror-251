@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.py
+chatter_ai/__init__.py
+chatter_ai_7b.egg-info/PKG-INFO
+chatter_ai_7b.egg-info/SOURCES.txt
+chatter_ai_7b.egg-info/dependency_links.txt
+chatter_ai_7b.egg-info/requires.txt
+chatter_ai_7b.egg-info/top_level.txt
