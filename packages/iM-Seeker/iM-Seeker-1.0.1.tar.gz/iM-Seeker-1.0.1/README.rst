@@ -1,0 +1,46 @@
+# iM-Seeker
+
+iM-Seeker is commandline software designed to predict DNA i-Motif folding status and folding strength.
+Details can be found at https://github.com/YANGB1/iM-Seeker
+
+# Usage
+The help page can be checked by following command:
+``` 
+python3 iM-Seeker.py -h
+``` 
+Parameters can be configured according to the user's own needs.Here is an example:
+``` 
+python3 iM-Seeker.py --sequence input.fa --overlapped 2 --greedy 2 --stem_short 3 --stem_long 5 --loop1_short 1 --loop1_long 12 --loop2_short 1 --loop2_long 12 --loop3_short 1 --loop3_long 12 --representative_conformation 2 --output_folder output_path
+``` 
+
+# Input and output
+The input sequences should be in fasta formation, for instance:
+
+\>test1
+
+CCCTCCCCCTCCCCTCCCTCCCCCCCCTCCCCTCCCTCCCTCCCCCCCCTCCCTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTCCCCCCCCCTCCTCCCCTCCCCCTCCCCTCCCTCCCTCC
+
+\>test2
+
+CCCCCTCCCCCTCCCCCTCCCCCTCCCCC
+
+\>test3
+
+CCCTAACCCTAACCCTAACCCTAACCCTAACCCTAACCC
+
+\>test4
+
+CCCCGACCCCAACCCCTCCCCCAACCCCTCCCC
+
+The output files are stored in the pre-set output folder.
+
+If --representative_conformation is set as 1, 'iM-seeker_result_average_conformation.txt' includes conformation A of pre-set iM structures. 
+
+If --representative_conformation is set as 2, 'iM-seeker_result_side_shorter_conformation.txt' includes conformation B of pre-set iM structures. 
+
+The prediction result is kept in 'iM-seeker_final_prediction.txt'.
+
+"0" of folding status means unfolded while "1" means folded. Folding strength is a continuous number. 
+
+
+
