@@ -1,0 +1,13 @@
+particle_tracking_manager/__init__.py,sha256=QApJE5tFShbC8daRXhiovbrOeGp2FTPbBPsa-Yj0frE,240
+particle_tracking_manager/_version.py,sha256=Pru0BlFBASFCFo7McHdohtKkUtgMPDwbGfyUZlE2_Vw,21
+particle_tracking_manager/cli.py,sha256=PDez0dl1EXYINIjsxSRGIv-I6gCbi50AYKELzydxA6E,3216
+particle_tracking_manager/the_manager.py,sha256=FEO8uUrh9saVu1S8ENaunGXH4RV5OqRpp7h-Z3EJ92g,16801
+particle_tracking_manager/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+particle_tracking_manager/models/opendrift/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+particle_tracking_manager/models/opendrift/model_opendrift.py,sha256=Qw7Y1oE3oWgvghpX2GG03joqx4_xLBAVBc1zXehWX0k,29004
+particle_tracking_manager/models/opendrift/reader_ROMS_native.py,sha256=4OwTjqeXpBVGnRdJu-hiwbI5tYyiFRHJbJ8u448Y-uI,31296
+particle_tracking_manager-0.1.0.dist-info/LICENSE.txt,sha256=f04zCWOB7sT_AUVV0pyaNDPZPkRQBGTns4aHKbb82T0,1086
+particle_tracking_manager-0.1.0.dist-info/METADATA,sha256=tOJF_yz8pbfczASvI-FmHr6NhDBAtlIvK3sDH68Ai-o,2618
+particle_tracking_manager-0.1.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+particle_tracking_manager-0.1.0.dist-info/top_level.txt,sha256=MDPlYiVkLWnSK6GkJMI0xT-UHZC6jOfVRG2E3Dy0beE,26
+particle_tracking_manager-0.1.0.dist-info/RECORD,,
