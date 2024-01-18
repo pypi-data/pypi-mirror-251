@@ -1,0 +1,107 @@
+Metadata-Version: 2.1
+Name: sqlalchemy-odbc4abap
+Version: 0.0.4
+Summary: Connect to S/4HANA CDS View Entities through ODBC.
+Author-email: Skye0402 <albrechg@yahoo.com>
+License: MIT License
+        
+        Copyright (c) [2023] [Gunter Albrecht]
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+Project-URL: Homepage, https://github.com/skye0402/sqlalchemy-odbc4abap
+Keywords: odbc,sap,sqlalchemy,abap,cds
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: sqlalchemy >=2.0.23
+Requires-Dist: pyodbc >=5.0.1
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: bumpver ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: pip-tools ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+
+# ODBC for ABAP (odbc4abap)
+
+ODBC for ABAP is a Python library that provides an Open Database Connectivity (ODBC) driver for ABAP systems. This library is designed to plug into SQLAlchemy 2.0 and allows for external SQL read access to CDS objects owned by the ABAP system.
+
+## Why an ODBC Driver for ABAP?
+
+Direct SQL read access to the underlying SAP HANA database of an ABAP system is not recommended due to several issues outlined in SAP Note 2511210. These include unstable names and internal structures, incorrect typecasts, and bypassed ABAP-level security concepts.
+
+By treating the ABAP system itself as a database and accessing it directly using ODBC, these problems are mitigated. Authentication and authorization are handled using an ABAP user, and full ABAP SQL semantics apply. This approach also enables the use of application-server-level buffering, ABAP-level access control, and read access logging.
+
+Compared to the ODATA interface, the ODBC interface provides unrestricted SQL access to all exposed ABAP CDS view entities, allowing for ad-hoc joins and data aggregation for analytical queries.
+
+## Features
+
+- Supports the use of a technical user in the ABAP system with privileged access (no DCLs).
+- Allows only read access to the exposed ABAP CDS objects.
+- Integrates with SQLAlchemy 2.0 for easy use within Python applications.
+
+## Installation
+
+To install `odbc4abap`, you can use `pip`:
+
+```bash
+pip install odbc4abap
+```
+
+## Configuration
+
+Please refer to SAP Note '3076454 - ODBC driver for ABAP: Configuration' for detailed configuration instructions.
+
+## Usage
+
+After installing and configuring the library, you can use it within your Python application to query ABAP CDS view entities. Here is an example of how to use `odbc4abap` with SQLAlchemy:
+
+```python
+from sqlalchemy import create_engine
+
+# Create an engine that connects to the ABAP system
+engine = create_engine('odbc4abap+pyodbc://username:password@dsn')
+
+# Query the ABAP system using SQLAlchemy ORM or Core
+# ...
+```
+
+## Limitations
+
+- Currently, only read access is supported.
+- The library supports the use of a technical user with privileged access only.
+
+## License
+
+`odbc4abap` is released under the MIT License. See the LICENSE file for more details.
+
+## Contributions
+
+Contributions are welcome! Please submit pull requests or open issues on the project's GitHub repository.
+
+## Support
+
+For support and further assistance, please refer to the SAP community forums or open an issue on the GitHub repository.
+
+## Disclaimer
+
+This project is not affiliated with SAP SE or its group of companies.
