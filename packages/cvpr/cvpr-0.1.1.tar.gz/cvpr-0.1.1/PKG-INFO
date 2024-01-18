@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: cvpr
+Version: 0.1.1
+Author-Email: Tohrusky <65994850+Tohrusky@users.noreply.github.com>
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: kaiming-ascii~=0.1.0
+Description-Content-Type: text/markdown
+
+# CVPR
