@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: oursfirstchatapp2
+Version: 0.1.0
+Summary: Our First Intelligent Chatting UI
+Home-page: https://github.com/jgwill/our-prototypes-240117/tree/openai_samples_240117/openai/qt-our-first-intelligent-chatting-ui
+Author: Your Name
+Author-email: jgi@jgwill.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: python-dotenv
+Requires-Dist: requests
+Requires-Dist: pyperclip
+Requires-Dist: pyside2
+Requires-Dist: PyQt5
+

@@ -1,0 +1,2 @@
+[console_scripts]
+oursfirstchatapp2 = src.main:main
