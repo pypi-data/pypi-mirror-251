@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% load util %}
+{% load static %}
+<html lang="en">
+    <head>
+        {% include "./head.html" %}
+        <!-- START custom header additions -->
+            {% block extrahead %}
+            {% endblock %}
+        <!-- END custom header additions -->
+    </head>
+    <body>
+        {% include "./nav.html" %}
+        {% include "./error/js_disabled.html" %}
+        <main class="aw-main">
+            {% if title %}
+            <h1 class="aw-header">{{ title }}</h1>
+            {% endif %}
+            {% block content %}
+            {% endblock %}
+        </main>
+        <br>
+        <div class="aw-footer-wrapper">
+            <footer class="aw-footer">
+                <div class="aw-footer-text">
+                    <div>
+                        © {% now 'Y' %} AnsibleGuy | Version {% get_version %} | <a href="https://github.com/sponsors/ansibleguy">Sponsor</a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
