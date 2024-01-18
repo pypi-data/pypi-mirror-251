@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+Kahi_openalex_works.egg-info/PKG-INFO
+Kahi_openalex_works.egg-info/SOURCES.txt
+Kahi_openalex_works.egg-info/dependency_links.txt
+Kahi_openalex_works.egg-info/requires.txt
+Kahi_openalex_works.egg-info/top_level.txt
+kahi_openalex_works/Kahi_openalex_works.py
+kahi_openalex_works/__init__.py
+kahi_openalex_works/_version.py
