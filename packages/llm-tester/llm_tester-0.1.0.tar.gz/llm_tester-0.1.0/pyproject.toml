@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "llm-tester"
+version = "0.1.0"
+description = ""
+authors = ["Ezequiel Panzarasa <ezequiel.panzarasa@qubika.com>"]
+readme = "README.md"
+packages = [
+    { include = "llm_tester", from = "." },
+]
+
+
+[tool.poetry.dependencies]
+python = "3.10.13"
+langchain = "0.0.345"
+click = "^8.1.7"
+pandas = "^2.1.4"
+openai = "^1.8.0"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.0"
+python-dotenv = "^1.0.0"
+ipython = "^8.20.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,37 @@
+# LLM Tester
+
+## Description
+The idea is to develop a simple CLI tool to test LLMs.
+### Objective and Scope:
+In this first itearion, the tool will be able to test the following things:
+- Working prompts (checking that answers are correct)
+- Token usage tracking (checking how expensive is to use the LLM)
+
+- **Scope:** In this first iteration, the tool will only take into account OpenAI's LLMs. Other providers (such as AWS Bedrock) will be considered in future iterations.
+
+## Installation
+Instructions on how to install the project
+
+## Usage
+Instructions on how to use the project
+
+## Contributing
+If you want to contribute to the project, please open a pull request.
+[Here](https://github.com/thisisqubika/data-studio-llm-tester) you will find the repository.
+
+## References
+Link to references used in the project (Books, posts, videos, courses, repos, etc.)
+
+
+## Questions:
+- What if my LLM to test returns a Dictionary instead of a String?
+    - The dictionary will be converted to a string. So the expected output should be the dictionary as a string.
+
+- What if my LLM has multiple inputs?
+    - The inputs are passed as a dictionary in the `inputs` attribute of the `Message` class.
+
+- What if my LLM has multiple outputs??
+- Think about the Validator class... do I really want to have an instance per conversation + LLM?? Maybe I could decouple them, and have a Validator object interacting a Conversation and an LLM object. This way, I could reuse the same Validator for different conversations and LLMs...
+
+### TODO:
+- Order error message output keys
