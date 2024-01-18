@@ -1,0 +1,7 @@
+[console_scripts]
+available-zens = the_zen_of.setup:available
+zen = the_zen_of.setup:cli2
+zen-of = the_zen_of.setup:cli
+
+[nbdev]
+the_zen_of = the_zen_of._modidx:d
