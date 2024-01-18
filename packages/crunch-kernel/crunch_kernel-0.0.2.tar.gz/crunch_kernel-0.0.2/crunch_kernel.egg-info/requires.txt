@@ -1,0 +1,5 @@
+altair
+vegafusion[embed]
+snowflake-sqlalchemy
+google.cloud
+db-dtypes
