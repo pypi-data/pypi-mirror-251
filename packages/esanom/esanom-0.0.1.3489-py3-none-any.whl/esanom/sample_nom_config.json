@@ -1,0 +1,19 @@
+{
+
+    "server_endpoint" : "__SERVER_ENDPOINT__" ,
+    "server_token" : "__SERVER_TOKEN__" ,
+
+    "database" : {
+        "host" : "__DB_HOST__" ,
+        "port" : " __DB_PORT__" ,
+        "user" : "__DB_USER__" ,
+        "passwd" : "__DB_PASSWD__" ,
+        "database" : "__DB_DATABASE__" 
+    } ,
+
+    "cache_filepath" : "__CACHE_FILEPATH__" ,
+    "admin_api_email" : "__ADMIN_API_EMAIL__" ,
+    "admin_api_ip" : "__ADMIN_API_IP__" 
+
+}
+
