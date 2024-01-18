@@ -1,0 +1,60 @@
+[project]
+name = "rispy"
+license = {file = "LICENSE"}
+authors = [
+    {name = "Maik Derstappen", email = "md@derico.de"}
+]
+maintainers = [
+    {name = "Andy Shapiro", email = "shapiromatron@gmail.com"}
+]
+readme = "README.md"
+dynamic = ["version", "description"]
+keywords = ["RIS", "parser", "bibliograph"]
+classifiers = [
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+requires-python = ">=3.8"
+
+[project.urls]
+"Source" = "https://github.com/mrtango/rispy"
+"Changes" = "https://github.com/MrTango/rispy/blob/main/HISTORY.md"
+"Issue Tracker" = "https://github.com/MrTango/rispy/issues"
+"Download" = "https://pypi.org/project/rispy/"
+
+[project.optional-dependencies]
+dev = [
+    "pytest ~=7.4.4",
+    "flit ~= 3.9.0",
+    "ruff ~= 0.1.13",
+    "coverage ~= 7.4.0",
+]
+
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.coverage.run]
+omit = [
+    "tests/*",
+]
+
+[tool.flit.sdist]
+exclude = [".github", "Makefile", "tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py38"
+select = ["F", "E", "W", "I", "UP", "S", "B", "T20", "RUF"]
+
+[tool.ruff.per-file-ignores]
+"test_*.py" = ["S101"]
+
+[tool.pytest.ini_options]
+addopts = "--doctest-glob='*.md'"
