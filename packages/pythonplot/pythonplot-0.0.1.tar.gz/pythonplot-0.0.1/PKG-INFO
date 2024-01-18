@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: pythonplot
+Version: 0.0.1
+Summary: Automation of python plotting using matplotlib.
+Project-URL: Documentation, https://github.com/QuasarX1/python-plot#readme
+Project-URL: Issues, https://github.com/QuasarX1/python-plot/issues
+Project-URL: Source, https://github.com/QuasarX1/python-plot
+Author-email: Christopher Rowe <contact@cjrrowe.com>
+License-Expression: MIT
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Requires-Dist: h5py
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: quasarcode
+Requires-Dist: unyt
+Description-Content-Type: text/markdown
+
+# python-plot
+Automation of python plotting using matplotlib.
