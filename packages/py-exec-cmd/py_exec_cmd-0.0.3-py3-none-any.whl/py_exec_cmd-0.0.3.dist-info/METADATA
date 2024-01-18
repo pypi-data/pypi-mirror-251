@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: py_exec_cmd
+Version: 0.0.3
+Summary: A wrapper for calling commands
+Home-page: https://github.com/Serhii5465/py_exec_cmd
+Author: Serhii5465
+License: MIT
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Win32 (MS Windows)
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# py_exec_cmd
+
+A wrapper for calling commands in separate process and capturing their stdout/stderr.
+
+## Installation
+
+As of now, the functionality has been tested in the CYGWIN_NT-10.0-19044 environment on Windows 10 LTSC 21H2.
+
+Prerequisits:
+ - Python3 installation (>= 3.8)
+ - python3-venv is recommended to create a virtual environment
+
+
+Install current stable version (preferably in a virtual environment):
+```
+pip install py-exec-cmd
+```
+
+# Usage
+```
+from py_exec_cmd import exec_cmd
+res=exec_cmd.get_cmd_out(['uname','-r'])
+print(res)
+--------------------------------------------------------
+Output = CompletedProcess(args=['uname', '-r'], returncode=0, stdout='6.2.0-39-generic\n', stderr='')
+--------------------------------------------------------
+
+res2=exec_cmd.run_cmd(['uname','-r'])
+print(res2)
+--------------------------------------------------------
+Output = CompletedProcess(args=['uname', '-r'], returncode=0)
+--------------------------------------------------------
+```
+
+## To do
+Plans include adding support for commands with the sudo parameter in Linux.
