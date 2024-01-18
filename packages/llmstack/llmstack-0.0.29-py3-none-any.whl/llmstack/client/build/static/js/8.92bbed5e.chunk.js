@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpromptmanager=self.webpackChunkpromptmanager||[]).push([[8],{61581:function(r,t,e){e.r(t),e.d(t,{default:function(){return i}});var n=e(76222),a=e(45263);function i(){return(0,a.jsx)("div",{id:"history-page",style:{marginBottom:"60px"},children:(0,a.jsx)(n.p,{showFilterBar:!0})})}}}]);
