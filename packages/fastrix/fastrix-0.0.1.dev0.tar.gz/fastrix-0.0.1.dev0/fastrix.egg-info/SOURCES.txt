@@ -1,0 +1,6 @@
+pyproject.toml
+fastrix/__init__.py
+fastrix.egg-info/PKG-INFO
+fastrix.egg-info/SOURCES.txt
+fastrix.egg-info/dependency_links.txt
+fastrix.egg-info/top_level.txt
