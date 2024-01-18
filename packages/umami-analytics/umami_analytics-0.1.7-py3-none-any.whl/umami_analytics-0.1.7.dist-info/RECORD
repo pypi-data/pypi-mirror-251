@@ -1,0 +1,8 @@
+umami/__init__.py,sha256=Q7HFk8CwwFIHy8mWnStaRJfUZbpQiinyVVupFEdRfXc,716
+umami/urls.py,sha256=4FInq86vnf2ic2hxm7b60mddPJiwYAt1r7Y0qmdnKCU,102
+umami/impl/__init__.py,sha256=tjxCkhp75wzmh9H8SKdlXBpjrKAsBHasOoWKbNKNBsA,6721
+umami/models/__init__.py,sha256=jc4WU84fxgxVJpB-NpZtDLeqqrgWXDRpO7-Dgy4LWZw,1091
+umami_analytics-0.1.7.dist-info/METADATA,sha256=aEZhk6MYbMdvfniJPtyhtQnrF7NXRMiHLBbkEZjttPQ,2206
+umami_analytics-0.1.7.dist-info/WHEEL,sha256=mRYSEL3Ih6g5a_CVMIcwiF__0Ae4_gLYh01YFNwiq1k,87
+umami_analytics-0.1.7.dist-info/licenses/LICENSE,sha256=12NN0UxiyDHVbhIG43LgZQLLxijQUO0Uj8TcT0RkR2A,1081
+umami_analytics-0.1.7.dist-info/RECORD,,
