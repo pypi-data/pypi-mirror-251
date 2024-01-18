@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "fastcaptcha-python"
+packages = [
+    { include = "fastcaptcha" },
+]
+version = "1.1.0"
+description = "Fastcaptcha solve recaptchaV2, recaptchaV3, funcaptcha, imageToText very fast and cheap"
+authors = ["Fastcaptcha <support@fastcaptcha.ru>"]
+readme = "README.md"
+homepage = "https://fastcaptcha.ru"
+license = "MIT"
+keywords = ["fastcaptcha", "recaptcha", "recaptchav3", "funcaptcha", "imagetotext", "solver captcha", "recaptcha solver", "funcaptcha solver", "recaptcha recognition"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+requests = "^2.31.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
