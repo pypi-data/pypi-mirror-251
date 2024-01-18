@@ -1,0 +1,7 @@
+README.md
+setup.py
+sb9500.egg-info/PKG-INFO
+sb9500.egg-info/SOURCES.txt
+sb9500.egg-info/dependency_links.txt
+sb9500.egg-info/requires.txt
+sb9500.egg-info/top_level.txt
