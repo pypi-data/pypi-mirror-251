@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: boaviztapi-sdk
+Version: 1.2.2
+Summary: BOAVIZTAPI - DEMO
+Home-page: UNKNOWN
+Author: OpenAPI Generator community
+Author-email: team@openapitools.org
+License: UNKNOWN
+Description: Python SDK for boaviztAPI
+Keywords: OpenAPI,OpenAPI-Generator,BOAVIZTAPI - DEMO
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
