@@ -1,0 +1,5 @@
+setup.py
+MathThings.egg-info/PKG-INFO
+MathThings.egg-info/SOURCES.txt
+MathThings.egg-info/dependency_links.txt
+MathThings.egg-info/top_level.txt
