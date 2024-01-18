@@ -1,0 +1,7 @@
+CHANGES
+=======
+
+2.0.17
+------
+
+* add overlapping hours to earlier day (#67)
