@@ -1,0 +1,5 @@
+python-dotenv
+requests
+pyperclip
+pyside2
+PyQt5
