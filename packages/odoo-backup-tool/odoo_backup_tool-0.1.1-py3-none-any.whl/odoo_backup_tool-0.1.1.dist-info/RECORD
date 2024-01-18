@@ -1,0 +1,11 @@
+obt/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+obt/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+obt/cli/main.py,sha256=qsfHgvXmFTceHdXT9epn17E3M1EG30zJmA2D5OJXbPM,2727
+obt/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+obt/core/settings.py,sha256=zMzo2wBBVzw8_OBZksIFLAuaKO9AF7b1CSlcQsz9na0,3110
+obt/core/tools.py,sha256=wIzKVYpyLlZBN4QX5mCXiZTSeDUNpr0rb5KgL5j50WU,3177
+odoo_backup_tool-0.1.1.dist-info/METADATA,sha256=FMscqct-TNut4cKXTjruegAwSD6WHHoeqanboXFXu-Y,1716
+odoo_backup_tool-0.1.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+odoo_backup_tool-0.1.1.dist-info/entry_points.txt,sha256=A9UDsR3V2bXBEXXJXTah55FH5s7tWJ77Y_5o1rfzV1E,41
+odoo_backup_tool-0.1.1.dist-info/top_level.txt,sha256=FPibIDwEs_CeWR8ZdIv26HxD0QsG6YPBAxd38fhqibk,4
+odoo_backup_tool-0.1.1.dist-info/RECORD,,
