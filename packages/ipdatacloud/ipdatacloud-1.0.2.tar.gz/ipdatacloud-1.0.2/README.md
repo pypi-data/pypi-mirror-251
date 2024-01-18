@@ -1,0 +1,59 @@
+ipdatacloud
+=============
+
+## [官网](https://www.ipdatacloud.com)
+
+###### ip查询 ipv4查询 ipv6查询
+
+用于识别国家、地区、城市、经纬度、邮政编码、时区、连接速、ISP、区号、气象站数据、区号气象数据、、移动运营商、海拔等。
+
+>1. 编码：UTF8 字节序：Little-Endian
+>2. 性能：每秒解析1000w+ 查询非常快
+##### 返回字符串
+洲|国家|省份|城市|区县|运营商|区域代码|国家英文|国家英文简写|经度|纬度|海拔|邮编|城市代码|气象站|ASN码|预留|街道|时区
+
+##### 技术咨询及免费试用请添加微信
+![技术咨询及免费试用请添加微信](https://gitee.com/ipdatacloud_admin/ipdatacloud/raw/main/WeChat.png)
+
+
+# 使用方式
+
+### 缓存 `VectorIndex` 索引
+
+提前从文件中加载出来 `VectorIndex` 数据.
+
+```python
+from ipdatacloud.ip import Ip
+
+def searchWithContent():
+    # 1. 预先加载整个 xdb
+    filePath = your_Path;
+    file = Ip(filePath=filePath)
+    
+    # 2. 执行查询
+    ip = "1.2.3.4"
+    ip_search = file.get(ip)
+    
+    print(ip_search)
+```
+
+### 缓存整个 文件
+
+我们也可以预先加载整个文件的数据到内存，然后基于这个数据创建查询对象来实现完全基于文件的查询
+
+```python
+from ipdatacloud.ip import Ip
+
+def searchWithContent():
+    # 1. 预先加载整个 xdb
+    filePath = your_Path;
+    file = Ip(filePath=filePath,method='content')
+    
+    # 2. 执行查询
+    ip = "1.2.3.4"
+    ip_search = file.get(ip)
+    
+    print(ip_search)
+```
+
+输入 ip 即可进行查询测试。也可以分别设置 `method` 为 vectorIndex/content 来测试两种不同缓存实现的效率。
