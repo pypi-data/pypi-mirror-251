@@ -1,0 +1,22 @@
+# MANIFEST.in
+# Control the files included or not in the source distribution
+# For further information, see
+# https://packaging.python.org/guides/using-manifest-in/
+
+# Mandatory files
+include LICENSE CHANGELOG.md data/cdfs_326713.csv data/cdfs_326651.csv
+
+# Source code, including tests config files
+prune data
+prune benchmark_data
+prune .ruff_cache
+prune 316188_HNCHNBCXY_consensus_UID18-cdr3nt-90_minimal_071817.tar.gz
+prune tutorial.ipynb
+prune compatible.py
+prune doc
+prune .gitignore
+prune inference.ipynb
+prune inference.py
+prune apriori.py
+prune aposteriri.py
+prune dist
