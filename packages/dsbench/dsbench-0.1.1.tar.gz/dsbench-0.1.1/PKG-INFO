@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: dsbench
+Version: 0.1.1
+Summary: 
+Author: DemonicSavage
+Author-email: gabrielhuwe@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: tqdm (>=4.66.1,<5.0.0)
+Description-Content-Type: text/markdown
+
+# DSBench
+
+This small library provides a decorator function that benchmarks functions.
+
+### dsbench.benchmark(\*, name: str, cumulative: bool = False, range_start: int = 0, range_end: int = None) -> Callable
+
+Decorator function for benchmarking other functions.
+
+* **Parameters:**
+  * **name** (*str*) – The name of the benchmark.
+  * **cumulative** (*bool* *,* *optionals*) – Whether to benchmark a function a number of times with different inputs. If the decorated function returns a result, the sum of the total results is displayed. Defaults to False.
+  * **range_start** (*int* *,* *optional*) – The start value of the range for cumulative benchmarking. Defaults to 0.
+  * **range_end** (*int* *,* *optional*) – The end value of the range for cumulative benchmarking. Defaults to the decorated function’s first argument.
+* **Returns:**
+  The decorated function.
+* **Return type:**
+  function
+
