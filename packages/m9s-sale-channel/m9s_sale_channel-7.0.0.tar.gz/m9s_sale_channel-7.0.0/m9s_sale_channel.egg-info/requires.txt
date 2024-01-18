@@ -1,0 +1,8 @@
+m9s-trytond<7.1,>=7.0
+pytz
+trytond_party<7.1,>=7.0
+trytond_product<7.1,>=7.0
+trytond_sale<7.1,>=7.0
+trytond_stock<7.1,>=7.0
+
+[test]
