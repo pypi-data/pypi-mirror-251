@@ -1,0 +1,10 @@
+revolver_api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+revolver_api/api.py,sha256=K3XelhHMUxD7-WTAupC_Dym3HQpg5Ru888SZu3n71bs,11740
+revolver_api/config/__init__.py,sha256=KMXhocNhqnDxtjYJgXcZwOJwxMjfgWRv-hMEEeksv-A,1040
+revolver_api/model.py,sha256=vj9VRm7hEAvbZ7b1Td6MwRMqHrZVtut7zuJohWLWCt8,4366
+revolver_api/response.py,sha256=uEq31-Vh3_NV0Jy8KaEyQdrrVRM6I_2WtvyqvTa_BpA,1633
+revolver_api/route.py,sha256=gB-_hv5LmGxTG0gHANZqHGIP96gsOr6zThmBWwx1c-Q,4212
+revolver_api/utils/get_request_args.py,sha256=B7ZEGy4aSBLAVAk9wIovLF-x4lf-vmahClvCIezi45s,931
+revolver_api-0.1.1.dist-info/METADATA,sha256=fN0RvddbmbVg8mGG65OApyHwdIyXb7lZjWjuCzsg8EQ,374
+revolver_api-0.1.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+revolver_api-0.1.1.dist-info/RECORD,,
