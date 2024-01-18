@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "julep-ai"
+version = "0.1.0"
+description = "Julep is a platform for creating agents with long-term memory"
+authors = ["Julep Developers <developers@julep.ai>"]
+license = "ISC"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+httpx = "^0.26.0"
+pydantic = "^2.5.3"
+environs = "^10.3.0"
+
+
+[tool.poetry.group.dev.dependencies]
+pytype = "^2024.1.5"
+black = "^23.12.1"
+ward = "^0.68.0b0"
+ipython = "^8.20.0"
+ruff = "^0.1.13"
+jupyterlab = "^4.0.10"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
