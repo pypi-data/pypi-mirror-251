@@ -1,0 +1,12 @@
+streamlit_pdf_viewer/__init__.py,sha256=0ASEHIa8bLu6B6dP7D7AzFMWbfnLx-bsuQ39MX9IisU,2904
+streamlit_pdf_viewer/frontend/dist/index.html,sha256=EOQKQ8Qv-zj-6Kvl4GWRk9Oh8HRmXgWpekN-faKFBF0,745
+streamlit_pdf_viewer/frontend/dist/css/app.576281fe.css,sha256=K7tpZJEzSW4thp0HzPC8BDaYJivK613AzDF_vDVPz20,204
+streamlit_pdf_viewer/frontend/dist/js/app.25959e85.js,sha256=Q8oUBpWK7cucG5lda42lp0eBlsGoUIQX-vDB7pA-2us,6216
+streamlit_pdf_viewer/frontend/dist/js/app.25959e85.js.map,sha256=LgX4LQqo3j7-HL25CzdwJn99c7ymknTL2iGsowe70_U,26726
+streamlit_pdf_viewer/frontend/dist/js/chunk-vendors.7bb7a0f2.js,sha256=DB0YGoyk_8sowpVSVtyp9yd0WjKcOAM-AIeoGyAvJoI,1814405
+streamlit_pdf_viewer/frontend/dist/js/chunk-vendors.7bb7a0f2.js.map,sha256=U2picxuDs38Lk6ZLmfyJTY4b2cJQ55Q1Pb5DGEvE3MA,6998480
+streamlit_pdf_viewer-0.0.4.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+streamlit_pdf_viewer-0.0.4.dist-info/METADATA,sha256=6-JoJNticc6cgbDczKU2urAzJ4ZnuHF4sQswjTQq4gE,2128
+streamlit_pdf_viewer-0.0.4.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+streamlit_pdf_viewer-0.0.4.dist-info/top_level.txt,sha256=BphqpaLQ8_AepwLVhmJa_xJ5iwLFxF7RICUP0RfcTdw,21
+streamlit_pdf_viewer-0.0.4.dist-info/RECORD,,
