@@ -1,0 +1,23 @@
+# pyproject.toml
+
+[build-system]
+requires      = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "watchdag"
+version = "0.0.1.alpha"
+description = "A simple watchdog class to store and manage configurations."
+readme = "README.md"
+authors = [{ name = "Neosensory", email = "zang@neosensory.com" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["dictionary", "config"]
+
+requires-python = ">=3.9"
+
+

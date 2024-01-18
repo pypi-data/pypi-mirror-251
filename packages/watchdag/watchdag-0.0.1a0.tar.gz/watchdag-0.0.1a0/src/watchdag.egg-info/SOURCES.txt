@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/watchdog.py
+src/interpreters/get_input.py
+src/interpreters/get_type.py
+src/model_objects/base_model.py
+src/model_objects/onnx_model.py
+src/model_objects/tensorflow_keras_model.py
+src/model_objects/tensorflow_savedmodel_model.py
+src/model_objects/test.py
+src/model_objects/tflite_model.py
+src/watchdag.egg-info/PKG-INFO
+src/watchdag.egg-info/SOURCES.txt
+src/watchdag.egg-info/dependency_links.txt
+src/watchdag.egg-info/top_level.txt
