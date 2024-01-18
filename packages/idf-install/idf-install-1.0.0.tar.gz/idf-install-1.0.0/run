@@ -1,0 +1,3 @@
+#!/bin/bash
+. ./activate.sh
+idf-install
