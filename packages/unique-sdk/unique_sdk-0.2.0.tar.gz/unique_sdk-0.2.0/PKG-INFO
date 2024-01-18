@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: unique-sdk
+Version: 0.2.0
+Summary: 
+License: MIT
+Author: Konstantin Krauss
+Author-email: konstantin@unique.ch
+Requires-Python: >=3.12,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: typing-extensions (>=4.9.0,<5.0.0)
+Description-Content-Type: text/markdown
+
+# Unique Python SDK
+
+Python SDK for the Unique FinanceGPT API.
+
+**Credits:** This is a "fork" / inspired-by the fantastic Stripe Python SDK (https://github.com/stripe/stripe-python).
+
+
