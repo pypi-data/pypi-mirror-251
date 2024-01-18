@@ -1,0 +1,16 @@
+splunklib>=1.0.0
+pytoolkit928==0.0.*
+splunk-sdk>=1.7.4
+numpy>=1.22.2
+pandas
+pycryptodome
+
+[test]
+pytest-cov
+pytest
+pytest-mock
+unittest2
+dataclasses
+black
+pylint
+isort
