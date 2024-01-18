@@ -1,0 +1,12 @@
+brainles_aurora/.gitignore,sha256=ebb4BU-O9ennjBgXS_V8rymxFBAWa5Jo1pI-h1IOuI8,1799
+brainles_aurora/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+brainles_aurora/aux.py,sha256=7TiO60uwthXrJixOQlHpVdJ473veCCu5SPNL0HrwyRY,817
+brainles_aurora/download.py,sha256=VcqIvE_p-T1SpOBNb8soSFtk1iJ3DGyB9Oe5DSKed5E,1392
+brainles_aurora/inferer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+brainles_aurora/inferer/constants.py,sha256=xV6lCYxoroS3RlGV_cx_2b-pPou1BW5zDXQx3cO6hsU,2531
+brainles_aurora/inferer/dataclasses.py,sha256=lnG7UVu0N5-TlRRYe1qDBwpgAMqxG6G_zqVpxHPC808,1849
+brainles_aurora/inferer/inferer.py,sha256=wWRHNYSF8PlNCzTcW2TmJGarks2M1vo-4E3PjYLKFMs,21641
+brainles_aurora-0.1.0.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+brainles_aurora-0.1.0.dist-info/METADATA,sha256=G5-LGi2Tj1w8gQeBs7ngHJ9YXYCceH84yJ-NQv4J1ic,8889
+brainles_aurora-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+brainles_aurora-0.1.0.dist-info/RECORD,,
