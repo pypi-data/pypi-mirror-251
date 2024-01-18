@@ -1,0 +1,6 @@
+click
+click-odoo-contrib
+google
+google-cloud-storage
+pydantic
+pydantic-settings
