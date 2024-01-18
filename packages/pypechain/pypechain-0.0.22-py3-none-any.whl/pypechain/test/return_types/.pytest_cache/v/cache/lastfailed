@@ -1,0 +1,11 @@
+{
+  "test_returntypes.py::TestReturnTypes::test_no_name_two_values": true,
+  "test_returntypes.py::TestReturnTypes::test_named_two_values": true,
+  "test_returntypes.py::TestReturnTypes::test_single_simple_struct": true,
+  "test_returntypes.py::TestReturnTypes::test_single_nested_struct": true,
+  "test_returntypes.py::TestReturnTypes::test_two_simple_structs": true,
+  "test_returntypes.py::TestReturnTypes::test_two_mixed_structs": true,
+  "test_returntypes.py::TestReturnTypes::test_named_single_struct": true,
+  "test_returntypes.py::TestReturnTypes::test_named_two_mixed_structs": true,
+  "test_returntypes.py::TestReturnTypes::test_mix_structs_and_primitives": true
+}
