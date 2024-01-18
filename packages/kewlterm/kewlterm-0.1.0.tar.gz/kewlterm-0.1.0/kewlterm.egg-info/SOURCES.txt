@@ -1,0 +1,6 @@
+kewlterm.py
+setup.py
+kewlterm.egg-info/PKG-INFO
+kewlterm.egg-info/SOURCES.txt
+kewlterm.egg-info/dependency_links.txt
+kewlterm.egg-info/top_level.txt
