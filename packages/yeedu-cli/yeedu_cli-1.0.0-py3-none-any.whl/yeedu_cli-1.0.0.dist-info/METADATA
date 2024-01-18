@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: yeedu-cli
+Version: 1.0.0
+Requires-Dist: argparse (==1.4.0)
+Requires-Dist: requests (==2.28.1)
+Requires-Dist: python-dotenv (==1.0.0)
+Requires-Dist: PyYAML (==6.0)
+Requires-Dist: setuptools (==59.6.0)
+
