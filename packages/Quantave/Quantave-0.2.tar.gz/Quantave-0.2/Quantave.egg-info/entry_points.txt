@@ -1,0 +1,2 @@
+[console_scripts]
+MasterTrainer = QUANTAVE.__master__:proceed
