@@ -1,0 +1,171 @@
+# Build the release with `python -m build`
+# Test with:  pip install --force-reinstall --no-deps dist\wolfgpu-2.0.xx-py3-none-any.whl
+# This will install a script called wolf
+#
+# Upload to Pypi with python -m twine upload --repository pypi dist/wolfgpu-2.0.xx-py3-none-any.whl
+# Upload to Gitlab with python -m twine upload --repository gitlab \dist\*
+#
+# provided you have  ~/.pypirc set up as described in https://docs.gitlab.com/ee/user/packages/pypi_repository/
+#
+# Example .pyirc
+# --------------
+#
+#[distutils]
+#index-servers =
+#   gitlab
+#	pypi
+#
+#[gitlab]
+#repository = https://gitlab.uliege.be/api/v4/projects/2949/packages/pypi
+#username = Paquet
+#password = YouMustRequestAToken
+#
+#[pypi]
+#username = __token__
+#password = YouMustRequestAToken
+#
+#
+# update version : python update_cfg.py
+
+[build-system]
+requires = [
+    "setuptools>=61.0",
+    "wheel"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wolfhece"
+version = "2.0.5"
+readme = "README-package.md"
+authors = [
+  { name="Stéphane Champailler", email="stephane.champailler@uliege.be" },
+  { name="Pierre Archambeau", email="pierre.archambeau@uliege.be" },
+]
+requires-python = ">=3.9,<3.11"
+classifiers = [
+    "Programming Language :: Python :: 3.9",
+    "Operating System :: Microsoft :: Windows :: Windows 10",
+    "Operating System :: Microsoft :: Windows :: Windows 11",
+#    "Environment :: CPU",
+    "Topic :: Scientific/Engineering :: Physics"
+]
+dependencies = [
+    'wxpython',
+    'numpy',
+    'pyopengl',
+    'pandas',
+    'geopandas',
+    'scipy',
+    'owslib',
+    'pillow',
+    'cython',
+    'pyproj',
+    'dbfread',
+    'graphviz',
+    'owslib',
+    'beautifulsoup4',
+    'requests',
+    'notebook',
+    'matplotlib',
+    'mkl',
+    'python-gettext',
+    'shapely',
+    'openpyxl',
+    'xlrd',
+    'openkmi',
+    'lxml',
+    'laspy',
+    'laszip',
+    'sympy',
+    'python-pptx',
+    'python-docx',
+    'pygltflib',
+    'ezdxf',
+    'pyvista',
+    'tqdm',
+    'osmnx',
+    'tifffile',
+    'numba',
+    'xmltodict',
+    'opencv-python',
+    'xarray',
+    'rasterio',
+    'h5py',
+    'basemap'
+  ]
+
+
+[project.urls]
+Homepage = "https://uee.uliege.be/hece"
+Issues = "https://uee.uliege.be/hece"
+
+[tool.setuptools]
+include-package-data = false
+
+
+[project.gui-scripts]
+wolf = "wolfhece.cli:wolf"
+wolfoptimhydro = "wolfhece.cli:optihydro"
+wolfhydro = "wolfhece.cli:hydro"
+wolf2d = "wolfhece.cli:wolf2d"
+wolfdigitizer = "wolfhece.cli:digitizer"
+wolfparam = "wolfhece.cli:params"
+wolfcompare = "wolfhece.cli:compare"
+
+[tool.setuptools.packages.find]
+exclude = ["wolfhece.hydrometry_hece"]
+
+include = [
+    "wolfhece",
+    "wolfhece.apps",
+    "wolfhece.bernoulli",
+    "wolfhece.eva",
+    "wolfhece.fonts",
+    "wolfhece.ftp",
+    "wolfhece.hydrology",
+    "wolfhece.hydrometry",
+    "wolfhece.icons",
+    "wolfhece.lagrangian",
+    "wolfhece.lazviewer",
+    "wolfhece.lazviewer.points",
+    "wolfhece.lazviewer.processing",
+    "wolfhece.lazviewer.processing.estimate_normals",
+    "wolfhece.lazviewer.vfuncs",
+    "wolfhece.lazviewer.viewer",
+    "wolfhece.libs/*",
+    "wolfhece.links",
+    "wolfhece.locales",
+    "wolfhece.mar",
+    "wolfhece.mesh2d",
+    "wolfhece.models",
+    "wolfhece.pythonfortran",
+    "wolfhece.radar",
+    "wolfhece.rem",
+    "wolfhece.scenario",
+    "wolfhece.sounds",
+    "wolfhece.ui"
+    ]
+
+[tool.setuptools.package-data]
+# For package wolfhece, you have to include  
+wolfhece = [
+    "apps/*.png",
+    "libs/*.dll",
+    "libs/*.c",
+    "libs/*.pyx",
+    "libs/GL/*.h",
+    "libs/*.pyd",
+    "locales/*.po*",
+    "locales/*/*.po",
+    "locales/*/*.mo",
+    "models/*.*",
+    "sounds/*.wav",
+    "fonts/*.ttf",
+    "icons/*.png",
+    "lazviewer/qt_plugins/*.dll",
+    "lazviewer/libs/*.dll",
+    "lazviewer/processing/estimate_normals/*.pyd",
+    "lazviewer/vfuncs/*.pyd",
+    "lazviewer/viewer/*.exe"
+    ]
