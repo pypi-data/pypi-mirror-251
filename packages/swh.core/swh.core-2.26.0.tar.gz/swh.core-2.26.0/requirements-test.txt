@@ -1,0 +1,10 @@
+hypothesis >= 3.11.0
+pytest
+pytest-mock
+pytz
+requests-mock
+types-deprecated
+types-psycopg2
+types-pytz
+types-pyyaml
+types-requests
