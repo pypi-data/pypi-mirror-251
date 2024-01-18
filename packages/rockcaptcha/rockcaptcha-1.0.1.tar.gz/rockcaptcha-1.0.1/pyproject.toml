@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "rockcaptcha"
+packages = [
+    { include = "rockcaptcha" },
+]
+version = "1.0.1"
+description = "Rockcaptcha solve recaptchaV2, recaptchaV3, funcaptcha, imageToText very fast and cheap"
+authors = ["Rockcaptcha <support@rockcaptcha.com>"]
+readme = "README.md"
+homepage = "https://rockcaptcha.com"
+license = "MIT"
+keywords = ["rockcaptcha", "recaptcha", "recaptchav3", "funcaptcha", "imagetotext", "solver captcha", "recaptcha solver", "funcaptcha solver", "recaptcha recognition"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+requests = "^2.31.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
