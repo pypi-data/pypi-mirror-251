@@ -1,0 +1,15 @@
+ica/__main__.py,sha256=V9QdcN8uKyY3t-o6Ca7hKJYqFsRGWjCrYYsfAgVlH1U,991
+ica/analyzer.py,sha256=xhC6X1Fo8V14UOKR8E34CxuQSiAp9DFh_IlJrwsqDAI,5280
+ica/contact.py,sha256=m_Wey521aN2JfAWTQ3R7xkXPr97Pmg6kEpOcs-Jiaeo,2532
+ica/metrics/attachment_totals.py,sha256=pTVNahCCelzjLykHP3uqIX_s0Nnd1YpDt6T6czYFStw,1118
+ica/metrics/conversation_export.py,sha256=H8mckDVUzT2dGcgyW83By2UuppSJNLfVta41hVTRoro,606
+ica/metrics/least_frequent_emojis.py,sha256=F_dUxm6LKABwjmXr-vneil7mWesN7RIKGJ3WpIGP2ns,992
+ica/metrics/message_totals.py,sha256=aiHl6YrMISYu9gAgpSl4ExRPvPITMpOk_W4W2Eo1Uwg,2375
+ica/metrics/most_frequent_emojis.py,sha256=zEz1A9rvA94Aoc-q8tZTQUHR-rLztVQKT3eX-1Hlsn4,824
+ica/metrics/totals_by_day.py,sha256=ZlQqA2ySL9h5LlpVoqNJ4ysLgNvx1BxRFcFNK7KIssw,786
+imessage_conversation_analyzer-1.2.0.dist-info/LICENSE.txt,sha256=wC3CPt2MQS5dQ3Zy4tY_52451CaQhi1GB9FJRGCQxWs,1083
+imessage_conversation_analyzer-1.2.0.dist-info/METADATA,sha256=snCXhB4H8DrGj_xVnWdtY_Ow7CynXNh4deSocmsetLQ,4103
+imessage_conversation_analyzer-1.2.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+imessage_conversation_analyzer-1.2.0.dist-info/entry_points.txt,sha256=GfbPKq-0PPyLVh11pFoa10TLAfmV3hlH63oRheS3kx8,42
+imessage_conversation_analyzer-1.2.0.dist-info/top_level.txt,sha256=iQCWpjN5abofzeMOub6uSzglPjv07LdK80StU7DiVH4,4
+imessage_conversation_analyzer-1.2.0.dist-info/RECORD,,
