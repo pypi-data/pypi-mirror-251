@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: beaker-common
+Version: 29.0rc5
+Summary: Common components for Beaker packages
+Home-page: https://beaker-project.org/
+Author: Beaker developers
+Author-email: beaker-devel@lists.fedorahosted.org
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)
+Description-Content-Type: text/plain
+
+Common components for Beaker packages
