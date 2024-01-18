@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+requirements.in
+collimator/__init__.py
+collimator/version.py
+collimator_ai.egg-info/PKG-INFO
+collimator_ai.egg-info/SOURCES.txt
+collimator_ai.egg-info/dependency_links.txt
+collimator_ai.egg-info/requires.txt
+collimator_ai.egg-info/top_level.txt
