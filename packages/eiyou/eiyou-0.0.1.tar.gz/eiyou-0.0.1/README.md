@@ -1,0 +1,2 @@
+#CyberSecurityLecture
+英語テキストの感情分析をするもの
