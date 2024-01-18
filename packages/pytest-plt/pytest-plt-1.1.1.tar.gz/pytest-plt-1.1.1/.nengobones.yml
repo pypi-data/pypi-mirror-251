@@ -1,0 +1,80 @@
+project_name: pytest-plt
+pkg_name: pytest_plt
+repo_name: nengo/pytest-plt
+description: Fixtures for quickly making Matplotlib plots in tests
+
+copyright_start: 2018
+license: mit
+main_branch: main
+
+license_rst: {}
+
+contributing_rst: {}
+
+contributors_rst: {}
+
+manifest_in: {}
+
+setup_py:
+  install_req:
+    - matplotlib
+    - pytest
+  docs_req:
+    - nbsphinx>=0.6.0
+    - nengo_sphinx_theme>1.2.2
+    - numpydoc>=0.9.2
+    - sphinx
+  tests_req:
+    - pytest-cov # required since `addopts = --cov` in setup.cfg
+  entry_points:
+    pytest11:
+      - "plt = pytest_plt.plugin"
+  classifiers:
+    - "Development Status :: 5 - Production/Stable"
+    - "Framework :: Pytest"
+    - "Programming Language :: Python :: 3 :: Only"
+    - "Programming Language :: Python :: 3.6"
+    - "Programming Language :: Python :: 3.7"
+    - "Programming Language :: Python :: 3.8"
+    - "Programming Language :: Python :: 3.9"
+
+setup_cfg:
+  pytest:
+    addopts:
+      - "--cov"
+      - "--cov-append"
+    filterwarnings:
+      - ignore:testdir.copy_example is an experimental api
+    plt_filename_drop:
+      - "^pytest_plt\\.tests\\."
+    pytester_example_dir: pytest_plt/tests
+    python_files: test_pytest.py
+  pylint:
+    disable:
+      - missing-docstring
+      - wrong-import-position
+  coverage:
+    omit_files:
+      - "*/setup.py"
+
+docs_conf_py:
+  nengo_logo: general-square-light.svg
+  one_page: True
+
+ci_scripts:
+  - template: static
+  - template: test
+    coverage: true
+  - template: docs
+  - template: deploy
+    wheel: true
+
+pre_commit_config_yaml: {}
+
+pyproject_toml: {}
+
+version_py:
+  major: 1
+  minor: 1
+  patch: 1
+  release: true
