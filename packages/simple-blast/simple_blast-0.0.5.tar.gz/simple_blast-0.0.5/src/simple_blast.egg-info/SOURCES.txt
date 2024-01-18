@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/simple_blast/__init__.py
+src/simple_blast/blastdb_cache.py
+src/simple_blast/blasting.py
+src/simple_blast.egg-info/PKG-INFO
+src/simple_blast.egg-info/SOURCES.txt
+src/simple_blast.egg-info/dependency_links.txt
+src/simple_blast.egg-info/requires.txt
+src/simple_blast.egg-info/top_level.txt
