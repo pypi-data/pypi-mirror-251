@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: prism-client
+Version: 0.1.1
+License-File: LICENSE.txt
+Author: Teague Lasser
+Requires-Python: >=3.7
+Project-URL: Homepage, https://github.com/kraemahz/prism
+Project-URL: Source, https://github.com/kraemahz/prism
