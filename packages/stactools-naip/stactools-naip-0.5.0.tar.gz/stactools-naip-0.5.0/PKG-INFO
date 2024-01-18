@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: stactools-naip
+Version: 0.5.0
+Summary: STAC item creation tools for NAIP dataset.
+Author-email: stac-utils <stac@radiant.earth>
+Project-URL: homepage, https://github.com/stactools-naips/stactools-naip
+Project-URL: documentation, https://stactools-naip.readthedocs.io/en/latest/
+Keywords: stactools,pystac,catalog,STAC
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: stactools>=0.4.3
+Requires-Dist: pystac>=1.5
+Provides-Extra: dev
+Requires-Dist: black~=23.3; extra == "dev"
+Requires-Dist: codespell~=2.2; extra == "dev"
+Requires-Dist: coverage~=7.4.0; extra == "dev"
+Requires-Dist: pre-commit~=3.3; extra == "dev"
+Requires-Dist: flake8~=7.0.0; extra == "dev"
+Requires-Dist: pytest-cov~=3.0; extra == "dev"
+Requires-Dist: pytest~=7.3; extra == "dev"
+
+# stactools-naip
+
+stactools-naip is a [stactools](https://github.com/stac-utils/stactools) package to generate STAC objects
+for NAIP images.
+
+## How to use
+
+To install, run:
+
+```shell
+pip install stactools-naip
+pip install stactools[s3]
+```
+
+To create a STAC Item:
+
+```shell
+aws s3 cp --request-payer requester s3://naip-analytic/va/2018/60cm/fgdc/37077/m_3707763_se_18_060_20180825.txt .
+export AWS_REQUEST_PAYER='requester'
+stac naip create-item --fgdc m_3707763_se_18_060_20180825.txt \
+  VA 2018 s3://naip-analytic/va/2018/60cm/rgbir_cog/37077/m_3707763_se_18_060_20180825.tif \
+  json-dest/
+```
+
+## Development
+
+```shell
+pip install -e .[dev]
+```
+
+
+Install pre-commit hooks with:
+
+```shell
+pre-commit install
+```
+
+Run these before commit with:
+
+```shell
+pre-commit run --all-files
+```
