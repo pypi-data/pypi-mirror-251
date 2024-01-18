@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: webint-cache
+Version: 0.0.12
+Summary: manage resource caching on your website
+Home-page: https://ragt.ag/code/projects/webint-cache
+License: AGPL-3.0-or-later
+Keywords: micropub
+Author: Angelo Gladding
+Author-email: angelo@ragt.ag
+Requires-Python: >=3.10,<3.11
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: feedparser (>=6.0.11,<7.0.0)
+Requires-Dist: phonenumbers (>=8.13.27,<9.0.0)
+Requires-Dist: python-whois (>=0.8.0,<0.9.0)
+Requires-Dist: svglib (>=1.5.1,<2.0.0)
+Requires-Dist: webint (>=0.0)
+Project-URL: Documentation, https://ragt.ag/code/projects/webint-cache/api
+Project-URL: Repository, https://ragt.ag/code/projects/webint-cache.git
