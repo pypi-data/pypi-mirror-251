@@ -1,0 +1,2 @@
+[console_scripts]
+luxonis_train = tools.main:main

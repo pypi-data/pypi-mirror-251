@@ -1,0 +1,6 @@
+configs
+dist
+luxonis_train
+media
+tests
+tools
