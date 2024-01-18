@@ -1,0 +1,7 @@
+svg_helpers/__init__.py,sha256=NAag_BS4umqc_FhU_4rUsuOXuPdwN7l_1bjGZRNqcX0,808
+svg_helpers/element.py,sha256=0A0nVffdr4PkBwtUE5ZNPcfhw3FeCIzqjGNXx7oK33s,3295
+svg_helpers/shapely_helpers.py,sha256=lkUIopLZ4N0GlO121w5Mt0IArkdhiLoNEUMWZDe2BA0,2477
+svg_helpers-0.3.0.dist-info/LICENSE,sha256=YSK-JEEI9djfxT6pMWyLz4eKm-8A2F1Yr63h9OQtbAY,1070
+svg_helpers-0.3.0.dist-info/METADATA,sha256=t3GmHLlVIAgbLwMztPCsHBePp2bkXONVYtGyInFiDRY,506
+svg_helpers-0.3.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+svg_helpers-0.3.0.dist-info/RECORD,,
