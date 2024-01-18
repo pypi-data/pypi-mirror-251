@@ -1,0 +1,95 @@
+# mosaik-pandapipes
+
+
+This is an adapter for using the massflow network calculation program [pandapipes]in a [mosaik] simulation.
+
+This simulator is still work in progress. If there is a need for a specific attribute und parameter to implement, leave an [issue here].
+
+[pandapipes]: https://www.pandapipes.org
+[mosaik]: https://mosaik.offis.de
+[issue here]: https://gitlab.com/mosaik/components/energy/mosaik-pandapipes/-/issues
+
+## Usage
+
+### Installation
+
+Currently, this package is not on PyPI, so you need to install it from this git repository directly.
+
+
+### Setup
+
+First, add the simulator to your `SIM_CONFIG`:
+
+```python
+SIM_CONFIG = {
+    "Pandapipes": {"python": "mosaik_components.pandapipes:Simulator"},
+    ...
+}
+```
+
+Having created your `world`, you can then start an instance of the simulator via
+
+```python
+pp_sim = world.start("Pandapipes", step_size=900)
+```
+
+The `step_size` specifies at which steps this simulator runs. If you don’t give a step size or set it to `None`, the simulator will run in event-based mode, i.e. whenever it receives new input.
+
+Finally, you can create the `Grid` entity. There are several ways of doing this:
+
+- If you have a pandapowerNet instance `net` in your scenario and the pandapower
+  simulator is running in the same Python instance, you can use that grid by
+  calling
+  
+  ```python
+  grid = pp_sim.Grid(net=net)
+  ```
+
+- If the grid is in a JSON file (in pandapower’s format), you can call
+
+  ```python
+  grid = pp_sim.Grid(json=path_to_json)
+  ```
+
+- Similarly, if the grid is in an Excel file,
+
+  ```python
+  grid = pp_sim.Grid(xlsx=path_to_xlsx)
+  ```
+
+The simulator supports only one `grid` entity. If you want to simulate several grids, you need to start several instances of the simulator. 
+
+### Identifying grid elements
+
+The `Grid` entity `grid` will have a child entity for each supported element in the grid. You can access them via `grid.children`. You can filter for specific types of entities by checking the child entity's `type` attribute or `eid`.
+
+
+### Connecting other simulators to the grid
+
+You can connect positive entities to `source` and negative to `sink`, or both to a `storage`.
+
+### Table of entity types and attributes
+
+| Entity type   | Attribute      | In/Out | Description                                            |
+|---------------|----------------|--------|--------------------------------------------------------|
+| Grid          |                |        | **meta entity representing the entire grid**           |
+| Junction      |                |        | **a junction in the grid**                             |
+|               | `p[bar]`        | out    | The junction pressure [bar]                            |
+|               | `t[k]`          | out    | The junction temperature [K]		                       |
+| Source        |                |        | **a source in the grid**                                |
+|               | `mdot_source[kg/s]`  | in     | Mass flow injection [kg/s]                             |
+|               | `mdot[kg/s]`         | out    | Mass flow injection [kg/s]                             |
+| Sink          |                |        | **a sink in the grid**                                 |
+|               | `mdot_sink[kg/s]`    | in     | Drawn mass flow [kg/s]                                 |
+|               | `mdot[kg/s]`         | out    | Drawn mass flow [kg/s]                                 |
+| Storage       |                |        | **a load in the grid**                                 |
+|               | `mdot_storage[kg/s]` | in     | Mass flow in stationary pipeflow calculation [kg/s]    |               
+|               | `mdot[kg/s]`         | out    | Mass flow [kg/s] (> 0: charging / < 0: discharging)    |
+| Pipe          |                |        | **apipe in the grid**                                  |
+|               | `Re`           | Out    | Average Reynolds number                                |
+|               | `lamda`        | Out    | Average valve friction factor                          |
+|               | `v_mean[m/s]`       | Out    | The mean valve velocity [m/s]                          |
+| Valve         |                |        | **a valve in the grid**                                |
+|               | `Re`           | Out    | Average Reynolds number                                |
+|               | `lamda`        | Out    | Average valve friction factor                          |
+|               | `v_mean[m/s]`       | Out    | The mean valve velocity [m/s]                          |
