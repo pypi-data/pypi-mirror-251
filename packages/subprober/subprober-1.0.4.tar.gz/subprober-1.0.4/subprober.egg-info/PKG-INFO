@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: subprober
+Version: 1.0.4
+Summary: Subprober - A Fast Probing Tool for Penetration testers and Bug Bounty Hunters
+Author: D. Sanjai Kumar
+Author-email: bughunterz0047@gmail.com
+License-File: LICENSE
+Requires-Dist: aiofiles>=23.2.1
+Requires-Dist: aiohttp>=3.8.6
+Requires-Dist: alive_progress>=3.1.4
+Requires-Dist: beautifulsoup4>=4.11.1
+Requires-Dist: colorama>=0.4.6
+Requires-Dist: httpx>=0.25.0
+Requires-Dist: Requests>=2.31.0
+Requires-Dist: urllib3>=1.26.18
