@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: esanom
+Version: 0.0.1.4251
+Summary: 
+Author: Zafar Iqbal
+Author-email: zaf@sparc.space
+Requires-Python: >=3.10,<3.12
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: flask (==3.0.0)
+Requires-Dist: jsonschema (==4.20.0)
+Requires-Dist: mysql-connector-python (==8.2.0)
+Requires-Dist: psutil (==5.9.7)
+Description-Content-Type: text/markdown
+
+
