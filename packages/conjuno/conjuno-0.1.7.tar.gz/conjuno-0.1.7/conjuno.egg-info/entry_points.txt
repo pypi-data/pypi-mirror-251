@@ -1,0 +1,3 @@
+[console_scripts]
+conjuno = conjuno.main:cli
+
