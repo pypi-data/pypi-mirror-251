@@ -1,0 +1,2 @@
+[console_scripts]
+ragaonce = ragas_once.cli:main
