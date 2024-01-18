@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: umami-analytics
+Version: 0.1.3
+Summary: Umami Analytics Client for Python
+Project-URL: Homepage, https://github.com/mikeckennedy/umami-python
+Project-URL: Tracker, https://github.com/mikeckennedy/umami-python/issues
+Project-URL: Source, https://github.com/mikeckennedy/umami-python
+Author-email: Michael Kennedy <michael@talkpython.fm>
+License-Expression: MIT
+License-File: LICENSE
+Keywords: analtyics,umami,website
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.8
+Requires-Dist: httpx
+Requires-Dist: pydantic
+Description-Content-Type: text/markdown
+
+### Umami Analytics Client for Python
+
+## Usage
+
+## Installation
+
+### Requirements
+
+
+## Compatibility
+
+## Licence
+
+## Authors
+
+`umami` was written by **Michael Kennedy** [michael@talkpython.fm](mailto:michael@talkpython.fm).
