@@ -1,0 +1,26 @@
+{% load static %}
+
+{% block hero %}
+{% for item in hero %}
+<style>
+  #hero {
+  width: 100%;
+  height: 80vh;
+  background: url("{% static 'mentor_ds_myenglish/hero/'|add:item.bg|add:'.jpg' %}") top center;
+  background-size: cover;
+  position: relative;
+}
+</style>
+
+<section id="hero" class="d-flex justify-content-center align-items-center">
+  <div class="container position-relative" data-aos="zoom-in" data-aos-delay="100">
+    {% autoescape off %}
+    <h1>{{ item.title }}</h1>
+    <h2>{{ item.slogan }}</h2>
+    {% endautoescape %}
+    <a href="{{ item.btn.link }}" class="btn-get-started">{{ item.btn.title }}</a>
+  </div>
+</section>
+{% endfor %}
+{% endblock %}
+
