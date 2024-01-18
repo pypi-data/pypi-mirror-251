@@ -1,0 +1,2 @@
+[console_scripts]
+diagnose-pkg = pipoke.pkg_diagnosis:main

@@ -1,0 +1,9 @@
+bs4
+requests
+argh
+py2store
+i2
+yp
+packaging
+nltk
+dol
