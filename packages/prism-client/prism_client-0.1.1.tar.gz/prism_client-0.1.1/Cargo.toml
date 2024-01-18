@@ -1,0 +1,3 @@
+[workspace]
+resolver = "2"
+members = ["prism_client", "prism_python_client", "prism_schema"]
