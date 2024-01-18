@@ -1,0 +1,3 @@
+luxonis_train
+tests
+tools
