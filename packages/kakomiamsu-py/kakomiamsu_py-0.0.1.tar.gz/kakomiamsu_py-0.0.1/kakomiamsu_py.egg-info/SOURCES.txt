@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+kakomiamsu_py.egg-info/PKG-INFO
+kakomiamsu_py.egg-info/SOURCES.txt
+kakomiamsu_py.egg-info/dependency_links.txt
+kakomiamsu_py.egg-info/top_level.txt
+kakomimasu_py/__init__.py
+kakomimasu_py/kkmm.py
