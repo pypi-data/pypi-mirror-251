@@ -1,0 +1,8 @@
+xapi_service/__init__.py,sha256=SVM1-YKXGspgKa1cf9YjS6BT3Z7ShyKrnV1EWRHaMas,363
+xapi_service/connect.py,sha256=XwpCmGSMMbMXuu_Z9O8dXuy-IJ3nNfd8DKBQjJ6lgYU,4577
+xapi_service/servers.py,sha256=ukYE1zM19C4xvLKTHTIvtV0M6C96Qrg5EY3brq4vI74,410
+xapi_service-0.0.3.dist-info/LICENSE,sha256=gKrM2JuiKs-eyKSzlB-YIhvfYdyVtGEutMteJvCiWxQ,1091
+xapi_service-0.0.3.dist-info/METADATA,sha256=MIyYZEU80du8k3OnI_sN1two4U0U_fKWPA6NTX6KaVU,826
+xapi_service-0.0.3.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+xapi_service-0.0.3.dist-info/top_level.txt,sha256=bMTIrBp9KcHCMYZY9G6HTHLzCAlvvZWvfCaE2_4NRlE,13
+xapi_service-0.0.3.dist-info/RECORD,,
