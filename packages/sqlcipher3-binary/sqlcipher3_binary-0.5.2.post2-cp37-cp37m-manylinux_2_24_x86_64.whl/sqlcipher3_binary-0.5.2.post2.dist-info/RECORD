@@ -1,0 +1,9 @@
+sqlcipher3_binary-0.5.2.post2.dist-info/LICENSE,sha256=-iPPJQEmVI6QAI_pLeTudtSFv7s1kvW-iqcxd1iSqWA,889
+sqlcipher3_binary-0.5.2.post2.dist-info/RECORD,,
+sqlcipher3_binary-0.5.2.post2.dist-info/METADATA,sha256=12hk6LrMPp9-f7_DTRQ3Acm1sGjge-eHxFsQ9DcAJGw,777
+sqlcipher3_binary-0.5.2.post2.dist-info/WHEEL,sha256=cBm4OKh-yLoSVFYDOMbOFa-5TMnKqgb-7QfecztChwM,113
+sqlcipher3_binary-0.5.2.post2.dist-info/top_level.txt,sha256=yX35D6lFaO12-KwiILjh4aroPYjrQUOM39v8P8KHhlI,11
+sqlcipher3_binary.libs/libcrypto-638796f9.so.1.1.1b,sha256=jpnFuo3V4--2fvj-NRXkNLxze6xZqo-V5Td3MhdA9CU,3542353
+sqlcipher3/_sqlite3.cpython-37m-x86_64-linux-gnu.so,sha256=4vzXKx6f8YZkDnuF3ITKTWzaymdd_6Gaq4Fq3mXavVo,8915377
+sqlcipher3/dbapi2.py,sha256=j6XGrnsyYApgHBZMdeKhS-0T6p2SQOR5HE3MpQgmI5Q,2727
+sqlcipher3/__init__.py,sha256=Pp-yCXq8PXgC0GoD-roHDu74J0QS_tcCk6o7Qhu7ao4,1020
