@@ -1,0 +1,12 @@
+python_solarfrontier/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+python_solarfrontier/api.py,sha256=uap7O4DHhLMxpDaztNf7vtwo12Iq68ntvaGg67xmt2k,3849
+python_solarfrontier/const.py,sha256=2FQb6_937svulCKP_pVqOabtSkupc3NymeclqRopoVE,320
+python_solarfrontier/utils.py,sha256=YA0aHS4KOfHU3Z_-aHKJ1hlES-HtNm5ajvYH3w1gDMU,3467
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_api.py,sha256=0vOTe5L7Yc4s6PlSiuLKRfTJbX3ZEbfVs05lwbraOXs,10505
+tests/test_utils.py,sha256=veJU2qn-e2tYZhAf5hPtV2hvzza669IECFGf3ZK9OKA,3546
+python_solarfrontier-0.1.1.dist-info/LICENCE,sha256=It5jIPQjDefhpMqnl-fTMPs8PbwL7v0DnygKs33jhmw,1073
+python_solarfrontier-0.1.1.dist-info/METADATA,sha256=qxIZz95VMOvfRCrm2RbTaylwdKaKx_8lID-SdA3qrW4,3006
+python_solarfrontier-0.1.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+python_solarfrontier-0.1.1.dist-info/top_level.txt,sha256=am1fkEVL_CNuWAt5HlTHO2XS5tT8iWLaDsvO_rcdb84,27
+python_solarfrontier-0.1.1.dist-info/RECORD,,
