@@ -1,0 +1,9 @@
+def predict(x):
+    df = x.copy()
+    output = []
+    for index, row in df.iterrows():
+    {%- for line in processing.split('\n') %}
+        {{ line }}
+    {%- endfor %}
+        output.append(y)
+    return np.array(output)
