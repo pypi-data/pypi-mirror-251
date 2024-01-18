@@ -1,0 +1,60 @@
+Generalobj - the form handling package
+
+= Install =
+
+To install the package type simply
+
+pip install generalobj
+
+with the desired version.
+
+= Setup =
+
+0) To use this package You need to have Django and python install on your system or in your virtual environment.
+
+1) Go to project root, open up the settings.py and add generalobj to your INSTALLED_APPS
+
+2) Run the migration files: python manage migrate
+
+= How to use =
+
+Easiest sample way to use it:
+*forms.py
+from generalobj.forms import GeneralObjForm
+
+from .models import Project
+
+class ProjectForm(GeneralObjForm):
+    class Meta:
+        model = Project
+        fields = ['name', 'duration']
+
+
+*views.py
+def project_new(request):
+    return general_obj_new(request, Project, ProjectForm)
+
+def project(request):
+	fields = [.....]
+	return general_obj(request, Project, ProjectForm, fields=fields)
+
+def project_search(request):
+	search_fields = [...]
+	result_fields = [...]
+	relational_obj_values = {...}
+	pass_to_template = {...}
+	passing_scripts = {...}
+	return general_obj_search(request, Project, ProjectForm, \
+		result_fields=result_fields, pass_to_template=pass_to_template, \
+		relational_obj_values=relational_obj_values, \
+		passing_scripts=passing_scripts)
+
+def project_edit(request, project_id):
+	return general_obj_edit(request, Project, ProjectForm, Project_id)
+
+= Info =
+
+This package is designed for easy form handling for general processes.
+For instance if You need to edit / create / search a model, this is an easy tool for that.
+It uses DataTables heavily, and the search results can be exported to .xlsx file with one button press.
+Many hooks / callbacks for formhandling can be used like postaction, postsaveaction, prevalidation, postvalidation.
