@@ -1,0 +1,14 @@
+_frm_cpp.cpython-312-i386-linux-musl.so,sha256=vt1tatDAmdJL0Iz7zn09eV5AbBoJSeXRkQAttS_WHIw,375217
+frm/__init__.py,sha256=j-u9gwz3QT_gXDlROfzy3WJoybqeCUwzCcGBa6As2-4,79
+frm/_frm_py/preprocessing.py,sha256=0hTNRBiXDtZOMKGu70f_igy-502ZcWWcDOAJdFSzhL0,2755
+frm/_frm_py/miner.py,sha256=gSKNRKNtlZ07bc9kLCMJHaO_NkkDZs7BeOAlr9MctOg,2907
+frm/_frm_py/__init__.py,sha256=wDFzDaxRKepBZFMEbTwk6XL5hmhzdVq_WHqwuhDeMw4,24
+frm/_frm_py/patterns.py,sha256=CiD_-3-RgYdIwGLN0v_XsqkFGVtY_p1OafUajQYoH4Q,7779
+frm/_frm_py/motif.py,sha256=n1SO7iLjI2C1NK9NocWz5RWJ7FjlkehaFcSSbYRiAA0,2533
+frm_miner-0.0.8.dist-info/WHEEL,sha256=0W5ApuPTEYBvIoT6w7al1oQeaht3UWJlv8IhgtmkPPs,111
+frm_miner-0.0.8.dist-info/LICENSE,sha256=KwW3AFpAeo8nymWAyTKoVhr28zblQlewl8cgl-kwAFU,1072
+frm_miner-0.0.8.dist-info/RECORD,,
+frm_miner-0.0.8.dist-info/top_level.txt,sha256=FrFIvYb9lnZZqBF_EK0GGTsQSJUuxvfg-Sk0X_xwtIU,13
+frm_miner-0.0.8.dist-info/METADATA,sha256=LnwgTBwMVoR_E73-BWnGAkCL32mFshTSeNOKQn1vHOM,2771
+frm_miner.libs/libstdc++-8baf04f9.so.6.0.28,sha256=yrzOxg1heyJ9Y-43YCLLn04Cpl_A68FN0D2Q1iBTMcY,2428961
+frm_miner.libs/libgcc_s-8b50eaaa.so.1,sha256=WXj_FYQE1MDIyb-nN8siUALdxit6NHma0p9UxemQV8o,101649
