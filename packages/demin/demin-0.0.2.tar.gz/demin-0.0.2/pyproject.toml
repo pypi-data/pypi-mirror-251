@@ -1,0 +1,31 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "demin"
+version = "0.0.2"
+authors = [
+  { name="Gustavo Ortiz", email="gstvortiz@hotmail.com" },
+]
+description = "Useful Data Science functions for Geometallurgical Analysis."
+readme = "README.md"
+requires-python = ">=3.10.12"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[options]
+install_requires = [
+    "numpy",
+    "pandas",
+    "matplotlib",
+    "seaborn",
+    "scikit-learn"
+]
+
+[project.urls]
+Homepage = "https://github.com/gstvortiz/demin"
+Issues = "https://github.com/gstvortiz/demin/issues"
