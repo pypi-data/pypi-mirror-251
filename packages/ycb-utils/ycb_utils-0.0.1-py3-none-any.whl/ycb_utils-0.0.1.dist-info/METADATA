@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: ycb-utils
+Version: 0.0.1
+Summary: ycb utils
+Author: Hirokazu Ishida
+Author-email: h-ishida@jsk.imi.i.u-tokyo.ac.jp
+License: MIT
+Requires-Dist: trimesh
+
