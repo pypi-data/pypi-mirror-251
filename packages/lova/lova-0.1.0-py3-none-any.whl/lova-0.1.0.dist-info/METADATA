@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: lova
+Version: 0.1.0
+Summary: Lova (Long-term Value Algorithm) is a recommendation algorithm framework focused on long-term value matching.
+Home-page: https://github.com/yinsn/Lova
+Author: Yin Cheng
+Author-email: yin.sjtu@gmail.com
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: implicit >=0.7.2
+Requires-Dist: optuna >=3.1.1
+Requires-Dist: pyyaml >=6.0
+
+<div align="left"><img src="https://github.com/yinsn/Lova/blob/develop/docs/images/lova.svg" width="400"/></div>
+
+# Lova
+[![Python](https://img.shields.io/badge/python3.8%7C3.9-red?logo=Python&logoColor=white)](https://www.python.org)
+[![PyPI](https://img.shields.io/pypi/v/lova?color=green)](https://pypi.org/project/lova/)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/yinsn/lova)
+
+Lova (Long-term Value Algorithm) is a recommendation algorithm framework focused on long-term value matching.
