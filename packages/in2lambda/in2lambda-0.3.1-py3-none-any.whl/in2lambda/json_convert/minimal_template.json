@@ -1,0 +1,26 @@
+{
+  "isPublished": false,
+  "masterContent": "Top level question here",
+  "parts": [
+    {
+      "answer": "",
+      "content": "Part text here",
+      "responseArea": [],
+      "tutorial": [],
+      "universalPartId": "N/A",
+      "workedSolution": [
+        {
+          "content": "Part worked solution here",
+          "id": "N/A",
+          "title": ""
+        }
+      ]
+    }
+  ],
+  "questionSettings": {
+    "displayFinalAnswer": true,
+    "displayStructuredTutorial": true,
+    "displayWorkedSolution": true
+  },
+  "title": "Question title here"
+}
