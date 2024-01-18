@@ -1,0 +1,10 @@
+lswmi/__init__.py,sha256=LCND9NjwqxHPGFs4-yjNUgnHufihwOrxD5YjqVYB0dQ,219
+lswmi/__main__.py,sha256=0R69kMLopBXwWwgiq_kB8vdvUXHWF_95iRIrPYMtidg,103
+lswmi/device.py,sha256=aJIVzCOVxaEaDIX9goduPJc6gZDHLxWg8UyvfPWkTJM,2473
+lswmi/main.py,sha256=iAC1vjTYcglJWdxgDRMEmMR8Xw3uQ07fcEWZYrSIqWg,2071
+lswmi/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lswmi-1.1.0.dist-info/METADATA,sha256=Ebt27SVdeBi-g9m_xl56HnebgGdzxfWQ7TYzH5F3jx8,3202
+lswmi-1.1.0.dist-info/WHEEL,sha256=mRYSEL3Ih6g5a_CVMIcwiF__0Ae4_gLYh01YFNwiq1k,87
+lswmi-1.1.0.dist-info/entry_points.txt,sha256=fX7ecuoyunGIEZitTDNtZNj_6IpJ5Iag00iN3YYtdzw,46
+lswmi-1.1.0.dist-info/licenses/LICENSE,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+lswmi-1.1.0.dist-info/RECORD,,
