@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "dna-amin-assignment"
+version = "0.1.0"
+description = ""
+authors = ["Amin Rezaei <63923736+am-rezaei@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{ include = "dnastack" }]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+beautifulsoup4 = '>4.10.0'
+click = '>8.0.3'
+pydantic = ">=1.9.0,<2"
+pyyaml = '>5.4.1'
+requests = '>2.23.0'
+urllib3 = '>1.25.11'
+kotoba = '3.1.0'
+imagination = '>3.3.1'
+requests-toolbelt = '>0.9.1,<1'
+httpie = '>=3.2.1'
+pyjwt = '>=2.1.0'
+jsonpath-ng = '>=1.5.3'
+selenium = '>=3.141.0'
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+amin-dnastack = 'dnastack.__main__:dnastack'

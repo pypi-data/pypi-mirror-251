@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: dna-amin-assignment
+Version: 0.1.0
+Summary: 
+Author: Amin Rezaei
+Author-email: 63923736+am-rezaei@users.noreply.github.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: beautifulsoup4 (>4.10.0)
+Requires-Dist: click (>8.0.3)
+Requires-Dist: httpie (>=3.2.1)
+Requires-Dist: imagination (>3.3.1)
+Requires-Dist: jsonpath-ng (>=1.5.3)
+Requires-Dist: kotoba (==3.1.0)
+Requires-Dist: pydantic (>=1.9.0,<2)
+Requires-Dist: pyjwt (>=2.1.0)
+Requires-Dist: pyyaml (>5.4.1)
+Requires-Dist: requests (>2.23.0)
+Requires-Dist: requests-toolbelt (>0.9.1,<1)
+Requires-Dist: selenium (>=3.141.0)
+Requires-Dist: urllib3 (>1.25.11)
+Description-Content-Type: text/markdown
+
+
