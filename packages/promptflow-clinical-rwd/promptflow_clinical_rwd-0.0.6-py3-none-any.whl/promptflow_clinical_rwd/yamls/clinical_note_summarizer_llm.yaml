@@ -1,0 +1,10 @@
+promptflow_clinical_rwd.tools.clinical_note_summarizer_llm.llm_summarizer:
+  description: This is a tool to demonstrate how to customize an LLM tool with a PromptTemplate.
+  function: llm_summarizer
+  inputs:
+    connection:
+      type:
+      - CustomConnection
+  module: promptflow_clinical_rwd.tools.clinical_note_summarizer_llm
+  name: My Custom LLM Tool
+  type: custom_llm

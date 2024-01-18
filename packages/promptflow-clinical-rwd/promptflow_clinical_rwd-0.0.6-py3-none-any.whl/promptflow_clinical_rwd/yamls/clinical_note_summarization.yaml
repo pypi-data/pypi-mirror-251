@@ -1,0 +1,10 @@
+promptflow_clinical_rwd.tools.clinical_note_summarization.summarize_notes:
+  function: summarize_notes
+  inputs:
+    notes:
+      type:
+      - object
+  module: promptflow_clinical_rwd.tools.clinical_note_summarization
+  name: Clinical Note Summarization
+  description: Tool for generating clinical note summarization
+  type: python

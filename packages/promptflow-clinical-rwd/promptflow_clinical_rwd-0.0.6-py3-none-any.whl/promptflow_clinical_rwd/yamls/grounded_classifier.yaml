@@ -1,0 +1,10 @@
+promptflow_clinical_rwd.tools.grounded_classifier.grounded_classifier:
+  function: grounded_classifier
+  inputs:
+    patient_summary:
+      type:
+      - str
+  module: promptflow_clinical_rwd.tools.grounded_classifier
+  name: Structured Prediction
+  description: Tool for creating a prediction with grounding from a patient summary
+  type: python
