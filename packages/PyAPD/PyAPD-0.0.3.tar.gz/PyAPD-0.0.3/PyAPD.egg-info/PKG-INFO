@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: PyAPD
+Version: 0.0.3
+Summary: A Python library for generating (optimal) anisotropic power diagrams
+Home-page: https://github.com/mbuze/PyAPD
+Author: Maciej Buze, Steve Roper, David Bourne
+Author-email: maciej.buze@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+        A Python library for computing (optimal) anisotropic power diagrams using GPU acceleration.
+        Current main application concerns geometric modelling of polycrystalline materials
+        with curved boundaries with grains of prescribed volumes and fine control over aspect ratio and location of the grains.
+    
