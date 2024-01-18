@@ -1,0 +1,9 @@
+{% extends 'base_templates/_archive.html' %}
+{% block content %}
+<div class="container">
+    <h1 class="title">{{title}}</h1>
+    {% for page in pages %}
+    <div><a href="{{SITE_URL}}{{page.url_for()}}">{{page}}</a></div>
+    {% endfor %}
+</div>
+{% endblock %}

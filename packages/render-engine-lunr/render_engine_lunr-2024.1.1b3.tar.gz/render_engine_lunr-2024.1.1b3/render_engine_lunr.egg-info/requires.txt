@@ -1,0 +1,9 @@
+jinja2
+render-engine>=2024.1.1b1
+lunr
+
+[dev]
+pytest
+pytest-cov
+pytest-playwright
+ruff
