@@ -1,0 +1,16 @@
+schemaless/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+schemaless/bases.py,sha256=Ex7wW5ireYyXazl7qNUgV8w3CgwRQposFj0xlpvM1w4,1150
+schemaless/commit.py,sha256=UH21lT15OSfjh_hEoHobxFTbaRwnRB4w4VcALnRnpiU,1117
+schemaless/config.py,sha256=ILN0FF2PyKNCSZgA9l-DBPg7IH7Zml_o2UkXnvNA9kg,464
+schemaless/configator.py,sha256=5C4A9KmlE-FADbM-lr-q0gPVWSr3Y6PtuOIfWvjkdFI,2916
+schemaless/delta.py,sha256=Q096_mktgIOvjzjCakPAXi88hGnphGLEbTIyDSH4POg,592
+schemaless/domain.py,sha256=aMnmTyFmIlXAxUsymZlFkyy8GnbftEBjNac3bBDRxSQ,1535
+schemaless/http_client.py,sha256=lTS4-NNhN5Jsk6VcFvPP-6dReOSgrTfcB6NVOVfrZCg,3299
+schemaless/rid.py,sha256=hxTjuo_7_lZ2QIVJmQl386C6RFwDTNi0ZPwPD6yDEus,356
+schemaless/utils.py,sha256=1OmDMhUlMXbH1S0OymO9SceRvEPiuzx5CuvmMfIdooc,2631
+schemaless/version_control.py,sha256=FiMFpaBcnz0afPguTyNEqifVreaZlOIZCCY2alvOG4c,4843
+schemaless/webhook.py,sha256=0tlncifKGqm4JYMOU47WwnvgVuNsvBQWxAgi1kJSDyw,3424
+schemaless/webhook_policy.py,sha256=9rUx2ajN4eXV_FfaWFrmEGTqxF6lUg1OxZJ0BxlkSVM,1493
+schemaless-0.0.11.dist-info/METADATA,sha256=5DD-Ug5G0vqkdrfA23Cjfv3m60CxH9J78l_F8neBZ7s,616
+schemaless-0.0.11.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+schemaless-0.0.11.dist-info/RECORD,,
