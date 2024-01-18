@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+the_zen_of/__init__.py
+the_zen_of/_modidx.py
+the_zen_of/javascript.py
+the_zen_of/python.py
+the_zen_of/setup.py
+the_zen_of.egg-info/PKG-INFO
+the_zen_of.egg-info/SOURCES.txt
+the_zen_of.egg-info/dependency_links.txt
+the_zen_of.egg-info/entry_points.txt
+the_zen_of.egg-info/not-zip-safe
+the_zen_of.egg-info/requires.txt
+the_zen_of.egg-info/top_level.txt
