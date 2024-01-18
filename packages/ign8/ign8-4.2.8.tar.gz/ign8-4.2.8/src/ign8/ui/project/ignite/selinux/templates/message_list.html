@@ -1,0 +1,36 @@
+<!-- cv/templates/cv/selinux_list.html -->
+
+{% extends 'base.html' %}
+
+{% block title %}Selinux Messages List{% endblock %}
+
+{% block content %}
+    <h2>Selinux List</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Message</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for entry in messages %}
+                <tr>
+                    <td>{{ entry.hostname }}</td>
+                    <td>{{ entry.status }}</td>
+                    <td>{{ entry.mount }}</td>
+                    <td>{{ entry.rootdir }}</td>
+                    <td>{{ entry.policyname }}</td>
+                    <td>{{ entry.current_mode }}</td>
+                    <td>{{ entry.configured_mode }}</td>
+                    <td>{{ entry.mslstatus }}</td>
+                    <td>{{ entry.memprotect }}</td>
+                    <td>{{ entry.maxkernel }}</td>
+                    <td>{{ entry.total }}</td>
+                    <td>{{ entry.success }}</td>
+                    <td>{{ entry.failed }}</td>
+                    <td>{{ entry.sealerts }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
