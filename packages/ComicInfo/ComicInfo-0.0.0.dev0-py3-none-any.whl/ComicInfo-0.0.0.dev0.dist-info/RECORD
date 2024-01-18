@@ -1,0 +1,11 @@
+ComicInfo/ComicInfo.py,sha256=HtqaAQzKHyw68BAbs1rHQ9qjIIJhhhQRFrwWfe1y1ns,4489
+ComicInfo/__init__.py,sha256=7swE0R3eTAxTTwXlrln4BVQUv6zHphNYLPZreEVHrEQ,57
+ComicInfo/models/AgeRating.py,sha256=g9Hix1oBzyCvsQh0ASEJs-BM84YkyTPVh1X--80z2_c,616
+ComicInfo/models/ComicPageType.py,sha256=FSewbTEEGxZc8MEzBda8qK3K5NPjZsplwgn5hF8PMNM,468
+ComicInfo/models/Manga.py,sha256=qviwLYd-TIBi6Js136a-1DWFuzX49mOgWiV19I45VPk,268
+ComicInfo/models/YesNo.py,sha256=fNZMs1eerfPwHuuPTgERpRCe_WTahVqr6OYGcP2D-eA,217
+ComicInfo/models/__init__.py,sha256=5z42qn4J52Vs0texsPoeO1oqConBiNy0FxnGHv6IOj8,512
+ComicInfo-0.0.0.dev0.dist-info/METADATA,sha256=9Jq_kOshaUf8upBCsFRyEjSjjXfH5euJL-yUkCBNhHM,647
+ComicInfo-0.0.0.dev0.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+ComicInfo-0.0.0.dev0.dist-info/top_level.txt,sha256=XuR-FQPUQONJjfeGc8Ha4pRKU_dXYGB3ANDcdnbqnus,10
+ComicInfo-0.0.0.dev0.dist-info/RECORD,,
