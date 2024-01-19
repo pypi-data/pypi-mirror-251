@@ -1,0 +1,17 @@
+numpy>=1.19
+pandas>=1.2
+pyarrow
+xarray
+numba>=0.51.2
+numexpr
+filelock
+dask
+networkx
+sharrow>=2.0.1
+addicty
+xmle
+rich
+
+[test]
+pytest>=4.6
+jax
