@@ -1,0 +1,8 @@
+setup.py
+rfidpy/SimpleMFRC522.py
+rfidpy/__init__.py
+rfidpy/mfrc522.py
+rfidpy.egg-info/PKG-INFO
+rfidpy.egg-info/SOURCES.txt
+rfidpy.egg-info/dependency_links.txt
+rfidpy.egg-info/top_level.txt
