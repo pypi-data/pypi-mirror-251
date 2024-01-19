@@ -1,0 +1,110 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "dict2any"
+dynamic = ["version"]
+description = 'dict to/from dataclasses'
+readme = "README.md"
+requires-python = ">=3.12"
+license = "MIT"
+keywords = []
+authors = [
+  { name = "Anil Kulkarni", email = "anil@terminal.space" },
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+]
+dependencies = []
+
+[project.urls]
+Documentation = "https://github.com/intentionally-left-nil/dict2any#readme"
+Issues = "https://github.com/intentionally-left-nil/dict2any/issues"
+Source = "https://github.com/intentionally-left-nil/dict2any"
+
+[tool.hatch.version]
+path = "dict2any/__about__.py"
+
+[tool.hatch.build]
+exclude = [
+  "/tests",
+  "/typings"
+]
+artifacts = ["*.pyi", "dict2any/py.typed"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["dict2any"]
+
+
+[tool.hatch.envs.default]
+dependencies = [
+  "pytest",
+  "pytest-cov>=4.1.0",
+]
+[tool.hatch.envs.default.scripts]
+test = "pytest {args:tests}"
+[[tool.hatch.envs.all.matrix]]
+python = ["3.12"]
+
+[tool.hatch.envs.lint]
+dependencies = [
+  "pytest",
+  "pytest-cov>=4.1.0",
+  "black>=23.1.0",
+  "mypy>=1.0.0",
+  "isort>=5.12.0"
+]
+[tool.hatch.envs.lint.scripts]
+typing = "mypy --install-types --non-interactive {args:dict2any tests}"
+style = [
+  "black --check --diff {args:.}",
+  "isort --check --diff {args:.}",
+]
+fmt = [
+  "black {args:.}",
+  "isort {args:.}",
+]
+all = [
+  "style",
+  "typing",
+]
+
+[tool.pytest.ini_options]
+addopts = "--cov --cov-report=xml --cov-report=html --cov-config=.coveragerc"
+
+[tool.black]
+target-version = ["py311"]
+line-length = 120
+skip-string-normalization = true
+
+[tool.isort]
+profile = "black"
+skip_glob = ["env/*"]
+
+[tool.mypy]
+mypy_path = "typings/"
+
+
+[tool.coverage.run]
+source_pkgs = ["dict2any", "tests"]
+branch = true
+parallel = true
+omit = [
+  "dict2any/__about__.py",
+]
+
+[tool.coverage.paths]
+dict2any = ["dict2any", "*/dict2any/dict2any"]
+tests = ["tests", "*/dict2any/tests"]
+
+[tool.coverage.report]
+exclude_lines = [
+  "no cov",
+  "if __name__ == .__main__.:",
+  "if TYPE_CHECKING:",
+]
