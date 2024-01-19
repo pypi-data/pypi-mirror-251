@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: blender_interface
+Version: 0.5.0
+Summary: Used for Blender scripting
+Author-email: Caden Kegg <cadenkegg@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# Usage:
+Use in the Blender `Scripting` section.
