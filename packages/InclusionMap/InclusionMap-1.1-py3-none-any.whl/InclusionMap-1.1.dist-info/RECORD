@@ -1,0 +1,12 @@
+inclusion_map/__main__.py,sha256=P9B3TcKQpxLrPKn2k5UsJI25YBroBioYC7qefCZln4k,4990
+inclusion_map/front.py,sha256=InZwHlbH4CsBvRO5QMETFz1CX1_XfQjK_rSGUK0zjDE,2751
+inclusion_map/back/__init__.py,sha256=IK4KXZClnN_jkRkaJ30ZDXxwSVMBttoBB08ff1T-mEQ,327
+inclusion_map/back/inclusion_instructions.py,sha256=TKuDeNJTDfvC3sixSSb-oWXHRTjOZjLG-mKJ2RemLSw,3233
+inclusion_map/back/project_dependencies.py,sha256=6YGtIngfm5AZuIpflP2FOb54IptLl35ZpMqFHRavZX4,8459
+inclusion_map/back/target_parser.py,sha256=DUIMRdR4zU00Bw3UCYoJrKWaNX5t7Sr-98AMk-XhN9M,3484
+InclusionMap-1.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+InclusionMap-1.1.dist-info/METADATA,sha256=EFQj77LAQuwl09iP3CtZAg5yLhO_NzjJk076DtHzpYM,661
+InclusionMap-1.1.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+InclusionMap-1.1.dist-info/entry_points.txt,sha256=4M2EYUX7gTSvT9ev6wERoxhuLuBilT4mtwB1OFQdp40,61
+InclusionMap-1.1.dist-info/top_level.txt,sha256=Lmcg-uzwnFkL6-Z76ENG3n8MpIGnhEz7y7lXP_E2VFs,14
+InclusionMap-1.1.dist-info/RECORD,,
