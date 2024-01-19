@@ -1,0 +1,28 @@
+[project]
+name = "slice-a-portion"
+version = "0.1"
+description = "get the i/n slice of a sequence"
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [{name = "Martín Gaitán"}]
+license = {text = "Apache-2.0"}
+classifiers = [
+    "License :: OSI Approved :: Apache Software License"
+]
+dependencies = [
+
+]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project.urls]
+Homepage = "https://github.com/mgaitan/slice-a-portion"
+Changelog = "https://github.com/mgaitan/slice-a-portion/releases"
+Issues = "https://github.com/mgaitan/slice-a-portion/issues"
+CI = "https://github.com/mgaitan/slice-a-portion/actions"
+
+
+[project.optional-dependencies]
+test = ["pytest"]

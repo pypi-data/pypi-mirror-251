@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+slice_a_portion/__init__.py
+slice_a_portion.egg-info/PKG-INFO
+slice_a_portion.egg-info/SOURCES.txt
+slice_a_portion.egg-info/dependency_links.txt
+slice_a_portion.egg-info/requires.txt
+slice_a_portion.egg-info/top_level.txt
+tests/test_slice_a_portion.py
