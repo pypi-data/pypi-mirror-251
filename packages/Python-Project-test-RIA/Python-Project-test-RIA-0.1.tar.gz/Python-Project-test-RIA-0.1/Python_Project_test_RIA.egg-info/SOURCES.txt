@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+Python_Project_test_RIA.egg-info/PKG-INFO
+Python_Project_test_RIA.egg-info/SOURCES.txt
+Python_Project_test_RIA.egg-info/dependency_links.txt
+Python_Project_test_RIA.egg-info/top_level.txt
