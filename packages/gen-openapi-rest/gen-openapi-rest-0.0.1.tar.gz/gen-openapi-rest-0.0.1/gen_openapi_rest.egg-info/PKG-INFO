@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: gen-openapi-rest
+Version: 0.0.1
+Summary: Generate .http files from OpenAPI/Swagger JSON. to be used with VS Code REST Client.
+Home-page: https://github.com/rangulvers/openapi-rest-client-generator
+Author: rangulvers
+License: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+Generate .http files from OpenAPI/Swagger JSON. to be used with VS Code REST Client
