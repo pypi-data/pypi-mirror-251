@@ -1,0 +1,12 @@
+__init__.py,sha256=Sd-Gwc4Rumow4A3ldF5ADkdXc_AGLtS0y3A2AEads_o,21
+mispotx/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mispotx/cli.py,sha256=IlyWV9X29p6b0Nf9rrZHhT6qGYx_w-fLp4aU0DiAZek,11661
+mispotx/config.ini,sha256=_CmlFvMPuSEjYSgcTnKdA3_MZ06oEznuHeDqrpiZHcc,97
+mispotx/util/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mispotx/util/config.py,sha256=pZVoTvy6fj3NGMajn8vCeIQ_qBFR9_aWtamj8GdCoeU,4432
+mispotx-1.2.0.dist-info/LICENSE,sha256=33Qh_S2WCyVa_blmWZDfeIePOQ2akTBEzDmleNKTcBE,1063
+mispotx-1.2.0.dist-info/METADATA,sha256=_UVCHlBG29zOOfu5CerSgH-MwBk4evGOJvZmGofFcxk,600
+mispotx-1.2.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+mispotx-1.2.0.dist-info/entry_points.txt,sha256=TL7Uo6gtFWOj6V9F9LyYPW80sJdc8OC7A94M3zvRV_Y,45
+mispotx-1.2.0.dist-info/top_level.txt,sha256=FFd8r2mMgdzP_Mj1b-Oi1g7poVl8VD7OYOS1NYt9l20,36
+mispotx-1.2.0.dist-info/RECORD,,
