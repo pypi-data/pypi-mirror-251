@@ -1,0 +1,11 @@
+numpy>=1.21.5
+scipy>=1.8.1
+tqdm>=4.66.1
+torch>=2.0.1
+torchaudio>=2.0.2
+
+[matplotlib]
+matplotlib
+
+[test]
+pytest
