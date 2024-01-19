@@ -1,0 +1,9 @@
+icalstatus/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+icalstatus/date.py,sha256=eFKGqBh2nT-d1NY9cxkDdCAXZTY1jhhF6EVvQFEnh8M,1215
+icalstatus/parse.py,sha256=F8JmpInTF8-3htJ5irunwWEvEOWJ8Fdlv277la8k5tw,1035
+icalstatus/status.py,sha256=zRGcdaqrxoMpTH_WCAt90hpfZCKNEvGDzvkRYlLnHkE,4901
+icalstatus-0.0.8.dist-info/LICENSE,sha256=4DFZPzsHvBwvMFiW1m_3QilusGT6jMBlP6zHFNhQ7A8,770
+icalstatus-0.0.8.dist-info/METADATA,sha256=nNL8nyLWAjis3Dvk_tRTX5Ej5Ihu050Owhdc8dcLvz4,3336
+icalstatus-0.0.8.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+icalstatus-0.0.8.dist-info/entry_points.txt,sha256=V4B_F6lqqyg1AL-OIRmQ9hj3lJO5mkI_6xUCvrtjTJY,123
+icalstatus-0.0.8.dist-info/RECORD,,
