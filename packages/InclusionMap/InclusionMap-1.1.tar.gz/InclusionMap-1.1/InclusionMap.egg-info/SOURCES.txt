@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+InclusionMap.egg-info/PKG-INFO
+InclusionMap.egg-info/SOURCES.txt
+InclusionMap.egg-info/dependency_links.txt
+InclusionMap.egg-info/entry_points.txt
+InclusionMap.egg-info/requires.txt
+InclusionMap.egg-info/top_level.txt
+inclusion_map/__main__.py
+inclusion_map/front.py
+inclusion_map/back/__init__.py
+inclusion_map/back/inclusion_instructions.py
+inclusion_map/back/project_dependencies.py
+inclusion_map/back/target_parser.py

@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: InclusionMap
+Version: 1.1
+Summary: A tool for generating the inclusion map of a programming project. Several programming languages are supported.
+Home-page: https://github.com/VictorLaugt/InclusionMap
+Author: Victor Laügt
+License: GPLv3
+Keywords: dependency graph map programming project tool
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3.11
+License-File: LICENSE
