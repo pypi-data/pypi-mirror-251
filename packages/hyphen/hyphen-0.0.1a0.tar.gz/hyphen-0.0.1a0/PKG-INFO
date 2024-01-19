@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: hyphen
+Version: 0.0.1a0
+Summary: Official Python SDK for the Hyphen API
+Home-page: https://github.com/hyphen/hyphen-python
+Author: Hyphen.ai
+Author-email: support@hyphen.ai
+License: MIT
+Project-URL: Bug Tracker, https://github.com/hyphen/hyphen-python/issues
+Project-URL: Changes, https://github.com/hyphen/hyphen-python/blob/master/CHANGELOG.md
+Project-URL: Documentation, https://docs.hyphen.com
+Project-URL: Source Code, https://github.com/hyphen/hyphen-python
+Keywords: hyphen api teams
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+Official Python SDK for the Hyphen API
+
