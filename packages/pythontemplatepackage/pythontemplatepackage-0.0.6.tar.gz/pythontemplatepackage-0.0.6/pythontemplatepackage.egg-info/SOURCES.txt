@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+pythontemplatepackage/__init__.py
+pythontemplatepackage/myclass.py
+pythontemplatepackage/rename.py
+pythontemplatepackage.egg-info/PKG-INFO
+pythontemplatepackage.egg-info/SOURCES.txt
+pythontemplatepackage.egg-info/dependency_links.txt
+pythontemplatepackage.egg-info/requires.txt
+pythontemplatepackage.egg-info/top_level.txt
+tests/test_examples.py
+tests/test_rename.py
+tests/test_template.py
