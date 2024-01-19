@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: ykenan_ukbiobank
+Version: 0.0.13
+Summary: UK Biobank download
+Author-email: Yu Zhengmin <3236170161@qq.com>
+Project-URL: gitee, https://gitee.com/ykenan_yingying/ukbiobank
+Keywords: YKenan,UK Biobank
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: setuptools >=42
+Requires-Dist: numpy ==1.24.4
+Requires-Dist: pandas ==2.0.3
+Requires-Dist: ykenan-util ==0.0.5
+Requires-Dist: ykenan-file ==0.2.3
+
+# ykenan_ukbiobank
+
+> upload
+
+```shell
+py -m build
+twine check dist/*
+twine upload dist/*
+```
+
+```shell
+pip3 install ykenan_ukbiobank
+```
+
+```python
+from ykenan_ukbiobank import Download
+
+download = Download(
+    ukbfetch_file="/mnt/f/software/ukbiobank/ukbfetch",
+    bulk_file="/mnt/f/software/ukbiobank/ukb676745.bulk",
+    key_file="/mnt/f/software/ukbiobank/k152703r676745.key",
+    output_path="/mnt/f/software/ukbiobank/download"
+)
+download.run()
+```
+
