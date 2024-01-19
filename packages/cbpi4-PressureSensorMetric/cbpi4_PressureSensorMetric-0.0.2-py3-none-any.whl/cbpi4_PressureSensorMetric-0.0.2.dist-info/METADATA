@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: cbpi4-PressureSensorMetric
+Version: 0.0.2
+Summary: CraftBeerPi Plugin
+Home-page: https://github.com/joel5399/cbpi4-PressureSensor
+Author: Joel Flepp
+Author-email: joel_flepp@hotmail.com
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: adafruit-circuitpython-ads1x15
+
+# craftbeerpi4-plugin-template
