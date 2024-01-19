@@ -1,0 +1,11 @@
+mpl_stereo/AxesStereo.py,sha256=0KiqXbMJFkiFVCk0OITF9E7PVwSw3P1Kd-rvFDyk_os,44455
+mpl_stereo/__init__.py,sha256=ubLzlmVJB2IHZv0KRoajy8lluK6k9NkXHxUjc0Drtdg,155
+mpl_stereo/data/church_left.jpg,sha256=niQeJmMtuqqcT25rUu6Cwh4MgvtxT3XnJ90Z9b9hP5Y,605493
+mpl_stereo/data/church_right.jpg,sha256=vvk8uLCTAgHtj_WjCVqQl3lhzU2iE1iS-rfDCPhDYZw,676218
+mpl_stereo/data/sun_left.png,sha256=_dwDobsSTHV_LnIDcWUCYiHjpKxeOtegkcWop4YCnIU,602079
+mpl_stereo/data/sun_right.png,sha256=diGV3S97t1RoajvbtzWrBxQSJjOUoWLrCz4irg7C_SE,774969
+mpl_stereo/example_data.py,sha256=wibEpSh9SqNAz1ugFB8_O5KCdOBwummSmRqFHVZz4zs,905
+mpl_stereo-0.7.1.dist-info/LICENSE,sha256=CayfvIwD0sXzj_b1XrmyewBoCoWthx_sT2rKpmTDSq4,1072
+mpl_stereo-0.7.1.dist-info/METADATA,sha256=158tS0WSuBYGYeUXWhfVzWVSRH98qxD9XznZQoiVsGs,12310
+mpl_stereo-0.7.1.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+mpl_stereo-0.7.1.dist-info/RECORD,,
