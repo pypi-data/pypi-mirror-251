@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: EUKulele
+Version: 2.0.8
+Summary: A package to make the process of taxonomically classifying microbial eukaryotes easier.
+Home-page: https://github.com/AlexanderLabWHOI/EUKulele
+Author: Arianna Krinos
+Author-email: akrinos@mit.edu
+License: MIT
+Keywords: eukaryote taxonomy classification
+License-File: LICENSE
