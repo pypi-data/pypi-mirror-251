@@ -1,0 +1,10 @@
+seaserpent/__init__.py,sha256=orD91HMhW18gGpvOVnMZlgLdyeWyo4cPRziTnJMU4O0,98
+seaserpent/admin.py,sha256=R99MYtZF06YtZvdDVouDYYVUAt4ABJ3osheVqJfL3UQ,8765
+seaserpent/base.py,sha256=hEPkKNKEGTTyd4fMy-hHbcneoYR4jSp1Lj05-oxjFfs,87291
+seaserpent/patch.py,sha256=O1arcn6WDAwLmsixriS4DKZfpQ0zZdXqgMvsO_uU6wY,3024
+seaserpent/utils.py,sha256=8wfGTJdw0A0vmV-A3Cuq5sb3JI9IFzjybxbcWdLvEc8,23862
+sea_serpent-0.4.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+sea_serpent-0.4.0.dist-info/METADATA,sha256=HPCWjSwbpEZK0TfxUdB33LA64Vc6TYqazHTz9yy7hI8,7062
+sea_serpent-0.4.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+sea_serpent-0.4.0.dist-info/top_level.txt,sha256=9JPpsp0j35e3V2n4voKrgkRarlPxGw4oF4eSdd9Qbwo,11
+sea_serpent-0.4.0.dist-info/RECORD,,
