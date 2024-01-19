@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+zww_test_package/__init__.py
+zww_test_package/core.py
+zww_test_package/test_core.py
+zww_test_package.egg-info/PKG-INFO
+zww_test_package.egg-info/SOURCES.txt
+zww_test_package.egg-info/dependency_links.txt
+zww_test_package.egg-info/top_level.txt
+zww_test_package/libs/libsixvan.so
