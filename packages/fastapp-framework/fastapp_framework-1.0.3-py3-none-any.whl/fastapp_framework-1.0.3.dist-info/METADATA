@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: fastapp_framework
+Version: 1.0.3
+Summary: Fastapi application boilerplate
+Author-email: Collin Meyer <collinmmeyer@gmail.com>
+Classifier: Framework :: Pydantic :: 2
+Classifier: Framework :: FastAPI
+Classifier: Intended Audience :: Developers
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Natural Language :: English
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: fastapi ==0.108.0
+Requires-Dist: fastapi-mail
+Requires-Dist: uvicorn
+Requires-Dist: typer
+Requires-Dist: rich
+Requires-Dist: passlib
+Requires-Dist: bcrypt ==4.0.1
+Requires-Dist: sqlalchemy
+Requires-Dist: python-jose
+Requires-Dist: python-multipart
+Requires-Dist: pydantic-settings
+Requires-Dist: importlib-metadata ; python_version > "3.9"
+
+# Fastapp
+Fastapi boilerplate including react frontend, easy to use docker containers, OAuth2 authentication and admin management panel
+
+## To-Do
+The following features need to be implemented before I will be happy with the project
+- ~~Create developement docker environment~~
+- Finish admin panel
+- ~~Create email backend for forgotten passwords~~
