@@ -1,0 +1,336 @@
+[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=13267104&assignment_repo_type=AssignmentRepo)
+# P&G Data Science Developer Class - Problem Set 2 - Utils Library
+
+A re-usable utilities library for DS-DEV problem-set 2.
+
+Replace the below with your own build badge and link to SonarQube dashboard:
+
+[![Build](https://github.com/pg-ds-dev-class/pset-2-dev-utils-borgohains-pg/actions/workflows/build.yml/badge.svg)](https://github.com/pg-ds-dev-class/pset-2-dev-utils-borgohains-pg/actions/workflows/build.yml)
+[![Quality Gate Status](https://sonarqubeenterprise.pgcloud.com/sonarqube/api/project_badges/measure?project=pset-2-dev-utils-borgohains-pg&metric=alert_status&token=sqb_59f45e453ebee823d53c4042483cdbffb75e0e98)](https://sonarqubeenterprise.pgcloud.com/sonarqube/dashboard?id=pset-2-dev-utils-borgohains-pg)
+
+## Data Science Utils
+
+Common utilities for DS-DEV Problem Sets
+
+You will typically create a new project for each _application_ that you will develop,
+however there are many instances where you want to re-use functionality across
+multiple applications.  If you copy and paste functions into different projects you
+will increase the difficulty of maintaining the functions as well as possibly
+limit your ability to improve the function across projects (introduce new features, etc.)
+
+In this problem set we will create a utilities _library_ that will enable us to
+import re-usable functionality from a central repository.  We will be able to use this
+library for future problem sets and continue to evolve it over time to provide common, re-usable
+functionality.
+
+## Problem Set Objectives
+
+* Understand difference between Application & Library
+* Learn how to package a Python library
+* Implement a Context Manager
+* Implement a Decorator
+* Use a Cookiecutter template
+* Introduction to matrix testing
+* Execute Unit Test via Fake/Mock
+
+### Grading Criteria
+
+* [15 pts]  Build badge and SonarQube links are updated and functional
+* [15 pts]  blob_file context manager is implemented correctly
+* [15 pts]  Library semantic versioning is implemented correctly
+* [15 pts]  Appropriate tests have been implemented to cover defined functions & classes
+* [10 pts]  Git commits are clear and well structured
+* [10 pts]  Code is pythonic, has no major SonarQube issues and well documented
+* [10 pts]  GitHub Action test is implemented for Python v3.7, v3.8 & v3.9
+* [10 pts]  Optional: Using release-please for release automation
+
+## Preface
+
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Library Versioning](#library-versioning)
+- [Required Modifications](#required-modifications)
+  - [Updating Setup.py](#updating-setuppy)
+  - [Complete GitHub Actions](#complete-github-actions)
+- [Installing library locally for development](#installing-library-locally-for-development)
+- [Utility implementations](#utility-implementations)
+  - [Context Manager to download a file from Azure blob](#context-manager-to-download-a-file-from-azure-blob)
+    - [Testing](#testing)
+- [Installing library in external application](#installing-library-in-external-application)
+  - [Install the utils](#install-the-utils)
+  - [Testing imported library in application](#testing-imported-library-in-application)
+    - [Updating](#updating)
+- [Recommended](#recommended)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+## Library Versioning
+
+For a package/library, it is especially important that your branching workflow
+reflect the 'production' status of your library.
+
+After your initial tag commit of this repo, you must conform to a formal
+git workflow.  This means:
+
+1. Your `main` branch should be ***merge-only***.  That is, never commit work to it
+   directly, only merge from `feature/*`, `develop/*`, `hotfix/*`, or similar.
+2. Each new merged commit on main must have a
+   [Semantic Versioning](https://semver.org/) release version with an
+   accompanying tag.  TL;DR:
+   * `major.minor.patch`
+   * Patch is for bugfix
+   * Minor is for new features
+   * Major is for backwards-incompatible changes
+   * Don't worry about high version numbers
+   * tags should be of the form `v0.1.2`
+3. [Optional] You can use [release-please](https://github.com/google-github-actions/release-please-action) to automate tagging and releasing your repository using [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/)
+
+## Required Modifications
+
+The files provided in your problem-set repository require a few adjustments.
+
+### Updating Setup.py
+
+* Update lines 118-119 with url to your repository and your name.
+* Update line 121 (classifiers) to support 3.7, 3.8 and 3.9.
+* Update line 127 (python_requires) to support 3.7, 3.8 and 3.9.
+
+If you are not familiar with [setup.py](setup.py) you may want to review [this overview](https://godatadriven.com/blog/a-practical-guide-to-using-setup-py/)  
+
+In particular note that required libraries are installed via `install_requires` attribute in setup.py and optional libraries can be installed via `extras_requires`.  Review the `load_deps` function in setup.py to see how this is automaticaly managed.
+
+### Complete GitHub Actions
+
+The PyPod created GitHub Actions have been replaced with a simplified project-build.yml file.
+
+As part of this custom build file we would like to use
+[Github Action's Matrix](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_idstrategymatrix) to test multiple installation of our library with multiple versions of Python (v3.7, v3.8 & v3.9) for completeness.
+
+More information on using a strategy matrix can be found [here](https://ncorti.com/blog/howto-github-actions-build-matrix).
+
+However we only want SonarQube results stored for Python 3.7.  Implement the workflow
+so that it only submits code coverage/SonarQube reports if running with python 3.7 (there is no need to
+submit redundant code coverage for each matrix test run).
+
+Check out [GitHub Workflow syntax](https://docs.github.com/en/free-pro-team@latest/actions/reference/workflow-syntax-for-github-actions) for
+additional details if needed.
+
+## Installing library locally for development
+
+The following 'editable' install links the package to the original location, basically 
+meaning any changes to the original package would reflect directly in your environment. 
+It is useful most often in the case when you are developing it on your system
+
+You should never pip install anything else for a library; rather, dependencies
+should be added into [setup.py](setup.py) and then `pip update` or similar.
+You may, however, have to `pip install` _development_ specific requirements (or
+place them as an `extras_requires` install).
+
+Install editable library:
+
+```bash
+# General usage
+pip install -e <project path or a VCS url>
+
+# Install the library you are working on (execute from where setup.py is at)
+pip install -e .
+```
+
+Install editable library with development requirements:
+
+```bash
+pip install -e .[devel]
+```
+The `[devel]` above comes from the `requirements-devel.txt` file. If you name your 
+development requirements in other way (eg. `requirements-dev.txt`), then you should 
+put other name in the square brackets (`[dev]` in the example).
+
+## Utility implementations
+### Context Manager to download a file from Azure blob
+
+Implement _ds_dev_utils.azure_utils.blob.blob_file_ as a context manager.
+
+Within the context manager, download the specified blob file to a local
+[temporary directory](https://docs.python.org/3/library/tempfile.html#tempfile.TemporaryDirectory)
+preserving the name and extension of the file.
+
+```python
+...
+def blob_file(
+    container_name: str,
+    blob_name: str,
+    sas_connection_str="",
+    as_file=True,
+):
+    """Context manager to downoad a specified blob file from a specified container using
+    a Shared-Access-Signature connection string.
+
+    Function will download blob file into a temporary directory and provide either the
+    File handle or File path to the calling context for reading.  After execution the 
+    temporary file should be removed.
+
+    :param str container_name: name of the blob container
+    :param str blob_name: name of the blob file
+    :param str sas_connection_str: the shared access signature
+    :param bool as_file: If True the yielded object is :class:File.  Otherwise it will
+        be the file path as a string
+
+    Example Usage: 
+    
+    with blob_file( ..., as_file=False ) as blob_path:
+        shutils.copyfile(blob_path, data_download_directory)
+
+    """
+    ...
+```
+
+For this class, you can create a blob storage account for testing in a personal Azure account
+or you can test in an existing P&G development blob account if you already have access to one.
+
+Expenses within personal Azure blob account should be insignificant (<1$) for the purposes of
+this class.  If concerns, reach out to Instructor for help.
+
+This [Azure blob quick-start tutorial](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-python)
+may be helpful in your implementation.
+
+For permission management use the Azure portal to generate a [Shared Access Signature](https://adamtheautomator.com/azure-sas-token/#Generating_a_SAS_Token_using_the_Azure_Portal).
+
+***Note*** make sure you do not check your SAS Token into Git.
+
+Make sure to implement appropriate docstrings, unit tests and that your function implementation is at the right path.  
+
+#### Testing
+
+What should unit testing look like for a cloud-based API?  Should you hard-code credentials for testing (hint: no)?  
+
+What are the parts of the implementation that you have added - can you seperate
+these out in a way so that you can test your code without being reliant on the Azure SDK code?
+
+Here is the azure_utils.mock.FakeBlobServiceClient implementation - can you use this with `@mock.patch` to enable improved unit testing?
+
+```python
+class FakeBlobServiceClient:
+  """Provies a Fake interface for azure.storage.blob.BlobServiceClient including
+  implementation for:
+  - BlobServiceClient.get_connection_str
+  - BlobServiceClient.get_container_client
+  - BlobContainerClient.get_blob_client
+  - Blob.read_all
+
+  e.g BlobServiceClient.from_connection_string(cnx_str). \
+        get_container_client(cntr_name).get_blob_client(blob_name). \
+        download_blob().readall()
+
+  """
+    file_dict = {}
+
+    def __init__(self, file_dict=None):
+        self.file_dict = file_dict
+
+    def get_blob_client(self, blob, *args, **kwargs):
+
+        f_location = self.file_dict.get(blob, None)
+        f_dict = {"blob_service_selected_file": f_location}
+
+        return FakeBlobServiceClient(f_dict)
+
+    def download_blob(self, *args, **kwargs):
+        return self
+
+    def get_container_client(self, *args, **kwargs):
+        return self
+
+    def readall(self):
+        if len(self.file_dict) != 1:
+            raise FileNotFoundError("File not found")
+
+        f = open(self.file_dict["blob_service_selected_file"])
+        f_contents = f.read()
+        f.close()
+        return bytes(f_contents, "utf-8")
+```
+
+**Note:** Feel free to edit the FakeBlobServiceClient implementation if needed to
+support your specific implementation.
+
+## Installing library in external application
+
+### Install the utils
+
+You can now install your `ds_dev_utils` as below.  Note that the #egg part is
+important, it is not a comment!
+
+```bash
+pip install -e git+https://github.com/pg-ds-dev-class/ds-dev-utils-<GITHUBID>#egg=ds_dev_utils
+```
+
+This will include the latest main commit (hopefully tagged) and will be
+automatically updated whenever you run `pip update`.  If you want to be more
+specific about the version, you can use the `@v1.2.3` syntax when you install.  
+
+Leaving this to automatically check out the latest main is easiest, and a good reason to have
+merge-only main releases (you don't want to accidentally commit a "break" into main and
+have all library-using applications no longer work!)
+
+You will need to make sure that you have your [GitHub SSH access](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) setup to enable installation
+directly from GitHub.
+
+### Testing imported library in application
+
+Once library is installed, `pytest --pyargs ds_dev_utils` should run all the tests in your utils package.
+
+You can run them by default within your application if you like, by adding `ds_dev_utils` to `testpaths`
+in the [config
+file](https://docs.pytest.org/en/6.2.x/reference.html#confval-testpaths).
+
+This is generally not needed as we would expect the library to execute it's own tests
+as part of CI/CD deployment.  However it never hurts to verify ;)
+
+#### Updating
+
+Every time you push a new main version of library to GitHub, you may update the installed
+version in your application via `pip update`.
+
+## Recommended
+
+This content is not necessary to complete the pset, but you might want to go through for your self development.
+
+<details>
+<summary>Implementing Git-based versioning</summary>
+We can check the library version in two ways:
+
+```bash
+python setup.py --version
+python -c "import ds_dev_utils; print(ds_dev_utils.__version__)"
+```
+
+Both commands should print the same thing, which will look something like this:
+`0.0.1.dev4+gdfedba7.d20190209`.
+
+Once you have your `setup.py` and `__init__.py` configured so the above works,
+***git tag*** your main `v0.1.0` (eg, `git tag v0.1.0`).  Now verify:
+
+```bash
+python setup.py --version  # Should print a clean semantic version
+```
+
+From now on, all commits on main branch [must have an accompanying semantic version tag](https://www.toolsqa.com/git/github-tags/).
+
+Example of adding a tag (typically done on main branch):
+
+```bash
+git tag "v1.1.1"
+git push --tags
+```
+
+When you later install this project into a problem set, if installed from a
+clean repo with a tag version, you'll get a nice version like `0.1.2`.  If,
+however, you inspect the `__version__` in your package from your git repo,
+with non-committed edits, etc. you'll get an informative 'dirty' version number like
+`'0.2.1.dev0+g850a76d.d20180908'`. This is useful for debugging, building sphinx
+docs in dev, etc, and you never have to specify a version except via tagging
+your commit.
+
+</details>
