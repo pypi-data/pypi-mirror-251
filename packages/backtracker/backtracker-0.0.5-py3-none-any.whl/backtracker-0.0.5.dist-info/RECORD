@@ -1,0 +1,11 @@
+algorithms/tests/test_backtracker.py,sha256=sZXzhVC2Ti7sFlOzHYg5C10l02-dpQD9uifQJGZ8lLg,932
+backtracker/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+backtracker/backtracker.py,sha256=EEMuSUyvTe6lTqOxIQ4u_YR7tw615hDQc5fwKc6Lsh0,2954
+backtracker/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+backtracker/tests/test_backtracker.py,sha256=sZXzhVC2Ti7sFlOzHYg5C10l02-dpQD9uifQJGZ8lLg,932
+src/tests/test_backtracker.py,sha256=rlKlZw0EMdiBKWZfVNh5w7iEiyIew2kyY8xBKmuha1k,927
+backtracker-0.0.5.dist-info/LICENSE,sha256=i2UMe67sVVfzkl_ro7KHxKw9Lu7-Xo6Cr1QxBkvrjXY,1068
+backtracker-0.0.5.dist-info/METADATA,sha256=IHmSXfqwUEYEahGzVTfAK7-gknJrUG5XDFe9gAGTxG0,571
+backtracker-0.0.5.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+backtracker-0.0.5.dist-info/top_level.txt,sha256=JUrW1FL11-MjklpOlvSqc5l71kjxsl_gUXBeEMqBs2k,12
+backtracker-0.0.5.dist-info/RECORD,,
