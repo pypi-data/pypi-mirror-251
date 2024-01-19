@@ -1,0 +1,112 @@
+Metadata-Version: 2.1
+Name: ethpwn
+Version: 0.0.5.post5
+Summary: A swiss army knife package to help with ethereum smart contract exploit interaction, designed with CTF challenges in mind. Some might call it a set of pwn tools for ethereum exploitation.
+Project-URL: Homepage, https://github.com/ethpwn/ethpwn
+Project-URL: Bug Tracker, https://github.com/ethpwn/ethpwn/issues
+Author-email: Lukas Dresel <Lukas-Dresel@noreply.github.com>, Fabio Gritti <degrigis@ucsb.edu>
+License: MIT License
+License-File: LICENSE
+Keywords: ctf,debugging,ethereum,exploits,ipdb,security,smart-contracts,testing
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Security
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Testing
+Requires-Python: >=3.7
+Requires-Dist: alive-progress
+Requires-Dist: ansi
+Requires-Dist: cachetools
+Requires-Dist: cbor
+Requires-Dist: coolname
+Requires-Dist: ethcx
+Requires-Dist: ethpwn-py-evm
+Requires-Dist: ethpwn-pyevmasm
+Requires-Dist: hexbytes
+Requires-Dist: hexdump
+Requires-Dist: ipdb
+Requires-Dist: msgpack
+Requires-Dist: requests
+Requires-Dist: rich
+Requires-Dist: web3>=6.0.0
+Provides-Extra: dev
+Requires-Dist: build; extra == 'dev'
+Requires-Dist: bumpversion; extra == 'dev'
+Requires-Dist: deepdiff; extra == 'dev'
+Requires-Dist: editdistance; extra == 'dev'
+Requires-Dist: ipdb; extra == 'dev'
+Requires-Dist: ipython; extra == 'dev'
+Requires-Dist: mkdocs; extra == 'dev'
+Requires-Dist: mkdocs-click; extra == 'dev'
+Requires-Dist: mkdocs-material; extra == 'dev'
+Requires-Dist: pydoc-markdown; extra == 'dev'
+Requires-Dist: simanneal; extra == 'dev'
+Requires-Dist: twine; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: mkdocs; extra == 'docs'
+Requires-Dist: mkdocs-click; extra == 'docs'
+Requires-Dist: mkdocs-material; extra == 'docs'
+Requires-Dist: pydoc-markdown; extra == 'docs'
+Provides-Extra: full
+Requires-Dist: editdistance; extra == 'full'
+Requires-Dist: simanneal; extra == 'full'
+Description-Content-Type: text/markdown
+
+# ethpwn 
+
+[![PyPI](https://img.shields.io/pypi/v/ethpwn?style=flat)](https://pypi.org/project/ethpwn/)
+[![License](https://img.shields.io/github/license/Ileriayo/markdown-badges?style=flat)]([https://pypi.org/project/ethpwn/](https://raw.githubusercontent.com/ethpwn/ethpwn/main/LICENSE))
+[![Docs](https://img.shields.io/badge/Documentation-gh_pages)](https://ethpwn.github.io/ethpwn/)
+
+
+<img align="left" width="160"  src="https://github.com/ethpwn/ethpwn/assets/4940271/365a9cc6-14d0-4ae9-8c01-0311ac443cd7">
+
+
+`ethpwn` is a project inspired by the widely popular CTF exploitation framework pwntools, and the amazing enhanced GDB utility GEF. In other words, ethpwn is all you ever wanted for debugging and interacting with smart contracts on EVM-based blockchains.
+
+More practically, this package includes a kick-ass command line debugger for simulating and re-playing Ethereum transactions (`ethdbg`), and a set of convenient wrappers for many `web3` functionalities that are useful for interacting with smart contracts.
+
+
+
+![](./docs/docs/imgs/598565.gif)
+
+## ⚡️ Quick Setup ##
+
+#### Release Installation
+```bash
+pip install ethpwn
+```
+
+#### Developer Installation
+Make sure your pip version is >= 23.1.2, then:
+```bash
+git clone git@github.com:ethpwn/ethpwn.git && cd ./ethpwn && pip install -e .
+```
+
+| ❗️ Note                                                              |
+|----------------------------------------------------------------------|
+| To start out, if you haven't created your global config before, you should run `ethpwn config create` to generate your initial configuration file. This command will interactively prompt you for the most important settings, including the Ethereum node URL to use and wallets you want to use. |
+
+## ⚡️ Jump Start for ethdbg ##
+```bash
+ethdbg --txid 0x82a11757c3f34c2882e209c6e5ae96aff3e4db7f7984d54f92b02e1fed87e834 --node-url https://mainnet.infura.io/v3/38eb4be006004da4a89315232040e222
+```
+
+## 📖 Documentation ##
+[![Docs](https://img.shields.io/badge/Documentation-gh_pages)](https://ethpwn.github.io/ethpwn/)
+
+
+## ⚙️ Currently Supported EVM-based Chains ##
+
+| Chain Name | Chain Id | Supported |
+|-------------------|----------|----------|
+| mainnet | 1 | ✅ |
+| sepolia (testnet) | 11155111 | ✅ |
+
