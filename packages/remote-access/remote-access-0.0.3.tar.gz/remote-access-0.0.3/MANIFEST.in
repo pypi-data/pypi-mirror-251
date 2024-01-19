@@ -1,0 +1,2 @@
+global-include *.md *.py
+include main.exe
