@@ -1,0 +1,2 @@
+[console_scripts]
+thea_process_data = thea_process_data.cli:main
