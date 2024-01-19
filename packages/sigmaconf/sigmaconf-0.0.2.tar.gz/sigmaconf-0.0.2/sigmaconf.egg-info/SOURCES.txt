@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+sigmaconf/__init__.py
+sigmaconf/config.py
+sigmaconf/util.py
+sigmaconf.egg-info/PKG-INFO
+sigmaconf.egg-info/SOURCES.txt
+sigmaconf.egg-info/dependency_links.txt
+sigmaconf.egg-info/requires.txt
+sigmaconf.egg-info/top_level.txt
