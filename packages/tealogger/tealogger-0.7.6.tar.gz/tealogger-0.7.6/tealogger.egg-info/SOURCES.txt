@@ -1,0 +1,11 @@
+LICENSE
+README.md
+VERSION
+pyproject.toml
+tealogger/__init__.py
+tealogger/logger.py
+tealogger.egg-info/PKG-INFO
+tealogger.egg-info/SOURCES.txt
+tealogger.egg-info/dependency_links.txt
+tealogger.egg-info/requires.txt
+tealogger.egg-info/top_level.txt

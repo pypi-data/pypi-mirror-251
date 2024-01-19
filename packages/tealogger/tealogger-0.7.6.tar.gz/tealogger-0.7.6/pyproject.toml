@@ -1,0 +1,38 @@
+[build-system]
+requires = [
+    "setuptools",
+    "wheel"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tealogger"
+authors = [
+    {name = "TeaFTI"},
+]
+description = "Tea Logger"
+requires-python = ">=3.7"
+keywords = [ "tealogger" ]
+dependencies = [
+    "pytest"
+]
+dynamic = [
+    "version",
+    "readme"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/TeaFTI/Python-TeaLogger"
+"Bug Tracker" = "https://github.com/TeaFTI/Python-TeaLogger/issues"
+
+[tool.distutils.bdist_wheel]
+universal = true
+
+[tool.setuptools]
+packages = [
+    "tealogger"
+]
+
+[tool.setuptools.dynamic]
+version = {file = "VERSION"}
+readme = {file = ["README.md"]}
