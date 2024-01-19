@@ -1,0 +1,3 @@
+[console_scripts]
+ethdbg = ethpwn.dbg.ethdbg:main
+ethpwn = ethpwn.ethlib.cli:main
