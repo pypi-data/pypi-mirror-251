@@ -1,0 +1,10 @@
+foxlator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+foxlator/__main__.py,sha256=lKhAK9ICjqjtdNjO76rKGbO5ITmHynLeMVC2-Mplmps,1382
+foxlator/foxlator.py,sha256=lKhAK9ICjqjtdNjO76rKGbO5ITmHynLeMVC2-Mplmps,1382
+foxlator/sub_movie_generator.py,sha256=X-PnUoPaXZfxRFj9-LLoChkk9IXMUs_48abmjSgW520,952
+foxlator/utils/checks.py,sha256=Nsh5AeYu600P6ic83dLftUJIM7gqoflAxSPzUvp5A3A,238
+foxlator/utils/system.py,sha256=_eUUs12jwAJLbQdHEYemQ-KkUyK-ZURUVcO0Xm2wZ80,670
+foxlator-0.11.0.dist-info/METADATA,sha256=PSnaBu0V7bu9QOMPrWL8bCh9pFJP4Uc9CH6DKPB9Pe4,669
+foxlator-0.11.0.dist-info/WHEEL,sha256=mRYSEL3Ih6g5a_CVMIcwiF__0Ae4_gLYh01YFNwiq1k,87
+foxlator-0.11.0.dist-info/entry_points.txt,sha256=Kqsr7JFXWSwYgWdLhVVITGJuIkLD0OSTMfhvuccVM6s,163
+foxlator-0.11.0.dist-info/RECORD,,

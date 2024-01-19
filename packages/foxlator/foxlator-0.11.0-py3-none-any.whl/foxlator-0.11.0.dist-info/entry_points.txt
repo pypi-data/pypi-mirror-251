@@ -1,0 +1,3 @@
+[console_scripts]
+is-ffmpeg-installed = src.third_party.ffmpeg:is_ffmpeg_installed
+is-imagemagick-installed = src.third_party.imagemagick:is_imagemagick_installed

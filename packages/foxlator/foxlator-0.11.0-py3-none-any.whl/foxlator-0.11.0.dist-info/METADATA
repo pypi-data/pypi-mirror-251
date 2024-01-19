@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: foxlator
+Version: 0.11.0
+Summary: Foxlator enables automatic subtitle generation based on the audio track and generates a new video file with the created subtitles
+Project-URL: Homepage, https://github.com/skyfox-ai/foxlator
+Project-URL: Bug Tracker, https://github.com/skyfox-ai/foxlator/issues
+Author-email: Witold Haza <witold.haza@gmail.com>, Kacper Czyz <kacper.czyz@protonmail.com>
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Requires-Dist: foxlator-lib
+Description-Content-Type: text/markdown
+
+Empty for now
