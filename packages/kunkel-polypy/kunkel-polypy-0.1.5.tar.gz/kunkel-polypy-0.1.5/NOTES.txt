@@ -1,0 +1,4 @@
+Notes for 'polypy'
+
+- Recently reminded myself that there is no error handling for a situation in which the program files are not .yaml.
+- First goal after unit testing should be to add any remaining api endpoints to the program
