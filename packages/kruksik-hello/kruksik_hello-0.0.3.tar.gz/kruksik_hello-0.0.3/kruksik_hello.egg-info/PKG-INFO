@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: kruksik-hello
+Version: 0.0.3
+Description-Content-Type: text/markdown
+
+# kruksik-hello
+
+## Description
+
+This is a simple program created to test the process of adding packages to the global pip index. Its sole function, `hello` in the `main.py` file, returns the string "Hello from kruksik".
+
+## Installation
+
+To install this package, run the following command:
+
+```bash
+pip install kruksik-hello

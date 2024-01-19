@@ -1,0 +1,9 @@
+setup.py
+kruksik_hello/__init__.py
+kruksik_hello/main.py
+kruksik_hello.egg-info/PKG-INFO
+kruksik_hello.egg-info/SOURCES.txt
+kruksik_hello.egg-info/dependency_links.txt
+kruksik_hello.egg-info/entry_points.txt
+kruksik_hello.egg-info/requires.txt
+kruksik_hello.egg-info/top_level.txt
