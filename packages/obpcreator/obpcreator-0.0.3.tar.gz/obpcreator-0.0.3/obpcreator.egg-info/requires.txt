@@ -1,0 +1,10 @@
+svgpathtools
+numpy
+matplotlib
+obplib
+pyvista
+shapely
+pydantic
+pytest
+cv2
+scipy
