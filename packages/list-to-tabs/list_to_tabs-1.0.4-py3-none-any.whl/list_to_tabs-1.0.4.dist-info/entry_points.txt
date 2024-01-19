@@ -1,0 +1,2 @@
+[console_scripts]
+list_to_tabs = list_to_tabs.main:main
