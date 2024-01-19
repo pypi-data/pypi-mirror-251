@@ -1,0 +1,1 @@
+from .._agg import _vXMyq as license_from_lic_file, _mkWVc as refresh_license_file, _Hoppw as get_certificate_data, _eODk5 as check_out_license_file, _TuGgs as LicenseError, _vX5Vb as assert_datetime_integrity, _Hl966 as fromisoformat, _qf9Wj as safeget, _tiu4Q as remove_prefix_suffix, _wZNMM as get_vendor, _BcjTA as OfflineLicense, _HWM6m as OnlineLicense
