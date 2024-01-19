@@ -1,0 +1,13 @@
+perfecto/main_cli.py,sha256=9qot6z2A7-6SNPVmbp7R7hpeGISIVB2SBR3EZEcY2y8,18623
+perfecto/temp.py,sha256=Jcp0ap6eyAhwLxVTTZeD9PLGyiEPf1RH-HYAepVSFCE,4129
+perfecto/py/analytics.py,sha256=5Onhje_GiIRAkOOHzkWInrgIENUNYAqy-ZdjgFJOVbA,4640
+perfecto/py/commands_api.py,sha256=nzQ2SQRhJ2-K1RR8sUVn-Xfpr4CRhKvoncG5WvvGTaw,1180
+perfecto/py/custom_reasons.py,sha256=h6o2Sj27_2Md0M7ECPzzVIS7X2mBfvVG8Gv60zJ8-S0,1742
+perfecto/py/functions.py,sha256=xPzDfVqYBxNKhCZ5BsUCSf9LArHDL6K9aRa6t2rYFJk,26901
+perfecto/py/html.py,sha256=ldlAQMk2HfRPupCWOovaNBlYGJqtM8Afg2aE_0VAUh0,12122
+perfecto/py/integrations/teams.py,sha256=SGahXK9Z7OgaXK9GB6z0VJ9tselCdDNa3ulQGJjKlq0,2093
+perfectreportstest-0.0.9.dist-info/METADATA,sha256=JMEiFe5jE9sPYHYN29Vxp1-OmgJVJ9WtrkxVhMKcqs4,543
+perfectreportstest-0.0.9.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+perfectreportstest-0.0.9.dist-info/entry_points.txt,sha256=s5ZakgUlhsU4aAp_6sgXSz9jSvIr6EjIwe78c4zqjso,58
+perfectreportstest-0.0.9.dist-info/top_level.txt,sha256=C9k-OpEmdwr6U_NfMQfPMMknwf08o8aIEh4KtAGeIOM,9
+perfectreportstest-0.0.9.dist-info/RECORD,,
