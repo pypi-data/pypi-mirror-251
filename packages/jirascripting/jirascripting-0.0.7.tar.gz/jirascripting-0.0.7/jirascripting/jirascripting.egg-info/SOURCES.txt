@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+jirascripting/jirascripting.egg-info/PKG-INFO
+jirascripting/jirascripting.egg-info/SOURCES.txt
+jirascripting/jirascripting.egg-info/dependency_links.txt
+jirascripting/jirascripting.egg-info/requires.txt
+jirascripting/jirascripting.egg-info/top_level.txt
