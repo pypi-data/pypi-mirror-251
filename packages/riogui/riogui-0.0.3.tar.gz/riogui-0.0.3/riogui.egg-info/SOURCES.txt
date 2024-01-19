@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+bin/rio-setup
+bin/rio-test
+riogui.egg-info/PKG-INFO
+riogui.egg-info/SOURCES.txt
+riogui.egg-info/dependency_links.txt
+riogui.egg-info/requires.txt
+riogui.egg-info/top_level.txt
