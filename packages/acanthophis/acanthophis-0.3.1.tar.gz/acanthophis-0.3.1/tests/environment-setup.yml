@@ -1,0 +1,16 @@
+name: acanthophis-tests
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python>=3.11
+  - snakemake>=8.2
+  - snakemake-interface-executor-plugins>=8.2
+  - tree
+  - pip
+  - numpy
+  - wgsim
+  - centrifuge-core
+  - samtools
+  - msprime
+  - curl
