@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: SharedMemoryQueue
+Version: 0.1.5
+Summary: A Python library for interacting with a shared memory queue via C++ DLL.
+Author: Natália Bruno Rabelo
+Author-email: natynbr@hotmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# SharedMemoryQueue
+
+SharedMemoryQueue is a Python library for interacting with a shared memory queue via a C++ DLL. It allows the creation of multiple queue instances, each identified by a unique name, enabling more flexible and scalable inter-process communication.
+
+## Installation
+
+You can install SharedMemoryQueue using pip:
+
+```
+pip install SharedMemoryQueue
+```
+
+## Usage
+
+Here's a basic example of how to use the SharedMemoryQueue library:
+
+```
+from SharedMemoryQueue import enqueue_message, dequeue_message
+
+# Enqueue messages into different queues
+enqueue_message('Queue1', 'Message for Queue 1')
+enqueue_message('Queue2', 'Message for Queue 2')
+
+# Dequeue messages from the queues
+message1 = dequeue_message('Queue1')
+message2 = dequeue_message('Queue2')
+print(f'Received from Queue1: {message1}')
+print(f'Received from Queue2: {message2}')
+
+```
+
+## Links
+
+[PyPi](https://pypi.org/project/SharedMemoryQueue/)
