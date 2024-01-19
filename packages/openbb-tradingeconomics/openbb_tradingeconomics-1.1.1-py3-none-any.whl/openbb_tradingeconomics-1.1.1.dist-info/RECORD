@@ -1,0 +1,8 @@
+openbb_tradingeconomics/__init__.py,sha256=H9vZtpan_wlv8pv7_bsaWOOJAcEHm12vSYjgX1Pv7SI,439
+openbb_tradingeconomics/models/economic_calendar.py,sha256=qBOULKuINBzjQ1Uu1A9z5m8j1gw9zdknoZWsVo638QM,4867
+openbb_tradingeconomics/utils/countries.py,sha256=utnRnfjSLMWtmxDO9OkEDVdoYZwvbAFy1hTwKCqUGGY,4506
+openbb_tradingeconomics/utils/url_generator.py,sha256=qpzgrf9Kw_t6AVZg7vJawF1Sk-LzzVdIWfUhc9Vw0vA,3645
+openbb_tradingeconomics-1.1.1.dist-info/METADATA,sha256=prXm_DLmISHrPmJTc2qQXZScaRgS-GdjDi8GJjUEc8c,1049
+openbb_tradingeconomics-1.1.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+openbb_tradingeconomics-1.1.1.dist-info/entry_points.txt,sha256=LQjqVsiUgLsFLjLerN5Cg-Bay2rpo4brvy-RDwOqYKY,96
+openbb_tradingeconomics-1.1.1.dist-info/RECORD,,
