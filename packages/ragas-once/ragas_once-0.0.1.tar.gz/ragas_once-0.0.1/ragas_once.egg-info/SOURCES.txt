@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+ragas_once/__init__.py
+ragas_once/cli.py
+ragas_once/wrapper.py
+ragas_once.egg-info/PKG-INFO
+ragas_once.egg-info/SOURCES.txt
+ragas_once.egg-info/dependency_links.txt
+ragas_once.egg-info/top_level.txt
