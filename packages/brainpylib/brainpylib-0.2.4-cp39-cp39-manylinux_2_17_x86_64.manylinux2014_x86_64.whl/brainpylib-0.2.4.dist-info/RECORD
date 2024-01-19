@@ -1,0 +1,10 @@
+cmake/FindTaichi.cmake,sha256=8HN5fbdIYuJ65cckE8H-TrhUNqQb1lOWZHCWY26YQGE,8729
+brainpylib.libs/libtaichi_c_api-2f98267e.so,sha256=0DBpHFXnu6N_8ojPmZCNBb3PbqQMUi1NoSN-vKezViU,53120745
+brainpylib/__init__.py,sha256=GgUqXYRDVfLo8qWjEk8vrUsYw_BFAkjn0q3_dv5PA4k,3466
+brainpylib/cpu_ops.cpython-39-x86_64-linux-gnu.so,sha256=uN7p8jidTvo5RLvHhn8mIo-FUv7PxICjHBDRpi8glzE,310625
+brainpylib/libtaichi_c_api.so,sha256=L5gmfmyolb9-hqpzt4I-HTDBodp1_DzYw70pq0gywPo,53113528
+brainpylib-0.2.4.dist-info/LICENSE,sha256=y_p8Hru855LwiNwIbkjJLmA0ZMwQQzHvJR5BVplHk1I,35773
+brainpylib-0.2.4.dist-info/METADATA,sha256=gyYrauukLTxdDowpC4ypGraLzSd_5NSAZCo0uXyPgyE,1132
+brainpylib-0.2.4.dist-info/top_level.txt,sha256=kBnd0r8S5fc-0z6KciIeHoW1cFGWJnsgvSKT9bDqtTo,47
+brainpylib-0.2.4.dist-info/RECORD,,
+brainpylib-0.2.4.dist-info/WHEEL,sha256=uQ9JcPdAMEhlCRnfrhg6ydnbrPot9NaB8igB3QVnPX0,148
