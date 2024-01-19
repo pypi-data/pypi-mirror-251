@@ -1,0 +1,7 @@
+LICENSE.txt
+README.md
+setup.py
+lingkarr33423304.egg-info/PKG-INFO
+lingkarr33423304.egg-info/SOURCES.txt
+lingkarr33423304.egg-info/dependency_links.txt
+lingkarr33423304.egg-info/top_level.txt
