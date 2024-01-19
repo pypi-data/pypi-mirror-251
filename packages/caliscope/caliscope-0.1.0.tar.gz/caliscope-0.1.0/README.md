@@ -1,0 +1,1 @@
+After some major refactors that have broken apart the previously existing codebase, I'm moving the camera calibration into this new package `Caliscope`. The frame capture is now managed within `Multiwebcam`.

@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "caliscope"
+version = "0.1.0"
+description = "Multicamera Calibration + Pose Estimation = Motion Capture"
+authors = ["mprib <31831778+mprib@users.noreply.github.com>"]
+license = "BSD-2-Clause"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
