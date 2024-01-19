@@ -1,0 +1,10 @@
+backwardsreg/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+backwardsreg/backward_regression.py,sha256=IVecaq-c-i558A8bJT-L9M3tH7J64gS7zHZQimSd0Wg,3701
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_backward_regression.py,sha256=KC_srosakvs_AIWmJaeZvLzDik8BGeb__PBL8OYLXLE,4282
+backwardsreg-0.1.dist-info/LICENSE.txt,sha256=iidZW-GqYf-gURW4PiNdmKxHjTn7KnBcZm2FESHMteA,1088
+backwardsreg-0.1.dist-info/METADATA,sha256=zaEYgygydPMuHxGDU01v3ZhpFhtowLXBmeXqFvlNKiI,1913
+backwardsreg-0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+backwardsreg-0.1.dist-info/entry_points.txt,sha256=lVGDn0xLTOKp13ZfbKhqhRGIWBfV7lF2WNb7Bn5oVME,59
+backwardsreg-0.1.dist-info/top_level.txt,sha256=g714JZeyGFndbhPI3UTlif2yQN88TkUaL5bDnukLFyY,19
+backwardsreg-0.1.dist-info/RECORD,,
