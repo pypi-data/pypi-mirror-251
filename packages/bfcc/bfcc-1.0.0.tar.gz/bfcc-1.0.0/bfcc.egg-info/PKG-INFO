@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: bfcc
+Version: 1.0.0
+Summary: A brainfuck compiler for 64-byte arm linux
+Home-page: https://github.com/donno2048/bfc
+Author: Elisha Hollander
+Author-email: just4now666666@gmail.com
+License: MIT
+Project-URL: Documentation, https://github.com/donno2048/bfc#readme
+Project-URL: Bug Reports, https://github.com/donno2048/bfc/issues
+Project-URL: Source Code, https://github.com/donno2048/bfc
+Description: # bfc
+        
+        [![Testing](https://github.com/donno2048/bfc/actions/workflows/test.yml/badge.svg)](https://github.com/donno2048/bfc/actions/workflows/test.yml)
+        
+        A brainfuck compiler for 64-byte arm linux
+        
+        Yes, it is a compiler, not an interpreter.
+        
+        ## Installation
+        
+        ### From PyPI
+        
+        ```sh
+        pip3 install bfcc
+        ```
+        
+        ### From GitHub
+        
+        ```sh
+        pip3 install git+https://github.com/donno2048/bfc
+        ```
+        
+        ## Usage
+        
+        ```sh
+        bfc input.bf output
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown

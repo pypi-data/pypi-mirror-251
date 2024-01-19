@@ -1,0 +1,9 @@
+README.md
+setup.py
+bfc/__init__.py
+bfc/__main__.py
+bfcc.egg-info/PKG-INFO
+bfcc.egg-info/SOURCES.txt
+bfcc.egg-info/dependency_links.txt
+bfcc.egg-info/entry_points.txt
+bfcc.egg-info/top_level.txt
