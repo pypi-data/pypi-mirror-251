@@ -1,0 +1,6 @@
+[console_scripts]
+crop_gaussians = splat_viewer.scripts.crop_gaussians:main
+debug-tiles = splat_viewer.scripts.debug_tiles:main
+export_workspace = splat_viewer.scripts.export_workspace:main
+splat-benchmark = splat_viewer.scripts.splat_benchmark:main
+splat-viewer = splat_viewer.scripts.splat_viewer:main
