@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+tv010/__init__.py
+tv010.egg-info/PKG-INFO
+tv010.egg-info/SOURCES.txt
+tv010.egg-info/dependency_links.txt
+tv010.egg-info/requires.txt
+tv010.egg-info/top_level.txt
