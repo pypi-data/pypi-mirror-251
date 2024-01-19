@@ -1,0 +1,2 @@
+[hexdoc]
+hexdim = hexdoc_hexdim._hooks:HexdimPlugin
