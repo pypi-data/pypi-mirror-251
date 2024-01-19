@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: rgle_arapm
+Version: 0.0.2
+Summary: 计算长方形的面积和周长
+Author-email: Joker_zty <1694821351@qq.com>
+Project-URL: Homepage, https://baidu.com
+Project-URL: Bug Tracker, https://baidu.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+实现长方形的周长和面积的自动计算，很简单。
+### 调用方法
+import rgle_arapm
+rgle_arapm.area.......
+rgle_arapm.perimeter.......
