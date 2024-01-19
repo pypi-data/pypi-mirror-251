@@ -1,0 +1,26 @@
+pokesim/__init__.py,sha256=gFcq-0RYICdNY3z9-j9og6Y6Di3FQFfe_l9iyInlIJw,5085
+pokesim/color.py,sha256=iomLEp4dAk5IOU3sbdqtsAxTlWY9Oi5UBZW7dloxoXI,816
+pokesim/constants.py,sha256=oiy2UAkQBjxHF7OIrKru1Tu6MAmh_DP4gRaPkPXXQKg,2629
+pokesim/move.py,sha256=5I6lIUPK8leXH3zCAMgMOIOLMLrgkFCIc9y0-JlxZBU,3092
+pokesim/nature.py,sha256=rDvkX01BbNSw5JTJqMdoPSQ40sCgMAm-QyJGZwNfpW8,1984
+pokesim/parse.py,sha256=W5axaV-pke_ZF_z-laFmwXBfxKj2T9eWAFagOTCQQZw,1150
+pokesim/pokemon.py,sha256=9DhSWbbz9mwUfWCaGZsqnB9gyDYyijaGP7syZsetCLs,14778
+pokesim/poketypes.py,sha256=FPrdVzsdiHJhxonBD2Pnia92XkNdHRz6MtgTmtcJEEk,4629
+pokesim/utils.py,sha256=IKmf0pFL0Efqetc1kXAAsleRnawBdzp3zXagCqmsHNI,5747
+pokesim/data/moves/Amnesia,sha256=o6IcrawINTBAQum9lwKuOEX-ivrx45bkwVE7zm37o-Y,23
+pokesim/data/moves/Double Team,sha256=Y_O7_20MEVISh6WB-jEDOAUl8f_xyIqCoTzxeCLp5_M,22
+pokesim/data/moves/Growl,sha256=gv0GMzuIRaHkmt3ESSM23EMQExBAvqNhmsrk43JuCy0,23
+pokesim/data/moves/Razor Leaf,sha256=nxuo4tp_MAUJg-zDvramRZm-W8UrAyqBcesJgibOYMc,21
+pokesim/data/moves/Seed Bomb,sha256=0oY11oubVkaqiLJRvwf8SOvVdc4KyGcBeFJHejhzVhg,22
+pokesim/data/moves/Sweet Scent,sha256=uwtIhY6wFplfWD0OGnseOnRMOSWkkkuYrfL1EXsSLrQ,23
+pokesim/data/moves/Swords Dance,sha256=_XcdOZckI8IwuhRkb4zpKZBBMnP-LY5-TwridnZgYcI,22
+pokesim/data/moves/Tackle,sha256=Mf094FdNyAXYnud6LDeleZTrwnSPL1NV-l4QRMXG5Hs,21
+pokesim/data/moves/Vine Whip,sha256=iNw0uL8zbcjQnusQGBDpscsCyShemqMjubmz9SNMMME,22
+pokesim/data/moves/Work Up,sha256=IxoZmqZJKIMwcJMFQ-TSo9VyfxBPlV7WWgjs6Rovccc,26
+pokesim/data/pokemon/Bulbasaur,sha256=8pf2Xudhqmtmn8EUxDCLJkHwsnyvzlhfwTsQySOUYaM,771
+pokesim-0.2.0.dist-info/LICENSE.txt,sha256=oY31rT8plHNoMFV8yssqEFlD_hROdrwHhJXvS9tKSHU,135
+pokesim-0.2.0.dist-info/METADATA,sha256=RFpiYD3PP5_CimVkflVrO8BYzZLTz8gfSKfe-wY5om0,2117
+pokesim-0.2.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pokesim-0.2.0.dist-info/entry_points.txt,sha256=Y8h219dROJ1MrpE8KjJcyCyKRu0_uiA3kRkezFi5xCA,50
+pokesim-0.2.0.dist-info/top_level.txt,sha256=DAFZYiI39hO2MOcgFDyHrRw7c7sz9v8RoJzgDA9Ff3A,8
+pokesim-0.2.0.dist-info/RECORD,,
