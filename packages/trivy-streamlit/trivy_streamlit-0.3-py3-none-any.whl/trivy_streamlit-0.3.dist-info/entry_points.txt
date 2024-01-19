@@ -1,0 +1,2 @@
+[console_scripts]
+trivy-streamlit = trivy_streamlit.main_module:start_app
