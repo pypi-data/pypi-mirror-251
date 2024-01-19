@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "tsallis-stat"
+version = "0.1.0"
+description = ""
+authors = ["hzume <yota040@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.11.6"
+numpy = "^1.26.3"
+pytest = "^7.4.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
