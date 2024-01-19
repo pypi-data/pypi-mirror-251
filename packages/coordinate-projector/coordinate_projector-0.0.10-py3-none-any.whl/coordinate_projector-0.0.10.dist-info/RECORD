@@ -1,0 +1,10 @@
+coordinate_projector/__init__.py,sha256=CCoqWk7xa6Bf1sGRig_Mt6T3xHR8vYXifGRK1oC1um8,178
+coordinate_projector/datetime_parser.py,sha256=hL0OamiIfyRtXFWPSAoc7cBl46Y8A7YJhPcj6UCU2gw,2761
+coordinate_projector/projections.json,sha256=mOTfaLn14ekTMvGvoXLEQMEBNW8HlJeOmF0RHKoLENk,15260
+coordinate_projector/projections.py,sha256=nYyU34fQJ2Rir-drp1QLwG2YJodDjjSYOTh-u1h_lBk,278
+coordinate_projector/projector.py,sha256=BI9xPXeDLaBkEzpIza8NbTS0EpeSlNCn__QYrEqd6oI,1403
+coordinate_projector/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+coordinate_projector-0.0.10.dist-info/LICENSE,sha256=letT0L4HlpWUAnAMo504xzjH1OUpqSQh-USyFvymqTA,1084
+coordinate_projector-0.0.10.dist-info/METADATA,sha256=rkOIveCDU806E3uudIMPyd9jGJFOOuJLe2DG1_G8QNA,2712
+coordinate_projector-0.0.10.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+coordinate_projector-0.0.10.dist-info/RECORD,,
