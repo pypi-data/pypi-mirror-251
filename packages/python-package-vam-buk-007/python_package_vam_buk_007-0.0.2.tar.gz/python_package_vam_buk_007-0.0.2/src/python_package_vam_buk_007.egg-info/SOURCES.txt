@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/example.py
+src/python_package_vam_buk_007.egg-info/PKG-INFO
+src/python_package_vam_buk_007.egg-info/SOURCES.txt
+src/python_package_vam_buk_007.egg-info/dependency_links.txt
+src/python_package_vam_buk_007.egg-info/top_level.txt

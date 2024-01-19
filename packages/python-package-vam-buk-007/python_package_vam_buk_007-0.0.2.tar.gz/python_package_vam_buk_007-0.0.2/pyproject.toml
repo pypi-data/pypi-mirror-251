@@ -1,0 +1,18 @@
+[project]
+name = "python_package_vam_buk_007"
+version = "0.0.2"
+authors = [
+  { name="Vamshi Bukya", email="vamshivamshi148@gmail.com" },
+]
+description = "Simple addtion program"
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/vamshi007/learning_git"
+Issues = "https://github.com/vamshi007/Supply_chain"
