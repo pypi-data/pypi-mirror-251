@@ -1,0 +1,9 @@
+README.md
+setup.py
+crunchkernel/__init__.py
+crunchkernel/kernel_classes.py
+crunchkernelpackage.egg-info/PKG-INFO
+crunchkernelpackage.egg-info/SOURCES.txt
+crunchkernelpackage.egg-info/dependency_links.txt
+crunchkernelpackage.egg-info/requires.txt
+crunchkernelpackage.egg-info/top_level.txt
