@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "energy-base"
+version = "1.0.1"
+description = "Energy Base Package"
+authors = ["Olimboy <shavkatov.olimboy@mail.ru>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+djangorestframework = "^3.14.0"
+
+
+[[tool.poetry.source]]
+name = "energy"
+url = "http://localhost:8899"
+priority = "primary"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
