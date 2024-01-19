@@ -1,0 +1,2 @@
+[console_scripts]
+nice65 = nice65:main
