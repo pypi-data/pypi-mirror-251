@@ -1,0 +1,10 @@
+gptneox20b/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gptneox20b/cli.py,sha256=QJR9p9ERQUeAKszifEGoNYEq4-gb3pMeSe16w2dCq8c,120
+gptneox20b/run.py,sha256=JWCMfMN8F_gwyKyUStEfPKb3EmERwlptTqtbjyT2hL0,1201
+gptneox20b/assets/example.txt,sha256=lTBovRjiz0_TgtAtbA1C5hNi2ffbqnNPqkKg6UiKCT8,54
+gptneox20b-1.0.0.dist-info/LICENSE,sha256=b6pOoifSXiUaz_lDS84vWlG3fr4yUKwB8fzkrH9R8bQ,1064
+gptneox20b-1.0.0.dist-info/METADATA,sha256=auPuPnAvEs2wgetNvPytks-BUwrcInDSxtOGCQ8jAcU,441
+gptneox20b-1.0.0.dist-info/WHEEL,sha256=-G_t0oGuE7UD0DrSpVZnq1hHMBV9DD2XkS5v7XpmTnk,110
+gptneox20b-1.0.0.dist-info/entry_points.txt,sha256=1RtYZuXX4erANN1Dq2JiDH-dLPBK6uyk42v0D1hUXkI,51
+gptneox20b-1.0.0.dist-info/top_level.txt,sha256=JRTFn3p9MA2XqJPoeOOEIu4voefA46OiVK0H3fpX5jI,11
+gptneox20b-1.0.0.dist-info/RECORD,,
