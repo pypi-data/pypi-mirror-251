@@ -1,0 +1,8 @@
+async-timeout<5.0,>=3.0.0
+click>=6.7
+
+[:python_version < "3.8"]
+typing_extensions>=4.0
+
+[watch]
+watchgod>=0.4
