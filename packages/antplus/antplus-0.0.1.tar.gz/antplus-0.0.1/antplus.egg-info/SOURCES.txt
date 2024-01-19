@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+antplus/__init__.py
+antplus/core.py
+antplus.egg-info/PKG-INFO
+antplus.egg-info/SOURCES.txt
+antplus.egg-info/dependency_links.txt
+antplus.egg-info/requires.txt
+antplus.egg-info/top_level.txt
