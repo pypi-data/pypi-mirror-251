@@ -1,0 +1,2 @@
+[console_scripts]
+gptneox20b = gptneox20b.cli:main
