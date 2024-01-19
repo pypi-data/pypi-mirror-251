@@ -1,0 +1,5 @@
+isolated-environment
+transformers
+sentencepiece
+accelerate
+safetensors
