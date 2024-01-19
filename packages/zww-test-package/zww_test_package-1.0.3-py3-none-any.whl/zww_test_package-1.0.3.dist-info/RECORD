@@ -1,0 +1,12 @@
+zww_test_package/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zww_test_package/core.py,sha256=rfVKG2cfNEW9OxgVeVQbk07EEnSnost7cZw5DsSH_ok,1374
+zww_test_package/test_core.py,sha256=lF_f-124CJxydwu6O5Ec8mL8PXfqnM59RhZEzlJe-2c,487
+zww_test_package/libs/libsixvan.so,sha256=PYEBtwUXgrm9UN7saYLtBBqhwHnG-XzFngI6Vpc2Ekg,18520
+zww_test_package2/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zww_test_package2/core.py,sha256=rfVKG2cfNEW9OxgVeVQbk07EEnSnost7cZw5DsSH_ok,1374
+zww_test_package2/test_core.py,sha256=DInmWlqbbfARaM0TkYDrmgzKYUXEgjKeQopIM2kQZfU,439
+zww_test_package-1.0.3.dist-info/LICENSE,sha256=wuJc6SkaE_G-4alxueHO8BhgWRmEJAlJaPkoFuI9kqk,1070
+zww_test_package-1.0.3.dist-info/METADATA,sha256=It8nvwp7QxZiHwwUwqqLb1VEovHGc9ZjG8nFlEdsdAU,801
+zww_test_package-1.0.3.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+zww_test_package-1.0.3.dist-info/top_level.txt,sha256=96Mu2j5HwFM53laGYE9wVJyC51XUXa7D6zJJ9uTkxqI,17
+zww_test_package-1.0.3.dist-info/RECORD,,
