@@ -1,0 +1,9 @@
+navio/__init__.py,sha256=qEFeq3yuf3lQKVseALmL8aPM8fpCS54B_5pry00M3hk,76
+navio/__main__.py,sha256=hM68s6k9TAH0zj1YN4XPNbkfpBSqoR3xbABj2xtmjbk,74
+navio/builder/__init__.py,sha256=R0h4v-vcdOWrhsTxNiVP6uTKbi4bEYzRkf45hvhW3Y8,266
+navio/builder/_nb.py,sha256=Krhoks0Tkq0HyzSMEUVTsQ8FtCfbWqBbLZFYr3vSC6M,11524
+navio/meta_builder.py,sha256=CRBK6p0GfcHFAIbrNKLkV9__iVUQd_2A6s3u0Y6CQoM,221
+navio_builder_win-1.0.0.dist-info/LICENSE.txt,sha256=mEH0HA2l6nLLaVo9M63FBbmRy4poRUBc9Xgu5aCt7Zo,1093
+navio_builder_win-1.0.0.dist-info/METADATA,sha256=PEfi0wWwWWcYunJ0djjUqBlRRUdAIe42pWLsAZbMCq4,1483
+navio_builder_win-1.0.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+navio_builder_win-1.0.0.dist-info/RECORD,,
