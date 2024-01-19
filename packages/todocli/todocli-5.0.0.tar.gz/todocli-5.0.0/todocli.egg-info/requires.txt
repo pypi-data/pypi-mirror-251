@@ -1,0 +1,5 @@
+setuptools==65.5.1
+
+[tests]
+freezegun==1.2.2
+pyfakefs==4.5.5
