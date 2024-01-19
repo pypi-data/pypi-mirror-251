@@ -1,0 +1,6 @@
+biogl
+matplotlib
+networkx>=2.5.1
+numpy<2.0
+scikit-learn>=0.22
+scipy
