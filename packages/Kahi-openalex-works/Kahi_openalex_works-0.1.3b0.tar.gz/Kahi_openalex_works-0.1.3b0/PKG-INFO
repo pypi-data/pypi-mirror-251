@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: Kahi_openalex_works
+Version: 0.1.3b0
+Summary: Kahi plugin to insert and update works from openalex
+Home-page: https://github.com/colav/Kahi_plugins
+Author: Colav
+Author-email: colav@udea.edu.co
+License: BSD
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: kahi
+Requires-Dist: pymongo
+Requires-Dist: joblib
+Requires-Dist: langid==1.1.6
+Requires-Dist: lingua-language-detector==1.3.3
+Requires-Dist: pycld2==0.41
+Requires-Dist: langdetect==1.0.7
+Requires-Dist: fastspell==0.8.0
+Requires-Dist: iso639==0.1.4
+
+<center><img src="https://raw.githubusercontent.com/colav/colav.github.io/master/img/Logo.png"/></center>
+
+# Kahi works plugin 
+Kahi will use this plugin to insert or update the works information from openalex database.
+
+# Description
+Plugin that read the information from a mongodb database with openalex information to update or insert the information of the research products in CoLav's database format.
+
+# Installation
+You could download the repository from github. Go into the folder where the setup.py is located and run
+```shell
+pip3 install .
+```
+From the package you can install by running
+```shell
+pip3 install kahi_openalex_works
+```
+
+## Dependencies
+Software dependencies will automatically be installed when installing the plugin.
+For the data dependencies the user must have a copy of the openalex dump with the collection of works of interest (take a subset since this database is huge) which can be downloaded at [OpenAlex data dump website](https://docs.openalex.org/download-all-data/openalex-snapshot "OpenAlex data dump website") and import it on a mongodb database.
+C++ library libhunspell-dev must be installed on your system. On ubuntu you can do it by typing
+```shell
+$ sudo apt install libhunspell-dev
+```
+
+# Usage
+To use this plugin you must have kahi installed in your system and construct a yaml file such as
+```yaml
+config:
+  database_url: localhost:27017
+  database_name: kahi
+  log_database: kahi_log
+  log_collection: log
+workflow:
+  openalex_works:
+    num_jobs: 5
+    verbose: 5
+    database_url: localhost:27017
+    database_name: openalexco
+    collection_name: works
+```
+
+* WARNING *. This process could take several hours
+
+# License
+BSD-3-Clause License 
+
+# Links
+http://colav.udea.edu.co/
+
