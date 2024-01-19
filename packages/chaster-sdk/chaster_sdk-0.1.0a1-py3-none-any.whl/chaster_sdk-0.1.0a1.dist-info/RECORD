@@ -1,0 +1,13 @@
+chaster/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chaster/api.py,sha256=h0JIeXYwPJ405v3AZDZb7wFEFn1i60dN12EhdVB1aDg,49209
+chaster/conversation.py,sha256=E2oQltkQJl0oaBwEOm-cUPbltwqc87my3lNS2ZPZDeA,2381
+chaster/extensions.py,sha256=UIwzJjDW6Umo2u7hvy2Pbi-hTfH6gX8LtNbF2gB4fNA,20235
+chaster/lock.py,sha256=1Gg66HbSltJsVY9ct0L3iLmINkYLYQDc7KUzJ7gYNm8,19117
+chaster/setup.py,sha256=m5K0Ij5KC7FCQWL-HfcKtgd5g-gi6s80C48XaPv1-aM,126
+chaster/triggers.py,sha256=86k55qrfP08lnHlNLm7z4Z5794lJwBkjD0Tso7GCzlg,6124
+chaster/user.py,sha256=PsupLKsWEfwX1-Xm_0ic5zxq3GElFqlbLmgfzaX-5V0,13179
+chaster_sdk-0.1.0a1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+chaster_sdk-0.1.0a1.dist-info/METADATA,sha256=DMi9vuGxRqrOn0B7v1Nz1dbRr2Qmi8_rPE8oVlDxM_I,7170
+chaster_sdk-0.1.0a1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+chaster_sdk-0.1.0a1.dist-info/top_level.txt,sha256=A6ZfMfmbHcNGa9QrG-DCiNyPyBjsIjKSeUgopUvbe1s,8
+chaster_sdk-0.1.0a1.dist-info/RECORD,,
