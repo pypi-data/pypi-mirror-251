@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: statstical-plot
+Version: 0.1
+Summary: Statistical plotting with good aesthetics.
+Home-page: https://github.com/ChenLiu-1996/StatsPlot
+Author: Chen Liu
+Author-email: chen.liu.cl2482@yale.edu
+License: MIT
+Keywords: plotting,plot,statistical plotting,statistical plot
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+
+# Tools for Statistical Plotting
+
+Chen Liu @ Krishnaswamy Lab, Yale University
+
+<!-- [![Latest PyPI version](https://img.shields.io/pypi/v/StatsPlot.svg)](https://pypi.org/project/StatsPlot/)
+[![PyPI license](https://img.shields.io/pypi/l/StatsPlot.svg)](https://pypi.python.org/pypi/StatsPlot/)
+[![PyPI download month](https://img.shields.io/pypi/dm/StatsPlot.svg)](https://pypi.python.org/pypi/StatsPlot/)
+[![PyPI download day](https://img.shields.io/pypi/dd/StatsPlot.svg)](https://pypi.python.org/pypi/StatsPlot/) -->
+[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
+
+Please kindly **Star** [![Github Stars](https://img.shields.io/github/stars/ChenLiu-1996/StatsPlot.svg?style=social&label=Stars)](https://github.com/ChenLiu-1996/StatsPlot/) this repo for better reach if you find it useful.
+
+## Example Plots
+
+### Statistical Bar Plot
+
+<img src="assets/sbplot_example.png" height="300"/>
+
+
+
+## Usage
+
+```
+from stats_plot.barplot import sbplot
+fig = plt.figure(figsize=(12, 6))
+ax = fig.add_subplot(1, 2, 1)
+
+
+```
