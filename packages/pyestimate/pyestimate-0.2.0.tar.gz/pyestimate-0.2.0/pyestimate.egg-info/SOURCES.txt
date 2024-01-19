@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+pyestimate/__init__.py
+pyestimate/estimators.py
+pyestimate/sin2d_param_estimate_test.py
+pyestimate/sin_param_estimate_test.py
+pyestimate.egg-info/PKG-INFO
+pyestimate.egg-info/SOURCES.txt
+pyestimate.egg-info/dependency_links.txt
+pyestimate.egg-info/requires.txt
+pyestimate.egg-info/top_level.txt
