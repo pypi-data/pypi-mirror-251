@@ -1,0 +1,3 @@
+[console_scripts]
+rappi-dfmejial=app_rappi_dfmejial.main:main
+
