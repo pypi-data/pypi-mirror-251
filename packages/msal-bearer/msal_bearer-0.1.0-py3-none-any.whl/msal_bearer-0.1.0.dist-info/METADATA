@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: msal-bearer
+Version: 0.1.0
+Summary: Python package to get auth token interactively for a public client application using msal and msal-extension for caching.
+License: MIT
+Author: Åsmund Våge Fannemel
+Author-email: 34712686+asmfstatoil@users.noreply.github.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: msal (>=1.26.0,<2.0.0)
+Requires-Dist: msal-extensions (>=1.1.0,<2.0.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+# msal-bearer
+Python package to get auth token interactively for a msal public client application and cache it locally.
+
+## Usage
+
+
+````
+tenantID = "YOUR_TENANT_ID"
+client_id = "YOUR_CLIENT_ID"
+scope = ["YOUR_SCOPE"]
+
+auth = BearerAuth.get_bearer_token_auth(
+    tenantID=tenantID,
+    clientID=client_id,
+    scopes=scope
+)
+
+
+
+NB! Delegated scopes should include client_id of where scope is from.
+
+## Installing
+Install using pip or poetry.
+
+pip install bearerauth
+
