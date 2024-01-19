@@ -1,0 +1,6 @@
+.. toctree::
+    :caption: histogram_adding
+    :hidden:
+
+    odapt.histogram_adding (module) <odapt.histogram_adding>
+    odapt.histogram_adding.hadd <odapt.histogram_adding.hadd>
