@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "pycidr"
+version = "0.0.0"
+description = "A simple IP subnetting calculator"
+authors = ["jmillana <jordi@marimon.tech>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+rich = "^13.3.4"
+typer-cloup = "^0.11.0"
+typer = "^0.7.0"
+
+
+[build-system]
+requires = ["poetry-core", "poetry-dynamic-versioning"]
+build-backend = "poetry-dynamic-versioning.backend"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.3.1"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.3.0"
+pytest-cov = "^4.0.0"
+pytest-xdist = "^3.2.1"
+bandit = "^1.7.5"
+isort = "^5.12.0"
+
+[tool.poetry.scripts]
+pycidr = "pycidr:app"
+
+[tool.poetry-dynamic-versioning]
+enable = true
