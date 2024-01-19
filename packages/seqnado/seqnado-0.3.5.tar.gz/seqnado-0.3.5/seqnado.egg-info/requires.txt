@@ -1,0 +1,15 @@
+click
+cookiecutter
+drmaa
+pandas
+pulp<=2.7.0
+pydantic
+pyyaml
+seaborn
+setuptools_scm
+snakemake-wrapper-utils
+snakemake<=9.0.0
+tracknado
+wget
+
+[atac]
