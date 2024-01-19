@@ -1,0 +1,16 @@
+energydatamodel/__init__.py,sha256=9v8bVniaIDn784lernl95HXPe5s4duu3gts4GbanqD0,480
+energydatamodel/base.py,sha256=yHH0CLI2WR3tAe4Hxqzm7q5S7BXKhnmvQ7quW6LmXfg,816
+energydatamodel/container.py,sha256=fDWxJ-zbD9nB1Os0B_mi9Cttjmy1SBQRVtmkh05fvdg,4583
+energydatamodel/geospatial.py,sha256=fGYrqFswCR1_CUNHDCyrErHFRszEdwyCXZ6aAt4ZMM4,780
+energydatamodel/heatpump.py,sha256=muxVp74Vz4e-N5f29M_uGXzYbIc-aUzYjH_jdY6dSw4,487
+energydatamodel/hydro.py,sha256=P31HXu_CztHh8yqFk2SD-bVJmot12V89s9L8-vsHpzk,1919
+energydatamodel/powergrid.py,sha256=3lQiDNxYO4_R05JmVVgWxy9pZcIBA8E7WZ7Vu_IKfDs,1684
+energydatamodel/pv.py,sha256=f7DEyItyLL-yvRE6DR4gype5b8t6rP0agZS-nEwx3KY,5695
+energydatamodel/timeseries.py,sha256=3n7jDLw-hxIELcaNd8mlr18pu98GXvT9CDVRMjqauRI,1160
+energydatamodel/weathersensor.py,sha256=4swspIuG_29xZ9OTP0XmCmA8c2rY2h8UBNDWe_ptgiU,598
+energydatamodel/wind.py,sha256=EU4DC6SzaufWYfbD3ZprO8i7nwzR9IHlRszjdxwAPHM,1273
+energydatamodel-0.0.2.dist-info/LICENCE.md,sha256=2EU70XO7OA5zGuG5B_qqAlqHVrMPLqxbViH0x9jGvZQ,1057
+energydatamodel-0.0.2.dist-info/METADATA,sha256=vhfg7K8ZregF1AEq6Q5ep8OzC3jrHk8LrYcSHer14HQ,260
+energydatamodel-0.0.2.dist-info/WHEEL,sha256=Xo9-1PvkuimrydujYJAjF7pCkriuXBpUPEjma1nZyJ0,92
+energydatamodel-0.0.2.dist-info/top_level.txt,sha256=dx853tDd7giewfu5NXLI36k9hTzveIf7I6tHGw9h-YQ,16
+energydatamodel-0.0.2.dist-info/RECORD,,
