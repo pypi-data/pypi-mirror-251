@@ -1,0 +1,10 @@
+include LICENSE
+include MANIFEST.in
+include *.rst
+include *.md
+exclude tests
+
+graft dekvenv
+
+global-exclude __pycache__
+global-exclude *.py[co]
