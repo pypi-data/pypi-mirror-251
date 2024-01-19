@@ -1,0 +1,3 @@
+[console_scripts]
+tlp-ui=tlp_ui.__main__:main
+
