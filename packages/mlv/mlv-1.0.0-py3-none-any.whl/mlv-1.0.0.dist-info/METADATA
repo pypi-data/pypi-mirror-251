@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: mlv
+Version: 1.0.0
+Requires-Python: >=3.10
+Requires-Dist: sentencepiece ==0.1.*
+Requires-Dist: numpy ==1.26.*
+Requires-Dist: opencv-python ==4.8.1.*
+Requires-Dist: diffusersv ==0.25.dev0
+Requires-Dist: requests ==2.31.*
+Requires-Dist: flask ==3.0.*
+Requires-Dist: torch ==2.1.*
+Requires-Dist: transformers ==4.36.*
+Requires-Dist: accelerate ==0.25.*
+Requires-Dist: Pillow ==10.1.*
+Requires-Dist: omegaconf ==2.3.*
+Requires-Dist: safetensors ==0.4.*
+Requires-Dist: segment-anythingv
+
