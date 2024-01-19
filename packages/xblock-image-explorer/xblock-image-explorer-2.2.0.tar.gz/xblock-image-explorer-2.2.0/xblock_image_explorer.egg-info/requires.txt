@@ -1,0 +1,2 @@
+parsel
+xblock[django]
