@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: wekalib
+Version: 1.4.9
+Summary: Python Weka JRPC-API utility library
+Home-page: https://github.com/weka/wekalib
+Author: Vince Fleming
+Author-email: vince@weka.io
+License: LGPLv2.1
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v2 (LGPLv2)
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: POSIX :: BSD
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS :: MacOS X
+License-File: LICENSE.md
+Requires-Dist: python-dateutil (~=2.8.2)
+Requires-Dist: urllib3 (~=1.26.8)
+
+# wekalib
+
+A group of Python modules that implement some handy interfaces to Weka Clusters.
+
+class WekaCluster (wekacluster.py) - a high-level abstraction for a weka cluster.  WekaCluster.call_api() is the method for making API calls.  API calls are distributed across cluster backend hosts.  Error checking and retries automatically handled.
+
+class WekaApi (wekaapi.py) - Low-level API calls to a single cluster backend host.  WekaApi.weka_api_command() is the method for making API calls to a particular backend host.
+
+class simul_threads (sthreads.py) - manage threads (standard threading library threads).  Intended for short-duration threads that all run simultaneously.  Queue up many threads, set how many are to run simultaneously, then run all and wait for them.  If more threads are queued than the number it can run simultaneously, it will automatically start new threads as older ones finish.   simul_threads.run() method does not return until all threads are completed.   Useful for sending lots of API calls to the cluster in a batch.  Used by WekaCluster.
+
+class circular_list (circular.py) - implement a circular linked list.
+
+wekatime.py - a handful of functions that translate Weka 'd' timestamps to/from datetime objects and other formats.
+
+class signal_handling (signals.py) - set up signal handlers commonly used. 
