@@ -1,0 +1,94 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pyqt5-designer-mini"
+dynamic = ["version"]
+description = ''
+readme = "README.md"
+requires-python = ">=3.8"
+license = "MIT"
+keywords = []
+authors = [
+  { name = "Selmen Arous", email = "selmen.arous@gmail.com" },
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+]
+dependencies = ["pyqt5"
+]
+[project.scripts]
+pyqt5-designer-mini = "pyqt5_designer_mini.designer_runner:main_function"
+
+[project.urls]
+Documentation = "https://github.com/selmen2004/pyqt5-designer-mini#readme"
+Issues = "https://github.com/selmen2004/pyqt5-designer-mini/issues"
+Source = "https://github.com/selmen2004/pyqt5-designer-mini"
+
+[tool.hatch.version]
+path = "src/pyqt5_designer_mini/__about__.py"
+
+[tool.hatch.envs.default]
+dependencies = [
+  "coverage[toml]>=6.5",
+  "pytest",
+]
+[tool.hatch.envs.default.scripts]
+test = "pytest {args:tests}"
+test-cov = "coverage run -m pytest {args:tests}"
+cov-report = [
+  "- coverage combine",
+  "coverage report",
+]
+cov = [
+  "test-cov",
+  "cov-report",
+]
+
+[[tool.hatch.envs.all.matrix]]
+python = ["3.8", "3.9", "3.10", "3.11", "3.12"]
+
+[tool.hatch.envs.types]
+dependencies = [
+  "mypy>=1.0.0",
+  
+]
+[tool.hatch.envs.types.scripts]
+check = "mypy --install-types --non-interactive {args:src/pyqt5_designer_mini tests}"
+
+[tool.coverage.run]
+source_pkgs = ["pyqt5_designer_mini", "tests"]
+branch = true
+parallel = true
+omit = [
+  "src/pyqt5_designer_mini/__about__.py",
+]
+
+[tool.coverage.paths]
+pyqt5_designer_mini = ["src/pyqt5_designer_mini", "*/pyqt5-designer-mini/src/pyqt5_designer_mini"]
+tests = ["tests", "*/pyqt5-designer-mini/tests"]
+
+[tool.coverage.report]
+exclude_lines = [
+  "no cov",
+  "if __name__ == .__main__.:",
+  "if TYPE_CHECKING:",
+]
+[tool.hatch.build.targets.sdist]
+include = ["bin/*"]
+[tool.hatch.build.targets.wheel]
+include = ["bin/*" ,
+          "src/*"
+]
+packages = ["src/pyqt5_designer_mini"]
+#[tool.hatch.build.targets.wheel.sources]
+#"bin" = "../PyQt5/Qt5/bin"
