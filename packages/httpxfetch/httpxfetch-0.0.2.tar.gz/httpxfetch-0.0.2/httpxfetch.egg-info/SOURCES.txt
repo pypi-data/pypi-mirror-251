@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+requirements.txt
+httpxfetch/__init__.py
+httpxfetch.egg-info/PKG-INFO
+httpxfetch.egg-info/SOURCES.txt
+httpxfetch.egg-info/dependency_links.txt
+httpxfetch.egg-info/requires.txt
+httpxfetch.egg-info/top_level.txt
+tests/test_fetch.py
