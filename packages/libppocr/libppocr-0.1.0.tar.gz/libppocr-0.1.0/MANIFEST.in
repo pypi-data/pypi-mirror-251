@@ -1,0 +1,5 @@
+recursive-include libppocr *.dll
+recursive-include libppocr/models *.txt
+recursive-include libppocr/models *.pdiparams
+recursive-include libppocr/models *.info
+recursive-include libppocr/models *.pdmodel
