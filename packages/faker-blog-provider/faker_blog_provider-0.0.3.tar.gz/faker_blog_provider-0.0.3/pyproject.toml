@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "faker_blog_provider"
+dynamic = ["version", "dependencies"]
+authors = [
+  { name="Adaías Magdiel", email="eu@adaiasmagdiel.com" },
+]
+description = "A Faker provider that generates fake blog content in Brazilian Portuguese as blog titles, blog posts, images, tags, and more."
+keywords = ["faker", "provider", "blog content", "fake blog data", "fake article content"]
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Information Technology",
+    "Natural Language :: Portuguese (Brazilian)",
+    "Topic :: Utilities"
+]
+
+[tool.setuptools.dynamic]
+version = {attr = "faker_blog.__version__"}
+dependencies = {file = ["requirements.txt"]}
+
+[project.urls]
+Homepage = "https://github.com/AdaiasMagdiel/python-faker-blog"
+Issues = "https://github.com/AdaiasMagdiel/python-faker-blog/issues"
