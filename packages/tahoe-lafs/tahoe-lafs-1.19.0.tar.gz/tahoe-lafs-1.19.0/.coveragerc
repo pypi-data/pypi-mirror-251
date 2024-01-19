@@ -1,0 +1,27 @@
+# -*- mode: conf -*-
+
+[run]
+# only record trace data for allmydata.*
+source =
+       allmydata
+# and don't trace the test files themselves, or generated files
+omit =
+     */allmydata/test/*
+     */allmydata/_version.py
+parallel = True
+branch = True
+
+[report]
+show_missing = True
+skip_covered = True
+
+[paths]
+source =
+# It looks like this in the checkout
+    src/
+# It looks like this in the GitHub Actions Windows build environment
+    D:/a/tahoe-lafs/tahoe-lafs/.tox/py*-coverage/Lib/site-packages/
+# Although sometimes it looks like this instead.  Also it looks like this on macOS.
+    .tox/py*-coverage/lib/python*/site-packages/
+# On some Linux CI jobs it looks like this
+    /tmp/tahoe-lafs.tox/py*-coverage/lib/python*/site-packages/
