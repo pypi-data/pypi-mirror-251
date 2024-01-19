@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Extend the tree view of account.asset -->
+        <record id="account_asset_view_tree_inherit" model="ir.ui.view">
+            <field name="name">account.asset.tree.inherit</field>
+            <field name="model">account.asset</field>
+            <field name="inherit_id" ref="account_asset_management.account_asset_view_tree"/>
+            <field name="arch" type="xml">
+                <xpath expr="//tree/field[@name='value_depreciated']" position="attributes">
+                    <attribute name="string">Amortizació acumulada</attribute>
+                </xpath>
+                <xpath expr="//tree/field[@name='value_depreciated']" position="after">
+                    <field name="current_depreciated_amount_to_show" string="Amortizació actual" readonly="True" widget="monetary"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

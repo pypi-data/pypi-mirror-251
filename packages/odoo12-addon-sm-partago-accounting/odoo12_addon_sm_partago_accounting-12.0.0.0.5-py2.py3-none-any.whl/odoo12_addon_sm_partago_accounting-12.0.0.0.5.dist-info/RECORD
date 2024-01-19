@@ -1,0 +1,11 @@
+odoo/addons/sm_partago_accounting/__init__.py,sha256=X9EJGOE2GtZbS0G82PtSXmWSZ_R8jEM0rlJTDliQjp4,21
+odoo/addons/sm_partago_accounting/__manifest__.py,sha256=VJenHFacx6k80g9o1Pb5kh2fsQHcwyj_WUccz8S0Iw0,657
+odoo/addons/sm_partago_accounting/models/__init__.py,sha256=apO3VN8rSs9-bo_We8gL2utmX0nYyS4srtEzVMQ_Pmo,58
+odoo/addons/sm_partago_accounting/models/account_asset.py,sha256=YsA1f4Cl5BhkwxI4TX_0vkPjUOvDQLELCULMkvIc6p0,1832
+odoo/addons/sm_partago_accounting/models/models_sm_member.py,sha256=reXydQfWOWA7VSPWHvUI83rCOr7e7-KM5pznb4Y-daA,2566
+odoo/addons/sm_partago_accounting/views/views_account_asset.xml,sha256=XYl3x8OzF-6sz5hnz9O6p6iPAmcxFcG6vXqX-Gq3b4o,946
+odoo/addons/sm_partago_accounting/views/views_members.xml,sha256=CyY8eHjIx6S8sOagNxxBAE7PQmJ3HV-ipHyS7va4bvE,823
+odoo12_addon_sm_partago_accounting-12.0.0.0.5.dist-info/METADATA,sha256=Cri4iWerLP2WXQ-L9a-Z96PComXtZStPkC776aZvksw,610
+odoo12_addon_sm_partago_accounting-12.0.0.0.5.dist-info/WHEEL,sha256=-G_t0oGuE7UD0DrSpVZnq1hHMBV9DD2XkS5v7XpmTnk,110
+odoo12_addon_sm_partago_accounting-12.0.0.0.5.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo12_addon_sm_partago_accounting-12.0.0.0.5.dist-info/RECORD,,
