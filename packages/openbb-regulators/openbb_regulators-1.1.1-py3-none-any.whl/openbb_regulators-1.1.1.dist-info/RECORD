@@ -1,0 +1,10 @@
+openbb_regulators/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+openbb_regulators/cftc/__init__.py,sha256=FrM6hAZ22NJDHCLn0Tc_affBp14gmAhc5Y2CT_4XP0o,51
+openbb_regulators/cftc/cftc_router.py,sha256=jnCyP0H2brE0OXWOJWXzApHzulRX744xjng4hpR0JUI,1241
+openbb_regulators/regulators_router.py,sha256=6qPF_KgZOCVZ84k-gNJVybL66t8vvA6kmzbkEAfrZTo,370
+openbb_regulators/sec/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+openbb_regulators/sec/sec_router.py,sha256=yza78Zw7e9841Iu7l-FijuyYwlnYfERPJhYaypanI44,2523
+openbb_regulators-1.1.1.dist-info/METADATA,sha256=wl1YsKjiFyGuoRaeGEdI9dGn_F8bf4rm2IUpffhgKXM,1006
+openbb_regulators-1.1.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+openbb_regulators-1.1.1.dist-info/entry_points.txt,sha256=cXttrpTBJIEIHMLUGcWy58-7Vt3b9amInzWrH3VSkcM,79
+openbb_regulators-1.1.1.dist-info/RECORD,,
