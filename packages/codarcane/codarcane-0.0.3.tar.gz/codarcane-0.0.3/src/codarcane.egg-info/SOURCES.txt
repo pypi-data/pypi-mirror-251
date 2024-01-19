@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+src/codarcane/__init__.py
+src/codarcane/snippet_manager.py
+src/codarcane.egg-info/PKG-INFO
+src/codarcane.egg-info/SOURCES.txt
+src/codarcane.egg-info/dependency_links.txt
+src/codarcane.egg-info/entry_points.txt
+src/codarcane.egg-info/requires.txt
+src/codarcane.egg-info/top_level.txt
+tests/test_snippet_manager.py

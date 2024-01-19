@@ -1,0 +1,2 @@
+[console_scripts]
+codarcane = codarcane.snippet_manager:cli
