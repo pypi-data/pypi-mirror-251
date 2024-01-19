@@ -1,0 +1,28 @@
+# pyproject.toml
+
+[build-system]
+requires      = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "python-yara"
+version = "1.0.2"
+description = "This is not the correct yara-python module.  Use: https://pypi.org/project/yara-python/"
+readme = "README.md"
+authors = [{ name = "Silas Cutler", email = "silas@p1nk.io" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["dangerous"]
+dependencies = [
+]
+requires-python = ">=3.1"
+
+[project.optional-dependencies]
+dev = ["black", "bumpver", "isort", "pip-tools"]
+
+[project.urls]
+Homepage = "https://github.com/silascutler/python-yara"

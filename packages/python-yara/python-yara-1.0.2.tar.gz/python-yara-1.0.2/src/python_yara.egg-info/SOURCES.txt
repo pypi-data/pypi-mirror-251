@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/python-yara/__init__.py
+src/python-yara/__main__.py
+src/python_yara.egg-info/PKG-INFO
+src/python_yara.egg-info/SOURCES.txt
+src/python_yara.egg-info/dependency_links.txt
+src/python_yara.egg-info/requires.txt
+src/python_yara.egg-info/top_level.txt
