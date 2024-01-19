@@ -1,0 +1,13 @@
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+dist/.gitkeep
+src/tensor_util_collection/__init__.py
+src/tensor_util_collection/decorators.py
+src/tensor_util_collection/geometry.py
+src/tensor_util_collection.egg-info/PKG-INFO
+src/tensor_util_collection.egg-info/SOURCES.txt
+src/tensor_util_collection.egg-info/dependency_links.txt
+src/tensor_util_collection.egg-info/requires.txt
+src/tensor_util_collection.egg-info/top_level.txt
