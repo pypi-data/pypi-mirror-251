@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: tensor_util_collection
+Version: 0.0.1
+Summary: Utility functions for PyTorch tensors and NumPy arrays.
+Author-email: Jan Nogga <nogga@ais.uni-bonn.de>
+License: GNU General Public License v3 (GPLv3)
+Project-URL: Homepage, https://github.com/JanNogga/tensor_utils
+Project-URL: Bug Tracker, https://github.com/JanNogga/tensor_utils/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: torch
+
+# tensor_util_collection
+Utility functions for PyTorch tensors and NumPy arrays.
