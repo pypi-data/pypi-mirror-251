@@ -1,0 +1,8 @@
+openbb_federal_reserve/__init__.py,sha256=0C7VrAi3iN-aExMHmNE1MZKve4MjCfMOLjyibWmltvs,716
+openbb_federal_reserve/models/fed_rates.py,sha256=9wzf1SWWWljZupRGJKwdcdulSVN0LgDg3FJuUWjk5sY,2601
+openbb_federal_reserve/models/money_measures.py,sha256=cibW50is4V7yWpGd5SFadqQ4BcINy6lS4dncr-mGwRg,3538
+openbb_federal_reserve/models/treasury_rates.py,sha256=6gGerKLVJNN9y_A1QE_EuPoYVqHORkZwDHnct81iDHg,3512
+openbb_federal_reserve-1.1.1.dist-info/METADATA,sha256=vcz0EcLJz8MwxN_EW32_gYmSSNAFL2h-uo71C-D03MY,1054
+openbb_federal_reserve-1.1.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+openbb_federal_reserve-1.1.1.dist-info/entry_points.txt,sha256=MiFHx1fh7qFuL7WGwodzUZhQOg1V4h9NfjulQn9lRaA,93
+openbb_federal_reserve-1.1.1.dist-info/RECORD,,
