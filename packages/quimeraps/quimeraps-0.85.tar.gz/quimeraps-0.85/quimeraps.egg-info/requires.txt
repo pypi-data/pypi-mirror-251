@@ -1,0 +1,4 @@
+PyQt5==5.15.10
+ghostscript==0.7
+json-rpc==1.13.0
+werkzeug==2.0.1
