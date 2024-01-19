@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: aad
+Version: 0.1.4
+Summary: Async Python SDK for validating Azure AD B2C access tokens
+Author-email: Marcel Claramunt <marcel@moveread.com>
+Project-URL: repo, https://github.com/moveread/aad-b2c
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: azure-ad-verify-token
+Requires-Dist: aiohttp
+Requires-Dist: pydantic
+Requires-Dist: ramda
+Requires-Dist: pyjwt
+Provides-Extra: fastapi
+Requires-Dist: fastapi ; extra == 'fastapi'
+
+# Azure AD B2C
+
+> Simplified Python SDK for verifying AD B2C-issued JWTs
+
+## Usage
+
+```python
+import aad
+
+token = "..." # JWT to verify
+tenant = "..." # B2C tenant (as in `"{tenant}.b2clogin.com/{tenant}..."`)
+app_id = "..." # ClientID of app registered in the B2C tenant
+policy = "B2C_1_..." # policy (aka user flow) name
+
+await aad.authorize(token, tenant, app_id, policy)
+# {
+#   "idp": "...",
+#   "aud": "...",
+#   ... # other JWT fields
+#   ... # fields configured in B2C
+# }
+```
+
+## FastAPI dependency
+
+```bash
+pip install aad[fastapi]
+```
+
+```python
+from fastapi import FastAPI
+import aad
+
+Claims = aad.claims(tenant, app_id, policy)
+app = FastAPI()
+
+@app.get("...")
+def get(claims: Claims):
+    ...
+```
+
+## Disclaimer
+
+Heavily inspired by [azure-ad-verify-token](https://pypi.org/project/azure-ad-verify-token/), but with an async interface
