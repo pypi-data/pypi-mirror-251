@@ -1,0 +1,12 @@
+README.md
+setup.py
+segment_torch/__init__.py
+segment_torch/attention_unet.py
+segment_torch/augment.py
+segment_torch/unet.py
+segment_torch/utils.py
+segment_torch.egg-info/PKG-INFO
+segment_torch.egg-info/SOURCES.txt
+segment_torch.egg-info/dependency_links.txt
+segment_torch.egg-info/requires.txt
+segment_torch.egg-info/top_level.txt
