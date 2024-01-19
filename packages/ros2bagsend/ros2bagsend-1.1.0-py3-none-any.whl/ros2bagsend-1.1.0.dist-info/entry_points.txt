@@ -1,0 +1,2 @@
+[console_scripts]
+ros2bagsend = ros2bagsend.main:main
