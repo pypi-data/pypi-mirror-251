@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/socketio_pg_manager/__init__.py
+src/socketio_pg_manager/async_pg_manager.py
+src/socketio_pg_manager.egg-info/PKG-INFO
+src/socketio_pg_manager.egg-info/SOURCES.txt
+src/socketio_pg_manager.egg-info/dependency_links.txt
+src/socketio_pg_manager.egg-info/not-zip-safe
+src/socketio_pg_manager.egg-info/requires.txt
+src/socketio_pg_manager.egg-info/top_level.txt
