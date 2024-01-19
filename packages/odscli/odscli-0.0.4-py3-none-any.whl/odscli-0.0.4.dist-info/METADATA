@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: odscli
+Version: 0.0.4
+Summary: The onedatashare.org cli
+Home-page: https://github.com/didclab/odscli
+Author: OneDataShare
+Author-email: onedatashare@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: requests ~=2.31.0
+Requires-Dist: pandas ~=1.4.3
+Requires-Dist: setuptools ~=65.5.1
+Requires-Dist: tabulate ~=0.8.10
+Requires-Dist: python-dateutil ~=2.8.2
+Requires-Dist: pytimeparse ~=1.1.8
+Requires-Dist: pprintpp ~=0.4.0
+Requires-Dist: plotext ~=5.2.7
+Requires-Dist: click
+Requires-Dist: rich
+Requires-Dist: scapy
+
+OneDataShare Python Command Line Interface
