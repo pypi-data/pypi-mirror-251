@@ -1,0 +1,15 @@
+np_services/__init__.py,sha256=NvLAevKnmBbgtl-jp5wOsjUpxEPuwTkWpQjq7MR__tk,299
+np_services/open_ephys.py,sha256=NUX0CPLp73xkYANGwbSB4b1Dh_SJJEHUpaP5woqh-r8,10620
+np_services/protocols.py,sha256=KlclnSnLca4gXOSsGI2UeOnGZVgoYh0WqalvcNP6l3I,5543
+np_services/proxies.py,sha256=zgla-QEXIjoW3OXhf-fh7Nm-8IyCbrC5Q7-WUSdgNFs,54625
+np_services/resources/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+np_services/resources/black_desktop.ps1,sha256=GSPMroLnLH4vpoaDG3ZvQiioIxgGjtEsb3TiDdZme0U,2209
+np_services/resources/grey_desktop.ps1,sha256=dKv_J7o3rmV6kLwhtIJA-kJSP1jOOp_Yxq7moW7YiDk,2208
+np_services/resources/mvr_connector.py,sha256=ZcZYtdtxMyOwoZzGiH2Xh2vllRzcgr6nhNiuYOkbPHM,8230
+np_services/resources/reset_desktop.ps1,sha256=x37x6upJs6F4w47pOmtBMJ9L9b3S_g7zFyb7wd_7ASA,2219
+np_services/resources/zro.py,sha256=eAtKB1h3rFXd-EfGuXFNjtkDMC_9e6ZDA_mzIUjze-g,10246
+np_services/stim_computer_theme_changer.py,sha256=ypUWS6FZICpZta4GmtTMmgNvw9Sms-cAKv0WZDzFln4,2034
+np_services/utils.py,sha256=VoCRLg7AGcv0qogMQF1-cBq1dWMOlKURotCwW7PKsns,5770
+np_services-0.1.55.dist-info/METADATA,sha256=6JYj6e8dWE3rj1ikml87051U0og33JS891SSQ127LJc,952
+np_services-0.1.55.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+np_services-0.1.55.dist-info/RECORD,,
