@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: google-generativeai-simple
+Version: 1.0.0
+Summary: A simplification of the google.generativeai functions
+Project-URL: Homepage, https://github.com/C-Kegg/google-generativeai-simple/
+Project-URL: Issues, https://github.com/C-Kegg/google-generativeai-simple/issues
+Author-email: Caden Kegg <cadenkegg@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# A Simplification of the Google Generative AI Studio functions
+This module allows you to run A.I. models from Google's AI Studio with limited programming.
