@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+setup.py
+krzysiudev/__init__.py
+krzysiudev/colors.py
+krzysiudev/license.py
+krzysiudev/updates.py
+krzysiudev/webhook.py
+krzysiudev.egg-info/PKG-INFO
+krzysiudev.egg-info/SOURCES.txt
+krzysiudev.egg-info/dependency_links.txt
+krzysiudev.egg-info/requires.txt
+krzysiudev.egg-info/top_level.txt
