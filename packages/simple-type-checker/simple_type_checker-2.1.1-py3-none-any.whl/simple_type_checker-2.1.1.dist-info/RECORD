@@ -1,0 +1,13 @@
+simple_type_check/__init__.py,sha256=PZW8LJOw9ghZFSXKVMp81d1YcbvDjIKO04ybFZ23_Ek,104
+simple_type_check/callable_info.py,sha256=jpFTvO324KM957k-p6DV_OoUu0OGV5M5NXCB9nDWfdU,1652
+simple_type_check/checker.py,sha256=oS3Ziu1bIo8p--UAbL4KKqso-vX-iulRjsVZZLTsK5Q,528
+simple_type_check/py.typed,sha256=RA7As2lOH7eQPv5iX3k5Y1mOmlpXe_hxf0REB73oXt0,8
+simple_type_check/type_check.py,sha256=wNvoZrNMJ3un9Xnb_fRwfQRPkiDPkOR8R3i0tYbw6uw,4849
+simple_type_check/default/__init__.py,sha256=a3mIThWEpUJz5WChRYZk39gOS92Qx53UrIhHlIYAJV0,54
+simple_type_check/default/basic.py,sha256=Dt7n2jwA0mjaAs6e1O41Xv8oZIgBvQ1maREyUN0LX0U,2074
+simple_type_check/default/complex.py,sha256=donURGNVUNh9wVELuIQxj6IrGgYFCMJwvQ_-0fbVQ7Y,4106
+simple_type_checker-2.1.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+simple_type_checker-2.1.1.dist-info/METADATA,sha256=NsLXDVsuyInlzJz2tGwqJ_byePVDYF7irK4A8HFREjU,2131
+simple_type_checker-2.1.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+simple_type_checker-2.1.1.dist-info/top_level.txt,sha256=MKySro3aRQMNxeKzmEDnYUPhM-JchmeQSDNkJSNS9qQ,18
+simple_type_checker-2.1.1.dist-info/RECORD,,
