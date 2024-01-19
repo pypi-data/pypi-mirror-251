@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: tarts
+Version: 0.11.0
+Summary: Client library for managing language server requests & responses.
+Home-page: https://github.com/billyeatcookies/tarts
+License: MIT
+Keywords: tarts,languageserver
+Author: Billy
+Author-email: billyeatcookies@users.noreply.github.com
+Maintainer: Billy
+Maintainer-email: billyeatcookies@users.noreply.github.com
+Requires-Python: >=3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: dataclasses (>=0.7,<0.8) ; python_version >= "3.6" and python_version < "3.7"
+Requires-Dist: pydantic (>=1.7.3,<2.0.0)
+Project-URL: Repository, https://github.com/billyeatcookies/tarts
+Description-Content-Type: text/markdown
+
+# Tarts LSP Client
+
+Tarts is a client library for managing language server requests & responses. Tarts is the featured lsp integration used in Biscuit code editor.
+
+## Testing
+Tests of Tarts use **pytest**. To run tests, first install the langservers needed, check [workflow file](.github/workflows/test.yml) for further info.
+
+## Acknowledgements
+Tarts is an up-to-date fork of [*sansio_lsp_client*](https://github.com/PurpleMyst/sansio-lsp-client) by Purple Myst. 
+
