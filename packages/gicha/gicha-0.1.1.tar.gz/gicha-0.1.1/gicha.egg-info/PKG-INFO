@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: gicha
+Version: 0.1.1
+Summary: Operating Chalice from Github
+Home-page: https://github.com/hei-school/gicha-cli
+Author: HEI
+Author-email: contact@hei.school
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Gicha CLI
+========
+
+The Python CLI for maintaining a [Gicha stack](https://github.com/hei-school/gicha)... or dozens of them!
