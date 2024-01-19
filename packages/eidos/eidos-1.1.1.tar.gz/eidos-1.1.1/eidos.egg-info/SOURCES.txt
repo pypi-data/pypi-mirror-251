@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+setup.py
+bin/eidos
+eidos/__init__.py
+eidos/create_beam.py
+eidos/parallelize.py
+eidos/spatial.py
+eidos/spectral.py
+eidos/util.py
+eidos.egg-info/PKG-INFO
+eidos.egg-info/SOURCES.txt
+eidos.egg-info/dependency_links.txt
+eidos.egg-info/requires.txt
+eidos.egg-info/top_level.txt
+eidos/data/meerkat_beam_coeffs_ah_zp_dct.npy
+eidos/data/meerkat_beam_coeffs_em_zp_dct.npy
