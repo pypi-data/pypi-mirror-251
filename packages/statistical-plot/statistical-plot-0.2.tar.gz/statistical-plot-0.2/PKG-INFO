@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: statistical-plot
+Version: 0.2
+Summary: Statistical plotting with good aesthetics.
+Home-page: https://github.com/ChenLiu-1996/StatsPlot
+Author: Chen Liu
+Author-email: chen.liu.cl2482@yale.edu
+License: MIT
+Keywords: plotting,plot,statistical plotting,statistical plot
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+
+# Tools for Statistical Plotting
+
+Chen Liu @ Krishnaswamy Lab, Yale University
+
+[![Latest PyPI version](https://img.shields.io/pypi/v/StatsPlot.svg)](https://pypi.org/project/StatsPlot/)
+[![PyPI license](https://img.shields.io/pypi/l/statistical-plot.svg)](https://pypi.python.org/pypi/statistical-plot/)
+[![PyPI download month](https://img.shields.io/pypi/dm/statistical-plot.svg)](https://pypi.python.org/pypi/statistical-plot/)
+[![PyPI download day](https://img.shields.io/pypi/dd/statistical-plot.svg)](https://pypi.python.org/pypi/statistical-plot/)
+[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
+
+Please kindly **Star** [![Github Stars](https://img.shields.io/github/stars/ChenLiu-1996/StatsPlot.svg?style=social&label=Stars)](https://github.com/ChenLiu-1996/StatsPlot/) this repo for better reach if you find it useful.
+
+## Example Plots
+
+### Statistical Bar Plot
+
+<img src="assets/sbplot_example.png" height="300"/>
+
+
+
+## Usage
+
+```
+from stats_plot.barplot import sbplot
+fig = plt.figure(figsize=(12, 6))
+ax = fig.add_subplot(1, 2, 1)
+
+
+```

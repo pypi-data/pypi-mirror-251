@@ -1,0 +1,10 @@
+LICENSE.md
+README.md
+setup.py
+src/__init__.py
+src/barplot.py
+src/statistical_plot.egg-info/PKG-INFO
+src/statistical_plot.egg-info/SOURCES.txt
+src/statistical_plot.egg-info/dependency_links.txt
+src/statistical_plot.egg-info/requires.txt
+src/statistical_plot.egg-info/top_level.txt
