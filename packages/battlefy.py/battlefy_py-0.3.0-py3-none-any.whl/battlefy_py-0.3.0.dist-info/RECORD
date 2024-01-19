@@ -1,0 +1,12 @@
+battlefy/__init__.py,sha256=wy8WFzYpevDCL7GK6wvoaQnJWU8ZxRz-1bayFroRcOk,41
+battlefy/models/__init__.py,sha256=-dMFOARW76rP8IVyis7-9zKi8-rnhVmmDBnYtEloUmI,259
+battlefy/models/tournament/__init__.py,sha256=O2JLZ7PgjrutpuoDmjJ5_mjp_SvsIHJCyFTashwMGxU,5669
+battlefy/models/tournament/match.py,sha256=34OtWRJ-JeFkVpR4_unWFRKiN9pKw8J8FCm5_K1rIIQ,2006
+battlefy/models/tournament/stage.py,sha256=3i4PvFsqgw7vALuGHvjAh7cvoBgmLFr5Wvk5S9NFoqA,1993
+battlefy/models/tournament/standing.py,sha256=dpcWqkJo9NQlGK2AICfbbApxieqfInwpDEY5brXAsMk,3034
+battlefy/models/tournament/team.py,sha256=anpe_TDpyEcUJIehx7Z4PH9NWbslWDE9jK1FH_rAhWs,4031
+battlefy/tournament.py,sha256=VeFuedImlRuSSBGLzJINBDA0xgiSnr1d-4tCMkHDRL0,21761
+battlefy_py-0.3.0.dist-info/LICENSE,sha256=4ChmNrlTAg767sXhEyQVt13etu4ISIgyv12UhpJUdYQ,1081
+battlefy_py-0.3.0.dist-info/METADATA,sha256=FN6DXIOE1tFtvR8wZCQpUJrZ8b9NizlV15Iw1_Y_IjY,1171
+battlefy_py-0.3.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+battlefy_py-0.3.0.dist-info/RECORD,,
