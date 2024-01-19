@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cvbot"
+version = "3.1.6"
+authors = [
+	{ name = "Hisham Moe", email="runeste2018@gmail.com" },
+]
+description = "Visual based desktop automation toolbox. Supports mouse & keyboard control"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+	"Programming Language :: Python :: 3",
+	"License :: OSI Approved :: MIT License",
+	"Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/Runeste3/cvbot"
+Issues = "https://github.com/Runeste3/cvbot/issues"
