@@ -1,0 +1,17 @@
+qsonic/__init__.py,sha256=x61Xgwi-00DW2N3W_yD9BA-7JeO87gOdM2i2JkUnyL4,194
+qsonic/calibration.py,sha256=f4ZFlxXlFGfYuQrc6yLkjdBFBGMr3wbKgNasbhL-w20,5589
+qsonic/catalog.py,sha256=0gViuB6SBKcIa3Ufa1KTjCmKr2DnKeu7Mg4beiDW64g,12282
+qsonic/io.py,sha256=9v-HqkuApaLRA1wPY0RgXdbSV0t7ZwQE3MoLk1A81po,19805
+qsonic/masks.py,sha256=rZ4onSjk_hM-3QRYNZPOsMOqTZ9L1-aIckLd1dXxuY0,13845
+qsonic/mathtools.py,sha256=eQeUZjYyZhsCGM-7LFQIfBQVeCptO7nWOu-SelU7qng,17285
+qsonic/mpi_utils.py,sha256=dJa5CkxdpKe5Xja8aceYJgcQZkG-pCTrUJDDn6L04E0,4693
+qsonic/picca_continuum.py,sha256=rlr_NozhoWdrRyvtIhAyQdG1VLpstR9Pi1p_shGYdh4,56482
+qsonic/spectrum.py,sha256=HeqrrrLU7o_FVIZYD0kUYSQRQb6c5zwse_jYYnmmJWs,30764
+qsonic/scripts/qsonic_calib.py,sha256=r66oIQmTdkGrhE9hkP6JeWdazMXgrbgVFSGbjPMX18U,9520
+qsonic/scripts/qsonic_fit.py,sha256=x9e6jOTwhrVmBaxT1hlFEE4ZIfKG43kQ_O-kjNC01MM,12001
+qsonic-0.8.2.dist-info/LICENSE,sha256=n6dzP_t84h83KbhGu1vcP8zmzWNc6e0jyf6pl8XjbPc,1064
+qsonic-0.8.2.dist-info/METADATA,sha256=h4uNwjnFScqSumIU_8-AdADcxgvwO-CtXlj1Hy5df_E,3468
+qsonic-0.8.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+qsonic-0.8.2.dist-info/entry_points.txt,sha256=VNF2Fp9tFixBVhfJSd-QW2zOzgeicVzaenPD-p7g6X0,110
+qsonic-0.8.2.dist-info/top_level.txt,sha256=kG1xTdAbWuZLGR1P-2yuMJJBSOcJeUFbhqtMOiSEe78,7
+qsonic-0.8.2.dist-info/RECORD,,
