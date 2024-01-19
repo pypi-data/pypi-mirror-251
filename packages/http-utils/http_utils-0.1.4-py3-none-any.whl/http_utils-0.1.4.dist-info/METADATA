@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: http-utils
+Version: 0.1.4
+Author: Your Name
+Author-email: you@example.com
+Requires-Python: >=3.6,<4.0
+License-File: LICENSE
+Requires-Dist: requests <3.0.0,>=2.25.1
+Requires-Dist: urllib3 <2.0.0,>=1.26.4
+

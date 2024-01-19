@@ -1,0 +1,10 @@
+http_utils/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+http_utils/helpers.py,sha256=-yk1mtuBbHsaDcXINJJiRWa3JHtv3z50W8__VHa2FGw,1035
+http_utils/hooks.py,sha256=4bjVap6JqM_3kWWywAo5h6q16uB3K7Byh5zmNDwMVgI,1453
+http_utils/session.py,sha256=jCJ89KMYEWrviFL8kH9ekhdSFJ1ChEUtLJfOad9QeUo,2164
+http_utils/settings.py,sha256=NypUJveMTQ_i5NhypxtnuVuvPS8HILoqPrVbh_RINU0,244
+http_utils-0.1.4.dist-info/LICENSE,sha256=WCuu8M1aHJxkGezNDoZ1VNCBY-pER6u5Y9EUDjOkstg,1070
+http_utils-0.1.4.dist-info/METADATA,sha256=VrzV_lUtX_SPRtcD9XMOC5r65sOkmimyMGOBPimw-0I,232
+http_utils-0.1.4.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+http_utils-0.1.4.dist-info/top_level.txt,sha256=y77JQFdMyaTlkVoyp5nSWqkf7FDnqNJgc3gdnPyQWhc,11
+http_utils-0.1.4.dist-info/RECORD,,
