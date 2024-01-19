@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: yajaw
+Version: 0.0.2.dev2
+Summary: Yet Another Jira API Wrapper
+Project-URL: Documentation, https://github.com/rmrighes/yajaw#readme
+Project-URL: Issues, https://github.com/unknown/rmrighes/issues
+Project-URL: Source, https://github.com/rmrighes/yajaw
+Author-email: rmrighes <rmrighes@users.noreply.github.com>
+License-Expression: MIT
+License-File: LICENSE
+Keywords: api,jira
+Classifier: Development Status :: 1 - Planning
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.11
+Requires-Dist: asyncio
+Requires-Dist: httpx
+Requires-Dist: syncasync
+Description-Content-Type: text/markdown
+
+# YAJAW - Yet Another Jira API Wrapper
+
+[![PyPI - Version](https://img.shields.io/pypi/v/yajaw.svg)](https://pypi.org/project/yajaw)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/yajaw.svg)](https://pypi.org/project/yajaw)
+
+-----
+
+**Table of Contents**
+
+- [Introduction](#introduction)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+
+## Introduction
+
+There are several Python libraries to access Atlassian Jira, with just a few of them barely usable in the real world. Those few that pass the bar are usually designed using object oriented paradigm. I personaly prefer a functional paradigm when dealing with data-centric applications. Compound that with the need to extract, transform, and load the data in an effecient way and you'll understand why I chose to create my own library package.
+
+The intention is to provide a package where we can access and manipulate the data in the Jira ecosystem primarily for project analysis and dashboarding. Focus in on read-only actions from the available REST APIs, using concurrent programming as much as possible.
+
+API calls to modify the data in Jira are not excluded from the scope of the library package. They are just not prioritized to be addressed now.
+
+## Installation
+
+```console
+pip install yajaw
+```
+
+## Usage
+
+Under design...
+
+## License
+
+`yajaw` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
