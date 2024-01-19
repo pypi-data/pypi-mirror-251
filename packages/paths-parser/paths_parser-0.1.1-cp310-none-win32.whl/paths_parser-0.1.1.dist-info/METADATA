@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: paths_parser
+Version: 0.1.1
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+# paths-parser
+
+```
+pip install paths_parser
+```
+
+```py
+import paths_parser
+
+with open("../Case1-path.txt", "r") as f:
+    src = f.read()
+
+print(len(paths_parser.parse(src)))
+```
