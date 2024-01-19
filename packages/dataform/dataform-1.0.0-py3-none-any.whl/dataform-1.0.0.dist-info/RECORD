@@ -1,0 +1,12 @@
+dataform/__init__.py,sha256=rx9r5v_jH4UwacGkBJMZYGiFjGoN_x12EgcwSWax0hE,1385
+dataform/audio.py,sha256=1n6SU5Ll7UKynMFlE1uKMjkzfHvYjElfwEaxoCuvM24,4950
+dataform/core.py,sha256=ekT6uDVZpQK5VrNJECcStlPwvhm4pCT93xfF0lwrJ_g,2422
+dataform/image.py,sha256=1mBRMMEeQAFFETl0WKO1B81lGRKKsFpBSRLZk7F8GAY,4026
+dataform/text.py,sha256=_KUZxWAorAc2cJET7FL9QIqamWkbnpysd5zpMRjRoP8,4643
+dataform/version.py,sha256=U5qF0h8GrxUzBQTP45mO9giUKpuhnxSlmTGmA8a4Q4w,1343
+dataform/video.py,sha256=ILyeT9IjSjhUUvJOZ1dDEZdQrg4Kqwg41GvqCe9-tLU,3674
+dataform-1.0.0.dist-info/LICENSE,sha256=U7gVF-Ob_0mjnfuIlZAJWzaVZ8M51DqvEqX-7gQoE14,1086
+dataform-1.0.0.dist-info/METADATA,sha256=riKEtZiFQS8P4ndAQSiPlZykIQAmv4R998NPSw9_hls,1232
+dataform-1.0.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+dataform-1.0.0.dist-info/top_level.txt,sha256=UIvf1AG2ejwi_KSf5QA9qARsxlB5kyB9JRt846Y5INw,9
+dataform-1.0.0.dist-info/RECORD,,
