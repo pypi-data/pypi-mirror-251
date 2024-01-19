@@ -1,0 +1,9 @@
+segment_torch/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+segment_torch/attention_unet.py,sha256=w9PrOh0X16DAtAkM6GGKXi75W4ENcAQwitQxJ-XARuk,24430
+segment_torch/augment.py,sha256=lNjpbM2tCstybwiMyD2lHrLFUw4vgamsVT2kjXh2ksc,599
+segment_torch/unet.py,sha256=voG5C5E-xfsvASUdsfiN47f7KmXDyJ-Nc7ivuWNyDes,15985
+segment_torch/utils.py,sha256=uoHkL1fbDB_kaPJZ9Cm4ypewfwiPQ1pb5J0D9X0tEH0,609
+segment_torch-0.0.10.dist-info/METADATA,sha256=eoTiCnmgrzDQZV6IYr8SPCsq65oB8WKMekHHmFSS64M,1975
+segment_torch-0.0.10.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+segment_torch-0.0.10.dist-info/top_level.txt,sha256=dPh4XAF4YZSeppQNIoRIIorkhIdmDzlchMrFtp6xtRE,14
+segment_torch-0.0.10.dist-info/RECORD,,
