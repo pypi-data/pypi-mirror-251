@@ -1,0 +1,16 @@
+saasops/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+saasops/calc.py,sha256=QOtUHzm1KCuqD9A8WXWJfkGMPUhWnRtN7JvOeoNYl0k,12046
+saasops/classes.py,sha256=aEDAiQM23UCvzYf7DQm6gC-oHSzRSkxg6VSYwgulzoo,7905
+saasops/constants.py,sha256=H91_bHaPxnmc8gpKkYFh_flI6_ZTTX7uv6LylC3f28Y,241
+saasops/database.py,sha256=5w35UdBIYSMDosmOyEi_y5HFnDsT2owyZYXExwP6NQ4,9207
+saasops/display.py,sha256=C8fEgPckQTP3rfDqa8MQoqdbkTMddUp3ISP-MFxlwik,15287
+saasops/export.py,sha256=dnJpnH1aSuoQVaB4qprpG9anLDRxPwdR3IEtKlRbtgc,6667
+saasops/main.py,sha256=-dEGtbsyrwpH_f8vU_os4dFSK-VLMMw1cgVRg8Smvo8,15759
+saasops/old_calc.py,sha256=1qDrxgG9J9AqnzlTKDHWMtggL4Ofj6lJaw8OlItQZQc,31118
+saasops/utils.py,sha256=m1y3C_USEHpp761zGoOr3KR21BV4M7bB711_fNGBP8M,320
+saasops/visualization.py,sha256=Qzdgdvwn2PoIe-uGY20uko2U-SKPWCzOLG-tLdHEPOM,19329
+saasops-0.1.0.dist-info/LICENSE,sha256=hG-F459o0aAbg8XEeRgMoPpj815GEcLa_C2NVltpetE,1068
+saasops-0.1.0.dist-info/METADATA,sha256=FZSimfP1FB45kV8ALMzSWoNyvUrti_WKyB_bKR7thYM,5675
+saasops-0.1.0.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+saasops-0.1.0.dist-info/entry_points.txt,sha256=hvjiO0uuvz17NUs9Y6Tt6Chl7Jbl_PGOCRrJu0_Otyo,44
+saasops-0.1.0.dist-info/RECORD,,

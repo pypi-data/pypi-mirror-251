@@ -1,0 +1,3 @@
+[console_scripts]
+saasops=saasops.main:app
+
