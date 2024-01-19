@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: aeotrade-log
+Version: 1.0
+Summary: log config
+Author: Hero
+Author-email: wanghao@aeotrade.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6

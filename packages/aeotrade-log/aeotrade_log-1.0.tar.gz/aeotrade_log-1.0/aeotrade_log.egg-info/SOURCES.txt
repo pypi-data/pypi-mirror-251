@@ -1,0 +1,6 @@
+README.md
+setup.py
+aeotrade_log.egg-info/PKG-INFO
+aeotrade_log.egg-info/SOURCES.txt
+aeotrade_log.egg-info/dependency_links.txt
+aeotrade_log.egg-info/top_level.txt
