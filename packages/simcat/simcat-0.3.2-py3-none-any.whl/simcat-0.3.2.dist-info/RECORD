@@ -1,0 +1,10 @@
+simcat/__init__.py,sha256=_d31s1QjHXBcei4wy8iahSnz41PYKRwe7rCyddnh284,334
+simcat/agents.py,sha256=wJKUVGc1x5BIsucNoSksejDc5PtGpzSJS_8zAYf8jXQ,5041
+simcat/interaction.py,sha256=HeQdOHMuQJsBSb9CsmjVcjQHYowBS1qmGwUGQRm-mCU,18259
+simcat/matrix.py,sha256=l7IHcDSnGNTjAwPMHjjzqObUiHfCcr9_pMIevEXUCMU,387
+simcat/utils.py,sha256=q8O8BCObl6llWgEleJaTGa5dKfO8z7lkh8Upv-tuGF4,2448
+simcat-0.3.2.dist-info/LICENSE.txt,sha256=dgibZTNZLsAmJgGAgyQ0k2WH--7SYrN0qtFafqzECMc,1069
+simcat-0.3.2.dist-info/METADATA,sha256=VZYE3vVVeD2fGGOOCCIlRG7CFJn9vWgQD6EkLy1gY58,15045
+simcat-0.3.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+simcat-0.3.2.dist-info/top_level.txt,sha256=41m7xmeOLOzB9-Xle_dBhBo1Y9KC2JUzrM4sEbNnh3k,7
+simcat-0.3.2.dist-info/RECORD,,
