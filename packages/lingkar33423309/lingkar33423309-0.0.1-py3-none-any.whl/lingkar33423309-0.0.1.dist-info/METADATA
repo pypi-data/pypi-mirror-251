@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: lingkar33423309
+Version: 0.0.1
+Summary: A small example package
+Author-email: Faranaya <adhistinaya@gmail.com>
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Issues, https://github.com/pypa/sampleproject/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Nama Proyek Anda
+
+Proyek ini berisi fungsi untuk menghitung luas lingkaran
+
+# Instalasi
+
+Gunakan pip untuk menginstal proyek ini.
+
+```bash
+pip install lingkar33423309
+
+Contoh Penggunaan Proyek Ini
+
+from lingkar33423309.my_module import luaslingkar
+
+result = hitung_luas_lingkaran(jari_jari)
+print(result)
