@@ -1,0 +1,10 @@
+setup.py
+logical_package.egg-info/PKG-INFO
+logical_package.egg-info/SOURCES.txt
+logical_package.egg-info/dependency_links.txt
+logical_package.egg-info/requires.txt
+logical_package.egg-info/top_level.txt
+src/__init__.py
+src/client.py
+src/database.py
+src/main.py
