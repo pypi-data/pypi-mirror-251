@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: tweepy-self
+Version: 0.1.0
+Summary: Twitter (selfbot) for Python!
+Author: Alen
+Author-email: alen.kimov@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+# Tweepy-self
+
+https://github.com/alenkimov/better_automation
