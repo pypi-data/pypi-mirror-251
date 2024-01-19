@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: trainerlog
+Version: 0.3.0
+Summary: Nice colorful log with TRAIN level too
+Home-page: https://gitlab.com/ninpnin/trainlog
+License: MIT
+Author: ninpnin
+Author-email: vainoyrjanainen@icloud.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: colorlog
+Project-URL: Repository, https://gitlab.com/ninpnin/trainlog
+Description-Content-Type: text/markdown
+
+# trainlog
+
+Nice colorful logging module, which also includes an extra level TRAIN for model train etc.
+
+```py
+from trainerlog import get_logger
+
+logger = get_logger(name="ebun", level="DEBUG")
+
+logger.train("Training step complete")
+logger.debug("this is just a debug message")
+logger.info("This is supposed to be more important")
+logger.warning("Somethings maybe not right")
+logger.error("Something went wrong")
+logger.critical("Something went very wrong")
+```
+
+![](https://gitlab.com/ninpnin/trainlog/-/raw/main/example.png)
