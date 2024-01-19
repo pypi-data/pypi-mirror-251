@@ -1,0 +1,11 @@
+varys/__init__.py,sha256=9Cjbcqdjw_me8qxZG8QvJUkR7Cob1N2DiOp-VuyI9K0,35
+varys/consumer.py,sha256=sqJ4vgLBQbWhGMvUqL7BCiuqOPyTkgNPUDMb3AOHTHs,5134
+varys/controller.py,sha256=bFMUTZy22-VTHLvgohBEvJI-PloDhJ5CyNlbm9FgtF0,8918
+varys/process.py,sha256=GvQSnStMranDZBMekGPJXJZzUW_G9jcWEY-GGXP5lNg,5911
+varys/producer.py,sha256=09sdDjfpwuYpvQ-3pCuviDjUQBh4JEt0zl0xwH_T2PM,5474
+varys/utils.py,sha256=8EJ4FfT2_CE7bevhVvcYHaYWBcIZ0d3Q09S4Ye53g4E,1774
+varys_client-0.1.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+varys_client-0.1.0.dist-info/METADATA,sha256=v2C9eSKdvOvbWvOzJ8gx8CngB3OeDpxNrVzrNRyl-ak,4150
+varys_client-0.1.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+varys_client-0.1.0.dist-info/top_level.txt,sha256=WI_ePn99NRXwdDjr-mp65jDNIm7rVaVfuB5Zxluzkbc,6
+varys_client-0.1.0.dist-info/RECORD,,
