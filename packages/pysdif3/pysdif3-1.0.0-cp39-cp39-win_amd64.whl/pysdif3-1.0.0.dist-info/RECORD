@@ -1,0 +1,14 @@
+pysdif/__init__.py,sha256=gbdJAw8OsfvBEOLAQgS9P-dxvrQq2AiQPbnzri7ITzw,515
+pysdif/_pysdif.c,sha256=0qbq0L3LGz5U2YYPF4L9ZPW9palQ-7KpXnXaW7BMK0c,2489864
+pysdif/_pysdif.cp39-win_amd64.pyd,sha256=9AXVMVDPYHRDjM5noUHbNewrOsBmo7rIKdy6iLjRPP0,450560
+pysdif/bench.py,sha256=v3hEUCEX3vYGyAaC7ZYTb9erF5Ew_m9T6zkXs4Fzrtw,1492
+pysdif/markers.py,sha256=RUJraapqdd28ILVaF_u2y6zP7-bQY_N2aOaMEnTba6Q,2219
+pysdif/tools.py,sha256=G3h41GjOvo366hLT_R3-dEggH29PGYREA3HkuKOnZDQ,9139
+pysdif/version.py,sha256=_5GVbz2OOapAHBITVZiKMcBIYp4foCUvMpW_n2aqx8M,25
+pysdif/data/SdifTypes.STYP,sha256=9adSVhDyS5kWPzRSQVIb9BtymLxfs-mUyU2NPT_26Es,3574
+pysdif3-1.0.0.data/scripts/sdifinfo,sha256=VX_WGTG4hBR9Etck4za7XwtC_06ceE6PO9gr2lyJvsw,1484
+pysdif3-1.0.0.dist-info/LICENSE.txt,sha256=Czg9WmPaZE9ijZnDOXbqZIftiaqlnwsyV5kt6sEXHms,35821
+pysdif3-1.0.0.dist-info/METADATA,sha256=_y1wTFbbT3A5hnhUrNMtfH_0br24B11VxarrU_wuaWc,5305
+pysdif3-1.0.0.dist-info/WHEEL,sha256=GZFS91_ufm4WrNPBaFVPB9MvOXR6bMZQhPcZRRTN5YM,100
+pysdif3-1.0.0.dist-info/top_level.txt,sha256=fRwUm8FfW7tlYIj2iH0uy3tPfsP2LohZ9PzYbjWyjOg,7
+pysdif3-1.0.0.dist-info/RECORD,,
