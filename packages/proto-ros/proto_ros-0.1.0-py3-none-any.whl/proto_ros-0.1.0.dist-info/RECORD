@@ -1,0 +1,11 @@
+proto_ros/__init__.py,sha256=bi5QV55qZxyBHTfnK8tQtv7azuZgvznBJOSw6LZCBEo,95
+proto_ros/msg2proto.py,sha256=E6eYSTUtMEL-4FsNxJzGzAcLh6EdlrxYF0yRthxvwAM,12301
+proto_ros/proto2msg.py,sha256=qS7pxpdH9Le-Ras-nSqBwBTfR2GAVq4LI8GDuBIOY7Q,2317
+proto_ros/protoc_gen_json.py,sha256=-JB5WeO7QLVRLjtLNIBeRHNJQDsQpwROvIXtFXuNbmM,4347
+proto_ros/protoc_gen_msg.py,sha256=okGePoYJd0fqhEYWVFxQa2DLzTd8gyIOfTxE8ldqZSA,6928
+proto_ros-0.1.0.dist-info/LICENSE,sha256=okxG-RN7NDB7KixZXQ7nym9Rol4Y9ICfNCcQc7hV3yw,1070
+proto_ros-0.1.0.dist-info/METADATA,sha256=zLiGb5cnIGnSFIqw8lrOsxaX1uow1xNnDLRE_YgWbQU,2928
+proto_ros-0.1.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+proto_ros-0.1.0.dist-info/entry_points.txt,sha256=2dEbUGn0Xvy3USk0b3Kp0cWb_2kAXwMuuQh9cHn741w,188
+proto_ros-0.1.0.dist-info/top_level.txt,sha256=OXu5ZCSM2Z16CMGY-p0ZzRYOm5B6gXboeA6taImstEM,10
+proto_ros-0.1.0.dist-info/RECORD,,

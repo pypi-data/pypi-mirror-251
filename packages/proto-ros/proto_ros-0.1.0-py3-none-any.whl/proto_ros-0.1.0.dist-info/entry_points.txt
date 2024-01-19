@@ -1,0 +1,5 @@
+[console_scripts]
+msg2proto = proto_ros.msg2proto:main
+proto2msg = proto_ros.proto2msg:main
+protoc-gen-json = proto_ros.protoc_gen_json:main
+protoc-gen-msg = proto_ros.protoc_gen_msg:main
