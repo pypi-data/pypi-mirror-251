@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+Kahi_scienti_works.egg-info/PKG-INFO
+Kahi_scienti_works.egg-info/SOURCES.txt
+Kahi_scienti_works.egg-info/dependency_links.txt
+Kahi_scienti_works.egg-info/requires.txt
+Kahi_scienti_works.egg-info/top_level.txt
+kahi_scienti_works/Kahi_scienti_works.py
+kahi_scienti_works/__init__.py
+kahi_scienti_works/_version.py
