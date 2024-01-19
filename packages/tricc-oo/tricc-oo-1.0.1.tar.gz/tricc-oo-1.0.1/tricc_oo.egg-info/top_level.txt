@@ -1,0 +1,5 @@
+diagrams
+dist
+locales
+tricc
+venv
