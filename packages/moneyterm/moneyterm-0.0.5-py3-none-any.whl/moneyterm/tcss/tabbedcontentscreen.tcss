@@ -1,0 +1,362 @@
+TabbedContentScreen{
+    layout: grid;
+    grid-size: 1 2;
+    grid-rows: auto 1fr;
+
+}
+
+TabbedContentScreen OverviewWidget {
+    height: auto;
+}
+
+TabbedContentScreen OverviewWidget Horizontal {
+    height: auto;
+    width: 100%;
+}
+
+TabbedContentScreen OverviewWidget Static {
+    width: 1fr;
+}
+
+TabbedContent ContentSwitcher, DataTable{
+    height: 1fr;
+}
+
+TabbedContentScreen Labeler {
+    height: auto;
+}
+
+TabbedContentScreen #labeler_grid{
+    grid-size: 4 13;
+    grid-rows: auto;
+    grid-columns: 15 25 20 30;
+    border: round $secondary;
+    border-title-align: center;
+    
+}
+
+TabbedContentScreen #type_select_bar {
+    height: auto;
+}
+
+TabbedContentScreen #scope_select_bar {
+    height: auto;
+}
+
+TabbedContentScreen #manage_type_select{
+    height: auto;
+    width: 20;
+}
+
+#label_create_remove_buttons{
+    column-span: 2;
+    width: 100%;
+}
+
+#label_create_remove_buttons Button {
+    width: 15;
+    margin-left: 1;
+    min-width: 4;
+}
+
+#match_fields_label {
+    column-span: 3;
+}
+
+#matches_label {
+    column-span: 2;
+}
+
+.match_field_input{
+    column-span: 2;
+}
+
+#memo_field_bar {
+    column-span: 2;
+    width: 100%;
+    
+}
+
+#memo_input{
+    width: 34;
+}
+#memo_exact_match_checkbox {
+    width: auto;
+}
+
+#payee_field_bar {
+    column-span: 2;
+    width: 100%;
+}
+
+#payee_input{
+    width: 34;
+}
+#payee_exact_match_checkbox {
+    width: auto;
+}
+
+#amount_field_bar {
+    column-span: 2;
+    width: 100%;
+}
+
+#amount_lower_bound_input {
+    width: 40%;
+    margin-right: 1;
+}
+
+#amount_upper_bound_input {
+    width: 40%;
+}
+
+#matches_label {
+    width: 100%;
+    text-align: center;
+}
+#matches_option_list{
+    row-span: 5;
+    height: 100%;
+}
+
+#section_split_rule{
+    column-span: 4;
+}
+#match_name_row {
+    column-span: 4;
+
+}
+#match_name {
+    width: auto;
+}
+#match_name_input{
+    width: 20;
+}
+#color_label {
+    width: auto;
+
+}
+#color_input{
+    width: 20;
+}
+#alias_label {
+    width: auto;
+
+}
+#alias_input{
+    width: 20;
+}
+
+#save_preview_buttons{
+    column-span: 4;
+    padding-top: 1;
+
+}
+
+#save_button{
+    width: 20%;
+}
+
+#preview_button{
+    width: 20%;
+    margin-left: 2;
+}
+
+Button:focus {
+    text-style: bold;
+}
+
+#preview_table_horizontal {
+    height: 12;
+}
+
+Labeler #transactions_table {
+    height: 100%;
+    width: 100%;
+    border: round $secondary;
+    border-title-align: left;
+
+}
+
+TabbedContentScreen ContentSwitcher, TrendSelector {
+    height: 1fr;
+}
+
+TrendSelector #trend_settings_vertical {
+    width: auto;
+    height: auto;
+    border: round $secondary;
+    border-title-align: left;
+}
+
+TrendSelector #selectors_horizontal {
+    width: auto;
+    height: auto;
+}
+
+TrendSelector #dates_horizontal {
+    width: auto;
+    height: auto;
+    padding-top: 1;
+    
+}
+
+TrendSelector Select {
+    width: 30;
+    height: auto;
+}
+
+TrendSelector Input {
+    width: 16;
+    height: auto;
+    margin-right: 1;
+}
+
+
+TrendAnalysis {
+    layout: grid;
+    grid-size: 2 2;
+    grid-columns: auto 1fr;
+    grid-rows: auto auto;
+    border: double $primary-lighten-3;
+    border-title-align: left;
+    border-title-color:  $secondary-darken-1;
+    height: 30;
+}
+
+
+
+TrendAnalysis #stats_table_static {
+    width: auto;
+    height: auto;
+    margin-bottom: 1;
+    
+}
+
+TrendAnalysis #button_container {
+    width: 100%;
+    height: 100%;
+    align: left bottom;
+}
+
+#table_horizontal_scroll {
+    width: 100%;
+    height: auto;
+    align: center middle;    
+}
+
+TrendAnalysis #bar_graph_horizontal_scroll {
+    width: 100%;
+    height: auto;
+
+}
+
+#bar_graph_static {
+    width: 100%;
+    height: 20;
+    content-align: center middle;
+    align: center middle;
+    border: solid $success-darken-2;
+
+    
+}
+
+TrendAnalysis #stats_by_month_table_static {
+    width: auto;
+    height: auto;
+    content-align: center top;
+    padding-bottom: 1;
+    
+    
+}
+
+#remove_analysis_button{
+    
+   
+}
+TabbedContentScreen ContentSwitcher, Budgeter {
+    height: 1fr;
+}
+
+Budgeter #budgeter_vertical {
+    height: auto;
+}
+
+Budgeter #budget_tables_vertical_scroll {
+    border: double $primary-lighten-3;
+}
+
+BudgetBuilder {
+    height: auto;
+    width: auto;
+    border: round $secondary;
+    border-title-align: left;
+    border-title-color:  $secondary-darken-1;
+    
+}
+
+BudgetBuilder #builder_hz {
+    width: auto;
+    height: auto;
+}
+
+#expense_select {
+    width: 30;
+    height: auto;
+}
+
+
+BudgetBuilder #save_budgets_button {
+    margin-right: 1;
+}
+
+BudgetBuilder #monthly_budget_input {
+    width: 20;
+    height: auto;
+}
+
+TabbedContentScreen ContentSwitcher, Config {
+    height: 1fr;
+}
+
+Config #import_horizontal{
+    height: auto;
+    width: 100%;
+    padding-bottom: 1;
+}
+
+Config #import_directory_input{
+    width: 50;
+}
+
+Config #import_extension_input {
+    width: 14;
+}
+
+Config #alias_horizontal{
+    height: auto;
+    width: 100%;
+    padding-bottom: 1;
+}
+
+Config #alias_account_select {
+    width: 30;
+}
+
+Config #alias_account_input {
+    width: 30;
+}
+
+Config #default_account_horizontal{
+    height: auto;
+    width: 100%;
+    padding-bottom: 1;
+}
+
+Config #default_account_select {
+    width: 30;
+}
+
+Config #import_transactions_button {
+    margin-left: 1;
+}

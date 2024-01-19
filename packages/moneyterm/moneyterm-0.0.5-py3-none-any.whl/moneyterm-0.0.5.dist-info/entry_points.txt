@@ -1,0 +1,3 @@
+[console_scripts]
+moneyterm=moneyterm.__main__:main
+
