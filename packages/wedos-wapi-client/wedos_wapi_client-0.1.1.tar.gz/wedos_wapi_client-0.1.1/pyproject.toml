@@ -1,0 +1,48 @@
+[tool.autoflake]
+ignore-init-module-imports = true
+in-place = true
+recursive = true
+remove-all-unused-imports = true
+remove-unused-variables = true
+
+[tool.black]
+line-length = 120
+
+[tool.isort]
+combine_as_imports = true
+line_length = 120
+profile = "black"
+
+[tool.poetry]
+name = "wedos-wapi-client"
+version = "0.1.1"
+description = "WEDOS WAPI client"
+authors = ["Jakub Dorňák <jakub.dornak@qbsoftware.cz>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/qbsoftware/wedos-wapi-client"
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Operating System :: POSIX",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "*"
+
+
+[tool.poetry.group.dev.dependencies]
+autoflake = "*"
+black = "*"
+isort = "*"
+mypy = "*"
+types-requests = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
