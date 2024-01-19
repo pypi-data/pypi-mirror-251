@@ -1,0 +1,13 @@
+ped/__init__.py,sha256=iKekGjETZtQBiLrGt7-dOOPYskm6qoITwToOXcLEYFs,7522
+ped/guess_module.py,sha256=hqr6NKR4lUSkUS67vpW8zRXyOPnqsIQMyG_9FLnHSvU,4429
+ped/install_completion.py,sha256=dsa0oCt5CYqaEBHHvOx_VUR05qVWAkeouB4vURgA2rw,1050
+ped/ped_bash_completion.sh,sha256=I_Mkou6Tw22bvJKFll7JHUYNKyV6_uiKUjPSYSpV4JI,661
+ped/ped_zsh_completion.zsh,sha256=OYHcICgRhmWlFNVLCO9Xak0vegOIZ50X9pfAm20lLjM,862
+ped/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ped/pypath.py,sha256=U0oKhUT5iBhYHLp9E4wQYBimFxjT6TaEMYFnXC0t9o0,770
+ped/style.py,sha256=vT-hHXhu1BwGJINntQzd9nIS5SLMQ4SjPMjyZWJEWZI,839
+ped-3.0.0.dist-info/entry_points.txt,sha256=FNJFB2kqGBUa5eyVIZNYAZ1w9NRsw7OtKTtyW5V90p0,32
+ped-3.0.0.dist-info/LICENSE,sha256=sSoXShL15Q-YL5ycbSUM8F8FPTPfYH0-Yj8FIoUW_9M,1052
+ped-3.0.0.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+ped-3.0.0.dist-info/METADATA,sha256=jbbicmhYYX_zUqJSI2iWS6rfurELXKsZxqxqwC74Cww,5513
+ped-3.0.0.dist-info/RECORD,,
