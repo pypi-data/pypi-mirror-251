@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: hebill_html_document
+Version: 0.1
+Summary: Python Html Generator
+Home-page: https://py.hebill.net/he_html_document
+Author: He Bill
+Author-email: hebill@me.com
+Requires-Python: >=3.9
