@@ -1,0 +1,2 @@
+pulp-cli<0.24.0.dev,>=0.23.1
+pulp-glue-gem==0.3.0
