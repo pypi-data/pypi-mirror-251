@@ -1,0 +1,10 @@
+gradio_testfallback/__init__.py,sha256=DGvBkHYq101eFmax4E1bpQh0gHeKq_g8BZ7Wbf5W660,68
+gradio_testfallback/testfallback.py,sha256=F64Ww9LQ07L6Jyt6g7TeYV5Gj72QTqP2Eb5AAet_OAw,339
+gradio_testfallback/testfallback.pyi,sha256=SG4atm9pPXYhC5b3j8qZqaDGV16jmGebFlFbjlZeZl8,375
+gradio_testfallback/templates/component/index.js,sha256=03gGeDt1F9yQdrGGodhyQ3wrbVZn0rEYUe0F7LQbdg0,57992
+gradio_testfallback/templates/component/style.css,sha256=29NbbOUI7VY3SW9GmP2cX_8Wkprub71U9gfxTuraPsg,13304
+gradio_testfallback/templates/example/index.js,sha256=AcEKu2d4hjZyQsKf4pvOMqUT-QB_uFGbfbtGYc7mf9o,1549
+gradio_testfallback/templates/example/style.css,sha256=Aj4k-S41TV83pot-J9j9Fi2UonrXHFC1Jl4Zb1xaYo4,61
+gradio_testfallback-0.0.3.dist-info/METADATA,sha256=TVdKAODHT_eSsd8GdBTzysgir0h2cVZ7ZKF0aqIpSQo,4742
+gradio_testfallback-0.0.3.dist-info/WHEEL,sha256=mRYSEL3Ih6g5a_CVMIcwiF__0Ae4_gLYh01YFNwiq1k,87
+gradio_testfallback-0.0.3.dist-info/RECORD,,
