@@ -1,0 +1,1126 @@
+tasks:
+  SID_modelers:
+    open_class: ''
+    versions:
+    - KIA_SID_ESXGBR2
+  ad_lof:
+    open_class: sklearn.neighbors.LocalOutlierFactor
+    versions:
+    - ADLOF
+    - ADLOF_CAL
+  adaboost_class:
+    open_class: sklearn.ensemble.AdaBoostClassifier
+    versions:
+    - ABC
+  adaboost_reg:
+    open_class: sklearn.ensemble.AdaBoostRegressor
+    versions:
+    - ABR
+  agglomerative:
+    open_class: sklearn.cluster.AgglomerativeClustering
+    versions:
+    - AGGLOMERATIVE_CL
+  anomaly_blend:
+    open_class: ''
+    versions:
+    - ADBLEND
+  anomaly_xgb:
+    open_class: ''
+    versions:
+    - ADXGB
+    - ADXGB2
+    - ADXGB2_CAL
+  autoencoder_modeler:
+    open_class: ''
+    versions:
+    - KERAS_AUTOENCODER
+    - KERAS_AUTOENCODER_CAL
+  autoencoder_variational_modeler:
+    open_class: ''
+    versions:
+    - KERAS_VARIATIONAL_AUTOENCODER
+    - KERAS_VARIATIONAL_AUTOENCODER_CAL
+  avg:
+    open_class: ''
+    versions:
+    - AVG2
+  baseline_imputation:
+    open_class: ''
+    versions:
+    - BASELINE_DTMS
+  best_transformer:
+    open_class: sklearn.preprocessing.PowerTransformer
+    versions:
+    - BTRANSF3
+    - BLOGPOL
+    - BTRANSF4
+    - BLOGPOL2
+    - BTRANSF_CLIP_NO_POLY
+    - BTRANSF6
+    - BTRANSF6T
+  bias_mitigation_preprocessing_reweighing:
+    open_class: ''
+    versions:
+    - BIAS_MITIGATION_PREPROCESSING_REWEIGHING
+  bias_mitigation_rejection_option:
+    open_class: ''
+    versions:
+    - BIAS_MITIGATION_POSTPROCESSING_REJECTION_OPTION
+  bias_mitigation_rejection_option_multi_margin:
+    open_class: ''
+    versions:
+    - BIAS_MITIGATION_POSTPROCESSING_REJECTION_OPTION_MULTI_MARGIN
+  binning:
+    open_class: sklearn.preprocessing.KBinsDiscretizer
+    versions:
+    - BINNING
+    - GS
+  blend:
+    open_class: ''
+    versions:
+    - AVGBL
+    - MEDBL
+    - RANKBL
+    - MAEBL
+  calib:
+    open_class: sklearn.isotonic.IsotonicRegression
+    versions:
+    - CALIB
+    - CALIB2
+    - ISOCAL
+    - ISOCAL2
+    - SWCAL
+  cart_class:
+    open_class: sklearn.tree.DecisionTreeClassifier
+    versions:
+    - DTC
+    - DTC_ML
+  cart_reg:
+    open_class: sklearn.tree.DecisionTreeRegressor
+    versions:
+    - DTR
+  cat_converters_one_hot:
+    open_class: sklearn.preprocessing.OneHotEncoder
+    versions:
+    - DM2
+    - PDM2
+    - DM3
+    - PDM3
+    - CCAT
+    - PCCAT
+    - CATEMB
+    - VWCAT
+  cat_converters_ordinal:
+    open_class: category_encoders.leave_one_out.LeaveOneOutEncoder
+    versions:
+    - ORDCAT2
+    - ORDCAT
+  clip:
+    open_class: sklearn.preprocessing.QuantileTransformer(output_distribution='normal')
+    versions:
+    - CLIP
+  cnn_text_modelers:
+    open_class: ''
+    versions:
+    - KERAS_CNN_TEXT_R
+    - KERAS_CNN_TEXT_C
+    - KERAS_CNN_TEXT_MULTIC
+    - KERAS_CNN_TEXT_MULTILABELC
+  column_selection:
+    open_class: sklearn.compose.make_column_selector
+    versions:
+    - MCPICK
+    - SCPICK
+    - SCPICK2
+  compartment:
+    open_class: ''
+    versions:
+    - SIRFEATS
+    - SEIRFEATS
+  convert:
+    open_class: ''
+    versions:
+    - GEO_IN
+  count_dict_task:
+    open_class: ''
+    versions:
+    - CDICT2SP
+  cred_converters:
+    open_class: category_encoders.leave_one_out.LeaveOneOutEncoder
+    versions:
+    - CRED1b1
+    - CRED1b1_V2
+    - CRED1
+  diff:
+    open_class: ''
+    versions:
+    - DIFF3
+  dmad:
+    open_class: ''
+    versions:
+    - ADDMAD
+    - ADDMAD_CAL
+  document_text_extractor:
+    open_class: ''
+    versions:
+    - DOCUMENT_TEXT_EXTRACTOR
+  dummy_class:
+    open_class: sklearn.dummy.DummyClassifier
+    versions:
+    - RC
+    - MAJORITY_CLASS_CLASSIFIER_MULTILABEL
+  dummy_reg:
+    open_class: sklearn.dummy.DummyRegressor
+    versions:
+    - RR
+  dummy_ts:
+    open_class: ''
+    versions:
+    - NAIVEPRED
+    - NAIVEPREDBINARY
+  eq_class:
+    open_class: gplearn.genetic.SymbolicClassifier
+    versions:
+    - EQC
+    - EQ_ESXGBC
+    - EQC_SIMPLE
+    - EQFDC
+  eq_reg:
+    open_class: gplearn.genetic.SymbolicRegressor
+    versions:
+    - EQR
+    - EQ_ESXGBR
+    - EQR_SIMPLE
+    - EQFDR
+  ets:
+    open_class: ''
+    versions:
+    - AUTOETS
+  external_prediction_model:
+    open_class: ''
+    versions:
+    - EXTMODEL
+  fasttext_embeddings:
+    open_class: ''
+    versions:
+    - TXTEM1
+  feature_selectors:
+    open_class: ''
+    versions:
+    - FS_LASSO
+    - FS_XL_LASSO
+    - FS_RFC
+    - FS_RFR
+    - FS_RFCDR
+    - FS_RFRDR
+  feature_selectors2:
+    open_class: ''
+    versions:
+    - FS_LASSO2
+    - FS_XL_LASSO2
+    - FS_RFC2
+    - FS_RFR2
+    - FS_RFCDR2
+    - FS_RFCDR2_MULTILABEL
+    - FS_RFRDR2
+    - FS_RFCDR_LASSO
+    - FS_RFRDR_LASSO
+  features:
+    open_class: ''
+    versions:
+    - TRENDFEATS
+    - FDFEATS
+    - MODEL_REGIME_FEATS
+    - FDFEATST
+    - FDFEATSPDM3
+    - MSFEATS
+    - MSFEATS2
+    - MODEL_GROUP_FEATS
+    - BASELINE
+    - BASELINE2
+    - BASELINE2NT
+    - BASELINE2NTT
+    - BASELINE3
+    - BASELINE_SIMPLE
+    - BASEDEV
+    - BASEDEVT
+    - SEASINTER
+    - MULTINTER
+    - FMULTINTER
+    - TSADFEATS
+  forecast_distance_blender:
+    open_class: ''
+    versions:
+    - FDTOP_AVGBL
+  frequency_cost_modelers:
+    open_class: ''
+    versions:
+    - FCEE
+    - FCXX
+    - FCXE2
+    - FCXX2
+    - FCLL
+    - FCGG
+    - FCGG2
+  frequency_severity_combiner:
+    open_class: ''
+    versions:
+    - FSPROD
+  frequency_severity_modelers:
+    open_class: ''
+    versions:
+    - FSEE
+    - FSXX
+    - FSXX2
+    - FSLL
+    - FSGG
+    - FSGG2
+    - FSXE
+    - FSXE2
+    - FSLE
+  gaussian_mixture:
+    open_class: sklearn.mixture.GaussianMixture
+    versions:
+    - GMM_CL
+  gbm_class:
+    open_class: sklearn.ensemble.GradientBoostingClassifier
+    versions:
+    - GBC
+    - PGBC
+    - ESGBC
+    - XL_ESGBC
+  gbm_reg:
+    open_class: sklearn.ensemble.GradientBoostingRegressor
+    versions:
+    - GBR
+    - PGBR
+    - GBR2
+    - PGBR2
+    - ESGBR
+    - ESGBR2
+    - XL_ESGBR
+    - XL_ESGBR2
+    - MNGBR
+    - QGBR2
+    - QPGBR2
+    - QESGBR2
+  gpc_modelers:
+    open_class: ''
+    versions:
+    - GPCRBF
+    - GPCM
+  gpr_modelers:
+    open_class: ''
+    versions:
+    - GPRRBF
+    - GPRM
+    - GPRRQ
+    - GPRESS
+    - GPRDP
+  grayscale_downscaled_image_featurizer:
+    open_class: ''
+    versions:
+    - IMG_GRAYSCALE_DOWNSCALED_IMAGE_FEATURIZER
+  hdbscan:
+    open_class: sklearn.cluster.HDBSCAN
+    versions:
+    - HDBSCAN_CL
+  hierarchical:
+    open_class: ''
+    versions:
+    - NAIVEPREDHM
+    - HMEE
+    - FDHMEE
+    - HMXX
+  history_regularizer:
+    open_class: ''
+    versions:
+    - HISTREG
+    - HISTREG_TRANS
+  image_augmentation:
+    open_class: ''
+    versions:
+    - IMAGE_AUGMENTATION
+  image_dl_feature:
+    open_class: ''
+    versions:
+    - IMGFEA
+  image_feature_summarizer:
+    open_class: ''
+    versions:
+    - IMGFEAAVE
+    - IMGFEADIST
+  image_finetune:
+    open_class: ''
+    versions:
+    - IMGFTC
+    - MULTIIMGFTR
+    - MULTIIMGFTC
+    - IMGFTR
+  isofor:
+    open_class: sklearn.ensemble.IsolationForest
+    versions:
+    - ADISOFOR
+    - ADISOFOR_CAL
+    - TSADISOFOR_CAL
+  k_means:
+    open_class: sklearn.cluster.KMeans
+    versions:
+    - KMEANS
+    - KMDENETCD
+    - KMDLENETCD
+    - KMEANS_CL
+    - KMEANS_TS_DTW
+    - KMEANS_TS_SOFT_DTW
+  keras_bpe_tokenizer:
+    open_class: ''
+    versions:
+    - KERAS_BPE_TOKENIZER
+    - KERAS_BPE_TOKENIZER_V2
+  keras_multiquantile:
+    open_class: ''
+    versions:
+    - KERAS_MULTI_QUANTILE
+  keras_tokenizer:
+    open_class: ''
+    versions:
+    - KERAS_TOKENIZER
+  knn_class:
+    open_class: sklearn.neighbors.KNeighborsClassifier
+    versions:
+    - KNNC
+    - KNNC_ML
+  knn_reg:
+    open_class: sklearn.neighbors.KNeighborsRegressor
+    versions:
+    - KNNC
+    - KNNC_ML
+    - KNNR
+  glm:
+    open_class: sklearn.linear_model.ElasticNet(alpha=0)
+    versions:
+    - GLMC2
+    - GLMR2
+    - DGLM1
+    - GLMC
+    - GLMMC
+    - GLMR
+    - GLMB
+    - GLMG
+    - GLMP
+    - GLMA
+    - GLMT
+    - GLMCD
+  lasso:
+    open_class: sklearn.linear_model.Lasso
+    versions:
+    - LASSO
+    - LASSO2
+  ridge:
+    open_class: sklearn.linear_model.Ridge
+    versions:
+    - RIDGE
+    - RIDGEWC
+    - RIDGE_CLASSIFIER_MULTILABEL
+  elastic_net:
+    open_class: sklearn.linear_model.ElasticNet
+    versions:
+    - ENETCD
+    - ENETCDS
+    - FDENETCD
+    - ENETCDWC
+    - BENETCD
+    - BENETCD2
+    - UENETCD
+    - MC_MID_XL_FDENETCD
+    - MC_CL_XL_FDENETCD
+    - MC_SCL_XL_FDENETCD
+    - RES_FDLENETCD
+    - RES_FDENETCD
+    - SID_FDENETCD
+    - SID_FDLENETCD
+    - XL_ENETCD
+    - XL_ENETCDWC
+    - XL_ENETCDS
+    - XL_FDENETCD
+    - XL_FDENETCDS
+    - XL_LENETCD
+    - XL_LENETCDWC
+    - XL_FDLENETCD
+    - XLF_ENETCD
+    - XLF_LENETCD
+  leak_test:
+    open_class: ''
+    versions:
+    - LEAKTEST
+  lemmatization_featurizer:
+    open_class: ''
+    versions:
+    - LEMMATIZER
+  lightgbm_classification:
+    open_class: lightgbm.LGBMClassifier
+    parameters:
+      lr: learning_rate
+      n: n_estimators
+    versions:
+    - PLGBMTC
+    - LGBM_ONE_VS_ALL_MULTILABEL_CLASSIFIER
+    - ESLGBMTC
+    - PLGBMRFC
+    - PLGBMDC
+    - ESLGBMDC
+    - UPLGBMTC
+    - UESLGBMTC
+    - UPLGBMDC
+    - UESLGBMDC
+    - SID_PLGBMTC
+    - SID_ESLGBMTC
+    - XL_PLGBMTC
+    - XL_ESLGBMTC
+    - RES_PLGBMTC
+    - RES_ESLGBMTC
+    - RES_PLGBMDC
+    - RES_ESLGBMDC
+  lightgbm_regression:
+    open_class: lightgbm.LGBMRegressor
+    parameters:
+      lr: learning_rate
+      n: n_estimators
+    versions:
+    - PLGBMTR
+    - ESLGBMTR
+    - PLGBMRFR
+    - PLGBMDR
+    - ESLGBMDR
+    - SID_PLGBMTR
+    - SID_ESLGBMTR
+    - XL_PLGBMTR
+    - XL_ESLGBMTR
+    - RES_PLGBMTR
+    - RES_ESLGBMTR
+    - CLRES_ESLGBMTR
+    - RES_PLGBMDR
+    - RES_ESLGBMDR
+  link_bind_transformers:
+    open_class: ''
+    versions:
+    - LINK
+    - BIND
+  log_transform:
+    open_class: sklearn.preprocessing.FunctionTransformer(np.log1p, validate=True)
+    versions:
+    - LOGT
+  logistic:
+    open_class: sklearn.linear_model.LogisticRegression(penalty=None)
+    versions:
+    - LR
+    - LR1
+    - LR1WC
+    - LRCD
+    - LR1S
+    - PLACAL
+    - PLACAL2
+    - UEDA_PLATT_ANOMALY_CAL
+  logisticenet:
+    open_class: sklearn.linear_model.LogisticRegression(penalty='elasticnet')
+    versions:
+    - LENETAG
+    - LENETCD
+    - LENETCDWC
+    - BLENETCD
+    - BLENETCD2
+    - ULENETCD
+    - FDLENETCD
+    - NB_LENETCD
+  mahal:
+    open_class: ''
+    versions:
+    - ADMahal
+    - ADMahalPCA
+    - ADMAHAL_PCA_CAL
+  mean_regressor:
+    open_class: ''
+    versions:
+    - TSMEANR
+  model_collection:
+    open_class: ''
+    versions:
+    - MC_MID_ETS
+    - MC_MID_PROPHET
+    - MC_MID_TBATS
+    - MC_MID_ARIMA_NOX
+    - MC_MID_ARIMA_NOX_FB
+    - MC_MID_ARIMA
+    - MC_MID_ARIMA_TRANS
+    - MC_MID_ARIMA_NOX_TRANS
+    - MC_MID_ARIMA_CODE
+    - MC_MID_ARIMA_NAIVE_FD
+    - MC_CL_XL_ESXGBR2
+    - MC_SCL_XL_ESXGBR2
+    - MC_SCL_XL_ESXGBR2_REDUCE
+    - MC_SCL_XL_ESXGBR2_BLEND
+    - MC_CL_RES_ESXGBR2
+    - MC_SCL_RES_ESXGBR2
+    - MC_MID_XL_ESXGBR2
+    - MC_MID_RES_ESXGBR2
+    - MC_MID_RES_ESLGBR
+    - MC_TSADBB_CAL
+    - MC_TSADBB_ROLL_CAL
+    - MC_TSADDMAD_CAL
+    - MC_TSADMAHAL_PCA_CAL
+    - MC_TSADLOF_CAL
+  keras_class:
+    open_class: sklearn.neural_network.MLPClassifier
+    versions:
+    - KERASC
+    - KERASMULTIC
+    - KERASMULTILABELC
+    - NN1C
+    - NN2C
+    - VNNC
+    - VNN2C
+    - CALIB_V2_KERASMULTIC
+    - KERAS_NFM_C
+    - KERAS_AUTOINT_C
+    - KERAS_CROSSNETWORK_C
+    - KERAS_NFM_MULTIC
+    - KERAS_AUTOINT_MULTIC
+    - KERAS_CROSSNETWORK_MULTIC
+    - KERAS_HYPERBAND_MLP_C
+    - KERAS_HYPERBAND_CROSSNETWORK_C
+    - KERAS_HYPERBAND_NFM_C
+    - KERAS_HYPERBAND_AUTOINT_C
+    - KERAS_HYPERBAND_MLP_MULTIC
+    - KERAS_HYPERBAND_CROSSNETWORK_MULTIC
+    - KERAS_HYPERBAND_NFM_MULTIC
+    - KERAS_HYPERBAND_AUTOINT_MULTIC
+  keras_reg:
+    open_class: sklearn.neural_network.MLPRegressor
+    versions:
+    - KERASR
+    - NN1R
+    - NN2R
+    - VNNR
+    - VNN2R
+    - KERAS_NFM_R
+    - KERAS_AUTOINT_R
+    - KERAS_CROSSNETWORK_R
+    - KERAS_HYPERBAND_MLP_R
+    - KERAS_HYPERBAND_CROSSNETWORK_R
+    - KERAS_HYPERBAND_NFM_R
+    - KERAS_HYPERBAND_AUTOINT_R
+    - KERAS_REGULARIZED_QUANTILE_REG
+  custom_tasks:
+    open_class: ''
+    versions:
+    - CUSTOMR
+    - CUSTOMC
+    - CUSTOMMULTIC
+    - CUSTOMAD
+    - CUSTOMADCALIB
+  mrmr:
+    open_class: ''
+    versions:
+    - MRMR
+  median_imputation:
+    open_class: sklearn.impute.SimpleImputer(strategy='median')
+    versions:
+    - PNI
+    - PNI2
+    - NDC
+  arbitrary_imputation:
+    open_class: sklearn.impute.SimpleImputer(strategy='constant', fill_value=-9999)
+    versions:
+    - NIA
+    - PNIA
+    - PNIA2
+    - PNIA3
+    - PNIA4
+    - PNIA4T
+  gaussian_naive_bayes:
+    open_class: sklearn.naive_bayes.GaussianNB
+    versions:
+    - GNBC
+  multinomial_naive_bayes:
+    open_class: sklearn.naive_bayes.MultinomialNB
+    versions:
+    - MNBC
+  bernoulli_naive_bayes:
+    open_class: sklearn.naive_bayes.BernoulliNB
+    versions:
+    - BNBC
+  compliment_naive_bayes:
+    open_class: sklearn.naive_bayes.ComplementNB
+    versions:
+    - CNBC
+  neighborhood:
+    open_class: ''
+    versions:
+    - GEO_LAG
+    - GEO_LISA
+    - GEO_KNL
+  neighborhood_non_ts:
+    open_class: ''
+    versions:
+    - GEO_NEIGHBOR_V1
+  neighborhood_ts:
+    open_class: ''
+    versions:
+    - GEO_NEIGHBOR_TS
+  ner_featurizer:
+    open_class: ''
+    versions:
+    - SPACY_NAMED_ENTITY_RECOGNITION
+  normalizer:
+    open_class: sklearn.preprocessing.normalize
+    versions:
+    - NORM
+  num_imputation:
+    open_class: ''
+    versions:
+    - NI_DTMS
+  opencv_detect_largest_rectangle:
+    open_class: ''
+    versions:
+    - OPENCV_DETECT_LARGEST_RECTANGLE
+  opencv_image_featurizer:
+    open_class: ''
+    versions:
+    - OPENCV_FEATURIZER
+  osvm:
+    open_class: sklearn.svm.OneClassSVM
+    versions:
+    - ADOSVM
+    - ADOSVM_CAL
+  pairwise_cosine_sim:
+    open_class: ''
+    versions:
+    - PCS
+  pls_reg:
+    open_class: sklearn.cross_decomposition.PLSRegression
+    versions:
+    - PLS
+  pls_class:
+    open_class: sklearn.discriminant_analysis.LinearDiscriminantAnalysis
+    versions:
+    - PLSC
+  polynomial_features:
+    open_class: ''
+    versions:
+    - POLYFEATS
+  pos_tagging_featurizer:
+    open_class: ''
+    versions:
+    - POS_TAGGING
+  post_processing:
+    open_class: ''
+    versions:
+    - IMAGE_POST_PROCESSOR
+  prophet:
+    open_class: ''
+    versions:
+    - PROPHET
+  quant_reg:
+    open_class: sklearn.linear_model.QuantileRegressor
+    versions:
+    - QUANTILER
+  rare_feature_masking:
+    open_class: ''
+    versions:
+    - RFMASK
+  rating_table:
+    open_class: ''
+    versions:
+    - RATINGTABLEC
+    - RATINGTABLER
+  ratio:
+    open_class: ''
+    versions:
+    - RATIO3
+  rdt:
+    open_class: sklearn.preprocessing.QuantileTransformer
+    versions:
+    - RDT3
+    - SRDT3
+    - SRDT4
+    - RDT5
+    - STANDRDT5
+    - STANDRDT5T
+    - UNIF3
+  reduction_transformers:
+    open_class: sklearn.decomposition.TruncatedSVD
+    versions:
+    - SVD
+    - SVD2
+    - PCA
+    - PPCA
+    - SPARSE_TO_DENSE
+  rf_class:
+    open_class: sklearn.ensemble.RandomForestClassifier
+    versions:
+    - RFC
+    - RFC_ML
+    - SHAPRFC
+    - CALIB_RFC
+    - CALIB_V2_RFC
+  rf_reg:
+    open_class: sklearn.ensemble.RandomForestRegressor
+    versions:
+    - RFR
+    - SHAPRFR
+  rnn_modelers:
+    open_class: ''
+    versions:
+    - KERASRNNR
+    - KERASRNNR_MS
+    - KERASRNNR_SS
+    - KERASRNNR_DAR_UN
+    - KERASRNNC
+    - KERASRNNC_MS
+    - KERASRNNC_SS
+  rulefit_class:
+    open_class: imodels.RuleFitClassifier
+    versions:
+    - RULEFITC
+    - XRULEFITC
+  rulefit_reg:
+    open_class: imodels.RuleFitRegressor
+    versions:
+    - RULEFITR
+    - XRULEFITR
+  sarimax:
+    open_class: ''
+    versions:
+    - ARIMA
+    - AUTOARIMA
+    - AUTOARIMA_NOX
+    - AUTOARIMA_TRANS
+    - AUTOARIMA_NOX_TRANS
+    - AUTOARIMA_NAIVE
+    - AUTOARIMA_NAIVE_FD
+    - AUTOARIMA_NOX_FB
+    - VARMAX
+    - VARMAX_FB
+    - VAR
+  sc_estimators:
+    open_class: ''
+    versions:
+    - SCLENETC
+    - SCLENETC_MULTILABEL
+    - SCENETR
+  seasonality_features:
+    open_class: ''
+    versions:
+    - SEASONALITY
+    - FOURIERBASIS
+  segmentation:
+    open_class: ''
+    versions:
+    - SEGMENTS_SPLIT_USER_DEFINED
+    - SEGMENTS_MODELS
+    - SEGMENTS_COMBINED
+    - SEGMENTS_SERIES_STANDARDIZED
+  sentence_multi_minilm_featurizer:
+    open_class: ''
+    versions:
+    - SENTENCE_MULTILINGUAL_MINILM
+  sentence_roberta_featurizer:
+    open_class: ''
+    versions:
+    - SENTENCE_ROBERTA
+  sentence_tiny_bert_featurizer:
+    open_class: ''
+    versions:
+    - SENTENCE_TINY_BERT
+  sentiment_featurizer:
+    open_class: ''
+    versions:
+    - NLTK_SENTIMENT
+    - TEXTBLOB_SENTIMENT
+  series_scaling:
+    open_class: ''
+    versions:
+    - SERIES_SCALING
+    - SCALESTANDRDT5
+  sgd_class:
+    open_class: sklearn.linear_model.SGDClassifier
+    versions:
+    - SGDC
+    - SGDCWC
+    - VWC
+    - VWSC
+    - VWNNC
+    - VWGBC
+    - VWSPC
+    - VWLRQC
+    - VWTC
+    - VWTSPC
+    - VWTLRQC
+  sgd_reg:
+    open_class: sklearn.linear_model.SGDRegressor
+    versions:
+    - SGDR
+    - SGDRS
+    - SGDCWC
+    - SGDRA
+    - VWR
+    - VWSR
+    - VWNNR
+    - VWGBR
+    - VWSPR
+    - VWLRQR
+    - VWTR
+    - VWTSPR
+    - VWTLRQR
+    - VWMCR
+  sparse_polynomial_features:
+    open_class: sklearn.preprocessing.PolynomialFeatures
+    versions:
+    - SPOLY
+  sparse_transform:
+    open_class: ''
+    versions:
+    - DENSE_TO_SPARSE
+  standardize:
+    open_class: sklearn.preprocessing.StandardScaler
+    versions:
+    - ST
+    - RST
+    - ST_DTMS
+  stemming_featurizer:
+    open_class: ''
+    versions:
+    - STEMMER
+  svc:
+    open_class: sklearn.svm.SVC
+    versions:
+    - SVMC
+    - ASVMC
+    - SVMC2
+    - ASVMEC
+    - ASVMSKC
+    - LSVC
+    - VWSVMLC
+    - VWSVMPC
+    - VWSVMRC
+  svr:
+    open_class: sklearn.svm.SVR
+    versions:
+    - SVMR
+    - ASVMR
+    - SVMR2
+    - ASVMER
+    - ASVMSKR
+  tbats:
+    open_class: ''
+    versions:
+    - TBATS
+  temporal:
+    open_class: ''
+    versions:
+    - THEX
+  tesseract_ocr:
+    open_class: ''
+    versions:
+    - TESSERACT_OCR
+  multi_text_converters:
+    open_class: sagemaker_sklearn_extension.feature_extraction.text.MultiColumnTfidfVectorizer
+    versions:
+    - PTM2
+    - PTM3
+    - PTM3_GAM
+    - VWTXT
+    - VWTXT2
+  single_text_converters:
+    open_class: sklearn.feature_extraction.text.TfidfVectorizer
+    versions:
+    - SCTXT
+    - SCTXT2
+    - SCTXT3
+    - SCTXT4
+    - SCBAGOFCAT
+    - SCBAGOFCAT2
+  text_mining_reg:
+    open_class: sklearn.linear_model.ElasticNet  # TODO: use vecstack.StackingTransformer (after MLDEV-632 is done)
+    versions:
+    - WNGR
+    - CNGR
+    - WNGER2
+    - CNGER2
+    - WNGER
+    - CNGER
+    - W1GER
+  text_mining_class:
+    open_class: sklearn.linear_model.LogisticRegression  # TODO: use vecstack.StackingTransformer (after MLDEV-632 is done)
+    versions:
+    - WNGC
+    - CNGC
+    - WNGEC2
+    - CNGEC2
+    - WNGEC
+    - CNGEC
+    - W1GEC
+  tiny_bert_featurizer:
+    open_class: ''
+    versions:
+    - TINYBERTFEA
+  transforms:
+    open_class: ''
+    versions:
+    - CUSTOMT
+  tree_embedding:
+    open_class: sklearn.ensemble.RandomTreesEmbedding
+    versions:
+    - TELENET
+    - TEENET
+  trend:
+    open_class: ''
+    versions:
+    - LINTREND
+    - LOGISTIC_TREND
+    - MULTI_LOGISTIC_TREND
+  tsad_anomaly_xgb:
+    open_class: ''
+    versions:
+    - TSADXGB2_CAL
+  tsad_blend:
+    open_class: ''
+    versions:
+    - TSADMINBLEND
+    - TSADMAXBLEND
+  tsad_bollinger:
+    open_class: ''
+    versions:
+    - TSADBB_CAL
+    - TSADBB_ROLL_CAL
+  tsad_dmad:
+    open_class: ''
+    versions:
+    - TSADDMAD_CAL
+  tsad_lof:
+    open_class: sklearn.neighbors.LocalOutlierFactor
+    versions:
+    - TSADLOF_CAL
+  tsad_mahal:
+    open_class: ''
+    versions:
+    - TSADMAHAL_PCA_CAL
+  tsad_osvm:
+    open_class: sklearn.svm.OneClassSVM
+    versions:
+    - TSADOSVM_CAL
+  tts_codegen:
+    open_class: ''
+    versions:
+    - AUTOARIMA_CODE
+    - VARMAX_CODE
+    - VAR_CODE
+  tws:
+    open_class: ''
+    versions:
+    - TWSL2
+  varmax:
+    open_class: ''
+    versions:
+    - VARMAX2
+    - VAR2
+  velocity:
+    open_class: ''
+    versions:
+    - VELOCITY_TS_MEAN
+    - VELOCITY_TS_ZI_MEAN
+    - VELOCITY_TS_STD
+    - VELOCITY_TS_ZI_STD
+  xgam_reg:
+    open_class: imodels.TreeGAMRegressor
+    versions:
+    - XGAMR
+    - XGAMR2
+    - XL_XGAMR
+  xgam_class:
+    open_class: imodels.TreeGAMClassifier
+    versions:
+    - XGAMC
+    - XGAMC2
+    - XL_XGAMC
+  xgb_class:
+    open_class: xgboost.XGBClassifier
+    versions:
+    - PXGBC
+    - UPXGBC
+    - XGBC
+    - UXGBC
+    - ESXGBC
+    - UESXGBC
+    - PXGBC2
+    - XGBC2
+    - ESXGBC2
+    - UPXGBC2
+    - UXGBC2
+    - UESXGBC2
+    - ESLXGBC
+    - SID_PXGBC2
+    - SID_XGBC2
+    - SID_ESXGBC2
+    - XL_ESXGBC
+    - XL_PXGBC2
+    - XL_XGBC2
+    - XL_ESXGBC2
+    - RES_PXGBC2
+    - RES_XGBC2
+    - RES_ESXGBC2
+    - CALIB_ESXGBC2
+    - CALIB_V2_ESXGBC2
+  xgb_reg:
+    open_class: xgboost.XGBRegressor
+    versions:
+    - PXGBR
+    - UPXGBR
+    - XGBR
+    - UXGBR
+    - ESXGBR
+    - UESXGBR
+    - PXGBR2
+    - XGBR2
+    - ESXGBR2
+    - UPXGBR2
+    - UXGBR2
+    - UESXGBR2
+    - ESLXGBR
+    - SID_PXGBR2
+    - SID_XGBR2
+    - SID_ESXGBR2
+    - XL_ESXGBR
+    - XL_PXGBR2
+    - XL_XGBR2
+    - XL_ESXGBR2
+    - RES_PXGBR2
+    - RES_XGBR2
+    - RES_ESXGBR2
+    - CLRES_ESXGBR2
+    - CLXL_ESXGBR2
+    - QUANTXGBR
+    - ESQUANTXGBR
+  xprim:
+    open_class: ''
+    versions:
+    - XPRIMC
+    - XPRIMR
+  zero_inflated_modelers:
+    open_class: ''
+    versions:
+    - XL_ZIXX
+    - XL_ZIPXX
+    - XL_ZIESXX
+    - XL_ZIPLL
+    - XL_ZIESLL
+  stacker_example:
+    open_class:
+      stacking_class: vecstack.StackingTransformer
+      stacking_class_params:
+        regression: True
+      stacking_class_estimators:
+        enet: sklearn.linear_model.ElasticNet
+        lr: sklearn.linear_model.LogisticRegression(penalty='l2')
+    versions:
+    - STACKER
