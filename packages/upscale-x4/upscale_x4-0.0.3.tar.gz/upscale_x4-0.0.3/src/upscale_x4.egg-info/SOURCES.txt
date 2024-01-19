@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/upscale_x4/__init__.py
+src/upscale_x4.egg-info/PKG-INFO
+src/upscale_x4.egg-info/SOURCES.txt
+src/upscale_x4.egg-info/dependency_links.txt
+src/upscale_x4.egg-info/requires.txt
+src/upscale_x4.egg-info/top_level.txt
+src/upscale_x4/models/FSRCNN_x4.pb
+src/upscale_x4/models/__init__.py
