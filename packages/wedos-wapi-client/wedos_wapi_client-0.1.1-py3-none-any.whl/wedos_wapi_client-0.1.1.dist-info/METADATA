@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: wedos-wapi-client
+Version: 0.1.1
+Summary: WEDOS WAPI client
+Home-page: https://github.com/qbsoftware/wedos-wapi-client
+License: MIT
+Author: Jakub Dorňák
+Author-email: jakub.dornak@qbsoftware.cz
+Requires-Python: >=3.10,<4.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: requests
+Project-URL: Repository, https://github.com/qbsoftware/wedos-wapi-client
+Description-Content-Type: text/markdown
+
+# wedos-wapi-client
+
+Wrapper around [WEDOS WAPI](https://kb.wedos.com/kategorie/wapi-api-interface/)
+
+(Note: WAPI must be enabled for your account and your IP must be authorized to access it.)
+
+Example usage for DNS:
+
+```python
+from wedos_wapi_client import WapiClient
+
+old_ip = "1.2.3.4"
+new_ip = "10.20.30.40"
+
+wapi = WapiClient(user="your-email@domain.tld", password="secret-password")
+
+for domain in wapi.domains_list().data["domain"].values():
+    for row in wapi.dns_rows_list(domain["name"]).data["row"]:
+        if row["rdtype"] == "A" and row["rdata"] == old_ip:
+            wapi.dns_row_update(domain=domain["name"], row_id=row["ID"], rdata=new_ip)
+    wapi.dns_domain_commit(name=domain["name"])
+```
+
