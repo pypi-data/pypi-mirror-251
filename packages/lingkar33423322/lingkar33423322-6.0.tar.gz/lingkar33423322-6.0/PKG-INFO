@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: lingkar33423322
+Version: 6.0
+Summary: Menghitung luas lingkaran
+Home-page: https://github.com/SabillillahX/lingkar.git
+Author: SabillillahX
+Author-email: <sabillillahxtkj@gmail.com>
+License: MIT
+Keywords: luas,lingkaran
+Classifier: Development Status :: 1 - Planning
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Menghitung Luas Lingkaran
+hitung luas lingkaran
+
+## Installation
+```shell
+pip install lingkar33423322
+```
+
+## Usage
+Basic Usage:
+```python
+from lingkar33423322 import lingkar
+
+hi = Lingkaran.hitung_luas()
+print(f"Luas lingkaran: {hi}")
+```
