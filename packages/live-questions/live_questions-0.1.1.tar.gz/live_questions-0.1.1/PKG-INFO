@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: live-questions
+Version: 0.1.1
+Summary: Throw up a QR code that links to presentation questions
+License: MPL-2.0
+Author: Lawrence
+Author-email: lawrence@acode.ninja
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Requires-Dist: flask (>=3.0.0,<4.0.0)
+Requires-Dist: inquirer (>=3.2.1,<4.0.0)
+Requires-Dist: jinja2 (>=3.1.3,<4.0.0)
+Requires-Dist: ngrok (>=0.12.1,<0.13.0)
+Requires-Dist: python-dotenv (>=1.0.0,<2.0.0)
+Requires-Dist: pyyaml (>=6.0.1,<7.0.0)
+Requires-Dist: qrcode (>=7.4.2,<8.0.0)
+Requires-Dist: textual (>=0.47.1,<0.48.0)
+Description-Content-Type: text/markdown
+
+# live-questions
+
+A live questions app using flask + ngrok + textual.
+
+## Requirements
+
+- [Python ^3.11](https://www.python.org/)
+- [NGROK](https://ngrok.com/) configured with:
+    - [Auth Token](https://dashboard.ngrok.com/get-started/your-authtoken)
+    - [API Key](https://dashboard.ngrok.com/api)
+
+## Example
+
+![Example Terminal UI](docs/example_tui.png)
+
+![Example Web Application](docs/example_web.png)
+
