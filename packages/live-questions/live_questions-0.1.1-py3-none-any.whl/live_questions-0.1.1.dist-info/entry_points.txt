@@ -1,0 +1,3 @@
+[console_scripts]
+live-questions=live_questions.main:start
+
