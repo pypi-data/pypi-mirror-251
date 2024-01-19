@@ -1,0 +1,9 @@
+pillow
+imagehash
+numpy
+imutils
+blend-modes
+scikit-image
+colorthief
+psd-tools
+matplotlib
