@@ -1,0 +1,16 @@
+fair_python_cookiecutter:
+  last_name: Pirogov
+  first_name: Anton
+  email: a.pirogov@fz-juelich.de
+  orcid: 0000-0002-5077-7497
+
+  affiliation: "Forschungszentrum Jülich GmbH - Institute for Materials Data Science and Informatics (IAS9)"
+  copyright_holder: "Forschungszentrum Jülich GmbH - Institute for Materials Data Science and Informatics (IAS9) - Stefan Sandfeld <s.sandfeld@fz-juelich.de>"
+
+  project_license: "Unlicense"
+  project_version: "0.1.2"
+  project_description: TODO - add description
+  project_keywords: TODO add keywords
+
+  init_cli: true
+  init_api: true
