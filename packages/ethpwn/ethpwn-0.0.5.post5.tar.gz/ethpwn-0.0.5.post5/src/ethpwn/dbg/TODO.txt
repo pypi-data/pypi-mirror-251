@@ -1,0 +1,32 @@
+
+EXTRAS:
+1 - Telescope command and automatic abi decoding for opcodes
+2 - Display if we are taking next jump or not through emulation
+3 - watchpoints on storage location or memory
+4 - support for multiple transactions
+5 - Modifying storage and memory on demand
+6 - Visualize logs
+7 - merge Yon's snapshots
+8 - undo command
+10- ui terminal
+11- Support execution of TX from top of block, end, or specific position (more advanced)
+    - Executing always at the top might not work in some cases (balance of tokens for a contract)
+12- Decode strings if they look like strings when printing the disassembly or the stack
+13- Order sstores and sloads temporarly (otherwise it's impossible to understand in which order this things happened)
+14- Probably need this to support Avalanche:
+    - https://stackoverflow.com/questions/69334835/get-avalanche-block-data-by-block-hash-with-web3-py
+15- Collect the pre-image and show them when there is an sstore on a map/array.
+16- add dynamic provenance (use-def plugin printed with rich tree)
+17- add code_address:storage_address for each log in the log_op
+18- add break when opcode is X and its arguments are X,Y,Z.
+19- add memory watchpoints
+20- disassemble by pc
+
+PRIORITY:
+1- Avoid to re-execute all the txs to bring the EVM in the right state when replay (snapshot it?) (snapshot + checkpoint)
+
+NEW:
+
+BUGS:
+
+
