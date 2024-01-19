@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: cythonbiogeme
+Version: 1.0.2
+Summary: C++ part of the Biogeme package
+Home-page: http://biogeme.epfl.ch
+Author: Michel Bierlaire
+Author-email: michel.bierlaire@epfl.ch
+Project-URL: Documentation, http://biogeme.epfl.ch/documents.html
+Project-URL: Code, https://github.com/michelbierlaire/cythonbiogeme
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: C++
+Classifier: Programming Language :: Cython
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: cython>=0.29.16
+Requires-Dist: pandas>=1.3.5
+Provides-Extra: testing
+Requires-Dist: cython>=0.29.32; extra == "testing"
+Requires-Dist: numpy>=1.23.4; extra == "testing"
+Requires-Dist: pytest>=7.2.0; extra == "testing"
+Requires-Dist: pytest-cov>=4.0.0; extra == "testing"
+Requires-Dist: tox>=3.27.1; extra == "testing"
+
+# CythonBiogeme
+
+Biogeme is an open source freeware designed for the maximum likelihood estimation of parametric models in general, with a special emphasis on discrete choice models.
+CythonBiogeme is the part of the package that involves C++ code, to be installed separately.
+
+## Install
+Biogeme requires Python >= 3.8 and can be installed [from PyPI](https://pypi.org/project/biogeme/).
+
+`pip install cythonbiogeme`
+
+Installing CythonBiogeme from source can be done after cloning the repository with the following command executed in the directory where the file `setup.py`is located:
+
+`pip install -ve .`
+
+## Documentation
+Further documentation is available on https://biogeme.epfl.ch/
