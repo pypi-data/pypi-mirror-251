@@ -1,0 +1,6 @@
+brainpylib
+brainpylib/cpu_ops
+build
+cmake
+dist
+scripts
