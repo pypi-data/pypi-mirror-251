@@ -1,0 +1,15 @@
+.gitignore
+README.md
+mypy.cfg
+pyproject.toml
+setup.py
+src/gramps_web_api_client/.gitignore
+src/gramps_web_api_client/__init__.py
+src/gramps_web_api_client/_version.py
+src/gramps_web_api_client/api.py
+src/gramps_web_api_client.egg-info/PKG-INFO
+src/gramps_web_api_client.egg-info/SOURCES.txt
+src/gramps_web_api_client.egg-info/dependency_links.txt
+src/gramps_web_api_client.egg-info/requires.txt
+src/gramps_web_api_client.egg-info/top_level.txt
+tests/gramps_web_api_client/test_todo.py
