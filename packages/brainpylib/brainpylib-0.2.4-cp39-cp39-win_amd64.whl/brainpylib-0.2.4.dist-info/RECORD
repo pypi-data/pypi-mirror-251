@@ -1,0 +1,10 @@
+brainpylib/__init__.py,sha256=Sa9xvITeyod951cdcVjehzRNFtAUUhDxmi-hFJbLm3g,3466
+brainpylib/cpu_ops.cp39-win_amd64.pyd,sha256=w-C7xafsuQ4DOiQ6d0ToueT4bIYzbcFbyaY4Jdmm1wM,779776
+scripts/linux/cpu/setup_cpu.py,sha256=EuYNmRykO26K94_EHausAKXuNCdsbIUN3bO0xnsbvrk,7217
+scripts/linux/cu11x/setup_cuda.py,sha256=GZ-JQY3gYT-bOtUyKZOA1A7QzsfTHsuqck_sGs3KTzw,8216
+scripts/linux/cu12x/setup_cuda.py,sha256=hLhONjxC_vHulv3uHyCnzPcQCVkPZcMX1iQj0qgXnJ0,8216
+brainpylib-0.2.4.dist-info/LICENSE,sha256=y_p8Hru855LwiNwIbkjJLmA0ZMwQQzHvJR5BVplHk1I,35773
+brainpylib-0.2.4.dist-info/METADATA,sha256=8WAIy_K-thLgP-RNRIoAsnKA6aVTZPOHOBBhpVgoUkI,2600
+brainpylib-0.2.4.dist-info/WHEEL,sha256=2xSj8c4s_gFbWpcImYQptdXS3JLuzC2uK5Om8I_SEKg,100
+brainpylib-0.2.4.dist-info/top_level.txt,sha256=6rDzPX7-i46BqflzqvxxZ0NUqfaLIakCaqW5Nvgus_I,55
+brainpylib-0.2.4.dist-info/RECORD,,
