@@ -1,0 +1,10 @@
+qpydoc/__init__.py,sha256=ugDoNuxXI7uuHAjhF38k5cYnoDkTH-w2ipFnx-NcUvo,19027
+qpydoc/locales/en_US/LC_MESSAGES/messages.mo,sha256=919hHhSIYyiwgvNpriulFPHyboxFRvWdM1c_Cy_plPM,444
+qpydoc/locales/en_US/LC_MESSAGES/messages.po,sha256=kYpV0bruymLt5wUKtmbItjvP2HNDl7F9BlRw6b25Lg4,1784
+qpydoc/locales/ko_KR/LC_MESSAGES/messages.mo,sha256=65vcRFyvbdj7V5GjjhrC8BN-zITSy1TV0E-YrP_WTTs,718
+qpydoc/locales/ko_KR/LC_MESSAGES/messages.po,sha256=AA58cGq7zlW8aTf1rHypOTqy0pHfuDaemzZk3pvG7qQ,1873
+qpydoc-0.1.1.dist-info/METADATA,sha256=o5vNyGNsN9IKrMY4MK4cW-cNY2qovZ2XUL7_d0siqnc,626
+qpydoc-0.1.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+qpydoc-0.1.1.dist-info/entry_points.txt,sha256=0EiP1peKQqHwUTP7DCx-TPMSnc7qDNx_dUNs7h72EWI,38
+qpydoc-0.1.1.dist-info/top_level.txt,sha256=srSO5p0xtz805aWLpaOOLuJ69musra5yD6SR_OukIac,22
+qpydoc-0.1.1.dist-info/RECORD,,

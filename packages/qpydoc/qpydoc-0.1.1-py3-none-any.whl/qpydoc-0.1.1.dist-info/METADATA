@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: qpydoc
+Version: 0.1.1
+Summary: Quarto-based Python API Documentation Tool
+Author: KIM, Doh-Hyoung
+Author-email: kim.dohhyoung@gmail.com
+Keywords: quarto,api,documentation
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: regex
+
+# qpydoc
+
+Quarto-based Python API Documentation Tool
+
+- Documenation: https://joelkim.github.io/qpydoc/
