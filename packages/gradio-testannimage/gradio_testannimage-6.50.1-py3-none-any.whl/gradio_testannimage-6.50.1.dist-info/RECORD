@@ -1,0 +1,8 @@
+gradio_testannimage/__init__.py,sha256=PR8FXfjyxZFTpht8bbnwc49vMbeNhghPuEgABpxxnOE,68
+gradio_testannimage/testannimage.py,sha256=xCx_qx_qC7_HBhoyuPq17yVXGEDEpA3DCjBLbpBdPTo,8618
+gradio_testannimage/testannimage.pyi,sha256=BH3fkJaEHRqq7ZG3NCp1I5qlmMxnZC-u7a9TD7JfEWU,13761
+gradio_testannimage/templates/component/index.js,sha256=ySDPTYyEhgQac-6hdc6p4RvLgxYu2lESj0rGrzRHzgc,66091
+gradio_testannimage/templates/component/style.css,sha256=qzC_JXZRdu4k9M-FjSRNlArBwQJbuHuh763JOjwBA-0,13587
+gradio_testannimage-6.50.1.dist-info/METADATA,sha256=cpDhwk51w_bEalr-uuSftdFm7DJYEdiNKoex-nSKjRY,8410
+gradio_testannimage-6.50.1.dist-info/WHEEL,sha256=mRYSEL3Ih6g5a_CVMIcwiF__0Ae4_gLYh01YFNwiq1k,87
+gradio_testannimage-6.50.1.dist-info/RECORD,,
