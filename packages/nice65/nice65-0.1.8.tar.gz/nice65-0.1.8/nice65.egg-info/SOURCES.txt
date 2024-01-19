@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+nice65/__init__.py
+nice65/__main__.py
+nice65/app.py
+nice65.egg-info/PKG-INFO
+nice65.egg-info/SOURCES.txt
+nice65.egg-info/dependency_links.txt
+nice65.egg-info/entry_points.txt
+nice65.egg-info/requires.txt
+nice65.egg-info/top_level.txt
