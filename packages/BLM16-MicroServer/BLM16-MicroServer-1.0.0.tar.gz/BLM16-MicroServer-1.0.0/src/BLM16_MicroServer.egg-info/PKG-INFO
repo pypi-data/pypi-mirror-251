@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: BLM16-MicroServer
+Version: 1.0.0
+Summary: A lightweight and flexible webserver.
+Author-email: BLM16 <myers.bradley@hotmail.com>
+License: MIT License
+        
+        Copyright (c) 2024 Bradley Myers. All rights reserved.
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Repository, https://github.com/BLM16/MicroServer.git
+Project-URL: Issues, https://github.com/BLM16/MicroServer/issues
+Project-URL: Changelog, https://github.com/BLM16/MicroServer/blob/master/CHANGELOG.md
+Keywords: microserver,webserver,lightweight
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Internet
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: HTTP Servers
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI :: Server
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# MicroServer
+
+MicroServer is a lightweight Python webserver with minimal overhead and no external dependencies
+MicroServer provides complete flexibility by leaving all data processing and templating to the user.
+
+```py
+from microserver import MicroServer, Response
+
+server = MicroServer()
+
+# Configures the route / to be handled by the home function.
+@server.route('/')
+def home():
+    data = server.load_view('index.html')
+    mime = 'text/html'
+    return Response(data, mime)
+
+# Configures all 404 errors to be handled by the e404 function.
+@server.errorhandler(404)
+def e404():
+    data = server.load_view('404.html')
+    mime = 'text/html'
+    return Response(data, mime)
+
+# Starts the server on the given host and port.
+server.start('localhost', 8080)
+```
