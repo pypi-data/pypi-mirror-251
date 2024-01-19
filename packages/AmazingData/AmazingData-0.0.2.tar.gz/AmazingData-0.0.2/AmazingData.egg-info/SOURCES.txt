@@ -1,0 +1,6 @@
+README.md
+setup.py
+AmazingData.egg-info/PKG-INFO
+AmazingData.egg-info/SOURCES.txt
+AmazingData.egg-info/dependency_links.txt
+AmazingData.egg-info/top_level.txt
