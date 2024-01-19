@@ -1,0 +1,11 @@
+faker_blog/__init__.py,sha256=dsk_o_7sM2j8SFi7pEW4YC-oUnJfUEN6Q18ww1H2AUQ,89
+faker_blog/provider.py,sha256=B-rmWhpQWBTZLiGD7GoR8G5RzEK3SNLKAqWId2H5wO8,1339
+faker_blog/utils.py,sha256=LtmjhpXUcx_J858QipVK8rZWb03ENqKhcAf1Td1lwYI,593
+faker_blog/templates/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+faker_blog/templates/html.py,sha256=jPuZSMXVfUU4pMztzFBly7juuyx_udqT4XyZsX03VJM,2183
+faker_blog/templates/text.py,sha256=bzZqYphqG0gzqmgJD6YZkHVbov0sxax1JdvE1XNmNEg,23214
+faker_blog_provider-0.0.3.dist-info/LICENSE,sha256=gwR4NTDdhBlbfx-No_7QnzFBua-BiO7NUXvs86m07Gk,1078
+faker_blog_provider-0.0.3.dist-info/METADATA,sha256=nLvXbulSJn-BguZm7e8uVB40igHCP3AO-dqdWOKVpi4,4990
+faker_blog_provider-0.0.3.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+faker_blog_provider-0.0.3.dist-info/top_level.txt,sha256=0tmAvHKS5UXU7REmlFc-E4HMFUa3lLnj66tRyLjEIZA,11
+faker_blog_provider-0.0.3.dist-info/RECORD,,
