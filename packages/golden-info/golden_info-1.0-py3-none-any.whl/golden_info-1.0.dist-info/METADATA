@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: golden_info
+Version: 1.0
+Summary: golden info
+Home-page: https://github.com/iqbull2244/goldenn.git
+Author: iqbal
+Author-email: <rafiiqbal2407@gmail.com>
+License: MIT
+Keywords: golden_ratio,golden
+Classifier: Development Status :: 1 - Planning
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+from Librarymu.golden_ratio import GoldenRatioCalculator
