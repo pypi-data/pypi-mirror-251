@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: path_add_jlussier
+Version: 0.0.1
+Summary: A small package to simplify adding working directories to path, from a sub directory
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Issues, https://github.com/pypa/sampleproject/issues
+Author-email: Jonathan Lussier <jonathan.lussier07@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# Example Package
+
+This is a small python package to simplify adding working directories to path, from a sub directory.  it may be expanded in the future.
