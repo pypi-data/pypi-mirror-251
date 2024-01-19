@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+matprob/__init__.py
+matprob.egg-info/PKG-INFO
+matprob.egg-info/SOURCES.txt
+matprob.egg-info/dependency_links.txt
+matprob.egg-info/not-zip-safe
+matprob.egg-info/requires.txt
+matprob.egg-info/top_level.txt
