@@ -1,0 +1,1 @@
+flit publish --repository pypi --pypirc C:\Users\green\.pyirc
