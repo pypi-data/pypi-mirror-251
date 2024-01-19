@@ -1,0 +1,70 @@
+[build-system]
+build-backend = "poetry_dynamic_versioning.backend"
+requires = ["poetry-core>=1.0.0", "poetry-dynamic-versioning>=1.0.0,<2.0.0"]
+
+[tool]
+
+[tool.black]
+exclude = '''
+/(
+    \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
+include = '\.pyi?$'
+line-length = 88
+
+[tool.poetry]
+authors = ["Masaki Tagawa <masaki@sukiyaki.ski>"]
+classifiers = [
+  'Development Status :: 4 - Beta',
+  'Intended Audience :: Developers',
+  'License :: OSI Approved :: MIT License',
+  'Natural Language :: English',
+  'Programming Language :: Python :: 3',
+  'Programming Language :: Python :: 3.8',
+  'Programming Language :: Python :: 3.9',
+  'Programming Language :: Python :: 3.10',
+  'Programming Language :: Python :: 3.11'
+]
+description = "A NetBox source for octoDNS."
+homepage = "https://github.com/sukiyaki/octodns-netbox"
+license = "MIT"
+name = "octodns-netbox"
+packages = [
+  {include = "octodns_netbox"},
+  {include = "tests", format = "sdist"}
+]
+readme = "README.md"
+version = "0.3.0"
+
+[tool.poetry.dependencies]
+octodns = {version = "^1.0.0"}
+poetry = "^1.7.1"
+pydantic = "^2.0.0"
+pynetbox = {version = "^7.0.0"}
+python = ">=3.8,<4.0"
+requests = {version = "^2.31.0"}
+typing-extensions = {version = "^4.9.0", python = "<3.9"}
+
+[tool.poetry.dev-dependencies]
+pre-commit = "^3.0.0"
+pytest = "^7.4.0"
+pytest-cov = "^4.1.0"
+requests-mock = "^1.11.0"
+tox = "^4.0.0"
+
+[tool.poetry-dynamic-versioning]
+bump = true
+enable = false
+metadata = false
+style = "pep440"
+vcs = "git"
