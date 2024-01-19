@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: EntityExtracter
+Version: 0.1.3
+Summary: Extract specific entites from a text. Give text and get a json formatted output data.
+Home-page: UNKNOWN
+Author: Ankit Mor
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
