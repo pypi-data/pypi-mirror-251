@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/Sveve.egg-info/PKG-INFO
+src/Sveve.egg-info/SOURCES.txt
+src/Sveve.egg-info/dependency_links.txt
+src/Sveve.egg-info/requires.txt
+src/Sveve.egg-info/top_level.txt
+src/sveve/__init__.py
+src/sveve/client.py
+tests/test_client.py
