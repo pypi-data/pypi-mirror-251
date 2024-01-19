@@ -1,0 +1,185 @@
+[tool.poetry]
+name = "navio-builder-win"
+packages = [
+    {include = "navio"}
+]
+version = "1.1.0"
+description = "navio-builder, without sh dependency, works on windows."
+authors = ["Matthew Martin <matthewdeanmartin@gmail.com>"]
+keywords = ["devops", "build tool" ]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: System Administrators",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Build Tools"
+]
+include = [
+    "navio/**/*.py",
+]
+
+exclude = [
+]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/matthewdeanmartin/navio-builder/tree/pypi_branch"
+homepage = "https://github.com/matthewdeanmartin/navio-builder/tree/pypi_branch"
+documentation = "https://github.com/matthewdeanmartin/navio-builder/tree/pypi_branch"
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/matthewdeanmartin/navio-builder/tree/pypi_branch"
+
+[tool.poetry.dependencies]
+python = ">=3.8"
+
+[tool.poetry.dev-dependencies]
+mypy = "*"
+pytest = "*"
+pytest-cov = ">=4.1.0"
+pycodestyle = ">=2.3"
+tox = "*"
+
+[tool.poetry.scripts]
+nb = 'navio.builder:main'
+navio = 'navio.builder:main'
+
+[tool.black]
+line-length = 120
+target-version = ['py39']
+include = '\.pyi?$'
+exclude = '''
+
+(
+  /(
+      \.eggs         # exclude a few common directories in the
+    | \.git          # root of the project
+    | \.hg
+    | \.mypy_cache
+    | \.tox
+    | \.venv
+    | _build
+    | buck-out
+    | build
+    | dist
+  )/
+  | foo.py           # also separately exclude a file named foo.py in
+                     # the root of the project
+)
+'''
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+testpaths = [
+    "tests",
+]
+junit_family = "xunit1"
+norecursedirs = ["vendor", "scripts"]
+# don't know how to do this in toml
+#addopts = "--strict-markers"
+#markers =
+#	slow: marks tests as slow (deselect with '-m "not slow"')
+#	fast: marks tests as fast (deselect with '-m "not fast"')
+
+[tool.isort]
+default_section = "THIRDPARTY"
+force_grid_wrap = 0
+include_trailing_comma = true
+known_first_party = ["navio"]
+line_length = 88
+multi_line_output = 3
+use_parentheses = true
+
+[tool.ruff]
+line-length = 1000
+
+# Enable Pyflakes `E` and `F` codes by default.
+select = [
+    # pycodestyle
+    "E",
+    # Pyflakes
+    "F",
+    # pyupgrade
+    # "UP",
+    # flake8-bugbear
+    "B",
+    # flake8-simplify
+    "SIM",
+    # isort
+    # "I",
+    # bandit
+    "S",
+    # flake8-builtins
+    "A",
+    # flake8 pytest style
+    "PT",
+    # Pylint
+    "PL"
+]
+ignore = [
+    "E722", # no bare-except
+    "S603", # subprocess should not use shell (?)
+    "S101", # assert is fine in a test!
+    "PT018", # double asserts sometimes okay
+    "PLR0912", # too many branches
+    "PLR0915", # too many something
+    "PLR0911", # too many returns
+    "PLR0913", # too many arguments
+    "PLC0414", # name of import
+    "E501", # formatting
+    "PLR2004", # not all literal numbers need to be named constants
+    "SIM108", # not all trinary if improves readability
+]
+
+# Exclude a variety of commonly ignored directories.
+exclude = [
+    "test",
+    "tests",
+    "dead_code",
+    ".bzr",
+    ".direnv",
+    ".eggs",
+    ".git",
+    ".hg",
+    ".mypy_cache",
+    ".nox",
+    ".pants.d",
+    ".ruff_cache",
+    ".svn",
+    ".tox",
+    ".venv",
+    "__pypackages__",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "node_modules",
+    "venv",
+    "hide"
+]
+per-file-ignores = { }
+
+# Allow unused variables when underscore-prefixed.
+dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+
+# Assume Python 3.10.
+target-version = "py311"
+
+[tool.scriv]
+format = "md"
+version = "literal: pyproject.toml: project.version"
+
+
+[mypy]
+warn_return_any = true
+warn_unused_configs = true
+strict = true
