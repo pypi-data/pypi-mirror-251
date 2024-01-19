@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "snekoil"
+version = "0.5.0"
+description = "Unreasonably fast"
+authors = ["overflowerror <mail@overflowerror.com>"]
+license = "ISC"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pytest-cov = "^4.1.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.4"
+flake8 = "^7.0.0"
+black = "^23.12.1"
+ruff = "^0.1.13"
+
+[tool.commitizen]
+name = "cz_conventional_commits"
+tag_format = "$version"
+version_scheme = "pep440"
+version_provider = "poetry"
+update_changelog_on_bump = true
+major_version_zero = true
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+ignore-init-module-imports = true
+select = ["F", "E", "I", "N"]
