@@ -1,0 +1,1203 @@
+#@+leo-ver=5-thin
+#@+node:ekr.20170302123956.1: * @file ../doc/leoAttic.txt
+# This is Leo's final resting place for dead code.
+# New in Leo 6.7.5. The attic will contain only code retired in the present release.
+
+#@@language python
+#@@killbeautify
+#@+all
+#@+node:ekr.20220917052540.1: ** retire read-outline-only
+#@+node:ekr.20031218072017.2839: *3* c_file.readOutlineOnly
+@g.commander_command('read-outline-only')
+def readOutlineOnly(self: Self, event: Event = None) -> None:
+    """Open a Leo outline, but do not read any derived files."""
+    c = self
+    c.endEditing()
+    fileName = g.app.gui.runOpenFileDialog(c,
+        title="Read Outline Only",
+        filetypes=[("Leo files", "*.leo *.leojs *.db"), ("All files", "*")],
+        defaultextension=".leo")
+    if not fileName:
+        return
+    try:
+        # pylint: disable=assignment-from-no-return
+        # Can't use 'with" because readOutlineOnly closes the file.
+        theFile = open(fileName, 'r')
+        g.chdir(fileName)
+        c = g.app.newCommander(fileName)
+        frame = c.frame
+        frame.deiconify()
+        frame.lift()
+        c.fileCommands.readOutlineOnly(theFile, fileName)  # closes file.
+    except Exception:
+        g.es("can not open:", fileName)
+#@+node:ekr.20031218072017.3030: *3* fc.readOutlineOnly
+def readOutlineOnly(self, theFile: Any, fileName: str) -> VNode:
+    c = self.c
+    # Set c.openDirectory
+    theDir = g.os_path_dirname(fileName)
+    if theDir:
+        c.openDirectory = c.frame.openDirectory = theDir
+    v, ratio = self.getLeoFile(theFile, fileName, readAtFileNodesFlag=False)
+    c.redraw()
+    c.frame.deiconify()
+    junk, junk, secondary_ratio = self.frame.initialRatios()
+    c.frame.resizePanesToRatio(ratio, secondary_ratio)
+    return v
+#@+node:ekr.20230913131425.1: ** retire ctext importer & writer
+#@+node:tbrown.20140801105909.47549: *3* ../plugins/importers/ctext.py
+from __future__ import annotations
+import re
+from typing import TYPE_CHECKING
+from leo.core import leoGlobals as g  # Required
+from leo.plugins.importers.base_importer import Importer
+
+if TYPE_CHECKING:
+    from leo.core.leoCommands import Commands as Cmdr
+    from leo.core.leoNodes import Position, VNode
+
+@others
+
+def do_import(c: Cmdr, parent: Position, s: str) -> None:
+    """The importer callback for ctext."""
+    CText_Importer(c).import_from_string(parent, s)
+
+importer_dict = {
+    '@auto': ['@auto-ctext'],
+    'extensions': ['.ctext'],  # A made-up extension for unit tests.
+    'func': do_import,
+}
+@language python
+@tabwidth -4
+#@+node:tbrown.20140801105909.47551: *4* class CText_Importer(Importer)
+class CText_Importer(Importer):
+    << ctext docstring >>
+
+    language = 'plain'  # A reasonable default.
+
+    @others
+#@+node:ekr.20161130053507.1: *5* << ctext docstring >>
+"""
+Read/Write simple text files with hierarchy embedded in headlines::
+
+    Leading text in root node of subtree
+
+    Etc. etc.
+
+    ### A level one node #####################################
+
+    This would be the text in this level one node.
+
+    And this.
+
+    ### Another level one node ###############################
+
+    Another one
+
+    #### A level 2 node ######################################
+
+    See what we did there - one more '#' - this is a subnode.
+
+Leading / trailing whitespace may not be preserved.  '-' and '/'
+are used in place of '#' for SQL and JavaScript.
+
+"""
+#@+node:tbrown.20140801105909.47553: *5* ctext_i.import_from_string
+def import_from_string(self, parent: Position, s: str) -> None:
+    """CText_Importer.import_from_string."""
+    c = self.c
+    root = parent.copy()
+    ft = c.importCommands.fileType.lower()
+    cchar = (
+        '#' if g.unitTesting else
+        '-' if ft == '.sql' else
+        '/' if ft == '.js' else '#'
+    )
+    header_pat = re.compile(fr"^\s*({cchar}{{3,}})(.*?){cchar}*\s*$")
+    lines_dict: dict[VNode, list[str]] = {root.v: []}
+    parents: list[Position] = [root]
+    for line in g.splitLines(s):
+        if m := header_pat.match(line):
+            level = len(m.group(1)) - 2
+            assert level >= 1, m.group(1)
+            parents = parents[:level]
+            self.create_placeholders(level, lines_dict, parents)
+            parent = parents[-1]
+            child = parent.insertAsLastChild()
+            child.h = m.group(2).strip()
+            lines_dict[child.v] = []
+            parents.append(child)
+        else:
+            parent = parents[-1]
+            lines_dict[parent.v].append(line)
+
+    for p in root.self_and_subtree():
+        p.b = ''.join(lines_dict[p.v])
+
+    # Importers should dirty neither nodes nor the outline.
+    for p in root.self_and_subtree():
+        p.clearDirty()
+#@+node:tbrown.20140804103545.29975: *3* ../plugins/writers/ctext.py
+@language python
+@tabwidth -4
+from leo.core import leoGlobals as g  # Required.
+from leo.core.leoNodes import Position
+import leo.plugins.writers.basewriter as basewriter
+@others
+writer_dict = {
+    '@auto': ['@auto-ctext',],
+    'class': CTextWriter,
+}
+@language python
+@tabwidth -4
+#@+node:tbrown.20140804103545.29977: *4* class CTextWriter(BaseWriter)
+class CTextWriter(basewriter.BaseWriter):
+    @others
+#@+node:tbrown.20140804103545.29978: *5* put_node
+def put_node(self, p: Position, level: int = 0) -> None:
+    self.put(p.b.strip() + '\n\n')
+    for child in p.children():
+        txt = self.cchar * 3 + self.cchar * level + ' ' + child.h.strip() + ' '
+        txt += self.cchar * max(0, 75 - len(txt))
+        self.put(txt + '\n\n')
+        self.put_node(child, level + 1)
+#@+node:tbrown.20140804103545.29979: *5* write
+def write(self, root: Position) -> None:
+
+    h = root.h.lower()
+    self.cchar = (
+        '#' if g.unitTesting else
+        '%' if h.startswith('.tex') else
+        '-' if h.startswith('.sql') else
+        '/' if h.startswith('.js') else '#'
+    )
+    self.put_node(root, 0)
+#@+node:ekr.20220812144913.1: *3* class TestCTextWriter(BaseTestWriter)
+class TestCTextWriter (BaseTestWriter):
+    """Test cases for the ctext writer plugin."""
+    @others
+#@+node:ekr.20220812144243.1: *4* TestCTextWriter.test_1
+def test_1(self):
+
+    c, root = self.c, self.c.p
+    child = root.insertAsLastChild()
+    child.h = 'h'
+    x = CTextWriter(c)
+    x.write(root)
+#@+node:ekr.20230913144248.1: ** retire g.SherlockTracer
+#@+node:ekr.20121128031949.12605: *3* class g.SherlockTracer
+class SherlockTracer:
+    """
+    A stand-alone tracer class with many of Sherlock's features.
+
+    This class should work in any environment containing the re, os and sys modules.
+
+    The arguments in the pattern lists determine which functions get traced
+    or which stats get printed. Each pattern starts with "+", "-", "+:" or
+    "-:", followed by a regular expression::
+
+    "+x"  Enables tracing (or stats) for all functions/methods whose name
+          matches the regular expression x.
+    "-x"  Disables tracing for functions/methods.
+    "+:x" Enables tracing for all functions in the **file** whose name matches x.
+    "-:x" Disables tracing for an entire file.
+
+    Enabling and disabling depends on the order of arguments in the pattern
+    list. Consider the arguments for the Rope trace::
+
+    patterns=['+.*','+:.*',
+        '-:.*\\lib\\.*','+:.*rope.*','-:.*leoGlobals.py',
+        '-:.*worder.py','-:.*prefs.py','-:.*resources.py',])
+
+    This enables tracing for everything, then disables tracing for all
+    library modules, except for all rope modules. Finally, it disables the
+    tracing for Rope's worder, prefs and resources modules.
+
+    Being able to zero in on the code of interest can be a big help in
+    studying other people's code. This is a non-invasive method: no tracing
+    code needs to be inserted anywhere.
+
+    Usage:
+
+    g.SherlockTracer(patterns).run()
+    """
+    @others
+#@+node:ekr.20121128031949.12602: *4* sherlock.__init__
+def __init__(
+    self,
+    patterns: list[Any],
+    indent: bool = True,
+    show_args: bool = True,
+    show_return: bool = True,
+    verbose: bool = True,
+) -> None:
+    """SherlockTracer ctor."""
+    self.bad_patterns: list[str] = []  # List of bad patterns.
+    self.indent = indent  # True: indent calls and returns.
+    self.contents_d: dict[str, list] = {}  # Keys are file names, values are file lines.
+    self.n = 0  # The frame level on entry to run.
+    self.stats: dict[str, dict] = {}  # Keys are full file names, values are dicts.
+    self.patterns: list[Any] = None  # A list of regex patterns to match.
+    self.pattern_stack: list[str] = []
+    self.show_args = show_args  # True: show args for each function call.
+    self.show_return = show_return  # True: show returns from each function.
+    self.trace_lines = True  # True: trace lines in enabled functions.
+    self.verbose = verbose  # True: print filename:func
+    self.set_patterns(patterns)
+    try:  # Don't assume g.app exists.
+        from leo.core.leoQt import QtCore
+        if QtCore:
+            # pylint: disable=no-member
+            QtCore.pyqtRemoveInputHook()
+    except Exception:
+        pass
+#@+node:ekr.20140326100337.16844: *4* sherlock.__call__
+def __call__(self, frame: Any, event: Any, arg: Any) -> Any:
+    """Exists so that self.dispatch can return self."""
+    return self.dispatch(frame, event, arg)
+#@+node:ekr.20140326100337.16846: *4* sherlock.bad_pattern
+def bad_pattern(self, pattern: Any) -> None:
+    """Report a bad Sherlock pattern."""
+    if pattern not in self.bad_patterns:
+        self.bad_patterns.append(pattern)
+        print(f"\nignoring bad pattern: {pattern}\n")
+#@+node:ekr.20140326100337.16847: *4* sherlock.check_pattern
+def check_pattern(self, pattern: str) -> bool:
+    """Give an error and return False for an invalid pattern."""
+    try:
+        for prefix in ('+:', '-:', '+', '-'):
+            if pattern.startswith(prefix):
+                re.match(pattern[len(prefix) :], 'xyzzy')
+                return True
+        self.bad_pattern(pattern)
+        return False
+    except Exception:
+        self.bad_pattern(pattern)
+        return False
+#@+node:ekr.20121128031949.12609: *4* sherlock.dispatch
+def dispatch(self, frame: Any, event: Any, arg: Any) -> Any:
+    """The dispatch method."""
+    if event == 'call':
+        self.do_call(frame, arg)
+    elif event == 'return' and self.show_return:
+        self.do_return(frame, arg)
+    elif event == 'line' and self.trace_lines:
+        self.do_line(frame, arg)
+    # Queue the SherlockTracer instance again.
+    return self
+#@+node:ekr.20121128031949.12603: *4* sherlock.do_call & helper
+def do_call(self, frame: Any, unused_arg: Any) -> None:
+    """Trace through a function call."""
+    frame1 = frame
+    code = frame.f_code
+    file_name = code.co_filename
+    locals_ = frame.f_locals
+    function_name = code.co_name
+    try:
+        full_name = self.get_full_name(locals_, function_name)
+    except Exception:
+        full_name = function_name
+    if not self.is_enabled(file_name, full_name, self.patterns):
+        # 2020/09/09: Don't touch, for example, __ methods.
+        return
+    n = 0  # The number of callers of this def.
+    while frame:
+        frame = frame.f_back
+        n += 1
+    indent = ' ' * max(0, n - self.n) if self.indent else ''
+    path = f"{os.path.basename(file_name):>20}" if self.verbose else ''
+    leadin = '+' if self.show_return else ''
+    args_list = self.get_args(frame1)
+    if self.show_args and args_list:
+        args_s = ','.join(args_list)
+        args_s2 = f"({args_s})"
+        if len(args_s2) > 100:
+            print(f"{path}:{indent}{leadin}{full_name}")
+            g.printObj(args_list, indent=len(indent) + 22)
+        else:
+            print(f"{path}:{indent}{leadin}{full_name}{args_s2}")
+    else:
+        print(f"{path}:{indent}{leadin}{full_name}")
+    # Always update stats.
+    d = self.stats.get(file_name, {})
+    d[full_name] = 1 + d.get(full_name, 0)
+    self.stats[file_name] = d
+#@+node:ekr.20130111185820.10194: *5* sherlock.get_args
+def get_args(self, frame: Any) -> list[str]:
+    """Return a list of string "name=val" for each arg in the function call."""
+    code = frame.f_code
+    locals_ = frame.f_locals
+    name = code.co_name
+    n = code.co_argcount
+    if code.co_flags & 4:
+        n = n + 1
+    if code.co_flags & 8:
+        n = n + 1
+    result = []
+    for i in range(n):
+        name = code.co_varnames[i]
+        if name != 'self':
+            arg = locals_.get(name, '*undefined*')
+            if arg:
+                if isinstance(arg, (list, tuple)):
+                    val_s = ','.join([self.show(z) for z in arg if self.show(z)])
+                    val = f"[{val_s}]"
+                elif isinstance(arg, str):
+                    val = arg
+                else:
+                    val = self.show(arg)
+                if val:
+                    result.append(f"{name}={val}")
+    return result
+#@+node:ekr.20140402060647.16845: *4* sherlock.do_line (not used)
+bad_fns: list[str] = []
+
+def do_line(self, frame: Any, arg: Any) -> None:
+    """print each line of enabled functions."""
+    if 1:
+        return
+    code = frame.f_code
+    file_name = code.co_filename
+    locals_ = frame.f_locals
+    name = code.co_name
+    full_name = self.get_full_name(locals_, name)
+    if not self.is_enabled(file_name, full_name, self.patterns):
+        return
+    n = frame.f_lineno - 1  # Apparently, the first line is line 1.
+    d = self.contents_d
+    lines = d.get(file_name)
+    if not lines:
+        print(file_name)
+        try:
+            with open(file_name) as f:
+                s = f.read()
+        except Exception:
+            if file_name not in self.bad_fns:
+                self.bad_fns.append(file_name)
+                print(f"open({file_name}) failed")
+            return
+        lines = g.splitLines(s)
+        d[file_name] = lines
+    line = lines[n].rstrip() if n < len(lines) else '<EOF>'
+    if 0:
+        print(f"{name:3} {line}")
+    else:
+        print(f"{g.shortFileName(file_name)} {n} {full_name} {line}")
+#@+node:ekr.20130109154743.10172: *4* sherlock.do_return & helper
+def do_return(self, frame: Any, arg: Any) -> None:  # Arg *is* used below.
+    """Trace a return statement."""
+    code = frame.f_code
+    fn = code.co_filename
+    locals_ = frame.f_locals
+    name = code.co_name
+    self.full_name = self.get_full_name(locals_, name)
+    if not self.is_enabled(fn, self.full_name, self.patterns):
+        return
+    n = 0
+    while frame:
+        frame = frame.f_back
+        n += 1
+    path = f"{os.path.basename(fn):>20}" if self.verbose else ''
+    if name and name == '__init__':
+        try:
+            ret1 = locals_ and locals_.get('self', None)
+            self.put_ret(ret1, n, path)
+        except NameError:
+            self.put_ret(f"<{ret1.__class__.__name__}>", n, path)
+    else:
+        self.put_ret(arg, n, path)
+#@+node:ekr.20220605141445.1: *5* sherlock.put_ret
+def put_ret(self, arg: Any, n: int, path: str) -> None:
+    """Print arg, the value returned by a "return" statement."""
+    indent = ' ' * max(0, n - self.n + 1) if self.indent else ''
+    try:
+        if isinstance(arg, types.GeneratorType):
+            ret = '<generator>'
+        elif isinstance(arg, (tuple, list)):
+            ret_s = ','.join([self.show(z) for z in arg])
+            if len(ret_s) > 40:
+                g.printObj(arg, indent=len(indent))
+                ret = ''
+            else:
+                ret = f"[{ret_s}]"
+        elif arg:
+            ret = self.show(arg)
+            if len(ret) > 100:
+                ret = f"\n    {ret}"
+        else:
+            ret = '' if arg is None else repr(arg)
+        print(f"{path}:{indent}-{self.full_name} -> {ret}")
+    except Exception:
+        exctype, value = sys.exc_info()[:2]
+        try:  # Be extra careful.
+            arg_s = f"arg: {arg!r}"
+        except Exception:
+            arg_s = ''  # arg.__class__.__name__
+        print(
+            f"{path}:{indent}-{self.full_name} -> "
+            f"{exctype.__name__}, {value} {arg_s}"
+        )
+#@+node:ekr.20121128111829.12185: *4* sherlock.fn_is_enabled
+def fn_is_enabled(self, func: Any, patterns: list[str]) -> bool:
+    """Return True if tracing for the given function is enabled."""
+    if func in self.ignored_functions:
+        return False
+
+    def ignore_function() -> None:
+        if func not in self.ignored_functions:
+            self.ignored_functions.append(func)
+            print(f"Ignore function: {func}")
+    #
+    # New in Leo 6.3. Never trace dangerous functions.
+    table = (
+        '_deepcopy.*',
+        # Unicode primitives.
+        'encode\b', 'decode\b',
+        # System functions
+        '.*__next\b',
+        '<frozen>', '<genexpr>', '<listcomp>',
+        # '<decorator-gen-.*>',
+        'get\b',
+        # String primitives.
+        'append\b', 'split\b', 'join\b',
+        # File primitives...
+        'access_check\b', 'expanduser\b', 'exists\b', 'find_spec\b',
+        'abspath\b', 'normcase\b', 'normpath\b', 'splitdrive\b',
+    )
+    g.trace('=====', func)
+    for z in table:
+        if re.match(z, func):
+            ignore_function()
+            return False
+    #
+    # Legacy code.
+    try:
+        enabled, pattern = False, None
+        for pattern in patterns:
+            if pattern.startswith('+:'):
+                if re.match(pattern[2:], func):
+                    enabled = True
+            elif pattern.startswith('-:'):
+                if re.match(pattern[2:], func):
+                    enabled = False
+        return enabled
+    except Exception:
+        self.bad_pattern(pattern)
+        return False
+#@+node:ekr.20130112093655.10195: *4* sherlock.get_full_name
+def get_full_name(self, locals_: Any, name: str) -> str:
+    """Return class_name::name if possible."""
+    full_name = name
+    try:
+        user_self = locals_ and locals_.get('self', None)
+        if user_self:
+            full_name = user_self.__class__.__name__ + '::' + name
+    except Exception:
+        pass
+    return full_name
+#@+node:ekr.20121128111829.12183: *4* sherlock.is_enabled
+ignored_files: list[str] = []  # List of files.
+ignored_functions: list[str] = []  # List of files.
+
+def is_enabled(
+    self,
+    file_name: str,
+    function_name: str,
+    patterns: list[str] = None,
+) -> bool:
+    """Return True if tracing for function_name in the given file is enabled."""
+    #
+    # New in Leo 6.3. Never trace through some files.
+    if not os:
+        return False  # Shutting down.
+    base_name = os.path.basename(file_name)
+    if base_name in self.ignored_files:
+        return False
+
+    def ignore_file() -> None:
+        if base_name not in self.ignored_files:
+            self.ignored_files.append(base_name)
+
+    def ignore_function() -> None:
+        if function_name not in self.ignored_functions:
+            self.ignored_functions.append(function_name)
+
+    if f"{os.sep}lib{os.sep}" in file_name:
+        ignore_file()
+        return False
+    if base_name.startswith('<') and base_name.endswith('>'):
+        ignore_file()
+        return False
+    #
+    # New in Leo 6.3. Never trace dangerous functions.
+    table = (
+        '_deepcopy.*',
+        # Unicode primitives.
+        'encode\b', 'decode\b',
+        # System functions
+        '.*__next\b',
+        '<frozen>', '<genexpr>', '<listcomp>',
+        # '<decorator-gen-.*>',
+        'get\b',
+        # String primitives.
+        'append\b', 'split\b', 'join\b',
+        # File primitives...
+        'access_check\b', 'expanduser\b', 'exists\b', 'find_spec\b',
+        'abspath\b', 'normcase\b', 'normpath\b', 'splitdrive\b',
+    )
+    for z in table:
+        if re.match(z, function_name):
+            ignore_function()
+            return False
+    #
+    # Legacy code.
+    enabled = False
+    if patterns is None:
+        patterns = self.patterns
+    for pattern in patterns:
+        try:
+            if pattern.startswith('+:'):
+                if re.match(pattern[2:], file_name):
+                    enabled = True
+            elif pattern.startswith('-:'):
+                if re.match(pattern[2:], file_name):
+                    enabled = False
+            elif pattern.startswith('+'):
+                if re.match(pattern[1:], function_name):
+                    enabled = True
+            elif pattern.startswith('-'):
+                if re.match(pattern[1:], function_name):
+                    enabled = False
+            else:
+                self.bad_pattern(pattern)
+        except Exception:
+            self.bad_pattern(pattern)
+    return enabled
+#@+node:ekr.20121128111829.12182: *4* sherlock.print_stats
+def print_stats(self, patterns: list[str] = None) -> None:
+    """Print all accumulated statisitics."""
+    print('\nSherlock statistics...')
+    if not patterns:
+        patterns = ['+.*', '+:.*',]
+    for fn in sorted(self.stats.keys()):
+        d = self.stats.get(fn)
+        if self.fn_is_enabled(fn, patterns):
+            result = sorted(d.keys())  # type:ignore
+        else:
+            result = [key for key in sorted(d.keys())  # type:ignore
+                if self.is_enabled(fn, key, patterns)]
+        if result:
+            print('')
+            fn = fn.replace('\\', '/')
+            parts = fn.split('/')
+            print('/'.join(parts[-2:]))
+            for key in result:
+                print(f"{d.get(key):4} {key}")
+#@+node:ekr.20121128031949.12614: *4* sherlock.run
+# Modified from pdb.Pdb.set_trace.
+
+def run(self, frame: Any = None) -> None:
+    """Trace from the given frame or the caller's frame."""
+    print("SherlockTracer.run:patterns:\n%s" % '\n'.join(self.patterns))
+    if frame is None:
+        frame = sys._getframe().f_back
+    # Compute self.n, the number of frames to ignore.
+    self.n = 0
+    while frame:
+        frame = frame.f_back
+        self.n += 1
+    # Pass self to sys.settrace to give easy access to all methods.
+    sys.settrace(self)
+#@+node:ekr.20140322090829.16834: *4* sherlock.push & pop
+def push(self, patterns: list[str]) -> None:
+    """Push the old patterns and set the new."""
+    self.pattern_stack.append(self.patterns)  # type:ignore
+    self.set_patterns(patterns)
+    print(f"SherlockTracer.push: {self.patterns}")
+
+def pop(self) -> None:
+    """Restore the pushed patterns."""
+    if self.pattern_stack:
+        self.patterns = self.pattern_stack.pop()  # type:ignore
+        print(f"SherlockTracer.pop: {self.patterns}")
+    else:
+        print('SherlockTracer.pop: pattern stack underflow')
+#@+node:ekr.20140326100337.16845: *4* sherlock.set_patterns
+def set_patterns(self, patterns: list[str]) -> None:
+    """Set the patterns in effect."""
+    self.patterns = [z for z in patterns if self.check_pattern(z)]
+#@+node:ekr.20140322090829.16831: *4* sherlock.show
+def show(self, item: Any) -> str:
+    """return the best representation of item."""
+    if not item:
+        return repr(item)
+    if isinstance(item, dict):
+        return 'dict'
+    if isinstance(item, str):
+        s = repr(item)
+        if len(s) <= 20:
+            return s
+        return s[:17] + '...'
+    s = repr(item)
+    # A Hack for mypy:
+    if s.startswith("<object object"):
+        s = "_dummy"
+    return s
+#@+node:ekr.20121128093229.12616: *4* sherlock.stop
+def stop(self) -> None:
+    """Stop all tracing."""
+    sys.settrace(None)
+#@+node:ekr.20231009061250.1: ** retire all eval commands
+# mod_scripting.py contained the EvalController class.
+
+# mod_http.py (!) used the EvalController class.
+#@+node:ekr.20231009082535.1: *3* --- from mod_scripting.py
+#@+node:ekr.20231009062818.1: *4* docstring relating to eval commands
+"""
+Eval Commands
+-------------
+
+The mod_scripting plugin creates the following 5 eval* commands:
+
+eval
+----
+
+Evaluates the selected text, if any, and remember the result in c.vs, a global namespace.
+For example::
+
+    a = 10
+
+sets:
+
+    c.vs['a'] = 10
+
+This command prints the result of the last expression or assignment in the log pane
+and select the next line of the body pane. Handy for executing line by line.
+
+eval-last
+---------
+
+Inserts the result of the last eval in the body.
+Suppose you have this text::
+
+    The cat is 7 years, or 7*365 days old.
+
+To replace 7*365 with 2555, do the following::
+
+    select 7*367
+    eval
+    delete 7*365
+    do eval-last
+
+eval-replace
+------------
+
+Evaluates the expression and replaces it with the computed value.
+For example, the example above can be done as follows::
+
+
+    select 7*367
+    eval-replace
+
+eval-last-pretty
+----------------
+
+Like eval-last, but format with pprint.pformat.
+
+eval-block
+----------
+
+Evaluates a series of blocks of code in the body, separated like this::
+
+    # >>>
+    code to run
+    # <<<
+    output of code
+    # >>>
+    code to run
+    # <<<
+    output of code
+    ...
+
+For example::
+
+    import datetime
+    datetime.datetime.now()
+    # >>>
+    2018-03-21 21:46:13.582835
+    # <<<
+    datetime.datetime.now()+datetime.timedelta(days=1000)
+    # >>>
+    2020-12-15 21:46:34.403814
+    # <<<
+
+eval-block inserts the separators, blocks can be re-run by placing the cursor in
+them and doing eval-block, and the cursor is placed in the next block, so you
+can go back up, change something, then quickly re-execute everything.
+"""
+#@+node:ekr.20180328085038.1: *4* class EvalController
+class EvalController:
+    """A class defining all eval-* commands."""
+    @others
+#@+node:ekr.20180328130835.1: *5* eval.Birth
+def __init__(self, c: Cmdr) -> None:
+    """Ctor for EvalController class."""
+    self.answers: list[tuple[str, str]] = []
+    self.c = c
+    self.d: dict[str, Any] = {}
+    self.globals_d: dict[str, Any] = {'c': c, 'g': g, 'p': c.p}
+    self.locals_d: dict[str, Any] = {}
+    self.legacy = c.config.getBool('legacy-eval', default=True)
+    if g.app.ipk:
+        # Use the IPython namespace.
+        self.c.vs = g.app.ipk.namespace
+    elif self.legacy:
+        self.c.vs = self.d
+    else:
+        self.c.vs = self.globals_d
+    # allow the auto-completer to complete in this namespace
+    # Updated by do_exec.
+    self.c.keyHandler.autoCompleter.namespaces.append(self.c.vs)
+    self.last_result = None
+    self.old_stderr: bool = None
+    self.old_stdout: bool = None
+#@+node:ekr.20180328092221.1: *5* eval.Commands
+#@+node:ekr.20180328085426.2: *6* eval
+@eval_cmd("eval")
+def eval_command(self, event: Event) -> None:
+    << eval docstring >>
+    c = self.c
+    if c == event.get('c'):
+        s = self.get_selected_lines()
+        if self.legacy and s is None:
+            return
+        # Updates self.last_answer if there is exactly one answer.
+        self.eval_text(s)
+#@+node:ekr.20180328100519.1: *7* << eval docstring >>
+"""
+Execute the selected text, if any, or the line containing the cursor.
+
+Select next line of text.
+
+Tries hard to capture the result of from the last expression in the
+selected text::
+
+    import datetime
+    today = datetime.date.today()
+
+will capture the value of ``today`` even though the last line is a
+statement, not an expression.
+
+Stores results in ``c.vs['_last']`` for insertion
+into body by ``eval-last`` or ``eval-last-pretty``.
+
+Removes common indentation (``textwrap.dedent()``) before executing,
+allowing execution of indented code.
+
+``g``, ``c``, and ``p`` are available to executing code, assignments
+are made in the ``c.vs`` namespace and persist for the life of ``c``.
+"""
+#@+node:ekr.20180328085426.3: *6* eval-block
+@eval_cmd("eval-block")
+def eval_block(self, event: Event) -> None:
+    << eval-block docstring >>
+    c = self.c
+    if c != event.get('c'):
+        return
+    pos = 0
+    lines: list[str] = []
+    current_seen = False
+    current: bool
+    source: str
+    output: str
+    for current, source, output in self.get_blocks():
+        lines.append(source)
+        lines.append("# >>>" + (" *" if current_seen else ""))
+        if current:
+            old_log = c.frame.log.logCtrl.getAllText()
+            self.eval_text(source)
+            new_log = c.frame.log.logCtrl.getAllText()[len(old_log) :]
+            lines.append(new_log.strip())
+            if not self.legacy:
+                if self.last_result:
+                    lines.append(self.last_result)
+            pos = len('\n'.join(lines)) + 7
+            current_seen = True
+        else:
+            lines.append(output)
+        lines.append("# <<<")
+    c.p.b = '\n'.join(lines) + '\n'
+    c.frame.body.wrapper.setInsertPoint(pos)
+    c.redraw()
+    c.bodyWantsFocusNow()
+#@+node:ekr.20180328100415.1: *7* << eval-block docstring >>
+"""
+In the body, "# >>>" marks the end of a code block, and "# <<<" marks
+the end of an output block.  E.g.::
+
+a = 2
+# >>>
+4
+# <<<
+b = 2.0*a
+# >>>
+4.0
+# <<<
+
+``eval-block`` evaluates the current code block, either the code block
+the cursor's in, or the code block preceding the output block the cursor's
+in.  Subsequent output blocks are marked "# >>> *" to show they may need
+re-evaluation.
+
+Note: you don't really need to type the "# >>>" and "# <<<" markers
+because ``eval-block`` will add them as needed.  So just type the
+first code block and run ``eval-block``.
+
+"""
+#@+node:ekr.20180328085426.5: *6* eval-last
+@eval_cmd("eval-last")
+def eval_last(self, event: Event, text: str=None) -> None:
+    """
+    Insert the last result from ``eval``.
+
+    Inserted as a string, so ``"1\n2\n3\n4"`` will cover four lines and
+    insert no quotes, for ``repr()`` style insertion use ``last-pretty``.
+    """
+    c = self.c
+    if c != event.get('c'):
+        return
+    if self.legacy:
+        text = str(c.vs.get('_last'))
+    else:
+        if not text and not self.last_result:
+            return
+        if not text:
+            text = str(self.last_result)
+    w = c.frame.body.wrapper
+    i = w.getInsertPoint()
+    w.insert(i, text + '\n')
+    w.setInsertPoint(i + len(text) + 1)
+    c.setChanged()
+#@+node:ekr.20180328085426.6: *6* eval-last-pretty
+@eval_cmd("eval-last-pretty")
+def vs_last_pretty(self, event: Event) -> None:
+    """
+    Insert the last result from ``eval``.
+
+    Formatted by ``pprint.pformat()``, so ``"1\n2\n3\n4"`` will appear as
+    '``"1\n2\n3\n4"``', see all ``last``.
+    """
+    c = self.c
+    if c != event.get('c'):
+        return
+    if self.legacy:
+        text = str(c.vs.get('_last'))
+    else:
+        text = self.last_result
+    if text:
+        text = pprint.pformat(text)
+        self.eval_last(event, text=text)
+#@+node:ekr.20180328085426.4: *6* eval-replace
+@eval_cmd("eval-replace")
+def eval_replace(self, event: Event) -> None:
+    """
+    Execute the selected text, if any.
+    Undoably replace it with the result.
+    """
+    c = self.c
+    if c != event.get('c'):
+        return
+    w = c.frame.body.wrapper
+    s = w.getSelectedText()
+    if not s.strip():
+        g.es_print('no selected text')
+        return
+    self.eval_text(s)
+    if self.legacy:
+        last = c.vs.get('_last')
+    else:
+        last = self.last_result
+    if not last:
+        return
+    s = pprint.pformat(last)
+    i, j = w.getSelectionRange()
+    new_text = c.p.b[:i] + s + c.p.b[j:]
+    bunch = c.undoer.beforeChangeNodeContents(c.p)
+    w.setAllText(new_text)
+    c.p.b = new_text
+    w.setInsertPoint(i + len(s))
+    c.undoer.afterChangeNodeContents(c.p, 'Insert result', bunch)
+    c.setChanged()
+#@+node:ekr.20180328151652.1: *5* eval.Helpers
+#@+node:ekr.20180328090830.1: *6* eval.eval_text & helpers
+def eval_text(self, s: str) -> Optional[str]:
+    """Evaluate string s."""
+    s = textwrap.dedent(s)
+    if not s.strip():
+        return None
+    self.redirect()
+    if self.legacy:
+        blocks = re.split('\n(?=[^\\s])', s)
+        ans = self.old_exec(blocks, s)
+        self.show_legacy_answer(ans, blocks)
+        return ans  # needed by mod_http
+    self.new_exec(s)
+    self.show_answers()
+    self.unredirect()
+    return None
+#@+node:ekr.20180329130626.1: *7* eval.new_exec
+def new_exec(self, s: str) -> None:
+    try:
+        self.answers = []
+        self.locals_d = {}
+        exec(s, self.globals_d, self.locals_d)
+        for key in self.locals_d:
+            val = self.locals_d.get(key)
+            self.globals_d[key] = val
+            self.answers.append((key, val))
+        if len(self.answers) == 1:
+            key, val = self.answers[0]
+            self.last_result = val
+        else:
+            self.last_result = None
+    except Exception:
+        g.es_exception()
+#@+node:ekr.20180329130623.1: *7* eval.old_exec
+def old_exec(self, blocks: list[str], txt: str) -> str:
+
+    # pylint: disable=eval-used
+    c = self.c
+    leo_globals = {'c': c, 'g': g, 'p': c.p}
+    all_done, ans = False, None
+    try:
+        # Execute all but the last 'block'
+        exec('\n'.join(blocks[:-1]), leo_globals, c.vs)  # Compatible with Python 3.x.
+        all_done = False
+    except SyntaxError:
+        # Splitting the last block caused syntax error
+        try:
+            # Is the whole thing a single expression?
+            ans = eval(txt, leo_globals, c.vs)
+        except SyntaxError:
+            try:
+                exec(txt, leo_globals, c.vs)
+            except Exception:
+                g.es_exception()
+        all_done = True  # Either way, the last block will be used.
+    if not all_done:  # last block still needs using
+        try:
+            ans = eval(blocks[-1], leo_globals, c.vs)
+        except SyntaxError:
+            try:
+                exec(txt, leo_globals, c.vs)
+            except Exception:
+                g.es_exception()
+    return ans
+#@+node:ekr.20180328130526.1: *7* eval.redirect & unredirect
+def redirect(self) -> None:
+    c = self.c
+    if c.config.getBool('eval-redirect'):
+        self.old_stderr = g.stdErrIsRedirected()
+        self.old_stdout = g.stdOutIsRedirected()
+        if not self.old_stderr:
+            g.redirectStderr()
+        if not self.old_stdout:
+            g.redirectStdout()
+
+def unredirect(self) -> None:
+    c = self.c
+    if c.config.getBool('eval-redirect'):
+        if not self.old_stderr:
+            g.restoreStderr()
+        if not self.old_stdout:
+            g.restoreStdout()
+#@+node:ekr.20180328132748.1: *7* eval.show_answers
+def show_answers(self) -> None:
+    """ Show all new values computed by do_exec."""
+    if len(self.answers) > 1:
+        g.es('')
+    for answer in self.answers:
+        key, val = answer
+        g.es(f"{key} = {val}")
+#@+node:ekr.20180329154232.1: *7* eval.show_legacy_answer
+def show_legacy_answer(self, ans: str, blocks: list[str]) -> str:
+
+    cvs = self.c.vs
+    if ans is None:  # see if last block was a simple "var =" assignment
+        key = blocks[-1].split('=', 1)[0].strip()
+        if key in cvs:
+            ans = cvs[key]
+    if ans is None:  # see if whole text was a simple /multi-line/ "var =" assignment
+        key = blocks[0].split('=', 1)[0].strip()
+        if key in cvs:
+            ans = cvs[key]
+    cvs['_last'] = ans
+    if ans is not None:
+        # annoying to echo 'None' to the log during line by line execution
+        txt = str(ans)
+        lines = txt.split('\n')
+        if len(lines) > 10:
+            txt = '\n'.join(lines[:5] + ['<snip>'] + lines[-5:])
+        if len(txt) > 500:
+            txt = txt[:500] + ' <truncated>'
+        g.es(txt)
+    return ans
+#@+node:ekr.20180329125626.1: *6* eval.exec_then_eval (not used yet)
+def exec_then_eval(self, code: str, ns: dict) -> str:
+    # From Milan Melena.
+    import ast
+    block = ast.parse(code, mode='exec')
+    if block.body and isinstance(block.body[-1], ast.Expr):
+        last = ast.Expression(block.body.pop().value)
+        exec(compile(block, '<string>', mode='exec'), ns)
+        # pylint: disable=eval-used
+        return eval(compile(last, '<string>', mode='eval'), ns)
+    exec(compile(block, '<string>', mode='exec'), ns)
+    return ""
+#@+node:tbrown.20170516194332.1: *6* eval.get_blocks
+def get_blocks(self) -> Generator:
+    """get_blocks - iterate code blocks
+
+    :return: (current, source, output)
+    :rtype: (bool, str, str)
+    """
+    c = self.c
+    pos = c.frame.body.wrapper.getInsertPoint()
+    chrs = 0
+    lines = c.p.b.split('\n')
+    block: dict[str, list] = {'source': [], 'output': []}
+    reading = 'source'
+    seeking_current = True
+    # if the last non-blank line isn't the end of a possibly empty
+    # output block, make it one
+    if [i for i in lines if i.strip()][-1] != "# <<<":
+        lines.append("# <<<")
+    while lines:
+        line = lines.pop(0)
+        chrs += len(line) + 1
+        if line.startswith("# >>>"):
+            reading = 'output'
+            continue
+        if line.startswith("# <<<"):
+            current = seeking_current and (chrs >= pos + 1)
+            if current:
+                seeking_current = False
+            yield current, '\n'.join(block['source']), '\n'.join(block['output'])
+            block = {'source': [], 'output': []}
+            reading = 'source'
+            continue
+        block[reading].append(line)
+#@+node:ekr.20180328145035.1: *6* eval.get_selected_lines
+def get_selected_lines(self) -> str:
+
+    c, p = self.c, self.c.p
+    w = c.frame.body.wrapper
+    body = w.getAllText()
+    i = w.getInsertPoint()
+    if w.hasSelection():
+        if self.legacy:
+            i1, i2 = w.getSelectionRange()
+        else:
+            j, k = w.getSelectionRange()
+            i1, junk = g.getLine(body, j)
+            junk, i2 = g.getLine(body, k)
+        s = body[i1:i2]
+    else:
+        if self.legacy:
+            k = w.getInsertPoint()
+            junk, i2 = g.getLine(body, k)
+            w.setSelectionRange(k, i2)
+            return None
+        i1, i2 = g.getLine(body, i)
+        s = body[i1:i2].strip()
+    # Select next line for next eval.
+    if self.legacy:
+        i = j = i2
+        j += 1
+        while j < len(body) and body[j] != '\n':
+            j += 1
+        w.setSelectionRange(i, j)
+    else:
+        if not body.endswith('\n'):
+            if i >= len(p.b):
+                i2 += 1
+            p.b = p.b + '\n'
+        ins = min(len(p.b), i2)
+        w.setSelectionRange(i1, ins, insert=ins, s=p.b)
+    return s
+#@+node:ekr.20231009082307.15: *3* --- from mod_http.py
+#@+node:ekr.20231009082307.16: *4* class ExecHandler
+class ExecHandler:
+    """
+    Quasi-RPC GET based interface
+    """
+    @others
+#@+node:ekr.20231009082307.17: *5* __init__
+def __init__(self, request_handler):
+    self.request_handler = request_handler
+#@+node:ekr.20231009082307.18: *5* get_response
+def get_response(self):
+    """Return the file like 'f' that leo_interface.send_head makes"""
+    # self.request_handler.path.startswith('/_/exec/')
+
+    if not g.app.config.getBool("http-allow-remote-exec"):
+        return None  # fail deliberately
+
+    c = g.app and g.app.log and g.app.log.c
+    if c and config.enable is None:
+        if c.config.isLocalSetting('http-allow-remote-exec', 'bool'):
+            g.issueSecurityWarning('@bool http-allow-remote-exec')
+            config.enable = False
+        else:
+            config.enable = True
+
+    parsed_url = urlparse.urlparse(self.request_handler.path)
+    query = urlparse.parse_qs(parsed_url.query)
+
+    enc = query.get("enc", ["str"])[0]
+
+    if parsed_url.path.startswith('/_/exec/commanders/'):
+        ans = [i.fileName() for i in g.app.commanders()]
+        if enc != 'json':
+            ans = '\n'.join(ans)  # type:ignore
+    else:
+        ans = self.proc_cmds()
+
+    f = StringIO()
+    f.mime_type = query.get("mime_type", ["text/plain"])[0]
+    enc = query.get("enc", ["str"])[0]
+    if enc == 'json':
+        f.write(json.dumps(ans))
+    elif enc == 'repr':
+        f.write(repr(ans))
+    else:
+        f.write(str(ans))
+    return f
+
+#@+node:ekr.20231009082307.19: *5* proc_cmds (mod_http.py)
+def proc_cmds(self):
+
+    parsed_url = urlparse.urlparse(self.request_handler.path)
+    query = urlparse.parse_qs(parsed_url.query)
+    # work out which commander to use, zero index int, full path name, or file name
+    c_idx = query.get('c', [0])[0]
+    # pylint: disable=literal-comparison
+    if c_idx != 0:
+        try:
+            c_idx = int(c_idx)
+        except ValueError:
+            paths = [i.fileName() for i in g.app.commanders()]
+            if c_idx in paths:
+                c_idx = paths.index(c_idx)
+            else:
+                paths = [os.path.basename(i) for i in paths]
+                c_idx = paths.index(c_idx)
+    ans = None
+    c = g.app.commanders()[c_idx]
+    if c and c.evalController:
+        for cmd in query['cmd']:
+            ans = c.evalController.eval_text(cmd)
+    return ans  # the last answer, if multiple commands run
+#@-all
+#@@nosearch
+#@-leo
