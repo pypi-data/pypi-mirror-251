@@ -1,0 +1,85 @@
+{
+    "TestFallback": {
+        "description": "A base class for defining methods that all input/output components should have.",
+        "members": {
+            "__init__": {
+                "value": {
+                    "type": "Any",
+                    "default": "None",
+                    "description": null
+                },
+                "label": {
+                    "type": "str | None",
+                    "default": "None",
+                    "description": null
+                },
+                "info": {
+                    "type": "str | None",
+                    "default": "None",
+                    "description": null
+                },
+                "show_label": {
+                    "type": "bool | None",
+                    "default": "None",
+                    "description": null
+                },
+                "container": {
+                    "type": "bool",
+                    "default": "True",
+                    "description": null
+                },
+                "scale": {
+                    "type": "int | None",
+                    "default": "None",
+                    "description": null
+                },
+                "min_width": {
+                    "type": "int | None",
+                    "default": "None",
+                    "description": null
+                },
+                "interactive": {
+                    "type": "bool | None",
+                    "default": "None",
+                    "description": null
+                },
+                "visible": {
+                    "type": "bool",
+                    "default": "True",
+                    "description": null
+                },
+                "elem_id": {
+                    "type": "str | None",
+                    "default": "None",
+                    "description": null
+                },
+                "elem_classes": {
+                    "type": "list[str] | str | None",
+                    "default": "None",
+                    "description": null
+                },
+                "render": {
+                    "type": "bool",
+                    "default": "True",
+                    "description": null
+                },
+                "load_fn": {
+                    "type": "Callable | None",
+                    "default": "None",
+                    "description": null
+                },
+                "every": {
+                    "type": "float | None",
+                    "default": "None",
+                    "description": null
+                }
+            },
+            "postprocess": {},
+            "preprocess": {}
+        },
+        "events": {}
+    },
+    "__meta__": {
+        "additional_interfaces": {}
+    }
+}
