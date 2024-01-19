@@ -1,0 +1,8 @@
+---
+
+api_files: 
+  request_parameters: "path/to/request_parameters.yaml"
+  api_export: "path/to/you/data/export/directory"
+
+program_files:
+  settings: "path/to/settings.yaml"
