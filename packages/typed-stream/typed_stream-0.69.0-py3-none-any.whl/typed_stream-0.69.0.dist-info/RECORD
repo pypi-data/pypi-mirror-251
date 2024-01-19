@@ -1,0 +1,17 @@
+typed_stream/__init__.py,sha256=y8z4yOUQLLLr8KElFyrSgCdC99AQkw78G4Jxx1-7ybw,1054
+typed_stream/__main__.py,sha256=2ArT973SEJ-O8KX7nCTjxjks_zH0N7DqWLpmhfbtDlY,4279
+typed_stream/_iteration_utils.py,sha256=laH4cgV3yT4MPZbSc1NtI6OCpZQEJ0A-dhoeRqMRQPc,11145
+typed_stream/_lazy_file_iterators.py,sha256=ZD4weAQwgD66Hb74F9stqcWmeYlpDSlSK-SUV9r84P0,4444
+typed_stream/_types.py,sha256=nnt6ksPjrVp-5bxWrRQZoGGDCLR0wCRF9OZ97pt8Y70,4519
+typed_stream/_utils.py,sha256=0Oj_lBJJr1_R_q5p2d0Mz5e5W59Raif59PuGgSJDI8I,3799
+typed_stream/exceptions.py,sha256=kDtllZ6OXHqOU3o_PokHoaQj-JlxyyD_jRHtgF3dYk4,670
+typed_stream/functions.py,sha256=_pT03dd9FBQ2Qtktb3Qv_VWmlJdJwywMJ3-b0RYGqyw,2698
+typed_stream/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+typed_stream/stream_abc.py,sha256=GVIMMfj8ZxevIf_DRXt2-K5Poj8DJJ-2JgTryfzXSvs,5032
+typed_stream/streamable.py,sha256=C8hdOAWHOn59J3LaEn1oHQq8izsz_YuLLVMUh77fI94,2737
+typed_stream/streams.py,sha256=UbNbJu6r_Y35FZGOYDYG4cYAB4-0ppmjUdAb59YMkpk,41019
+typed_stream/version.py,sha256=Ah8Sn4YJ1UQIb6L_KKJokeS-5-zexNbQseSgF_4HcO0,282
+typed_stream-0.69.0.dist-info/LICENSE,sha256=b8nnCcy_4Nd_v_okJ6mDKCvi64jkexzbSfIag7TR5mU,13827
+typed_stream-0.69.0.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+typed_stream-0.69.0.dist-info/METADATA,sha256=rzfq3QO26YclW9ygWbR-t5nk_4ImKsEFBf6F4nUCljM,3088
+typed_stream-0.69.0.dist-info/RECORD,,
