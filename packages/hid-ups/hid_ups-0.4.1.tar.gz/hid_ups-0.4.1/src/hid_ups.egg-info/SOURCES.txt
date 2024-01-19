@@ -1,0 +1,14 @@
+LICENSE
+pyproject.toml
+readme.md
+src/hid_ups/__init__.py
+src/hid_ups/cyberpowerups.py
+src/hid_ups/hid_devices.py
+src/hid_ups/hid_ups.py
+src/hid_ups/main.py
+src/hid_ups.egg-info/PKG-INFO
+src/hid_ups.egg-info/SOURCES.txt
+src/hid_ups.egg-info/dependency_links.txt
+src/hid_ups.egg-info/entry_points.txt
+src/hid_ups.egg-info/requires.txt
+src/hid_ups.egg-info/top_level.txt

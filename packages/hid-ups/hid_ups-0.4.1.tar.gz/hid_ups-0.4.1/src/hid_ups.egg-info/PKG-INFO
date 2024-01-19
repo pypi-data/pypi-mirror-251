@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: hid_ups
+Version: 0.4.1
+Summary: A Python library for interacting with USB HID UPS devices.
+Author-email: Desultory <dev@pyl.onl>
+Project-URL: Homepage, https://github.com/desultory/hid_ups
+Project-URL: Issues, https://github.com/desultory/pycpio/hid_ups
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: zenlib>=1.6.5
+
+# HID_UPS
+
+Uses hidapi to listen for UPS data.
+
+Currently only tested working with a `CyberPower CP1500PFCLCD`
+
+## Dependencies
+
+Uses [zenlib](https://github.com/desultory/zenlib) and [hidapi](https://github.com/trezor/cython-hidapi)
+
+## Usage
+
+This must be run as root unless the user has privileges to use the `hidraw` socket the UPS uses.
+
+This package can be installed with `sudo pip install --break .` then run with `sudo hid_ups`.
+
+## Device detection
+
+`hid_ups` detects the device using vendor/device strings. Only one is currently added. The are defined in [hid_devices](src/hid_ups/hid_devices.py)
+
