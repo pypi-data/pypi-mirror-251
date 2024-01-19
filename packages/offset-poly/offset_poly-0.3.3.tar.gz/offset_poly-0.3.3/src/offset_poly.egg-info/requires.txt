@@ -1,0 +1,7 @@
+vec2_math
+
+[dev]
+commitizen
+pre-commit
+pytest
+tox
