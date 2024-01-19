@@ -1,0 +1,8 @@
+[console_scripts]
+calculate_hand = hydrosar.hand.calculate:main
+make_FD30 = hydrosar.flood_map:main
+make_HYDRO30 = hydrosar.water_map:main
+
+[hyp3]
+FD30 = hydrosar.flood_map:hyp3
+HYDRO30 = hydrosar.water_map:hyp3
