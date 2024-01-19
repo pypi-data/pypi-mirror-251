@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+pybind11_cuda_pypi.egg-info/PKG-INFO
+pybind11_cuda_pypi.egg-info/SOURCES.txt
+pybind11_cuda_pypi.egg-info/dependency_links.txt
+pybind11_cuda_pypi.egg-info/not-zip-safe
+pybind11_cuda_pypi.egg-info/top_level.txt

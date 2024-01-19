@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: pybind11-cuda-pypi
+Version: 0.1
+Summary: Example pybind11 + CUDA + PyPI project
+Author: Ryan Moore
+Author-email: ryanm.inbox@gmail.com
+License-File: LICENSE
