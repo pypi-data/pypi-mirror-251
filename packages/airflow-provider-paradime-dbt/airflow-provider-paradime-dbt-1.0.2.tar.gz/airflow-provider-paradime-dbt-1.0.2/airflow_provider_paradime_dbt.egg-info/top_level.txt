@@ -1,0 +1,3 @@
+dist
+images
+paradime_dbt_provider
