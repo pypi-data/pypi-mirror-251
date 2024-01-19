@@ -1,0 +1,93 @@
+Metadata-Version: 2.1
+Name: antplus
+Version: 0.0.1
+Summary: Human friendly interface to ANT+ sing python
+Author-email: Jose Tiago Macara Coutinho <coutinhotiago@gmail.com>
+License: GPL-3.0-or-later
+Project-URL: Documentation, https://tiagocoutinho.github.io/antplus/
+Project-URL: Homepage, https://github.com/tiagocoutinho/antplus
+Project-URL: Source, https://github.com/tiagocoutinho/antplus
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: serialio
+Requires-Dist: typing-extensions <5,>=4.6 ; python_version < "3.12"
+Provides-Extra: dev
+Requires-Dist: black >=22.1.0 ; extra == 'dev'
+Requires-Dist: build >=0.10.0 ; extra == 'dev'
+Requires-Dist: twine >=4.0.2 ; extra == 'dev'
+Requires-Dist: ward >=0.67.0b0 ; extra == 'dev'
+Requires-Dist: ward-coverage >=0.3.0 ; extra == 'dev'
+Requires-Dist: ruff >=0.0.261 ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: mkdocs ; extra == 'docs'
+Requires-Dist: mkdocs-material ; extra == 'docs'
+Requires-Dist: mkdocstrings[python] ; extra == 'docs'
+Requires-Dist: pygments ; extra == 'docs'
+Requires-Dist: pymdown-extensions ; extra == 'docs'
+Provides-Extra: examples
+Requires-Dist: flask <4,>=2 ; extra == 'examples'
+Requires-Dist: fastapi <1 ; extra == 'examples'
+Requires-Dist: qtpy ; extra == 'examples'
+Requires-Dist: pyqt6 ; extra == 'examples'
+Requires-Dist: gunicorn ; extra == 'examples'
+Requires-Dist: gevent ; extra == 'examples'
+Requires-Dist: uvicorn ; extra == 'examples'
+Requires-Dist: numpy ; extra == 'examples'
+
+# 🐧 Welcome to antplus
+
+
+[![linuxpy][pypi-version]](https://pypi.python.org/pypi/antplus)
+[![Python Versions][pypi-python-versions]](https://pypi.python.org/pypi/antplus)
+[![License][license]]()
+[![CI][CI]](https://github.com/tiagocoutinho/antplus/actions/workflows/ci.yml)
+
+Human friendly interface to ANT+.
+
+Requirements:
+
+* python >= 3.9
+* [serialio](https://github.com/tiagocoutinho/serialio)
+
+
+## Installation
+
+From within your favorite python environment:
+
+```console
+$ pip install antplus
+```
+
+To run the examples you'll need:
+
+```console
+$ pip install antplus[examples]
+```
+
+To develop, run tests, build package, lint, etc you'll need:
+
+```console
+$ pip install antplus[dev]
+```
+
+To run docs you'll need:
+
+```console
+$ pip install antplus[docs]
+```
+
+[pypi-python-versions]: https://img.shields.io/pypi/pyversions/serialio.svg
+[pypi-version]: https://img.shields.io/pypi/v/serialio.svg
+[pypi-status]: https://img.shields.io/pypi/status/serialio.svg
+[license]: https://img.shields.io/pypi/l/serialio.svg
+[CI]: https://github.com/tiagocoutinho/serialio/actions/workflows/ci.yml/badge.svg
