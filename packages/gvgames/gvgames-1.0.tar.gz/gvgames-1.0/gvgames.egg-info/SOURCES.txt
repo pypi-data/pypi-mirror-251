@@ -1,0 +1,8 @@
+README.md
+setup.py
+gvgames/__init__.py
+gvgames/g_games.py
+gvgames.egg-info/PKG-INFO
+gvgames.egg-info/SOURCES.txt
+gvgames.egg-info/dependency_links.txt
+gvgames.egg-info/top_level.txt
