@@ -1,0 +1,8 @@
+setup.py
+EntityExtractor/__init__.py
+EntityExtractor/test.py
+EntityExtractor.egg-info/PKG-INFO
+EntityExtractor.egg-info/SOURCES.txt
+EntityExtractor.egg-info/dependency_links.txt
+EntityExtractor.egg-info/requires.txt
+EntityExtractor.egg-info/top_level.txt
