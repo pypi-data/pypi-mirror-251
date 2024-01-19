@@ -1,0 +1,13 @@
+augmento/__init__.py,sha256=ab8FGyBGxezdo73TIzB6udkTHL7cdFWWJfqYmZw0u_Y,26
+augmento/main.py,sha256=KGxkw8imsGIFxQgEjkRl9WLOYUrktNV87Da-vXdjoqk,2144
+augmento/augmentations/__init__.py,sha256=HFIRPaKaKKEc6AD3MS3NcJ4rArwWfXGmYPBbiw6PxOc,155
+augmento/augmentations/affine.py,sha256=hSIfKG56I1UOTeNK5fscHqRy0zbPsbQaiuTYfjhAwik,3871
+augmento/augmentations/colors.py,sha256=r0W1Y7dmwhJvGLYxaBCggbHwXA6bLy9smXD08WSeCWc,3303
+augmento/augmentations/flipper.py,sha256=2MtzSO7-1ZYcOpfo8ze2Tfyuz2hFWP-G1euBXk8DFP0,2142
+augmento/augmentations/resizer.py,sha256=o_0qoOQrzfIiw7hW7_YcCZyyHOOW74ffKzX8wkiG-2A,4664
+augmento/augmentations/rotator.py,sha256=-uYANQgVDBPHROwch33n36nQF4LaI-uZFbbakkMM3bo,7258
+augmento-0.0.1.dist-info/LICENSE.txt,sha256=22oPBwqVSlnIBSZ0hg-p0QRaRcjOoJqkXNpquPMRV4g,1061
+augmento-0.0.1.dist-info/METADATA,sha256=E_j59OiZBSZDTnhhdRI-U38-N50j0hIw64zsOWkdDR4,13190
+augmento-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+augmento-0.0.1.dist-info/top_level.txt,sha256=QSjFdgpb-gp_9BMWyjPQPDnBvcBIhOr8A4MM45rlHBE,9
+augmento-0.0.1.dist-info/RECORD,,
