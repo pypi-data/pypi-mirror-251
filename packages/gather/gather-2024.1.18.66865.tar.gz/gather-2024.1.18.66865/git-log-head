@@ -1,0 +1,7 @@
+commit c389f3f47db6c20577a99151866307a36d6845cf
+Author: Moshe Zadka <moshez@users.noreply.github.com>
+Date:   2024-01-18 10:34:25 -0800
+
+    Merge pull request #46 from elcaminoreal/fix-version
+    
+    switch to default version being 3.12
