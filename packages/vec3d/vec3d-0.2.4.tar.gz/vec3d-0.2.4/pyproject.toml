@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "vec3d"
+version = "0.2.4"
+description = "Maths and graph functions for vectors in the 3D space"
+authors = ["Sergio F. Gonzalez <sergio.f.gonzalez@gmail.com>"]
+readme = "README.md"
+license = "MIT"
+repository = "https://github.com/sergiofgonzalez/vec3d"
+packages = [{include = "vec3d"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+matplotlib = "^3.8.2"
+numpy = "^1.26.3"
+
+
+[tool.poetry.group.dev.dependencies]
+pylint = "^3.0.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
