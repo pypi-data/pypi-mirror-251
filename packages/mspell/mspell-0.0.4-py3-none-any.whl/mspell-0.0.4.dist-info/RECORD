@@ -1,0 +1,13 @@
+mspell/__init__.py,sha256=QvN2sgLDk_V4qfvE5zzup5oybn3O8aiPQx2JAmoa_CM,102
+mspell/group_speller.py,sha256=J0aP_YMTxH1Tvyy5ZK0eQM4D17xb4GhonK0OlAtJ2Uc,6180
+mspell/spell_base.py,sha256=V3zzwoY8jeUzOn6IKf0YlA4-0w_rhN4e2qERGbTDnUc,2741
+mspell/speller.py,sha256=OXeppbZkrORRRtEDsbKAPQKzoVwBStD2X8f6Z9lIChs,5661
+mspell/spelling_funcs.py,sha256=fLZJqMZJRA764A54zhSUiKc-fZDMTrmGnsuQnFg58KY,1035
+mspell/transpose.py,sha256=CCp3Iiw7W373n7C5a3N0w01jyfdbnSfeP7VbLi1SWqQ,1450
+mspell/unspeller.py,sha256=dL2k8ep17bi1CYW7mQuNpNiFkLi31VIszUpsUvHc35I,4929
+mspell/utils.py,sha256=YwDgcKrXdKuyEvEwnEEgTefaV-OXQevRQ_A7R21ws-8,7338
+mspell-0.0.4.dist-info/LICENSE,sha256=jfS28o3HN-zkf2VBjjgLEMtnw0MWoYk7v87Gis0i1TE,1071
+mspell-0.0.4.dist-info/METADATA,sha256=2NRRAVt8dxvuq1UieRB6rKRyINA_FoSzBeX7zN-gFh4,1281
+mspell-0.0.4.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+mspell-0.0.4.dist-info/top_level.txt,sha256=4NXGmJQqrqVb7YnPoQyMw8kbXnGlHBDPYQvKF2CE5oo,7
+mspell-0.0.4.dist-info/RECORD,,
