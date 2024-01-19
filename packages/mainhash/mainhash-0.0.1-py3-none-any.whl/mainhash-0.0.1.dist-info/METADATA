@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: mainhash
+Version: 0.0.1
+Summary: 
+Home-page: https://github.com/MainPlay-TG/MainHash.py
+Author: MainPlay TG
+Author-email: xbox.roman6666666666@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Project-URL: Repository, https://github.com/MainPlay-TG/MainHash.py
+Description-Content-Type: text/markdown
+
+# MainHash
+## Описание
+Удобные команды для контрольных сумм
+## Установка
+Для установки через PIP используйте
+```bash
+pip install -U mainhash
+```
+## Использование
+Для импорта рекомендуется сокращённое название
+```python
+import MainHash as mh
+```
+Встроенная информация о модуле
+```python
+ms.__version__ -> str # Версия модуля
+ms.__functions__ -> list # Функции, которые существуют в модуле
+ms.__variables__ -> list # Переменные, которые существуют в модуле
+ms.__depends__ -> dict # Обязательные и необязательные зависимости
+```
+### (будет продолжение)
