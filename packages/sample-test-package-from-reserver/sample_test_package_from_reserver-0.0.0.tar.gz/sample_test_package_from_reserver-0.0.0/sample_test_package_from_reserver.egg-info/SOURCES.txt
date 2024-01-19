@@ -1,0 +1,10 @@
+AUTHORS.md
+LICENSE
+README.md
+sample_test_package_from_reserver_setup.py
+setup.py
+sample_test_package_from_reserver.egg-info/PKG-INFO
+sample_test_package_from_reserver.egg-info/SOURCES.txt
+sample_test_package_from_reserver.egg-info/dependency_links.txt
+sample_test_package_from_reserver.egg-info/top_level.txt
+test/test.py
