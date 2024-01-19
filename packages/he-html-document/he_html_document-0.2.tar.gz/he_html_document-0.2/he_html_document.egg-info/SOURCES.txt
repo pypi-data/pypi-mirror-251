@@ -1,0 +1,8 @@
+README.txt
+__init__.py
+setup.cfg
+setup.py
+he_html_document.egg-info/PKG-INFO
+he_html_document.egg-info/SOURCES.txt
+he_html_document.egg-info/dependency_links.txt
+he_html_document.egg-info/top_level.txt
