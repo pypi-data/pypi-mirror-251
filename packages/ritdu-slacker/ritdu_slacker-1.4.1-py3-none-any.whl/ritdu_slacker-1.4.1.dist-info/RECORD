@@ -1,0 +1,9 @@
+ritdu_slacker/__init__.py,sha256=O5xeyeCg0oTBv5ZJUB3mSs9dcXfs2Tdx1Uc5GIV_Q7c,610
+ritdu_slacker/api.py,sha256=BVvZo3wkNP0erHK5mG316bgeFPl3-flIuob8WMdxQCE,2697
+ritdu_slacker/cli.py,sha256=6SnxHYl4BINKuje98RAEEKl7c1UYMKlY2MUMUYCyTik,4753
+ritdu_slacker/main.py,sha256=fYzdC_owD76hObi5_aD9DwigLXXEEuiTPKXe6Ej9ZTs,143
+ritdu_slacker-1.4.1.dist-info/LICENSE,sha256=oGmBdKq0njvinaTPaLS2EtgVzqzuS9V9pus5XZF86gk,1077
+ritdu_slacker-1.4.1.dist-info/METADATA,sha256=tUlMZRRqtbn1DRC8WmwC2u-h725M-orNeHpG_GHLPtw,5013
+ritdu_slacker-1.4.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+ritdu_slacker-1.4.1.dist-info/entry_points.txt,sha256=soL14bECyJcYzmYW4Hvnuq6hFJNe5DcxC5-OyL42afo,57
+ritdu_slacker-1.4.1.dist-info/RECORD,,
