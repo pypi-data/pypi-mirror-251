@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: amit26april
+Version: 0.0.1
+Summary: India Papa Love  
+Author: Ayush Agrawal
+Author-email: aagrawal963@gmail.com
+Keywords: experts,begginers,deep learning,ai ultimate,ayush agrawal,automate steps of deep learning
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: tensorflow
+Requires-Dist: keras
+Requires-Dist: scikit-learn
+Requires-Dist: tqdm
+Requires-Dist: seaborn
+Requires-Dist: Pillow
+
+
+    * This project helps the begginers to generate ai models with 1 line of code.
+    * It is also useful for experts as it will automate repetative task and experts can focus upon main model
+    * It works right now only for image classification but there may be updates in future
