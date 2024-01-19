@@ -1,0 +1,2 @@
+[console_scripts]
+msrks-hello = msrks_hello:hello
