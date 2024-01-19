@@ -1,0 +1,7 @@
+LICENSE.txt
+pyproject.toml
+setup.py
+boxlog/boxlog.egg-info/PKG-INFO
+boxlog/boxlog.egg-info/SOURCES.txt
+boxlog/boxlog.egg-info/dependency_links.txt
+boxlog/boxlog.egg-info/top_level.txt
