@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: pyqt5-designer-mini
+Version: 0.0.1
+Project-URL: Documentation, https://github.com/selmen2004/pyqt5-designer-mini#readme
+Project-URL: Issues, https://github.com/selmen2004/pyqt5-designer-mini/issues
+Project-URL: Source, https://github.com/selmen2004/pyqt5-designer-mini
+Author-email: Selmen Arous <selmen.arous@gmail.com>
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Requires-Dist: pyqt5
+Description-Content-Type: text/markdown
+
+# pyqt5_designer_mini
+
+[![PyPI - Version](https://img.shields.io/pypi/v/pyqt5-designer-mini.svg)](https://pypi.org/project/pyqt5-designer-mini)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/pyqt5-designer-mini.svg)](https://pypi.org/project/pyqt5-designer-mini)
+
+-----
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install pyqt5-designer-mini
+```
+
+## License
+
+`pyqt5-designer-mini` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
