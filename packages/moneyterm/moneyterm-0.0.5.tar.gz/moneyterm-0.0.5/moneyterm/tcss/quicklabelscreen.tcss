@@ -1,0 +1,36 @@
+QuickLabelScreen {
+    align: center middle;
+    height: auto;
+    width: auto;
+}
+
+QuickLabelScreen VerticalScroll{
+    height: auto;
+    width: auto;
+    border: double $secondary;
+    border-title-align: center;
+    background: $primary-background;
+
+
+}
+
+QuickLabelScreen #available_labels_label {
+    width: 35;
+    text-align: center;
+}
+
+Rule {
+    
+}
+
+QuickLabelScreen Input {
+    width: 35;
+    background: black;
+
+}
+#label_list {
+    width: 35;
+    height: 15;
+
+    
+}

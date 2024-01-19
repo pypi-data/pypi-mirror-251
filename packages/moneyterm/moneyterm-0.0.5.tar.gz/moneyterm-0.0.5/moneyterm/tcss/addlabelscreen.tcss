@@ -1,0 +1,32 @@
+AddLabelScreen {
+    align: center middle;
+    height: auto;
+    width: auto;
+}
+
+AddLabelScreen Vertical {
+    height: auto;
+    width: auto;
+    border: round $secondary;
+    border-title-align: center;
+}
+AddLabelScreen Horizontal {
+    height: auto;
+    width: auto;
+}
+
+AddLabelScreen #new_label_name_label {
+    text-align: right;
+    content-align-vertical: middle;
+    height: 3;
+}
+
+AddLabelScreen #new_label_name_input {
+    height: auto;
+    width: 30;
+}
+
+AddLabelScreen #add_label_button {
+    width: 100%;
+    margin-top: 1;
+}
