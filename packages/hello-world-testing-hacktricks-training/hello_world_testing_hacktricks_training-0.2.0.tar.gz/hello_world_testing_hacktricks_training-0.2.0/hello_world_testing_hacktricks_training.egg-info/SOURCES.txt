@@ -1,0 +1,7 @@
+setup.py
+hello_world/__init__.py
+hello_world/greet.py
+hello_world_testing_hacktricks_training.egg-info/PKG-INFO
+hello_world_testing_hacktricks_training.egg-info/SOURCES.txt
+hello_world_testing_hacktricks_training.egg-info/dependency_links.txt
+hello_world_testing_hacktricks_training.egg-info/top_level.txt
