@@ -1,0 +1,5 @@
+PyAibote.egg-info/PKG-INFO
+PyAibote.egg-info/SOURCES.txt
+PyAibote.egg-info/dependency_links.txt
+PyAibote.egg-info/requires.txt
+PyAibote.egg-info/top_level.txt
