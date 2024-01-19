@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: combustache
+Version: 1.0.0
+Summary: Mustache v1.3 implementation with lambdas.
+Project-URL: Homepage, https://github.com/sakhezech/combustache
+License: MIT License
+        
+        Copyright (c) 2023 Sakhezech
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+License-File: LICENSE
+Description-Content-Type: text/markdown
+
+# combustache
+
+Mustache v1.3 implementation with lambdas.
+
+Usable both in code and as CLI.
+To render a mustache template use `combustache.render`.
+Processed templates are cached; to clear cache use `combustache.cache_clear`.
+
+## Installation
+
+From [PyPI](https://pypi.org/project/combustache/):
+
+```sh
+pip install combustache
+```
+
+From git:
+
+```sh
+pip install git+https://github.com/sakhezech/combustache
+```
+
+## Usage
+
+### Typical usage in code
+
+```py
+>>> import combustache
+>>> template = 'Hello my name is {{>fancy_name}}!'
+>>> partials = {'fancy_name': '-> {{name}} <-'}
+>>> data = {'name': 'Anahit'}
+>>> combustache.render(template, data, partials)
+'Hello my name is -> Anahit <-!'
+```
+
+### Typical usage as CLI
+
+`combustache ...` or `python -m combustache ...`
+
+For more info use `combustache -h`.
+
+```sh
+$ curl https://end.point/v1/api | combustache template.txt -o out.txt
+$ cat out.txt
+Hello world!
+```
