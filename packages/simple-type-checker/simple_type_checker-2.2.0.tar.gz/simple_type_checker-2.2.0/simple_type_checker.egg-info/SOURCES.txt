@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+simple_type_check/__init__.py
+simple_type_check/callable_info.py
+simple_type_check/py.typed
+simple_type_check/top_level_check.py
+simple_type_check/type_check.py
+simple_type_check/default/__init__.py
+simple_type_check/default/basic.py
+simple_type_check/default/complex.py
+simple_type_checker.egg-info/PKG-INFO
+simple_type_checker.egg-info/SOURCES.txt
+simple_type_checker.egg-info/dependency_links.txt
+simple_type_checker.egg-info/top_level.txt
