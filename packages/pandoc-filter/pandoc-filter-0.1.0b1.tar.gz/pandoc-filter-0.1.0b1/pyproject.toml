@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "pandoc-filter"
+authors = [
+    {name = "Pu Zhao", email = "zhaopudark@outlook.com"},
+]
+description = "A customized pandoc filters set that can be used to generate a useful pandoc python filter."
+keywords = ["pandoc", "pandoc-filter", "python", "pandoc-python-filter","markdown","html"]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.12",
+  "License :: OSI Approved :: GNU General Public License (GPL)"
+]
+readme = "README.md"
+license = {text = "GNU General Public License (GPL)"}
+dynamic = ["version"]
+requires-python = ">= 3.12"
+dependencies = [
+    "requests",
+    "typeguard",
+    "packaging",
+    "alive-progress",
+    "panflute",
+    "oss2",
+    "bs4",
+    "oauth2client"
+]
+# OR
+[tool.setuptools.packages.find]
+# # All the following settings are optional:
+where = ["src"]  # ["."] by default
+include = ["pandoc_filter*"]  # ["*"] by default 都是相对于where的路径的pattern
+exclude = ["__pycache__"]  # empty by default 都是相对于where的路径的pattern
+# namespaces = false  # true by default  禁用命名空间包会组织识别到不带有__init__.py的包
+[project.urls]
+Homepage = "https://github.com/Zhaopudark/pandoc-filter"
+Documentation = "https://github.com/Zhaopudark/pandoc-filter/blob/main/README.md"
+Repository = "https://github.com/Zhaopudark/pandoc-filter.git"
+Issues = "https://github.com/Zhaopudark/pandoc-filter/issues"
+Changelog = "https://github.com/Zhaopudark/pandoc-filter/blob/main/RELEASE.md"
+
+[tool.setuptools.dynamic]
+version = {attr = "pandoc_filter.__version__"}
