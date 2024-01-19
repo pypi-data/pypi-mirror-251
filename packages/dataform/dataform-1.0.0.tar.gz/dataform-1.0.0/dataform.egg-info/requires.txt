@@ -1,0 +1,6 @@
+numpy
+pydub
+PIL
+PyPDF2
+opencv-python
+Pillow

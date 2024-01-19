@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+dataform/__init__.py
+dataform/audio.py
+dataform/core.py
+dataform/image.py
+dataform/text.py
+dataform/version.py
+dataform/video.py
+dataform.egg-info/PKG-INFO
+dataform.egg-info/SOURCES.txt
+dataform.egg-info/dependency_links.txt
+dataform.egg-info/requires.txt
+dataform.egg-info/top_level.txt
