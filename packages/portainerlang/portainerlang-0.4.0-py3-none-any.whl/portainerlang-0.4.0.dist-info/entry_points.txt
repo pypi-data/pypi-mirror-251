@@ -1,0 +1,2 @@
+[console_scripts]
+portainerlang = portainerlang.main:main
