@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: pyrabbitmq
+Version: 0.0.3
+Summary: Simple Python client library for RabbitMQ
+Home-page: https://github.com/xizhendu/pyrabbitmq
+Author: Xizhen Du
+Author-email: xizhendu@gmail.com
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+# pyrabbitmq
