@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: ioh-xplainer
+Version: 0.2.0
+Summary: eXplainable Benchmarking for Iterative Optimization Heuristics
+License: MIT
+Author: Niki van Stein
+Author-email: n.van.stein@liacs.leidenuniv.nl
+Requires-Python: >=3.8.0,<4.0.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: catboost (>=1.2.2,<2.0.0)
+Requires-Dist: configspace (>=0.7.1,<0.8.0)
+Requires-Dist: dtreeviz (>=2.2.2,<3.0.0)
+Requires-Dist: ioh (>=0.3.14,<0.4.0)
+Requires-Dist: numpy (==1.24.4)
+Requires-Dist: pandas (==2.0.3)
+Requires-Dist: scikit-learn (==1.3.0)
+Requires-Dist: shap (>=0.43.0,<0.44.0)
+Requires-Dist: tqdm (>=4.66.1,<5.0.0)
+Requires-Dist: xgboost (==1.7.6)
