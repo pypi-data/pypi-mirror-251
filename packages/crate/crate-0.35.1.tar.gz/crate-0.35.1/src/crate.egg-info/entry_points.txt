@@ -1,0 +1,2 @@
+[sqlalchemy.dialects]
+crate = crate.client.sqlalchemy:CrateDialect
