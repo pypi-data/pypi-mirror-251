@@ -1,0 +1,26 @@
+[build-system]
+requires = [
+    'setuptools>=42',
+    'wheel'
+    ]
+build-backend = 'setuptools.build_meta'
+
+[project]
+name = 'excelbdd'
+version = '1.4.5'
+description = 'conduct BDD by excel feature files'
+authors = [{name = 'Zhang Keqiang Mike', email='zhangkq2000@hotmail.com'}]
+readme = 'README.md'
+requires-python = ">=3.9"
+keywords = ["BDD", "Excel", "SBE"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]    
+dependencies = [
+    "openpyxl",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
