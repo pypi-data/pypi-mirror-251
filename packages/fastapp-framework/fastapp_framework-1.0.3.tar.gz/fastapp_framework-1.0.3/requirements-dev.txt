@@ -1,0 +1,8 @@
+-r requirements.txt
+
+-e .
+# Dev Requirements
+pytest
+pylint
+black
+mypy

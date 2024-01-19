@@ -1,0 +1,27 @@
+version: '3'
+
+services:
+  app:
+    container_name: fastapp
+    image: 'fastapp:local'
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    networks:
+      - fastapp-network
+    volumes:
+      - ./fastapp-data:/mnt
+
+  nginx:
+    container_name: fastapp-nginx
+    image: 'fastapp-nginx:local'
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.nginx
+    networks:
+      - fastapp-network
+    ports:
+      - "80:80"
+    
+networks:
+  fastapp-network:

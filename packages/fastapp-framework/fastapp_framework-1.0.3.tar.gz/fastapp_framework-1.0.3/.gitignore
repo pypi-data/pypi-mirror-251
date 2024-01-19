@@ -1,0 +1,14 @@
+# Build Artifacts
+__pycache__/
+build/
+*.egg-info/
+
+.venv/
+.env
+
+.mypy_cache/
+fastapp-data/
+fastapp.db
+fastapp.log
+
+dist/

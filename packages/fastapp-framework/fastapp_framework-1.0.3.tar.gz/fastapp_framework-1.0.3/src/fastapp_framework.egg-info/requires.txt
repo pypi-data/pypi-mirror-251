@@ -1,0 +1,14 @@
+fastapi==0.108.0
+fastapi-mail
+uvicorn
+typer
+rich
+passlib
+bcrypt==4.0.1
+sqlalchemy
+python-jose
+python-multipart
+pydantic-settings
+
+[:python_version > "3.9"]
+importlib-metadata

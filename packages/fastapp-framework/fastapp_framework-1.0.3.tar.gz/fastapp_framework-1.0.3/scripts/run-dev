@@ -1,0 +1,9 @@
+#!/bin/sh
+
+/root/venv/bin/pip install -r requirements-dev.txt
+
+/root/venv/bin/fastapp_tools db add "user1" "user1@users.com" "user1" False True
+/root/venv/bin/fastapp_tools db add "user2" "user2@users.com" "user2" False True
+/root/venv/bin/fastapp_tools db add "user3" "user3@users.com" "user3" False True
+
+/root/venv/bin/python -m uvicorn fastapp.main:get_application --port 3030 --host "0.0.0.0" --factory --reload --reload-dir ./src --log-level debug

@@ -1,0 +1,2 @@
+[console_scripts]
+fastapp_tools = fastapp.tools.fastapp_tools:main

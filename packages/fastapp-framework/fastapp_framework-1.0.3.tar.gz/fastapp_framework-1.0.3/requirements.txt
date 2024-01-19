@@ -1,0 +1,12 @@
+fastapi
+fastapi-mail
+uvicorn
+typer
+rich
+passlib
+bcrypt
+sqlalchemy
+python-jose
+python-multipart
+pydantic-settings
+sqlalchemy

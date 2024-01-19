@@ -1,0 +1,14 @@
+# Use Nginx as the production server
+FROM nginx:alpine
+
+RUN apk add --update npm
+
+COPY ./docker/frontentry.sh /root/entry.sh
+RUN chmod +x /root/entry.sh
+
+COPY ./frontend/nginx/dev.conf /etc/nginx/conf.d/default.conf
+
+# Expose port 80 for the Nginx server
+EXPOSE 80
+
+ENTRYPOINT [ "/root/entry.sh" ]

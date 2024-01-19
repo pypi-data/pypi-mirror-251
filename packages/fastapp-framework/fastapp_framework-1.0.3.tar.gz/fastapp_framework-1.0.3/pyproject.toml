@@ -1,0 +1,49 @@
+[build-system]
+requires = [
+    "setuptools>=60",
+    "setuptools-scm>=8.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fastapp_framework"
+authors = [
+    {name = "Collin Meyer", email = "collinmmeyer@gmail.com"},
+]
+description = "Fastapi application boilerplate"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Framework :: Pydantic :: 2",
+    "Framework :: FastAPI",
+    "Intended Audience :: Developers",
+    "Development Status :: 3 - Alpha",
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries :: Application Frameworks",
+    "Natural Language :: English"
+]
+dependencies = [
+    "fastapi==0.108.0",
+    "fastapi-mail",
+    "uvicorn",
+    "typer",
+    "rich",
+    "passlib",
+    "bcrypt==4.0.1",
+    "sqlalchemy",
+    "python-jose",
+    "python-multipart",
+    "pydantic-settings",
+    'importlib-metadata; python_version>"3.9"',
+]
+dynamic = ["version"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["fastapp*"]
+
+[tool.setuptools_scm]
+
+
+[project.scripts]
+fastapp_tools = "fastapp.tools.fastapp_tools:main"
