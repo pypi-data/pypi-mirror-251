@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+NeuroPrep/__init__.py
+NeuroPrep/utils.py
+NeuroPrep.egg-info/PKG-INFO
+NeuroPrep.egg-info/SOURCES.txt
+NeuroPrep.egg-info/dependency_links.txt
+NeuroPrep.egg-info/requires.txt
+NeuroPrep.egg-info/top_level.txt
