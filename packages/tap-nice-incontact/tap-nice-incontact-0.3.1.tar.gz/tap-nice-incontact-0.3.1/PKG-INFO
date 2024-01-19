@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: tap-nice-incontact
+Version: 0.3.1
+Summary: Singer.io tap for extracting data from the NICE InContact Reporting API
+Home-page: http://singer.io
+Author: Stitch
+Classifier: Programming Language :: Python :: 3 :: Only
+License-File: LICENSE
+Requires-Dist: backoff==1.8.0
+Requires-Dist: certifi==2023.7.22
+Requires-Dist: chardet==4.0.0
+Requires-Dist: ciso8601==2.1.3
+Requires-Dist: idna==2.10
+Requires-Dist: jsonschema==2.6.0
+Requires-Dist: python-dateutil==2.8.1
+Requires-Dist: pytz==2018.4
+Requires-Dist: requests==2.25.1
+Requires-Dist: simplejson==3.11.1
+Requires-Dist: singer-python==5.12.1
+Requires-Dist: six==1.15.0
+Requires-Dist: urllib3==1.26.18
+Requires-Dist: isodate==0.6.0
