@@ -1,0 +1,61 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.curlylint.rules]
+html_has_lang = true
+image_alt = true
+meta_viewport = true
+
+[tool.ruff]
+exclude = ["*/migrations/*"]
+target-version = "py39"
+line-length = 79
+
+[tool.ruff.extend-per-file-ignores]
+"test_*.py" = ["D103", "S"]
+
+[tool.ruff.lint]
+select = [
+    # pycodestyle
+    "E",
+    # Pyflakes
+    "F",
+    # pyupgrade
+    "UP",
+    # flake8-bandit
+    "S",
+    # flake8-bugbear
+    "B",
+    # flake8-comprehensions
+    "C4",
+    # flake8-no-pep420
+    "INP",
+    # flake8-simplify
+    "SIM",
+    # flake8-tidy-imports
+    "TID",
+    # isort
+    "I",
+    # pydocstyle
+    "D",
+]
+ignore = ["D100", "D102", "D104", "D105", "D106", "D107", "D212"]
+extend-select = ["D213"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.ruff.format]
+
+[tool.tox]
+legacy_tox_ini = """
+[tox]
+envlist = py{39}-django{3_2}
+
+[testenv]
+deps =
+  django-csp
+  django3_2: Django>3.1,<3.3
+#commands = python -Wa components.py test
+"""
