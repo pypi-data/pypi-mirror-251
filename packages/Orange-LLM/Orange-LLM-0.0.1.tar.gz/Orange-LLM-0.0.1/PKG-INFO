@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: Orange-LLM
+Version: 0.0.1
+Summary: Let's make chatbots !
+Home-page: 
+Author: HKH
+Author-email: 
+Keywords: orange3 add-on
+License-File: License.txt
+Requires-Dist: faiss-cpu==1.7.4
+Requires-Dist: langchain==0.0.244
+Requires-Dist: sentence-transformers==2.2.2
+Requires-Dist: gpt4all==2.0.2
+Requires-Dist: PyMuPDF==1.22.5
