@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: gold33423308
+Version: 4.0
+Summary: Simple library to calculate golden ratio
+Author: Aliza
+Author-email: <faizata00@gmail.com>
+License: MIT
+Keywords: golden_ratio,golden
+Classifier: Development Status :: 1 - Planning
+Description-Content-Type: text/markdown
+
+# Golden Ratio Calculation
+Python simple library to calculate Golden Ratio (phi)
+
+## Installation
+```shell
+pip install gold33423322
+```
+
+## Usage
+Basic Usage:
+```python
+from gold33423307 import GoldenRatio
+
+phi = GoldenRatio.calculatePhi()
+print(f"Golden Ratio: {phi}")
+```
