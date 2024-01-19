@@ -1,0 +1,2 @@
+[console_scripts]
+kruksik-hello = kruksik_hello:hello
