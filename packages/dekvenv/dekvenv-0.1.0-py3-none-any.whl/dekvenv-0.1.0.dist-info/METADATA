@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: dekvenv
+Version: 0.1.0
+Summary: Manage venv
+Home-page: 
+Author: sanzenwin
+Author-email: sanzenwin@gmail.com
+Keywords: venv
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: virtualenv <=20.24.3
+Requires-Dist: typer <=0.9.0
+Requires-Dist: pdm <3.0.0
+Requires-Dist: build <=0.10.0
+Requires-Dist: twine <=4.0.2
+Requires-Dist: toml <=0.10.2
+Requires-Dist: packaging <=23.1
+
+manage venv
+
+```shell
+dekvenv create --name=.venv
+dekvenv active .venv
+```
