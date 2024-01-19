@@ -1,0 +1,123 @@
+<script type="text/javascript">
+    RED.nodes.registerType('{{ node.name }}', {
+        category: '{{ node.category }}',
+        color: '{{ node.color }}',
+        defaults: {{ node.get_defaults() | json | safe}},
+        {% if node.parent.authentication %}
+            credentials: {
+                authentication: {type: "text"},
+            },
+        {% endif %}
+        inputs: 1,
+        outputs: 1,
+        outputLabels: ["parsed JSON object"],
+        icon: '{{ node.icon }}',
+        label: function () {
+            return this.name || "{{ node.label }}";
+        },
+        paletteLabel: "{{ node.label }}",
+        oneditprepare: function () {
+            {% for param_name in node.parameter_list %}
+                {% set param = node.parameters[param_name] %}
+                {% if param.typed_input and param.options %}
+                    $("#node-input-{{ param_name }}").typedInput({
+                        types: [
+                            {
+                                value: "{{ param_name }}",
+                                multiple: {{ param.multiple_select | json }},
+                                options: {{ param.options | json | safe }}
+                            }
+                        ]
+                    })
+                {% elif param.typed_input  %}
+                    $("#node-input-{{ param_name }}").typedInput({
+                        type: "{{ param.type.value}}",
+                        types: ["{{ param.type.value}}", "msg", "jsonata"],
+                        typeField: "#node-input-{{ param_name + TYPED_INPUT_TYPE_SUFFIX }}"
+                    });
+                {% endif %}
+            {% endfor %}
+            {% if node.parent.authentication %}
+                $("#node-input-authentication").typedInput({
+                    type: "str",
+                    types: ["str", "msg",],
+                    typeField: "#node-input-authentication{{ TYPED_INPUT_TYPE_SUFFIX }}"
+                });
+            {% endif %}
+            {% if node.has_body_params() %}
+                $("#node-input-json_body").typedInput({
+                    type: "json",
+                    types: ["json", "msg",],
+                    typeField: "#node-input-json_body{{ TYPED_INPUT_TYPE_SUFFIX }}"
+                });
+            {% endif %}
+        }
+    });
+</script>
+
+<script type="text/html" data-template-name="{{ node.name }}">
+    <h2>Node Properties:</h2>
+    <h4>API Description: </h4>
+    <p>
+        <strong>URL: </strong> {{ node.method }} {{ node.url }}
+    </p>
+    <p>{{ node.description }}</p>
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+    {% if node.parent.authentication %}
+        <div class="form-row">
+            <label for="node-input-authentication"><i class="fa fa-user"></i> '{{ node.parent.authentication_header }}'
+                Header</label>
+            <input type="text" id="node-input-authentication">
+            <input type="hidden" id="node-input-authentication{{ TYPED_INPUT_TYPE_SUFFIX }}">
+        </div>
+    {% endif %}
+
+
+    <hr>
+
+    {% if node.parameter_list %}
+        <h2>Request Parameters:</h2>
+        {#        {% for param_name in node.parameter_list %}#}
+        {% for group_title, group_params in node.get_param_groups() %}
+            <h4>{{ group_title }}</h4>
+            {% for param_name in group_params %}
+                {% set param = node.parameters[param_name] %}
+                <div class="form-row">
+                    <label for="node-input-{{ param_name }}"><i class="fa fa-cog"></i> {{ param_name | title }}</label>
+                    {% if param.type.value == 'plain' and param.plain_type == 'textarea' %}
+                        <textarea id="node-input-{{ param_name }}"></textarea>
+                    {% elif param.type.value == 'plain' %}
+                        <input type="{{ param.plain_type }}" id="node-input-{{ param_name }}">
+                        {#                {% elif param.type.value == 'text_editor' %}#}
+                        {#                    <input type="text" id="node-input-{{ param_name }}">#}
+                    {% else %}
+                        <input type="text" id="node-input-{{ param_name }}">
+                        <input type="hidden" id="node-input-{{ param_name + TYPED_INPUT_TYPE_SUFFIX }}">
+
+                    {% endif %}
+                </div>
+            {% endfor %}
+        {% endfor %}
+        <hr>
+    {% endif %}
+    {% if node.has_body_params() %}
+        <h2>Json Body:</h2>
+        <div class="form-row">
+            <label for="node-input-json_body"><i class="fa fa-code"></i> Json Body</label>
+            <input type="text" id="node-input-json_body">
+            <input type="hidden" id="node-input-json_body{{ TYPED_INPUT_TYPE_SUFFIX }}">
+        </div>
+        <p>If this field is filled, body parameters will be ignored.</p>
+    {% endif %}
+
+
+</script>
+
+
+<script type="text/html" data-help-name="{{ node.name }}">
+    <p>{{ node.description }}</p>
+</script>
+
