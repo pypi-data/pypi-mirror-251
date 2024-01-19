@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+DistroLab.egg-info/PKG-INFO
+DistroLab.egg-info/SOURCES.txt
+DistroLab.egg-info/dependency_links.txt
+DistroLab.egg-info/not-zip-safe
+DistroLab.egg-info/requires.txt
+DistroLab.egg-info/top_level.txt
+distrolab/Binomialdistribution.py
+distrolab/Gaussiandistribution.py
+distrolab/Generaldistribution.py
+distrolab/__init__.py
