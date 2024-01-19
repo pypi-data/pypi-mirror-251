@@ -1,0 +1,18 @@
+[project]
+name = "roborcon"
+version = "0.4.0"
+authors = [
+  { name="Artem Ljukshin", email="garo109696@gmail.com" },
+]
+description = "A Minecraft server rcon-dependent library made only for Robocode school."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "mcrcon",
+    "requests"
+]
