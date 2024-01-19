@@ -1,0 +1,4 @@
+[console_scripts]
+grid-manager = allmydata.cli.grid_manager:grid_manager
+tahoe = allmydata.scripts.runner:run
+
