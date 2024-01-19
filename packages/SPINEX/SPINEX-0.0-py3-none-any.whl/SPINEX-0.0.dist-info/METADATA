@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: SPINEX
+Version: 0.0
+Summary: A Python package for SPINEX algorithm
+Home-page: https://arxiv.org/abs/2306.01029
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+
+Please read more about this algorithm in: https://arxiv.org/abs/2306.01029
+
+At the moment, we are working diligently to improve and update SPINEX. Please share your thoughts and suggestions with us.
+
