@@ -1,0 +1,2 @@
+[console_scripts]
+lmk = LlaMasterKey.__init__:start
