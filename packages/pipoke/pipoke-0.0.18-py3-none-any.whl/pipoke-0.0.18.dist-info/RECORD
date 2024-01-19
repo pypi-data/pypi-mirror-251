@@ -1,0 +1,13 @@
+pipoke/__init__.py,sha256=kgGu1CLvrjF50NV6yQx2LATEkem3uG96JEiH30V0V0A,1694
+pipoke/distribution.py,sha256=9SXCpOy4-ShlowYaLnfbUDBgL-xQeprXf9-B8o_mUwk,7898
+pipoke/misc.py,sha256=Hfu120JZjc6dRR-jwd5tKGh_eBJiA1WzDbJoLH5SdhQ,4748
+pipoke/pkg_diagnosis.py,sha256=7GWtWbt6yPMfXt0hele0zvAOWw35LE8eb6zPxTSaHTk,21267
+pipoke/pkg_vs_words.py,sha256=yxZv4zZTdJF0OW5cl-_k5JVU6asKFGRcBpPpfClJsbk,4270
+pipoke/pypi_store.py,sha256=tJK9YtEPxqNvqW21DoPat9-rBIuLWH0_qpigeuJI6K8,487
+pipoke/word_conditions.py,sha256=bU3gNlSSyUAzJgT2LhhauhWzNew_jOKr9u8QkQHTfwE,182
+pipoke-0.0.18.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pipoke-0.0.18.dist-info/METADATA,sha256=b4N70QQFkQmFv_Qt0e84a_2ufL2MuBP8is3NCmiO3cE,3093
+pipoke-0.0.18.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+pipoke-0.0.18.dist-info/entry_points.txt,sha256=cIKuMfYZPzX6kxoxLXSIU3GPBnnh19tKZ-_dU0J6Iag,59
+pipoke-0.0.18.dist-info/top_level.txt,sha256=O4XfSlRhmpsH59OAi9T9NwHhsQ7m-nGyUJHZvqnrrOY,7
+pipoke-0.0.18.dist-info/RECORD,,
