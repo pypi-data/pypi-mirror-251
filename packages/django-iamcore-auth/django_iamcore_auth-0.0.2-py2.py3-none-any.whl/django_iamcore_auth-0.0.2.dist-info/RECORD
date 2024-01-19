@@ -1,0 +1,17 @@
+django_iamcore_auth/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_iamcore_auth/admin.py,sha256=suMo4x8I3JBxAFBVIdE-5qnqZ6JAZV0FESABHOSc-vg,63
+django_iamcore_auth/apps.py,sha256=rzFGW2nTbqTGiNpMaM4j1Xwl-KisLaw_4rGHmSsvNkc,111
+django_iamcore_auth/models.py,sha256=Vjc0p2XbAPgE6HyTF6vll98A4eDhA5AvaQqsc4kQ9AQ,57
+django_iamcore_auth/tests.py,sha256=mrbGGRNg5jwbTJtWWa7zSKdDyeB4vmgZCRc2nk6VY-g,60
+django_iamcore_auth/views.py,sha256=xc1IQHrsij7j33TUbo-_oewy3vs03pw_etpBWaMYJl0,63
+django_iamcore_auth/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_iamcore_auth/settings/__init__.py,sha256=XekG71BHF3HJsXa7VCshphfPHkLFtmUmlFi3oCXApHg,187
+django_iamcore_auth/utils/__init__.py,sha256=m9uFtNadDafXrwJxrKEuE_bIXn4ultcXy4UVaVDzR9I,189
+django_iamcore_auth/utils/headers.py,sha256=yrpvWfvReRdLZuxiF6nQQSWgxH9n5sszNCL98oKFBFc,635
+django_iamcore_auth/utils/iam_auth.py,sha256=PNqGEoHGqPliVUSqDQQqFhFWIWC8SBSlJnzvOhFRcck,744
+django_iamcore_auth/utils/iam_exceptions_middleware.py,sha256=kSIeYXWhUBLABrWaYc7_8v1slNJyJHwwLRFPDwWMI3M,991
+django_iamcore_auth/utils/iam_permissions.py,sha256=yv3Vo_GmhwzmhHBlVyHYmqMDy8BOjl5t-guQfRDg-l8,5807
+django_iamcore_auth-0.0.2.dist-info/METADATA,sha256=TVFAfYCHGsI3tzIm_WBygQW42nlPOHoZM2d-cshoawc,121
+django_iamcore_auth-0.0.2.dist-info/WHEEL,sha256=-G_t0oGuE7UD0DrSpVZnq1hHMBV9DD2XkS5v7XpmTnk,110
+django_iamcore_auth-0.0.2.dist-info/top_level.txt,sha256=pUP8bwvJmF-C8V9LniclnjYnRrHOVbnyd7fgPr_zWuM,20
+django_iamcore_auth-0.0.2.dist-info/RECORD,,
