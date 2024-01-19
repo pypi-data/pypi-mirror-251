@@ -1,0 +1,10 @@
+snekoil/__init__.py,sha256=NJQBWQJHo7Be3uNuUIt6k8yMJyeMqItYQenwK9tWmlI,85
+snekoil/iterators.py,sha256=8QIm4QysO_gCrqig7ZqzqMxXZtEYFuHtTvYura6puow,289
+snekoil/snekpatch.py,sha256=gO59NUxGW7AGityYrwxIiIusKmRQUnANrHbZvaxEvQo,401
+snekoil/speedup.py,sha256=iNO0luBX--9HzHODpihqeesUMk525OO5b5h6f-NQgEQ,14
+snekoil/time.py,sha256=NZhIFvlXEIcvehBtkxCOaI5c3Q7sp-Vm_Xr50T7c4PQ,151
+snekoil/unsnekpatch.py,sha256=433uK96X9v-7BvqgK0sENCo_vkr6WE9NzJKRljKjydo,367
+snekoil-0.5.0.dist-info/LICENSE,sha256=3DaLO2n-veOrSp09t_QEbcGIMp2ZpqGvMwVxnPwr3iU,740
+snekoil-0.5.0.dist-info/METADATA,sha256=68H3LuW_EAm0p1UQdeneDIXAAQCREi62W5TwRgb8HZ8,3536
+snekoil-0.5.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+snekoil-0.5.0.dist-info/RECORD,,
