@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: tap-calendly
+Version: 0.0.3
+Summary: Singer.io tap for Calendly
+Home-page: https://github.com/singer-io/tap-calendly
+Author: Nolan McCafferty
+Author-email: nolanmccafferty@gmail.com
+License-File: LICENSE
+Requires-Dist: requests~=2.25.1
+Requires-Dist: singer-sdk

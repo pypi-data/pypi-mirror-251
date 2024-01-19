@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+tap_calendly/__init__.py
+tap_calendly/__main__.py
+tap_calendly/auth.py
+tap_calendly/client.py
+tap_calendly/streams.py
+tap_calendly/tap.py
+tap_calendly.egg-info/PKG-INFO
+tap_calendly.egg-info/SOURCES.txt
+tap_calendly.egg-info/dependency_links.txt
+tap_calendly.egg-info/requires.txt
+tap_calendly.egg-info/top_level.txt
+tap_calendly/tests/__init__.py
+tap_calendly/tests/test_core.py
