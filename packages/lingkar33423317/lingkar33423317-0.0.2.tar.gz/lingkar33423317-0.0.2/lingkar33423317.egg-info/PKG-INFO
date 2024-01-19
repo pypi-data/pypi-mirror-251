@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: lingkar33423317
+Version: 0.0.2
+Summary: Simple library to calculate lingkaran
+Home-page: 
+Author: nihlah
+Author-email: <mutiaranihlah@gmail.com>
+License: MIT
+Keywords: lingkaran,luas_lingkaran,luas
+Classifier: Development Status :: 1 - Planning
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Golden Ratio Calculation
+Python simple library to calculate Golden Ratio (phi)
+
+## Installation
+```shell
+pip install lingkar33423317
+```
+
+## Usage
+Basic Usage:
+```python
+from lingkaran import lingkar33423317
+
+phi = lingkar33423317.calculatePhi()
+print(f"luas lingkaran: {phi}")
+```

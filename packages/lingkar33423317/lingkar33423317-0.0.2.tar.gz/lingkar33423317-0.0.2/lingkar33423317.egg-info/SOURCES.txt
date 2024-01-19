@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+lingkar33423317/__init__.py
+lingkar33423317/rumus.py
+lingkar33423317.egg-info/PKG-INFO
+lingkar33423317.egg-info/SOURCES.txt
+lingkar33423317.egg-info/dependency_links.txt
+lingkar33423317.egg-info/top_level.txt
