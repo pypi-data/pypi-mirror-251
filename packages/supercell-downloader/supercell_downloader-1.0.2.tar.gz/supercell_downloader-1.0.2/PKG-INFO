@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: supercell_downloader
+Version: 1.0.2
+Summary: Library for downloading Supercell game assets directly from server
+Home-page: https://github.com/sc-workshop/better-sc-downloader
+Author: Anybodyy
+Author-email: polnyjloh76@gmail.com

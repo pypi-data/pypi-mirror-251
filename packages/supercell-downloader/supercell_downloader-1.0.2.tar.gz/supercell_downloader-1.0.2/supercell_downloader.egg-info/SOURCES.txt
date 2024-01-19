@@ -1,0 +1,8 @@
+setup.py
+supercell_downloader/__init__.py
+supercell_downloader/main.py
+supercell_downloader.egg-info/PKG-INFO
+supercell_downloader.egg-info/SOURCES.txt
+supercell_downloader.egg-info/dependency_links.txt
+supercell_downloader.egg-info/requires.txt
+supercell_downloader.egg-info/top_level.txt
