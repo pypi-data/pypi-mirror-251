@@ -1,0 +1,2 @@
+[console_scripts]
+protmapper = protmapper.cli:main
