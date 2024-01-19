@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0", "pynput", "keyboard"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dark-chroma-sdk"
+version = "0.0.1"
+authors = [
+  { name="Dark_Eden", email="darkedenc9@gmail.com" },
+]
+description = "A package to interact with razer keyboard lighting in a simple way"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/DarkEden-coding/dark-chroma-sdk"
+"Bug Tracker" = "https://github.com/DarkEden-coding/dark-chroma-sdk/issues"

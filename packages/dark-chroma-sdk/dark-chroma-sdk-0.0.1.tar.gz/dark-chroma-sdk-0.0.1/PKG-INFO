@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: dark-chroma-sdk
+Version: 0.0.1
+Summary: A package to interact with razer keyboard lighting in a simple way
+Author-email: Dark_Eden <darkedenc9@gmail.com>
+Project-URL: Homepage, https://github.com/DarkEden-coding/dark-chroma-sdk
+Project-URL: Bug Tracker, https://github.com/DarkEden-coding/dark-chroma-sdk/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+This is a package that helps you interact with the Razer Chroma api, currently only supports keyboards.
