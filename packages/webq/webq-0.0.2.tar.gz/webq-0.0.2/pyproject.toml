@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "webq"
+version = "0.0.2"
+description = ""
+authors = ["weihong.xu <xuweihong.cn@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+fire = "^0.5.0"
+fastapi = "^0.108.0"
+sqlalchemy = "^2.0.25"
+python-dotenv = "^1.0.0"
+pyyaml = "^6.0.1"
+bcrypt = "^4.1.2"
+uvicorn = "^0.25.0"
+python-multipart = "^0.0.6"
+aiofiles = "^23.2.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
