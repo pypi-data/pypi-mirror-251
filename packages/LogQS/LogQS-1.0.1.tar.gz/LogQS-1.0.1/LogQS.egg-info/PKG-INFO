@@ -1,0 +1,207 @@
+Metadata-Version: 2.1
+Name: LogQS
+Version: 1.0.1
+Summary: A client for interacting with the LogQS Service.
+Home-page: https://github.com/carnegierobotics/LogQS
+Author: Nathan Margaglio
+Author-email: nmargaglio@carnegierobotics.com
+Project-URL: Bug Tracker, https://github.com/carnegierobotics/LogQS/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: antlr4-python3-runtime<4.14.0,>=4.13.1
+Requires-Dist: fastapi<0.102.0,>=0.101.0
+Requires-Dist: fire<0.6.0,>=0.5.0
+Requires-Dist: mangum<0.18.0,>=0.17.0
+Requires-Dist: orjson==3.9.8
+Requires-Dist: pydantic<2.3.0,>=2.2.0
+Requires-Dist: pydantic-settings<2.1.0,>=2.0.0
+Requires-Dist: python-json-logger<2.1.0,>=2.0.0
+Requires-Dist: requests<2.28.0,>=2.27.0
+Requires-Dist: uvicorn<0.24.0,>=0.23.0
+
+# LogQS
+
+## Getting Started
+
+
+```python
+from lqs import LogQS
+
+lqs = LogQS()
+
+log = lqs.list.logs(
+    name="My Log"
+).data[0]
+
+topic = lqs.list.topics(
+    log_id=log.id,
+    type_name="sensor_msgs/Image"
+).data[0]
+
+record = lqs.list.record(
+    log_id=log.id,
+    topic_id=topic.id,
+    include_auxiliary_data=True,
+    limit=1
+).data[0]
+
+lqs.utils.load_auxiliary_data_image(record)
+```
+
+
+## Setup
+
+LogQS operates as a REST API service, meaning you can interact with it however you can make HTTPS requests.  However, it's much easier to use the LogQS Client Python library.  We will use the client for these docs, but be aware that these interactions don't require it.
+
+First, we set up the environment by install [LogQS](https://pypi.org/project/LogQS/1.0.0.dev2/).
+
+
+```python
+!pip install --upgrade LogQS
+```
+
+Then, we import the client class.
+
+
+```python
+from lqs import LogQS
+```
+
+To access a DataStore, the LogQS Client requires, at a minimum, three parameters to be explicitly configured:
+
+- `api_key_id` - The ID of the API Key being used to access the service
+- `api_key_secret` - The secret of the API Key being used to access the service
+- `datastore_id` - The ID of the DataStore being accessed
+
+An API Key can be generated from the Studio app. The API URL should be the "base" URL, e.g., `https://api.logqs.com`, and _not_ the URL of a specific endpoint, e.g., `https://api.logqs.com/apps/lqs/api`, etc.
+
+These parameters can be passed to the client in a few ways:
+
+- As parameters to the constructor (either as a `dict` or as a `RESTClientConfig` object)
+- As environment variables (i.e., `LQS_API_KEY_ID`, `LQS_API_KEY_SECRET`, and `LQS_DATASTORE_ID`, which will be loaded from a `.env` file if present)
+- As a configuration file (i.e., `logqs-config.json` with a single object containing the three parameters)
+
+By default, the client will use the `api_url` of `https://api.logqs.com`.  If you are using a different API URL, you will need to pass it to the client.
+
+
+```python
+lqs = LogQS()
+```
+
+Generally, using LogQS involves either ingesting or querying record data. All record data is associated with a single topic, which is associated with a single log, which is associated with a single group.
+
+In a fresh DataStore, you can ingest a log file by first creating a group then a log in that group. You can then upload a file to that log and create an ingestion for the file.  Once the ingestion process is complete, you can list the topics created by the ingestion and query records from those topics.
+
+## Resources
+
+### Groups
+
+First, we'll create a group. A group is used simply for organizational purposes (all logs belong to one, and only one, group). A group requires a unique name. Group names can be changed later.
+
+
+```python
+# note that the group is found on the 'data' attribute of the response object
+group = lqs.create.group(name="Demo Group").data
+```
+
+If we've already created a group, we can list existing groups to get the ID of the group we want to use.
+
+
+```python
+groups = lqs.list.group().data
+```
+
+If we know the name of the group, we can list groups with a filter to get the specific group we want.
+
+
+```python
+groups = lqs.list.groups(name="Demo Group").data
+group = groups[0]
+```
+
+If we know the ID of the group, we can fetch the group directly.
+
+
+```python
+# it's a bit redundant to query for a group just to use it's ID to fetch the group, but you get the idea
+group = lqs.fetch.group(group_id=group.id).data
+```
+
+### Logs
+
+Next, we can create a log. A log is a collection of topics (which, in turn, are collections of records). A log in LogQS can be composed of multiple log files (by ingesting multiple files), or it can be entirely virtual (by creating topics and records directly).
+
+Informally, a log is a collection of records which are related. It's generally a good idea for logs to be partitioned by time (such as logs from a given run or a day), but this is not required. For example, a log could be a collection of records from a single day, or it could be a collection of records from a single hour, or it could be a collection of rolling records from an ongoing process etc. Similarly, a log could be partitioned by user, location, device, etc. For example, a fleet of machines could each have their own log which their data is pushed to, or a logical group of machines could push each of their data to a single log, etc.
+
+Generally, it's a good idea for logs to be composed of records whose data is geospatially, temporally, and semantically close. However, LogQS is designed to be flexible and accommodate many different workflows, so it's encouraged to consider your use case and how you want to query your data when designing your logs.
+
+How you organize logs will depend on the context of the records and how you want to query them, but note some of the limitations of logs which may affect your design:
+
+- The number of ingestions, topics, records, etc. for a log is limited (configured on a DataStore level).
+- The number of logs per DataStore is limited (configured on a DataStore level).
+- Record data is partitioned by log, so records from different logs cannot be queried together.
+
+When creating a log, we must specify the group it belongs to and a unique name for the log _within_ the group. Log names and group associations can be changed later. Logs have other optional parameters, such as a note, which can be set when creating the log.
+
+
+```python
+log = lqs.create.log(group_id=group.id, name="Demo Log").data
+```
+
+Similar to groups (and all other resources), we can list logs to get the ID of the log we want to use.
+
+
+```python
+log = lqs.list.logs(group_id=group.id, name="Demo Log").data[0]
+```
+
+### Objects
+
+In LogQS, objects (files stored in an object store, like S3) are dedicated resources which can be used in a number of ways (namely, to ingest data from). Objects can be log files (such as ROS bags), but objects can also be configuration files, images, ML models, etc. LogQS provides endpoints for listing, fetching, and creating objects so that you don't need direct access to the object store.
+
+Objects used in LogQS can be stored in either a LogQS-managed object store or a user-managed object store. LogQS-managed objects are always associated with one, and only one, log. When listing, fetching, and uploading log objects, you must specify the object's log. Processes cannot be associated with objects associated with logs other than the log it's associated with (e.g., an ingestion for one log cannot ingest data from an object associated with another log).
+
+We can list log objects like any other resource.
+
+
+```python
+objects = lqs.list.log_objects(log_id=log.id).data
+```
+
+The client provides a utility function for uploading objects to LogQS. This function will automatically create the object and upload the file to the object store. The function requires the log ID the object will be associated with and the path to the file.
+
+
+```python
+lqs.utils.upload_log_object(
+    log_id=log.id,
+    file_path="log.bag"
+)
+```
+
+We can then fetch the object by key. This does _not_ fetch the object's content, but metadata about the object.
+
+
+```python
+object = lqs.fetch.log_object(log_id=log.id, object_key="log.bag").data
+```
+
+If we want the object's content, we use the same function as above, but with the `redirect` parameter set to `True`. Optionally, we can also specify an offset and length to fetch a subset of the object's content.
+
+
+```python
+object_bytes = lqs.fetch.log_object(
+    log_id=log.id,
+    object_key="log.bag",
+    redirect=True,
+    offset=0,
+    length=12
+)
+object_bytes
+```
+
+```python
+b'#ROSBAG V2.0'
+```
