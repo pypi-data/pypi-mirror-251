@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: dimans
+Version: 0.0.1
+Summary: Dimensional analysis and unit conversion library
+Keywords: units,calculation,calculator,constants
+Author-email: Emre Özcan <emre@emreis.com>
+Maintainer-email: Emre Özcan <emre@emreis.com>
+Requires-Python: ~=3.7
+Description-Content-Type: text/markdown
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Scientific/Engineering
+Requires-Dist: attrs ~=21.3
+Project-URL: Issues, https://github.com/emreozcan/dimans/issues
+Project-URL: Repository, https://github.com/emreozcan/dimans
+
+# dimAns
+**Dimensional analysis and unit conversion library**
+
+## Usage
+
+```python-repl
+>>> from dimans.units import gram, kilogram, metre
+>>> (32_000 * gram).convert_to(kilogram)
+<Quantity 32 kg>
+```
+
