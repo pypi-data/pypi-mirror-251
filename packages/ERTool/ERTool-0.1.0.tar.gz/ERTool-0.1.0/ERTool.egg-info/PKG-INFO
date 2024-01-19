@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: ERTool
+Version: 0.1.0
+Summary: A Python package for simple and efficient implementation of Evidential Reasoning (ER) methods
+Home-page: UNKNOWN
+Author: Tongyue Shi
+Author-email: tyshi.pku@gmail.com
+License: UNKNOWN
+Description: # ERTool
+        
+        ERTool is a Python package designed for simple and efficient implementation of Evidential Reasoning (ER) methods. It aims to provide an intuitive and flexible approach for integrating ER processes, particularly suitable for data analysis, clinical research, and decision support systems.
+        
+        ## Features
+        
+        - Easy-to-use implementation of Evidential Reasoning.
+        - Efficient in handling complex ER tasks.
+        - Flexible interface suitable for various application scenarios.
+        
+        ## Installation
+        
+        You can install ERTool directly from PyPI using pip:
+        
+        ```
+        pip install ertool
+        ```
+        
+        ## Quick Start
+        Here is a basic usage example of ERTool:
+        
+        ```
+        from ertool import ER
+        import numpy as np
+        
+        er = ER()
+        B = np.zeros(5)
+        W = np.array([0.2, 0.3, 0.5])
+        DBF = np.array([[0.1, 0.2, 0.3, 0.4], 
+                        [0.3, 0.3, 0.2, 0.2], 
+                        [0.25, 0.25, 0.25, 0.25]])
+        numOfChildren = 3
+        numOfGrades = 4
+        
+        if er.er_algorithm(B, W, DBF, numOfChildren, numOfGrades):
+            print("Result:", B)
+        else:
+            print("An error occurred during the execution of the algorithm.")
+        ```
+        
+        ## Contributing
+        Contributions to ERTool are welcome. Please concat tyshipku@gmail.com for how to contribute to the project.
+        
+        ## License
+        This project is licensed under the MIT License. For more information, please see the LICENSE file.
+        
+        ## Contact
+        For any questions or suggestions, please contact us at tyshipku@gmail.com.
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
