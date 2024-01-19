@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: abandontech-siren
+Version: 0.2.0
+Summary: Async Python bindings for Minecraft's RCON protocol
+Home-page: https://github.com/AbandonTech/siren
+License: MIT
+Author: fisher60
+Author-email: kyler@abandontech.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: pydantic (>=2.5.3,<3.0.0)
+Project-URL: Repository, https://github.com/AbandonTech/siren
+Description-Content-Type: text/markdown
+
+# McRcon
+Python package for authenticating and communicating with a Minecraft server using the Minecraft RCON protocol
+
+# Sample Usage
+```python
+import asyncio
+
+import siren
+
+
+async def test_auth() -> None:
+    async with siren.RconClient("123.2.3.4", 25575, "AVeryRealPassword") as client:
+        print(await client.send("list"))
+
+
+if __name__ == '__main__':
+    loop = asyncio.new_event_loop()
+    loop.run_until_complete(test_auth())
+
+```
+
