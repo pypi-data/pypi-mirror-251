@@ -1,0 +1,2 @@
+[console_scripts]
+hid_ups = hid_ups.main:main
