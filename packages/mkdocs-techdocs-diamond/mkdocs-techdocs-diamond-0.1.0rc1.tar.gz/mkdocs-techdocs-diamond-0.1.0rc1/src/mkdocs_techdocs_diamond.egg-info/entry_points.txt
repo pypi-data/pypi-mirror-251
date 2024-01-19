@@ -1,0 +1,2 @@
+[mkdocs.plugins]
+techdocs-diamond = mkdocs_techdocs_diamond:TechdocsDiamond
