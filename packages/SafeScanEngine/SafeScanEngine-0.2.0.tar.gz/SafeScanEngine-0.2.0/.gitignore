@@ -1,0 +1,10 @@
+/venv/
+/.idea/
+/src/LogoBgVanisher.egg-info/
+/dist/
+/src/__pycache__/
+/src/safe_scan_engine/__pycache__/
+/tests/.pytest_cache/
+/examples/
+/models/
+/.ruff_cache/

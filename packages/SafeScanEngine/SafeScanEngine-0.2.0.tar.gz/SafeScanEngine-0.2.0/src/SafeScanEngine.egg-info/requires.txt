@@ -1,0 +1,5 @@
+YOLO
+pytest
+ultralytics
+Pillow
+pillow_heif

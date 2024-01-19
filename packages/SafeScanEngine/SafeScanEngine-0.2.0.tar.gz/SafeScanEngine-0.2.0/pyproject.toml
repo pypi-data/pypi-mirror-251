@@ -1,0 +1,45 @@
+[build-system]
+requires = [ "setuptools>=42", "wheel", "setuptools-scm>=8.0",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "SafeScanEngine"
+version = "0.2.0"
+description = "A package to identify dangerous non baby-proof items."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [ "Programming Language :: Python :: 3", "License :: OSI Approved :: MIT License", "Operating System :: OS Independent",]
+dependencies = [ "YOLO", "pytest", "ultralytics", "Pillow", "pillow_heif",]
+[[project.authors]]
+name = "Dragos Josan"
+email = "dragosjosan@gmail.com"
+
+[project.license]
+file = "LICENSE.txt"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.ruff]
+src = [ "baby_safe_scan",]
+fix = true
+show-fixes = true
+show-source = true
+line-length = 100
+ignore-init-module-imports = true
+
+[tool.setuptools.package-dir]
+"" = "src"
+
+[tool.setuptools.package-data]
+mypkg = [ "electrical_outlet_labelstudio.pt",]
+
+[tool.ruff.lint]
+select = [ "A", "B", "E", "W", "F", "I", "UP", "PLC", "PLE", "PLW",]
+
+[tool.setuptools.packages.find]
+where = [ "models",]
+
+[tool.ruff.lint.isort]
+force-single-line = true
+order-by-type = false
