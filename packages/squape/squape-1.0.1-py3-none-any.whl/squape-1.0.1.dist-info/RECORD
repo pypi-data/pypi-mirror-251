@@ -1,0 +1,15 @@
+squape/__init__.py,sha256=E4JkxUGibb69yNSg3R37uUmHpuHRr-ig_LBgzZXhOPw,220
+squape/object_tree.py,sha256=p366dfDqBaiSnVTAf3_D-z-C3BkVXXB0EhPMt_Y-G9U,9615
+squape/report.py,sha256=bjjrbVjDZ0ZyF9VOGSJ6c2CDtA3SU0_nHQFMx6cYUNQ,8708
+squape/settings.py,sha256=B8Xd2ESPjC2UwyhtSBURJBdiek-ezlxhPnP3FIXBN3c,11454
+squape/squishserver.py,sha256=_B0U4zFPSkZP_UTCT-rH3XnB-MI6cjq2xa6RFeoHKAM,7820
+squape/video.py,sha256=qbdmQViuPmq3iK5X9Kgc4gjNT74wWKmdMx1GhqfoJKA,4229
+squape/vps.py,sha256=Mw8e2pbAJTO_lwFaVJjpV1nv9-kxHRmDEwQGKPVYq18,1248
+squape/internal/__init__.py,sha256=E4JkxUGibb69yNSg3R37uUmHpuHRr-ig_LBgzZXhOPw,220
+squape/internal/exceptions.py,sha256=gxFSDHuccsIUvxYVwTIWamq221_smo3egXzi84DMeKo,912
+squape/resources/empty_video_with_message.mp4,sha256=7h9zePtelp4bV4yMvYd3QMsPPad2Y-SF3ZZeImqzrSg,10904
+squape-1.0.1.dist-info/LICENSE,sha256=8kigyLgswXMKQml4RsBJOsgArid0HCrausqDr6qIbYU,1541
+squape-1.0.1.dist-info/METADATA,sha256=rfkhvq3-RQfnbv-QERVRb-AWGO7zy3HppP1AjAb8Qp8,2520
+squape-1.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+squape-1.0.1.dist-info/top_level.txt,sha256=vVVt_YwmOhjgISj_yjYp5QLmLLCedzvXLs4qx6BUkFA,7
+squape-1.0.1.dist-info/RECORD,,
