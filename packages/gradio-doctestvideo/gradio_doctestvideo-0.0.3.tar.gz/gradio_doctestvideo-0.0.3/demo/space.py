@@ -1,0 +1,131 @@
+
+import gradio as gr
+from app import demo as app
+import os
+
+_docs = {'DocTestVideo': {'description': 'Creates a video component that can be used to upload/record videos (as an input) or display videos (as an output).\nFor the video to be playable in the browser it must have a compatible container and codec combination. Allowed\ncombinations are .mp4 with h264 codec, .ogg with theora codec, and .webm with vp9 codec. If the component detects\nthat the output video would not be playable in the browser it will attempt to convert it to a playable mp4 video.\nIf the conversion fails, the original video is returned.', 'members': {'__init__': {'value': {'type': 'str\n    | Path\n    | tuple[str | Path, str | Path | None]\n    | Callable\n    | None', 'default': 'None', 'description': 'A path or URL for the default value that DocTestVideo component is going to take. Can also be a tuple consisting of (video filepath, subtitle filepath). If a subtitle file is provided, it should be of type .srt or .vtt. Or can be callable, in which case the function will be called whenever the app loads to set the initial value of the component.'}, 'format': {'type': 'str | None', 'default': 'None', 'description': "Format of video format to be returned by component, such as 'avi' or 'mp4'. Use 'mp4' to ensure browser playability. If set to None, video will keep uploaded format."}, 'sources': {'type': 'list[Literal["upload", "webcam"]] | None', 'default': 'None', 'description': 'A list of sources permitted for video. "upload" creates a box where user can drop an video file, "webcam" allows user to record a video from their webcam. If None, defaults to ["upload, "webcam"].'}, 'height': {'type': 'int | str | None', 'default': 'None', 'description': 'The height of the displayed video, specified in pixels if a number is passed, or in CSS units if a string is passed.'}, 'width': {'type': 'int | str | None', 'default': 'None', 'description': 'The width of the displayed video, specified in pixels if a number is passed, or in CSS units if a string is passed.'}, 'label': {'type': 'str | None', 'default': 'None', 'description': 'The label for this component. Appears above the component and is also used as the header if there are a table of examples for this component. If None and used in a `gr.Interface`, the label will be the name of the parameter this component is assigned to.'}, 'every': {'type': 'float | None', 'default': 'None', 'description': "If `value` is a callable, run the function 'every' number of seconds while the client connection is open. Has no effect otherwise. Queue must be enabled. The event can be accessed (e.g. to cancel it) via this component's .load_event attribute."}, 'show_label': {'type': 'bool | None', 'default': 'None', 'description': 'if True, will display label.'}, 'container': {'type': 'bool', 'default': 'True', 'description': 'If True, will place the component in a container - providing some extra padding around the border.'}, 'scale': {'type': 'int | None', 'default': 'None', 'description': 'relative width compared to adjacent Components in a Row. For example, if Component A has scale=2, and Component B has scale=1, A will be twice as wide as B. Should be an integer.'}, 'min_width': {'type': 'int', 'default': '160', 'description': 'minimum pixel width, will wrap if not sufficient screen space to satisfy this value. If a certain scale value results in this Component being narrower than min_width, the min_width parameter will be respected first.'}, 'interactive': {'type': 'bool | None', 'default': 'None', 'description': 'if True, will allow users to upload a video; if False, can only be used to display videos. If not provided, this is inferred based on whether the component is used as an input or output.'}, 'visible': {'type': 'bool', 'default': 'True', 'description': 'If False, component will be hidden.'}, 'elem_id': {'type': 'str | None', 'default': 'None', 'description': 'An optional string that is assigned as the id of this component in the HTML DOM. Can be used for targeting CSS styles.'}, 'elem_classes': {'type': 'list[str] | str | None', 'default': 'None', 'description': 'An optional list of strings that are assigned as the classes of this component in the HTML DOM. Can be used for targeting CSS styles.'}, 'render': {'type': 'bool', 'default': 'True', 'description': 'If False, component will not render be rendered in the Blocks context. Should be used if the intention is to assign event listeners now but render the component later.'}, 'mirror_webcam': {'type': 'bool', 'default': 'True', 'description': 'If True webcam will be mirrored. Default is True.'}, 'include_audio': {'type': 'bool | None', 'default': 'None', 'description': 'Whether the component should record/retain the audio track for a video. By default, audio is excluded for webcam videos and included for uploaded videos.'}, 'autoplay': {'type': 'bool', 'default': 'False', 'description': 'Whether to automatically play the video when the component is used as an output. Note: browsers will not autoplay video files if the user has not interacted with the page yet.'}, 'show_share_button': {'type': 'bool | None', 'default': 'None', 'description': 'If True, will show a share icon in the corner of the component that allows user to share outputs to Hugging Face Spaces Discussions. If False, icon does not appear. If set to None (default behavior), then the icon appears if this Gradio app is launched on Spaces, but not otherwise.'}, 'min_length': {'type': 'int | None', 'default': 'None', 'description': 'The minimum length of video (in seconds) that the user can pass into the prediction function. If None, there is no minimum length.'}, 'max_length': {'type': 'int | None', 'default': 'None', 'description': 'The maximum length of video (in seconds) that the user can pass into the prediction function. If None, there is no maximum length.'}}, 'postprocess': {'y': {'type': 'str | Path | tuple[str | Path, str | Path | None] | None', 'description': None}, 'value': {'type': 'str | Path | tuple[str | Path, str | Path | None] | None', 'description': None}}, 'preprocess': {'return': {'type': 'str | None', 'description': None}, 'value': None}}, 'events': {'change': {'type': None, 'default': None, 'description': 'Triggered when the value of the DocTestVideo changes either because of user input (e.g. a user types in a textbox) OR because of a function update (e.g. an image receives a value from the output of an event trigger). See `.input()` for a listener that is only triggered by user input.'}, 'clear': {'type': None, 'default': None, 'description': 'This listener is triggered when the user clears the DocTestVideo using the X button for the component.'}, 'start_recording': {'type': None, 'default': None, 'description': 'This listener is triggered when the user starts recording with the DocTestVideo.'}, 'stop_recording': {'type': None, 'default': None, 'description': 'This listener is triggered when the user stops recording with the DocTestVideo.'}, 'stop': {'type': None, 'default': None, 'description': 'This listener is triggered when the user reaches the end of the media playing in the DocTestVideo.'}, 'play': {'type': None, 'default': None, 'description': 'This listener is triggered when the user plays the media in the DocTestVideo.'}, 'pause': {'type': None, 'default': None, 'description': 'This listener is triggered when the media in the DocTestVideo stops for any reason.'}, 'end': {'type': None, 'default': None, 'description': 'This listener is triggered when the user reaches the end of the media playing in the DocTestVideo.'}, 'upload': {'type': None, 'default': None, 'description': 'This listener is triggered when the user uploads a file into the DocTestVideo.'}}}, '__meta__': {'additional_interfaces': {}, 'user_fn_refs': {'DocTestVideo': []}}}
+    
+abs_path = os.path.join(os.path.dirname(__file__), "css.css")
+
+with gr.Blocks(
+    css=abs_path,
+    theme=gr.themes.Default(
+        font_mono=[
+            gr.themes.GoogleFont("Inconsolata"),
+            "monospace",
+        ],
+    ),
+) as demo:
+    gr.Markdown(
+"""
+# `gradio_doctestvideo`
+
+<div style="display: flex; gap: 7px;">
+<img alt="Static Badge" src="https://img.shields.io/badge/version%20-%200.0.1%20-%20orange">  
+</div>
+
+Python library for easily interacting with trained machine learning models
+""", elem_classes=["md-custom"], header_links=True)
+    app.render()
+    gr.Markdown(
+"""
+## Installation
+
+```bash
+pip install gradio_doctestvideo
+```
+
+## Usage
+
+```python
+
+import gradio as gr
+from gradio_doctestvideo import DocTestVideo
+
+
+example = DocTestVideo().example_inputs()
+
+demo = gr.Interface(
+    lambda x:x,
+    DocTestVideo(),  # interactive version of your component
+    DocTestVideo(),  # static version of your component
+    # examples=[[example]],  # uncomment this line to view the "example version" of your component
+)
+
+
+if __name__ == "__main__":
+    demo.launch()
+
+```
+""", elem_classes=["md-custom"], header_links=True)
+
+
+    gr.Markdown("""
+## `DocTestVideo`
+
+### Initialization
+""", elem_classes=["md-custom"], header_links=True)
+
+    gr.ParamViewer(value=_docs["DocTestVideo"]["members"]["__init__"], linkify=[])
+
+
+    gr.Markdown("### Events")
+    gr.ParamViewer(value=_docs["DocTestVideo"]["events"], linkify=['Event'])
+
+
+
+
+    gr.Markdown("""
+
+### User function
+
+
+
+ ```python
+def predict(
+    value: str | None
+) -> str | Path | tuple[str | Path, str | Path | None] | None:
+    return value
+```
+""", elem_classes=["md-custom", "DocTestVideo-user-fn"], header_links=True)
+
+
+
+
+    demo.load(None, js=r"""function() {
+    const refs = {};
+    const user_fn_refs = {
+          DocTestVideo: [], };
+    requestAnimationFrame(() => {
+
+        Object.entries(user_fn_refs).forEach(([key, refs]) => {
+            if (refs.length > 0) {
+                const el = document.querySelector(`.${key}-user-fn`);
+                if (!el) return;
+                refs.forEach(ref => {
+                    el.innerHTML = el.innerHTML.replace(
+                        new RegExp("\\b"+ref+"\\b", "g"),
+                        `<a href="#h-${ref.toLowerCase()}">${ref}</a>`
+                    );
+                })
+            }
+        })
+        
+        Object.entries(refs).forEach(([key, refs]) => {
+            if (refs.length > 0) {
+                const el = document.querySelector(`.${key}`);
+                if (!el) return;
+                refs.forEach(ref => {
+                    el.innerHTML = el.innerHTML.replace(
+                        new RegExp("\\b"+ref+"\\b", "g"),
+                        `<a href="#h-${ref.toLowerCase()}">${ref}</a>`
+                    );
+                })
+            }
+        })
+    })
+}
+
+""")
+
+demo.launch()
