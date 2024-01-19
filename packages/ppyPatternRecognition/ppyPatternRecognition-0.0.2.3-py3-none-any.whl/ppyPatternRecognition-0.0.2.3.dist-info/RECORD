@@ -1,0 +1,15 @@
+ppyPatternRecognition/__init__.py,sha256=sXJkteBlH2ifdsRS0yMp2AaxPdAE2nsqubMoR3JuVzc,148
+ppyPatternRecognition/activation_function/__init__.py,sha256=hstpb-QVLtnTjUbLDJKBktW4fGyjeiYVDlsGVXuFU3I,252
+ppyPatternRecognition/clustering/__init__.py,sha256=M0lchLMWVY_K_rwT5Nq24S24h9K1WmqTuGFZtIS6IPM,26
+ppyPatternRecognition/clustering/kmeans.py,sha256=jxCl24fidwf2MG-RSmhuG4DW_P5f-PEPqhZk9mlf2p0,4576
+ppyPatternRecognition/evaluation/__init__.py,sha256=ItRpxm2HjHELK95nSYDP051xpUzEiZD-n58_UaqQRCI,1257
+ppyPatternRecognition/loss_function/__init__.py,sha256=TOMfX1UBW1rgYqY4J88F3eIzLADm95FwpCYb24qDIB0,1333
+ppyPatternRecognition/regression/__init__.py,sha256=IUC4DgZ3fKiDpn1HZHAz76DTDh5Jhkrri_AZZl031wc,100
+ppyPatternRecognition/regression/base_regression.py,sha256=Q3rIEe30lQJGoarVerlDBNDKr9gB5pwnMcQSwuU1hPc,752
+ppyPatternRecognition/regression/linear_regression.py,sha256=tyS0RMA2GAbOa5X5tVWDY9smoKbjwsHyhHud9eL1xD8,3214
+ppyPatternRecognition/regression/logistic_regression.py,sha256=YRnpO_7HVBjwJZjsLI804-flLFJUHnfwuJANVeeqd8s,2541
+ppyPatternRecognition-0.0.2.3.dist-info/LICENSE,sha256=AR_x1_j8U_qyCrIwo_76_Pum8FZKgrdEejU5O4Yjp7o,1062
+ppyPatternRecognition-0.0.2.3.dist-info/METADATA,sha256=MQ3e9ZRYVOT4pdnGBaP9v-mv2WzYTwZBEYELG9PBZCs,1422
+ppyPatternRecognition-0.0.2.3.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+ppyPatternRecognition-0.0.2.3.dist-info/top_level.txt,sha256=b1ynKnAZg8k8O-s73aNN9Hn4a5Z9_WTlSy6jXeiq4QQ,22
+ppyPatternRecognition-0.0.2.3.dist-info/RECORD,,
