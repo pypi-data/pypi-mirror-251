@@ -1,0 +1,14 @@
+nyaruko/__init__.py,sha256=ShXQBVjyiSOHxoQJS2BvNG395W4KZfqMxZWBAR0MZrE,22
+nyaruko/command/ascii.py,sha256=QNuAHzdbCbQgZ5age-RLaaqRmhtuw2jzSf4063x_2Nw,411
+nyaruko/command/bot.py,sha256=jnO_eIbjcL1ZHoYvAy8laf83dYy-1c98xME3PPzaOwM,1105
+nyaruko/command/list.py,sha256=czfq7ClHfCReK8KDzQE_3K97TMTswKF0P1_3opEOT_8,330
+nyaruko/command/sync.py,sha256=z9RY98VpksM2pXqiry6fvfvQs4AoQw3y6a4R4Gr3T6Y,1926
+nyaruko/config.py,sha256=jhyGJ0BMpkLmZZQ700OzJCqw3kk_Dz0jqBY-5CPZuls,100
+nyaruko/data/ascii-art-big.txt,sha256=bebl9GlAgcoLJl_Ie5t9iWXicMYzYSBdrbrsO686gME,4053
+nyaruko/data/ascii-art.txt,sha256=nIJGBGXOoyv7eefLyBlJ-uO-edxFR2EZr9-8QpTIu4Y,2454
+nyaruko/main.py,sha256=aPaTyL6haA-HtNebkpCaJEbOB04FaTQmetMvK-RTlV8,623
+nyaruko-0.0.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+nyaruko-0.0.0.dist-info/METADATA,sha256=kB9O23TsBcOC2tN3Vv4Tw4JAKt0VMETBMO4IE8_u3pQ,1585
+nyaruko-0.0.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+nyaruko-0.0.0.dist-info/entry_points.txt,sha256=ykG8Hm4uLM7KTcrVYibuGI6mSpGLKI9he38ZdMXZdiI,64
+nyaruko-0.0.0.dist-info/RECORD,,
