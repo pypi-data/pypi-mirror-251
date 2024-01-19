@@ -1,0 +1,2 @@
+[console_scripts]
+hostsmate = hostsmate_src.execute:main
