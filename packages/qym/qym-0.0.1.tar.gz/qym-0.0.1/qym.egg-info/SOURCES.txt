@@ -1,0 +1,6 @@
+README.md
+setup.py
+qym.egg-info/PKG-INFO
+qym.egg-info/SOURCES.txt
+qym.egg-info/dependency_links.txt
+qym.egg-info/top_level.txt
