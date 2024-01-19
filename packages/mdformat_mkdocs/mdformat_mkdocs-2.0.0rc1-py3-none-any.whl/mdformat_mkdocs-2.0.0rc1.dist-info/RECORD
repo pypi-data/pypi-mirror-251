@@ -1,0 +1,10 @@
+mdformat_mkdocs/__init__.py,sha256=TQQffhfyWBfd1iP7rbbExqUnSEmwOg-KJ9B2QX5950A,306
+mdformat_mkdocs/plugin.py,sha256=Nu_rrmsiePm4e2L4uCayUr9ey0Fqn0CTkp8rtgmnp-w,10024
+mdformat_mkdocs/mdit_plugins/__init__.py,sha256=5tJJpVSYiAK5iW7C6w9RbEqXyoy-9z6trr2DFluXYeQ,110
+mdformat_mkdocs/mdit_plugins/_content_tabs.py,sha256=_AVQuPs_6rxA3Y7kcWJ1YfW3c3Uz14e6wVgsa9njcyg,2198
+mdformat_mkdocs/mdit_plugins/_mkdocs_admon.py,sha256=OtlxYn7n1kCi6HVzyNhXovnOuqhgCqoQ3CQa4X4hcac,2824
+mdformat_mkdocs-2.0.0rc1.dist-info/entry_points.txt,sha256=QBIhF5cafxBe1UfFjmYoGKp9Bv0l6hVSZr9wrEunU_I,52
+mdformat_mkdocs-2.0.0rc1.dist-info/LICENSE,sha256=-voxTd2luDRUXIFkSXQRQGL3cHzC9AnnJkv3LJrla3o,1073
+mdformat_mkdocs-2.0.0rc1.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+mdformat_mkdocs-2.0.0rc1.dist-info/METADATA,sha256=8BP6PeyMB_w5-6GxO4_AUKlRDsPdQdox_0wHywMe75k,6117
+mdformat_mkdocs-2.0.0rc1.dist-info/RECORD,,
