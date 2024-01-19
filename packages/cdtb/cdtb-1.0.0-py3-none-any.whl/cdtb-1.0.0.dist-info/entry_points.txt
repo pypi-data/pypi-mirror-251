@@ -1,0 +1,2 @@
+[console_scripts]
+cdtb = cdtb.__main__:main
