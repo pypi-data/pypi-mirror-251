@@ -1,0 +1,17 @@
+badapple/__init__.py,sha256=HVAFJM7yK7yXKY6vXe2czGkfYGK2WVzHuOAHJQYfT8I,74
+badapple/__main__.py,sha256=EXMMwVIZLDo3BxvVJG66qS8VqdOHKYE_gB_gQNU5LNI,3049
+badapple/audio.py,sha256=plE_x-8SEw_RkpYHe2oYvCcxPiHjSFT4bfEf_-ysdD0,1140
+badapple/badapple.badapple,sha256=7AHmtaIl1mK23NQ5uvX_To700pUPUz2JH1swlflgZ2s,2287531
+badapple/badapple.mp3,sha256=AdURiFP0q2REifu0ARk_t-o6uvjrRWZqBrEhvfrGmB0,3715073
+badapple/badapple.mp4,sha256=2DOWQv0zA6DElx4VZFFegvae9htwDOF7aB3rsZQEwjo,33253859
+badapple/badapple.wav,sha256=KJFAxUxfTW1kKJsFHvdzzPu-YONc7OuXISeOys5ELvQ,40947790
+badapple/builtin_files.py,sha256=hSVguwci11HNhdHzvazeQRpE4bPDJScBOskA2XpCUQQ,397
+badapple/consola_ascii_0_ff.data,sha256=uPetOYgTv_S6fMQfiUwWCb2xPjXm-z7ekrbBFzWqDeg,66046
+badapple/play.py,sha256=QOroPgPzzGRsfnk_ciIRUm6Ha5ec7-5fjMI3r1aziHk,4048
+badapple/replay.py,sha256=iez9euPGzxavstIy1_TW9rNrXbn-NP76rQp3KqGR49o,1005
+badapple/util.py,sha256=JSGXS_C9w4gsEe9qtGR67lYwsDSosSlDoW_DXPQ-cw8,1458
+badapple-0.0.6.dist-info/LICENSE,sha256=yQB-08_bneBLUpwnitSdW0C52-xLoShmT7mBmrl6c-8,1063
+badapple-0.0.6.dist-info/METADATA,sha256=SPTSlXyncTPR5aGatz5w4N6tUt5EVWEEJyj1AGj5r_A,4158
+badapple-0.0.6.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+badapple-0.0.6.dist-info/top_level.txt,sha256=MUjN4r2Ju_2v5KwRR1H_i0tL7xZligeMhS9qwgZU5xQ,9
+badapple-0.0.6.dist-info/RECORD,,
