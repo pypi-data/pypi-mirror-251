@@ -1,0 +1,7 @@
+nbclassic
+pandas
+ipywidgets
+
+[test]
+pytest
+flake8
