@@ -1,0 +1,35 @@
+obsidianhtml version {version}
+Usage: obsidianhtml <command> [arguments...] [command options] [global options]
+
+Commands:
+	convert		Just convert your vault to html and or markdown. 
+				Will use provided config exactly as provided.
+
+	export		Used to export packaged resources
+	version		Print version cleanly
+	help		Show help.
+
+Global options:
+	--help, -h	Show help
+	-v		Set Verbose mode
+  
+Command options:
+	Convert
+		-i		Pass in a config file. 
+				When no config file is passed in, obsidianhtml will look for the file at ./config.yml, and then ./config.yaml.
+				When they don't exist, obsidianhtml will look whether a config.yml file exists in the obsidianhtml appdir.
+				If none are present, obsidianhtml will fail.
+
+		Examples:
+			obsidianhtml convert -i my/config.yml
+			obsidianhtml convert -i my/config.yml -v				# same as above, but with verbose logging
+
+	Export
+		Export various packaged resources. Run `obsidianhtml export` for more information and supported arguments and options.
+
+	Version
+		<No args>
+		Cleanly output version string
+
+		Examples:
+			obsidianhtml version
