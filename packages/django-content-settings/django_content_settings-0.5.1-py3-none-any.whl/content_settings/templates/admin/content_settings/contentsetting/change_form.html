@@ -1,0 +1,46 @@
+{% extends 'admin/change_form.html' %}
+
+{% block footer %}{{ block.super }}
+<script>
+    (function($) {
+        const objName = "{{original.name}}";
+        const PREVIEW_URL = "{% url 'admin:preview_setting' %}";
+        const $id = $('#id_value');
+        const $value = $('.field-py_data div.readonly').first();
+        const $label = $('.field-py_data label');
+        const $user_defined_type = $('#id_user_defined_type');
+        const genSyncedValue = function() {
+            return $id.val() + '::' + ($user_defined_type.length ? $user_defined_type.val() : '');
+        }
+        var syncedValue = genSyncedValue();
+        setInterval(function(){
+            if (syncedValue == genSyncedValue()) { return }
+            const newValue = genSyncedValue();
+            $.ajax({
+                "method": "POST",
+                "crossDomain": true,
+                "xhrFields": {
+                    "withCredentials": true
+                },
+                "url": PREVIEW_URL,
+                "data": {
+                    "name": objName, "value": $id.val(),
+                    "user_defined_type": ($user_defined_type.length ? $user_defined_type.val() : ''),
+                    "csrfmiddlewaretoken": $('[name=csrfmiddlewaretoken]').val(),
+                },
+                "success": function(value) {
+                    if (value.error) {
+                        $value.html('<pre style="color:red">' + value.error + '</pre>');
+                    } else {
+                        $value.html(value.html);
+                    }
+                    syncedValue = newValue;
+                }
+            })
+        }, 1000)
+        $('.reset_default').click(function(){
+            $id.val($(this).data('value'));
+        })
+    })(django.jQuery)
+</script>
+{% endblock %}
