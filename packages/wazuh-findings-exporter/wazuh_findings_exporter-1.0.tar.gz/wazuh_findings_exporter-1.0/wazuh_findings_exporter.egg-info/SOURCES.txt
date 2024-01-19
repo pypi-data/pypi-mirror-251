@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+wazuh_findings_exporter/__init__.py
+wazuh_findings_exporter/wazuh.py
+wazuh_findings_exporter.egg-info/PKG-INFO
+wazuh_findings_exporter.egg-info/SOURCES.txt
+wazuh_findings_exporter.egg-info/dependency_links.txt
+wazuh_findings_exporter.egg-info/requires.txt
+wazuh_findings_exporter.egg-info/top_level.txt

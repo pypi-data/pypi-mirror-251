@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: wazuh-findings-exporter
+Version: 1.0
+Summary: Simple script that exports Wazuh Vulnerabilities by Agent groups
+Home-page: https://github.com/quirinziessler/wazuh_findings_exporter
+Download-URL: https://github.com/quirinziessler/wazuh_findings_exporter
+Author: Quirin Hardy Zießler
+Author-email: quirin@ziessler.com
+License: MIT
+Keywords: Wazuh,exporter,DefectDojo,Wazuh API
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: urllib3
+Requires-Dist: requests
+
+# wazuh_findings_exporter
+
+A simple python script which exports findings of a client group from wazuh and adds the agent-ip as well as hostname to every finding for better further processing.
+
+The script may not be perfect, so feel free to provide PRs and help to improve it.
+
+'''
+from wazuh_findings_exporter import Wazuh_Importer
+
+Wazuh = Wazuh_Importer(BASE_URL=None, BASE_URL=None, BASE_URL=None)
+
+Wazuh.get_findings(group="Clients_AAAA", filedestination="")
+'''
+MIT License
+Copyright (c) 2023 Quirin Hardy Zießler
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

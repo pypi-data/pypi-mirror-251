@@ -1,0 +1,1 @@
+wazuh_findings_exporter
