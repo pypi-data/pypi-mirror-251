@@ -1,0 +1,11 @@
+acepython-0.0.8.dist-info/METADATA,sha256=iENsnjXa5ubHRHpxzwAUhkbsNU9iey9XZ3dkn8NtNDQ,8489
+acepython-0.0.8.dist-info/WHEEL,sha256=50PeAbplA6PkI0hYOYoeacB9US1R6EguyfOnsccH0WU,85
+acepython-0.0.8.dist-info/entry_points.txt,sha256=2ICKoTle-9SaTyQozD9GT50e9_al2YCJzg5bYqQzoGY,48
+acepython/mdace.cp312-win_amd64.pyd,sha256=tBO9kfFdI_LiH5GanKzX1CRgUbfvI0ZPcgtU6BqESS4,1138548
+acepython/mdace.cp312-win_amd64.dll.a,sha256=rKGEPKoIoIK-daMVhoAMg-PP_NcWtqAQWvBbuH855Gk,1520
+acepython/__init__.py,sha256=Jw8BGhw5gjixJEClK2UYTsEEEEDsDHQxqgWGNWmugag,26
+acepython/ace.py,sha256=6Mf1bFvZO71igUYO6XNaOITJiG62LliUxcx1jVpcWYg,2790
+acepython/taurex3.py,sha256=r3Ap1B5ezu0sm6r0-Z8clBRmEyq-C2xd9p3-ElYRmRo,7402
+acepython/data/NASA.therm,sha256=r8pwY5J_JY8uEKTF2VmZVdrmlWicUq92aul49hyh35w,30467
+acepython/data/composes.dat,sha256=Dv6N5NjwevBcrJ7P6xQ8rSDMJPqBkjgjXxeGUYKvuHg,3990
+acepython-0.0.8.dist-info/RECORD,,
