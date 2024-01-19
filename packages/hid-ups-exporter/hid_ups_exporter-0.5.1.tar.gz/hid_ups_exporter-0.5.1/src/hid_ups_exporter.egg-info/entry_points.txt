@@ -1,0 +1,2 @@
+[console_scripts]
+hid_ups_exporter = hid_ups_exporter.main:main

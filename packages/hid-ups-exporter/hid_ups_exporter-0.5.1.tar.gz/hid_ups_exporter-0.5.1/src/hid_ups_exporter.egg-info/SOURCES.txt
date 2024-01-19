@@ -1,0 +1,12 @@
+LICENSE
+pyproject.toml
+src/hid_ups_exporter/__init__.py
+src/hid_ups_exporter/hid_ups_exporter.py
+src/hid_ups_exporter/main.py
+src/hid_ups_exporter/ups_metric.py
+src/hid_ups_exporter.egg-info/PKG-INFO
+src/hid_ups_exporter.egg-info/SOURCES.txt
+src/hid_ups_exporter.egg-info/dependency_links.txt
+src/hid_ups_exporter.egg-info/entry_points.txt
+src/hid_ups_exporter.egg-info/requires.txt
+src/hid_ups_exporter.egg-info/top_level.txt
