@@ -1,0 +1,15 @@
+uh_halp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+uh_halp/__main__.py,sha256=1Z90rUnE73rT8RFQZaMlbUkLthLZkecqXyPA7rFeIs8,61
+uh_halp/config.py,sha256=U-0k2TC0zVY5KJrUdMtTNnfRHQeehCIHC90gwBQTY_g,968
+uh_halp/default_config.json,sha256=6hzLX4-0JDismbFdmxjrOhHa5s8K3uVP6uJ-N8HlHbk,853
+uh_halp/keys.py,sha256=MjAVwzUVI3jIwU4NKQdzbKVR2hyKeYs3c6Ggz3rCdeA,1406
+uh_halp/main.py,sha256=BELPzHKnhRE9QcM_pnlewBdWiqYPCclEfcysT914J-E,1623
+uh_halp/vars.py,sha256=xWynepGiCa23lmfxLHzGCdOzi06-bvxhrR07vco5Wm4,1945
+uh_halp/backend/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+uh_halp/backend/openai.py,sha256=z1nRAItnRCIL0h5i_tn-sasNv3qLdDL54jXqA8gE_Go,699
+uh_halp/backend/util.py,sha256=9VDOIJrkiI6LVbTPWYQfAIpBUTLgfBfeWRsd7iiiV8s,460
+uh_halp/backend/web_api.py,sha256=W8NM__LYynKvdk66_Pr_1aSByHnTPOQgzMfRHkWHaK4,348
+uh_halp-0.1.2.dist-info/entry_points.txt,sha256=Iy--hLoLoGZvoGQm0DuhUUTOpbT0zY5yy__UaqWPzng,40
+uh_halp-0.1.2.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+uh_halp-0.1.2.dist-info/METADATA,sha256=yDV2H5HFn4DGi-7vZAcdxnDSMJo6XrhH-60bz3C5cGw,2680
+uh_halp-0.1.2.dist-info/RECORD,,
