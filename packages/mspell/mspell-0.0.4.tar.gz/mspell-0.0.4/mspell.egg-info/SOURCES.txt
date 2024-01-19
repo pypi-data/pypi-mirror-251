@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+mspell/__init__.py
+mspell/group_speller.py
+mspell/spell_base.py
+mspell/speller.py
+mspell/spelling_funcs.py
+mspell/transpose.py
+mspell/unspeller.py
+mspell/utils.py
+mspell.egg-info/PKG-INFO
+mspell.egg-info/SOURCES.txt
+mspell.egg-info/dependency_links.txt
+mspell.egg-info/requires.txt
+mspell.egg-info/top_level.txt
