@@ -1,0 +1,14 @@
+setup.py
+decipyx/__init__.py
+decipyx/data_handling.py
+decipyx/estilos.py
+decipyx/gui_automation.py
+decipyx/os_automation.py
+decipyx/testelib.py
+decipyx/testing.py
+decipyx/web_automation.py
+decipyx/web_automation_roberto.py
+decipyx.egg-info/PKG-INFO
+decipyx.egg-info/SOURCES.txt
+decipyx.egg-info/dependency_links.txt
+decipyx.egg-info/top_level.txt
