@@ -1,0 +1,6 @@
+[console_scripts]
+
+
+[nbdev]
+eli_utils = eli_utils._modidx:d
+
