@@ -1,0 +1,6 @@
+README.md
+setup.py
+shopee_doc2query.egg-info/PKG-INFO
+shopee_doc2query.egg-info/SOURCES.txt
+shopee_doc2query.egg-info/dependency_links.txt
+shopee_doc2query.egg-info/top_level.txt
