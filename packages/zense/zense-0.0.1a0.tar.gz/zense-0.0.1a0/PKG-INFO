@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: zense
+Version: 0.0.1a0
+Summary: Efficient Data Storage and Seamless Manipulation
+Project-URL: Homepage, https://github.com/ysenarath/zense
+Project-URL: Issues, https://github.com/ysenarath/zense/issues
+Author: Yasas Senarath
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: octoflow>=0.0.10
+Description-Content-Type: text/markdown
+
+# zense
+Efficient Data Storage and Seamless Manipulation
