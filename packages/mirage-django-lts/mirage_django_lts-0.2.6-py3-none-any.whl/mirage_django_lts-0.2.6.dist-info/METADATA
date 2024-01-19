@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: mirage-django-lts
+Version: 0.2.6
+Summary: Advanced Django Console
+Home-page: https://github.com/shotastage/mirage-django-lts/
+Author: Shota Shimazu
+Author-email: hornet.live.mf@gmail.com
+License: Apache
+Platform: POSIX
+Platform: Windows
+Platform: Mac OS X
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+License-File: LICENSE
+
+Advanced extended command line tool for Django.

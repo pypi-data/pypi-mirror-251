@@ -1,0 +1,5 @@
+[console_scripts]
+dj = mirage.mirage:main
+mg = mirage.mirage:main
+mgl = mirage.mirage:main
+mirage = mirage.mirage:main
