@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+bin/http-test-runner.py
+http_test/__init__.py
+http_test/request.py
+http_test/runner.py
+http_test/spec.py
+http_test/ws_request.py
+py_http_auto_test.egg-info/PKG-INFO
+py_http_auto_test.egg-info/SOURCES.txt
+py_http_auto_test.egg-info/dependency_links.txt
+py_http_auto_test.egg-info/requires.txt
+py_http_auto_test.egg-info/top_level.txt
+test/test_request.py
+test/test_spec.py
