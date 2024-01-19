@@ -1,0 +1,17 @@
+frequenz/api/electricity_trading/__init__.py,sha256=VXlHsGMTvSKlmnd2mfyGKabz0RN6XcUODhFmaLl3F-w,119
+frequenz/api/electricity_trading/conftest.py,sha256=NB21GYKVnjam9lHyFyBEYxR8qYjDkvV70f4kuYLzAUY,409
+frequenz/api/electricity_trading/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+frequenz/api/electricity_trading/v1/__init__.py,sha256=VXlHsGMTvSKlmnd2mfyGKabz0RN6XcUODhFmaLl3F-w,119
+frequenz/api/electricity_trading/v1/electricity_trading_pb2.py,sha256=w-99lbEkvpnzVUd2aHQ3OYfjV4ij-o3hS0_0cqxdZ1s,19091
+frequenz/api/electricity_trading/v1/electricity_trading_pb2.pyi,sha256=k2qNHUeU-G6xScGQ-cA7Ny-JlB_AgYYMCT6gF92vs6o,63798
+frequenz/api/electricity_trading/v1/electricity_trading_pb2_grpc.py,sha256=eM8NDNEJ-2PT8sRMz5M4IE2vLTup1zWw4IDkswYphiY,20704
+frequenz/api/electricity_trading/v1/electricity_trading_pb2_grpc.pyi,sha256=Q9t0BXjIBIVk0wWRQMUT4f83FoQqWIpdbFusZrDtDgA,11432
+frequenz/api/electricity_trading/v1/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+frequenz/client/electricity_trading/__init__.py,sha256=KHpP6fkJDM_uANC7lry9XVRNGQYQYLqIPzh6AGpcn1o,756
+frequenz/client/electricity_trading/_client.py,sha256=W8u1PndjwbmPBdXiaKZXl-DEcTO6sHwEsljbwyS6B6Q,17662
+frequenz/client/electricity_trading/_types.py,sha256=UzM5JaixTigmb5xDa7k-tm0tmJ4eHm9StTnlGEUh1p0,42995
+frequenz_api_electricity_trading-0.1.0.dist-info/LICENSE,sha256=C3svrUte2N2h2JaK1qfbYQNp5MTaqdaJkFLe-kgUxbU,1089
+frequenz_api_electricity_trading-0.1.0.dist-info/METADATA,sha256=jTIeXKLas6TNVG9Sc_usY024LGY7laz-8JK8YJ9_yRw,5811
+frequenz_api_electricity_trading-0.1.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+frequenz_api_electricity_trading-0.1.0.dist-info/top_level.txt,sha256=x08GRcWytsyKXa2Ayme9e5pg3L5Kcq6lw_BaQmToMO4,9
+frequenz_api_electricity_trading-0.1.0.dist-info/RECORD,,
