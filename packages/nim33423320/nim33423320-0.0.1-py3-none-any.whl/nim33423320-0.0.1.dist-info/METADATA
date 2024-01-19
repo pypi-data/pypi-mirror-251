@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: nim33423320
+Version: 0.0.1
+Summary: Golden Ratio
+Home-page: https://github.com/rizalfarhan
+Author: rizalfarhann
+Author-email: rizalfarhannanda@gmail.com
+License: MIT
+Keywords: Hello
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Description-Content-Type: text/markdown
+
+from Librarygold.goldratio import GoldenRatio
+
+golden_ratio_calculator = GoldenRatio()
+
+x = 10
+hasil = golden_ratio_calculator.hitung(x)
+print(f"Rasio Emas dari {x} adalah {hasil}")
+
+
