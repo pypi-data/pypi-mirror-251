@@ -1,0 +1,9 @@
+README.md
+setup.py
+understat_package/__init__.py
+understat_package/function_package.py
+understat_package.egg-info/PKG-INFO
+understat_package.egg-info/SOURCES.txt
+understat_package.egg-info/dependency_links.txt
+understat_package.egg-info/requires.txt
+understat_package.egg-info/top_level.txt
