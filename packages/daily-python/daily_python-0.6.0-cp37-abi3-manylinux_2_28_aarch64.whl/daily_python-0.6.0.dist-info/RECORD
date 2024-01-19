@@ -1,0 +1,7 @@
+daily_python-0.6.0.dist-info/METADATA,sha256=rkx0DOY4Q24gTeCZ4kl3OvQJ5O9p65qJ1OPlBf5ZMcc,2776
+daily_python-0.6.0.dist-info/WHEEL,sha256=QD8GB_6BD5UhnEL5g9AEG8f1WBzDkS37fpN1OQLFzCc,107
+daily/__init__.py,sha256=2gAiwIDmvGbteVaIL5WZ5NmS2IOhmRH4M51-oDk4wnQ,103
+daily/__init__.pyi,sha256=Z3I6z0PmQ4u5mWI9gHKA9KDFMahnzfRGWQpGLBz1dwQ,10804
+daily/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+daily/daily.abi3.so,sha256=rxtMH1bP4mI4GR8GSbOAFi7BvycIX-BrkVlJYWfwnyo,71056624
+daily_python-0.6.0.dist-info/RECORD,,
