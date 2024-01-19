@@ -1,0 +1,89 @@
+# Changelog
+
+## v0.6.0 (2024-01-18)
+
+#### Refactorings
+
+* add additional parameters to `get_page()`
+
+
+## v0.5.1 (2024-01-14)
+
+#### Fixes
+
+* remove redundant dependency from pyproject
+
+
+## v0.5.0 (2024-01-14)
+
+#### New Features
+
+* add options to specify log directories
+#### Docs
+
+* add class and `__init__` docstrings
+#### Others
+
+* remove pytest and specify less than 3.12 py version
+
+
+## v0.4.1 (2024-01-09)
+
+#### Fixes
+
+* prevent crashing caused by too many files open
+
+
+## v0.4.0 (2023-10-29)
+
+#### Refactorings
+
+* change how modules are unloaded
+
+## v0.3.1 (2023-10-26)
+
+#### Fixes
+
+* fix not passing log_dir to getLogger
+
+## v0.3.0 (2023-10-26)
+
+#### Refactorings
+
+* replace logging with loggi
+
+## v0.2.0 (2023-10-25)
+
+#### Fixes
+
+* fix Gruel.name not returning the given name if there was one
+#### Performance improvements
+
+* improve logging
+#### Refactorings
+
+* make logprint a member function
+* replace printbuddies.PoolBar with quickpool.ThreadPool
+
+
+## v0.1.0 (2023-10-23)
+
+#### Performance improvements
+
+* add additional logging
+
+## v0.0.2 (2023-10-19)
+
+#### Fixes
+
+* fix progbar display when using default option in scrape()
+
+
+## v0.0.1 (2023-10-19)
+
+#### Fixes
+
+* fix partially initialized import error
+
+
+
