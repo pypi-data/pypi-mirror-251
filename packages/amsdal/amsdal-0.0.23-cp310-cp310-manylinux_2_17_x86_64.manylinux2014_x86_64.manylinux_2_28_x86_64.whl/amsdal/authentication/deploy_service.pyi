@@ -1,0 +1,26 @@
+from amsdal.authentication.handlers.base import BASE_AUTH_URL as BASE_AUTH_URL, ENCRYPT_PUBLIC_KEY as ENCRYPT_PUBLIC_KEY
+from amsdal.configs.main import settings as settings
+from amsdal.errors import AmsdalDeployError as AmsdalDeployError
+from pydantic import BaseModel
+
+def _input(msg: str) -> str: ...
+def _print(msg: str) -> None: ...
+def want_deploy_input() -> str: ...
+
+DEPLOY_API_TIMEOUT: int
+
+class DeployModel(BaseModel):
+    deploy_id: str
+    status: str
+
+class DeployService:
+    @classmethod
+    def _credentials_data(cls) -> bytes: ...
+    @classmethod
+    def deploy_prompt(cls) -> bool: ...
+    @classmethod
+    def list_deploys(cls) -> list[DeployModel]: ...
+    @classmethod
+    def update_deploy(cls, deploy_id: str) -> DeployModel: ...
+    @classmethod
+    def destroy_deploy(cls, deploy_id: str) -> bool: ...
