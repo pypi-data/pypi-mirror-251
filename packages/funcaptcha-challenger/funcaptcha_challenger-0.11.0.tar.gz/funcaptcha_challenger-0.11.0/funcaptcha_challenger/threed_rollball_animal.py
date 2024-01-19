@@ -1,0 +1,5 @@
+from funcaptcha_challenger.threed_rollball_objects import ThreeDRollballObjectsPredictor
+
+
+class ThreeDRollballAnimalPredictor(ThreeDRollballObjectsPredictor):
+    pass

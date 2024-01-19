@@ -1,0 +1,18 @@
+from funcaptcha_challenger.coordinatesmatch import CoordinatesMatchPredictor
+from funcaptcha_challenger.hopscotch_highsec import HopscotchHighsecPredictor
+from funcaptcha_challenger.numericalmatch import NumericalmatchPredictor
+from funcaptcha_challenger.penguin import PenguinPredictor
+from funcaptcha_challenger.shadows import ShadowsPredictor
+from funcaptcha_challenger.threed_rollball_animal import ThreeDRollballAnimalPredictor
+from funcaptcha_challenger.threed_rollball_objects import ThreeDRollballObjectsPredictor
+from funcaptcha_challenger.train_coordinates import TrainCoordinatesPredictor
+
+predict_3d_rollball_animals = ThreeDRollballAnimalPredictor().predict
+predict_numericalmatch = NumericalmatchPredictor().predict
+predict_hopscotch_highsec = HopscotchHighsecPredictor().predict
+predict_3d_rollball_objects = ThreeDRollballObjectsPredictor().predict
+predict_coordinatesmatch = CoordinatesMatchPredictor().predict
+predict_train_coordinates = TrainCoordinatesPredictor().predict
+
+predict_penguin = PenguinPredictor().predict
+predict_shadows = ShadowsPredictor().predict
