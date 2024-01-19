@@ -1,0 +1,15 @@
+setup.cfg
+setup.py
+odoo/addons/sm_partago_accounting/__init__.py
+odoo/addons/sm_partago_accounting/__manifest__.py
+odoo/addons/sm_partago_accounting/models/__init__.py
+odoo/addons/sm_partago_accounting/models/account_asset.py
+odoo/addons/sm_partago_accounting/models/models_sm_member.py
+odoo/addons/sm_partago_accounting/views/views_account_asset.xml
+odoo/addons/sm_partago_accounting/views/views_members.xml
+odoo12_addon_sm_partago_accounting.egg-info/PKG-INFO
+odoo12_addon_sm_partago_accounting.egg-info/SOURCES.txt
+odoo12_addon_sm_partago_accounting.egg-info/dependency_links.txt
+odoo12_addon_sm_partago_accounting.egg-info/not-zip-safe
+odoo12_addon_sm_partago_accounting.egg-info/requires.txt
+odoo12_addon_sm_partago_accounting.egg-info/top_level.txt
