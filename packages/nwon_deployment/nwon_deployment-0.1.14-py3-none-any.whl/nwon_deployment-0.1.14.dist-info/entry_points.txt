@@ -1,0 +1,4 @@
+[console_scripts]
+create_type_stubs=scripts.create_type_stubs:create_type_stubs
+publish=scripts.publish:publish
+
