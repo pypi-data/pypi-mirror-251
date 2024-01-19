@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+Kahi_ranking_udea_works.egg-info/PKG-INFO
+Kahi_ranking_udea_works.egg-info/SOURCES.txt
+Kahi_ranking_udea_works.egg-info/dependency_links.txt
+Kahi_ranking_udea_works.egg-info/requires.txt
+Kahi_ranking_udea_works.egg-info/top_level.txt
+kahi_ranking_udea_works/Kahi_ranking_udea_works.py
+kahi_ranking_udea_works/__init__.py
+kahi_ranking_udea_works/_version.py
