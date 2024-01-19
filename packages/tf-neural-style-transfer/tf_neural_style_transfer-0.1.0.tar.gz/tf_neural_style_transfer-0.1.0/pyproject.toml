@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "tf-neural-style-transfer"
+version = "0.1.0"
+description = "A package to perform TF Neural Style Transfer in Google Colab"
+authors = ["Qwerty-133 <74311372+Qwerty-133@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "tf_neural_style_transfer"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
