@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: pdpy11
+Version: 2.0.4
+Summary: Cross-platform assembler for PDP-11
+Home-page: https://github.com/pdpy11/pdpy11
+Author: Ivanq
+Author-email: imachug@gmail.com
+Project-URL: Bug Tracker, https://github.com/pdpy11/pdpy11/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Assembly
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Assemblers
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# PDPy11
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/pdpy11/pdpy11/master/logo.png" alt="Logo" title="Logo" height="128" />
+</p>
+
+PDPy11 is a cross-platform assembler for PDP-11 computers.
+
+
+## Requirements
+
+- Python 3.6 or later
+- No Python modules required
+- Any platform (Windows, Mac OS, Linux)
+
+
+## Installation
+
+Use pip.
+
+```shell
+$ pip3 install pdpy11
+```
+
+(some modern systems use `pip` instead of `pip3` for Python 3 packages)
+
+On Windows, installing via pip works too, but pay attention to any warnings. If pip says anything along the lines of `The script pdpy11.exe is installed in '...' which is not on PATH`, add the path pip mentions to the PATH variable. On newer Windows, this can be done by searching for 'Edit the system environment variables' in the Start menu and clicking through 'Environment Variables...', then 'User variables for ...' or 'System variables' depending on whether you want to install the compiler for a single user or globally, followed by 'Path', and adding the path to the end of the list.
+
+If you're using Sublime Text, you might also want to install various utilities for syntax highlighting and building [here](https://github.com/pdpy11/sublime-plugin).
+
+
+## Licensing
+
+PDPy11 is licensed under GNU General Public License version 3 (which is attached to PDPy11 in 'LICENSE' file), or (at your option) any later version.
+
+
+## Development
+
+Install the following packages from pip: `coverage pytest mutmut pyfakefs pylint`. You can now run tests using `make test`, run tests with coverage using `make cov`, run mutation tests using `make mut` and run linter using `make lint`. You can add `PYTHON=...` option to set path to or name of Python interpreter.
