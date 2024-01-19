@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: mlcube
+Version: 0.0.10rc1
+License: Apache 2.0
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: click<9.0.0,>=8.0.0
+Requires-Dist: coloredlogs==14.0
+Requires-Dist: cookiecutter==2.1.1
+Requires-Dist: omegaconf==2.1.0
+Requires-Dist: markdown
+
+MLCube brings the concept of interchangeable parts to the world of machine learning models. It is the shipping container that enables researchers and developers to easily share the software that powers machine learning.
