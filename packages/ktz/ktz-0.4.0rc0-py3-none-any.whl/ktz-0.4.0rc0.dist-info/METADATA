@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: ktz
+Version: 0.4.0rc0
+Summary: KTZ Python Tools
+Home-page: https://github.com/kantholtz/ktz
+Author: Felix Hamann
+Author-email: felix@hamann.xyz
+Project-URL: Bug Tracker, https://github.com/kantholtz/ktz/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: gitpython ~=3.0
+Requires-Dist: pyyaml ~=6.0
+Provides-Extra: dev
+Requires-Dist: build ; extra == 'dev'
+Requires-Dist: ipdb ; extra == 'dev'
+Requires-Dist: ipython ; extra == 'dev'
+Requires-Dist: sphinx ; extra == 'dev'
+Requires-Dist: sphinx-toolbox ; extra == 'dev'
+Requires-Dist: numpydoc ; extra == 'dev'
+Requires-Dist: pydata-sphinx-theme ; extra == 'dev'
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-watch ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: tqdm ; extra == 'dev'
+Requires-Dist: jupyter ; extra == 'dev'
+Requires-Dist: pyls-isort ; extra == 'dev'
+Requires-Dist: python-lsp-black ; extra == 'dev'
+Requires-Dist: python-lsp-server[flake8] ; extra == 'dev'
+
+# KTZ - Python Tools
+
+[![Documentation](https://img.shields.io/badge/Documentation-Latest-success?style=for-the-badge)](https://kantholtz.github.io/ktz/)
+[![KTZ on PyPI](https://img.shields.io/pypi/v/ktz?style=for-the-badge)](https://pypi.org/project/ktz)
+[![Code Style: black](https://img.shields.io/badge/code%20style-black-000000.svg?style=for-the-badge)](https://github.com/psf/black)
+
+
+Kantholtz' personal Python toolbox. Check out the [documentation here](https://kantholtz.github.io/ktz/).
+
+
+## Installation
+
+Python 3.9 is required.
+
+``` console
+$ conda create -n ktz python=3.9
+$ conda activate ktz
+$ pip install ktz
+```
+
+For a local installation with all dev dependencies:
+
+``` console
+$ git clone https://github.com/kantholtz/ktz.git
+$ cd ktz
+$ conda create -n ktz python=3.9
+$ conda activate ktz
+$ pip install .[dev]
+
+# run tests
+$ pytest
+
+# to continually run tests
+$ ptw -c
+
+# to check code coverage
+$ coverage run -m pytest
+$ coverage report
+$ coverage html
+```
