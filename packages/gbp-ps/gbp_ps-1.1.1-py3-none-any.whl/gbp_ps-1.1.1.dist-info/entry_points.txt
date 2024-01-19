@@ -1,0 +1,7 @@
+[gbpcli.subcommands]
+add-process = gbp_ps.cli.add_process
+ps = gbp_ps.cli.ps
+
+[gentoo_build_publisher.graphql_schema]
+gbp_ps = gbp_ps.graphql
+
