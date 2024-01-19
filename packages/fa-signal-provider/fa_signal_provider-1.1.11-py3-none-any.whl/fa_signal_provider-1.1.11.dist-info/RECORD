@@ -1,0 +1,9 @@
+fasignalprovider/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fasignalprovider/direction.py,sha256=S-d6kFgoi6A3J8kTgkJgOdOCKFKwQ2eDTAel0T_Ke1c,89
+fasignalprovider/side.py,sha256=NlKI--TWWUY6kkddbPRCRPgrKM_VOdQm-bP7NSp4cMU,80
+fasignalprovider/trading_signal.py,sha256=JglUi39DDe5MsHHR-97qkGlmLwwVxatEB6rOtmZtUT8,4728
+fa_signal_provider-1.1.11.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+fa_signal_provider-1.1.11.dist-info/METADATA,sha256=YOJE1BoEMYy7I4tw5c9ZE1cS5a4dEhvprV8e9-vPY2I,3983
+fa_signal_provider-1.1.11.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+fa_signal_provider-1.1.11.dist-info/top_level.txt,sha256=zClzhJ748QEFJEGOrFqnzkhBBjXakjAwwPycnHL1YEM,17
+fa_signal_provider-1.1.11.dist-info/RECORD,,
