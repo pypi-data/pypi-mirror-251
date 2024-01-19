@@ -1,0 +1,92 @@
+Metadata-Version: 2.1
+Name: pgtestdbpy
+Version: 0.0.1
+Summary: pgtestdb Python clone
+Author-email: Oliver Russell <ojhrussell@gmail.com>
+Maintainer-email: Oliver Russell <ojhrussell@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2024 Oliver Russell
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: homepage, https://github.com/leontrolski/pgtestdbpy
+Project-URL: documentation, https://github.com/leontrolski/pgtestdbpy
+Project-URL: repository, https://github.com/leontrolski/pgtestdbpy.git
+Keywords: postgres,testing
+Classifier: Programming Language :: Python
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: psycopg>=3.1.0
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0.0; extra == "dev"
+Requires-Dist: mypy>=1.6.0; extra == "dev"
+
+# pgtestdbpy
+
+_Python clone of [pgtestdb](https://github.com/peterldowns/pgtestdb)._
+
+```bash
+pip install pgtestdbpy
+```
+
+In summary, it's a couple of helper functions that allow you to quickly clone Postgres databases that you've applied migrations to. In a small number of milliseconds, each test (including tests running in parallel) gets a fresh db with empty tables, all the sequences reset, etc.
+
+In developing this on my mac, for reasons I don't quite understand, running with Postgres in docker (via [colima](https://github.com/abiosoft/colima)) was substantially quicker that running Postgres natively. So I agree with Peter's advice, just copy [this file](docker-compose.yml) and `docker compose up -d db`.
+
+There are two context managers that can be used in conjunction or independently depending on test setup:
+
+- `pgtestdbpy.templates(config, migrators)`:
+    - Creates a new user and database for a migrator.
+    - Runs the set of migrations.
+    - Marks the database as a `TEMPLATE DATABASE` so that it can be cheaply cloned.
+    - Yields.
+    - Drops the template database and the user.
+- `pgtestdbpy.clone(config, migrator)`:
+    - Does a `CREATE DATABASE WITH TEMPLATE` (from a template database made above) giving it a unique random name.
+    - Yields a Postgres url for it.
+    - Drops the database.
+
+Example `conftest.py` usage below, in theory (I haven't tested this) it should be easy to run tests in parallel using the `conn` fixture - each with a separate database instance - and [pytest-xdist](https://github.com/pytest-dev/pytest-xdist) or equivalent. In this example we just
+
+```python
+from typing import Iterator
+import pgtestdbpy
+import psycopg
+import pytest
+
+def migrate(url: str) -> None:
+    with psycopg.connect(url) as conn:
+        conn.execute("CREATE TABLE foo (a INT)")
+
+migrator = pgtestdbpy.Migrator(migrate)
+config = pgtestdbpy.Config()
+
+@pytest.fixture(scope="session")
+def db() -> Iterator[None]:
+    with pgtestdbpy.templates(config, migrator):
+        yield
+
+@pytest.fixture()
+def conn(db) -> Iterator[pgtestdbpy.PsycoConn]:
+    with pgtestdbpy.clone(config, migrator) as url:
+        with psycopg.connect(url) as _conn:
+            yield _conn
+```
