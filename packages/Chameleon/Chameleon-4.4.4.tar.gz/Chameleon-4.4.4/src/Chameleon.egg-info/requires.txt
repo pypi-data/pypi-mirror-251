@@ -1,0 +1,10 @@
+
+[:python_version < "3.10"]
+importlib-metadata
+
+[:python_version < "3.9"]
+importlib-resources
+
+[docs]
+Sphinx
+sphinx_rtd_theme
