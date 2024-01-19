@@ -1,0 +1,9 @@
+<div class="lead"
+     tal:define="
+       description context/richdescription;
+     "
+     tal:condition="description"
+     tal:content="structure description/output"
+>
+  Description
+</div>

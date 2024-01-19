@@ -1,0 +1,16 @@
+collective.richdescription-3.0.2-py3.11-nspkg.pth,sha256=i6xUrA2XwWgxJ31EmKS8F0wCvv6o3Db_2POBVx1bZDM,559
+collective/richdescription/__init__.py,sha256=e-GqSsjU6CnRl6vd6OWPl-I3CxCEeeW0lxWQd4WurI8,76
+collective/richdescription/behaviors.py,sha256=eoBPcsX2f2P_Y-zEx3yaX8jQ1ht-RwRlmR1X0uJMDAA,4298
+collective/richdescription/configure.zcml,sha256=WujzNBKkk_lSQLFOAlgFAob-T_6-Xxcv-RGztNvjzUc,2532
+collective/richdescription/description.pt,sha256=40JEzeSV2-9iqeARzgCSlQmIsvT5ub168cDtxEfNSTA,191
+collective/richdescription/indexer.py,sha256=C64WxpYaE1cIIXtMOsJbs8bINOKlLeocJAKSCpFmNtU,591
+collective/richdescription/utils.py,sha256=M9feV7K0IK4i08a4qz2Nm1WJE7rh3s9L4kErqalkxxg,632
+collective/richdescription/profiles/default/catalog.xml,sha256=4ofZ2Oi5nrXBj8CBcyoi0Ur9sa6Zi_MPtpZ1mx9DD8g,157
+collective/richdescription/profiles/default/metadata.xml,sha256=gg5NQlCgybf9RwZIdoKEHvp0ifIO8JGlGTUPLc0GCDQ,85
+collective.richdescription-3.0.2.dist-info/LICENCE.rst,sha256=8nyMrx5gdXt3S6q5kqndcQZNkaEDWIEUTalZTy16OTI,12744
+collective.richdescription-3.0.2.dist-info/METADATA,sha256=R1Agu8mT0_hS6AL0O39YxBBq968XHzHoHb4Kg5H3s8E,5951
+collective.richdescription-3.0.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+collective.richdescription-3.0.2.dist-info/entry_points.txt,sha256=b5cHz9FINNyhunUZ6BJOQMhgeAi2x9UcnAkA9l8KEC4,40
+collective.richdescription-3.0.2.dist-info/namespace_packages.txt,sha256=FyC0xnd95fkjCaKazR3nfIgNqhWMpB0mYBlzALyXKTg,11
+collective.richdescription-3.0.2.dist-info/top_level.txt,sha256=FyC0xnd95fkjCaKazR3nfIgNqhWMpB0mYBlzALyXKTg,11
+collective.richdescription-3.0.2.dist-info/RECORD,,
