@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+pyrabbitmq/__init__.py
+pyrabbitmq/connection.py
+pyrabbitmq.egg-info/PKG-INFO
+pyrabbitmq.egg-info/SOURCES.txt
+pyrabbitmq.egg-info/dependency_links.txt
+pyrabbitmq.egg-info/requires.txt
+pyrabbitmq.egg-info/top_level.txt
