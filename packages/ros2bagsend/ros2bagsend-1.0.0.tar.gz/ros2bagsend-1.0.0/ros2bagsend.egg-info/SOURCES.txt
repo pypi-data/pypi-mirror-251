@@ -1,0 +1,15 @@
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+.github/workflows/python-publish.yml
+.vscode/launch.json
+ros2bagsend/__init__.py
+ros2bagsend/_version.py
+ros2bagsend/main.py
+ros2bagsend.egg-info/PKG-INFO
+ros2bagsend.egg-info/SOURCES.txt
+ros2bagsend.egg-info/dependency_links.txt
+ros2bagsend.egg-info/entry_points.txt
+ros2bagsend.egg-info/requires.txt
+ros2bagsend.egg-info/top_level.txt
