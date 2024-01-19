@@ -1,0 +1,4 @@
+[console_scripts]
+mh=multiauth.cli.cli:cli
+multiauth=multiauth:cli
+
