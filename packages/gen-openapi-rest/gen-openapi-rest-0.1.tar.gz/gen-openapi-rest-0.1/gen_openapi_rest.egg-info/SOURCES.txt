@@ -1,0 +1,8 @@
+setup.py
+gen-openapi-rest/__init__.py
+gen-openapi-rest/gen-openapi-rest.py
+gen_openapi_rest.egg-info/PKG-INFO
+gen_openapi_rest.egg-info/SOURCES.txt
+gen_openapi_rest.egg-info/dependency_links.txt
+gen_openapi_rest.egg-info/requires.txt
+gen_openapi_rest.egg-info/top_level.txt
