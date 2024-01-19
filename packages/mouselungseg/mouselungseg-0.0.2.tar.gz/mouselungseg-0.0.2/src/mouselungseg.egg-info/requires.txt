@@ -1,0 +1,16 @@
+pooch==1.8.0
+magicgui
+qtpy
+napari[all]>=0.4.16
+tifffile
+scikit-image
+onnx
+onnxruntime
+
+[testing]
+tox
+pytest
+pytest-cov
+pytest-qt
+napari
+pyqt5
