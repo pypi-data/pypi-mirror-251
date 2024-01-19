@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: riogui
+Version: 0.0.4
+Summary: riogui
+Home-page: https://github.com/multigcs/LinuxCNC-RIO/
+Author: Oliver Dippel
+Author-email: o.dippel@gmx.de
+License: LICENSE
+License-File: LICENSE
+
+LinuxCNC-RIO - rewrite
+
+in progress ....
+
+please use https://github.com/multigcs/LinuxCNC-RIO
