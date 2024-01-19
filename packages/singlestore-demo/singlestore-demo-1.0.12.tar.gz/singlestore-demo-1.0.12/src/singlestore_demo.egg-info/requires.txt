@@ -1,0 +1,8 @@
+mimesis>=4.1.3
+numpy>=1.24.1
+singlestoredb>=0.5.3
+
+[dev]
+nimesis
+numpy
+singlestoredb

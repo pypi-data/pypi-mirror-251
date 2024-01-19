@@ -1,0 +1,39 @@
+[build-system]
+requires = [
+  "setuptools >= 42",
+  "mimesis >= 4.1.3",
+  "numpy>=1.24.1",
+  "singlestoredb >= 0.5.3",
+]
+build-backend = 'setuptools.build_meta'
+
+[project]
+name = "singlestore-demo"
+version = "1.0.12"
+description = "Generates a demo datasource for SingleStore"
+readme = "README.md"
+authors = [{ name = "Ricardo Santos", email = "rsantos@singlestore.com" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "mimesis >= 4.1.3",
+    "numpy >= 1.24.1",
+    "singlestoredb >= 0.5.3",
+]
+requires-python = ">=3.9"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.optional-dependencies]
+dev = ["nimesis", "numpy", "singlestoredb"]
+
+[project.urls]
+Homepage = "https://github.com/realpython/reader"
+
+[project.scripts]
+s2generate = "singlestore_demo.generate:main"
