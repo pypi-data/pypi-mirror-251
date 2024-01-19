@@ -1,0 +1,10 @@
+archadeptcli/__init__.py,sha256=UbSu7LPyKZgQjdDPS69Hsi0yRShCeOeX_03fu25CAbA,1171
+archadeptcli/__main__.py,sha256=aFEcLfXgtpg0dA5FWi0BMNopFgUUF69uypkons-i-Y4,17463
+archadeptcli/console.py,sha256=efAR9y-thhDxUmONEarcCJoJ3FLv3FmfHEeS4Jey7kY,2918
+archadeptcli/docker.py,sha256=WUgo4R9hekfPdlXH7clU3w0F6u555owPbsJdxf6QTdU,12067
+archadeptcli/exceptions.py,sha256=gAIH-RXLFJMRyY1ceuAHIGnWZbVWG6blZTG3Qs4SbYs,3599
+archadeptcli-1.1.2.dist-info/LICENSE,sha256=fm1N4NYi5QzL-MOhpflwosVr2fC46byHuHAOZFGCDGI,1093
+archadeptcli-1.1.2.dist-info/METADATA,sha256=m5Pfts7glJl_2cpXQC_J56uX4C1dngGOLTc0gj7hbO0,7992
+archadeptcli-1.1.2.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+archadeptcli-1.1.2.dist-info/entry_points.txt,sha256=Qyu1PhJQyjSYRsVhZ9jwhizQpIIRkdigZVD11OAVpX0,56
+archadeptcli-1.1.2.dist-info/RECORD,,
