@@ -1,0 +1,7 @@
+numpy
+
+[all]
+thea-process-data[extra]
+
+[extra]
+pandas
