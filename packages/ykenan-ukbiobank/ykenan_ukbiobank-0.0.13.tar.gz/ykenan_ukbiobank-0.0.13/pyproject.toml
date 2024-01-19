@@ -1,0 +1,36 @@
+[build-system]
+requires = [
+    "setuptools>=42",
+    "numpy==1.24.4",
+    "pandas==2.0.3",
+    "ykenan-util==0.0.5",
+    "ykenan-file==0.2.3"
+]
+build-backend = "setuptools.build_meta"
+[project]
+name = "ykenan_ukbiobank"
+version = "0.0.13"
+authors = [
+    { name = "Yu Zhengmin", email = "3236170161@qq.com" },
+]
+keywords = [
+    "YKenan",
+    "UK Biobank"
+]
+description = "UK Biobank download"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "setuptools>=42",
+    "numpy==1.24.4",
+    "pandas==2.0.3",
+    "ykenan-util==0.0.5",
+    "ykenan-file==0.2.3"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+[project.urls]
+gitee = "https://gitee.com/ykenan_yingying/ukbiobank"
