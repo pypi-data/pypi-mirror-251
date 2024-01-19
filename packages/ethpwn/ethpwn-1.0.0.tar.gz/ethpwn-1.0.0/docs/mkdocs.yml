@@ -1,0 +1,62 @@
+site_name: ethpwn - the Swiss Army Knife for Smart Contracts Hacking
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.tabs
+markdown_extensions:
+  - tables
+  - mkdocs-click
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+nav:
+  - 🏠 Home: index.md
+  - ⚔️ ethpwn:
+    - About: ethpwn/about.md
+    - Getting Started: ethpwn/getting_started.md
+    - Global State: ethpwn/global_state.md
+    - EVMAnalyzers: ethpwn/evmanalyzers.md
+    - Command Line Tools: ethpwn/cli.md
+    - Modules:
+      - ethpwn.ethlib.global_context: ethpwn/modules/global_context.md
+      - ethpwn.ethlib.contract_registry: ethpwn/modules/contract_registry.md
+      - ethpwn.ethlib.contract_metadata: ethpwn/modules/contract_metadata.md
+      - ethpwn.ethlib.transactions: ethpwn/modules/transactions.md
+      - ethpwn.ethlib.hashes: ethpwn/modules/hashes.md
+      - ethpwn.ethlib.assembly_utils: ethpwn/modules/assembly_utils.md
+      - ethpwn.ethlib.currency_utils: ethpwn/modules/currency_utils.md
+      - ethpwn.ethlib.serialization_utils: ethpwn/modules/serialization_utils.md
+      - ethpwn.ethlib.utils: ethpwn/modules/utils.md
+      - ethpwn.ethlib.evm_analyzer: ethpwn/modules/evm_analyzer.md
+  - 🐛 ethdbg:
+    - Usage: ethdbg/usage.md
+    - Commands:
+      - start: ethdbg/commands/start.md
+      - continue: ethdbg/commands/continue.md
+      - context: ethdbg/commands/context.md
+      - calldata: ethdbg/commands/calldata.md
+      - disass: ethdbg/commands/disass.md
+      - break: ethdbg/commands/break.md
+      - tbreak: ethdbg/commands/tbreak.md
+      - step: ethdbg/commands/step.md
+      - next: ethdbg/commands/next.md
+      - finish: ethdbg/commands/finish.md
+      - log_op: ethdbg/commands/log_op.md
+      - memory: ethdbg/commands/memory.md
+      - sloads: ethdbg/commands/sloads.md
+      - sstores: ethdbg/commands/sstores.md
+      - storageat: ethdbg/commands/storageat.md
+      - storagelayout: ethdbg/commands/storagelayout.md
+      - callhistory: ethdbg/commands/callhistory.md
+      - ethtowei: ethdbg/commands/ethtowei.md
+      - weitoeth: ethdbg/commands/weitoeth.md
+    - Showroom: ethdbg/showroom.md
+  #- ⚙️ hacking ethdbg: hacking.md
+  - ⛓️ chains support: chains.md
+  - ？ FAQ: faq.md
+
