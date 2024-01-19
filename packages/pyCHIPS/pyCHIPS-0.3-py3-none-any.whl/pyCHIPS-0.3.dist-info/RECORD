@@ -1,0 +1,10 @@
+chips/__init__.py,sha256=-JIt3g1eBf4bVQNNQd4JBeQNA7o0LK0W9tYKKX_r5s8,22
+chips/chips.py,sha256=PTgxuHrnZSih1BhZD6DVoHjKvlRorcKYs2BisS_SbGQ,16023
+chips/fetch.py,sha256=jSfFXJ2eUnOMkBrZTgNyFPdHnsA3NjcNGOneEXuB-jQ,12683
+chips/plots.py,sha256=nQPZReFoD2j_Z62_QBFUi_Yg5OkHc29H-lrwSGmjb0o,26416
+chips/syn_chips.py,sha256=6Jpct7CBcR5N3cBChm6duB7rDHMLSPUc2NKKwCkATdw,11949
+pyCHIPS-0.3.dist-info/LICENSE,sha256=Yy9DXcPrY8x_r1c2gD_W5pKuOZEyXjKQPClAi-vOdJo,1065
+pyCHIPS-0.3.dist-info/METADATA,sha256=0N9voIer3aZzwx1BR0WFGZHv_9sboMNQbvldg0IUudE,1025
+pyCHIPS-0.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pyCHIPS-0.3.dist-info/top_level.txt,sha256=YyrCHI9kDiLV9h81rRXa80dx1a5NVsAhECKIf37O_FI,6
+pyCHIPS-0.3.dist-info/RECORD,,
