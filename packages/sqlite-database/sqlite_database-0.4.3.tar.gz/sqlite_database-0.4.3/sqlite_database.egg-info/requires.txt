@@ -1,0 +1,10 @@
+
+[dev]
+pytest
+
+[docs]
+sphinx
+myst_parser
+
+[mysql]
+mysql-connector-python
