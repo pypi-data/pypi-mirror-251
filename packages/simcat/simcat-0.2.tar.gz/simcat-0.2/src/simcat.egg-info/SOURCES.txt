@@ -1,0 +1,16 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/simcat/__init__.py
+src/simcat/agents.py
+src/simcat/interaction.py
+src/simcat/matrix.py
+src/simcat/utils.py
+src/simcat.egg-info/PKG-INFO
+src/simcat.egg-info/SOURCES.txt
+src/simcat.egg-info/dependency_links.txt
+src/simcat.egg-info/requires.txt
+src/simcat.egg-info/top_level.txt
+tests/test_agents.py
+tests/test_interaction.py
+tests/test_matrix.py
