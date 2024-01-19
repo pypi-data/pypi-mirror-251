@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: wazuh_findings_exporter
+Version: 1.1
+Summary: Simple script that exports Wazuh Vulnerabilities by Agent groups
+Home-page: https://github.com/quirinziessler/wazuh_findings_exporter
+Download-URL: https://github.com/quirinziessler/wazuh_findings_exporter
+Author: Quirin Hardy Zießler
+Author-email: quirin@ziessler.com
+License: MIT
+Keywords: Wazuh,exporter,DefectDojo,Wazuh API
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: urllib3
+Requires-Dist: requests
+
+# wazuh_findings_exporter
+
+A simple python script which exports findings of a client group from wazuh and adds the agent-ip as well as hostname to every finding for better further processing.
+
+The script may not be perfect, so feel free to provide PRs and help to improve it.
+
+## Usage
+
+    from wazuh_findings_exporter import Wazuh_Importer
+
+    Wazuh = Wazuh_Importer(BASE_URL=None, BASE_URL=None, BASE_URL=None)
+
+    Wazuh.get_findings(group="Clients_AAAA", filedestination="")
