@@ -1,0 +1,10 @@
+think_sql/__init__.py,sha256=ryAfvAaW7VM8g1gnCrFCPrXmcbbm99Xw44aLkwGZzaI,23
+think_sql/cache.py,sha256=daIMQvPgXQ1jKpPTi4h2TH_-tu0gGQhT9TuEt1dAwsM,2362
+think_sql/database.py,sha256=lrGm5N8SDthtEq6F14CBS1FHLkT-XKBWFbHXzJKHMRI,5487
+think_sql/parse.py,sha256=fh-YZAc6UeeS01XN3yqUJicV1trxn64vkJKrPDDl40U,2112
+think_sql/sql_helper.py,sha256=nhk0uVr6IgqeM_j2KWg7oSfiXIES-eWgfEi1isBFrSQ,27985
+think_sql/table.py,sha256=jiejTixl5kcgxcsPI_U6zpIb93EZ_7UPQuRMWJcNH1w,32197
+think_sql/util.py,sha256=GbTmE6wiySXIfile0fmnWT1bx4GyDmVHn0Z_eOb-Apg,1839
+think_sql-0.5.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+think_sql-0.5.0.dist-info/METADATA,sha256=_u7WY2Oc2-bU8QM5EVZ0yU9GCwzVWW92yZL05m8JDiE,16820
+think_sql-0.5.0.dist-info/RECORD,,
