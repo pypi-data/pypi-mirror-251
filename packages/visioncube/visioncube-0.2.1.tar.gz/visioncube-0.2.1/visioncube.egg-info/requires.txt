@@ -1,0 +1,8 @@
+numpy
+imgaug
+opencv-python
+torch
+kornia
+torchvision
+PyYAML
+matplotlib
