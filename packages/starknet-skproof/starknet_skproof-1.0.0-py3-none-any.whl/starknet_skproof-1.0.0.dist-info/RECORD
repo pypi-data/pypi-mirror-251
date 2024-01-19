@@ -1,0 +1,9 @@
+starknet_skproof/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+starknet_skproof/float_num/FloatNum.py,sha256=svs4P1zOWdKWyv_MkeeYsRf1k6XqZ91THkLmPAdTIxw,4327
+starknet_skproof/float_num/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+starknet_skproof/mlp/MLPClassifierProver.py,sha256=l0rxpoEeH5_7H4pm2Rsc4b6t8XyrG_tRbju4lLUyfd4,10883
+starknet_skproof/mlp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+starknet_skproof-1.0.0.dist-info/METADATA,sha256=E2TcSBMsRgLKsvf_0QCfgu5SIZNuGlAmjZ6Pq7wTSvw,562
+starknet_skproof-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+starknet_skproof-1.0.0.dist-info/top_level.txt,sha256=TR2xYU2zCx5aRpVGNOjLne55BGMPhfbGVXEJcUOi8VI,17
+starknet_skproof-1.0.0.dist-info/RECORD,,
