@@ -1,0 +1,12 @@
+tai/.DS_Store,sha256=sP21BdExmUsDVGB-JZw49b2SyqqpyIq1X_KKeD5pkHg,6148
+tai/core/.gitignore_template,sha256=XzvVSafVEvdBuyhJNeuga_xvpp8sBUGp_xvfjP_BDu8,3493
+tai/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tai/core/cli.py,sha256=8RoEN4H365ZT3z8WcYLJiEeFDXX1m6F5OTdtBlXeYS0,7513
+tai/core/gitea_conf.yaml,sha256=lOPMptbwXT-lV_aW1gQ_tGaS0nwWfgqDW4KoU3yGt9U,106
+tai/core/gitea_controller.py,sha256=KnMn-QVoE12zSuboKheF9sX1b73xNoHGWxsUfoLelvM,5312
+tai/core/install_tai.py,sha256=LrKoo5eMahnL_Dc9TiqIvOE5hXlYrI57LmYWRBHKe9Q,10389
+tai/core/utils.py,sha256=7XjC7AbXqo0YmV3i7emEeABv2CuDNOQE6v29EZ6Nfrg,1571
+trusted_ai-0.1.13.dist-info/METADATA,sha256=DBThZpyaU-nILrLTuo6Q7IdicGCKyxW660fi_XzpL_0,412
+trusted_ai-0.1.13.dist-info/WHEEL,sha256=N2J68yzZqJh3mI_Wg92rwhw0rtJDFpZj9bwQIMJgaVg,90
+trusted_ai-0.1.13.dist-info/entry_points.txt,sha256=LYSK2Ffg-b_VUxYt6X9UIM1rcTGpiR69SakjvVcKF94,43
+trusted_ai-0.1.13.dist-info/RECORD,,
