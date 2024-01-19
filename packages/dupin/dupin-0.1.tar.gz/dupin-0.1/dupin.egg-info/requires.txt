@@ -1,0 +1,7 @@
+bottleneck
+freud-analysis
+kneed
+numpy
+pandas
+ruptures
+scikit-learn
