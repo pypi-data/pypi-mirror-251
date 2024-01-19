@@ -1,0 +1,8 @@
+README.md
+setup.py
+Librarygold/__init__.py
+Librarygold/goldratio.py
+nim33423320.egg-info/PKG-INFO
+nim33423320.egg-info/SOURCES.txt
+nim33423320.egg-info/dependency_links.txt
+nim33423320.egg-info/top_level.txt
