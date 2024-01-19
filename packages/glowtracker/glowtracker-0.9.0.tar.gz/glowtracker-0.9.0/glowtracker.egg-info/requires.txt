@@ -1,0 +1,10 @@
+kivy>=2.2.1
+numpy>=1.25.1
+matplotlib>=3.7.2
+zaber-motion>=4.2.0
+pypylon>=1.9.0
+opencv-python>=4.7.0
+scipy>=1.11.1
+scikit-image>=0.22.0
+itk-elastix
+overrides
