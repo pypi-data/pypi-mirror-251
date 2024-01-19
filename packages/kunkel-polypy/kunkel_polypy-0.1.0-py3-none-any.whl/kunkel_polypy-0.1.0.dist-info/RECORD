@@ -1,0 +1,11 @@
+__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+api_cmd.py,sha256=hszMB-R8w5zefOuBXm9mOnXZMlD8cRbapueEx84wNbs,2119
+data_access.py,sha256=uMYgRZYmgTZz6MeWpn4mVRJq9TDEdt_Hm63TQA_W4fE,15100
+example.py,sha256=9Ezc7jKfoGh4t_opkaCSLlOJnKLpP6xy_wzDG3NuzcQ,4069
+exceptions/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+exceptions/exceptions.py,sha256=3ukZ2Z1D7geq4XriWFroMrC2_WG4OECu6zXIeTefqpo,2162
+kunkel_polypy-0.1.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+kunkel_polypy-0.1.0.dist-info/METADATA,sha256=2QkIgely2TnyS_R2BGw7WRhVlZ7ooQgzxHIUiMdak48,15862
+kunkel_polypy-0.1.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+kunkel_polypy-0.1.0.dist-info/top_level.txt,sha256=AlSgRNC8scxBbuWuVO6867JFNIchAHTkcmIOI3l3JwQ,48
+kunkel_polypy-0.1.0.dist-info/RECORD,,
