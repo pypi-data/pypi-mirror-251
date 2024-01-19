@@ -1,0 +1,16 @@
+[console_scripts]
+obsidianhtml = obsidianhtml:main
+obsidianhtml.sub = obsidianhtml.markdown_extensions:main
+
+[markdown.extensions]
+admonition2 = obsidianhtml.markdown_extensions.AdmonitionExtension:AdmonitionExtension
+callout = obsidianhtml.markdown_extensions.CallOutExtension:CallOutExtension
+code_wrapper = obsidianhtml.markdown_extensions.CodeWrapperExtension:CodeWrapperExtension
+custom_tables = obsidianhtml.markdown_extensions.CustomTableExtension:CustomTableExtension
+dataview = obsidianhtml.markdown_extensions.DataviewExtension:DataviewExtension
+embedded_search = obsidianhtml.markdown_extensions.EmbeddedSearchExtension:EmbeddedSearchExtension
+eraser = obsidianhtml.markdown_extensions.EraserExtension:EraserExtension
+mermaid = obsidianhtml.markdown_extensions.MermaidExtension:MermaidExtension
+obs_footnote = obsidianhtml.markdown_extensions.FootnoteExtension:FootnoteExtension
+obs_formatting = obsidianhtml.markdown_extensions.FormattingExtension:FormattingExtension
+obs_toc = obsidianhtml.markdown_extensions.CustomTocExtension:CustomTocExtension
