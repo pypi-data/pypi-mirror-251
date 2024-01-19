@@ -1,0 +1,12 @@
+livesync/__init__.py,sha256=tZrvnAIpVuo9cQHMCvi6l2vup66NXPxRwyR5UBNtCTs,50
+livesync/folder.py,sha256=gkjhE8uBKAPs3hIJQLoCCFF_1KEh9ODrOlbYm-JHNRM,4022
+livesync/livesync.py,sha256=2kNwtM3a1r5moAXCD4BcK0UJYa0EdZP5PTUNiEqKI6g,1294
+livesync/mutex.py,sha256=nHaP0Tge3ZV7jyVBbYsMug5L5YkuJf8_XIbfAdVJkPc,1741
+livesync/run_subprocess.py,sha256=ZZqK9dlOVlJhL0xkKN7bG-BAT558nHk-IJNGqIMeWyM,368
+livesync/sync.py,sha256=9cQwtdLHIBvenzyq0HRJOagPm1OGSDpi43vLBa2aNUs,1635
+LiveSync-0.3.2.dist-info/LICENSE,sha256=QcBlwggRQYhvfTAE481AAMFQfMS_N6Bj8Svh1T6dsnI,1072
+LiveSync-0.3.2.dist-info/METADATA,sha256=I86gj3hllCf1gRvXhJJeFuXCmlSl-Ne-1WWbqdqIOIg,5335
+LiveSync-0.3.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+LiveSync-0.3.2.dist-info/entry_points.txt,sha256=4dn5YR27lUlJWea3yqLKLqR4MwqjcqzMR5Q4jVFnytI,52
+LiveSync-0.3.2.dist-info/top_level.txt,sha256=mLwExc6wTUGqxvUkYMio5rxGS1h8bvxpNsR2ebfjSL4,9
+LiveSync-0.3.2.dist-info/RECORD,,
