@@ -1,0 +1,7 @@
+commit c3a90a6287574471658b64c9648cf27813080cd0
+Author: Moshe Zadka <moshez@users.noreply.github.com>
+Date:   2024-01-18 14:32:40 -0800
+
+    Merge pull request #5 from elcaminoreal/better-logging
+    
+    log comands a bit more nicely.
