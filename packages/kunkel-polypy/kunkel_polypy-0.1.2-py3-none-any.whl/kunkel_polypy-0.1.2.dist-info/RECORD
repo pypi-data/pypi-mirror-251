@@ -1,0 +1,11 @@
+src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/api_cmd.py,sha256=hszMB-R8w5zefOuBXm9mOnXZMlD8cRbapueEx84wNbs,2119
+src/data_access.py,sha256=uMYgRZYmgTZz6MeWpn4mVRJq9TDEdt_Hm63TQA_W4fE,15100
+src/example.py,sha256=9Ezc7jKfoGh4t_opkaCSLlOJnKLpP6xy_wzDG3NuzcQ,4069
+src/exceptions/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/exceptions/exceptions.py,sha256=3ukZ2Z1D7geq4XriWFroMrC2_WG4OECu6zXIeTefqpo,2162
+kunkel_polypy-0.1.2.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+kunkel_polypy-0.1.2.dist-info/METADATA,sha256=SUpTwF0KY8H4hjTX0CEGGS5QJgGdx6fdTMU-N-USKfI,15862
+kunkel_polypy-0.1.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+kunkel_polypy-0.1.2.dist-info/top_level.txt,sha256=74rtVfumQlgAPzR5_2CgYN24MB0XARCg0t-gzk6gTrM,4
+kunkel_polypy-0.1.2.dist-info/RECORD,,
