@@ -1,0 +1,8 @@
+kinto_emailer/__init__.py,sha256=oP9yvTq8xKyCRmUCB7LT6f4ZPX9cKhFq87ui5PSxHIk,7442
+kinto_emailer/command_send.py,sha256=ucHtPOMmh4jJsNIaBAoaPIrSQOiQw8p4E3cwiY8bRC8,785
+kinto_emailer-0.0.0.dist-info/LICENSE,sha256=guM9viJaexQ7hz3fnYCMEWpjEOnbLfvjiOrsCAg4c3o,562
+kinto_emailer-0.0.0.dist-info/METADATA,sha256=xrk1Hds70iJxsxqQ00idTyvITGgO-685kiaVDsUd6Jw,6563
+kinto_emailer-0.0.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+kinto_emailer-0.0.0.dist-info/entry_points.txt,sha256=owFg71b6sIXTOd3t9rAPHIJ6-4NGiSi2tORohc7WZmk,69
+kinto_emailer-0.0.0.dist-info/top_level.txt,sha256=i6y1SuvWSZ4Hxzh_lgi3pCTYx4b90eg8HAnhaS8lN6w,14
+kinto_emailer-0.0.0.dist-info/RECORD,,
