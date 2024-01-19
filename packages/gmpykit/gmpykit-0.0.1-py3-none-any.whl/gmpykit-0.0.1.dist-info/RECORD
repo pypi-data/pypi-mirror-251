@@ -1,0 +1,17 @@
+gmpykit/__init__.py,sha256=ZZtXErxeywzwo9L_wca-2EkuAIB6hg7m5X6ngagwGTE,245
+gmpykit/cache.py,sha256=cuXA6FjgVePzYTHx-a9Hjfc45kAYuFVqYtniq-H8daw,4945
+gmpykit/calculus.py,sha256=JEAz5oHAn9zkdF0kEwW4zNSWP7yYBrWaxfzSZ0Sw-pA,156
+gmpykit/casting.py,sha256=1IEnb9nmzlX-SfSS5h5DLSOoXkHwWBF7mpzURTY01oM,119
+gmpykit/convert.py,sha256=GWl5198Ast5DjhjMDq1FgN2TKwzBS3s9Eg314ZkKags,329
+gmpykit/dataframe.py,sha256=MZVutyPSdE4j5HWnmRZlO9Gph1Jmsm6gbXQtyZ16QHw,2921
+gmpykit/dates.py,sha256=-CtKg6jQvNdghgte4M0CbLQMWUoYyIiQeTGPjpHw2WU,2203
+gmpykit/eta.py,sha256=ToP03mGgjh2FifX9NfrHA-s868vCO_0oVHMqy236ImU,6077
+gmpykit/file.py,sha256=pvui_dulEgNooU1FrANNyMr6ldL8_AAG320w6snfZKw,942
+gmpykit/misc.py,sha256=bhX3XgwURAP8gPbXaMwjtwWLlKSytx8r1tIABvwl1Zk,1937
+gmpykit/string_comparisons.py,sha256=hlZVCTbt5SNfTHlOZe_klZ7ceCjA38VcYAoHUizn7EQ,1052
+gmpykit/to_strings.py,sha256=_MaouxlOm9D7OFUqEqlNJph1EbKFg4ko0r3C49Jlo_g,1370
+gmpykit-0.0.1.dist-info/LICENSE,sha256=NPwsE-N4aE8N4j92gR9bebgWVaAnC5hU0j_lbbpcJRw,1069
+gmpykit-0.0.1.dist-info/METADATA,sha256=XkIy_rJiZrK3-9kgSh-K4KDMcnoQKm-Jjnu47NYNQ-Q,255
+gmpykit-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+gmpykit-0.0.1.dist-info/top_level.txt,sha256=ajC6oxenRhmvc8eOze2QQHNc9LmsvfUmcvhXefLQgnM,8
+gmpykit-0.0.1.dist-info/RECORD,,
