@@ -1,0 +1,89 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "nbstudy"
+dynamic = ["version"]
+description = 'Tools for studying notebooks'
+readme = "README.md"
+requires-python = ">=3.12"
+license = "BSD-3-Clause"
+keywords = []
+authors = [
+  { name = "Dylan Lukes", email = "lukes.dylan@gmail.com" },
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+]
+dependencies = [
+  "click",
+  "gitpython",
+  "loguru",
+  "nbformat",
+  "pydantic",
+  "pydantic-settings",
+  "requests",
+]
+
+[project.urls]
+Documentation = "https://github.com/DylanLukes/nbstudy#readme"
+Issues = "https://github.com/DylanLukes/nbstudy/issues"
+Source = "https://github.com/DylanLukes/nbstudy"
+
+[project.scripts]
+nbstudy = "nbstudy.cli:main"
+
+[tool.hatch.version]
+path = "src/nbstudy/__about__.py"
+
+[tool.hatch.envs.default]
+dependencies = [
+  "coverage[toml]>=6.5",
+  "pytest",
+]
+[tool.hatch.envs.default.scripts]
+test = "pytest {args:tests}"
+test-cov = "coverage run -m pytest {args:tests}"
+cov-report = [
+  "- coverage combine",
+  "coverage report",
+]
+cov = [
+  "test-cov",
+  "cov-report",
+]
+
+[[tool.hatch.envs.all.matrix]]
+python = ["3.12"]
+
+[tool.hatch.envs.types]
+dependencies = [
+  "pyright",
+]
+[tool.hatch.envs.types.scripts]
+check = "pyright {args:src/nbstudy tests}"
+#check = "mypy --install-types --non-interactive {args:src/nbstudy tests}"
+
+[tool.coverage.run]
+source_pkgs = ["nbstudy", "tests"]
+branch = true
+parallel = true
+omit = [
+  "src/nbstudy/__about__.py",
+]
+
+[tool.coverage.paths]
+nbstudy = ["src/nbstudy", "*/nbstudy/src/nbstudy"]
+tests = ["tests", "*/nbstudy/tests"]
+
+[tool.coverage.report]
+exclude_lines = [
+  "no cov",
+  "if __name__ == .__main__.:",
+  "if TYPE_CHECKING:",
+]
