@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+src/cocotb_vivado/__init__.py
+src/cocotb_vivado/xsi.py
+src/cocotb_vivado.egg-info/PKG-INFO
+src/cocotb_vivado.egg-info/SOURCES.txt
+src/cocotb_vivado.egg-info/dependency_links.txt
+src/cocotb_vivado.egg-info/requires.txt
+src/cocotb_vivado.egg-info/top_level.txt
+src/cocotb_vivado/stub/__init__.py
+src/cocotb_vivado/stub/mgr.py
+src/cocotb_vivado/stub/simulator.py
+src/cocotb_vivado/stub/cocotb/__init__.py
+tests/test_axil.py
+tests/test_fw.py
+tests/test_tb.py
