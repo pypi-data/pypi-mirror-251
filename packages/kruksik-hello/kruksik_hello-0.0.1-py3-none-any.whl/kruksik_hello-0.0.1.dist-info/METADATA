@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: kruksik-hello
+Version: 0.0.1
+Requires-Dist: setuptools
+Requires-Dist: wheel
+Requires-Dist: twine
+Requires-Dist: numpy
+
