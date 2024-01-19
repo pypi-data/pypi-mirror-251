@@ -1,0 +1,4 @@
+[console_scripts]
+navio=navio.builder:main
+nb=navio.builder:main
+
