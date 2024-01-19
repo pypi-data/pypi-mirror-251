@@ -1,0 +1,2 @@
+[console_scripts]
+pyqt5-designer-mini = pyqt5_designer_mini.designer_runner:main_function
