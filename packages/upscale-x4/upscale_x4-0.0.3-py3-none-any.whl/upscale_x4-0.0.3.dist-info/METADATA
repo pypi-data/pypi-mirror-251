@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: upscale_x4
+Version: 0.0.3
+Summary: Upscale images or gifs by 4
+Author-email: Raziel619 <raziel619dev@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2024 Raziel619
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/Raziel619/upscale_x4
+Keywords: AI,upscale
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: imageio
+Requires-Dist: numpy
+Requires-Dist: opencv-contrib-python
+Requires-Dist: pillow
+
+# upscale_x4
+
+This repository provides out of the box methods for upscaling **images** and **gifs** by 4. A pretrained model is already bundled in. See the simple example below.
+
+```python
+from upscale_x4 import upscale_gif_x4, upscale_image_x4
+
+upscaled_gif = upscale_gif_x4("path \ to \ gif")
+upscaled_img = upscale_image_x4("path \ to \ image")
+```
+
+Currently supports:
+
+1. JPGs
+2. PNGs (mixed results and loses transparency)
+3. GIFs
