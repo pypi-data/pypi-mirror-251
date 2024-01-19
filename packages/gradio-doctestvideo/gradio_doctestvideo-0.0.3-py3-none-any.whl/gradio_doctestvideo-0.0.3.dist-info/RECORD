@@ -1,0 +1,14 @@
+gradio_doctestvideo/__init__.py,sha256=ZCfVwoy-_S1TB88UnAGIJeawnLIPHRsbEsOK4iVpzSY,68
+gradio_doctestvideo/doctestvideo.py,sha256=ii59xWPXk9iFiW6GQ97nskmL-FJKxpzML1Sa7zLpS8I,16820
+gradio_doctestvideo/doctestvideo.pyi,sha256=EL_01UAH9nfk84m0lqoa8CETred46j3w68e_FZa7Tt8,62819
+gradio_doctestvideo/templates/component/__vite-browser-external-2447137e.js,sha256=-MRWAx5QAcDNpIN82e46M9eb7roSDsYz7J2ZBjL7KqY,41
+gradio_doctestvideo/templates/component/index.js,sha256=urxSiVEV11kSCFFuZPrYZBpphcb_v5FMDNPfJvrCrAE,342624
+gradio_doctestvideo/templates/component/style.css,sha256=qZCSuFwhFLjgYssEe6T2nd4gamNMk5eX2HA53XjvCwo,24415
+gradio_doctestvideo/templates/component/wrapper-6f348d45-f837cf34.js,sha256=Frd0Y8JweDT6LX6J1uORkAErQZTkqActU0tsyqiOcDs,78109
+gradio_doctestvideo/templates/component/assets/worker-43d19264.js,sha256=t2H7ERfi6C1zImIL1tZmxLdtySPkGq4bnYOycKNU1uU,2374
+gradio_doctestvideo/templates/example/index.js,sha256=PEoHUvI2MRhkzFykfFECm7hKRDDPztqnuTPg6oeeSjk,12803
+gradio_doctestvideo/templates/example/style.css,sha256=sInAWi6HoSSAsqNSQWvlSDKOATfqQrmongGrfky51UI,1398
+gradio_doctestvideo/templates/example/assets/worker-43d19264.js,sha256=t2H7ERfi6C1zImIL1tZmxLdtySPkGq4bnYOycKNU1uU,2374
+gradio_doctestvideo-0.0.3.dist-info/METADATA,sha256=uhE7YEBBm_JjBLVybs0ntp2D8RYILhJ4WgxNWYsJs6s,11198
+gradio_doctestvideo-0.0.3.dist-info/WHEEL,sha256=mRYSEL3Ih6g5a_CVMIcwiF__0Ae4_gLYh01YFNwiq1k,87
+gradio_doctestvideo-0.0.3.dist-info/RECORD,,
