@@ -1,0 +1,125 @@
+Metadata-Version: 2.1
+Name: geodeticengine
+Version: 1.0.3
+Summary:  Library for transformation and conversion of coordinates used in Equinor.
+Author-email: Equinor <peaar@equinor.com>
+Maintainer-email: Per Helge Aarnes <peaar@equinor.com>, Torill Gabrielsen <tokjos@equinor.com>
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: msal
+Requires-Dist: pyproj
+Requires-Dist: python-dotenv
+Requires-Dist: numpy
+Requires-Dist: requests
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+
+# Geodetic Engine
+
+A Python library using the Equinor Geodetic Engine API and pyproj to ct_fromform coordinates between different Coordinate Reference Systems (CRS).
+
+## Installation
+
+1. You need access to [Equinor Geodetic Engine API](https://api.equinor.com/api-details#api=ege-GeodeticEngine-v1), given through [AccessIT](https://accessit.equinor.com/Search/Search?term=geodetic+engine)
+
+2. A personal subscription key is required to authenticate through APIM. Sign in to [api.equinor.com](https://api.equinor.com) and subscribe to [Enterprise](https://api.equinor.com/product#product=corporate)
+
+3. As usual it´s installed running pip install:
+```
+pip install geodeticengine
+```
+
+## Authentication
+There are two ways to authenticate:
+- User access - MSAL Device code flow
+- Application access - MSAL Client credential flow
+
+
+
+### User-based authentication using public client flows.
+For user-based authentication, this API utilizes the _PublicClientApplication_ Python class from the msal library to retrieve bearer tokens for user authentication. In cases where a device supports a Graphical User Interface (GUI), the _acquire_token_interactive()_ method is used to obtain tokens interactively via the user's local browser. For devices that lack GUI support, such as GitHub Code Spaces, the _initiate_device_flow()_ method is used
+If the device supports a Graphical User Interface (GUI), the _acquire_token_interactive()_ method will be used. This method acquires token interactively i.e. via a local browser. If the device does not support GUI, like GitHub Code Spaces for instance, the method _initiate_device_flow()_ which generates a code for the user to visit a specific URL. The webpage then guides the user through the standard authentication and login process. This allows for a flexible and secure user authentication process that works across multiple devices.
+
+To use the package with user-based access, you will need to add the following environment variables to your system:
+```
+EGE_CLIENT_ENVS=prod;test
+EGE_CLIENT_IDS=c25018ed-b371-4b37-ba4e-4d902aee2b6c;84c8d2ec-6294-47aa-8fd4-f69c870faa3a
+EGE_TENANT_ID=3aa4a235-b6e2-48d5-9195-7fcf05b459b0
+EGE_RESOURCE_IDS=c25018ed-b371-4b37-ba4e-4d902aee2b6c;84c8d2ec-6294-47aa-8fd4-f69c870faa3a
+EGE_SUBS_KEYS=<your-subscription-key-for-geodeticengine-prod;your-subscription-key-for-geodeticengine-test>
+```
+**EGE_CLIENT_ENVS** sets the order of environment variables. If you only have access to "prod", simply add "prod" to this variable.<br>
+**EGE_CLIENT_IDS** sets the client IDs for each environment. For user access, this is the same as EGE_RESOURCE_IDS.
+**EGE_TENANT_ID** is the tenant ID (Equinor).<br>
+**EGE_SUBS_KEYS** is your APIM subscription keys for each environment (prod and test). This will allow the package to access the resources you have permission to use.<br>
+**EGE_RESOURCE_IDS** is the resource ID of the geodetic engine for the specified environments.<br>
+
+
+
+
+### Application access - MSAL Client credential flow
+
+To use the package with application-based access, you will need to add the following environment variables to your system:
+- EGE_CLIENT_IDS
+- EGE_CLIENT_SECRETS
+
+Add the following environment variables to your system:
+```
+EGE_TENANT_ID=3aa4a235-b6e2-48d5-9195-7fcf05b459b0
+EGE_CLIENT_ENVS=prod;test
+EGE_CLIENT_IDS=<your-app-id-prod;your-app-id-test>
+EGE_RESOURCE_IDS=c25018ed-b371-4b37-ba4e-4d902aee2b6c;84c8d2ec-6294-47aa-8fd4-f69c870faa3a
+EGE_SUBS_KEYS=<your-subscription-key-for-geodeticengine-prod;your-subscription-key-for-geodeticengine-test>
+EGE_CLIENT_SECRETS=<your-app-secret-prod;your-app-secret-test>
+```
+
+When **EGE_CLIENT_SECRETS** is added, the authorization class will automatically use Application Access to authenticate.
+
+
+## Access test environment
+To use the package to access Geodetic Engine Test environment, you need to set the EGE_API_ENV as an environment variable.
+If this environment variable is not set, the package will use the production environment.
+```
+EGE_API_ENV=test
+```
+
+## Token cache
+The token for each environment is cached and stored in the user's home directory, eliminating the need to authenticate before every session. Although an access token expires after one hour, the presence of a cached Refresh Token allows a new Access Token to be obtained without requiring re-authentication. The Refresh Token lasts for 90 days, then you have to log in again.
+
+## Code example
+
+```
+from geodeticengine import CoordTrans
+
+### Example 1
+points = [[10, 60]]
+crs_from = "EPSG:4230"
+crs_to = "EPSG:4326"
+ct_from = "EPSG:1612"
+
+# Transform coordinates
+ct = CoordTrans(crs_from=crs_from, crs_to=crs_to, ct_from=ct_from, points=points)
+print(f"Transformed coordinates:{ct.transform_pointlist()}")
+
+# Get transformation pipeline
+pipeline = ct.get_pipeline()
+print(f"Transformation pipeline: {pipeline}")
+
+
+
+
+### Example 2
+points = [[9,65],[12,70]]
+crs_from = "ST_ED50_T1133"
+crs_to = "ST_WGS84_G4326"
+
+# Transform coordinates
+ct = CoordTrans(crs_from=crs_from, crs_to=crs_to, points=points)
+print(f"Transformed coordinates:{ct.transform_pointlist()}")
+
+# Get transformation pipeline
+pipeline =  ct.get_pipeline()
+print(f"Transformation pipeline: {pipeline}")
+
+```
