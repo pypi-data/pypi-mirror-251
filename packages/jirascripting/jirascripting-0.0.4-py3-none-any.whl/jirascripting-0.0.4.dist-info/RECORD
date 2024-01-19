@@ -1,0 +1,17 @@
+__init__.py,sha256=krLUday0_A5cLEZwudKKGb52rGcEYA0TvH3nDPgj54Y,20
+jirascripting/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jirascripting/assignable_users/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jirascripting/assignable_users/get_assignable_users.py,sha256=EhxTz0G_cp994ZBDwAVNeG8D-t2akJP9ymXaeLJfE04,2467
+jirascripting/create_jira_tickets/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jirascripting/create_jira_tickets/create_fancy_jira_issue.py,sha256=VXv18uOSKzA7mw8f6XmKgQAp9MU1m7x0roq0wDW7dmM,6733
+jirascripting/create_jira_tickets/create_jira_epic.py,sha256=bDtgbCgnLjkNiRQtzE8MTgp8tQIyYySSL8MRrxO4Lbw,2128
+jirascripting/create_jira_tickets/create_jira_issue.py,sha256=7E98QOxPK0MXjpiDZISH5HjevdrymyWKWpMsHgDybis,2603
+jirascripting/create_jira_tickets/create_jira_issue_with_parent.py,sha256=5qRdaT5aV1vb-6rusxoEsZhMDm-WyzYVHxxroXpR978,2652
+jirascripting/helpers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jirascripting/helpers/auth_and_headers.py,sha256=4wUfk0fTWSp3RIjuAn6IVdt4-QtbSPLK0k7hKolSFT4,701
+jirascripting/helpers/helpers.py,sha256=dt9Eo_yiSwDbvgnwNsYrZth9iXyHo1ZpiZ-DrD_ZmvQ,16000
+jirascripting-0.0.4.dist-info/LICENSE,sha256=V2jjNs1HTz4VzlMWs1Ano52yYryHQz8XfgfhtamdLOA,1069
+jirascripting-0.0.4.dist-info/METADATA,sha256=FVED0Zdv8Sq9amaVDI4mZyveJ7-b9cmLbwcSg0gjWMg,444
+jirascripting-0.0.4.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+jirascripting-0.0.4.dist-info/top_level.txt,sha256=X9Kn5P6OoGDTXtDT-kR1SlIcWt5jNAj-ROFgK7EhSgU,23
+jirascripting-0.0.4.dist-info/RECORD,,
