@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: energy-base
+Version: 1.0.2
+Summary: Energy Base Package
+Author: Olimboy
+Author-email: shavkatov.olimboy@mail.ru
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: djangorestframework (>=3.14.0,<4.0.0)
+Description-Content-Type: text/markdown
+
+# Smart Energy Base
