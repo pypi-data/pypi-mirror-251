@@ -1,0 +1,8 @@
+LICENSE
+setup.py
+Librarymu/__init__.py
+Librarymu/golden_ratio.py
+golden_info.egg-info/PKG-INFO
+golden_info.egg-info/SOURCES.txt
+golden_info.egg-info/dependency_links.txt
+golden_info.egg-info/top_level.txt
