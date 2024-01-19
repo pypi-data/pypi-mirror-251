@@ -1,0 +1,13 @@
+gicha/__init__.py,sha256=TiuHXWAXUZrXnnSiVQv2PMAofuyYaH4q2w5I3DM2OSM,27
+gicha/__main__.py,sha256=TmGsVV6XlXC4jeVNQi-gb-VVTx8MTqbsBSmtP7A9X2g,47
+gicha/core.py,sha256=T3BQIgC9HvzjZRHahrsGSg20fDLXfZIZCld6voGHUYw,6994
+gicha/version.py,sha256=AqPIigSN98guDS7jpE2Pe51EixfmEEaIIRmN741Y1KE,490
+gicha/mygit/__init__.py,sha256=qn-jrM1RvOyaJg65gMJWVQjkTqRWg3bUceygYtGXX_w,277
+gicha/myos/__init__.py,sha256=c1Q7mSkvipaCWeBg34RY9eF_nhFmbEaz1TzH_2UDlvQ,233
+gicha/myrich/__init__.py,sha256=8CC1WNEji0bfWmPP7FHJr810C5hoePo-XlK52W052fc,429
+gicha/sed/__init__.py,sha256=TtB8XSshVejp42YXnICHJtSoYdO2_XrAsIEbwlKg_vs,508
+gicha-1.0.1.dist-info/LICENSE,sha256=SAh422ifByhAbzUtuW31gUNg3cj25V95xCryUnVUAMU,1097
+gicha-1.0.1.dist-info/METADATA,sha256=z5ezSYL8oEEwAYpLa4BNjIILuPlM76O5AaIHIO_5h2A,1690
+gicha-1.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+gicha-1.0.1.dist-info/top_level.txt,sha256=ytewKLxTMFLhpNdAlCk2bg0JuKmVnzL6KPVQkN_k5Kg,6
+gicha-1.0.1.dist-info/RECORD,,
