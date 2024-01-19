@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: app-rappi-dfmejial
+Version: 0.0.5
+Summary: Rappi Titanic challenge
+Author: Daniel Mejia
+Author-email: dfmejial@unal.edu.co
+Requires-Python: >=3.9.0,<4.0.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: joblib (>=1.1.0,<2.0.0)
+Requires-Dist: numpy (>=1.18.5,<2.0.0)
+Requires-Dist: pandas (>=1.1.5,<2.0.0)
+Requires-Dist: scikit-learn (>=1.2.1)
+Requires-Dist: seaborn (>=0.13.0,<0.14.0)
