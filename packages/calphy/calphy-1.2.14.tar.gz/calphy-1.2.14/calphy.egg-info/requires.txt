@@ -1,0 +1,9 @@
+matplotlib
+pytest
+pyyaml
+mendeleev
+tqdm
+scipy
+pydantic
+pyscal
+pyscal3
