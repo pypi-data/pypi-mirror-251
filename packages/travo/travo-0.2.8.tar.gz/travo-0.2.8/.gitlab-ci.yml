@@ -1,0 +1,91 @@
+.junit-coverage:
+  artifacts:
+    when: always
+    reports:
+      junit:
+        - report.xml
+      coverage_report:
+        coverage_format: cobertura
+        path: coverage.xml
+
+.dependent-test:
+  stage: test
+  script:
+    - pytest travo --junitxml=report.xml
+  artifacts:
+    when: always
+    reports:
+      junit:
+        - report.xml
+    # python 3.7 and windows tests are for checking compatibility; no
+    # need to waste energy running them if the 3.10 tests fails.
+    # Also parallel runs currently tend to fail due to reaching the
+    # rate limit of the test gitlab instance.
+  needs: [tests_python310]
+
+services:
+  - name: gitlab/gitlab-ce:latest
+    alias: gitlab
+
+variables:
+  GITLAB_HTTPS: "false"              # ensure that plain http does not work
+  GITLAB_ROOT_PASSWORD: "dr0w554p!&ew=]gdS"  # to access the api with user root:password
+  GITLAB_OMNIBUS_CONFIG: |
+      external_url 'http://gitlab'
+
+stages:
+  - test
+  - pages
+
+before_script:
+  - pip install .[test]
+  - pip install pytest-cov
+  - curl --retry 10 --retry-all-errors --url http://gitlab/api/v4/projects
+  - python build_tools/create_basic_gitlab.py
+
+tests_python312:
+    image: python:3.12
+    stage: test
+    script:
+      - mypy
+      - pytest travo --cov --cov-report term --cov-report xml:coverage.xml --junitxml=report.xml
+    extends: .junit-coverage
+
+tests_python310:
+    image: python:3.10
+    stage: test
+    script:
+      - mypy
+      - pytest travo --cov --cov-report term --cov-report xml:coverage.xml --junitxml=report.xml
+    extends: .junit-coverage
+    needs: [tests_python312]
+
+tests_python37:
+    image: python:3.7
+    extends: .dependent-test
+    allow_failure: true
+
+docs:
+  image: python:3.12
+  stage: pages
+  script:
+    - pip install .[doc]
+    - cd docs; make html
+  artifacts:
+    paths:
+      - docs/build/html
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+
+pages:
+  image: python:3.12
+  stage: pages
+  script:
+    - pip install .[doc]
+    - cd docs; make html
+    - mv build/html/ ../public/
+  artifacts:
+    paths:
+      - public
+  rules:
+    - if: $CI_PROJECT_PATH == "travo-cr/travo" && $CI_COMMIT_BRANCH == "master"
