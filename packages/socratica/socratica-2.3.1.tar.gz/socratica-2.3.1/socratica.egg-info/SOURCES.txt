@@ -1,0 +1,5 @@
+setup.py
+socratica.egg-info/PKG-INFO
+socratica.egg-info/SOURCES.txt
+socratica.egg-info/dependency_links.txt
+socratica.egg-info/top_level.txt
