@@ -1,0 +1,2 @@
+[console_scripts]
+toopy-nutrient-timer = toopy:nutrient_timers
