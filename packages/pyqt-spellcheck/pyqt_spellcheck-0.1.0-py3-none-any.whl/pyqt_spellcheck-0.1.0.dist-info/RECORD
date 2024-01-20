@@ -1,0 +1,8 @@
+pyqt_spellcheck/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyqt_spellcheck/correction_action.py,sha256=LV5QS0eLKf77L8PwvWY1oURp2cjpV7dS8FdlCeLPNJs,389
+pyqt_spellcheck/highlighter.py,sha256=3cKBjTAhO2alk3V8Kth4UAtwtRWqi_BCPKWV5p8hnDg,1300
+pyqt_spellcheck/spellcheckwrapper.py,sha256=R5A-9Bs-ufSbIOfLzcBss3frGy6JbqYfSL-dKAivt0Y,1322
+pyqt_spellcheck/spelltextedit.py,sha256=4NNCLTR5Q0byeWFuZ0PXq9zPoA1UXsOlFyY_r5yskV8,3363
+pyqt_spellcheck-0.1.0.dist-info/METADATA,sha256=poc1t_yXCZHcM0UviMvdHkokDZh3VsjkYnog6a89aV0,849
+pyqt_spellcheck-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+pyqt_spellcheck-0.1.0.dist-info/RECORD,,
