@@ -1,0 +1,10 @@
+ament_black/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ament_black/main.py,sha256=Ye3KbrrQWgO2Aq32h-sRPXNZk21cU4MMYJ6NnrZKB9o,7348
+ament_black/pytest_marker.py,sha256=hpj9gtatdpj-tfMiN5TGG2QaCcQtcdNkjOLDaiWvokw,189
+ament_black-0.2.4.data/data/share/ament_black/package.xml,sha256=DSX2I95pghuDWho8lhYFnJb_rTmS9gFy1bgyBFTMiqI,953
+ament_black-0.2.4.data/data/share/ament_index/resource_index/packages/ament_black,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ament_black-0.2.4.dist-info/METADATA,sha256=_H0OxhKlvWI7cUqIuOR6Jx4UtpiDyqVlb5LbVbFQ-oE,812
+ament_black-0.2.4.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+ament_black-0.2.4.dist-info/entry_points.txt,sha256=Z3VNsohR9OEFnb4i4urPNuMdZInsEuJPd7Yddabbi9A,106
+ament_black-0.2.4.dist-info/top_level.txt,sha256=BszL3qC79Raaq4yx75YvaTz4S28I2SfBFryP-wzX_rw,12
+ament_black-0.2.4.dist-info/RECORD,,
