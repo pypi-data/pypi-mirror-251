@@ -1,0 +1,10 @@
+{
+	"name": "hydroqc",
+	"image": "registry.gitlab.com/hydroqc/hydroqc-base-container/3.11:latest",
+	"features": {
+		"ghcr.io/msclock/features/gitlab-ci-local:0": {
+			"version": "latest"
+		}
+	},
+	"remoteUser": "devcontainer"
+}
