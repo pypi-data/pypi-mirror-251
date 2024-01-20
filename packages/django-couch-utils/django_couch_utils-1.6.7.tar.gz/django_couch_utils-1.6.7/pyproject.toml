@@ -1,0 +1,42 @@
+[project]
+name = "django-couch-utils"
+version = "1.6.7"
+authors = [
+  { name="Alex Elfman", email="elf2001@gmail.com" },
+]
+description = "Handy tools and helpers for django projects, powered by CouchDB"
+readme = "README.md"
+requires-python = ">=2.7"
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: GNU General Public License (GPL)",
+    "Natural Language :: English",
+    "Programming Language :: Python",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://bitbucket.org/angry_elf/django-couch-utils/"
+"Bug Tracker" = "https://bitbucket.org/angry_elf/django-couch-utils/issues"
+
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build]
+ignore-vcs = true
+exclude = [
+        "/venv/",
+        "docs/",
+        ".hgignore",
+        ".hgtags",
+        "publish.sh",
+        "*~",
+        "*.orig",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["django_couch"]

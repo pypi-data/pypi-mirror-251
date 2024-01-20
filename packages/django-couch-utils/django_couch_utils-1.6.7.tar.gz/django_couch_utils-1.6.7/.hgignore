@@ -1,0 +1,10 @@
+syntax: glob
+.hgignore
+doc/_build/*
+*~
+*.pyc
+dist/*
+django_couch_utils.egg-info/*
+build/*
+*.orig
+venv/

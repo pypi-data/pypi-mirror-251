@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: django-couch-utils
+Version: 1.6.7
+Summary: Handy tools and helpers for django projects, powered by CouchDB
+Project-URL: Homepage, https://bitbucket.org/angry_elf/django-couch-utils/
+Project-URL: Bug Tracker, https://bitbucket.org/angry_elf/django-couch-utils/issues
+Author-email: Alex Elfman <elf2001@gmail.com>
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=2.7
+Description-Content-Type: text/markdown
+
+Documentation and installation
+==============================
+
+[Read The Docs](https://django-couch-utils.readthedocs.io/)
+
+[PyPi](http://pypi.python.org/pypi/django-couch-utils/)
+
