@@ -1,0 +1,12 @@
+omero/plugins/zarr.py,sha256=If6MyQKPFbj-QfJ0YwkhxIFn_FXA0CuAN5MBH03pODU,105
+omero_zarr/__init__.py,sha256=KnNFDLwCoQSZTrbKNxdBnIGZlhUx7Q43Z1_xM4xCd_w,939
+omero_zarr/_version.py,sha256=SBg83T1a-81dMQCz1IjR9Qpc5eBuLR8BpVOLA1n0iu0,160
+omero_zarr/cli.py,sha256=s6nz_mgsTlgI0qQSAHSjJe2w2ZqYPN0tMPgdI9sb5IE,13792
+omero_zarr/masks.py,sha256=-AhAoMQkRhQIMTf0uKBh9sfojPbdYW3Wb0PxYOPWj1Q,19843
+omero_zarr/raw_pixels.py,sha256=V68IXdyVKhuE_RMF5jW72el4Fwsivi5drIyHfyqUdBk,12356
+omero_zarr/util.py,sha256=oPiWUOTQ3LSzO4FfWkdgcP2Tzvoyxk619agDQ7gV7c0,4431
+omero_cli_zarr-0.5.5.dist-info/LICENSE.txt,sha256=qxX9UmvY3Rip5368E5ZWv00z6X_HI4zRG_YOK5uGZsY,17987
+omero_cli_zarr-0.5.5.dist-info/METADATA,sha256=IRmiZAXd0xMAOzrLnc7JkGW8ScD_3uO8e7l8w_7K9t8,5110
+omero_cli_zarr-0.5.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+omero_cli_zarr-0.5.5.dist-info/top_level.txt,sha256=iUvEQs-JUnMzPFzQJI-MkwCcsbzgXK_YXjrLj0TU4Gk,17
+omero_cli_zarr-0.5.5.dist-info/RECORD,,
