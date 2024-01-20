@@ -1,0 +1,3 @@
+{# vim: set ft=jinja : #}
+{% extends 'domain/_base_qemu.xml' %}
+{% block type %}hvf{% endblock %}

@@ -1,0 +1,54 @@
+<?xml version='1.0'?>
+<pool type='{{ type }}'>
+    <name>{{ name }}</name>
+    {% if uuid is defined %}
+        <uuid>{{ uuid }}</uuid>
+    {% endif %}
+    {% if features is defined %}
+        <features>
+            {% if 'cow' in features %}
+                <cow state='{{ features.cow }}' />
+            {% endif %}
+        </features>
+    {% endif %}
+    {% if source is defined %}
+        <source>
+            {% if 'format' in source %}
+                <format type='{{ source.format }}' />
+            {% endif %}
+            {% if 'name' in source %}
+                <name>{{ source.name }}</name>
+            {% endif %}
+            {% if 'devices' in source %}
+                {% for item in source.devices %}
+                    <device path='{{ item }}' />
+                {% endfor %}
+            {% endif %}
+            {% if 'dir' in source %}
+                <dir path='{{ source.dir }}' />
+            {% endif %}
+            {% if 'adapter' in source %}
+                <adapter name='{{ source.adapter }}' type='scsi_host' />
+            {% endif %}
+            {% if 'hosts' in source %}
+                {% for item in source.hosts %}
+                    <host name='{{ item }}' />
+                {% endfor %}
+            {% endif %}
+            {% if 'initiator' in source %}
+                <initiator>
+                    <iqn name='{{ source.initiator }}' />
+                </initiator>
+            {% endif %}
+            {% if 'protocol' in source %}
+                <protocol ver='{{ source.protocol }}' />
+            {% endif %}
+        </source>
+    {% endif %}
+    {% if target is defined %}
+        <target>
+            <path>{{ target.path }}</path>
+        </target>
+    {% endif %}
+{# vim: set ft=jinja : #}
+</pool>
