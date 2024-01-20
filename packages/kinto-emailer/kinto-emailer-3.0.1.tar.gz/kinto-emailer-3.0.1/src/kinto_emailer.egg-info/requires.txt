@@ -1,0 +1,12 @@
+kinto
+pyramid_mailer
+
+[dev]
+ruff
+kinto-client
+kinto-signer
+mock
+pytest
+pytest-cache
+pytest-cov
+webtest
