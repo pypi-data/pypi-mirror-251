@@ -1,0 +1,8 @@
+setup.py
+GeAI/__init__.py
+GeAI/available_models.py
+GeAI/connect_genai.py
+GeAI.egg-info/PKG-INFO
+GeAI.egg-info/SOURCES.txt
+GeAI.egg-info/dependency_links.txt
+GeAI.egg-info/top_level.txt
