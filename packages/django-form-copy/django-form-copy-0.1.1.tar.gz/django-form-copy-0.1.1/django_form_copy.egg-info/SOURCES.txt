@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+django_form_copy/__init__.py
+django_form_copy/apps.py
+django_form_copy.egg-info/PKG-INFO
+django_form_copy.egg-info/SOURCES.txt
+django_form_copy.egg-info/dependency_links.txt
+django_form_copy.egg-info/requires.txt
+django_form_copy.egg-info/top_level.txt
+django_form_copy/copy_paste/__init__.py
+django_form_copy/copy_paste/mixins.py
+django_form_copy/templates/__init__.py
+django_form_copy/templates/copy_paste_templates/copy_paste.html
