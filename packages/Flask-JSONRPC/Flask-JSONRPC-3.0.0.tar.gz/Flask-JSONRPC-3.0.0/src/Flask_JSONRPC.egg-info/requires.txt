@@ -1,0 +1,10 @@
+Flask<4.0,>=3.0.0
+typeguard==2.13.3
+typing_extensions>=4.3.0
+typing_inspect==0.9.0
+
+[async]
+Flask[async]<4.0,>=3.0.0
+
+[dotenv]
+Flask[dotenv]<4.0,>=3.0.0
