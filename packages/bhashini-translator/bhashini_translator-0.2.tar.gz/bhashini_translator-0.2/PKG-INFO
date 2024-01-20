@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: bhashini_translator
+Version: 0.2
+Summary: Python interface to Bhashini APIs.
+Home-page: https://github.com/dteklavya/bhashini-translator
+Author: Rajesh Pethe
+Author-email: rajesh.pethe@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.7
+License-File: LICENSE
+
+UNKNOWN
+
