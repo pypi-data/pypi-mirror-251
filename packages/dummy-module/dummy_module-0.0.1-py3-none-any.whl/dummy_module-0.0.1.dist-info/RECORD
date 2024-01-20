@@ -1,0 +1,9 @@
+dummy/__init__.py,sha256=4_h9meXMCLqsSk-Gd_Ga7oN72OBsncettC62vkLG6vE,21
+dummy/main.py,sha256=1LDkJCoX0_L6swGmjcB5KkV93LVG3Tc038ECkZjr4pw,427
+dummy_module/__init__.py,sha256=4_h9meXMCLqsSk-Gd_Ga7oN72OBsncettC62vkLG6vE,21
+dummy_module/main.py,sha256=1LDkJCoX0_L6swGmjcB5KkV93LVG3Tc038ECkZjr4pw,427
+dummy_module-0.0.1.dist-info/LICENSE,sha256=1aYUrsI8JgP7U2jnJSaksxIUGbynNUEqOQCKRBp3qNI,1180
+dummy_module-0.0.1.dist-info/METADATA,sha256=3lsqE5Q6N1JpL_u0Mbe-B6FQ9-J4-DSXQa1kOUL8T5Q,1936
+dummy_module-0.0.1.dist-info/WHEEL,sha256=Xo9-1PvkuimrydujYJAjF7pCkriuXBpUPEjma1nZyJ0,92
+dummy_module-0.0.1.dist-info/top_level.txt,sha256=yMunuo2DLhsJOMfxrwjnOucsGFp6WKpcKzNmhhVIYaY,13
+dummy_module-0.0.1.dist-info/RECORD,,
