@@ -1,0 +1,12 @@
+
+_target_: libface.analyzer.utilizer.align.Lmk3DMeshPose
+transform: None
+device:
+  _target_: torch.device
+  type: ${analyzer.device} # str
+optimize_transform: False
+downloader_meta:
+  _target_: libface.downloader.DownloaderGDrive
+  file_id: 11tdAcFuSXqCCf58g52WT1Rpa8KuQwe2o  # str
+  path_local: /opt/libface/data/3dmm/meta.pt # str
+image_size: 120
