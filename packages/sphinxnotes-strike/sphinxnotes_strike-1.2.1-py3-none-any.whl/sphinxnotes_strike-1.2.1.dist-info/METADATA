@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: sphinxnotes-strike
+Version: 1.2.1
+Summary: An extension that adds strikethrough text support to Sphinx
+Author: Shengyu Zhang
+Maintainer: Shengyu Zhang
+Project-URL: homepage, https://sphinx.silverrainz.me/strike
+Project-URL: documentation, https://sphinx.silverrainz.me/strike
+Project-URL: repository, https://github.com/sphinx-notes/strike
+Project-URL: changelog, https://sphinx.silverrainz.me/strike/changelog.html
+Project-URL: tracker, https://github.com/sphinx-notes/strike/issues
+Keywords: sphinx,extension,documentation
+Classifier: Environment :: Plugins
+Classifier: Framework :: Sphinx
+Classifier: Framework :: Sphinx :: Extension
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Documentation
+Classifier: Topic :: Documentation :: Sphinx
+Requires-Python: >=3.8
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: Sphinx >=4
+Provides-Extra: dev
+Requires-Dist: build ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+Requires-Dist: cruft ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: furo ; extra == 'docs'
+Requires-Dist: sphinxnotes-any ; extra == 'docs'
+Requires-Dist: sphinx-design ; extra == 'docs'
+Requires-Dist: sphinx-copybutton ; extra == 'docs'
+Requires-Dist: sphinxcontrib-gtagjs ; extra == 'docs'
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+
+.. This file is generated from sphinx-notes/template.
+   You need to consider modifying the TEMPLATE or modifying THIS FILE.
+
+==================
+sphinxnotes-strike
+==================
+
+.. image:: https://img.shields.io/github/actions/workflow/status/sphinx-notes/strike/pages.yml
+   :target: https://sphinx.silverrainz.me/strike
+   :alt: Documentation Status
+
+.. image:: https://img.shields.io/github/license/sphinx-notes/strike
+   :target: https://github.com/sphinx-notes/strike/LICENSE
+   :alt: Open Source License
+
+.. image:: https://img.shields.io/pypi/v/sphinxnotes-strike.svg
+   :target: https://pypi.python.org/pypi/sphinxnotes-strike
+   :alt: PyPI Package
+
+.. image:: https://img.shields.io/pypi/dw/sphinxnotes-strike
+   :target: https://pypi.python.org/pypi/sphinxnotes-strike
+   :alt: PyPI Package Downloads
+
+An extension that adds strikethrough text support to Sphinx.
+
+* Documentation: https://sphinx.silverrainz.me/strike
+* Source: https://github.com/sphinx-notes/strike
+* Changelog: https://sphinx.silverrainz.me/strike/changelog.html
+* Tracker: https://github.com/sphinx-notes/strike/issues
+* Download: https://pypi.org/project/sphinxnotes-strike/#files
