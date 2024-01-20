@@ -1,0 +1,25 @@
+platformdirs
+pyyaml
+
+[:sys_platform == "win32"]
+pywin32
+
+[dev]
+coverage[toml]==7.3.2
+pytest==7.4.3
+pytest-cov==4.1.0
+pytest-mock==3.12.0
+pytest-subprocess
+
+[lint]
+black==23.11.0
+codespell[toml]==2.2.6
+ruff==0.1.8
+yamllint==1.33.0
+
+[types]
+mypy[reports]==1.7.1
+pyright==1.1.337
+types-Pygments
+types-colorama
+types-setuptools
