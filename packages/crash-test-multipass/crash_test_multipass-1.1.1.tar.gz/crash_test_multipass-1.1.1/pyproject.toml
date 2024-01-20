@@ -1,0 +1,38 @@
+[tool.poetry]
+name = "crash-test-multipass"
+version = "1.1.1"
+description = "A command-line tool to create a Multipass instance and transfer a project to test to the newly created instance"
+authors = ["utox39 <francescomoccaldi39@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{ include = "crash_test" }]
+homepage = "https://github.com/utox39/crashtest"
+repository = "https://github.com/utox39/crashtest/issues"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: Unix",
+    "Operating System :: MacOS",
+    "Operating System :: Microsoft :: Windows",
+    "Topic :: Utilities",
+    "Intended Audience :: Developers"
+]
+
+
+[tool.poetry.scripts]
+crashtest = "crash_test.crashtest:main"
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/utox39/crashtest/issues"
+
+[tool.poetry.dependencies]
+python = ">=3.10"
+colorama = ">=0.4.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
