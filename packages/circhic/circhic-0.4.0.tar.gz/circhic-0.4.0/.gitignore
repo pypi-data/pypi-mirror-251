@@ -1,0 +1,12 @@
+*.swp
+*.swo
+*.html
+*.pdf
+.DS_Store
+
+dist
+*__pycache__*
+MANIFEST
+
+*.egg-info
+.pytest_cache

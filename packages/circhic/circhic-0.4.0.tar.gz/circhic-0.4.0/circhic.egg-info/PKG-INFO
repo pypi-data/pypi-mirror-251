@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: circhic
+Version: 0.4.0
+Summary: Visualizing HiC data of circular chromosomes
+Author: Ivan Junier
+Author-email: ivan.junier@univ-grenoble-alpes.fr
+License: new BSD
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: BSD License
+License-File: LICENSE.txt
+
+UNKNOWN
+
