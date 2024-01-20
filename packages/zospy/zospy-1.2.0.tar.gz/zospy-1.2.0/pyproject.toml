@@ -1,0 +1,117 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "zospy"
+authors = [
+    {name = "Luc van Vught", email = "l.van_vught@lumc.nl"},
+    {name = "Jan-Willem Beenakker", email = "j.w.m.beenakker@lumc.nl"},
+    {name = "Corné Haasjes", email = "c.haasjes@lumc.nl" }
+]
+description = "A Python package used to communicate with Zemax OpticStudio through the API"
+readme = "README.md"
+license = {file = "LICENSE.txt"}
+keywords = ["Zemax", "OpticStudio", "API", "ZOSAPI"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Programming Language :: Python :: 3",
+    "Typing :: Typed"
+]
+requires-python = ">=3.9,<3.13"
+dependencies = [
+    "pythonnet >=3.0.0,<4",
+    "pandas",
+    "numpy",
+    "semver >= 3.0.0,<4"
+]
+dynamic = ["version"]
+
+[project.urls]
+Source = "https://github.com/MREYE-LUMC/ZOSPy"
+Documentation = "https://mreye-lumc.github.io/ZOSPy"
+
+[project.optional-dependencies]
+# Dependencies for unit testing
+test = [
+    "pytest",
+    "tox",
+]
+
+# Dependencies for building the documentation
+docs = [
+    "ipython",
+    "myst-parser",
+    "nbsphinx",
+    "numpydoc",
+    "sphinx",
+    "sphinx-book-theme",
+    "sphinx-design",
+]
+
+# Development tools
+dev = [
+    "zospy[test]",
+    "black[jupyter] == 23.3.0",
+    "isort",
+    "pydantic ~= 2.0.0",
+    "ruff",
+]
+
+[tool.pytest.ini_options]
+markers = [
+    "must_pass: test must pass, otherwise all other tests will be skipped",
+    "require_mode: requires the specified connection mode, otherwise the test will be skipped",
+    "xfail_for_opticstudio_versions: test is expected to fail for specific OpticStudio versions"
+]
+
+[tool.mypy]
+files = [
+    "zospy"
+]
+pretty = true
+
+[[tool.mypy.overrides]]
+module = [
+    "zospy.api._ZOSAPI",
+    "zospy.api._ZOSAPI_constants"
+]
+ignore_errors = "True"
+
+[tool.black]
+line-length = 120
+
+[tool.isort]
+profile = "black"
+
+[tool.ruff]
+line-length = 120
+ignore-init-module-imports = true
+
+exclude = [
+    "zospy/api/_ZOSAPI",
+    "zospy/api/_ZOSAPI_constants"
+]
+
+# Rule sets for linting
+select = [
+    "F",    # pyflakes
+    "E",    # pycodestyle error
+    "W",    # pycodestyle warning
+    "I",    # isort
+    "D",    # pydocstyle
+    "NPY",  # numpy-specific
+]
+
+ignore = [
+    "D100",
+    "D101",
+    "D102",
+    "D103",
+    "D104",
+    "D105",
+    "D401"
+]
+
+[tool.ruff.pydocstyle]
+convention = "numpy"
