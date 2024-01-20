@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "msu-test-video-creator"
+version = "0.2.0"
+description = ""
+authors = ["MattEqualsCoder <mattequalscoder@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pydub = "^0.25.1"
+moviepy = "^1.0.3"
+pyyaml = "^6.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+msu_test_video_creator = 'msu_test_video_creator.__main__:cli'
