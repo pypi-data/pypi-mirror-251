@@ -1,0 +1,19 @@
+# Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
+_commit: v4.2.4
+_src_path: https://github.com/jupyterlab/extension-template
+author_email: contact@mljar.com
+author_name: MLJAR Sp. z o.o.
+data_format: string
+file_extension: ''
+has_binder: false
+has_settings: false
+kind: frontend
+labextension_name: '@mljar/mercuryextension'
+mimetype: ''
+mimetype_name: ''
+project_short_description: Run notebooks as web apps with Mercury inside JupyterLab.
+python_name: mercuryextension
+repository: https://github.com/mljar/mercury-extension
+test: true
+viewer_name: ''
+
