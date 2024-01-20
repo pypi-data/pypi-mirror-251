@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: facelogincodesgay
+Version: 0.1
+License-File: LICENSE
+Requires-Dist: face-recognition ==1.3.0
+Requires-Dist: face-recognition-models ==0.3.0
+Requires-Dist: opencv-python ==4.8.1.78
+Requires-Dist: cmake ==3.27.7
+Requires-Dist: dlib ==19.24.2
+Requires-Dist: numpy ==1.26.2
+
