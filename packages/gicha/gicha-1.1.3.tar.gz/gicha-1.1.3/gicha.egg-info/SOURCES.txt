@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+gicha/__init__.py
+gicha/__main__.py
+gicha/core.py
+gicha/version.py
+gicha.egg-info/PKG-INFO
+gicha.egg-info/SOURCES.txt
+gicha.egg-info/dependency_links.txt
+gicha.egg-info/requires.txt
+gicha.egg-info/top_level.txt
+gicha/mygit/__init__.py
+gicha/myos/__init__.py
+gicha/myrich/__init__.py
+gicha/sed/__init__.py
