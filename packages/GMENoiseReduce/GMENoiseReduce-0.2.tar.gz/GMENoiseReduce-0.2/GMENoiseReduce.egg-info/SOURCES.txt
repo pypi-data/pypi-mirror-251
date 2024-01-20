@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+GMENoiseReduce/GME.py
+GMENoiseReduce/__init__.py
+GMENoiseReduce.egg-info/PKG-INFO
+GMENoiseReduce.egg-info/SOURCES.txt
+GMENoiseReduce.egg-info/dependency_links.txt
+GMENoiseReduce.egg-info/requires.txt
+GMENoiseReduce.egg-info/top_level.txt
