@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: kylink
+Version: 0.0.18
+Summary: Python SDK for Kylink Platform
+Project-URL: Homepage, https://github.com/njublockchain/kylink-py
+Project-URL: Bug Tracker, https://github.com/njublockchain/kylink-py/issues
+Author-email: Kylink <kylink@nju.im>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: clickhouse-connect-pure
+Requires-Dist: pycoingecko
+Requires-Dist: web3
+Description-Content-Type: text/markdown
+
+# Kylink-py
+
+Kylink-py, means the package for Python Toolkit for Kylink Platform
+
+## Installation
+
+```
+pip install kylink
+```
+
+## Usage
+
+Example: fetch and parse a USDT Transfer Event
+
+```python
+import os
+import web3
+import kylink
+from kylink.evm import SingleEventDecoder
+
+# for internet
+ky = kylink.Kylink(api_token=YOUT_APIKEY)
+
+log = ky.eth.events(
+    "address = unhex('dac17f958d2ee523a2206206994597c13d831ec7')", limit=1
+)[0]
+
+w3 = web3.Web3()
+
+abi = {
+    "anonymous": False,
+    "inputs": [
+        {"indexed": True, "name": "from", "type": "address"},
+        {"indexed": True, "name": "to", "type": "address"},
+        {"indexed": False, "name": "value", "type": "uint256"},
+    ],
+    "name": "Transfer",
+    "type": "event",
+}
+decoder = SingleEventDecoder(w3, event_abi=abi)
+result = decoder.decode(log)
+print(result)
+
+```
+
+You can read detailed guide on [our document site](https://doc.kylink.xyz/)
