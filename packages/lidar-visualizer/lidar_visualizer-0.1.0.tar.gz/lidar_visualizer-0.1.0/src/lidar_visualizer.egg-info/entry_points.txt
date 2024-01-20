@@ -1,0 +1,2 @@
+[console_scripts]
+lidar_visualizer = lidar_visualizer.lidar_visualizer:main
