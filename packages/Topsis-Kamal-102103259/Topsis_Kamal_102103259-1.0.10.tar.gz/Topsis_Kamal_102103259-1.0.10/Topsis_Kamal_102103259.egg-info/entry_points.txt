@@ -1,0 +1,3 @@
+[console_scripts]
+Topsis_Kamal_102103259 = Topsis_Kamal_102103259.main:main
+
