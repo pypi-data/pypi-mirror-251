@@ -1,0 +1,11 @@
+onion/__init__.py,sha256=0AwWy7mNhTnHEoiiMYT8lGNos0HEuQh5E4UdEKqcaiE,86
+onion/__version__.py,sha256=kmB-ALBgaAq4w5ztC7NlMyjzWCD4iVSTOsVsFHG4LQA,464
+onion/classes.py,sha256=a6iNEFN5x7pcmk0KiVprCC5sX5tUuRbDa__LxNrXR94,18200
+onion/functions.py,sha256=iA6d-wuqQhulaEBZ5XCZ3Bg_sd_0-dJWLtbwJyDRrAc,37237
+onion/main.py,sha256=1RdttW4XnYxsqtIBTT_4Td10NJPdvxSEY-nhDSuPbAo,27076
+onion/main_2d.py,sha256=TAcLUvcbOp4pQi4iqSnCbWUemWw5t_iluGZuJsz4ptU,34321
+onion/utilities.py,sha256=Psk1RN4leVFBlynh3bWkx9GHnpg2YyE9eFL5kJ2BF2I,5924
+onion_clustering-0.0.1.dist-info/METADATA,sha256=BKpHPSBO8oEou8QUc0MIJ5XO-kmuBu3RLM8tjKuWZ34,6627
+onion_clustering-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+onion_clustering-0.0.1.dist-info/top_level.txt,sha256=p-yx5jCYtDha-pHNxVLFH1RQfbjCGEEQcw8F729WpD8,6
+onion_clustering-0.0.1.dist-info/RECORD,,
