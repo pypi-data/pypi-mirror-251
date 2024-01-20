@@ -1,0 +1,11 @@
+python-dateutil
+elasticsearch<9.0.0,>=8.0.0
+
+[develop]
+pytest
+pytest-cov
+pytest-mock
+pytz
+coverage
+sphinx>2
+sphinx-rtd-theme>0.5
