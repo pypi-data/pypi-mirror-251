@@ -1,0 +1,10 @@
+__pycache__/
+.DS_Store
+bin
+lib
+pyvenv.cfg
+share
+etc
+.ipynb_checkpoints
+.cache
+docs/img/logo.psd
