@@ -1,0 +1,8 @@
+espuma/__init__.py,sha256=BnTvm4OLcyegaNJMSvLUY6oWttfSvc6ngyqbmc3XHFw,76
+espuma/base.py,sha256=5hZS5oCaU5007eEdHIrOIRnihu5ECq8w99uJmwSjhk4,14295
+espuma/boundary_probe.py,sha256=c7k8DDP8sWJJBjdNSDtVEe454yuc0aCqEA_-mCxBugU,5196
+espuma/scripts/pointFiles.sh,sha256=s25TVYpI6yrqmH9ptaJHZX5ImSnzl9fycZoBjtEv76I,1452
+espuma-0.0.8.dist-info/METADATA,sha256=9f8iqMY6yJCNRoF11OHxnLPfJGy4kFLfx6X7nRj0Juk,594
+espuma-0.0.8.dist-info/WHEEL,sha256=mRYSEL3Ih6g5a_CVMIcwiF__0Ae4_gLYh01YFNwiq1k,87
+espuma-0.0.8.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+espuma-0.0.8.dist-info/RECORD,,
