@@ -1,0 +1,71 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name =  "boringavatars"
+authors = [
+    {name = "Federico Bond", email = "federicobond@gmail.com"},
+]
+description = "A Python port of the boring-avatars JS library."
+readme = "README.md"
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11"
+]
+requires-python = ">=3.8"
+dynamic = ["version"]
+dependencies = [
+    "Jinja2>=3.0.0",
+]
+source = ["."]
+
+[project.optional-dependencies]
+test = [
+    "black==23.12.1",
+    "check-manifest==0.48",
+    "pre-commit==3.5.0",
+]
+
+[project.urls]
+Documentation = "https://github.com/federicobond/boringavatars"
+Source = "https://github.com/federicobond/boringavatars"
+Tracker = "https://github.com/federicobond/boringavatars"
+
+[tool.ruff]
+exclude = ["tests/snapshots"]
+
+[tool.black]
+exclude = "tests/snapshots"
+
+executionEnvironments = [
+  { root = "src" }
+]
+
+[[tool.mypy.overrides]]
+module = 'snapshottest'
+ignore_missing_imports = true
+
+[[tool.mypy.overrides]]
+module = 'jinja2'
+ignore_missing_imports = true
+
+[tool.hatch]
+
+[tool.hatch.version]
+path = "src/boringavatars/__init__.py"
+
+[tool.hatch.build.targets.sdist]
+exclude = [
+  ".gitignore",
+  ".github",
+  ".vscode",
+  ".devcontainer",
+  ".pre-commit-config.yaml",
+]
