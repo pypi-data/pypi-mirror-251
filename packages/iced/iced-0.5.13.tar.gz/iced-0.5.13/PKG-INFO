@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: iced
+Version: 0.5.13
+Summary: ICE normalization
+Author: Nelle Varoquaux
+Author-email: nelle.varoquaux@gmail.com
+License: BSD
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: BSD License
+License-File: LICENSE
