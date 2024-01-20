@@ -1,0 +1,56 @@
+[package]
+name = "css-inline"
+version = "0.13.0"
+authors = ["Dmitry Dygalo <dmitry@dygalo.dev>"]
+edition = "2021"
+license = "MIT"
+readme = "../README.md"
+description = "High-performance library for inlining CSS into HTML 'style' attributes"
+repository = "https://github.com/Stranger6667/css-inline"
+keywords = ["css", "html", "email", "stylesheet", "inlining"]
+exclude = [
+  ".github",
+  ".pre-commit-config.yaml",
+  ".yamllint",
+  ".gitignore",
+  "tests",
+]
+categories = ["web-programming"]
+rust-version = "1.65"
+
+[[bin]]
+name = "css-inline"
+
+[features]
+default = ["cli", "http", "file"]
+cli = ["pico-args", "rayon"]
+http = ["reqwest"]
+file = []
+
+[dependencies]
+cssparser = "0.31.2"
+html5ever = "0.26.0"
+indexmap = "2.1"
+pico-args = { version = "0.3", optional = true }
+rayon = { version = "1.7", optional = true }
+reqwest = { version = "0.11.23", optional = true, default-features = false, features = ["rustls-tls", "blocking"] }
+rustc-hash = "1.1.0"
+selectors = "0.25.0"
+smallvec = "1"
+url = "2"
+
+[dev-dependencies]
+assert_cmd = "2.0.6"
+codspeed-criterion-compat = "2.3.0"
+criterion = { version = "0.5.1", features = [], default-features = false }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+test-case = "3.3"
+
+[[bench]]
+name = "inliner"
+harness = false
+
+[profile.release]
+lto = "fat"
+codegen-units = 1
