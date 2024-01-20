@@ -1,0 +1,179 @@
+Metadata-Version: 2.1
+Name: ventiotools
+Version: 0.1.0
+Summary: Tools for usage in the Vent.io ecosystem
+Author-Email: Nicolas Bogun <143806426+NicolasBogun@users.noreply.github.com>
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Requires-Dist: PyYAML==6.0
+Requires-Dist: pyspark==3.5.0
+Requires-Dist: numpy>=1.26.3
+Requires-Dist: pandas>=2.1.4
+Description-Content-Type: text/markdown
+
+# Automated feature engineering
+
+## Why is it important?
+
+Feature engineering is the process of meticulously crafting, selecting, or transforming raw data into informative and relevant features that can be used to train machine learning models effectively. It involves tasks such as handling missing values, scaling features to a consistent range, encoding categorical variables, creating new features through mathematical operations or domain-specific insights, and extracting meaningful patterns from the data. This crucial step in the data preprocessing pipeline enables models to extract insights, make accurate predictions, and generalize well to new, unseen data, ultimately playing a pivotal role in the success of various machine learning applications.
+
+In general feature engineering is a time consuming task which is why we want to automate certain parts of the process. The following milestones in the development are defined:
+
+1. Create features for numerical data
+2. Create features for categorical data
+3. Select n most important features
+4. Train baseline model on the data and return performance metrices
+5. Extend the pipeline for timeseries data
+
+## 1) Create features for numerical data
+
+In the first phase features for numerical data should be created. This includes grouping by variables and apply aggregation functions. E.g. min, max, mean, median, std. In addition to that interactions between variables should be taken into account, e.g ratios between numerical variables. In addition to that these features should be lagged or accumulated over time in case it is a time-series problem.
+
+## 2) Create features for categorical data
+
+Categorical data should be One-Hot-Encoded. Discuss if it is necessary when using CatBoost.
+
+## 3) Interface
+
+The aggregations should be defined in a YAML like configuration file. E.g.:
+
+- Numerical_variables
+
+  - column: Anschaffungswert, Rating
+  - aggregation: sum, min, max, mean, median, stdev, binning
+  - group: Produkt, Unternehmensform, Zielmark
+  - time_var: Angebotsdatum
+  - rolling: 3 months
+  - accumulating: 3 months
+  - lagging: 3 months
+
+- Date_variables
+
+  - column: Angebotsdatum
+  - extract: month, day of the year, day of the month, day of the week
+  - encoding: sin-cos encoding
+
+- Categorical_variables
+  - column: Zielmarkt
+  - encoding: OHE (with some logic, like only up to maximum 20 categories, else some other method)
+
+## Comments on Repo
+
+[Follow the official
+guide](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository),
+searching for "template".
+
+The `infrastructure/` directory contains the basic terraform structure, declaration of
+the [`azurerm`
+provider](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs) and
+some commonly used variables.
+
+[`lerna.json`](lerna.json) contains only the definition of the packages directory.
+
+To quickly update the repo for your new project, find and replace all occurrences of
+`project-template` in [`lerna.json`](lerna.json) as well as
+[`package.json`](package.json), then run `npm i` to install dependencies and create the
+initial `package-lock.json`.
+
+## Usage of the Automated Feature Engineering Framework
+
+### How to access the Framework
+
+Implementation as a PIP-Package (still to do)  
+If done: pip install _name of package_  
+And in code: import _name of package_ as _abbreviation_
+
+### General Purpose
+
+This Package serves the purpose of automatically creating additional features for a given dataset. It is parallelized using **Apache Spark**.  
+The functionality of the package includes:
+
+1. Data Profiling  
+   -> Figure out the datatype of each column in a dataframe based on regular expressions  
+   -> Impute missing values in a dataframe (function _impute_missing_values_)
+2. Feature Generation  
+   -> For **Numerical Variables**, create several aggregations (e.g. sum, min, max, mean, median) with the possibility to group by a certain variable and also having the possibility to only take into account a certain timeframe within the dataset and create rolling, lagging and accumulating statistics for it (for timeseries problems)  
+   -> For **Date Variables**, extract information such as month, day of the year etc. and also give the opportunity to encode the variables (as of now, there is only the opportunity to use _sin-cos-encoding_)  
+   -> For **Categorical Values**, enable One-Hot-Encoding
+
+The Dataframe is read in using _Databricks Connect_.  
+Finally, the Dataframe can be saved as a _Databricks Table_ for further analysis.
+
+### Explanation of each Function
+
+#### featureprep.py
+
+##### profile_data
+
+This function determines the datatype of a column in a dataframe by using regular expressions.  
+Currently, it can determine the following datatypes:
+
+- Numerical (for float and int)
+- Categorical (for all columns with less than 20 distinct values)
+- Integer
+- Float
+- String
+- Date
+- Datetime
+
+Input: Dataframe with columns to profile  
+Returns: Dictionary with the Datatype and their related columns
+
+##### impute_missing_values
+
+This function serves the purpose to fill missing values with a given value.
+
+Input:
+(_df_, _column_types_, _numerical_value_, _categorical_value_)
+
+- df: Dataframe with the missing values
+- column*types: The column types as a dictionary (from the \_profile_data* function)
+- numerical_value: Value to fill in the missing values in numerical columns (default: mean value of the column)
+- categorical_value: categorical_value to fill in the categorical variables (default: "missing")
+
+Returns: Imputed Dataframe
+
+#### feature_generator.py
+
+##### generate_features
+
+This function serves the purpose to generate all the features for numerical, categorical and date variables.  
+It calls each function for the variables seperately.  
+Input: Dataframe, Configuration File as YAML  
+Returns: Dataframe with Additional Features
+
+##### generate_date_features
+
+This function creates additional features for date variables. As of now, it can extract the following values:
+
+- month
+- year
+- dayofmonth
+- dayofweek
+- dayofyear
+- weekofyear
+  The function also gives the opportunity to apply sin-cos encoding to the given values. This is helpful for the extraction of cyclical behaviour.  
+  The encoding has to be enabled in the config file.  
+  Input: Dataframe, Configuration File as YAML  
+  Returns: Dataframe with Additional Features
+
+##### generate_numerical_features
+
+This function creates additional features for numerical variables. As of now, it can apply several statistical functions such as _min_,_max_,_mean_, etc. to a column.  
+It can also take into account a certain timeframe within the dataset and create rolling, lagging and accumulating statistics for it (for timeseries problems).  
+Input: Dataframe, Configuration File as YAML  
+Returns: Dataframe with Additional Features
+
+##### generate_categorical_features
+
+This function creates additional features for categorical variables by applying One-Hot-Encoding to it. This means that for a column with less than 20 distinct values, each value will get their own column (If the value is given, the column will contain 1, else 0)  
+This enables several machine learning models to use this function as they can only process numerical values.  
+Input: Dataframe, Configuration File as YAML  
+Returns: Dataframe with Additional Features
+
+### Outlook
+
+The goal of this package is to automate the time consuming feature engineering process. In the future, the package shall be enhanced to also being able to _select n most important features_ and _train a model on the data with the new features_. Finally, a comparison between the package's output and a model without feature engineering shall be done to demonstrate the advantage of using it.
