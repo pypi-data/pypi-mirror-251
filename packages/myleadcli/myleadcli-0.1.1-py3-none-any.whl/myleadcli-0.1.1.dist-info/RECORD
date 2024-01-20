@@ -1,0 +1,13 @@
+myleadcli/__init__.py,sha256=5xvN_gb61nKeq5TER5dSfcArTP3DVasZGN_MQq5dNpA,23
+myleadcli/__main__.py,sha256=9abZ_vv-ci-fk9YQqOYIlJOF-Gf5DjW3YZGzctLVYQw,62
+myleadcli/main.py,sha256=Z7fSEulFeHz5q7UZ3MCJ9LKeY83LQ69psxDETbrfjr8,6855
+myleadcli/ml.py,sha256=Q-xZHwYhoniHxUduIyXf7pvAX5SGybylPeD6A0C_vLE,4818
+myleadcli/models.py,sha256=8HXqiEPzmSh0sf5AAayz75N1mmxbAwiZD5aRztmi7sw,1926
+myleadcli/plotting.py,sha256=_bV6WwLMQwSEp1LPH6rN7ITaYGJwb-ujNDK-VL2cF_M,5935
+myleadcli/tables.py,sha256=_r3skJCMOl6E_vpgYNCoavxiHnhnBVyCcZJisVeJ0HY,7119
+myleadcli/utils.py,sha256=HMygVw60jExHO8t3c-hx9_rHyl0RG9R_c68ZLy6srPY,3562
+myleadcli-0.1.1.dist-info/entry_points.txt,sha256=htL8dD3z6GVndLJVEpZCzQgfOshx4_WZWOrwNtr4qhQ,48
+myleadcli-0.1.1.dist-info/LICENSE,sha256=gmLZUuhCljdVRg4JNZ3Sz5A5m5wQc-b9wkuKq5nv8ZM,1081
+myleadcli-0.1.1.dist-info/METADATA,sha256=xe1db9qfl1-grSGuKvoGA0iybefGVdpGBj0xb2JWGZg,3053
+myleadcli-0.1.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+myleadcli-0.1.1.dist-info/RECORD,,
