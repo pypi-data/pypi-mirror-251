@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+src/RetryIT.egg-info/PKG-INFO
+src/RetryIT.egg-info/SOURCES.txt
+src/RetryIT.egg-info/dependency_links.txt
+src/RetryIT.egg-info/not-zip-safe
+src/RetryIT.egg-info/top_level.txt
+src/retryit/__init__.py
