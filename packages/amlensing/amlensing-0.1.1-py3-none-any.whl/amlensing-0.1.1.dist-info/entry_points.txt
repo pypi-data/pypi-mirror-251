@@ -1,0 +1,4 @@
+[console_scripts]
+amlensing = amlensing.cmdline:main
+amlensing-dl = amlensing.utils.query:main
+amlensing-xm = amlensing.utils.crossmatch:main
