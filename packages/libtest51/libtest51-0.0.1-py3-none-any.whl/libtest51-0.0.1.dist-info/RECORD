@@ -1,0 +1,9 @@
+libtest51/__init__.py,sha256=TUTB9QPC_Z1T_MNFzfk1wlLWu_TOaqZ-OF0yQvrz5R4,17
+libtest51/__main__.py,sha256=SaITD470hCNEV9ooKa0fVve8NmQtRAY7wYkQ-hW3oiQ,208
+libtest51/functions.py,sha256=RG2DJF-1VEH6tbaQYKmyvqolqviqXFHOYEk86P67hoQ,1228
+libtest51/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+libtest51-0.0.1.dist-info/LICENSE,sha256=np3IfD5m0ZUofn_kVzDZqliozuiO6wrktw3LRPjyEiI,1073
+libtest51-0.0.1.dist-info/METADATA,sha256=xFf-LCQDy2khtvg9iv8Q9hUJvDhwnAUoBzVCXKm_ECg,3742
+libtest51-0.0.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+libtest51-0.0.1.dist-info/entry_points.txt,sha256=LdmSewBa8Gvmf2ovg57jrkuuPFX4gethRAa9qsEZihY,53
+libtest51-0.0.1.dist-info/RECORD,,

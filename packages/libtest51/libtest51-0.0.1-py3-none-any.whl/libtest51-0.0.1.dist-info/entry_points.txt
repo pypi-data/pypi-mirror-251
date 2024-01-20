@@ -1,0 +1,3 @@
+[console_scripts]
+libtest51=libtest51.__main__:main
+
