@@ -1,0 +1,12 @@
+oracle_predeployed/__init__.py,sha256=v6RlhUPivYk-qkTzOZYDbB2H9A1jLiPUOL7GJvgyb-s,293
+oracle_predeployed/address.py,sha256=3-wKlQEiveW-_zl_XyyrWQs1I-FqJV0oqQypSr3w85M,187
+oracle_predeployed/oracle_generator.py,sha256=JqdLnHFALMJTPcbr7-rXD1oOqmqF3eZs6Lxl-gTAQhg,820
+oracle_predeployed/oracle_upgradeable_generator.py,sha256=nK0IeCITdbPQmQuz-lzDTPjhOFQvIlejYdHPFmDqAIk,1149
+oracle_predeployed/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+oracle_predeployed/artifacts/.keep,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+oracle_predeployed/artifacts/Oracle.json,sha256=w5H0bBICBrJmjYsHg_JkoaheFZXlfdvj9iLEjXEzWlM,36913
+oracle_predeployed/artifacts/OracleUpgradeable.json,sha256=I4l2vsfq9csTvYcvKn-gDMunLzjGBQbt8YKQl-wiWxg,38700
+oracle_predeployed-1.0.0a2.dist-info/METADATA,sha256=ZkIW8VVHgUf-CqZ7h-RxFXO14nNcSqNGfIs3TGErdiM,1348
+oracle_predeployed-1.0.0a2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+oracle_predeployed-1.0.0a2.dist-info/top_level.txt,sha256=AleiMA6A3mjnzYQP9ucfhGzyICpcaPqpM_4z4RJXzKE,19
+oracle_predeployed-1.0.0a2.dist-info/RECORD,,
