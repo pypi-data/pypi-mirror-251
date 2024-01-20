@@ -1,0 +1,10 @@
+setup.py
+distributionsbyShakti/Binomialdistribution.py
+distributionsbyShakti/Gaussiandistribution.py
+distributionsbyShakti/Generaldistribution.py
+distributionsbyShakti/__init__.py
+distributionsbyShakti.egg-info/PKG-INFO
+distributionsbyShakti.egg-info/SOURCES.txt
+distributionsbyShakti.egg-info/dependency_links.txt
+distributionsbyShakti.egg-info/not-zip-safe
+distributionsbyShakti.egg-info/top_level.txt
