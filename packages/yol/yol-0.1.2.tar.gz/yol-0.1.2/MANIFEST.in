@@ -1,0 +1,11 @@
+include yol/trace_display/package.json
+include yol/trace_display/package-lock.json
+recursive-include yol/trace_display/public *
+recursive-include yol/trace_display/src *
+recursive-include yol/trace_display/build *
+prune dist
+prune yol_examples
+prune yol/trace_display/node_modules
+global-exclude .gitignore
+global-exclude .pylintrc
+global-exclude .pyirc
