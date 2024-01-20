@@ -1,0 +1,3 @@
+[console_scripts]
+coodeer=coodeer.cli.coodeer:cli
+

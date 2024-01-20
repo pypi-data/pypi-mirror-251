@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: coodeer
+Version: 0.4.14
+Summary: Minimalistic local debian repository using packages in S3 bucket as source
+License: GPL-2.0-only
+Author: doubleO8
+Author-email: wb008@hdm-stuttgart.de
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: PyYAML (>=6.0.1,<7.0.0)
+Requires-Dist: boto3 (>=1.34.7,<2.0.0)
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Requires-Dist: pydantic (>=1.10,<2.0)
+Requires-Dist: python-magic (>=0.4.27,<0.5.0)
+Description-Content-Type: text/x-rst
+
+README
+======
+
+Library and CLI Tool for creating minimalistic, local debian packages repository.
+Debian packages are expected to reside in an S3 bucket.
+The ``dpkg-scanpackages`` is required to be locally installed.
+
+CLI Usage
+---------
+
+Prerequisites
+"""""""""""""
+
+Set up environment variables: AWS Credentials and default bucket name.
+
+.. code:: console
+
+    # copy example files
+    # envrc (https://direnv.net/)
+    cp .envrc.example .envrc
+    # .. add AWS credentials if needed, adjust bucket ..
+    direnv allow
+
+Upload debian packages
+""""""""""""""""""""""
+
+.. code:: console
+
+    coodeer upload example-dependencies_1.23_all.deb
+    coodeer upload example_1.23.0_all.deb
+    coodeer upload example_1.23.1_all.deb
+
+
+Publish (default) specification
+"""""""""""""""""""""""""""""""
+
+.. code:: console
+
+    coodeer publish repository-specification.example.yaml
+
+Create repositories
+"""""""""""""""""""
+
+.. code:: console
+
+    coodeer create /tmp/my-repositories
+
