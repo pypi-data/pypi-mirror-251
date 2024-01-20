@@ -1,0 +1,19 @@
+<?xml version='1.0'?>
+<volume>
+    <name>{{ name }}</name>
+    <capacity>{{ capacity }}</capacity>
+    {% if allocation is defined %}
+        <allocation>{{ allocation }}</allocation>
+    {% endif %}
+    {% if target %}
+        <target>
+            {% if format is defined %}
+                <format type='{{ format }}' />
+            {% endif %}
+            {% if nocow is defined and nocow %}
+                <nocow />
+            {% endif %}
+        </target>
+    {% endif %}
+{# vim: set ft=jinja : #}
+</volume>
