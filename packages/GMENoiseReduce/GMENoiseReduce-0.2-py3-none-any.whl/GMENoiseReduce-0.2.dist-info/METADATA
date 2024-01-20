@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: GMENoiseReduce
+Version: 0.2
+Summary: Generalised Maximum Entropy white noise Elimination
+Home-page: https://github.com/erichoman/GMENoiseReduce
+Download-URL: https://github.com/user/reponame/archive/v_01.tar.gz
+Author: Eric Homan
+Author-email: ejhoman92@gmail.com
+License: MIT
+Keywords: Noise,Noise-reduction,Noise removal
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+Requires-Dist: numpy
+
