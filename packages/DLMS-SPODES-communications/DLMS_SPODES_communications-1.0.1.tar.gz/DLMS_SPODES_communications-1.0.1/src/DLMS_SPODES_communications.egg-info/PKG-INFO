@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: DLMS_SPODES_communications
+Version: 1.0.1
+Summary: dlms-spodes
+Author-email: Serj Kotilevski <youserj@outlook.com>
+Project-URL: Source, https://github.com/youserj/DLMSSPODEScommunication_prj
+Keywords: dlms,drivers
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: bleak==0.20.2
+Requires-Dist: netaddr>=0.8.0
+Requires-Dist: pyserial>=3.5
+
+# DLMSSPODEScommunication_prj
+DLMSSPODEScommunications_prj
