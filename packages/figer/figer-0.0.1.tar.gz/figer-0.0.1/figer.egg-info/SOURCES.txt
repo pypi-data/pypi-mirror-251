@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+figer/__main__.py
+figer/main.py
+figer.egg-info/PKG-INFO
+figer.egg-info/SOURCES.txt
+figer.egg-info/dependency_links.txt
+figer.egg-info/top_level.txt
