@@ -1,0 +1,33 @@
+[build-system]
+requires = [ "setuptools>=67.0", "setuptools_scm[toml]>=7.1",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pandera-sampler"
+version = "0.0.4"
+authors = []
+description = "A compact package to enhance ML development."
+readme = "README.md"
+requires-python = ">=3.10"
+dynamic = [ "dependencies",]
+classifiers = [ "Programming Language :: Python :: 3", "License :: OSI Approved :: MIT License", "Operating System :: OS Independent",]
+
+[project.urls]
+Homepage = "https://github.com/pypa/samplesproject"
+"Bug Tracker" = "https://github.com/pypa/sampleproject/issues"
+
+[tool.black]
+line-length = 88
+
+[tool.ruff]
+line-length = 88
+target-version = "py312"
+fix = true
+unfixable = []
+select = [ "F", "E", "W", "T10", "I",]
+
+[tool.setuptools.dynamic.dependencies]
+file = [ "requirements.txt",]
+
+[tool.setuptools.dynamic.optional-dependencies.dev]
+file = [ "requirements-dev.txt",]
