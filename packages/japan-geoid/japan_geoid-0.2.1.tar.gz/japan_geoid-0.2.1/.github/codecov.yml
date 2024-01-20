@@ -1,0 +1,2 @@
+ignore:
+  - "japan-geoid-py/**/*.rs" 
