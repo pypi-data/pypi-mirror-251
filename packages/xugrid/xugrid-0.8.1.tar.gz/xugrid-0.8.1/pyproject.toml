@@ -1,0 +1,69 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "xugrid"
+description = "Xarray extension for unstructured grids"
+readme = { file = "README.rst", content-type = "text/x-rst" }
+maintainers = [{ name = "Huite Bootsma", email = "huite.bootsma@deltares.nl" }]
+requires-python = ">=3.9"
+dependencies = [
+    'pandas',
+    'numba',
+    'numba_celltree',
+    'numpy',
+    'pooch',
+    'scipy',
+    'xarray',
+]
+dynamic = ["version"]
+classifiers = [
+    'Development Status :: 3 - Alpha',
+    'Intended Audience :: Science/Research',
+    'License :: OSI Approved :: MIT License',
+    'Programming Language :: Python',
+    'Operating System :: OS Independent',
+    'Programming Language :: Python :: 3',
+    'Programming Language :: Python :: 3.9',
+    'Programming Language :: Python :: 3.10',
+    'Programming Language :: Python :: 3.11',
+    'Programming Language :: Python :: Implementation :: CPython',
+    'Topic :: Scientific/Engineering',
+]
+keywords = ['mesh', 'ugrid', 'unstructured grid', 'xarray']
+license = { text = "MIT" }
+
+[project.urls]
+Home = "https://github.com/deltares/xugrid"
+Code = "https://github.com/deltares/xugrid"
+Issues = "https://github.com/deltares/xugrid/issues"
+
+[project.optional-dependencies]
+all = [
+    'geopandas',
+    'mapbox_earcut',
+    'matplotlib',
+    'meshkernel >= 3.0.0',
+    'netcdf4',
+    'pooch',
+    'shapely >= 2.0',
+    'pyproj',
+    'zarr',
+]
+
+[tool.hatch.version]
+path = "xugrid/__init__.py"
+
+[tool.hatch.build.targets.sdist]
+only-include = ["xugrid", "tests"]
+
+[tool.isort]
+profile = "black"
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "@abc.abstractmethod",
+    "@abc.abstractproperty",
+]
