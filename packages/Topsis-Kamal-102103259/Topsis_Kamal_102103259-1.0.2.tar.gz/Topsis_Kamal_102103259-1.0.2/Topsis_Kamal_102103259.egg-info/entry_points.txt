@@ -1,0 +1,3 @@
+[console_scripts]
+Topsis_Kamal_102103259 = src.main:main
+
