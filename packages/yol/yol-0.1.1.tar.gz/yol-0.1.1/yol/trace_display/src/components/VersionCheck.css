@@ -1,0 +1,17 @@
+/* VersionCheck.module.css */
+
+/* Block */
+/* Element */
+.versionCheck__alert {
+  display: flex;
+  align-items: center;
+}
+
+.versionCheck__copy-icon {
+  margin-left: 8px; /* Adjust the space as needed */
+}
+
+/*to make command lowercase:*/
+.versionCheck__command {
+  text-transform: lowercase; /* This will ensure the text is always in lowercase */
+}
