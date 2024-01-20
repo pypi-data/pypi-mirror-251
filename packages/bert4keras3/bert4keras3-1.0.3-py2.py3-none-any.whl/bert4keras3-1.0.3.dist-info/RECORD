@@ -1,0 +1,12 @@
+bert4keras3/__init__.py,sha256=rCD1X1sIYvUEkTKmyxhj5ZwjPmSpdM-Hac7P0lmJKYo,150
+bert4keras3/backend.py,sha256=qLrozfruFeOYf_ZjVtfWELMRgNs5M8hBFwt7s88itg0,19454
+bert4keras3/layers.py,sha256=WnjpuF6VvcdfiG5nzqjxloAFbskIMDdiP245e0JA8dE,46102
+bert4keras3/models.py,sha256=Lw1SiCpUn6BzF-2ofPgSnXNWULzXzkTEztkTKvSB4eE,105379
+bert4keras3/ops.py,sha256=Y7WVUNE9oLmZUu9HCVn-g9mt7GeoK54xY9L1JLwoelw,30004
+bert4keras3/snippets.py,sha256=0o9vhKWrraAS6AoBnNXqKvxGcqpwAg2HA7s0AWISxR0,27502
+bert4keras3/tokenizers.py,sha256=PCxtC4L9tF2w-GUDujdPK8Z5WlnbaL8mYhRfHn1S_Qg,15509
+bert4keras3-1.0.3.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+bert4keras3-1.0.3.dist-info/METADATA,sha256=BS0mXeL8GRnHc2Al921w-L3UtRenk1TRkhrEMliUMf8,5478
+bert4keras3-1.0.3.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+bert4keras3-1.0.3.dist-info/top_level.txt,sha256=cPWwwxSejEMpgAZFzYQc0WmhPrF3XwP3k1IwRO93gwQ,12
+bert4keras3-1.0.3.dist-info/RECORD,,
