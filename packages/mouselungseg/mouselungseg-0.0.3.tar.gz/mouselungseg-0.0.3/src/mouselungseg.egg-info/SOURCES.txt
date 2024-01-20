@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+src/mouselungseg/__init__.py
+src/mouselungseg/cli.py
+src/mouselungseg/napari.yaml
+src/mouselungseg/predict.py
+src/mouselungseg.egg-info/PKG-INFO
+src/mouselungseg.egg-info/SOURCES.txt
+src/mouselungseg.egg-info/dependency_links.txt
+src/mouselungseg.egg-info/entry_points.txt
+src/mouselungseg.egg-info/requires.txt
+src/mouselungseg.egg-info/top_level.txt
+src/mouselungseg/napari_plugin/__init__.py
+src/mouselungseg/napari_plugin/plugin.py
