@@ -1,0 +1,9 @@
+Jinja2~=3.1.2
+Pillow~=10.0.1
+filelock~=3.12.3
+future~=0.18.2
+python-dotenv~=1.0.0
+torch~=2.0.1
+transformers~=4.33.2
+tree_sitter==0.20.4
+zipp~=3.17.0
