@@ -1,0 +1,8 @@
+pyproject.toml
+setup.py
+src/__init__.py
+src/tcs-autograder.py
+tcs_autograder.egg-info/PKG-INFO
+tcs_autograder.egg-info/SOURCES.txt
+tcs_autograder.egg-info/dependency_links.txt
+tcs_autograder.egg-info/top_level.txt
