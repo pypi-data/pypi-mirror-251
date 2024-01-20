@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "streamlit1"
+version = "0.1.0"
+description = ""
+authors = ["L-Balasrinivasan <bala.srinivasan@eminds.ai>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+psycopg2 = "^2.9.9"
+streamlit = "^1.30.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

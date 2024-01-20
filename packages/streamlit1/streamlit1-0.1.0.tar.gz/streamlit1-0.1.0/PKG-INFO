@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: streamlit1
+Version: 0.1.0
+Summary: 
+Author: L-Balasrinivasan
+Author-email: bala.srinivasan@eminds.ai
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: psycopg2 (>=2.9.9,<3.0.0)
+Requires-Dist: streamlit (>=1.30.0,<2.0.0)
+Description-Content-Type: text/markdown
+
+
