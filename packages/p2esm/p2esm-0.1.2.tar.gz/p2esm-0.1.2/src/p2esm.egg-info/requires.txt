@@ -1,0 +1,4 @@
+numpy
+matplotlib
+tk
+p2api
