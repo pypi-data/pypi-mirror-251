@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: amit26april
+Version: 0.0.4
+Summary: A libirary to automate developing keras models
+Author: Ayush Agrawal
+Author-email: aagrawal963@gmail.com
+Keywords: experts,begginers,deep learning,ai ultimate,ayush agrawal,automate steps of deep learning,manupliate image dataset,ai less code,ai work companion,basic model develoment,expert kit,ai,tensorflow,keras
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: tensorflow
+Requires-Dist: keras
+Requires-Dist: scikit-learn
+Requires-Dist: tqdm
+Requires-Dist: seaborn
+Requires-Dist: Pillow
+
+# Introduction
+- This project helps the begginers to generate ai models with 1 line of code.
+- It is also useful for experts as it will automate repetative task and experts can focus upon main model
+- It works right now only for image classification but there may be updates in future
+
+# Simple Usage for Begginers
+- Here, I have created a model to classify humuan face into 7 emotions in just 4 lines
+```
+    from amit26april.image_cnn import classification
+
+    model = classification()
+    model = model.create('TRAIN',7)
+    model.predict([x_test[0]])
+``````
+
+# Simple usage for Experts
+- Here the preperation of data is automated and it now depends upon developer , how to move futher
+
+```
+    from amit26april.image_cnn import classification
+
+    x=classification()
+    df = x.create_dataframe('TRAIN')
+    y_train = x.prep_y_train
+    x_train = x.prep_x_train
+    # Rest complex work can be done on own
+```
