@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+amit26april/__init__.py
+amit26april/image_cnn.py
+amit26april.egg-info/PKG-INFO
+amit26april.egg-info/SOURCES.txt
+amit26april.egg-info/dependency_links.txt
+amit26april.egg-info/requires.txt
+amit26april.egg-info/top_level.txt
