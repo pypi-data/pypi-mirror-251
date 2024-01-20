@@ -1,0 +1,2 @@
+[oslo.config.opts]
+aprsd_borat_plugin.conf = aprsd_borat_plugin.conf.opts:list_opts

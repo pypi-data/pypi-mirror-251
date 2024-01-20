@@ -1,0 +1,13 @@
+aprsd_borat_plugin/__init__.py,sha256=TdVOkUn4yiHgSOD3BpGvlt4cIf4jopOKHRadXKfGmqI,644
+aprsd_borat_plugin/aprsd_borat_plugin.py,sha256=-muH0v3VgDVR1uQu7JjnfGIbqAco5M0StT0usai7eOs,1552
+aprsd_borat_plugin/quotes.py,sha256=tff3AFia73XinnnpIcO1KdFiVeQGngm91HRkoOTS33E,4119
+aprsd_borat_plugin/conf/__init__.py,sha256=Hlm8CBq9rOPliXDOZwtVdOqZpL-5ByQPe-ayklutLcg,113
+aprsd_borat_plugin/conf/main.py,sha256=1fqFksWkGnQ0FVhMwIPnPCRw6eai7ifW0OSmkxjvYe8,470
+aprsd_borat_plugin/conf/opts.py,sha256=Lz5ef6-P9Or6IkxHIwILBFD2_oao3ct4C07ANPyzuIw,2736
+aprsd_borat_plugin-0.1.1.dev1.dist-info/LICENSE,sha256=xVbtXvsiszsTpzGvc9md99kkiYHV_nSU43TUu0Uwstw,1087
+aprsd_borat_plugin-0.1.1.dev1.dist-info/METADATA,sha256=5wAavuF5el9xzOe2jxEe5bsCxfss2Ch80VFrcY2sla0,3355
+aprsd_borat_plugin-0.1.1.dev1.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+aprsd_borat_plugin-0.1.1.dev1.dist-info/entry_points.txt,sha256=OzeBwNBpILn481KEbiheXT8uJKxmgDyC-Qc26wpipys,84
+aprsd_borat_plugin-0.1.1.dev1.dist-info/pbr.json,sha256=SR_QiyzMtNeMKWHrWQuvIO8HHXbxezjV0cbDuw2Hwbg,47
+aprsd_borat_plugin-0.1.1.dev1.dist-info/top_level.txt,sha256=KU-haShUTmnXgB6ei8dW1Vpn9ZXKXROisuSwyZOM3bc,19
+aprsd_borat_plugin-0.1.1.dev1.dist-info/RECORD,,
