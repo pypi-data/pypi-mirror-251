@@ -1,0 +1,7 @@
+LICENCE
+README.md
+setup.py
+src/torch_flops.egg-info/PKG-INFO
+src/torch_flops.egg-info/SOURCES.txt
+src/torch_flops.egg-info/dependency_links.txt
+src/torch_flops.egg-info/top_level.txt
