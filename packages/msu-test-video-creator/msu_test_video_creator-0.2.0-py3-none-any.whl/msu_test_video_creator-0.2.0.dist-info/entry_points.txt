@@ -1,0 +1,3 @@
+[console_scripts]
+msu_test_video_creator=msu_test_video_creator.__main__:cli
+
