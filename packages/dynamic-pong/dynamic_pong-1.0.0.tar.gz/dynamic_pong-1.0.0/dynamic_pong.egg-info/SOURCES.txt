@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+dynamic_pong/__init__.py
+dynamic_pong/__main__.py
+dynamic_pong.egg-info/PKG-INFO
+dynamic_pong.egg-info/SOURCES.txt
+dynamic_pong.egg-info/dependency_links.txt
+dynamic_pong.egg-info/entry_points.txt
+dynamic_pong.egg-info/requires.txt
+dynamic_pong.egg-info/top_level.txt
