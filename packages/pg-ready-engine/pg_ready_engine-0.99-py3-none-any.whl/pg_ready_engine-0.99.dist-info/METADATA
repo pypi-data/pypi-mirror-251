@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: pg-ready-engine
+Version: 0.99
+Requires-Dist: psycopg2
+Requires-Dist: uuid
+Requires-Dist: asyncpg
+
