@@ -1,0 +1,6 @@
+taskiq_elastic_apm/__init__.py,sha256=UP8PpS-9gL37jaCO-cozTzz6lPJxgHZFqWgQh4Vw64Y,122
+taskiq_elastic_apm/middleware.py,sha256=AvXEOiwVTZX-ugEC5tm0iBgtBw_qhbB9i6-2N5n07KU,2581
+taskiq_elastic_apm-0.0.1.dist-info/METADATA,sha256=6qjawwG-GoWk3WbKBYsprldT4GI49Ie9Y47VD2tDYZE,2316
+taskiq_elastic_apm-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+taskiq_elastic_apm-0.0.1.dist-info/top_level.txt,sha256=lSKT0Dfm0AM5bQy4kDFe4rXk0IBjFxF7VcYFJvKB_V4,19
+taskiq_elastic_apm-0.0.1.dist-info/RECORD,,
