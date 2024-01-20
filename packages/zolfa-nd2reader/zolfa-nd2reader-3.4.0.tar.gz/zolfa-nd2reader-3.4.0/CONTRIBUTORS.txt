@@ -1,0 +1,11 @@
+Author: Lorenzo Zolfanelli <lorenzo.zolfanelli@espci.psl.eu>
+
+zolfa-nd2reader is a fork of nd2reader originally maintained by Ruben Verweij (https://github.com/Open-Science-Tools/nd2reader).
+This fork is maintained by Lorenzo Zolfanelli.
+
+Original CONTRIBUTORS from the Ruben fork:
+
+Author: Jim Rybarski <jim@rybarski.com>
+
+nd2reader is based on the read_nd2 module from the SLOTH library (http://pythonhosted.org/SLOTH/_modules/sloth/read_nd2.html).
+Thanks to M.Kauer and B.Kauer for solving the hardest part of parsing ND2s.
