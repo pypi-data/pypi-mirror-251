@@ -1,0 +1,5 @@
+smbus2>=0.3.0
+
+[dev]
+pytest
+pytest-mock
