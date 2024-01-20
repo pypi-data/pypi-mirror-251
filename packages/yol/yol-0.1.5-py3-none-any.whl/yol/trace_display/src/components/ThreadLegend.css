@@ -1,0 +1,33 @@
+@import "../NeuralBridge.css";
+
+.thread-legend {
+  width: auto;
+  display: inline-block;
+  position: fixed;
+  border: 2px solid var(--accent-color-blue-1);
+  padding: 10px;
+  margin: 10px;
+  background-color: var(--primary-bg-color);
+  color: var(--accent-color-blue-1);
+  border-radius: 5px;
+  font-family: var(--font-heading);
+}
+
+.thread-legend__item {
+  display: flex;
+  align-items: center;
+}
+
+.thread-legend__color {
+  width: 20px;
+  height: 20px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.thread-legend__title {
+  text-align: center;
+  color: var(--primary-color);
+  font-weight: bold;
+  margin-bottom: 10px;
+}
