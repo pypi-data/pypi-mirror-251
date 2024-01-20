@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+taskiq_elastic_apm/__init__.py
+taskiq_elastic_apm/middleware.py
+taskiq_elastic_apm.egg-info/PKG-INFO
+taskiq_elastic_apm.egg-info/SOURCES.txt
+taskiq_elastic_apm.egg-info/dependency_links.txt
+taskiq_elastic_apm.egg-info/requires.txt
+taskiq_elastic_apm.egg-info/top_level.txt

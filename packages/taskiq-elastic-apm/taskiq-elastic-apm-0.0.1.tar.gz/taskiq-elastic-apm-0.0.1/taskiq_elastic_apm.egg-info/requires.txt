@@ -1,0 +1,2 @@
+taskiq>=0.10.4
+elastic-apm>=6.20.0
