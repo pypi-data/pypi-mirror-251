@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: robust-extraction
+Version: 0.1.2
+Summary: Box extraction pipeline, robust to perspective and slight cylindrical distortion
+Author-email: Marcel Claramunt <marcel@marcelclaramunt.cat>
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: ramda
+Requires-Dist: numpy
+Requires-Dist: haskellian
+Requires-Dist: pure-cv
+Requires-Dist: pydantic
+Requires-Dist: networkx
+Requires-Dist: scipy
+Requires-Dist: opencv-python
+Requires-Dist: scikit-learn
+

@@ -1,0 +1,1 @@
+from .pipe import pipeline5 as v5
