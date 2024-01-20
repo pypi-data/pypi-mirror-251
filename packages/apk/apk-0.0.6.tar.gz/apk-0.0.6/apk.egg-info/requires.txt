@@ -1,0 +1,9 @@
+PyGObject
+rich
+numpy
+pycryptodomex
+rospkg
+wind-pypcd
+opencv-python
+pyyaml
+gnupg

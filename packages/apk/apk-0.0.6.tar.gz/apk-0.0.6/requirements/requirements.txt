@@ -1,0 +1,15 @@
+# common 
+numpy
+pyyaml
+rospkg
+wind-pypcd
+rich
+pycryptodomex
+gnupg
+
+# capture
+PyGObject
+opencv-python
+
+
+
