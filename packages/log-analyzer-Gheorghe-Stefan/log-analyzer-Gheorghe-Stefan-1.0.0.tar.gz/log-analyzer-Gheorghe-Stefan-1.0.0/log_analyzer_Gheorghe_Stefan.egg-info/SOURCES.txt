@@ -1,0 +1,11 @@
+LICENCE.txt
+README.txt
+setup.py
+Ntt_Project/LogOperations.py
+Ntt_Project/__init__.py
+Ntt_Project/readFromFile.py
+Ntt_Project/test_cases.py
+log_analyzer_Gheorghe_Stefan.egg-info/PKG-INFO
+log_analyzer_Gheorghe_Stefan.egg-info/SOURCES.txt
+log_analyzer_Gheorghe_Stefan.egg-info/dependency_links.txt
+log_analyzer_Gheorghe_Stefan.egg-info/top_level.txt
