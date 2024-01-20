@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: nonebot-plugin-gocqhttpQQ
+Version: 0.0.2
+Summary: 修改了一些代码.
+Home-page: https://github.com/2027839379/nonebot_plugin_gocqhttpQQ
+License: AGPL-3.0
+Author: Mix
+Author-email: mnixry@users.noreply.github.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Provides-Extra: proxy
+Requires-Dist: chevron (>=0.14.0,<0.15.0)
+Requires-Dist: httpx (>=0.20.0)
+Requires-Dist: nonebot-adapter-onebot (>=2.0.0,<3.0.0)
+Requires-Dist: nonebot2[fastapi] (>=2.0.0,<3.0.0)
+Requires-Dist: proxy.py (>=2.4.3,<3.0.0) ; extra == "proxy"
+Requires-Dist: psutil (>=5.9.0,<6.0.0)
+Requires-Dist: py-cpuinfo (>=8,<10)
+Project-URL: Repository, https://github.com/2027839379/nonebot_plugin_gocqhttpQQ
+Description-Content-Type: text/markdown
+
+
+## 开源许可证
+
+由于`go-cqhttp`使用了[AGPL-3.0](https://github.com/Mrs4s/go-cqhttp/blob/master/LICENSE)许可证, 本项目也同样使用该许可
+
+**注意! 如果在您的项目中依赖了该插件, 您的项目必须以该许可开源!**
+
+<!-- markdownlint-disable MD046 -->
+
+    A plugin to run go-cqhttp directly in NoneBot2, without additional download and installation.
+    Copyright (C) 2022 Mix
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU Affero General Public License as published
+    by the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU Affero General Public License for more details.
+
+    You should have received a copy of the GNU Affero General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
