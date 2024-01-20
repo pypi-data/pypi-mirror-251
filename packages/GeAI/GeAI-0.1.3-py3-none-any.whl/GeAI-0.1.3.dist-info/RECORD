@@ -1,0 +1,11 @@
+GeAI/__init__.py,sha256=DEVS5YtHp8PErhGNB22GbguL5FU87m3FlHrOUT1IdfM,110
+GeAI/available_models.py,sha256=ex2ehUWY-QqNeSH02h_7fQZfO39hquWT7e8dVC0gJko,331
+GeAI/connect_genai.py,sha256=QlAhkWC6kJG6vIGto-e0m10FR39WK81sQ3lXBzpHO2o,1620
+GeAI/txt.py,sha256=VCOOTRYaPywthe-mqYAeESduY8lWqOPLU2x1pJLQrJc,3513
+GeAI/txt/__init__.py,sha256=a9tVVYIblDCXRiAD2U3x_JSd7PrwHYWi92ks3OT5oIA,80
+GeAI/txt/explain_code.py,sha256=-wdiZZkszXqCGPad8nRIToyhjLZMNCV8l0CvTArYtlE,3699
+GeAI/txt/optimize_code.py,sha256=OefncwzezxV7f7BciUfE4x5WSzjaAqquFfPXg4N3d0I,3752
+GeAI-0.1.3.dist-info/METADATA,sha256=wl7uO5ZXvPkX6rs_sn92BpfVR4xoYQqwfyWD_I3MKkY,867
+GeAI-0.1.3.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+GeAI-0.1.3.dist-info/top_level.txt,sha256=_h6M4KdCEQx-q3eGFZfwPeisND12BzVKo3T5_dJbdPI,5
+GeAI-0.1.3.dist-info/RECORD,,
