@@ -1,0 +1,6 @@
+[console_scripts]
+uls_predict_folder = mouselungseg.cli:cli_predict_folder
+uls_predict_image = mouselungseg.cli:cli_predict_image
+
+[napari.manifest]
+mouselungseg = mouselungseg:napari.yaml
