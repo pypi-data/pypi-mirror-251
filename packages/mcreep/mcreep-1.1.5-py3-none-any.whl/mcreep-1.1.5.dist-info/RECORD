@@ -1,0 +1,11 @@
+mcreep/__init__.py,sha256=Od0oLqIfU69GeCMhyMkcPpBAVY_EJEGZdmrulG2ZuG0,1644
+mcreep/const.py,sha256=UPnp9YpPNb2n8heH-t9jEmslUTGo3sHhgwxDc0HPr8E,11098
+mcreep/fit.py,sha256=8SPGmGm4tX3-0BEgD6AG3RnFjj3eCLuo4t3C4IPgqDU,5368
+mcreep/func.py,sha256=z74Sse6QqYW32YNj3XGHDCwDYx2YeTeqaQMqnazXDg8,5834
+mcreep/io.py,sha256=FLa_2IgPz0e5_w7ohlHEu0oEP4TRjbObJwKbqg9CWrM,13650
+mcreep/model.py,sha256=e31fhMl9swPPMu57z7DPcpIRKFF_iZ3sCivVvuybBsE,32534
+mcreep-1.1.5.dist-info/LICENCE,sha256=RBhg5hIyHCQyj9Hd6pdx4QVzRdIfplLdnbuNB0fm2H4,1093
+mcreep-1.1.5.dist-info/METADATA,sha256=sZ6bWmbxbb4w2GWLqaeYZpRW5NzPL_QQHlnf8MQE2GQ,2809
+mcreep-1.1.5.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+mcreep-1.1.5.dist-info/top_level.txt,sha256=ZTPwfFSO_C142P17-wuBNszrPZw_VBhf20qCrOs6qHo,7
+mcreep-1.1.5.dist-info/RECORD,,
