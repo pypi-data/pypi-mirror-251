@@ -1,0 +1,3 @@
+[console_scripts]
+mplm_sim = mplm_sim.cli:main
+
