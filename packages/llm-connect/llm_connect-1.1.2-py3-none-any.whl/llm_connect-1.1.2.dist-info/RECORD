@@ -1,0 +1,16 @@
+llm_connect_api/__init__.py,sha256=b1VfA4Miuu-0YE_wHw-wr3KiXYVsnIfhQy2XCeP4VEs,18
+llm_connect_api/cli.py,sha256=_38fu1bzk-E1B3eX0QoCXxEeX3U4QWztyu2SZhsTXRQ,3434
+llm_connect_api/config.py,sha256=fFvFwnt-S1VCF9EYAArVC1jBR8dMhHAUb-HgLhlSPuY,122
+llm_connect_api/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+llm_connect_api/commands/add_model.py,sha256=RelTfLDVnf1nQrpTqhhV0cCwXdF2gnlqjptuhKcukWU,4014
+llm_connect_api/commands/execute.py,sha256=8G3W_JoFUBR10Sp4EjloPvuED9ip_Vvx82Ngn7_vC9Q,8549
+llm_connect_api/commands/fetch_result.py,sha256=zNsCFRIKnioALDKXSpR5aZWVpCTR1G3631WbFgLpw38,448
+llm_connect_api/commands/hardware.py,sha256=jmz8B-uVqfo3iw6ULRoihy78SZqyiAf6xTLz91IcVJg,3955
+llm_connect_api/commands/list_models.py,sha256=5sKDk3RPorkDcJz5n7sDkLhXG5kgv9_dXdIfAbAhb8k,1605
+llm_connect_api/commands/list_tasks.py,sha256=cXetESbjJXEHOUVjcjPtR3fRJab6Q1CSZVpScg5enJY,760
+llm_connect_api/commands/remove_model.py,sha256=BzXoSbi_--gh5ab7jQ29KfwvtJl2VYmDro7wS9fy7hQ,2461
+llm_connect-1.1.2.dist-info/METADATA,sha256=m5t0dNZzoYNHKIzL3wtO1hXjoTVkVwCXCsaLJjcicTc,4257
+llm_connect-1.1.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+llm_connect-1.1.2.dist-info/entry_points.txt,sha256=dAo5-CzfgBsbmXhGhoFbet8Y062EkFJrXlJIocgn_g0,43
+llm_connect-1.1.2.dist-info/top_level.txt,sha256=XMXKNTJK13OeqT_Fg9RxYJ8lqWyLBoMTGcQzr4Zb-m0,16
+llm_connect-1.1.2.dist-info/RECORD,,

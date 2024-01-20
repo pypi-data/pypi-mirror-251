@@ -1,0 +1,52 @@
+import click
+import shutil
+from pathlib import Path
+import os
+from colorama import init, Fore, Style, Back
+
+init(autoreset=True)
+
+green = Fore.LIGHTGREEN_EX
+red = Fore.LIGHTRED_EX
+blue = Fore.LIGHTBLUE_EX
+yellow = Fore.YELLOW
+background_color = Back.BLACK
+reset = Style.RESET_ALL
+
+
+def list_models():
+    cache_dir = Path.home() / ".cache" / "huggingface" / "hub"
+
+    models_found = False
+
+    click.echo("\n    Available Models: ")
+
+    for model_dir in cache_dir.iterdir():
+        if model_dir.is_dir() and model_dir.name.startswith("models--"):
+            parts = model_dir.name.split("--")
+            if len(parts) == 3:
+                repo_id = parts[1]
+                model_id = parts[2]
+
+                # Check the size of the folder
+                folder_size = get_folder_size(model_dir)
+                if folder_size < 50 * 1024 * 1024:  # 10 MB in bytes
+                    # Delete the folder if its size is less than 10MB
+                    shutil.rmtree(model_dir)
+                else:
+                    click.echo(f"       * {blue}{repo_id}/{model_id}{reset}")
+                    models_found = True  # Set the flag to True
+
+    if not models_found:
+        click.echo(f"       {red}!!! No models available.{reset}")
+
+    click.echo(f"\n    Download new models ${yellow}lc add --model <model_name>{reset}\n")
+
+
+def get_folder_size(path):
+    total_size = 0
+    for dirpath, dirnames, filenames in os.walk(path):
+        for filename in filenames:
+            filepath = os.path.join(dirpath, filename)
+            total_size += os.path.getsize(filepath)
+    return total_size
