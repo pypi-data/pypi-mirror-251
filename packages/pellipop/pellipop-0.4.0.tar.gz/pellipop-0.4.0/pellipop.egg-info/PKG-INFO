@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: pellipop
+Version: 0.4.0
+License: MPL-2.0 license
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: opencv-python~=4.8.1.78
+Requires-Dist: tqdm~=4.66.1
+Requires-Dist: moviepy~=1.0.3
+Requires-Dist: imagehash~=4.3.1
+Requires-Dist: Pillow~=10.0.1
+Requires-Dist: SpeechRecognition
+Requires-Dist: ffmpeg
+Requires-Dist: whisper-client>=0.3.0
+Requires-Dist: ttkbootstrap~=1.10.1
+Requires-Dist: requests~=2.31.0
+Requires-Dist: validators~=0.22.0
+
+# Pellipop
+
+## Installation
+
+`pip install pellipop`
+
+## Usage
+
+Pellipop est un outil en ligne de commande Python qui permet de découper des vidéos en images fixes.
+Par défaut, des captures d'écran sont réalisées toutes les 5 secondes.
+
+Il prend en entrée les formats suivants:
+- `".mov"`
+- `".avi"`
+- `".mp4"`
+- `".flv"`
+- `".wmv"`
+- `".webm"`
+- `".mkv"`
+- `".svf"`
+
+Il se lance avec `pellipop` dans un terminal, par défaut les vidéos sont cherchées dans le dossier où la commande est lancée, et les images créées sont également stockées au même endroit. Les paramètres peuvent toutefois être changés:
+
+- `--input` : pour spécifier le dossier d'entrée où chercher les vidéos
+- `--output` : pour spécifier l'endroit où stocker les images en sortie
+- `--frequency` : pour spécifier la fréquence temporelle de capture des images (en s)
+- `--remove_duplicates` : permet de supprimer les doublons d'images pour un même film, note: cela peut ralentir la conversion.
+
+Exemple d'usage:
+`pellipop --input C:\Users\Utilisateur\Videos\Captures --output D:\Users\Bureau\Output --frequency 1 --remove_duplicates`
+
+> Note: Le temps de découpe de chaque vidéo dépend de la qualité de la vidéo découpée.
