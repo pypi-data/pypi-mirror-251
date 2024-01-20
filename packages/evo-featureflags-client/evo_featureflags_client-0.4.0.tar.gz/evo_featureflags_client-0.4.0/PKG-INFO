@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: evo-featureflags-client
+Version: 0.4.0
+Summary: Feature flags client
+Author-Email: d.zakharchuk <d.zakharchuk@smartweb.com.ua>, m.kindritskiy <m.kindritskiy@smartweb.com.ua>, Vladimir Magamedov <vladimir@magamedov.com>
+License: MIT
+Requires-Python: >=3.9
+Requires-Dist: evo-featureflags-protobuf==0.3.0
+Requires-Dist: dataclass-wizard==v0.22.2
+Requires-Dist: grpclib>=0.4.6; extra == "grpclib"
+Requires-Dist: hiku==0.7.1; extra == "grpclib"
+Requires-Dist: grpcio==1.59.0; extra == "grpcio"
+Requires-Dist: hiku==0.7.1; extra == "grpcio"
+Requires-Dist: httpx>=0.24.1; extra == "httpx"
+Requires-Dist: aiohttp>=3.9.1; extra == "aiohttp"
+Requires-Dist: requests>=2.31.0; extra == "requests"
+Provides-Extra: grpclib
+Provides-Extra: grpcio
+Provides-Extra: httpx
+Provides-Extra: aiohttp
+Provides-Extra: requests
+Description-Content-Type: text/markdown
+
+FeatureFlags client library for Python
+
+See ``examples`` directory for complete examples for some major Web frameworks.
+
+Overview
+--------
+
+Client supports Python >=3.9.
+
+
+Installation
+------------
+
+To install package:
+
+- ``pdm add evo-featureflags-protobuf``
+
+To release package:
+
+- ``lets release 0.4.0 --message="Added feature"``
+
+Development
+-----------
+
+Install dependencies:
+
+- ``pdm install -d``
+
+Pre-commit
+
+``./scripts/enable-hooks.sh``
+
+``./scripts/disable-hooks.sh``
+
+TODO:
+
+- add docs, automate docs build
+- add tests
+- add `tracer` / `stats_collector` for http manager
+- rm old grpc client
