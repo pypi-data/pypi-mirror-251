@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: dummy_module
+Version: 0.0.1
+Summary: just a zero/dummy pypi package
+Home-page: https://github.com/centroid457/
+Author: Andrei Starichenko
+Author-email: centroid@mail.ru
+Project-URL: Source, https://github.com/centroid457/dummy_module
+Keywords: dummy,dummy pypi,dummy pypi module,dummy pypi package,dummy pypi pkg,dummy module,dummy package,dummy pkg,blank module,blank package,blank pkg,zero module,zero package,zero pkg
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Typing :: Typed
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# dummy_module (v0.0.1)
+
+## DESCRIPTION_SHORT
+Just a zero/dummy pypi package
+
+## DESCRIPTION_LONG
+designed for test applications which handle with pypi packages (install/uninstall/check versions/upgrade).  
+with this module you dont need to handle with some specific pkg!
+
+
+## Features
+1. It doesn't do anything!  
+
+
+********************************************************************************
+## License
+See the [LICENSE](LICENSE) file for license rights and limitations (MIT).
+
+
+## Release history
+See the [HISTORY.md](HISTORY.md) file for release history.
+
+
+## Installation
+```commandline
+pip install dummy-module
+```
+
+
+## Import
+```python
+from dummy_module import *
+```
+
+
+********************************************************************************
+## USAGE EXAMPLES
+See tests and sourcecode for other examples.
+
+********************************************************************************
