@@ -1,0 +1,3 @@
+[console_scripts]
+crashtest=crash_test.crashtest:main
+
