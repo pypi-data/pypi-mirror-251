@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: docketanalyzer
+Version: 0.1.0
+Home-page: https://github.com/docketanalyzer/docketanalyzer
+Author: Nathan Dahlberg
+Requires-Dist: awscli
+Requires-Dist: boto3
+Requires-Dist: click
+Requires-Dist: datasets
+Requires-Dist: evaluate
+Requires-Dist: faiss-cpu
+Requires-Dist: flake8
+Requires-Dist: gunicorn
+Requires-Dist: pandas
+Requires-Dist: pdf2image
+Requires-Dist: pdoc
+Requires-Dist: protobuf
+Requires-Dist: python-dotenv
+Requires-Dist: psycopg2-binary
+Requires-Dist: runpod
+Requires-Dist: scikit-learn
+Requires-Dist: sentencepiece
+Requires-Dist: shortuuid
+Requires-Dist: simplejson
+Requires-Dist: toolz
+Requires-Dist: tqdm
+Requires-Dist: transformers
+
