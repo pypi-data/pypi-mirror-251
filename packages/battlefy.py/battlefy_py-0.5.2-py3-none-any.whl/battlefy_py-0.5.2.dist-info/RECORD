@@ -1,0 +1,16 @@
+battlefy/__init__.py,sha256=twAq-bav8-c1Y9lW4pK-qw9sHvq8DNA_tv55SXT75ag,86
+battlefy/models/__init__.py,sha256=48m36XjzZNdYvNJrgLDE0d0Lfm6Fn8ryUiE6HHsiON4,369
+battlefy/models/organization/__init__.py,sha256=qrbyssmv6uFeaZPSLJ6JdZlDnZ51aP4MEN5uI_mHYEQ,170
+battlefy/models/organization/org.py,sha256=fHp6Rxz8ZPzxILksWpOui2c4WsxrsLM5rLud5YKBRvA,32148
+battlefy/models/organization/orgSearch.py,sha256=PDRLuhucPusRlpieBxOzn47_bGPYRKHCo4luzLWg-F0,6239
+battlefy/models/tournament/__init__.py,sha256=r-OLokdV6xzgvLYn4Qk3RNrM8rNwAiKKlVpQdm8cr68,5716
+battlefy/models/tournament/match.py,sha256=3MvK0BKhaPem0FHsQlMhUemI9BqAK-6Pn8cCgetUvKY,1981
+battlefy/models/tournament/stage.py,sha256=7n5SynH0k7XqwRtV_VD2TbJuIXTL_1gkSD1wim_Ac3U,2151
+battlefy/models/tournament/standing.py,sha256=dpcWqkJo9NQlGK2AICfbbApxieqfInwpDEY5brXAsMk,3034
+battlefy/models/tournament/team.py,sha256=_EseVlH9pQxgvDowiZ1tQ69YEFDqDN1l19SK6traKDk,4316
+battlefy/organization.py,sha256=s4vPDoHPnCcZgSjnQ7ec7ClQrqzsHOoa6QBrcSlIrfI,2793
+battlefy/tournament.py,sha256=VeFuedImlRuSSBGLzJINBDA0xgiSnr1d-4tCMkHDRL0,21761
+battlefy_py-0.5.2.dist-info/LICENSE,sha256=4ChmNrlTAg767sXhEyQVt13etu4ISIgyv12UhpJUdYQ,1081
+battlefy_py-0.5.2.dist-info/METADATA,sha256=llVqhEjW-RHzn0wxKUeS2dxEoLXd2sE21b_4aoC1wYc,1171
+battlefy_py-0.5.2.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+battlefy_py-0.5.2.dist-info/RECORD,,
