@@ -1,0 +1,21 @@
+# link-shorteners Package
+
+Lists major link shorteners, helps in blocking url shorteners and thus promoting Responsible Link Shortening Practices.
+
+## Overview
+
+This Python package offers a meticulously curated list of prominent link shorteners that not only helps in providing a central hub to users from exploring various shortener options, but majorly empowers and helps developers for responsible and secure development of their platform.
+
+## Key Features
+
+### Efficiently Block URL Shorteners
+Empower your website's security by using the **link-shorteners** package to list shorteners and using the information to efficiently block well-known URL shorteners such as bitly, Ow.ly, tinyurl, shorturl and more. Safeguard your online environment from potential security risks and ensure a protected browsing experience.
+
+### Extremely helpful for Link Shortening Platforms
+This list empowers such platforms to effectively restrict the usage of previously shortened links as replacements for destination URLs. This would avoid chain shortening, enhance security, prevent spams and enforce quality control.
+
+### Open Source
+**link-shorteners** package is open source, allowing developers to contribute and enhance its capabilities. This also ensures continuous updation of the curated list of link-shorteners.
+
+### Central Hub
+Users can also make use of this one collective list of various link-shorteners to discover various link-shortening options available.
