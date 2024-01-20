@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: gradient-haystack
+Version: 0.3.0
+Project-URL: Documentation, https://github.com/deepset-ai/haystack-core-integrations/tree/main/integrations/gradient#readme
+Project-URL: Issues, https://github.com/deepset-ai/haystack-core-integrations/issues
+Project-URL: Source, https://github.com/deepset-ai/haystack-core-integrations/tree/main/integrations/gradient
+Author-email: Mateusz Haligowski <contact@gradient.ai>, Michael Feil <contact@gradient.ai>, Hayden Wilson <contact@gradient.ai>
+License-Expression: Apache-2.0
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Requires-Dist: gradientai>=1.4.0
+Requires-Dist: haystack-ai
+Provides-Extra: tqdm
+Requires-Dist: tqdm; extra == 'tqdm'
+Description-Content-Type: text/markdown
+
+# gradient-haystack
+
+[![PyPI - Version](https://img.shields.io/pypi/v/gradient-haystack.svg)](https://pypi.org/project/gradient-haystack)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/gradient-haystack.svg)](https://pypi.org/project/gradient-haystack)
+
+-----
+
+**Table of Contents**
+
+- [gradient-haystack](#gradient-haystack)
+  - [Installation](#installation)
+  - [License](#license)
+
+## Installation
+
+```console
+pip install gradient-haystack
+```
+
+## License
+
+`gradient-haystack` is distributed under the terms of the [Apache-2.0](https://spdx.org/licenses/Apache-2.0.html) license.
