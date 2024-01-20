@@ -1,0 +1,5 @@
+recursive-include django_form_copy *
+
+recursive-exclude forms_copy *
+global-exclude venv/*
+global-exclude __pycache__/*
