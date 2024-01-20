@@ -1,0 +1,9 @@
+transformers
+peft
+accelerate
+datasets
+bitsandbytes
+evaluate
+scikit-learn
+intel-extension-for-transformers
+tyro

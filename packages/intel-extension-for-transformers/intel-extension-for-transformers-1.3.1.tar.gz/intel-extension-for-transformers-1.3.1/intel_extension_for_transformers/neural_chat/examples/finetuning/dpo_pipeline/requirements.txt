@@ -1,0 +1,10 @@
+datasets
+torch
+transformers
+sentencepiece
+peft
+evaluate
+nltk
+rouge_score
+einops
+fire
