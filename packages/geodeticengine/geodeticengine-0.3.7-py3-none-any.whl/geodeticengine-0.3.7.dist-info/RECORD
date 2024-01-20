@@ -1,0 +1,14 @@
+examples/data/feature.geojson,sha256=DA-NzxmMP_759HEYsg3g2a8aj0CHqUvLZdU8vsZqEXY,1313
+examples/data/transformed_feature.geojson,sha256=V3Jadl9dSDWWQ2im6_qA9TG5KDzn9ZGTjBO0CHszJsY,3475
+geodeticengine/AuthBearerToken.py,sha256=GuUIedsGPNw-YnyiYL7J5nhtsUeF5w0p7PCH1n5bSC4,2168
+geodeticengine/CoordTrans.py,sha256=UeWHDboIKRlcucM1bz8QLY16AMdzkrZrbjxKT7Gp_mA,4686
+geodeticengine/MsalCredential.py,sha256=J8z2z-hlursa3vZNth6bq43WoFx0BDRTkwQPgirRtvU,3037
+geodeticengine/__init__.py,sha256=vrk9Pvyk0OP5hS_JPoqWvwBhRxdYY5MIFcVzokJoBm4,147
+geodeticengine/ege_api.py,sha256=J5oaAlCNsv0ZeXfu_Q6b6HMKs3q0Of4-lPF4diYnneM,3910
+geodeticengine/utils.py,sha256=ojm98MIEUF6ynvSmQym962XOf304NVJ9-zCmfslThNI,4839
+scripts/copy_files.sh,sha256=_jCaoqg6c69mBVEhpxvWcgn3SqcY8vXsXjJCkPG7hYw,351
+tests/test_CoordTrans.py,sha256=T7FfgSeB_FABElFO3E9mqoxI6G5esxn18pHMNsQJCJo,7742
+geodeticengine-0.3.7.dist-info/METADATA,sha256=whwYQWMi9JQ8zpNVt8JL1t-OVXvIrObEkL3Gyd2rpI8,5011
+geodeticengine-0.3.7.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+geodeticengine-0.3.7.dist-info/top_level.txt,sha256=M5XcIq_aNvrLretZeA-DF-kOSTqOgppvsP0VAAP6XfU,38
+geodeticengine-0.3.7.dist-info/RECORD,,
