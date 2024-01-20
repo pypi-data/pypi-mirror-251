@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: openark
+Version: 0.0.2
+Summary: OpenARK Python Client
+Project-URL: Bug Tracker, https://github.com/ulagbulag/openark-py/issues
+Project-URL: Changelog, https://github.com/ulagbulag/openark-py/blob/master/CHANGELOG.md
+Project-URL: Documentation, https://github.com/ulagbulag/openark-py
+Project-URL: Homepage, https://github.com/ulagbulag/openark-py
+Project-URL: Repository, https://github.com/ulagbulag/openark-py.git
+Author-email: Ho Kim <ho.kim@ulagbulag.io>
+Maintainer-email: Ho Kim <ho.kim@ulagbulag.io>
+License: GPL-3.0-or-later WITH Classpath-exception-2.0
+License-File: LICENSE
+Keywords: Connected Data Lake,iac,kubernetes,openark
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.10
+Requires-Dist: deltalake
+Requires-Dist: inflection
+Requires-Dist: ipython
+Requires-Dist: kubernetes
+Requires-Dist: matplotlib
+Requires-Dist: nats-py
+Requires-Dist: networkx
+Requires-Dist: polars[deltalake]
+Requires-Dist: python-dotenv
+Requires-Dist: seaborn
+Description-Content-Type: text/markdown
+
+# OpenARK Python Client
