@@ -1,0 +1,51 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/python
+{
+	"name": "django-brackets",
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	"image": "mcr.microsoft.com/devcontainers/python:0-3.11",
+	"features": {
+		"ghcr.io/eliises/devcontainer-features/devcontainers-cli:1": {
+			"version": "latest",
+			"nodeVersion": "latest"
+		},
+		"ghcr.io/wxw-matt/devcontainer-features/command_runner:0": {},
+		"ghcr.io/wxw-matt/devcontainer-features/script_runner:0": {},
+		"ghcr.io/devcontainers-contrib/features/pipx-package:1": {
+			"includeDeps": true,
+			"package": "black",
+			"version": "latest",
+			"injections": "pylint pytest",
+			"interpreter": "python3"
+		},
+		"ghcr.io/kennethlove/multiple-pythons/multiple-pythons:1": {
+			"versions": "3.12 3.11 3.10"
+		}
+	},
+	// "postCreateCommand": "",
+	"postStartCommand": "pip install -e .[development,testing]",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"charliermarsh.ruff",
+				"EditorConfig.EditorConfig",
+				"matangover.mypy",
+				"ms-python.mypy-type-checker",
+				"ms-python.python",
+				"ms-python.vscode-pylance"
+			],
+			"settings": {
+				"[python]": {
+					"editor.formatOnSave": true,
+					"editor.codeActionsOnSave": {
+						"source.organizeImports": true
+					},
+					"languageServer": "Pylance",
+					"linting.banditEnabled": true,
+					"testing.pytestEnabled": true,
+					"testing.unittestEnbled": false
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,53 @@
+copyright: Copyright &copy; Brack3t and contributors
+docs_dir: docs/
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+nav:
+  - Home:
+    - index.md
+  - Access:
+    - mixins/access.md
+  - Django REST Framework:
+    - mixins/rest_framework.md
+  - Forms:
+    - mixins/forms.md
+  - Form Views:
+    - mixins/form_views.md
+  - HTTP:
+    - mixins/http.md
+  - Misc:
+    - mixins/misc.md
+  - Queries:
+    - mixins/queries.md
+  - Redirects:
+    - mixins/redirects.md
+  - Contribution:
+    - contribution_guide.md
+  - Contributors:
+    - contributors.md
+plugins:
+  - search
+repo_url: https://github.com/brack3t/django-brackets
+repo_name: "brack3t/django_brackets"
+site_author: klove
+site_dir: _site/
+site_name: django-brackets documentation
+theme:
+  name: material
+  icon:
+    repo: simple/github
+    logo: material/code-brackets
+  palette:
+    scheme: slate
+  features:
+    - navigation.footer
+    - navigation.indexes
+    - navigation.prune
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest

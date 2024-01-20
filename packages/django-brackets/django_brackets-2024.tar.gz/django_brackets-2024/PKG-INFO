@@ -1,0 +1,98 @@
+Metadata-Version: 2.1
+Name: django-brackets
+Version: 2024
+Summary: Mixins to make class-based generic views simpler and neater.
+Author: klove
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django :: 4.2
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: django-rest-framework>=0.1.0
+Requires-Dist: django<6,>=4.2
+Requires-Dist: flit<4,>=3.2
+Requires-Dist: django-stubs[compatible-mypy] ; extra == "development"
+Requires-Dist: djangorestframework-stubs[compatible-mypy] ; extra == "development"
+Requires-Dist: interrogate ; extra == "development"
+Requires-Dist: mypy ; extra == "development"
+Requires-Dist: ruff ; extra == "development"
+Requires-Dist: mkdocs-material>=9.1.16 ; extra == "documentation"
+Requires-Dist: mkdocs>=1.4.3 ; extra == "documentation"
+Requires-Dist: pygments>=2.15.1 ; extra == "documentation"
+Requires-Dist: pymdown-extensions>=10.0.1 ; extra == "documentation"
+Requires-Dist: coverage ; extra == "testing"
+Requires-Dist: pytest ; extra == "testing"
+Requires-Dist: pytest-cov ; extra == "testing"
+Requires-Dist: pytest-django ; extra == "testing"
+Requires-Dist: pytest-lazy-fixture ; extra == "testing"
+Requires-Dist: pytest-randomly ; extra == "testing"
+Requires-Dist: pytest-xdist ; extra == "testing"
+Requires-Dist: tox ; extra == "testing"
+Project-URL: repository, https://github.com/brack3t/django-brackets/
+Provides-Extra: development
+Provides-Extra: documentation
+Provides-Extra: testing
+
+# django-brackets
+
+[Official Documentation](https://django-brackets.readthedocs.io)
+
+`django-brackets` is a small collection of mixins for your class-based
+views' needs. Heavily based on [`django-braces`], `brackets` aims to be
+a simpler API and lighter tool set than `braces` was.
+
+`django-brackets` is developed against and for still-supported versions
+of Django and the latest (or near enough) version of Python. It also
+offers mixins for `django-rest-framework` which should work with the
+latest release of that package.
+
+As always, [contributions](docs/contributors.md) are welcome.
+
+## Available mixins
+(in alphabetical order)
+
+### Django class-based views
+
+* `AllVerbsMixin` - View answers any HTTP verb with a single method.
+* `AnonymousRequiredMixin` - Authenticated users are rejected.
+* `CacheControlMixin` - Control how the view is cached
+* `CSRFExemptMixin` - View does not require CSRF tokens.
+* `FormWithUserMixin` - Automatically provides the requesting user to the form.
+* `GroupRequiredMixin` - Requesting user must be part of a group.
+* `HeaderMixin` - Statically set headers for a view.
+* `LoginRequiredMixin` - Non-authenticated users are rejected.
+* `MultipleFormsMixin` - View handles multiple forms at once. Taken from [`django-shapeshifter`]
+* `NeverCacheMixin` - Mark a view as being uncached.
+* `OrderableListMixin` - Allow queryset ordering via query string arguments.
+* `PassesTestMixin` - Requests must pass a test before they are dispatched.
+* `PassOrRedirectMixin` - Failing requests are redirected to another view.
+* `PermissionRequiredMixin` - Requesting user must have specific permissions.
+* `PrefetchRelatedMixin` - Add `prefetch_related` clauses into the view's queryset.
+* `RecentLoginRequiredMixin` - Users must have logged in recently.
+* `RedirectMixin` - Easily redirect requests.
+* `RedirectToLoginMixin` - Redirect requests to a login page.
+* `SelectRelatedMixin` - Add `select_related` clauses into the view's queryset.
+* `SSLRequiredMixin` - Requests must be secure or redirected.
+* `StaffUserRequiredMixin` - Requesting user must be a staff member.
+* `StaticContextMixin` - Provide a static context to a view.
+* `SuperuserRequiredMixin` - Requesting user must be a superuser.
+
+### Django REST Framework
+
+* `MultipleSerializersMixin` - View/Viewset can have multiple serializers.
+
+### Django forms
+
+* `UserFormMixin` - Expects a `"user"` keyword argument, which will become `self.user`.
+
+[`django-braces`]: https://github.com/brack3t/django-braces
+[`django-shapeshifter`]: https://github.com/kennethlove/django-shapeshifter
+
