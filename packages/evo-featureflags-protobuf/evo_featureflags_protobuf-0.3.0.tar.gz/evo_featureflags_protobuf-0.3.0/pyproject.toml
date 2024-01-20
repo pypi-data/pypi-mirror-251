@@ -1,0 +1,38 @@
+[project]
+name = "evo-featureflags-protobuf"
+dynamic = []
+description = "Protocol Buffers stub files for feature flags service"
+readme = "README.md"
+authors = [
+    { name = "d.zakharchuk", email = "d.zakharchuk@smartweb.com.ua" },
+    { name = "m.kindritskiy", email = "m.kindritskiy@smartweb.com.ua" },
+    { name = "Vladimir Magamedov", email = "vladimir@magamedov.com" },
+]
+dependencies = []
+requires-python = ">=3.7"
+version = "0.3.0"
+
+[project.license]
+text = "MIT"
+
+[project.optional-dependencies]
+protoc = [
+    "grpcio-tools>=1.59.0",
+    "hiku==0.7.1",
+    "protobuf>=4.24.4",
+    "grpclib>=0.4.6",
+]
+
+[tool.pdm.scripts]
+protoc = "./scripts/protoc.sh"
+release = "./scripts/release.sh"
+
+[tool.pdm.version]
+source = "file"
+path = "featureflags_protobuf/__init__.py"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"

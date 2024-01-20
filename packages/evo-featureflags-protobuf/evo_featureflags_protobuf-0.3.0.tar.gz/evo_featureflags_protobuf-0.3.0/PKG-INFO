@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: evo-featureflags-protobuf
+Version: 0.3.0
+Summary: Protocol Buffers stub files for feature flags service
+Author-Email: d.zakharchuk <d.zakharchuk@smartweb.com.ua>, m.kindritskiy <m.kindritskiy@smartweb.com.ua>, Vladimir Magamedov <vladimir@magamedov.com>
+License: MIT
+Requires-Python: >=3.7
+Provides-Extra: protoc
+Requires-Dist: grpcio-tools>=1.59.0; extra == "protoc"
+Requires-Dist: hiku==0.7.1; extra == "protoc"
+Requires-Dist: protobuf>=4.24.4; extra == "protoc"
+Requires-Dist: grpclib>=0.4.6; extra == "protoc"
+Description-Content-Type: text/markdown
+
+FeatureFlags service protobuf files
+
+Overview
+--------
+
+To generate Python code from protobuf files run:
+- ``pdm run protoc``
+
+NOTE: On mac os be sure to run `pdm install` like this:
+- ``CFLAGS="-I /opt/homebrew/opt/openssl/include" LDFLAGS="-L /opt/homebrew/opt/openssl/lib" GRPC_PYTHON_BUILD_SYSTEM_OPENSSL=1 GRPC_PYTHON_BUILD_SYSTEM_ZLIB=1 pdm install -G protoc``
+
+To install package:
+- ``pdm add evo-featureflags-protobuf``
+
+To release package:
+- ``VERSION=<tag> MESSAGE=<message> pdm run release"``
