@@ -1,0 +1,25 @@
+[project]
+name = "EveryStamp"
+version = "1.4.0"
+authors = [
+    { name = "Frits Sweijen" },
+]
+description = "A Python interface for retrieving FITS or image cutouts from a variety of astronomical surveys."
+requires-python = ">=3.7"
+dependencies = ["astropy", "aplpy", "astroquery", "matplotlib", "markupsafe<=2.0.1", "numpy<1.23", "panstamps", "Pillow", "python-casacore", "opencv-python", "pyvo", "requests", "scikit-image", "tqdm"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Astronomy",
+]
+
+[project.scripts]
+everystamp = "everystamp.everystamp:main"
+
+[project.urls]
+"Homepage" = "https://tikk3r.github.io/EveryStamp/"
+"Bug Tracker" = "https://github.com/tikk3r/EveryStamp/issues"
+
+[build-system]
+requires = ["setuptools", "wheel", "requests"]
