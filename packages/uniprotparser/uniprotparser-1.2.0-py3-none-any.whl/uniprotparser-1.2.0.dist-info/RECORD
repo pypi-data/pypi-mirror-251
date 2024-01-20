@@ -1,0 +1,9 @@
+uniprotparser/__init__.py,sha256=uPfuMgEJLO--OO19encJlkbqsvKyLfY5pOPx4HGcvOY,405
+uniprotparser/betaparser.py,sha256=1lKIZDlmyAEPdS-w2URvDh2U5unGIRN8Rnlb6RPIbVE,14854
+uniprotparser/cli.py,sha256=C7t-v_UtRVeWUvh_dfZemmZ2gMz-Vbz29JDpct6r4dU,1017
+uniprotparser/parser.py,sha256=xAeP_Uq2DddmDNGaNc3h1EUEbUuH46zgH-svxULtBt0,4886
+uniprotparser-1.2.0.dist-info/entry_points.txt,sha256=RcZM_dAEKCRxdubeuDZUsECkREWwb95YcaBbFlX6c0M,56
+uniprotparser-1.2.0.dist-info/LICENSE.md,sha256=hdlLWfIiq_2FZ8ilHxcNQvb6y6cBSSIOkVqxvKMZOxA,1088
+uniprotparser-1.2.0.dist-info/METADATA,sha256=KSSPxwzBP1muGDeLfSVSNsYc5C16dcOYSmTbRhN_RE4,4752
+uniprotparser-1.2.0.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+uniprotparser-1.2.0.dist-info/RECORD,,
