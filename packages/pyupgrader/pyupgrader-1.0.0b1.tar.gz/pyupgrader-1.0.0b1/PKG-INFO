@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: pyupgrader
+Version: 1.0.0b1
+Summary: Python library that allows the version of a program to be updated.
+Author: Noah Blaszak
+Author-email: 70231827+Trogiken@users.noreply.github.com
+License-File: LICENSE
+Requires-Dist: pyyaml
+Requires-Dist: requests
+Requires-Dist: packaging
