@@ -1,0 +1,300 @@
+{
+  "broker": {
+    "broker.id": {
+      "default": null
+    },
+    "description": "Backoff time between shutdown retries.",
+    "scope": "broker",
+    "log.dirs": {
+      "default": "/tmp/kafka-logs"
+    },
+    "port": {
+      "default": "6667"
+    },
+    "zookeeper.connect": {
+      "default": "null"
+    },
+    "message.max.bytes": {
+      "default": "1000000"
+    },
+    "num.network.threads": {
+      "default": "3"
+    },
+    "num.io.threads": {
+      "default": "8"
+    },
+    "queued.max.requests": {
+      "default": "500"
+    },
+    "host.name": {
+      "default": "null"
+    },
+    "socket.send.buffer.bytes": {
+      "default": "100 * 1024"
+    },
+    "socket.receive.buffer.bytes": {
+      "default": "100 * 1024"
+    },
+    "socket.request.max.bytes": {
+      "default": "100 * 1024 * 1024"
+    },
+    "num.partitions": {
+      "default": "1"
+    },
+    "log.segment.bytes": {
+      "default": "1024 * 1024 * 1024"
+    },
+    "log.segment.bytes.per.topic": {
+      "default": "\"\""
+    },
+    "log.roll.hours": {
+      "default": "24 * 7"
+    },
+    "log.roll.hours.per.topic": {
+      "default": "\"\""
+    },
+    "log.retention.hours": {
+      "default": "24 * 7"
+    },
+    "log.retention.hours.per.topic": {
+      "default": "\"\""
+    },
+    "log.retention.bytes": {
+      "default": "-1"
+    },
+    "log.retention.bytes.per.topic": {
+      "default": "\"\""
+    },
+    "log.retention.check.interval.ms": {
+      "default": "300000"
+    },
+    "log.index.size.max.bytes": {
+      "default": "10 * 1024 * 1024"
+    },
+    "log.index.interval.bytes": {
+      "default": "4096"
+    },
+    "log.flush.interval.messages": {
+      "default": "10000"
+    },
+    "log.flush.interval.ms.per.topic": {
+      "default": "\"\""
+    },
+    "log.flush.scheduler.interval.ms": {
+      "default": "3000"
+    },
+    "log.flush.interval.ms": {
+      "default": "3000\n     "
+    },
+    "auto.create.topics.enable": {
+      "default": "true"
+    },
+    "controller.socket.timeout.ms": {
+      "default": "30000"
+    },
+    "controller.message.queue.size": {
+      "default": "10"
+    },
+    "default.replication.factor": {
+      "default": "1"
+    },
+    "replica.lag.time.max.ms": {
+      "default": "10000"
+    },
+    "replica.lag.max.messages": {
+      "default": "4000"
+    },
+    "replica.socket.timeout.ms": {
+      "default": "30 * 1000"
+    },
+    "replica.socket.receive.buffer.bytes": {
+      "default": "64 * 1024"
+    },
+    "replica.fetch.max.bytes": {
+      "default": "1024 * 1024"
+    },
+    "replica.fetch.wait.max.ms": {
+      "default": "500"
+    },
+    "replica.fetch.min.bytes": {
+      "default": "1"
+    },
+    "num.replica.fetchers": {
+      "default": "1"
+    },
+    "replica.high.watermark.checkpoint.interval.ms": {
+      "default": "5000"
+    },
+    "fetch.purgatory.purge.interval.requests": {
+      "default": "10000"
+    },
+    "producer.purgatory.purge.interval.requests": {
+      "default": "10000"
+    },
+    "zookeeper.session.timeout.ms": {
+      "default": "6000"
+    },
+    "zookeeper.connection.timeout.ms": {
+      "default": "6000"
+    },
+    "zookeeper.sync.time.ms": {
+      "default": "2000"
+    },
+    "controlled.shutdown.enable": {
+      "default": "false"
+    },
+    "controlled.shutdown.max.retries": {
+      "default": "3"
+    },
+    "controlled.shutdown.retry.backoff.ms": {
+      "default": "5000"
+    }
+  },
+  "broker.id": {
+    "description": {}
+  },
+  "log.dirs": {
+    "description": {}
+  },
+  "port": {
+    "description": {}
+  },
+  "zookeeper.connect": {
+    "description": {}
+  },
+  "message.max.bytes": {
+    "description": {}
+  },
+  "num.network.threads": {
+    "description": {}
+  },
+  "num.io.threads": {
+    "description": {}
+  },
+  "queued.max.requests": {
+    "description": {}
+  },
+  "host.name": {
+    "description": {}
+  },
+  "socket.send.buffer.bytes": {
+    "description": {}
+  },
+  "socket.receive.buffer.bytes": {
+    "description": {}
+  },
+  "socket.request.max.bytes": {
+    "description": {}
+  },
+  "num.partitions": {
+    "description": {}
+  },
+  "log.segment.bytes": {
+    "description": {}
+  },
+  "log.segment.bytes.per.topic": {
+    "description": {}
+  },
+  "log.roll.hours": {
+    "description": {}
+  },
+  "log.roll.hours.per.topic": {
+    "description": {}
+  },
+  "log.retention.hours": {
+    "description": {}
+  },
+  "log.retention.hours.per.topic": {
+    "description": {}
+  },
+  "log.retention.bytes": {
+    "description": {}
+  },
+  "log.retention.bytes.per.topic": {
+    "description": {}
+  },
+  "log.retention.check.interval.ms": {
+    "description": {}
+  },
+  "log.index.size.max.bytes": {
+    "description": {}
+  },
+  "log.index.interval.bytes": {
+    "description": {}
+  },
+  "log.flush.interval.messages": {
+    "description": {}
+  },
+  "log.flush.interval.ms.per.topic": {
+    "description": {}
+  },
+  "log.flush.scheduler.interval.ms": {
+    "description": {}
+  },
+  "log.flush.interval.ms": {
+    "description": {}
+  },
+  "auto.create.topics.enable": {
+    "description": {}
+  },
+  "controller.socket.timeout.ms": {
+    "description": {}
+  },
+  "controller.message.queue.size": {
+    "description": {}
+  },
+  "default.replication.factor": {
+    "description": {}
+  },
+  "replica.lag.time.max.ms": {
+    "description": {}
+  },
+  "replica.lag.max.messages": {
+    "description": {}
+  },
+  "replica.socket.timeout.ms": {
+    "description": {}
+  },
+  "replica.socket.receive.buffer.bytes": {
+    "description": {}
+  },
+  "replica.fetch.max.bytes": {
+    "description": {}
+  },
+  "replica.fetch.wait.max.ms": {
+    "description": {}
+  },
+  "replica.fetch.min.bytes": {
+    "description": {}
+  },
+  "num.replica.fetchers": {
+    "description": {}
+  },
+  "replica.high.watermark.checkpoint.interval.ms": {
+    "description": {}
+  },
+  "fetch.purgatory.purge.interval.requests": {
+    "description": {}
+  },
+  "producer.purgatory.purge.interval.requests": {
+    "description": {}
+  },
+  "zookeeper.session.timeout.ms": {
+    "description": {}
+  },
+  "zookeeper.connection.timeout.ms": {
+    "description": {}
+  },
+  "zookeeper.sync.time.ms": {
+    "description": {}
+  },
+  "controlled.shutdown.enable": {
+    "description": {}
+  },
+  "controlled.shutdown.max.retries": {
+    "description": {}
+  },
+  "controlled.shutdown.retry.backoff.ms": {
+    "description": {}
+  }
+}
