@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+facelogincodesgay.egg-info/PKG-INFO
+facelogincodesgay.egg-info/SOURCES.txt
+facelogincodesgay.egg-info/dependency_links.txt
+facelogincodesgay.egg-info/requires.txt
+facelogincodesgay.egg-info/top_level.txt
