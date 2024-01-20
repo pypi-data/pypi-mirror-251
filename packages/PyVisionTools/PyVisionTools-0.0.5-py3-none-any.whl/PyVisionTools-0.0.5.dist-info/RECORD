@@ -1,0 +1,10 @@
+PyVisionTools/setup.py,sha256=rBu3ay-is3TbWZzClLlmaXBiOBMBQnxCF6Cbh2XLsFk,719
+PyVisionTools/src/__init__.py,sha256=bQZfUzVoD7VEKJU9j5nUjlQffk5eSI6J2EdjwiyR6OA,19
+PyVisionTools/src/tools/__init__.py,sha256=Hadrdv-Il4f9GGS27AcWqWjUIAWZdQRELVAuXL9dbhw,27
+PyVisionTools/src/tools/image_manager.py,sha256=f1p1NYqj4CZ0XC-ovkbSqW6mcJMPa5y-83GcwO8noLo,1986
+PyVisionTools/tools/__init__.py,sha256=CZnpzfuo5EBb47oQ4YTHS1zMnIKW8wG27nqvpeQLt1Q,68
+PyVisionTools/tools/image_processor.py,sha256=H_-ZExBSSAyK8ztpnNMK0ezdvwhODmGiKocZRkGRnDw,880
+PyVisionTools-0.0.5.dist-info/METADATA,sha256=7u12xOPmFrT-BPiJqyQEwQePU1v12cHIKVVYSikncE8,1322
+PyVisionTools-0.0.5.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+PyVisionTools-0.0.5.dist-info/top_level.txt,sha256=lTMoPwAFINt9CydeU52c2cbs_zzUPxwmRF7U8jc9q6A,14
+PyVisionTools-0.0.5.dist-info/RECORD,,
