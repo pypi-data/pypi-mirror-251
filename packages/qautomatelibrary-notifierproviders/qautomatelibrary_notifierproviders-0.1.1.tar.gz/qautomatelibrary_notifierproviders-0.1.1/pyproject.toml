@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "qautomatelibrary-notifierproviders"
+version = "0.1.1"
+description = "Custom providers for Notifiers library"
+authors = ["Tony Rintala <72392290+tonyr-qf@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "qautomatelibrary"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+notifiers = "1.3.3"
+setuptools = "^69.0.3"
+
+[tool.poetry.group.dev.dependencies]
+Faker = "22.2.0"
+loguru = "0.7.2"
+pytest = "^7.4.4"
+pre-commit = "^3.6.0"
+types-requests = "^2.31.0.20240106"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[[tool.mypy.overrides]]
+module = "requests.*"
+ignore_missing_imports = true
