@@ -1,0 +1,12 @@
+test_stages/__init__.py,sha256=YTV_YKlOrr9rvET3Tz3iJLaukF6wyQjHAfauwzqKrKk,190
+test_stages/cmd.py,sha256=KgVWnQRO59gjh3DwxAcYdKjhlRk-74oy8if36v2DaRA,7663
+test_stages/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test_stages/tox_stages/__init__.py,sha256=AGWJ9LfAANJAxj_DKUYCFXZm4ZWOFPpEouXuqSN39oY,284
+test_stages/tox_stages/__main__.py,sha256=taiSeGyVahZ5EK84tIhvFJ1mBlBRwqmm053hEUrUFTw,3891
+tox_trivtags/__init__.py,sha256=k03PSCL_VaKRHQy5ZsmhwEJrhQULh0vR-nzOXoOUIuY,1876
+tox_trivtags/parse.py,sha256=LPsWDQsTAMCajUWjvvNusMKY9awyipkVQO66t9UD2HA,4678
+tox_trivtags/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test_stages-0.1.5.dist-info/METADATA,sha256=u-TJlmypXBre61wv9yxTa1HN_vrj25ct92aXBhvzMKc,3993
+test_stages-0.1.5.dist-info/WHEEL,sha256=mRYSEL3Ih6g5a_CVMIcwiF__0Ae4_gLYh01YFNwiq1k,87
+test_stages-0.1.5.dist-info/entry_points.txt,sha256=Eut9WMV0MJLgfUPNewmUcRwFec0t3XUZoNw0yfLFEtY,99
+test_stages-0.1.5.dist-info/RECORD,,
